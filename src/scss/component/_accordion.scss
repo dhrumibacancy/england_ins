@@ -1,0 +1,71 @@
+@use "../utils" as *;
+
+
+// 30 march
+.accordion {
+	&.custom {
+		.accordion-item {
+			background: var(--color-blue-light2);
+			border-color: var(--color-border-light);
+
+			&:first-of-type {
+				border-top-left-radius: 8px;
+				border-top-right-radius: 8px;
+			}
+
+			&:last-of-type {
+				border-bottom-right-radius: 8px;
+   				border-bottom-left-radius: 8px;
+			}
+		}
+		.accordion-button {
+			// display: flex;
+			// justify-content: space-between;
+			box-shadow: none;
+			outline: none;
+			border: none;
+			background: var(--color-white);
+			padding-right: 60px;
+
+			&:not(.collapsed) {
+				background: transparent;
+				&:after {
+					transform: translateY(-50%) rotate(-180deg);
+				}
+			}
+
+			.button-right {
+				display: flex;
+				align-items: center;
+
+				.checkbox-inline  {
+					margin-bottom: 0;
+				}
+			}
+
+			.title {
+				flex-grow: 1;
+				color: var(--color-black);
+			}
+
+			.btn-delete {
+				img {
+					height: 15px;
+					width: 12.5px;
+				}
+			}
+
+			&:after {
+				width: 10px;
+				height: 6px;
+				background-image: url("../../images/down-arrow.svg");
+				background-size: 10px;
+				position: absolute;
+		    	right: 20px;
+    			top: 50%;
+				transform: translateY(-50%)
+			}
+
+		}
+	}
+}

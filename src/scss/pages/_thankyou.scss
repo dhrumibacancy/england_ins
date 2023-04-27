@@ -1,0 +1,78 @@
+@use "../utils/" as *;
+
+.thankyou {
+    width: 100%;
+    position: relative;
+    background: var(--color-primary);
+    @include flexbox();
+    @include align-items(center);
+    @include justify-content(center);
+    padding: 50px 16px;
+    &__card {
+        position: relative;
+        z-index: 1;
+        max-width: 600px;
+        width: 100%;
+        background-color: var(--color-white);
+        border-radius: 10px;
+        padding: 50px 15px;
+        @include respond-above(sm) {
+            padding: 70px 40px;
+        }
+        &::before,
+        &::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 100%;
+            border-radius: 10px;
+            margin: auto;
+            background-color: rgba(255, 255, 255, 0.8)
+        }
+        &::before {
+            max-width: 92%;
+            top: -25px;
+        }
+        &::after {
+            max-width: 82%;
+            top: -45px;
+        }
+        .content {
+            @include flexbox();
+            @include flex-direction($value: column);
+            @include align-items(center);
+            position: relative;
+            z-index: 1;
+            .icon {
+                margin-bottom: 30px;
+            }
+            .title-info {
+                max-width: 410px;
+                margin: 0 auto;
+                text-align: center;
+                margin-bottom: 28px;
+                .title {
+                    @include toRem(font-size, 25);
+                    @include toRem(line-height, 30);
+                    color: var(--color-title);
+                    margin-bottom: 20px;
+                    @include respond-above(sm) {
+                        @include toRem(font-size, 35);
+                        @include toRem(line-height, 42);
+                    }
+                }
+                .info {
+                    @include toRem(font-size, 16);
+                    @include toRem(line-height, 20.8);
+                    color: #000000;
+                    opacity: 0.7;
+                    max-width: 340px;
+                    margin: auto;
+                }
+            }
+        }
+    }
+}

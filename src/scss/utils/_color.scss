@@ -1,0 +1,34 @@
+@use "variable"as *;
+
+// scss-docs-start theme-colors-map
+
+$colors: ("primary": $primary,
+    "primary-text": $primary-text,
+    "blue": $blue,
+    "light-blue": $light-blue,
+    "secondary": $secondary,
+    "title": $title,
+    "paragraph": $paragraph,
+    "black": $black,
+    "white": $white,
+    "smoke": $smoke,
+    "divider": $divider,
+    "border-light": $border-light,
+    "box-border": $box-border,
+    "btn-outline": $btn-outline,
+    "disable": $disable,
+    "placeholder": $placeholder,
+    "checkbox": $checkbox,
+    "checkbox-bg": $checkbox-bg,
+    "light-gray": $light-gray,
+    "has-error": $has-error,
+    "blue-light": $blue-light,
+    "blue-light2": $blue-light2,
+    "blue-border": $blue-border,
+
+) !default;
+
+$colors-Shade: ("primary-100": $primary,
+) !default;
+
+$colorScheme: map-merge($colors, $colors-Shade);
