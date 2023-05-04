@@ -134,7 +134,7 @@
   /* identical to box height, or 157% */
   text-align: center;
   /* Gray shades/Black-07 */
-  color: #616161;
+  color: var(--color-title);
 }
 
 .radio-check-icon label>input[type=radio]+span {

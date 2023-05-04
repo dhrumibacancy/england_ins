@@ -1,0 +1,28 @@
+@use "../utils/"as *;
+
+.progress {
+
+    background: var(--color-light-blue);
+
+    border-radius: 4px;
+    height: 8px;
+
+    .progress-bar {
+        background-color: var(--color-primary);
+        ;
+    }
+
+
+}
+
+.progress-text {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    margin-bottom: 10px;
+    text-align: center;
+    color: var(--color-black);
+
+}

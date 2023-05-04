@@ -1,3 +1,7 @@
+@use "../utils"as *;
+
+@use "../utils"as *;
+
 .modal-dialog {
     &.modal-lg {
         max-width: 659px;

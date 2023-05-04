@@ -47,18 +47,37 @@
     <main>
         <div class="wrapper">
             <nav class="navbar bg-dark fixed-top">
-                <div class="container-fluid">
+                <div class="container-fluid text-center">
 
                     <div class="d-flex align-items-center justify-content-center">
                         <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
                             data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
                             <span class="navbar-toggler-icon"></span>
                         </button>
-                        <a class="navbar-brand" href="#"><img src="./images/logo.svg" alt=""></a>
+                        <a class="navbar-brand d-none d-md-block" href="#"><img src="./images/logo.svg" alt=""></a>
 
                     </div>
+                    <a class="navbar-brand d-md-none m-0" href="#"><img src="./images/logo.svg" alt=""></a>
                     <div class="d-flex align-items-center justify-content-center">
+                        <!-- <select class="vodiapicker">
+                            <option value="en" class="test" data-thumbnail="./images/us_flag.svg">
+                                English</option>
+                            <option value="au"
+                                data-thumbnail="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/NYCS-bull-trans-B.svg/480px-NYCS-bull-trans-B.svg.png">
+                                Engllish </option>
 
+
+                        </select> -->
+
+                        <!-- <div class="lang-select me-3 pe-2">
+                            <button class="btn-select" value=""></button>
+                            <div class="b">
+                                <ul id="a"></ul>
+                            </div>
+                        </div> -->
+
+
+                        <!-- https://codepen.io/aaroniker/pen/XxBjKN?editors=0100-->
 
                         <div class="f-group me-3 pe-2">
 
@@ -72,23 +91,30 @@
                             </select>
                         </div>
 
-                        <img src="./images/message-question.svg" alt="" class="me-3 pe-2">
-                        <img src="./images/user.svg" alt="">
+                        <img src="./images/message-question.svg" alt="" class="me-3 pe-2 nav-icon d-none d-md-block">
+                        <img src="./images/user.svg" alt="" class="nav-icon d-none d-md-block">
                     </div>
                     <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
                         aria-labelledby="offcanvasNavbarLabel">
                         <div class="offcanvas-header">
-                            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
+                            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
                             <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
                                 aria-label="Close"></button>
                         </div>
                         <div class="offcanvas-body">
                             <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                                <li class="nav-item">
-                                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                                <li class="nav-item ">
+                                    <a class="nav-link active text-left" aria-current="page" href="#"> <img
+                                            src="./images/message-question-blue.svg" alt=""
+                                            class="d-inline-block me-3 pe-2 nav-icon nav-icon-mob">
+                                        Help
+                                    </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#">Link</a>
+                                    <a class="nav-link  text-left" href="#">
+                                        <img src="./images/user-blue.svg" alt=""
+                                            class="nav-icon d-inline-block  nav-icon-mob">
+                                        User</a>
                                 </li>
 
                             </ul>
@@ -101,7 +127,7 @@
                 <div class="content">
                     <div class="container-fluid">
                         <div class="row">
-                            <div class="col-md-4">
+                            <div class="col-4">
                                 <div class="progress">
                                     <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0"
                                         aria-valuemax="100" style="width:20%">
@@ -109,9 +135,9 @@
                                     </div>
 
                                 </div>
-                                <div class="progress-text mt-1">About your vehicle & Drivers</div>
+                                <div class="progress-text mt-1">Drivers</div>
                             </div>
-                            <div class="col-md-4">
+                            <div class="col-4">
                                 <div class="progress">
                                     <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0"
                                         aria-valuemax="100" style="width:0%">
@@ -119,9 +145,10 @@
                                     </div>
 
                                 </div>
-                                <div class="progress-text mt-1">Policy Limits</div>
+                                <div class="progress-text mt-1">Vehicles
+                                </div>
                             </div>
-                            <div class="col-md-4">
+                            <div class="col-4">
                                 <div class="progress">
                                     <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0"
                                         aria-valuemax="100" style="width:0%">
@@ -129,7 +156,7 @@
                                     </div>
 
                                 </div>
-                                <div class="progress-text mt-1">Price Compare & Purchase</div>
+                                <div class="progress-text mt-1">Discounts</div>
                             </div>
                         </div>
                         <a class="text-blue ms-3 back-arrow" href="#"><i class="fa fa-arrow-left-long me-2"></i>BACK</a>
@@ -179,7 +206,7 @@
                                 <div class="form-item col-md-6">
                                     <div class="uploaded-document-block">
                                         <div class="document-block">
-                                            <div class="document-thumb-block">
+                                            <div class="document-thumb-block ">
                                                 <a href="#" class="btn-remove">
                                                     <img src="images/icon-close-red.svg" alt="close" />
                                                 </a>

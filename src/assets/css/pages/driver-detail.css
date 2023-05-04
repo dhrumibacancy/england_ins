@@ -39,35 +39,6 @@
   width: 100%;
 }
 
-@media only screen and (max-width: 575px) {
-  .navbar .me-3 {
-    margin-right: 0rem !important;
-  }
-  .navbar .navbar-toggler-icon {
-    width: auto;
-    height: auto;
-    margin-right: 15px;
-  }
-  .navbar .navbar-brand {
-    max-width: 50px;
-  }
-  .navbar .navbar-brand img {
-    width: 100%;
-  }
-  .navbar .f-dropdown > span > span {
-    font-size: 14px;
-    line-height: 18px;
-    padding-right: 16px;
-  }
-  .navbar .f-dropdown > span {
-    padding: 5px 10px;
-  }
-  .f-dropdown > span img {
-    width: 14px;
-    height: 10px;
-    margin-right: 5px;
-  }
-}
 @media (min-width: 412px) {
   @supports (display: grid) {
     .grid {

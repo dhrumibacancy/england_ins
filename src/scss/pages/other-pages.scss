@@ -1,0 +1,63 @@
+@use "../utils/"as *;
+
+.responsive-video {
+    border: 1px solid #e6e6e6;
+    padding: 13px;
+    border-radius: 8px;
+
+    video {
+        border-radius: 8px;
+    }
+}
+
+.progress-round {
+    background: #016BBF;
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 18px;
+    line-height: 18px;
+    /* identical to box height, or 120% */
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--color-white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+
+}
+
+.progress-vs {
+    background: #E6F1F9;
+    color: var(--color-primary);
+    font-size: 16px;
+}
+
+.amnt-monthly {
+    font-size: 30px;
+    line-height: 45px;
+    /* identical to box height, or 150% */
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+
+    color: var(--color-primary);
+
+    .monthly-amnt {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 28px;
+        /* identical to box height, or 156% */
+
+
+        color: var(--color-dark-blue);
+    }
+}

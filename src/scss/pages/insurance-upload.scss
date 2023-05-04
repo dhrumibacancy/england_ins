@@ -60,32 +60,6 @@
     }
 }
 
-.progress {
-
-    background: var(--color-light-blue);
-    ;
-    border-radius: 4px;
-    height: 8px;
-
-    .progress-bar {
-        background-color: var(--color-primary);
-        ;
-    }
-
-
-}
-
-.progress-text {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 18px;
-    margin-bottom: 10px;
-    text-align: center;
-    color: var(--color-black);
-
-}
 
 
 
@@ -110,60 +84,12 @@
 
     /* Blue/Blue-10 */
 
-    color: #016BBF;
-}
-
-
-
-.owl-prev {
-    left: -20px;
-    top: 50%;
-    position: absolute;
-    transform: translate(-50%, -50%);
-    width: 34px;
-    height: 34px;
-}
-
-.owl-next {
-    right: -60px;
-    top: 50%;
-    position: absolute;
-    transform: translate(-50%, -50%);
-    width: 34px;
-    height: 34px;
-
-
-}
-
-.owl-theme .owl-nav [class*='owl-'],
-.owl-carousel .owl-nav button.owl-next,
-.owl-carousel .owl-nav button.owl-prev {
-    color: #000;
-    font-size: unset;
-    margin: 5px;
-    padding: 4px 7px;
-    background: white;
-    display: inline-block;
-    cursor: pointer;
-    border-radius: 3px;
-    border-radius: 50%;
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    span {
-        font-size: 32px;
-    }
+    color: var(--color-primary);
 }
 
 
 
 
-.owl-carousel .owl-item img {
-    /* display: block; */
-    width: auto;
-}
 
 @media only screen and (max-width: 575px) {
     .upload-box {
@@ -191,6 +117,7 @@
     margin: 10px;
     height: 170px;
     border-radius: 12px;
+    margin: 20px;
 
     .document-thumb-block {
         position: relative;

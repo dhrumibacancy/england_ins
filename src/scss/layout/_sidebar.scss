@@ -1,4 +1,4 @@
-@use "../utils" as *;
+@use "../utils"as *;
 
 aside {
     position: relative;
@@ -9,12 +9,15 @@ aside {
     overflow: auto;
     @include flex-direction($value: column);
     @include scrollbars(5px, var(--color-primary), #ececec);
+
     @include until-width(xxl) {
         padding: 40px 35px;
     }
+
     @include until-width(lg) {
         padding: 30px 20px;
     }
+
     @include until-width(md) {
         max-width: 100%;
         position: absolute;
@@ -25,6 +28,7 @@ aside {
         height: 0;
         z-index: 1;
         @include transition(height .3s ease-in-out);
+
         &.active {
             display: block;
             overflow: auto;
@@ -33,13 +37,16 @@ aside {
             visibility: visible;
         }
     }
+
     .dropdown {
         width: 100%;
+
         button {
             background-color: var(--color-white);
             padding: 16px !important;
             width: 100%;
             text-align: left;
+
             &.dropdown-toggle {
                 @include until-width(md) {
                     &::after {
@@ -48,34 +55,28 @@ aside {
                 }
             }
         }
-        .dropdown-menu {
-            left: 0;
-            width: 100%;
-            border-radius: 0;
-            box-shadow: none;
-            li {
-                padding: 0;
-                opacity: 1;
-                &::after {
-                    display: none;
-                }
-            }
-        }
+
+
     }
+
     .sidebar {
         width: 100%;
         height: 100%;
         @include flexbox();
         @include flex-direction($value: column);
+
         ul {
             flex: 1;
             margin-bottom: 30px;
+
             @include until-width(md) {
                 padding: 0 16px;
             }
+
             @include until-width(sm) {
                 padding: 0 10px;
             }
+
             li {
                 @include toRem(font-size, 16);
                 color: var(--color-white);
@@ -84,9 +85,11 @@ aside {
                 padding: 18px 0;
                 @include flexbox();
                 position: relative;
+
                 @include respond-above(sm) {
                     @include toRem(font-size, 18);
                 }
+
                 &::after {
                     content: '';
                     position: absolute;
@@ -98,73 +101,14 @@ aside {
                     width: 3px;
                     height: 100%;
                 }
-                .icon {
-                    min-width: 20px;
-                    min-height: 20px;
-                    max-width: 20px;
-                    max-height: 20px;
-                    border-radius: 20px;
-                    position: relative;
-                    background: var(--color-white);
-                    margin: 4px 10px 0 4px;
-                    z-index: 2;
-                    @include respond-above(sm) {
-                        margin: 4px 20px 0 4px;
-                    }
-                    &::before {
-                        content: '';
-                        position: absolute;
-                        opacity: 0;
-                        visibility: hidden;
-                        top: 0;
-                        bottom: 0;
-                        left: 0;
-                        right: 0;
-                        margin: auto;
-                        width: 10px;
-                        height: 10px;
-                        border-radius: 10px;
-                        background: var(--color-primary);
-                        z-index: 2;
-                        @include transition(opacity .3s);
-                    }
-                }
-                .icon-text {
-                    @include flexbox();
-                    @include flex-direction($value: column);
-                    span {
-                        @include flexbox();
-                        @include align-items($value: center);
-                        i {
-                            margin-left: 10px;
-                            img {
-                                display: block;
-                            }
-                        }
-                    }
-                    ul {
-                        margin: 0;
-                        width: 100%;
-                        li {
-                            @include toRem(font-size,16);
-                            @include toRem(line-height, 20);
-                            font-weight: 400;
-                            padding: 0;
-                            margin-top: 5px;
-                            opacity: 0.7;
-                            &::after {
-                                display: none;
-                            }
-                            span {
-                                margin-left: 5px;
-                                font-weight: 600;
-                            }
-                        }
-                    }
-                }
+
+
+
+
                 &.current {
                     opacity: 1;
                     font-weight: 600;
+
                     .icon {
                         &::before {
                             opacity: 1;
@@ -172,11 +116,13 @@ aside {
                         }
                     }
                 }
+
                 &.completed {
                     opacity: 1;
                     font-weight: 600;
+
                     .icon {
-                        &::after{
+                        &::after {
                             content: '';
                             position: absolute;
                             left: 0;
@@ -192,43 +138,32 @@ aside {
                         }
                     }
                 }
+
                 &:first-child {
-                    @include toRem(font-size,24);
-                    @include toRem(line-height,30);
+                    @include toRem(font-size, 24);
+                    @include toRem(line-height, 30);
                     color: var(--color-white);
                     opacity: 1;
                     font-weight: 500;
-                    @include respond-above(sm){
-                        @include toRem(font-size,28);
-                        @include toRem(line-height,32);
+
+                    @include respond-above(sm) {
+                        @include toRem(font-size, 28);
+                        @include toRem(line-height, 32);
                     }
-                    @include respond-above(md){
-                        @include toRem(font-size,30);
-                        @include toRem(line-height,36);
+
+                    @include respond-above(md) {
+                        @include toRem(font-size, 30);
+                        @include toRem(line-height, 36);
                         padding-top: 0;
                     }
+
                     &::after {
                         top: 46px;
                     }
-                    .home {
-                        margin-right: 15px;
-                        @include flexbox();
-                        margin-top: 0px;
-                        z-index: 2;
-                        @include respond-above(sm){
-                            margin-top: 2px;
-                        }
-                        @include respond-above(md){
-                            margin-top: 4px;
-                        }
-                        img {
-                            min-width: 30px;
-                            min-height: 30px;
-                            max-width: 30px;
-                            max-height: 30px;
-                        }
-                    }
+
+
                 }
+
                 &:last-child {
                     &::after {
                         display: none;
@@ -236,74 +171,17 @@ aside {
                 }
             }
         }
+
         .user-info {
             padding: 40px 0;
             @include flexbox();
             @include flex-direction($value: column);
-            border-top: 1px solid rgba(255,255,255, 0.2);
+            border-top: 1px solid rgba(255, 255, 255, 0.2);
+
             @include until-width(md) {
                 padding: 40px 15px;
             }
-            .avatar {
-                width: 48px;
-                height: 48px;
-                border-radius: 50px;
-                overflow: hidden;
-                background: var(--color-white);
-                border: 1px solid var(--color-white);
-                @include flexbox();
-                @include align-items($value: center);
-                img {
-                    display: block;
-                    width: 100%;
-                }
-            }
-            .name-contact {
-                margin-top: 10px;
-                position: relative;
-                @include flexbox();
-                @include flex-direction($value: column);
-                @include align-items($value: baseline);
-                h4 {
-                    @include toRem(font-size,18);
-                    color: var(--color-white);
-                    font-weight: 600;
-                }
-                span {
-                    margin-top: 5px;
-                    margin-bottom: 20px;
-                    @include toRem(font-size,16);
-                    display: inline-block;
-                    color: var(--color-white);
-                    line-height: 22px;
-                    background-color: rgba(255,255,255,0.15);
-                    padding: 3px 10px;
-                }
-                ul {
-                    margin-bottom: 0;
-                    padding: 0;
-                    li {
-                        @include flexbox();
-                        @include align-items($value: center);
-                        @include toRem(font-size,16);
-                        color: var(--color-white);
-                        opacity: 1 !important;
-                        padding: 0 !important;
-                        font-weight: 400;
-                        &::after {
-                            display: none;
-                        }
-                        &:not(:last-child) {
-                            margin-bottom: 10px;
-                        }
-                        a {
-                            margin-left: 10px;
-                            text-decoration: underline;
-                            color: var(--color-white);
-                        }
-                    }
-                }
-            }
+
         }
     }
 }

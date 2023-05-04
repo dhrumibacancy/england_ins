@@ -1,0 +1,55 @@
+@use "../utils"as *;
+
+.owl-prev {
+    left: -20px;
+    top: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    width: 34px;
+    height: 34px;
+}
+
+.owl-next {
+    right: -60px;
+    top: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    width: 34px;
+    height: 34px;
+
+
+}
+
+.owl-theme .owl-nav [class*='owl-'],
+.owl-carousel .owl-nav button.owl-next,
+.owl-carousel .owl-nav button.owl-prev {
+    color: var(--color-black);
+    font-size: unset;
+    margin: 5px;
+    padding: 4px 7px;
+    background: white;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 3px;
+    border-radius: 50%;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    span {
+        font-size: 32px;
+    }
+}
+
+
+
+
+.owl-carousel .owl-item img {
+    /* display: block; */
+    width: auto;
+}
+
+.owl-carousel .owl-stage-outer {
+    padding: 30px 0;
+}

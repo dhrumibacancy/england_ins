@@ -11,11 +11,11 @@ input:-webkit-autofill:active {
 .form-control {
     background: #FFFFFF;
     border: 1px solid var(--color-border-light);
-    @include border-box;
-    @include border-radius(6px);
+
+
     border-radius: 4px;
     height: 45px;
-    @include toRem(font-size, 16px);
+    @include toRem(font-size, 15);
     color: var(--color-black);
     padding: 0 17px;
     outline: none;
@@ -99,4 +99,32 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     right: 0;
     top: 0;
     width: auto;
+}
+
+
+
+@media only screen and (max-width: 575px) {
+    .form-control {
+
+        @include toRem(font-size, 13);
+        color: var(--color-black);
+        padding: 0 12px;
+
+
+        &::placeholder {
+            color: var(--color-light-gray);
+        }
+
+        &:-ms-input-placeholder {
+            color: var(--color-light-gray);
+        }
+
+        &::-ms-input-placeholder {
+            color: var(--color-light-gray);
+        }
+
+
+
+
+    }
 }
