@@ -32,7 +32,7 @@
     border: 1px solid var(--color-border-light);
     border-radius: 8px;
     padding: 15px;
-    overflow: hidden;
+    // overflow: hidden;
 }
 
 .btn-add {
@@ -92,4 +92,14 @@
     &:last-of-type {
         border: none
     }
+}
+
+@media only screen and (max-width: 575px) {
+
+    .white-box {
+
+        padding: 15px 10px;
+
+    }
+
 }

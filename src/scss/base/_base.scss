@@ -373,9 +373,9 @@ main {
 
             &.sub-title {
 
-                font-size: 12px;
+                font-size: 13px;
 
-                line-height: 20px;
+                line-height: 16px;
 
             }
 
@@ -396,5 +396,27 @@ main {
 
     .radio-label {
         font-size: 14px !important;
+    }
+
+    main .wrapper .content-main {
+        margin-top: 90px;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .row>* {
+
+        padding-right: calc(var(--bs-gutter-x) * .3);
+        padding-left: calc(var(--bs-gutter-x) * .3);
+
+    }
+}
+
+@media only screen and (max-width: 360px) {
+    .row>* {
+
+        padding-right: calc(var(--bs-gutter-x) * .2);
+        padding-left: calc(var(--bs-gutter-x) * .2);
+
     }
 }
