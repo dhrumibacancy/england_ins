@@ -157,6 +157,11 @@
   line-height: 18px;
   font-weight: 500;
 }
+.upload-box .radio-switch-state p.ins-titlee {
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 500;
+}
 
 .upload-btn {
   background: #FFFFFF;
@@ -229,5 +234,34 @@
   font-size: 12px;
   line-height: 18px;
   font-weight: 500;
+}
+
+@media only screen and (min-width: 1400px) {
+  .upload-btn {
+    height: 50px;
+    font-size: 15px;
+  }
+  .btn-add,
+  .user-info .user-welcome,
+  .radio-box.button-style .radio-box-custom,
+  .fs-12 {
+    font-size: 14px !important;
+  }
+  .progress-text,
+  .back-arrow,
+  .content p.sub-title,
+  .note,
+  .checkbox-label {
+    font-size: 16px !important;
+  }
+  .radio-label {
+    font-size: 16px !important;
+  }
+  .fs-18 {
+    font-size: 19px;
+  }
+  .content h3.title {
+    font-size: 34px;
+  }
 }
 /*# sourceMappingURL=insurance-upload.css.map */

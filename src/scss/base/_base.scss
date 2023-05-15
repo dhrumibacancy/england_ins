@@ -383,6 +383,13 @@ main {
 
     }
 
+    .container {
+        -webkit-padding-start: 0.7375rem;
+        padding-inline-start: 0.7375rem;
+        -webkit-padding-end: 0.7375rem;
+        padding-inline-end: 0.7375rem;
+    }
+
     .fs-18 {
         font-size: 15px !important;
     }

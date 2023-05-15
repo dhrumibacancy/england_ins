@@ -20,7 +20,7 @@
         transition: color .2s ease, border-color .2s ease;
         height: 45px;
         border: 1px solid var(--color-border-light);
-
+        @include toRem(font-size, 15);
         @include border-radius(6px);
         border-radius: 4px;
         color: $title;
@@ -33,7 +33,7 @@
             font-family: 'Roboto';
             font-style: normal;
             font-weight: 400;
-            font-size: 16px;
+
             line-height: 18px;
         }
 
@@ -241,4 +241,19 @@
         right: 6px;
         width: 6px;
     }
+}
+
+
+
+@media only screen and (min-width: 1400px) {
+    .f-dropdown {
+
+        &>span {
+            height: 50px;
+            @include toRem(font-size, 16);
+
+        }
+
+    }
+
 }

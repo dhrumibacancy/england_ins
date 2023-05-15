@@ -597,6 +597,12 @@ main .main-wrapper p {
     font-size: 13px;
     line-height: 16px;
   }
+  .container {
+    -webkit-padding-start: 0.7375rem;
+    padding-inline-start: 0.7375rem;
+    -webkit-padding-end: 0.7375rem;
+    padding-inline-end: 0.7375rem;
+  }
   .fs-18 {
     font-size: 15px !important;
   }
@@ -716,6 +722,12 @@ main .main-wrapper p {
     padding: 15px 10px;
   }
 }
+@media only screen and (min-width: 1400px) {
+  .contain-wrapper-sm {
+    max-width: 690px;
+    margin: 0 auto;
+  }
+}
 .back-arrow {
   font-family: "Roboto";
   font-style: normal;
@@ -761,6 +773,11 @@ main .main-wrapper p {
 }
 .upload-box .radio-switch-state p.ins-title {
   font-size: 12px;
+  line-height: 18px;
+  font-weight: 500;
+}
+.upload-box .radio-switch-state p.ins-titlee {
+  font-size: 14px;
   line-height: 18px;
   font-weight: 500;
 }
@@ -838,6 +855,34 @@ main .main-wrapper p {
   font-weight: 500;
 }
 
+@media only screen and (min-width: 1400px) {
+  .upload-btn {
+    height: 50px;
+    font-size: 15px;
+  }
+  .btn-add,
+  .user-info .user-welcome,
+  .radio-box.button-style .radio-box-custom,
+  .fs-12 {
+    font-size: 14px !important;
+  }
+  .progress-text,
+  .back-arrow,
+  .content p.sub-title,
+  .note,
+  .checkbox-label {
+    font-size: 16px !important;
+  }
+  .radio-label {
+    font-size: 16px !important;
+  }
+  .fs-18 {
+    font-size: 19px;
+  }
+  .content h3.title {
+    font-size: 34px;
+  }
+}
 .remove {
   background: #f1f1f1;
 }
@@ -927,6 +972,16 @@ main .main-wrapper p {
   line-height: 28px;
   /* identical to box height, or 156% */
   color: var(--color-dark-blue);
+}
+
+.acnt-btn {
+  min-width: 225px !important;
+}
+
+.menuitemshow {
+  opacity: 0.4;
+  cursor: not-allowed;
+  pointer-events: none;
 }
 
 .progress {
@@ -1240,6 +1295,7 @@ aside .sidebar .user-info {
   transition: color 0.2s ease, border-color 0.2s ease;
   height: 45px;
   border: 1px solid var(--color-border-light);
+  font-size: 0.9375rem;
   border-radius: 6px;
   border-radius: 4px;
   color: #616161;
@@ -1253,7 +1309,6 @@ aside .sidebar .user-info {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
   line-height: 18px;
 }
 .f-dropdown > span img {
@@ -1436,6 +1491,12 @@ aside .sidebar .user-info {
   .f-dropdown > span:after {
     right: 6px;
     width: 6px;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  .f-dropdown > span {
+    height: 50px;
+    font-size: 1rem;
   }
 }
 .btn {
@@ -1705,6 +1766,12 @@ input[type=date]::-webkit-calendar-picker-indicator {
   }
   .form-control::-ms-input-placeholder {
     color: var(--color-light-gray);
+  }
+}
+@media only screen and (min-width: 1400px) {
+  .form-control {
+    height: 50px;
+    font-size: 1rem;
   }
 }
 .accordion.custom .accordion-item {

@@ -61,3 +61,54 @@
         color: var(--color-dark-blue);
     }
 }
+
+.acnt-btn {
+    min-width: 225px !important;
+}
+
+.menuitemshow {
+    opacity: 0.4;
+    cursor: not-allowed;
+    pointer-events: none;
+}
+
+// .talk-to-person {
+//     position: relative;
+
+//     &:after {
+//         content: "";
+//         display: block;
+//         position: absolute !important;
+//         width: 8px !important;
+//         height: 1.5px !important;
+//         border-radius: 1px;
+//         top: 50% !important;
+//         right: 10px !important;
+//         left: auto !important;
+//         border: 1px solid var(--color-white) !important;
+//         -webkit-transform: scale(0.96, 0.8) rotate(-50deg);
+//         -ms-transform: scale(0.96, 0.8) rotate(-50deg);
+//         transform: scale(0.96, 0.8) rotate(-50deg);
+//         border: 1px solid var(--color-primary);
+//         // -webkit-transition: all 0.3s ease;
+//         // -o-transition: all 0.3s ease;
+//         // transition: all 0.3s ease;
+//     }
+
+//     &:before {
+//         content: "";
+//         display: block;
+//         position: absolute !important;
+//         width: 8px !important;
+//         height: 1.5px !important;
+//         border-radius: 1px !important;
+//         top: 50% !important;
+//         right: 14px !important;
+//         left: auto !important;
+//         border: 1px solid var(--color-white) !important;
+
+//         -webkit-transform: scale(0.96, 0.8) rotate(50deg);
+//         -ms-transform: scale(0.96, 0.8) rotate(50deg);
+//         transform: scale(0.96, 0.8) rotate(50deg);
+//     }
+// }

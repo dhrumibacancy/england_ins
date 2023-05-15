@@ -171,4 +171,14 @@
   /* identical to box height, or 156% */
   color: var(--color-dark-blue);
 }
+
+.acnt-btn {
+  min-width: 225px !important;
+}
+
+.menuitemshow {
+  opacity: 0.4;
+  cursor: not-allowed;
+  pointer-events: none;
+}
 /*# sourceMappingURL=other-pages.css.map */
