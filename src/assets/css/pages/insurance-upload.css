@@ -153,7 +153,7 @@
   background: #E6F1F9;
 }
 .upload-box .radio-switch-state p.ins-title {
-  font-size: 12px;
+  font-size: 14px;
   line-height: 18px;
   font-weight: 500;
 }
@@ -236,7 +236,7 @@
   font-weight: 500;
 }
 
-@media only screen and (min-width: 1400px) {
+@media only screen and (min-width: 1550px) {
   .upload-btn {
     height: 50px;
     font-size: 15px;
@@ -262,6 +262,7 @@
   }
   .content h3.title {
     font-size: 34px;
+    line-height: 45px;
   }
 }
 /*# sourceMappingURL=insurance-upload.css.map */

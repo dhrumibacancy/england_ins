@@ -201,6 +201,12 @@
   .white-box {
     padding: 15px 10px;
   }
+  .upload-boxx {
+    margin: 0 !important;
+  }
+  .progress-round.progress-vs {
+    position: relative;
+  }
 }
 @media only screen and (min-width: 1400px) {
   .contain-wrapper-sm {

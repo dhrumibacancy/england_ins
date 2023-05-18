@@ -383,11 +383,14 @@ main {
 
     }
 
-    .container {
-        -webkit-padding-start: 0.7375rem;
-        padding-inline-start: 0.7375rem;
-        -webkit-padding-end: 0.7375rem;
-        padding-inline-end: 0.7375rem;
+    // .container {
+    //     -webkit-padding-start: 0.7375rem;
+    //     padding-inline-start: 0.7375rem;
+    //     -webkit-padding-end: 0.7375rem;
+    //     padding-inline-end: 0.7375rem;
+    // }
+    .accordion-body {
+        padding: 1rem 1.05rem;
     }
 
     .fs-18 {

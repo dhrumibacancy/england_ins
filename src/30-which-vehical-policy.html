@@ -299,7 +299,10 @@
                                 </div>
 
                                 <div class="mt-4 white-box">
-                                    <h4 class="title fs-22 mb-3">Select Coverage Level</h4>
+                                    <h4 class="title fs-22 mb-3 d-flex align-items-center justify-content-start">
+                                        Coverage Level <a class="ms-3" href="#" data-bs-toggle="modal"
+                                            data-bs-target="#videoModal"><img src="images/info.svg" alt="Add"
+                                                class="icon" /></a></h4>
                                     <div class="row g-3">
                                         <div class="col-sm-4">
                                             <label class="radio-inline w-100" for="low">
@@ -413,6 +416,38 @@
                     <button class="btn btn-primary" data-bs-dismiss="modal"><span
                             class="position-relative">Save</span></button>
                 </div>
+            </div>
+
+        </div>
+
+    </div>
+    <div class="modal fade" id="videoModal" tabindex="-1" aria-labelledby="videoModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="videoModalLabel">Modal title</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p class="mb-2 fs-16">Your are now in Custom Coverage Mode..Click Low, Medium or High to return </p>
+                    <div class=" justify-content-center mt-0">
+
+                        <!-- <div class="embed-responsive embed-responsive-16by9">
+                                    <iframe class="embed-responsive-item w-100 h-100 vh-100"
+                                        src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0" allowfullscreen></iframe>
+                                </div> -->
+
+                        <div class="embed-responsive embed-responsive-16by9 my-auto responsive-video position-relative">
+                            <video class="embed-responsive-item w-100" loop muted controls autoplay>
+                                <source src="https://www.w3schools.com/html/mov_bbb.mp4">
+                            </video>
+                            <div class="progress-round">22%</div>
+                        </div>
+
+                    </div>
+
+                </div>
+
             </div>
         </div>
     </div>

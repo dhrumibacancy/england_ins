@@ -97,9 +97,16 @@
 @media only screen and (max-width: 575px) {
 
     .white-box {
-
         padding: 15px 10px;
 
+    }
+
+    .upload-boxx {
+        margin: 0 !important;
+    }
+
+    .progress-round.progress-vs {
+        position: relative;
     }
 
 }

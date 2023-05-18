@@ -597,11 +597,8 @@ main .main-wrapper p {
     font-size: 13px;
     line-height: 16px;
   }
-  .container {
-    -webkit-padding-start: 0.7375rem;
-    padding-inline-start: 0.7375rem;
-    -webkit-padding-end: 0.7375rem;
-    padding-inline-end: 0.7375rem;
+  .accordion-body {
+    padding: 1rem 1.05rem;
   }
   .fs-18 {
     font-size: 15px !important;
@@ -721,6 +718,12 @@ main .main-wrapper p {
   .white-box {
     padding: 15px 10px;
   }
+  .upload-boxx {
+    margin: 0 !important;
+  }
+  .progress-round.progress-vs {
+    position: relative;
+  }
 }
 @media only screen and (min-width: 1400px) {
   .contain-wrapper-sm {
@@ -772,7 +775,7 @@ main .main-wrapper p {
   background: #E6F1F9;
 }
 .upload-box .radio-switch-state p.ins-title {
-  font-size: 12px;
+  font-size: 14px;
   line-height: 18px;
   font-weight: 500;
 }
@@ -855,7 +858,7 @@ main .main-wrapper p {
   font-weight: 500;
 }
 
-@media only screen and (min-width: 1400px) {
+@media only screen and (min-width: 1550px) {
   .upload-btn {
     height: 50px;
     font-size: 15px;
@@ -881,6 +884,7 @@ main .main-wrapper p {
   }
   .content h3.title {
     font-size: 34px;
+    line-height: 45px;
   }
 }
 .remove {
