@@ -383,7 +383,8 @@
                                         </div>
                                     </div>
                                     <div class="mt-3">
-                                        <label class="radio-box button-style w-100" for="Coverage">
+                                        <label class="radio-box button-style w-100" for="Coverage"
+                                            data-bs-toggle="modal" data-bs-target="#coverageModal">
                                             <input class="radio-box-control" type="checkbox" name="Customize" value=""
                                                 id="Coverage">
                                             <span class="radio-box-custom">
@@ -541,7 +542,7 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <p class="mb-2 fs-16">Your are now in Custom Coverage Mode..Click Low, Medium or High to return </p>
+
                     <div class=" justify-content-center mt-0">
 
                         <!-- <div class="embed-responsive embed-responsive-16by9">
@@ -557,6 +558,20 @@
                         </div>
 
                     </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="coverageModal" tabindex="-1" aria-labelledby="coverageModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+
+                <div class="modal-body p-3 text-center">
+                    <p class=" fs-16 my-4">You are now in Custom Coverage Mode. Click Low, Medium or High to return
+                    </p>
+
 
                 </div>
 
