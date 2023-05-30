@@ -1,0 +1,95 @@
+@use "../utils/"as *;
+
+.price-box {
+
+
+    .radio-check-switch {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .form-item {
+            width: 250px;
+            height: auto;
+
+            .radio-switch-state {
+                margin: 32px 0;
+                padding: 2.3rem 1.5rem;
+
+                .price-ul {
+                    margin-top: 32px;
+                    font-size: 14px;
+                    line-height: 23px;
+
+                    margin-bottom: 0;
+                    color: #22305D !important;
+
+                    li {
+                        font-size: 13px;
+                        margin-bottom: 0;
+                        color: #22305D !important;
+                    }
+                }
+
+                .btn-primary {
+                    margin-top: 52px;
+                }
+            }
+        }
+
+        .vs-box {
+            width: 50px;
+            height: 47px;
+            margin: 0 21px;
+
+            .progress-round {
+                position: relative;
+                width: 50px;
+                height: 47px;
+            }
+        }
+    }
+}
+
+
+
+@media screen and (max-width: 575px) {
+    .price-box {
+        .radio-check-switch {
+            flex-wrap: nowrap;
+            gap: 10px;
+            row-gap: 10px;
+
+
+
+            .form-item {
+                width: 240px;
+                height: auto;
+                height: auto !important;
+
+                .radio-switch-state {
+                    margin: 0;
+                    padding: 1.3rem 1rem !important;
+
+                    .price-ul {
+                        font-size: 13px;
+                        margin-top: 20px !important;
+                    }
+
+                    .btn-primary {
+                        margin-top: 40px !important;
+                    }
+                }
+
+            }
+
+            .vs-box {
+                display: none;
+            }
+
+            .amnt-monthly {
+                font-size: 24px;
+            }
+        }
+    }
+}

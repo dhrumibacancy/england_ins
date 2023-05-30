@@ -83,9 +83,15 @@
 
                             <select class="f-control f-dropdown" placeholder="Please choose 2">
                                 <option value=""> </option>
-                                <option value="1" data-image="./images/us_flag.svg">English
+                                <option value="1" selected="selected" data-image="./images/us_flag.svg">English
                                 </option>
-                                <option value="2" selected="selected" data-image="./images/us_flag.svg">English1
+                                <option value="2"
+                                    data-image="https://newenglandfamily.com/wp-content/plugins/polylang/flags/pt.png">
+                                    Português
+                                </option>
+                                <option value="3"
+                                    data-image="https://newenglandfamily.com/wp-content/plugins/polylang/flags/es.png">
+                                    Español
                                 </option>
 
                             </select>
@@ -161,101 +167,87 @@
                         </div>
                         <a class="text-blue ms-3 back-arrow" href="#"><i class="fa fa-arrow-left-long me-2"></i>BACK</a>
                     </div>
-                    <div class="container mt-5 pt-5">
+                    <div class="container mt-5 ">
                         <div class="text-center mb-4 user-info">
                             <img src="./images/user-person.svg" alt="" class="user-person mx-auto">
-                            <p class="user-welcome mt-2">Hey! My Name is Anne</p>
+                            <p class="user-welcome mt-2">We’re almost done!</p>
                         </div>
-                        <h3 class="title  text-center">How would you Like to Attach Your Policy </h3>
-                        <p class="sub-title mt-2  text-center">Please upload a copy of the pages that show the vehicles,
-                            drivers and coverage's</p>
-
-
-                        <div class="upload-box mt-3">
-                            <div class="radio-check-switch row">
-
-                                <div class="form-item col-md-6">
-                                    <label for="radio-switch-2-2">
-                                        <input type="file" id="radio-switch-2-2">
-                                        <div class="radio-switch-state m-0">
-                                            <img src="./images/upload.svg" class="mx-auto" />
-                                            <p class="ins-title">Upload or Drag & Drop</p>
-                                            <span class="icon-on"></span>
-                                        </div>
-                                    </label>
-                                </div>
-
-                                <div class="form-item col-md-6">
-                                    <label for="radio-switch-2-1">
-                                        <input type="file" id="radio-switch-2-1">
-                                        <div class="radio-switch-state m-0">
-                                            <img src="./images/scan.svg" class="mx-auto" />
-                                            <p class="ins-title">Take A Picture </p>
-                                            <span class="icon-on"></span>
-                                        </div>
-                                    </label>
-                                </div>
-
-
-                            </div>
-                        </div>
-
-                        <div class="upload-box mt-3">
-                            <div class="radio-check-switch row">
-
-                                <div class="form-item col-md-6">
-                                    <div class="uploaded-document-block m-0">
-                                        <div class="document-block">
-                                            <div class="document-thumb-block ">
-                                                <a href="#" class="btn-remove">
-                                                    <img src="images/icon-close-red.svg" alt="close" />
-                                                </a>
-                                                <img src="images/document.png" class="img-fluid mx-auto"
-                                                    alt="document" />
-                                            </div>
-                                            <p class="document-title">john_Policy_dpcuent.image</p>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="form-item col-md-6">
-                                    <label for="radio-switch-2-1">
-                                        <input type="radio" id="radio-switch-2-1">
-                                        <div class="radio-switch-state m-0">
-                                            <img src="./images/scan.svg" class="mx-auto" />
-                                            <p class="ins-title">Take A Picture </p>
-                                            <span class="icon-on"></span>
-                                        </div>
-                                    </label>
-                                </div>
-
-
-                            </div>
-                        </div>
-
-
+                        <h3 class="title  text-center">Congrats ! You saved $XXX on your renewal 🙂 </h3>
                         <div class="text-center">
-                            <label class="checkbox mx-auto" for="red">
-                                <input type="checkbox" name="color" checked value="red" id="red">
-                                <span class="checkmark"></span>
-                                Keep the current policy Limit
+                            <label class="checkbox-inline mt-3 w-auto text-center mx-auto" for="flexCheckDefault">
+                                <input class="checkbox-control" type="checkbox" value="" id="flexCheckDefault" checked>
+                                <span class="checkbox-custom"></span>
+                                <span class="checkbox-label fs-14   text-center">Keep original coverage's $480 monthly/
+                                    $1711 Yearly
+
+                                </span>
                             </label>
                         </div>
+                        <div class="row">
+                            <div class="price-box">
+                                <div class="radio-check-switch ">
+
+                                    <div class="form-item ">
 
 
 
 
+                                        <div class="radio-switch-state h-auto ">
+                                            <!-- <img src="./images/upload.svg" class="mx-auto" />
+                                            <p class="ins-title">Upload or Drag & Drop</p>
+                                            <span class="icon-on"></span> -->
+                                            <p class="amnt-monthly">$350/<span class="monthly-amnt fs-18">monthly</span>
+                                            </p>
+
+                                            <ul class="price-ul">
+                                                <li>$50,000 /$100.000</li>
+                                                <li> $1,000 Deductibles </li>
+                                            </ul>
+                                            <button type="submit" class="btn btn-primary  w-100"><span>Sign &
+                                                    Submit</span></button>
+
+                                            <img src="./images/plymouth-rock.svg" alt="" class="img-fluid mt-4">
+                                        </div>
+
+                                    </div>
+                                    <div class="vs-box">
+                                        <div class="progress-round progress-vs">Vs</div>
+                                    </div>
+
+                                    <div class="form-item ">
+                                        <div class="radio-switch-state h-auto">
+                                            <!-- <img src="./images/upload.svg" class="mx-auto" />
+                                            <p class="ins-title">Upload or Drag & Drop</p>
+                                            <span class="icon-on"></span> -->
+                                            <p class="amnt-monthly">$1350/<span
+                                                    class="monthly-amnt fs-18">monthly</span></p>
+
+                                            <ul class="price-ul">
+                                                <li>$50,000 /$100.000</li>
+                                                <li> $1,000 Deductibles </li>
+                                            </ul>
+                                            <button type="submit" class="btn btn-primary w-100"><span>Sign &
+                                                    Submit</span></button>
+
+                                            <img src="./images/plymouth-rock.svg" alt="" class="img-fluid mt-4">
+                                        </div>
+                                    </div>
 
 
-                        <div class="d-flex align-items-center justify-content-center my-4">
-                            <button type="submit" class="btn btn-primary   me-2"><span>Continue</span></button>
-
-
+                                </div>
+                            </div>
                         </div>
+
+
 
                     </div>
                 </div>
             </div>
+        </div>
+
+
+
+
         </div>
     </main>
     <script src="js/jquery.min.js"></script>
@@ -267,7 +259,13 @@
         integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous">
     </script>
     <script src="js/app.js"></script>
-
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#btn").click(function () {
+                $("#Create").toggle();
+            });
+        });
+    </script>
 </body>
 
 </html>

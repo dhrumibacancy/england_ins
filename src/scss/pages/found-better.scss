@@ -1,0 +1,120 @@
+@use "../utils/"as *;
+
+.price-table {
+    width: 60%;
+
+    margin: 0 auto;
+
+    table {
+        border: 1px solid var(--color-border-light);
+        border-radius: 8px;
+        border-collapse: separate;
+        border-spacing: 0;
+
+
+        th {
+            font-weight: 400;
+            border-bottom: 1px solid var(--color-border-light);
+            border-bottom-color: var(--color-border-light) !important;
+            width: 30%;
+            font-size: 14px;
+            line-height: 24px;
+
+            &.active {
+                background-color: var(--color-blue-light);
+                color: var(--color-blue);
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 28px;
+
+            }
+        }
+
+        td {
+            width: 60%;
+            font-size: 14px;
+            line-height: 24px;
+            border-bottom: 1px solid var(--color-border-light);
+            border-bottom-color: var(--color-border-light) !important;
+
+            &.active {
+                background-color: #E6F1F9;
+                color: var(--color-blue);
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 28px;
+
+            }
+        }
+    }
+}
+
+.msg-box {
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    /* Gray shades/Black-05 */
+
+    color: #999999;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 17px;
+    padding: 12px;
+    margin-top: 10px;
+    border: 1px solid #CCCCCC;
+    border-radius: 4px;
+    max-width: 659px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.table>:not(caption)>*>* {
+    padding: 0.75rem 0.9rem;
+}
+
+
+tr:first-child td:first-child {
+    border-top-left-radius: 10px;
+}
+
+
+tr:last-child td:first-child {
+    border-top-left-radius: 10px;
+}
+
+
+tr:first-child td:last-child {
+    border-top-right-radius: 10px;
+}
+
+
+tr:last-child td:last-child {
+    border-bottom-right-radius: 10px;
+}
+
+
+.tooltip {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 17px;
+    /* or 155% */
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #FFFFFF;
+
+}
+
+
+@media screen and (max-width: 600px) {
+    .price-table {
+        width: 100%;
+    }
+}

@@ -256,6 +256,7 @@ button {
   --color-blue-border:#99C4E5;
   --color-sucess:#01BF42;
   --color-dark-blue:#22305D;
+  --color-blue-shade:#F2F7FC;
   --color-primary-100:#016BBF;
   --grid-width:1400px;
   --gutter-gap:1.25rem;
@@ -352,6 +353,10 @@ body {
 
 .fs-22 {
   font-size: 22px;
+}
+
+.fs-20 {
+  font-size: 20px;
 }
 
 .fs-12 {
@@ -585,6 +590,10 @@ main .main-wrapper p {
     line-height: 20px;
   }
 }
+.fs-20 {
+  font-size: 17px;
+}
+
 @media only screen and (max-width: 575px) {
   .content .input-box {
     width: 100% !important;
@@ -597,6 +606,9 @@ main .main-wrapper p {
     font-size: 13px;
     line-height: 16px;
   }
+  .fs-20 {
+    font-size: 16px;
+  }
   .accordion-body {
     padding: 1rem 1.05rem;
   }
@@ -605,7 +617,7 @@ main .main-wrapper p {
   }
   .checkbox-label {
     margin-left: 0 !important;
-    font-size: 12px;
+    font-size: 13px;
   }
   .radio-label {
     font-size: 14px !important;
@@ -1008,9 +1020,281 @@ main .main-wrapper p {
   color: var(--color-black);
 }
 
+.flex-auto {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto;
+}
+
+.fs-30 {
+  font-size: 30px;
+}
+
+.remarket-tab p.sub-title {
+  font-size: 12px;
+}
+.remarket-tab div#v-pills-tab {
+  width: 204px;
+  margin-right: 24px !important;
+}
+.remarket-tab div#v-pills-tab .nav-link {
+  text-align: left;
+  font-size: 13px;
+  line-height: 18px;
+  height: 42px;
+  color: var(--color-black) !important;
+  font-weight: 500;
+  border-bottom: 1px solid #E6E6E6;
+}
+.remarket-tab div#v-pills-tab .nav-link.active {
+  background-color: var(--color-primary) !important;
+  color: var(--color-white) !important;
+  border-bottom: none;
+}
+.remarket-tab .blue-light-box {
+  background-color: var(--color-blue-shade) !important;
+  background: var(--color-blue-shade) !important;
+}
+
+.summary-data .checkbox-label {
+  min-width: 311px;
+}
+.summary-data .f-dropdown ul {
+  top: 20px;
+}
+.summary-data .f-dropdown > span {
+  height: 30px;
+  background: #F5F5F5;
+  border: 1px solid #CCCCCC;
+  border-radius: 5px;
+  color: var(--color-dark) !important;
+  font-size: 12px;
+}
+.summary-data .f-dropdown > span span {
+  color: var(--color-black);
+  font-weight: 500;
+}
+
+ul {
+  list-style-type: disc;
+}
+ul li {
+  color: var(--color-black) !important;
+  margin-bottom: 7px;
+}
+
+@media screen and (max-width: 1024px) {
+  .remarket-tab div#v-pills-tab {
+    width: auto;
+  }
+}
+@media screen and (max-width: 766px) {
+  .flex-column {
+    -webkit-box-orient: horizontal !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: row !important;
+            flex-direction: row !important;
+  }
+}
+@media screen and (max-width: 575px) {
+  .flex-column {
+    -webkit-box-orient: horizontal !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: row !important;
+            flex-direction: row !important;
+  }
+  .summary-data .checkbox-label {
+    min-width: 30%;
+  }
+  .upload-box {
+    width: auto;
+  }
+}
+.price-table {
+  width: 60%;
+  margin: 0 auto;
+}
+.price-table table {
+  border: 1px solid var(--color-border-light);
+  border-radius: 8px;
+  border-collapse: separate;
+  border-spacing: 0;
+}
+.price-table table th {
+  font-weight: 400;
+  border-bottom: 1px solid var(--color-border-light);
+  border-bottom-color: var(--color-border-light) !important;
+  width: 30%;
+  font-size: 14px;
+  line-height: 24px;
+}
+.price-table table th.active {
+  background-color: var(--color-blue-light);
+  color: var(--color-blue);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 28px;
+}
+.price-table table td {
+  width: 60%;
+  font-size: 14px;
+  line-height: 24px;
+  border-bottom: 1px solid var(--color-border-light);
+  border-bottom-color: var(--color-border-light) !important;
+}
+.price-table table td.active {
+  background-color: #E6F1F9;
+  color: var(--color-blue);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 28px;
+}
+
+.msg-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  /* Gray shades/Black-05 */
+  color: #999999;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 17px;
+  padding: 12px;
+  margin-top: 10px;
+  border: 1px solid #CCCCCC;
+  border-radius: 4px;
+  max-width: 659px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.table > :not(caption) > * > * {
+  padding: 0.75rem 0.9rem;
+}
+
+tr:first-child td:first-child {
+  border-top-left-radius: 10px;
+}
+
+tr:last-child td:first-child {
+  border-top-left-radius: 10px;
+}
+
+tr:first-child td:last-child {
+  border-top-right-radius: 10px;
+}
+
+tr:last-child td:last-child {
+  border-bottom-right-radius: 10px;
+}
+
+.tooltip {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 17px;
+  /* or 155% */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+@media screen and (max-width: 600px) {
+  .price-table {
+    width: 100%;
+  }
+}
+.price-box .radio-check-switch {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.price-box .radio-check-switch .form-item {
+  width: 250px;
+  height: auto;
+}
+.price-box .radio-check-switch .form-item .radio-switch-state {
+  margin: 32px 0;
+  padding: 2.3rem 1.5rem;
+}
+.price-box .radio-check-switch .form-item .radio-switch-state .price-ul {
+  margin-top: 32px;
+  font-size: 14px;
+  line-height: 23px;
+  margin-bottom: 0;
+  color: #22305D !important;
+}
+.price-box .radio-check-switch .form-item .radio-switch-state .price-ul li {
+  font-size: 13px;
+  margin-bottom: 0;
+  color: #22305D !important;
+}
+.price-box .radio-check-switch .form-item .radio-switch-state .btn-primary {
+  margin-top: 52px;
+}
+.price-box .radio-check-switch .vs-box {
+  width: 50px;
+  height: 47px;
+  margin: 0 21px;
+}
+.price-box .radio-check-switch .vs-box .progress-round {
+  position: relative;
+  width: 50px;
+  height: 47px;
+}
+
+@media screen and (max-width: 575px) {
+  .price-box .radio-check-switch {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    gap: 10px;
+    row-gap: 10px;
+  }
+  .price-box .radio-check-switch .form-item {
+    width: 240px;
+    height: auto;
+    height: auto !important;
+  }
+  .price-box .radio-check-switch .form-item .radio-switch-state {
+    margin: 0;
+    padding: 1.3rem 1rem !important;
+  }
+  .price-box .radio-check-switch .form-item .radio-switch-state .price-ul {
+    font-size: 13px;
+    margin-top: 20px !important;
+  }
+  .price-box .radio-check-switch .form-item .radio-switch-state .btn-primary {
+    margin-top: 40px !important;
+  }
+  .price-box .radio-check-switch .vs-box {
+    display: none;
+  }
+  .price-box .radio-check-switch .amnt-monthly {
+    font-size: 24px;
+  }
+}
 .navbar-toggler {
   background-image: url(/images/menu.svg);
   background-repeat: no-repeat;
+  border: none;
 }
 
 /* item list */
@@ -1506,7 +1790,7 @@ aside .sidebar .user-info {
 .btn {
   height: 48px;
   padding: 0 20px;
-  min-width: 140px;
+  min-width: 144px;
   font-family: "Roboto";
   text-transform: uppercase;
   font-size: 15px !important;
@@ -1652,6 +1936,7 @@ input:-webkit-autofill:active {
 .form-control {
   background: #FFFFFF;
   border: 1px solid var(--color-border-light);
+  font-family: "Roboto";
   border-radius: 4px;
   height: 45px;
   font-size: 0.9375rem;
@@ -1662,24 +1947,31 @@ input:-webkit-autofill:active {
 }
 .form-control::-webkit-input-placeholder {
   color: var(--color-light-gray);
+  font-family: "Roboto";
 }
 .form-control::-moz-placeholder {
   color: var(--color-light-gray);
+  font-family: "Roboto";
 }
 .form-control:-ms-input-placeholder {
   color: var(--color-light-gray);
+  font-family: "Roboto";
 }
 .form-control::-ms-input-placeholder {
   color: var(--color-light-gray);
+  font-family: "Roboto";
 }
 .form-control::placeholder {
   color: var(--color-light-gray);
+  font-family: "Roboto";
 }
 .form-control:-ms-input-placeholder {
   color: var(--color-light-gray);
+  font-family: "Roboto";
 }
 .form-control::-ms-input-placeholder {
   color: var(--color-light-gray);
+  font-family: "Roboto";
 }
 .form-control:focus {
   border: 1px solid var(--color-border-light);
@@ -2718,7 +3010,7 @@ label {
   }
 }
 .modal-dialog.modal-lg {
-  max-width: 659px;
+  max-width: 530px;
 }
 
 .owl-prev {

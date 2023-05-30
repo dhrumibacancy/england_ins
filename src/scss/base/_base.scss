@@ -74,6 +74,10 @@ body {
     font-size: 22px;
 }
 
+.fs-20 {
+    font-size: 20px;
+}
+
 .fs-12 {
     font-size: 12px;
 }
@@ -354,6 +358,10 @@ main {
     }
 }
 
+.fs-20 {
+    font-size: 17px;
+}
+
 @media only screen and (max-width: 575px) {
     .content {
         .input-box {
@@ -383,6 +391,10 @@ main {
 
     }
 
+    .fs-20 {
+        font-size: 16px;
+    }
+
     // .container {
     //     -webkit-padding-start: 0.7375rem;
     //     padding-inline-start: 0.7375rem;
@@ -401,7 +413,7 @@ main {
 
         margin-left: 0 !important;
 
-        font-size: 12px;
+        font-size: 13px;
     }
 
     .radio-label {

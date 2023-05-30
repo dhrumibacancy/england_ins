@@ -1,0 +1,218 @@
+/* custom main 
+ UnExpected King Tirth Shah */ 
+ 
+ /*flex cross browser mixin*/
+/*
+0px - 360px:		XS Phone
+360px - 576px: 		Phone
+576px - 768px: 		Tablet Portrait
+768px - 992px:		Tablet Landscape
+992px - 1200px: 	desktop
+1200px - 1920px:	normal Media queries
+1920px and up:  	Full HD
+
+
+// 1em = 16px
+
+	 359   =  	22.438em	
+	 576   =  	36em
+	 768   =	48em
+	 992   =	62em
+	 1200  =	75em
+	 1366  =	85.375em
+	 1400  =	87.5em
+	 1537  =	96.063em
+	 1560  =	97.5em
+	 1600  =	100em
+	 1680  =	105em
+	 1920  =	120em
+*/
+.navbar .navbar-toggler-icon {
+  width: auto;
+  height: auto;
+  margin-right: 30px;
+}
+.navbar .navbar-brand {
+  max-width: 70px;
+}
+.navbar .navbar-brand img {
+  width: 100%;
+}
+
+@media (min-width: 412px) {
+  @supports (display: grid) {
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-gap: 15px 15px;
+    }
+  }
+  .grid__items.grid1 {
+    grid-row: 4/4;
+  }
+  .grid__items.grid2 {
+    grid-column: 1/1;
+  }
+}
+@media (min-width: 576px) {
+  @supports (display: grid) {
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 15px 15px;
+    }
+  }
+  .grid__items.grid1 {
+    grid-row: 2/4;
+  }
+  .grid__items.grid2 {
+    grid-column: 1/3;
+  }
+}
+@media (min-width: 768px) {
+  @supports (display: grid) {
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 15px 15px;
+    }
+  }
+  .grid__items.grid1 {
+    grid-row: 1/4;
+  }
+  .grid__items.grid2 {
+    grid-column: 2/3;
+  }
+}
+@media (min-width: 992px) {
+  @supports (display: grid) {
+    .grid {
+      display: grid;
+      grid-template-columns: 320px 1fr 1fr;
+      grid-gap: 15px 15px;
+    }
+  }
+  .grid__items.grid1 {
+    grid-row: 1/3;
+  }
+  .grid__items.grid2 {
+    grid-column: 2/4;
+  }
+}
+@media (min-width: 1200px) {
+  @supports (display: grid) {
+    .grid {
+      display: grid;
+      grid-template-columns: 380px 1fr 1fr;
+      grid-gap: 30px 30px;
+    }
+  }
+}
+
+.price-table {
+  width: 60%;
+  margin: 0 auto;
+}
+.price-table table {
+  border: 1px solid var(--color-border-light);
+  border-radius: 8px;
+  border-collapse: separate;
+  border-spacing: 0;
+}
+.price-table table th {
+  font-weight: 400;
+  border-bottom: 1px solid var(--color-border-light);
+  border-bottom-color: var(--color-border-light) !important;
+  width: 30%;
+  font-size: 14px;
+  line-height: 24px;
+}
+.price-table table th.active {
+  background-color: var(--color-blue-light);
+  color: var(--color-blue);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 28px;
+}
+.price-table table td {
+  width: 60%;
+  font-size: 14px;
+  line-height: 24px;
+  border-bottom: 1px solid var(--color-border-light);
+  border-bottom-color: var(--color-border-light) !important;
+}
+.price-table table td.active {
+  background-color: #E6F1F9;
+  color: var(--color-blue);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 28px;
+}
+
+.msg-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  /* Gray shades/Black-05 */
+  color: #999999;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 17px;
+  padding: 12px;
+  margin-top: 10px;
+  border: 1px solid #CCCCCC;
+  border-radius: 4px;
+  max-width: 659px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.table > :not(caption) > * > * {
+  padding: 0.75rem 0.9rem;
+}
+
+tr:first-child td:first-child {
+  border-top-left-radius: 10px;
+}
+
+tr:last-child td:first-child {
+  border-top-left-radius: 10px;
+}
+
+tr:first-child td:last-child {
+  border-top-right-radius: 10px;
+}
+
+tr:last-child td:last-child {
+  border-bottom-right-radius: 10px;
+}
+
+.tooltip {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 17px;
+  /* or 155% */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+@media screen and (max-width: 600px) {
+  .price-table {
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=found-better.css.map */

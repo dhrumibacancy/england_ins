@@ -1,0 +1,46 @@
+@use "../utils/"as *;
+
+.flex-auto {
+    flex: 1 0 auto;
+}
+
+.fs-30 {
+    font-size: 30px;
+}
+
+.remarket-tab {
+    p.sub-title {
+        font-size: 12px;
+    }
+
+    div#v-pills-tab {
+        width: 204px;
+        margin-right: 24px !important;
+
+        .nav-link {
+            text-align: left;
+            font-size: 13px;
+            line-height: 18px;
+            height: 42px;
+
+            color: var(--color-black) !important;
+            font-weight: 500;
+            border-bottom: 1px solid #E6E6E6;
+
+
+            &.active {
+                background-color: var(--color-primary) !important;
+                color: var(--color-white) !important;
+                border-bottom: none;
+            }
+        }
+
+
+    }
+
+    .blue-light-box {
+        background-color: var(--color-blue-shade) !important;
+        background: var(--color-blue-shade) !important;
+
+    }
+}

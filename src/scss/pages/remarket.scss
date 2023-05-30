@@ -1,0 +1,65 @@
+@use "../utils/"as *;
+
+.summary-data {
+    .checkbox-label {
+        min-width: 311px;
+    }
+
+    .f-dropdown {
+        ul {
+
+            top: 20px;
+        }
+
+        >span {
+            height: 30px;
+            background: #F5F5F5;
+            border: 1px solid #CCCCCC;
+            border-radius: 5px;
+            color: var(--color-dark) !important;
+            font-size: 12px;
+
+            span {
+                color: var(--color-black);
+                font-weight: 500;
+            }
+        }
+    }
+}
+
+ul {
+    list-style-type: disc;
+
+    li {
+        color: var(--color-black) !important;
+        margin-bottom: 7px;
+    }
+}
+
+@media screen and (max-width:1024px) {
+    .remarket-tab div#v-pills-tab {
+        width: auto;
+    }
+}
+
+@media screen and (max-width:766px) {
+    .flex-column {
+        flex-direction: row !important;
+    }
+}
+
+@media screen and (max-width:575px) {
+    .flex-column {
+        flex-direction: row !important;
+    }
+
+    .summary-data {
+        .checkbox-label {
+            min-width: 30%;
+        }
+    }
+
+    .upload-box {
+        width: auto;
+    }
+}

@@ -12,7 +12,7 @@ input:-webkit-autofill:active {
     background: #FFFFFF;
     border: 1px solid var(--color-border-light);
 
-
+    font-family: 'Roboto';
     border-radius: 4px;
     height: 45px;
     @include toRem(font-size, 15);
@@ -23,14 +23,17 @@ input:-webkit-autofill:active {
 
     &::placeholder {
         color: var(--color-light-gray);
+        font-family: 'Roboto';
     }
 
     &:-ms-input-placeholder {
         color: var(--color-light-gray);
+        font-family: 'Roboto';
     }
 
     &::-ms-input-placeholder {
         color: var(--color-light-gray);
+        font-family: 'Roboto';
     }
 
     &:focus {
