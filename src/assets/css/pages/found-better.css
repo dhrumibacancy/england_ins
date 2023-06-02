@@ -142,7 +142,7 @@
   border-bottom-color: var(--color-border-light) !important;
 }
 .price-table table td.active {
-  background-color: #E6F1F9;
+  background-color: var(--color-blue-light) !important;
   color: var(--color-blue);
   font-weight: 500;
   font-size: 16px;
@@ -207,7 +207,7 @@ tr:last-child td:last-child {
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
-  color: #FFFFFF;
+  color: var(--color-white) !important;
 }
 
 @media screen and (max-width: 600px) {

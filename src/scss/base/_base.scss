@@ -264,7 +264,6 @@ main {
 
             .content {
                 padding-top: 40px;
-
             }
         }
 
@@ -272,9 +271,6 @@ main {
         .logo {
             position: relative;
 
-            // img {
-            //     height: 36px;
-            // }
         }
 
 
@@ -336,19 +332,14 @@ main {
     .content {
         h3 {
             &.title {
-
                 font-size: 23px;
                 line-height: 42px;
-
             }
         }
 
         p {
-
             &.sub-title {
-
                 font-size: 13px;
-
                 line-height: 20px;
 
             }

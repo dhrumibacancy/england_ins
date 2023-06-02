@@ -109,58 +109,52 @@
   }
 }
 
-.summary-data .checkbox-label {
-  min-width: 311px;
-}
-.summary-data .f-dropdown ul {
-  top: 20px;
-}
-.summary-data .f-dropdown > span {
-  height: 30px;
-  background: #F5F5F5;
-  border: 1px solid #CCCCCC;
-  border-radius: 5px;
-  color: var(--color-dark) !important;
-  font-size: 12px;
-}
-.summary-data .f-dropdown > span span {
-  color: var(--color-black);
-  font-weight: 500;
+.add-driver-block .radio-label {
+  font-size: 14px;
 }
 
-ul {
-  list-style-type: disc;
-}
-ul li {
-  color: var(--color-black) !important;
-  margin-bottom: 7px;
-}
-
-@media screen and (max-width: 1024px) {
-  .remarket-tab div#v-pills-tab {
-    width: auto;
-  }
-}
-@media screen and (max-width: 766px) {
-  .flex-column {
-    -webkit-box-orient: horizontal !important;
-    -webkit-box-direction: normal !important;
-        -ms-flex-direction: row !important;
-            flex-direction: row !important;
-  }
-}
 @media screen and (max-width: 575px) {
-  .flex-column {
-    -webkit-box-orient: horizontal !important;
-    -webkit-box-direction: normal !important;
-        -ms-flex-direction: row !important;
-            flex-direction: row !important;
+  .price-box .radio-check-switch {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    gap: 10px;
+    row-gap: 10px;
   }
-  .summary-data .checkbox-label {
-    min-width: 32%;
+  .price-box .radio-check-switch .form-item {
+    width: 240px;
+    height: auto;
+    height: auto !important;
   }
-  .upload-box {
-    width: auto;
+  .price-box .radio-check-switch .form-item .radio-switch-state {
+    margin: 0;
+    padding: 1rem 1rem !important;
+  }
+  .price-box .radio-check-switch .form-item .radio-switch-state .price-ul {
+    font-size: 13px;
+    margin-top: 15px !important;
+  }
+  .price-box .radio-check-switch .form-item .radio-switch-state .btn-primary {
+    margin-top: 28px !important;
+  }
+  .price-box .radio-check-switch .vs-box {
+    display: none;
+  }
+  .price-box .radio-check-switch .amnt-monthly {
+    font-size: 24px;
   }
 }
-/*# sourceMappingURL=remarket.css.map */
+@media screen and (max-width: 360px) {
+  .price-box .radio-check-switch .form-item {
+    width: 160px;
+    height: auto;
+    height: auto !important;
+  }
+}
+@media screen and (max-width: 340px) {
+  .price-box .radio-check-switch .form-item {
+    width: 145px;
+    height: auto;
+    height: auto !important;
+  }
+}
+/*# sourceMappingURL=add-vehicle.css.map */

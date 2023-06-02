@@ -1,22 +1,5 @@
 @use "../utils"as *;
 
-// header {
-//     background: var(--color-white);
-//     margin-top: 60px;
-
-//     .title-search {
-//         @include flexbox();
-//         @include align-items($value: center);
-//         @include justify-content($value: space-between);
-//         padding: 26px 0;
-//     }
-
-//     @include respond-above(md) {
-//         margin-top: 0;
-//     }
-
-
-// }
 
 .navbar-toggler {
     background-image: url(/images/menu.svg);

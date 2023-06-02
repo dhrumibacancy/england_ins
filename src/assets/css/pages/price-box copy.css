@@ -133,12 +133,12 @@
   font-size: 14px;
   line-height: 23px;
   margin-bottom: 0;
-  color: var(--color-dark-blue) !important;
+  color: #22305D !important;
 }
 .price-box .radio-check-switch .form-item .radio-switch-state .price-ul li {
   font-size: 13px;
   margin-bottom: 0;
-  color: var(--color-dark-blue) !important;
+  color: #22305D !important;
 }
 .price-box .radio-check-switch .form-item .radio-switch-state .btn-primary {
   margin-top: 52px;
@@ -198,4 +198,4 @@
     height: auto !important;
   }
 }
-/*# sourceMappingURL=price-box.css.map */
+/*# sourceMappingURL=price-box copy.css.map */

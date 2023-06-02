@@ -38,7 +38,8 @@
             border-bottom-color: var(--color-border-light) !important;
 
             &.active {
-                background-color: #E6F1F9;
+                background-color: var(--color-blue-light) !important;
+
                 color: var(--color-blue);
                 font-weight: 500;
                 font-size: 16px;
@@ -108,7 +109,8 @@ tr:last-child td:last-child {
     align-items: center;
     text-align: center;
 
-    color: #FFFFFF;
+    color: var(--color-white) !important;
+
 
 }
 
