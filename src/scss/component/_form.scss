@@ -230,6 +230,9 @@ label {
 
     &-inline {
         margin-bottom: 0;
+        display: flex;
+    align-items: center;
+    justify-content: flex-start;
     }
 
     &-control {
@@ -268,7 +271,7 @@ label {
         cursor: pointer;
     }
 }
-
+.radio-box-custom {width:100%;}
 .radio {
     position: relative;
 

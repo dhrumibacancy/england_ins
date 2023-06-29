@@ -1,0 +1,1286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="theme-color" content="#BE2530">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New England Insurance Policy</title>
+    <link rel="apple-touch-icon" sizes="57x57" href="./images/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="./images/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="./images/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="./images/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="./images/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="./images/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="./images/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="./images/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./images/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="./images/favicon//android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon//favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="./images/favicon//favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon//favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto+Serif:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@100;300;400;500;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <link rel="icon" href="images/favicon.png" type="image/gif" sizes="16x16">
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+
+<body>
+    <main>
+        <div class="wrapper">
+            <nav class="navbar bg-dark fixed-top">
+                <div class="container-fluid text-center">
+
+                    <div class="d-flex align-items-center justify-content-center">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                            data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <a class="navbar-brand d-none d-md-block" href="#"><img src="./images/logo.svg" alt=""></a>
+
+                    </div>
+                    <a class="navbar-brand d-md-none m-0" href="#"><img src="./images/logo.svg" alt=""></a>
+                    <div class="d-flex align-items-center justify-content-center">
+                        <!-- <select class="vodiapicker">
+                            <option value="en" class="test" data-thumbnail="./images/us_flag.svg">
+                                English</option>
+                            <option value="au"
+                                data-thumbnail="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/NYCS-bull-trans-B.svg/480px-NYCS-bull-trans-B.svg.png">
+                                Engllish </option>
+
+
+                        </select> -->
+
+                        <!-- <div class="lang-select me-3 pe-2">
+                            <button class="btn-select" value=""></button>
+                            <div class="b">
+                                <ul id="a"></ul>
+                            </div>
+                        </div> -->
+
+
+                        <!-- https://codepen.io/aaroniker/pen/XxBjKN?editors=0100-->
+
+                        <div class="f-group me-3 pe-2">
+
+                            <select class="f-control f-dropdown" placeholder="Please choose 2">
+                                <option value=""> </option>
+                                <option value="1" selected="selected" data-image="./images/us_flag.svg">English
+                                </option>
+                                <option value="2"
+                                    data-image="https://newenglandfamily.com/wp-content/plugins/polylang/flags/pt.png">
+                                    Português
+                                </option>
+                                <option value="3"
+                                    data-image="https://newenglandfamily.com/wp-content/plugins/polylang/flags/es.png">
+                                    Español
+                                </option>
+
+                            </select>
+                        </div>
+
+                        <img src="./images/message-question.svg" alt="" class="me-3 pe-2 nav-icon d-none d-md-block">
+                        <img src="./images/user.svg" alt="" class="nav-icon d-none d-md-block">
+                    </div>
+                    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
+                        aria-labelledby="offcanvasNavbarLabel">
+                        <div class="offcanvas-header">
+                            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                                <li class="nav-item ">
+                                    <a class="nav-link active text-left" aria-current="page" href="#"> <img
+                                            src="./images/message-question-blue.svg" alt=""
+                                            class="d-inline-block me-3 pe-2 nav-icon nav-icon-mob">
+                                        Help
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link  text-left" href="#">
+                                        <img src="./images/user-blue.svg" alt=""
+                                            class="nav-icon d-inline-block  nav-icon-mob">
+                                        User</a>
+                                </li>
+
+                            </ul>
+
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <div class="content-main">
+                <div class="content">
+
+                    <div class="container mt-5">
+
+                        <h3 class="title  text-center">If anything has changed update below, if not press continue </h3>
+                        <p class="sub-title mt-2  text-center">Every renewal we shop all carriers for you & make sure
+                            you’re always getting the best price , Don’t miss any discounts below : ) </p>
+                        <div class="d-flex align-items-start mt-5 remarket-tab flex-nowrap">
+                            <div>
+                                <p class="sub-title  text-left fs-12">Nick Name</p>
+                                <p class="text-black mt-0 fs-18 fw-500  text-left  pb-3">Select Cohen Cars</p>
+                                <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist"
+                                    aria-orientation="vertical">
+
+                                    <button class="nav-link active" id="v-pills-home-tab" data-bs-toggle="pill"
+                                        data-bs-target="#v-pills-home" type="button" role="tab"
+                                        aria-controls="v-pills-home" aria-selected="true">Discounts</button>
+                                    <button class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill"
+                                        data-bs-target="#v-pills-profile" type="button" role="tab"
+                                        aria-controls="v-pills-profile" aria-selected="false">Drivers</button>
+                                    <button class="nav-link" id="v-pills-messages-tab" data-bs-toggle="pill"
+                                        data-bs-target="#v-pills-messages" type="button" role="tab"
+                                        aria-controls="v-pills-messages"
+                                        aria-selected="false">Vehicles/Coverage</button>
+
+                                </div>
+                            </div>
+                            <div style="flex:auto;" class="tab-content" id="v-pills-tabContent">
+                                <div class="tab-pane fade show active flex-auto summary-data" id="v-pills-home" role="tabpanel"
+                                    aria-labelledby="v-pills-home-tab">
+                                    <h3 class="text-black mt-2 fs-30 fw-500  text-left  pb-3">Discounts</h3>
+                                    <div>
+                                        <form class="">
+                                            <div class="blue-light-box bg-white px-3 py-2">
+                                                <p class="text-black mt-2 fs-18 fw-500  text-left  pb-3">Add by
+                                                    selecting Yes </p>
+                                                <div
+                                                    class="d-flex align-items-center justify-content-start flex-wrap mb-2">
+                                                    <span class="checkbox-label fs-14 me-5">AAA Member</span>
+                                                    <div class="max-width-100">
+                                                        <select class="f-control f-dropdown" placeholder="Yes"
+                                                            id="multiple" class="js-states form-control" multiple>
+
+                                                            <option value="2">No
+                                                            </option>
+
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="d-flex align-items-center justify-content-start flex-wrap">
+                                                    <span class="checkbox-label fs-14 me-5">Home Insurance</span>
+                                                    <div class="max-width-100">
+                                                        <select class="f-control f-dropdown" placeholder="Yes"
+                                                            id="multiple" class="js-states form-control" multiple>
+
+                                                            <option value="2">No
+                                                            </option>
+
+                                                        </select>
+                                                    </div>
+                                                </div>
+
+                                                <div style="margin: inherit;" class="upload-box mt-3 p-0 bg-white">
+                                                    <div class="radio-check-switch ">
+
+                                                        <div class="form-item">
+                                                            <label for="radio-switch-2-2">
+                                                                <input type="file" name="radios-3"
+                                                                    id="radio-switch-2-2">
+                                                                <div style="flex-direction: row;"
+                                                                    class="m-0 h-auto p-3 upload-boxx radio-switch-state d-flex align-items-center justify-content-start flex-nowrap ">
+                                                                    <img src="./images/upload.svg" width="40" />
+                                                                    <p
+                                                                        class="ins-title position-unset ms-3 fs-15 ins-titlee">
+                                                                        Attach Picture or copy of Home Insurance policy
+                                                                    </p>
+                                                                    <span class="icon-on"></span>
+                                                                </div>
+                                                            </label>
+                                                        </div>
+
+
+
+                                                    </div>
+                                                </div>
+
+                                            </div>
+
+
+                                            <div class="blue-light-box bg-white px-3 py-2 mt-4">
+                                                <div
+                                                    class="d-flex align-items-center justify-content-between mt-2 pb-3">
+                                                    <p class="text-black  fs-18 fw-500  text-left">Already
+                                                        Have
+                                                    </p>
+                                                    <a href="#" class="edit-icon"> <img src="./images/edit.png"
+                                                            class="img-fluid " width=20 /></a>
+                                                </div>
+                                                <ul class="ms-4">
+                                                    <li>
+                                                        <div class="d-flex align-items-center">Pay in full Discounts
+                                                            <a href="" class="ms-2"><img style="display:none;"
+                                                                    src="images/delete.svg" class="img-fluid dlt-class"
+                                                                    width=12 /></a></div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="d-flex align-items-center">MA Association or Realtor
+                                                            Member
+                                                            <a href="" class="ms-2"><img style="display:none;"
+                                                                    src="images/delete.svg" class="img-fluid dlt-class"
+                                                                    width=12 /></a></div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="d-flex align-items-center">MA
+                                                            Youth Association Member
+                                                            <a href="" class="ms-2"><img style="display:none;"
+                                                                    src="images/delete.svg" class="img-fluid dlt-class"
+                                                                    width=12 /></a></div>
+                                                    </li>
+
+
+                                                </ul>
+
+                                            </div>
+
+
+                                            <!-- <a class="btn-add mt-3 ms-3" href="#">
+                                    <img src="images/add-pluse-circle.svg" alt="Add" class="icon" />
+                                    Add Vehicle
+                                </a> -->
+
+                                            <button type="submit"
+                                                class="btn btn-primary mx-auto mt-4"><span>Continue</span>
+                                            </button>
+                                        </form>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="v-pills-profile" role="tabpanel"
+                                    aria-labelledby="v-pills-profile-tab">
+                                    <h3 class="text-black mt-2 fs-30 fw-500  text-left  pb-3">Drivers</h3>
+                                    <div class="blue-light-box bg-white px-3 py-2 mt-2">
+                                        <div
+                                            class="d-flex align-items-center justify-content-between mt-2 pb-3">
+                                            <p class="text-black  fs-18 fw-500  text-left">Addresses
+                                            </p>
+                                            <a href="#" class="edit-icon"> <img src="./images/edit.png"
+                                                    class="img-fluid " width=20 /></a>
+                                        </div>
+                                    <div class="row align-items-center">
+                                        <div class="col-md-9 mb-3"><label class="text-black fw-400 fs-12 mb-0">Current Address</label> <input class="form-control " type="text"
+                                            placeholder="Address" value="105 Jerry Dove Drive, Florence, SC 29501" /></div>
+                                        <div class="col-md-3 mb-3"><label class="text-black fw-400 fs-12 mb-0">Live at same address for</label> <input class="form-control " type="text"
+                                            placeholder="Yeras" value="5" /></div>
+                                            </div>
+
+                                            <div class="row align-items-center mb-3">
+                                        <div class="col-md-9 "><label class="text-black fw-400 fs-12 mb-0">Mailing Address</label> <input class="form-control " type="text"
+                                            placeholder="Address" value="105 Jerry Dove Drive, Florence, SC 29501" /></div>
+                                        <div class="col-md-3 ">  <label class="checkbox-inline w-auto me-3 mb-0" for="Corina">
+                                            <input class="checkbox-control" type="checkbox" value="" id="Corina">
+                                            <span class="checkbox-custom"></span>
+                                            <span class="checkbox-label">Same as Current Address</span>
+                                        </label></div>
+                                        </div>
+
+                                        <div class="row align-items-center mb-3">
+
+                                        
+
+                                        <div class="col-md-9 align-items-center"><label class="text-black fw-400 fs-12 mb-0">Vehicle parking address</label> <input class="form-control " type="text"
+                                            placeholder="Vehicle parking address" value="105 Jerry Dove Drive, Florence, SC 29501" /></div>
+                                        <div class="col-md-3  align-items-center"><label class="checkbox-inline w-auto me-3 mb-0" for="Current">
+                                            <input class="checkbox-control" type="checkbox" value="" id="Current">
+                                            <span class="checkbox-custom"></span>
+                                            <span class="checkbox-label">Same as Current Address</span>
+                                        </label></div></div>
+
+
+                                        <div style="gap:10px;" class="d-flex flex-column flex-sm-row align-items-center justify-content-center my-3">
+                                     
+            
+                                            <button type="submit" class="btn btn-outline"><span>Cancel</span></button>
+                                            <button type="submit" class="btn btn-primary"><span>Save changes</span></button>
+                                        </div>
+                                    </div>
+                                
+                                <div class="accordion custom" id="accordionExample">
+                                    <div class="accordion-item mt-3">
+                                        <h2 class="accordion-header" id="headingOne">
+                                            <button class="accordion-button d-block collapsed" type="button"
+                                                data-bs-toggle="collapse" aria-expanded="false"
+                                                aria-controls="collapseOne" data-bs-target="#collapseOne">
+                                                <div
+                                                class="d-flex align-items-center justify-content-between mt-2 pb-0">
+                                                <p class="text-black  fs-18 fw-500  text-left">Frances Swann<span class="fs-12 text-blue ms-2">Applicant</span>
+                                                </p>
+                                                <a href="#" class="edit-icon"> <img src="./images/edit.png"
+                                                        class="img-fluid " width=20 /></a>
+                                            </div>
+                                  
+
+                                            </button>
+                                        </h2>
+                                        <div id="collapseOne" class="accordion-collapse collapse"
+                                            aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                            <div class="accordion-body pt-0">
+                                                <div class="row g-3">
+                                                    <div class="col-sm-4 col-md-4">
+                                                        <input class="form-control " type="text"
+                                                            placeholder="First Name" value="" />
+
+                                                    </div>
+                                                    <div class="col-sm-4  col-md-4">
+                                                        <input class="form-control " type="text"
+                                                            placeholder="Last Name" value="" />
+                                                    </div>
+
+                                                    
+                                                    <div class="col-sm-4 col-6 ">
+                                                        <div class="f-group max-width-100">
+
+                                                            <select class="f-control f-dropdown"
+                                                                placeholder="Marital Status" id="multiple"
+                                                                class="js-states form-control" multiple>
+                                                                <option value="">Relation to Applicant</option>
+                                                                <option value="1">Relation to Applicant
+                                                                </option>
+                                                                <option value="2">Married
+                                                                </option>
+
+                                                            </select>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="col-sm-4 ">
+                                                        <input class="form-control date-control" type="text"
+                                                            onfocus="(this.type='date')" id="date"
+                                                            placeholder="Birth Date" value="" />
+                                                    </div>
+
+                                                    <div class="col-sm-4 col-6 ">
+                                                        <div class="f-group max-width-100">
+                                                            <input class="form-control addPrefer" type="text"
+                                                            placeholder="License Number" value="" />
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm-4 col-6">
+                                                        <input class="form-control addPrefer" type="text"
+                                                            placeholder="Aged 1st Licensed" value="" />
+                                                    </div>
+
+                                                    <div class="col-sm-6 col-6">
+                                                        <div class="f-group max-width-100">
+
+                                                            <select class="f-control f-dropdown" placeholder="State"
+                                                                id="multiple" class="js-states form-control" multiple>
+                                                                <option value="">Alaska</option>
+                                                                <option value="1" >Alaska
+                                                                </option>
+                                                                <option value="2">Married
+                                                                </option>
+
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm-6 col-6">
+                                                        <div class="f-group max-width-100">
+
+                                                            <select class="f-control f-dropdown" placeholder="Country"
+                                                                id="multiple" class="js-states form-control" multiple>
+                                                                <option value="">United Status</option>
+                                                                <option value="1" >United Status
+                                                                </option>
+                                                                <option value="2">Married
+                                                                </option>
+
+                                                            </select>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="d-flex">
+                                                        <label class="radio-inline w-auto me-4" for="us2">
+                                                            <input class="radio-control" type="radio" name="country2"
+                                                                value="" id="us2" checked>
+                                                            <span class="radio-custom"></span>
+                                                            <span class="radio-label">Defer</span>
+                                                        </label>
+                                                        <label class="radio-inline w-auto" for="other2">
+                                                            <input class="radio-control" type="radio" name="country2"
+                                                                value="" id="other2">
+                                                            <span class="radio-custom"></span>
+                                                            <span class="radio-label">Exclude </span>
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <hr style="height:0.4px" class="my-4">
+                                                <p class="text-black  fs-18 fw-500  text-left mb-3">Violation Details
+                                                </p>
+                                                <div class="row g-3 align-items-center">
+                                                    <div class="col-sm-7">
+                                                        <div class="f-group max-width-100">
+    
+                                                            <div class="f-dropdown selectDropdown filled"><select
+                                                                    class="f-control f-dropdown"
+                                                                    placeholder="Select Driver’s Violation" id="multiple"
+                                                                    multiple="">
+                                                                    <option value="">Relation to Applicant</option>
+                                                                    <option value="1">Relation to Applicant
+                                                                    </option>
+                                                                    <option value="2">Married
+                                                                    </option>
+    
+                                                                </select>
+    
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm-4 col-10">
+                                                        <input class="form-control addPrefer" type="text"
+                                                            placeholder="How many times" value="1" />
+                                                    </div>
+                                                    <div class="col-sm-1 col-2"><a href="#" class="btn-closee">
+                                                            <img src="images/close.svg" alt="close">
+                                                        </a></div>
+                                                    <div class="col-sm-7">
+                                                        <div class="f-group max-width-100">
+    
+                                                            <div class="f-dropdown selectDropdown filled"><select
+                                                                    class="f-control f-dropdown"
+                                                                    placeholder="Select Driver’s Violation" id="multiple"
+                                                                    multiple="">
+                                                                    <option value="">Relation to Applicant</option>
+                                                                    <option value="1">Other Violation
+                                                                    </option>
+                                                                    <option value="2" selected>Other Violation
+                                                                    </option>
+    
+                                                                </select>
+    
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm-4 col-10">
+                                                        <input class="form-control addPrefer" type="text"
+                                                            placeholder="How many times" value="1" />
+                                                    </div>
+    
+                                                    <div class="col-sm-1 col-2"><a href="#" class="btn-closee">
+                                                            <img src="images/close.svg" alt="close">
+                                                        </a></div>
+                                                    <div class="col-12">
+                                                        <input class="form-control addPrefer" type="text"
+                                                            placeholder="Any other violation type enter by user" />
+                                                    </div>
+    
+                                                    <div>
+                                                        <button type="button" class="btn-add mt-0 add-driver">
+                                                            <img src="images/add-pluse-circle.svg" alt="Add" class="icon">
+                                                            Add Violation
+                                                        </button>
+                                                    </div>
+    
+    
+                                                </div>
+                                                <hr style="height:0.4px" class="my-4">
+
+
+                                              
+
+                                               
+
+
+                                                <p class="text-black  fs-18 fw-500  text-left mb-2">Driver’s Grade
+                                                </p>
+                                                <div class="d-flex align-items-center justify-content-start">
+                                                    <div>
+                                                        <label class="radio-inline w-100" for="low">
+                                                            <input class="radio-box-control" type="radio" name="Level" value=""
+                                                                id="low" checked>
+                                                            <span class="radio-box-custom">YES</span>
+                                                        </label>
+                                                    </div>
+                                                    <div class="ms-3">
+                                                        <label class="radio-box w-100" for="medium">
+                                                            <input class="radio-box-control" type="radio" name="Level" value=""
+                                                                id="medium">
+                                                            <span class="radio-box-custom">NO</span>
+                                                        </label>
+                                                    </div>
+                                                    <div style="margin: inherit;" class="upload-box  p-0 bg-white ms-3">
+                                                        <div class="radio-check-switch ">
+    
+                                                            <div class="form-item">
+                                                                <label for="radio-switch-2-2">
+                                                                    <input type="file" name="radios-3"
+                                                                        id="radio-switch-2-2">
+                                                                    <div style="flex-direction: row;"
+                                                                        class="m-0 h-auto p-3 upload-boxx radio-switch-state d-flex align-items-center justify-content-start flex-nowrap ">
+                                                                        <img src="./images/upload.svg" width="40" />
+                                                                        <p
+                                                                            class="ins-title position-unset ms-3 fs-15 ins-titlee">
+                                                                            Click to upload report card
+                                                                        </p>
+                                                                        <span class="icon-on"></span>
+                                                                    </div>
+                                                                </label>
+                                                            </div>
+    
+    
+    
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12">
+                                                    <div style="gap:10px;" class="d-flex flex-column flex-sm-row align-items-center justify-content-center my-3">
+                                     
+            
+                                                        <button type="submit" class="btn btn-outline"><span>Cancel</span></button>
+                                                        <button type="submit" class="btn btn-primary"><span>Save changes</span></button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                                <!-- <div class="row g-3 mt-0">
+                                                    <div class="col-sm-4">
+                                                        <input class="form-control " type="text"
+                                                            placeholder="First Name" value="Rodger " />
+                                                        <input class="form-control d-md-none" type="text"
+                                                            placeholder="Last Name" value=" Struck" />
+                                                    </div>
+                                                    <div class="col-sm-4 d-none d-md-block ">
+                                                        <input class="form-control " type="text" placeholder="Last Name"
+                                                            value=" Struck" />
+                                                    </div>
+                                                    <div class="col-sm-4">
+                                                        <input class="form-control addPrefer" type="text"
+                                                            placeholder="License Number" value="7088138989" />
+                                                    </div>
+
+                                                    <div class="col-sm-4">
+                                                        <input class="form-control date-control" type="text"
+                                                            onfocus="(this.type='date')" id="date"
+                                                            placeholder="Birth Date" value="Mar 4, 1992" />
+                                                    </div>
+
+                                                    <div class="col-sm-4 col-6">
+                                                        <div class="f-group max-width-100">
+
+                                                            <select class="f-control f-dropdown"
+                                                                placeholder="Relation to Applicant" id="multiple"
+                                                                class="js-states form-control" multiple>
+                                                                <option value="">Relation to Applicant</option>
+                                                                <option value="1" selected>Relation to Applicant
+                                                                </option>
+                                                                <option value="2">Married
+                                                                </option>
+
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm-4 col-6">
+                                                        <input class="form-control addPrefer" type="text"
+                                                            placeholder="Aged 1st Licensed" value="Aged 1st Licensed" />
+                                                    </div>
+
+                                                    <div class="col-sm-6 col-6">
+                                                        <div class="f-group max-width-100">
+
+                                                            <select class="f-control f-dropdown" placeholder="Country"
+                                                                id="multiple" class="js-states form-control" multiple>
+                                                                <option value="">Alaska</option>
+                                                                <option value="1" selected>Alaska
+                                                                </option>
+                                                                <option value="2">Married
+                                                                </option>
+
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm-6 col-6">
+                                                        <div class="f-group max-width-100">
+
+                                                            <select class="f-control f-dropdown" placeholder="Country"
+                                                                id="multiple" class="js-states form-control" multiple>
+                                                                <option value="">United Status</option>
+                                                                <option value="1" selected>United Status
+                                                                </option>
+                                                                <option value="2">Married
+                                                                </option>
+
+                                                            </select>
+                                                        </div>
+                                                    </div>
+
+
+                                                </div> -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="accordion-item mt-3">
+                                        <h2 class="accordion-header" id="headingThree">
+                                            <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#collapseThree"
+                                                aria-expanded="false" aria-controls="collapseThree">
+                                                <h4 class="title fs-18">Mary Freund</h4>
+                                                <a href="#" class="edit-icon">
+                                                    <img src="images/edit.png" alt="edit" width="20" />
+                                                </a>
+                                            </button>
+                                        </h2>
+                                        <div id="collapseThree" class="accordion-collapse collapse"
+                                            aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                            <div class="accordion-body pt-0">
+                                               Accordion body
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="accordion-item mt-3">
+                                        <h2 class="accordion-header" id="headingFour">
+                                            <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#collapseFour"
+                                                aria-expanded="false" aria-controls="collapseFour">
+                                                <h4 class="title fs-18">Eddie Lake</h4>
+                                                <a href="#" class="edit-icon">
+                                                    <img src="images/edit.png" alt="edit" width="20" />
+                                                </a>
+                                            </button>
+                                        </h2>
+                                        <div id="collapseFour" class="accordion-collapse collapse"
+                                            aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                                            <div class="accordion-body pt-0">
+                                               Accordion body
+                                            </div>
+                                        </div>
+                                    </div>
+                                   
+
+                                    <div class="accordion-item mt-3">
+                                        <h2 class="accordion-header" id="headingFive">
+                                            <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#collapseFive"
+                                                aria-expanded="false" aria-controls="collapseFive">
+                                                <h4 class="title fs-18">Katie Sims</h4>
+                                                <a href="#" class="edit-icon">
+                                                    <img src="images/edit.png" alt="edit" width="20" />
+                                                </a>
+                                            </button>
+                                        </h2>
+                                        <div id="collapseFive" class="accordion-collapse collapse"
+                                            aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+                                            <div class="accordion-body pt-0">
+                                               Accordion body
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 mt-5">
+                                    <div style="gap:10px;" class="d-flex flex-column align-items-center justify-content-center my-3">
+                                        <label class="checkbox-inline w-auto mb-3" for="Corina">
+                                            <input class="checkbox-control" type="checkbox" value="" id="Corina">
+                                            <span class="checkbox-custom"></span>
+                                            <span class="checkbox-label">I agree to all Terms & Conditions</span>
+                                        </label>
+                                        <button type="submit" class="btn btn-primary"><span>Get the Best Prices</span></button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="tab-pane fade" id="v-pills-messages" role="tabpanel"
+                            aria-labelledby="v-pills-messages-tab">
+                            <h3 class="text-black mt-2 fs-30 fw-500  text-left  pb-3">Drivers</h3>
+                            <div class="mt-4 blue-light-box bg-white px-3 py-2 mt-4">
+                                <div class="d-flex align-items-center justify-content-between mt-2 pb-3">
+                                    <p class="text-black  fs-18 fw-500  text-left">Coverage Level
+                                    </p>
+                                    <a href="#" class="edit-icon"> <img src="./images/edit.png" class="img-fluid " width="20"></a>
+                                </div>
+                                <div class="row g-3">
+                                    <div class="col-sm-4">
+                                        <label class="radio-inline w-100" for="low">
+                                            <input class="radio-box-control" type="radio" name="Level" value=""
+                                                id="low" checked>
+                                            <span class="radio-box-custom">LOW</span>
+                                        </label>
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <label class="radio-box w-100" for="medium">
+                                            <input class="radio-box-control" type="radio" name="Level" value=""
+                                                id="medium">
+                                            <span class="radio-box-custom">MEDIUM</span>
+                                        </label>
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <label class="radio-box w-100" for="high">
+                                            <input class="radio-box-control" type="radio" name="Level" value=""
+                                                id="high">
+                                            <span class="radio-box-custom">HIGH</span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="mt-3">
+                                    <label class="radio-box button-style w-100 mb-3" for="Coverage"
+                                        data-bs-toggle="modal" data-bs-target="#coverageModal">
+                                        <input class="radio-box-control" type="checkbox" name="Customize" value=""
+                                            id="Coverage">
+                                        <span class="radio-box-custom">
+                                            <img src="images/configure-icon.svg" class="me-2" />
+                                            Customize Coverage
+                                        </span>
+                                    </label>
+                                    <div class="customize-options mt-3">
+
+                                        <div class="my-4">
+                                            <div class="d-flex justify-content-between mb-2">
+                                                <div>
+                                                    <h5 class="fs-16">
+                                                        Limits
+                                                    </h5>
+
+                                                    <h5 class="fs-12">20/40 Bodily Injury &amp; Personal Injury
+                                                        already
+                                                        included
+                                                    </h5>
+                                                    
+                                                </div>
+                                                <label class="checkbox-inline w-auto me-3  mb-2"
+                                                    for="flexCheckDefault212">
+                                                    <input class="checkbox-control" type="checkbox" value=""
+                                                        id="flexCheckDefault212" checked="">
+                                                    <span class="checkbox-custom"></span>
+                                                    <span class="checkbox-label">Apply to all Vehicles</span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="row g-3">
+                                            <div class="col-sm-3">
+                                                <div class="f-group max-width-100">
+
+                                                    <select class="f-control f-dropdown"
+                                                        placeholder="Optional Bodily Injury" id="multiple"
+                                                        class="js-states form-control" multiple>
+                                                        <option value="">Towing & Labor</option>
+                                                        <option value="1">United Status
+                                                        </option>
+                                                        <option value="2">Married
+                                                        </option>
+
+                                                    </select>
+                                                </div>
+
+                                            </div>
+                                            <div class="col-sm-3">
+                                                <div class="f-group max-width-100">
+
+                                                    <select class="f-control f-dropdown"
+                                                        placeholder="Medical Payments" id="multiple"
+                                                        class="js-states form-control" multiple>
+                                                        <option value="">Towing & Labor</option>
+                                                        <option value="1">United Status
+                                                        </option>
+                                                        <option value="2">Married
+                                                        </option>
+
+                                                    </select>
+                                                </div>
+
+                                            </div>
+                                            <div class="col-sm-3">
+                                                <div class="f-group max-width-100">
+
+                                                    <select class="f-control f-dropdown"
+                                                        placeholder="Property Damage" id="multiple"
+                                                        class="js-states form-control" multiple>
+                                                        <option value="">Towing & Labor</option>
+                                                        <option value="1">United Status
+                                                        </option>
+                                                        <option value="2">Married
+                                                        </option>
+
+                                                    </select>
+                                                </div>
+
+                                            </div>
+                                            <div class="col-sm-3">
+                                                <div class="f-group max-width-100">
+
+                                                    <select class="f-control f-dropdown"
+                                                        placeholder="Un /Under Insured" id="multiple"
+                                                        class="js-states form-control" multiple>
+                                                        <option value="">Towing & Labor</option>
+                                                        <option value="1">United Status
+                                                        </option>
+                                                        <option value="2">Married
+                                                        </option>
+
+                                                    </select>
+                                                </div>
+
+                                            </div>
+
+
+                                        </div>
+
+                                        <div style="gap:10px;" class="mt-3 d-flex flex-column flex-sm-row align-items-center justify-content-center my-3">
+                                     
+            
+                                            <button type="submit" class="btn btn-outline"><span>Cancel</span></button>
+                                            <button type="submit" class="btn btn-primary"><span>Save changes</span></button>
+                                        </div>
+
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion custom mt-4" id="accordionExample2">
+
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingTwo">
+                                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#vehiclecollapseTwo" aria-expanded="true"
+                                            aria-controls="collapseTwo">
+                                            <h4 class="title fs-18 d-flex align-items-center">2022 Honda Civic <a href="#" class="info ms-2" >
+                                                <img src="images/info.svg" alt="info" />
+                                            </a></h4>
+                                           
+                                        </button>
+                                    </h2>
+                                    <div id="vehiclecollapseTwo" class="accordion-collapse collapse show"
+                                        aria-labelledby="headingTwo" data-bs-parent="#accordionExample2">
+                                        <div class="accordion-body pt-0">
+                                            <div class="row g-3">
+                                                <div class="col-sm-4">
+                                                    <input class="form-control " type="text"
+                                                        placeholder="Vehicle Name" />
+                                                </div>
+                                                <div class="col-sm-4">
+                                                    <input class="form-control addPrefer" type="text"
+                                                        placeholder="VIN Number" />
+                                                </div>
+                                                <div class="col-sm-4">
+                                                    <input class="form-control addPrefer" type="text"
+                                                        placeholder="Miles Driven Yearly" />
+                                                </div>
+
+                                                <div class="col-sm-4">
+                                                    <div class="f-group max-width-100">
+
+                                                        <select class="f-control f-dropdown"
+                                                            placeholder="Who’s Driving the Most" id="multiple"
+                                                            class="js-states form-control" multiple>
+                                                            <option value="">Towing & Labor</option>
+                                                            <option value="1">United Status
+                                                            </option>
+                                                            <option value="2">Married
+                                                            </option>
+
+                                                        </select>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-12">
+                                                    <label class="checkbox-inline mb-3 w-auto" for="flexCheckDefault">
+                                                        <input class="checkbox-control" type="checkbox" value=""
+                                                            id="flexCheckDefault" checked>
+                                                        <span class="checkbox-custom"></span>
+                                                        <span class="checkbox-label fs-12 fw-bold">Towing & Roadside assistance
+                                                        </span>
+                                                    </label>
+                                                </div>
+                                                <div class="col-12">
+                                                    <h5 class="fs-12 fw-500">Which coverage would you like</h5>
+                                                    <div class="d-flex">
+                                                        <label class="radio-box w-auto me-4" for="full">
+                                                            <input class="radio-box-control" type="radio"
+                                                                name="country2" value="" id="full" checked>
+                                                            <span class="radio-box-custom">FULL</span>
+                                                        </label>
+                                                        <label class="radio-box w-auto" for="basic">
+                                                            <input class="radio-box-control" type="radio"
+                                                                name="country2" value="" id="basic">
+                                                            <span class="radio-box-custom">BASIC </span>
+                                                        </label>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-12">
+                                                    <h5 class="fs-12 fw-500">Is this vehicles being Financed or leased</h5>
+                                                    <div class="d-flex">
+                                                        <label class="radio-box w-auto me-4" for="full">
+                                                            <input class="radio-box-control" type="radio"
+                                                                name="country2" value="" id="full" checked>
+                                                            <span class="radio-box-custom">YES</span>
+                                                        </label>
+                                                        <label class="radio-box w-auto" for="basic">
+                                                            <input class="radio-box-control" type="radio"
+                                                                name="country2" value="" id="basic">
+                                                            <span class="radio-box-custom">NO </span>
+                                                        </label>
+                                                    </div>
+                                                </div>
+
+                                                <h5 class="fs-12 fw-600">Deductibles</h5>
+                                                <div class="col-sm-6 mt-0 pt-0">
+                                                    <div class="f-group max-width-100">
+
+                                                        <select class="f-control f-dropdown"
+                                                            placeholder=" Limited Collison" id="multiple"
+                                                            class="js-states form-control" multiple>
+                                                            <option value="">Limited Collison</option>
+                                                            <option value="1">Limited Collison
+                                                            </option>
+                                                            <option value="2">Married
+                                                            </option>
+
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-6 mt-0 pt-0">
+                                                    <div class="f-group max-width-100">
+                                                        <select class="f-control f-dropdown"
+                                                            placeholder="Rental Car" id="multiple"
+                                                            class="js-states form-control" multiple>
+                                                            <option value="">Rental Car</option>
+                                                            <option value="1">United Status
+                                                            </option>
+                                                            <option value="2">Married
+                                                            </option>
+
+                                                        </select>
+                                                    </div>
+                                                </div>
+
+
+                                                
+                                                <h5 class="fs-12 fw-600">Limits</h5>
+                                                <div class="col-sm-6 mt-0 pt-0">
+                                                    <div class="f-group max-width-100">
+
+                                                        <select class="f-control f-dropdown"
+                                                            placeholder="Comprehensive" id="multiple"
+                                                            class="js-states form-control" multiple>
+                                                            <option value="">Comprehensive</option>
+                                                            <option value="1">Comprehensive
+                                                            </option>
+                                                            <option value="2">Married
+                                                            </option>
+
+                                                        </select>
+                                                    </div>
+                                                </div>
+
+
+                                                <div class="col-sm-6 mt-0 pt-0">
+                                                    <div class="f-group max-width-100">
+
+                                                        <select class="f-control f-dropdown"
+                                                            placeholder="Towing & Labor" id="multiple"
+                                                            class="js-states form-control" multiple>
+                                                            <option value="">Towing & Labor</option>
+                                                            <option value="1">United Status
+                                                            </option>
+                                                            <option value="2">Married
+                                                            </option>
+
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                               
+
+                                            <hr class="mt-4 mb-0" style="border: 0.4px solid #B3D3EC;"> <h4 class="title fs-18 mb-0">Vehicle Use</h4>
+
+                                                <div class="checkbox-box">
+                                                    <div class="car-block px-0">
+                                                        <label class="checkbox-inline mb-0 w-auto" for="checkbox_one">
+                                                            <input type="checkbox" id="checkbox_one" name="question2"
+                                                                data-trigger="hidden_fields_one" class="trigger checkbox-control">
+                
+                                                            <input class="checkbox-control trigger" type="checkbox" value=""
+                                                                id="checkbox_one" data-trigger="hidden_fields_one">
+                
+                                                            <span class="checkbox-custom"></span>
+                                                            <span class="checkbox-label fs-14">Business</span>
+                                                        </label>
+                
+                                                        <div id="hidden_fields_one" class="hidden">
+                                                            <div
+                                                                class="mt-3 d-flex align-items-center flex-wrap">
+                                                                <div class=" dropdown-width me-3">
+                
+                                                                    <select class="f-control f-dropdown " placeholder="Type of Business"
+                                                                        id="multiple" class="js-states form-control" multiple>
+                                                                        <option value=""> Collison
+                                                                        </option>
+                                                                        <option value="1">Single
+                                                                        </option>
+                                                                        <option value="2">Married
+                                                                        </option>
+                
+                                                                    </select>
+                                                                </div>
+                                                                <div class="mt-3 mt-md-0 ">
+                                                                    <h5
+                                                                        class="fs-12 fw-400 d-flex align-items-center justify-content-start">
+                                                                        Any advertising /
+                                                                        Ladder<img src="./images/ladder.svg"> </h5>
+                
+                                                                    <label class="checkbox-inline mb-0 w-auto me-3" for="None">
+                                                                        <input class="checkbox-control" type="checkbox" value=""
+                                                                            id="None">
+                                                                        <span class="checkbox-custom"></span>
+                                                                        <span class="checkbox-label fs-12">None</span>
+                                                                    </label>
+                                                                    <label class="checkbox-inline mb-0 w-auto me-3" for="Advertising">
+                                                                        <input class="checkbox-control" type="checkbox" value=""
+                                                                            id="Advertising">
+                                                                        <span class="checkbox-custom"></span>
+                                                                        <span class="checkbox-label fs-12">Advertising</span>
+                                                                    </label>
+                                                                    <label class="checkbox-inline mb-0 w-auto me-3" for="Ladder">
+                                                                        <input class="checkbox-control" type="checkbox" value=""
+                                                                            id="Ladder">
+                                                                        <span class="checkbox-custom"></span>
+                                                                        <span class="checkbox-label fs-12">Ladder</span>
+                                                                    </label>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                
+                
+                                                    <div class="car-block px-0">
+                                                        <label class="checkbox-inline mb-0 w-auto" for="checkbox_two">
+                                                            <input type="checkbox" id="checkbox_two" name="question2"
+                                                                data-trigger="hidden_fields_two" class="trigger checkbox-control">
+                
+                                                            <input class="checkbox-control trigger" type="checkbox" value=""
+                                                                id="checkbox_two" data-trigger="hidden_fields_two">
+                
+                                                            <span class="checkbox-custom"></span>
+                                                            <span class="checkbox-label fs-14">Rideshare </span>
+                                                        </label>
+                
+                                                        <div id="hidden_fields_two" class="hidden">
+                                                            <div
+                                                                class="mt-3 d-flex align-items-center flex-wrap">
+                                                                <input
+                                                                class="form-control addPrefer w-auto dropdown-width" type="text"
+                                                                placeholder="# of hours per week" />
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                
+                
+                                                    <div class="car-block px-0">
+                                                        <label class="checkbox-inline mb-0 w-auto" for="checkbox_three">
+                                                            <input type="checkbox" id="checkbox_three" name="question2"
+                                                                data-trigger="hidden_fields_three" class="trigger checkbox-control">
+                
+                                                            <input class="checkbox-control trigger" type="checkbox" value=""
+                                                                id="checkbox_three" data-trigger="hidden_fields_three">
+                
+                                                            <span class="checkbox-custom"></span>
+                                                            <span class="checkbox-label fs-14">Delivery</span>
+                                                        </label>
+                
+                                                        <div id="hidden_fields_three" class="hidden">
+                                                            <div
+                                                                class="mt-3 d-flex align-items-center flex-wrap">
+                                                                <div class="me-3 dropdown-width">
+                
+                                                                    <select class="f-control f-dropdown " placeholder="Type of Business"
+                                                                        id="multiple" class="js-states form-control" multiple>
+                                                                        <option value=""> Collison
+                                                                        </option>
+                                                                        <option value="1">Single
+                                                                        </option>
+                                                                        <option value="2">Married
+                                                                        </option>
+                
+                                                                    </select>
+                                                                </div>
+                                                                <div class="mt-3 mt-md-0">
+                                                                   
+                                                                    <input
+                                                                    class="form-control addPrefer w-auto dropdown-width" type="text"
+                                                                    placeholder="# of hours per week" />
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                
+                
+                                                </div>
+
+
+                                                <label class="checkbox-inline mb-0 w-auto" for="checkbox_two2">
+                                                   
+        
+                                                    <input class="checkbox-control" type="checkbox" value=""
+                                                        id="checkbox_two2" >
+        
+                                                    <span class="checkbox-custom"></span>
+                                                    <span class="checkbox-label fs-14">Transportation of goods for a fee  </span>
+                                                </label>
+
+                                                <div style="gap:10px;" class="d-flex flex-column flex-sm-row align-items-center justify-content-center my-3">
+                                     
+            
+                                                    <button type="submit" class="btn btn-outline"><span>Cancel</span></button>
+                                                    <button type="submit" class="btn btn-primary"><span>Save changes</span></button>
+                                                </div>
+
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingThree">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#vehiclecollapseThree"
+                                            aria-expanded="false" aria-controls="collapseThree">
+                                            <h4 class="title fs-18 d-flex align-items-center">2022 Honda Civic <a href="#" class="info ms-2" >
+                                                <img src="images/info.svg" alt="info" />
+                                            </a></h4>
+                                        </button>
+                                    </h2>
+                                    <div id="vehiclecollapseThree" class="accordion-collapse collapse"
+                                        aria-labelledby="headingThree" data-bs-parent="#accordionExample2">
+                                        <div class="accordion-body pt-0">
+                                           Accordion 2
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingThree">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#vehiclecollapseFour"
+                                            aria-expanded="false" aria-controls="collapseFour">
+                                            <h4 class="title fs-18 d-flex align-items-center">2022 Honda Civic <a href="#" class="info ms-2" >
+                                                <img src="images/info.svg" alt="info" />
+                                            </a></h4>
+                                        </button>
+                                    </h2>
+                                    <div id="vehiclecollapseFour" class="accordion-collapse collapse"
+                                        aria-labelledby="headingThree" data-bs-parent="#accordionExample2">
+                                        <div class="accordion-body pt-0">
+                                           Accordion 3
+                                        </div>
+                                    </div>
+                                </div>
+                              
+                            </div>
+
+                            <div class="col-12 mt-5 ">
+                                <div style="gap:10px;" class="d-flex flex-column align-items-center justify-content-center my-3">
+                                    <label class="checkbox-inline w-auto mb-3" for="Corina">
+                                        <input class="checkbox-control" type="checkbox" value="" id="Corina">
+                                        <span class="checkbox-custom"></span>
+                                        <span class="checkbox-label">I agree to all Terms & Conditions</span>
+                                    </label>
+                                    <button type="submit" class="btn btn-primary"><span>Get the Best Prices</span></button>
+                                </div>
+                            </div>
+                           
+                            </div>
+                            
+                                
+                                </div>
+                              
+                               
+                            </div>
+                        </div>
+
+                        <!-- <p class="sub-title mt-2  text-center">Please select the vehicles you want to include & coverage
+                            for each</p> -->
+
+                    </div>
+                </div>
+            </div>
+    </main>
+
+    <script src="js/jquery.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous">
+    </script>
+    <script src="js/app.js"></script>
+    <script>
+        $(document).ready(function () {
+            const accordion = $('#accordionExample');
+            $('.btn-delete').on('click', function (e) {
+                e.stopImmediatePropagation()
+                let item = $(this).attr('data-item');
+                $(`#accordionExample .accordion-item:nth-child(${item})`).remove()
+                console.log('item:', item)
+            })
+            $('.customize-options').hide()
+            $('#Coverage').on('change', function () {
+                $('#Coverage').is(':checked') ? ($('.customize-options').show()) : ($(
+                    '.customize-options').hide())
+            })
+
+
+            $(".edit-icon").click(function () {
+                $(".dlt-class").show();
+            });
+
+            $(function () {
+
+// Hide the hidden sections.
+// Use JS to do this in case the user doesn't have JS
+// enabled.
+$('.hidden').hide();
+
+// Setup an event listener for each trigger checkbox that
+// fires when the state of the checkbox changes.
+$('.trigger').change(function () {
+    // Get the ID of the hidden area from the data-trigger
+    // attribute.
+    var hiddenId = $(this).attr("data-trigger");
+
+    // Check to see if the checkbox is checked.
+    // If it is, show the fields and populate the input.
+    // If not, hide the fields.
+    if ($(this).is(':checked')) {
+        // Show the hidden fields.
+        $("#" + hiddenId).show();
+    } else {
+        // Make sure that the hidden fields are indeed
+        // hidden.
+        $("#" + hiddenId).hide();
+
+        // You may also want to clear the value of the
+        // hidden fields here. Just in case somebody
+        // shows the fields, enters data to them and then
+        // unticks the checkbox.
+        //
+        // This would do the job:
+        //
+        // $("#hidden_field").val("");
+    }
+});
+});
+
+        })
+    </script>
+
+</body>
+
+</html>
