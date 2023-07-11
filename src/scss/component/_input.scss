@@ -1,4 +1,4 @@
-@use "../utils/"as *;
+@use "../utils/" as *;
 
 
 input:-webkit-autofill,
@@ -76,6 +76,18 @@ input:-webkit-autofill:active {
             outline: none;
             border: none;
         }
+    }
+
+    &.search {
+        border: 1px solid #E6E6E6;
+        padding-left: 10px;
+        border-radius: 4px;
+
+        input {
+            margin-left: 0 !important;
+            padding: 14px 10px;
+        }
+
     }
 }
 

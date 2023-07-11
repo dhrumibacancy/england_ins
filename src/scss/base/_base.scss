@@ -1,4 +1,4 @@
-@use "../utils/"as *;
+@use "../utils/" as *;
 
 html {
     height: 100%;
@@ -36,6 +36,7 @@ img {
 
 a {
     text-decoration: none;
+    color: var(--color-blue);
 }
 
 .text-sucess {
@@ -52,6 +53,14 @@ body {
     font-size: 14px;
     // padding: 80px 10px;
     background: #F8FBFE;
+}
+
+ul,
+ol,
+li {
+    padding: 0;
+    margin: 0;
+    list-style: none;
 }
 
 .bg-white {
@@ -78,6 +87,9 @@ body {
     font-size: 20px;
 }
 
+.fs-11 {
+    font-size: 11px;
+}
 .fs-12 {
     font-size: 12px;
 }
@@ -262,6 +274,14 @@ main {
             margin-top: 70px;
             margin-bottom: 70px;
 
+            &.full-size {
+                margin: 0;
+                padding-top: 70px;
+                padding-bottom: 70px;
+                min-height: 100vh;
+                background-color: var(--color-white);
+            }
+
             .content {
                 padding-top: 40px;
             }
@@ -290,7 +310,12 @@ main {
     }
 }
 
-
+.sub-head {
+    @include toRem(font-size, 14);
+    @include toRem(line-height, 22);
+    font-weight: 400;
+    color: var(--color-light-gray);
+}
 
 
 
