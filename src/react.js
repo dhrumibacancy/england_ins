@@ -41,11 +41,10 @@
         integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="assets/css/main.css">
-
-
 </head>
 
 <body>
+    
     <main>
         <div class="wrapper">
             <nav class="navbar bg-dark fixed-top">
@@ -85,15 +84,9 @@
 
                             <select class="f-control f-dropdown" placeholder="Please choose 2">
                                 <option value=""> </option>
-                                <option value="1" selected="selected" data-image="./images/us_flag.svg">English
+                                <option value="1" data-image="./images/us_flag.svg">English
                                 </option>
-                                <option value="2"
-                                    data-image="https://newenglandfamily.com/wp-content/plugins/polylang/flags/pt.png">
-                                    Português
-                                </option>
-                                <option value="3"
-                                    data-image="https://newenglandfamily.com/wp-content/plugins/polylang/flags/es.png">
-                                    Español
+                                <option value="2" selected="selected" data-image="./images/us_flag.svg">English1
                                 </option>
 
                             </select>
@@ -131,9 +124,9 @@
                     </div>
                 </div>
             </nav>
-
             <div class="content-main">
                 <div class="content">
+
                     <div class="container-fluid">
                         <div class="row">
                             <div class="col-4">
@@ -170,127 +163,24 @@
                         </div>
                         <a class="text-blue ms-3 back-arrow" href="#"><i class="fa fa-arrow-left-long me-2"></i>BACK</a>
                     </div>
-                    <div class="container mt-5 ">
+                    <div class="container mt-5 pt-5">
                         <div class="text-center mb-4 user-info">
                             <img src="./images/user-person.svg" alt="" class="user-person mx-auto">
-                            <p class="user-welcome mt-2">We’re almost done!</p>
+                            <p class="user-welcome mt-2">Hey! My Name is Anne</p>
                         </div>
-                        <h3 class="title  text-center">Here’s the Price for (person separating)  :  ) </h3>
-                        <div class="text-center">
-                            <label class="checkbox-inline align-items-start mt-3 w-auto text-center mx-auto" for="flexCheckDefault">
-                                <input class="checkbox-control" type="checkbox" value="" id="flexCheckDefault" checked>
-                                <span class="checkbox-custom"></span>
-                                <span class="checkbox-label fs-14 text-left">Register to  (named insurance & keep (name of current carrier) 
-                                </span>
-                            </label>
-                        </div>
-                        <div class="row">
-                            <div class="price-box mt-3">
-                                <div class="radio-check-switch ">
-
-                                    <div class="form-item ">
+                        <h3 class="title  text-center">Are you buying this from a dealer?</h3>
 
 
+                        <div style="gap:10px;" class="d-flex flex-column flex-sm-row align-items-center justify-content-center mt-4">
+                            <button type="submit"
+                                class="btn btn-primary "><span>Yes</span></button>
 
-
-                                        <div class="radio-switch-state h-auto">
-                                            <!-- <img src="./images/upload.svg" class="mx-auto" />
-                                            <p class="ins-title">Upload or Drag & Drop</p>
-                                            <span class="icon-on"></span> -->
-                                            <p class="amnt-monthly">$350/<span class="monthly-amnt fs-18">monthly</span>
-                                            </p>
-
-                                            <!-- <ul class="price-ul">
-                                                <li>$50,000 /$100.000</li>
-                                                <li> $1,000 Deductibles </li>
-                                            </ul> -->
-                                            <p class="ins-title position-unset price-ul  text-center">$350 down &
-                                                $350
-                                                per
-                                                month
-                                                $2,127 Yearly</p>
-                                            <button type="submit" class="btn btn-primary  w-100"><span>Buy
-                                                    now</span></button>
-
-                                            <img src="./images/plymouth-rock.svg" alt="" class="img-fluid mt-4">
-                                        </div>
-
-                                    </div>
-                                    <div class="vs-box">
-                                        <div class="progress-round progress-vs">Vs</div>
-                                    </div>
-
-                                    <div class="form-item ">
-                                        <div class="radio-switch-state h-auto">
-                                            <!-- <img src="./images/upload.svg" class="mx-auto" />
-                                            <p class="ins-title">Upload or Drag & Drop</p>
-                                            <span class="icon-on"></span> -->
-                                            <p class="amnt-monthly">$1350/<span
-                                                    class="monthly-amnt fs-18">monthly</span></p>
-
-                                            <!-- <ul class="price-ul">
-                                                <li>$50,000 /$100.000</li>
-                                                <li> $1,000 Deductibles </li>
-                                            </ul> -->
-                                            <p class="ins-title position-unset price-ul  text-center">Save $500 by
-                                                paying the
-                                                whole year at once</p>
-                                            <button type="submit" class="btn btn-primary w-100"><span>Buy
-                                                    now</span></button>
-
-                                            <img src="./images/plymouth-rock.svg" alt="" class="img-fluid mt-4">
-                                        </div>
-                                    </div>
-
-
-                                </div>
-                            </div>
+                            <button type="submit" class="btn btn-outline "><span>No</span></button>
                         </div>
 
-
-                        <div class="d-flex align-items-center justify-content-center my-4">
-                            <a href="" class="text-blue fs-14 text-underline text-uppercase fw-bold" data-bs-toggle="modal" data-bs-target="#mainModal">Other Companies</a>
-
-
-                        </div>
                     </div>
                 </div>
             </div>
-
-        </div>
-
-
-        <div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2"
-            tabindex="-1">
-            <div class="modal-dialog modal-dialog-centered modal-lg">
-                <div class="modal-content">
-                    <div class="modal-header border-0 d-block">
-
-                        <h4 class="title fs-16 mb-0 mx-auto text-center mt-3 ">are you sure you want to keep (current
-                            company) its more expensive? it’s $480 monthly/ $1711 Yearly
-                        </h4>
-
-                    </div>
-                    <div class="modal-body">
-                        <div class="d-flex flex-column flex-sm-row align-items-center justify-content-center mt-2">
-                            <button type="submit" class="btn btn-primary mb-2 mb-sm-0  me-sm-4"
-                                data-bs-dismiss="modal"><span>
-                                    Yes & Continue</span></button>
-
-                            <button type="submit" class="btn btn-outline "
-                                data-bs-dismiss="modal"><span>Cancel</span></button>
-                        </div>
-
-
-
-                    </div>
-                </div>
-
-            </div>
-        </div>
-
-
-
         </div>
     </main>
     <script src="js/jquery.min.js"></script>
@@ -302,13 +192,7 @@
         integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous">
     </script>
     <script src="js/app.js"></script>
-    <script type="text/javascript">
-        $(document).ready(function () {
-            $("#btn").click(function () {
-                $("#Create").toggle();
-            });
-        });
-    </script>
+
 </body>
 
 </html>

@@ -616,7 +616,7 @@ main .main-wrapper p {
     font-size: 15px !important;
   }
   .checkbox-label {
-    margin-left: 0 !important;
+    margin-left: 5px !important;
     font-size: 13px;
   }
   .radio-label {
@@ -1056,6 +1056,12 @@ main .main-wrapper p {
   background: var(--color-blue-shade) !important;
 }
 
+@media only screen and (max-width: 575px) {
+  .remarket-tab div#v-pills-tab .nav-link {
+    min-width: 140px;
+    text-align: center;
+  }
+}
 .summary-data .checkbox-label {
   min-width: 311px;
 }
@@ -1103,11 +1109,34 @@ ul li {
         -ms-flex-direction: row !important;
             flex-direction: row !important;
   }
+  .remarket-tab div#v-pills-tab {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    overflow-x: auto;
+    width: 89vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    padding-bottom: 10px;
+  }
   .summary-data .checkbox-label {
     min-width: 32%;
   }
   .upload-box {
     width: auto;
+  }
+  .remarket-tab {
+    -ms-flex-wrap: wrap !important;
+        flex-wrap: wrap !important;
+  }
+  .summary-data {
+    -webkit-box-flex: 1;
+        -ms-flex: auto;
+            flex: auto;
   }
 }
 .price-table {

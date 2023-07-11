@@ -44,3 +44,11 @@
 
     }
 }
+@media only screen and (max-width: 575px) {
+
+
+.remarket-tab div#v-pills-tab .nav-link{
+    min-width: 140px;
+    text-align: center;
+}
+}
