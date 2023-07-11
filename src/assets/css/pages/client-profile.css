@@ -591,6 +591,7 @@
 .billing-section .method-footer {
   margin-top: auto;
 }
+.billing-section .method-footer a,
 .billing-section .method-footer button {
   font-size: 12px !important;
   font-weight: 500;
