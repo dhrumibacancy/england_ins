@@ -131,7 +131,7 @@
             <div class="content-main">
                 <div class="content">
 
-                    <div class="container mt-5">
+                    <div class="container mt-5 pt-5">
 
                         <h3 class="title  text-center">If anything has changed update below, if not press continue </h3>
                         <p class="sub-title mt-2  text-center">Every renewal we shop all carriers for you & make sure
@@ -166,7 +166,7 @@
                                                 <p class="text-black mt-2 fs-18 fw-500  text-left  pb-3">Add by
                                                     selecting Yes </p>
                                                 <div
-                                                    class="d-flex align-items-center justify-content-start flex-wrap mb-2">
+                                                    class="d-flex align-items-center justify-content-start flex-wrap mb-2 mb-2">
                                                     <span class="checkbox-label fs-14 me-5">AAA Member</span>
                                                     <div class="max-width-100">
                                                         <select class="f-control f-dropdown" placeholder="Yes"
@@ -178,7 +178,8 @@
                                                         </select>
                                                     </div>
                                                 </div>
-                                                <div class="d-flex align-items-center justify-content-start flex-wrap">
+                                                <div
+                                                    class="d-flex align-items-center justify-content-start flex-wrap mb-2">
                                                     <span class="checkbox-label fs-14 me-5">Home Insurance</span>
                                                     <div class="max-width-100">
                                                         <select class="f-control f-dropdown" placeholder="Yes"
@@ -214,45 +215,53 @@
 
                                                     </div>
                                                 </div>
-
-                                            </div>
-
-
-                                            <div class="blue-light-box bg-white px-3 py-2 mt-4">
                                                 <div
-                                                    class="d-flex align-items-center justify-content-between mt-2 pb-3">
-                                                    <p class="text-black  fs-18 fw-500  text-left">Already
-                                                        Have
-                                                    </p>
-                                                    <a href="#" class="edit-icon"> <img src="./images/edit.png"
-                                                            class="img-fluid " width=20 /></a>
+                                                    class="d-flex align-items-center justify-content-start flex-wrap mb-2">
+                                                    <span class="checkbox-label fs-14 me-5">Pay in full Discounts
+                                                    </span>
+                                                    <div class="max-width-100">
+                                                        <select class="f-control f-dropdown" placeholder="Yes"
+                                                            id="multiple" class="js-states form-control" multiple>
+
+                                                            <option value="2">No
+                                                            </option>
+
+                                                        </select>
+                                                    </div>
                                                 </div>
-                                                <ul class="ms-4">
-                                                    <li>
-                                                        <div class="d-flex align-items-center">Pay in full Discounts
-                                                            <a href="" class="ms-2"><img style="display:none;"
-                                                                    src="images/delete.svg" class="img-fluid dlt-class"
-                                                                    width=12 /></a></div>
-                                                    </li>
-                                                    <li>
-                                                        <div class="d-flex align-items-center">MA Association or Realtor
-                                                            Member
-                                                            <a href="" class="ms-2"><img style="display:none;"
-                                                                    src="images/delete.svg" class="img-fluid dlt-class"
-                                                                    width=12 /></a></div>
-                                                    </li>
-                                                    <li>
-                                                        <div class="d-flex align-items-center">MA
-                                                            Youth Association Member
-                                                            <a href="" class="ms-2"><img style="display:none;"
-                                                                    src="images/delete.svg" class="img-fluid dlt-class"
-                                                                    width=12 /></a></div>
-                                                    </li>
+                                                <div
+                                                    class="d-flex align-items-center justify-content-start flex-wrap mb-2">
+                                                    <span class="checkbox-label fs-14 me-5">MA Association or Realtor
+                                                        Member</span>
+                                                    <div class="max-width-100">
+                                                        <select class="f-control f-dropdown" placeholder="Yes"
+                                                            id="multiple" class="js-states form-control" multiple>
+
+                                                            <option value="2">No
+                                                            </option>
+
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div
+                                                    class="d-flex align-items-center justify-content-start flex-wrap mb-2">
+                                                    <span class="checkbox-label fs-14 me-5">MA Youth Association
+                                                        Member</span>
+                                                    <div class="max-width-100">
+                                                        <select class="f-control f-dropdown" placeholder="Yes"
+                                                            id="multiple" class="js-states form-control" multiple>
+
+                                                            <option value="2">No
+                                                            </option>
+
+                                                        </select>
+                                                    </div>
+                                                </div>
 
 
-                                                </ul>
 
                                             </div>
+
 
 
                                             <!-- <a class="btn-add mt-3 ms-3" href="#">
@@ -295,30 +304,7 @@
         integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous">
     </script>
     <script src="js/app.js"></script>
-    <script>
-        $(document).ready(function () {
-            const accordion = $('#accordionExample');
-            $('.btn-delete').on('click', function (e) {
-                e.stopImmediatePropagation()
-                let item = $(this).attr('data-item');
-                $(`#accordionExample .accordion-item:nth-child(${item})`).remove()
-                console.log('item:', item)
-            })
-            $('.customize-options').hide()
-            $('#Coverage').on('change', function () {
-                $('#Coverage').is(':checked') ? ($('.customize-options').show()) : ($(
-                    '.customize-options').hide())
-            })
 
-
-            $(".edit-icon").click(function () {
-                $(".dlt-class").show();
-            });
-
-
-
-        })
-    </script>
 
 </body>
 

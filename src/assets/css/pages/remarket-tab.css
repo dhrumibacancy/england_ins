@@ -144,4 +144,11 @@
   background-color: var(--color-blue-shade) !important;
   background: var(--color-blue-shade) !important;
 }
+
+@media only screen and (max-width: 575px) {
+  .remarket-tab div#v-pills-tab .nav-link {
+    min-width: 140px;
+    text-align: center;
+  }
+}
 /*# sourceMappingURL=remarket-tab.css.map */

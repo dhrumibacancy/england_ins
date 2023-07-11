@@ -164,7 +164,7 @@ function formatRows(main, prefer, common) {
     '<tr><td class="col-md-6"><button  value="' +
     main +
     '" class="me-2 upload-btn" onclick="importData()"  />  License</button></td>' +
-    '<td class="col-xs-3"><input type="text" value="' +
+    '<td class="col-xs-3"><="text" value="' +
     prefer +
     '" class="form-control editable" /></td>' +
     '<td class="col-xs-3"><input type="text" value="' +

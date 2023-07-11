@@ -52,6 +52,15 @@ ul {
     .flex-column {
         flex-direction: row !important;
     }
+    
+    .remarket-tab div#v-pills-tab{
+        flex-wrap: nowrap;
+    overflow-x: auto;
+    width: 89vw;
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 10px;
+    }
 
     .summary-data {
         .checkbox-label {
@@ -61,5 +70,11 @@ ul {
 
     .upload-box {
         width: auto;
+    }
+    .remarket-tab{
+        flex-wrap: wrap !important;
+    }
+    .summary-data{
+        flex: auto;
     }
 }
