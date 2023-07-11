@@ -1,4 +1,4 @@
-@use "../utils"as *;
+@use "../utils" as *;
 
 
 
@@ -59,6 +59,14 @@
             @include border-radius(5px);
         }
 
+        .hide-hover {
+            display: inline;
+        }
+
+        .show-hover {
+            display: none;
+        }
+
         &:hover {
             background-color: var(--color-white) !important;
             color: var(--color-primary);
@@ -72,6 +80,14 @@
             &:before {
                 width: 0;
                 color: var(--color-white);
+            }
+
+            .hide-hover {
+                display: none;
+            }
+
+            .show-hover {
+                display: inline;
             }
         }
     }
@@ -94,6 +110,36 @@
                 width: 0;
                 color: var(--color-primary);
             }
+        }
+    }
+
+    &.btn-white {
+        background-color: var(--color-white);
+        box-shadow: 0px 0px 20px 0px #0000001F;
+        margin: 0 12px;
+        display: inline-block;
+        color: var(--color-blue);
+
+        img {
+            margin-right: 13px;
+            width: 20px;
+            display: inline-block;
+        }
+    }
+
+    &.btn-lg {
+        padding: 16px 46px;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 24px;
+        letter-spacing: 1px;
+        height: auto;
+
+        @media screen and (max-width: 778px) {
+            padding: 16px 10px;
+            width: 220px;
+            min-width: initial;
+            max-width: 100%;
         }
     }
 
