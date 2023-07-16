@@ -149,7 +149,7 @@ ul li {
             flex-direction: row !important;
   }
 }
-@media screen and (max-width: 575px) {
+@media screen and (max-width: 767px) {
   .flex-column {
     -webkit-box-orient: horizontal !important;
     -webkit-box-direction: normal !important;
