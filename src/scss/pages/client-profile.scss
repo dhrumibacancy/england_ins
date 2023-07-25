@@ -457,6 +457,20 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+        flex-wrap: wrap;
+
+        @media screen and (max-width: 992px) {
+            .claim-links {
+                width: 50%;
+                margin: 10px 0;
+            }
+        }
+
+        @media screen and (max-width: 578px) {
+            .claim-links {
+                width: 100%;
+            }
+        }
     }
 
     .claim-links {
@@ -514,12 +528,14 @@
                 line-height: 22px;
                 text-align: center;
                 margin-top: 5px;
+                white-space: nowrap;
                 color: var(--color-black);
             }
 
             .step-updation-time {
                 font-size: 11px;
                 line-height: 17px;
+                white-space: nowrap;
             }
 
             &.mark-inprogress {
@@ -607,6 +623,379 @@
 
 .add-payment-modal {
     max-width: 700px;
+}
+
+.filter-date {
+    padding: 5px 10px;
+    border-radius: 5px;
+    background-color: var(--color-blue-shade);
+    border: 1px solid var(--color-blue-border2);
+}
+
+.doc-card {
+    display: flex;
+    align-items: center;
+    padding: 14px;
+    padding-right: 45px;
+    margin-bottom: 6px;
+    background: var(--color-border-light2);
+    border-radius: 4px;
+
+    a {
+        display: inline-block;
+    }
+
+    .checkbox-label {
+        max-width: 50vw;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+    }
+
+    @media screen and (max-width: 576px) {
+        padding: 14px 10px;
+
+        .action-icon {
+            img {
+                width: 20px;
+            }
+        }
+    }
+}
+
+.note-container {
+    display: flex;
+    color: var(--color-black);
+
+    .notes-side-bar {
+        width: 30%;
+        padding-right: 30px;
+
+        .notes-card {
+            border-radius: 10px;
+            padding: 10px;
+            border: 1px solid var(--color-border-light);
+            margin-bottom: 12px;
+            width: 100% ;
+
+            &.blue-bg {
+                background-color: var(--color-blue-shade);
+                border-color: var(--color-blue-shade);
+
+                .update-log {
+                    background-color: var(--color-blue-light);
+                    padding: 4px 8px;
+                    border-radius: 2px;
+                    margin-bottom: 4px;
+                }
+
+                .notes-card-footer {
+                    margin-top: 22px;
+                }
+            }
+
+            .notes-description {
+                font-size: 14px;
+                line-height: 22px;
+            }
+
+            .notes-card-footer {
+                font-size: 12px;
+                font-weight: 500;
+                line-height: 18px;
+                display: flex;
+                justify-content: space-between;
+                margin-top: 10px;
+
+                .notes-user {
+                    color: var(--color-blue);
+                }
+
+                .notes-policy-name {
+                    color: var(--color-light-gray3);
+                }
+            }
+        }
+
+    }
+
+    .notes-data {
+        width: 70%;
+        border-radius: 10px;
+        padding: 12px;
+        border: 1px solid var(--color-border-light);
+
+        .policy-details {
+            border-bottom: 1px solid var(--color-border-light);
+            padding-bottom: 16px;
+        }
+
+        .notes-description {
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 22px;
+            color: var(--color-black);
+        }
+
+        .policy-updates {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .last-updated,
+        .created-updated {
+            font-size: 11px;
+            font-weight: 400;
+            line-height: 17px;
+            margin-top: 12px;
+            color: var(--color-light-gray3)
+        }
+
+        .notes-options {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 17px;
+
+            .notes-option {
+                a img {
+                    width: 20px;
+                    height: 20px;
+                    object-fit: contain;
+                    margin-right: 14px;
+                }
+            }
+        }
+
+        .notes-card-footer {
+            font-size: 12px;
+            font-weight: 500;
+            line-height: 18px;
+            display: flex;
+            justify-content: space-between;
+
+            .notes-user {
+                color: var(--color-blue);
+                margin-right: 15px;
+            }
+
+            .notes-policy-name {
+                color: var(--color-light-gray3);
+            }
+        }
+
+        .accordion.notes-update-log {
+
+            .accordion-item {
+                margin-bottom: 8px;
+                border-radius: 8px;
+            }
+
+            .accordion-item,
+            .accordion-button {
+                background: var(--color-border-light2);
+                border-color: var(--color-border-light2);
+            }
+
+            .accordion-button {
+                padding: 4px 8px;
+
+                .updated-history {
+                    font-size: 11px;
+                    line-height: 17px;
+                    color: var(--color-light-gray);
+                }
+
+                &::after {
+                    content: none;
+                }
+            }
+
+            .accordion-body {
+                padding: 6px 8px;
+            }
+        }
+
+        .documents-attached {
+            margin-top: 20px;
+            margin-bottom: 20px;
+
+            &.edit-mode.row {
+                &>* {
+                    width: 100%;
+                }
+
+                .doc-card {
+                    margin-bottom: 12px;
+                    background-color: var(--color-white);
+                    border: 1px solid var(--color-border-light);
+                    font-weight: 500;
+
+                    &.add-document {
+                        justify-content: center;
+                        background: linear-gradient(0deg, var(--color-blue-light), var(--color-blue-light)),
+                            linear-gradient(0deg, var(--color-blue-light3), var(--color-blue-light3));
+                        ;
+                        border: 1px dashed var(--color-blue-light3);
+                    }
+                }
+            }
+
+
+            .doc-card {
+                padding: 8px;
+                border-radius: 7px;
+                display: flex;
+                align-items: center;
+                background-color: var(--color-border-light2);
+
+                &>img {
+                    width: 32px;
+                    height: 32px;
+                    object-fit: contain;
+                    object-position: center;
+                    margin-right: 8px;
+                }
+
+                .doc-title {
+                    font-weight: 500;
+                    font-size: 12px;
+                }
+
+                .edit-options {
+                    img {
+                        width: 20px;
+                        height: 20px;
+                        object-fit: contain;
+                        object-fit: center;
+                        margin-left: 14px
+                    }
+
+                }
+            }
+        }
+
+        .updated-items {
+            .updated-item {
+                display: flex;
+                justify-content: space-between;
+                margin-bottom: 8px;
+            }
+        }
+
+        .add-comment {
+            display: flex;
+            justify-content: flex-end;
+            flex-direction: column;
+            align-items: flex-end;
+            margin-bottom: 20px;
+
+            button[type="submit"] {
+                display: none;
+            }
+
+            &:focus-within {
+                button[type="submit"] {
+                    display: inline-block;
+                }
+            }
+        }
+
+        .comment-section {
+            padding-top: 20px;
+
+            .comment-sec-title {
+                font-size: 16px;
+                line-height: 24px;
+                margin-bottom: 12px;
+            }
+        }
+
+        .pinned-comment {
+            background: #E6F9ED;
+            margin: 15px -12px;
+            padding: 12px;
+
+            .comment {
+                margin: 0;
+            }
+        }
+
+        .comment {
+            margin-bottom: 20px;
+
+            .comment-head {
+                display: flex;
+                align-items: center;
+                margin-bottom: 5px;
+
+                .user-img {
+                    img {
+                        width: 24px;
+                        height: 24px;
+                        border-radius: 50px;
+                        object-fit: cover;
+                        margin-right: 8px;
+                    }
+                }
+
+                .user-name {
+                    font-size: 12px;
+                    font-weight: 500;
+                    line-height: 18px;
+                    margin-right: 6px;
+                    text-transform: capitalize;
+                }
+
+                .comment-time {
+                    font-size: 11px;
+                    line-height: 17px;
+                    color: var(--color-light-gray3)
+                }
+
+                .comment-otions {
+                    margin-left: auto;
+
+                    img {
+                        height: 24px;
+                    }
+                }
+            }
+
+            .comment-details {
+                padding-left: 32px;
+                color: var(--color-title);
+
+                &.edit-comment {
+                    padding-left: 0;
+                    padding-top: 10px;
+
+                    textarea {
+                        padding: 14px;
+                        color: #B3B3B3;
+                        font-size: 12px;
+                        font-weight: 400;
+                        line-height: 18px;
+
+                    }
+                }
+            }
+        }
+
+
+        
+    }
+
+    @media screen and (max-width: 568px) {
+        .notes-side-bar,
+        .notes-data {
+            width: 100%;
+        }
+        .notes-side-bar{
+            padding: 0;
+        }
+    }
 }
 
 @media screen and (max-width: 992px) {
