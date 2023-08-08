@@ -316,6 +316,7 @@
 
 .policy-table {
   border-spacing: 0 10px;
+  margin-bottom: 0;
   border-collapse: separate;
 }
 .policy-table .policy-name-column {
@@ -375,6 +376,13 @@
 }
 .cta-block .btn:hover .show-hover {
   display: inline;
+}
+@media screen and (max-width: 778px) {
+  .cta-block .btn.btn-lg {
+    width: 100vw;
+    max-width: 100vw;
+    margin: 10px -15px;
+  }
 }
 
 .refer-section {
