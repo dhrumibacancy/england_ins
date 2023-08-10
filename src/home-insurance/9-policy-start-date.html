@@ -38,6 +38,9 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
+        <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css">
+
 
 
 
@@ -194,45 +197,35 @@
                     <div class="container mt-5 pt-5">
                         <div class="text-center mb-4 user-info">
                             <img src="../images/user-person.svg" alt="" class="user-person mx-auto">
-                            <p class="user-welcome mt-2">Hey! My Name is Anne
-                            </p>
+                            <p class="user-welcome mt-2">Hey! My Name is Anne</p>
                         </div>
-                        <h3 class="title  text-center">Renovations or new construction</h3>
+                        <h3 class="title  text-center">When would you like this policy to start </h3>
                         
                         <div class="contain-wrapper-sm">
-                            <form class="mt-4">
-                                <div class="blue-light-box bg-white">
-                                    <div class="d-flex justify-content-between">
-                                    </div>
-                                    <div class="vehicle-details">
-                                        <div class="row g-3">
-                                            <div class="col-12">
-                                                <div class="form-group">
-                                                    <label for="" class="fs-18 font-bold" >How long do you think it will take to complete</label>
-                                                    <input type="text" placeholder="No. of months" class="form-control">
-                                                </div>
-                                            </div>
-                                            <div class="col-12">
-                                                <div class="form-group">
-                                                    <label for="" class="fs-18 font-bold" >How much do you estimate this will cost to complete.</label>
-                                                    <input type="text" placeholder="Enter amount" class="form-control">
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-12 mb-2">
-                                                <label class="checkbox-inline mb-0 w-auto" for="flexCheckDefault53">
-                                                    <input class="checkbox-control" type="checkbox" value=""
-                                                        id="flexCheckDefault53">
-                                                    <span class="checkbox-custom"></span>
-                                                    <span class="checkbox-label fs-14">In the business of flipping & selling homes
+                        <form class="mt-4">
+                            <div class="">
+                                <div class="d-flex justify-content-between">
+                                </div>
+                                <div class="vehicle-details">
+                                    <div class="row g-3 justify-content-center">
+                                        <div class="col-md-6">
+                                            <div class="input-group date form-control px-0" id="datepicker">
+                                                <input type="text" class="" id="date" placeholder="Effective date (DD/MM/YYYY)" />
+                                                <span class="input-group-append ">
+                                                    <span class="input-group-text border-0 bg-white d-block">
+                                                        <img class="" width="20px" src="../images/calender-icon.svg">
                                                     </span>
-                                                </label>
+                                                </span>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <button type="submit" class="btn btn-primary  mx-3 mt-4"><span>Continue</span>
-                                </button>
-                            </form>
+                            </div>
+                            <button type="submit" class="btn btn-primary  mx-auto mt-4"><span>Continue</span>
+                            </button>
+                        </form>
+                        </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -247,6 +240,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
         integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous">
         </script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js">
+</script>
 
     <script src="../js/app.js"></script>
     <script>
@@ -264,6 +259,11 @@
                     '.customize-options').hide())
             })
         })
+        $(function () {
+            $('[id^="datepicker"]').datepicker({
+                autoclose: true,
+            });
+        });
     </script>
 
 </body>
