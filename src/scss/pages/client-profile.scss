@@ -2,7 +2,7 @@
 
 .link-label {
   font-family: Roboto;
-  @include toRem(font-size, 11);
+  @include toRem(font-size, 14);
   @include toRem(line-height, 17);
   font-weight: 400;
   text-align: left;

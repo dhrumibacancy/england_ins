@@ -1,7 +1,8 @@
 /* custom main 
  UnExpected King Tirth Shah */ 
  
- /*flex cross browser mixin*/
+ @charset "UTF-8";
+/*flex cross browser mixin*/
 /*
 0px - 360px:		XS Phone
 360px - 576px: 		Phone
@@ -203,5 +204,11 @@
   color: var(--color-blue);
   letter-spacing: normal;
   font-weight: 600;
+}
+
+.ïmg-circle {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
 }
 /*# sourceMappingURL=other-pages.css.map */
