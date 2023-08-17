@@ -1042,13 +1042,36 @@ main .main-wrapper p {
 }
 
 .acnt-btn {
-  min-width: 225px !important;
+  min-width: 210px !important;
+}
+
+.acntt-btn {
+  min-width: 137px !important;
+}
+
+.acnt-btnn {
+  min-width: 210px !important;
 }
 
 .menuitemshow {
   opacity: 0.4;
   cursor: not-allowed;
   pointer-events: none;
+}
+
+.new-checkmark .radio-box-custom {
+  font-size: 16px;
+  color: var(--color-black);
+  font-weight: 400;
+  letter-spacing: normal;
+  font-family: "Roboto";
+  cursor: pointer;
+}
+
+.new-checkmark .radio-box-control:checked ~ .radio-box-custom {
+  color: var(--color-blue);
+  letter-spacing: normal;
+  font-weight: 600;
 }
 
 .progress {
@@ -1153,7 +1176,7 @@ ul li {
             flex-direction: row !important;
   }
 }
-@media screen and (max-width: 575px) {
+@media screen and (max-width: 767px) {
   .flex-column {
     -webkit-box-orient: horizontal !important;
     -webkit-box-direction: normal !important;
@@ -1414,6 +1437,11 @@ tr:last-child td:last-child {
   font-size: 14px;
 }
 
+@media screen and (max-width: 1199px) {
+  .content-main .content .remove-vehicle-block {
+    width: 100% !important;
+  }
+}
 @media screen and (max-width: 575px) {
   .price-box .radio-check-switch {
     -ms-flex-wrap: nowrap;
@@ -1442,6 +1470,12 @@ tr:last-child td:last-child {
   }
   .price-box .radio-check-switch .amnt-monthly {
     font-size: 24px;
+  }
+  .remove-vehicle-block {
+    width: 100% !important;
+  }
+  .radio-check-switch .ins-title {
+    font-size: 13px !important;
   }
 }
 @media screen and (max-width: 360px) {
@@ -3010,6 +3044,12 @@ label.checkbox-inline.squar-boxes .checkbox-label {
     outline: none;
     text-transform: uppercase;
   }
+  .acntt-btn.btn {
+    font-size: 11px !important;
+  }
+  .acnt-btnn.btn {
+    font-size: 11px !important;
+  }
 }
 .toggle-btn {
   border: 1px solid #CCCCCC;
@@ -3749,7 +3789,9 @@ label {
   overflow: hidden;
   vertical-align: middle;
   text-align: center;
-  background: var(--color-white);
+  background-color: #E6F1F9;
+  -webkit-box-shadow: 0px 20px 30px #DDEEFB;
+          box-shadow: 0px 20px 30px #DDEEFB;
   border-radius: 12px;
   padding: 10px;
   display: block;
@@ -3825,6 +3867,12 @@ label {
   max-width: 530px;
 }
 
+@media (min-width: 1024px) {
+  .modal-dialog.modal-lg-lg {
+    max-width: 659px;
+    margin: 1.75rem auto;
+  }
+}
 .owl-prev {
   left: -20px;
   top: 50%;

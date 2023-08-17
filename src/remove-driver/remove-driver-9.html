@@ -40,7 +40,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
         integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="../assets/css/main.css">
 </head>
 
 <body>
@@ -54,10 +54,10 @@
                             data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
                             <span class="navbar-toggler-icon"></span>
                         </button>
-                        <a class="navbar-brand d-none d-md-block" href="#"><img src="./images/logo.svg" alt=""></a>
+                        <a class="navbar-brand d-none d-md-block" href="#"><img src="../images/logo.svg" alt=""></a>
 
                     </div>
-                    <a class="navbar-brand d-md-none m-0" href="#"><img src="./images/logo.svg" alt=""></a>
+                    <a class="navbar-brand d-md-none m-0" href="#"><img src="../images/logo.svg" alt=""></a>
                     <div class="d-flex align-items-center justify-content-center">
                         <!-- <select class="vodiapicker">
                             <option value="en" class="test" data-thumbnail="./images/us_flag.svg">
@@ -91,8 +91,8 @@
                             </select>
                         </div>
 
-                        <img src="./images/message-question.svg" alt="" class="me-3 pe-2 nav-icon d-none d-md-block">
-                        <img src="./images/user.svg" alt="" class="nav-icon d-none d-md-block">
+                        <img src="../images/message-question.svg" alt="" class="me-3 pe-2 nav-icon d-none d-md-block">
+                        <img src="../images/user.svg" alt="" class="nav-icon d-none d-md-block">
                     </div>
                     <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
                         aria-labelledby="offcanvasNavbarLabel">
@@ -105,14 +105,14 @@
                             <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                                 <li class="nav-item ">
                                     <a class="nav-link active text-left" aria-current="page" href="#"> <img
-                                            src="./images/message-question-blue.svg" alt=""
+                                            src="../images/message-question-blue.svg" alt=""
                                             class="d-inline-block me-3 pe-2 nav-icon nav-icon-mob">
                                         Help
                                     </a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link  text-left" href="#">
-                                        <img src="./images/user-blue.svg" alt=""
+                                        <img src="../images/user-blue.svg" alt=""
                                             class="nav-icon d-inline-block  nav-icon-mob">
                                         User</a>
                                 </li>
@@ -129,123 +129,38 @@
                     <a class="text-blue ms-3 back-arrow" href="#"><i class="fa fa-arrow-left-long me-2"></i>BACK</a>
                     <div class="container mt-4">
                         <div class="text-center mb-4 user-info">
-                            <img src="./images/user-person.svg" alt="" class="user-person mx-auto">
+                            <img src="../images/user-person.svg" alt="" class="user-person mx-auto">
                             <p class="user-welcome mt-2">Hey! My Name is Anne</p>
                         </div>
-                        <h3 class="title  text-center">It looks like the plate for (veh Removing) is still active,
-                           <br/> No worries we can help you.
+                        <h3 class="title  text-center d-none d-md-block">(Name of driver) will no longer have coverage on the vehicles,
+                        </h3>
+                        <h3 class="title  text-center d-md-none">(Name of driver) will no longer have coverage on your vehicles,
+
                         </h3>
 
-
-                        <div class="contain-wrapper-sm">
-
-                            <!-- <form class="mt-4">
-                                <div class="blue-light-box bg-white pb-3">
-
-
-                                    <div class="d-flex justify-content-between mb-3 pb-1">
-                                        <h4 class="title fs-16 "> Select any from below and continue</h4>
-                                    </div>
-
-                                    <div class="bg-white car-block px-0">
-
-                                        <label class="radio-inline" for="Register">
-                                            <input class="radio-control" type="radio" name="country" value=""
-                                                id="Register" checked="">
-                                            <span class="radio-custom"></span>
-                                            <span class="radio-label">Use this plate on (veh adding)
-                                            </span>
-                                        </label>
-
-
-
-                                    </div>
-
-                                    <div class=" bg-white car-block px-0">
-                                        <label class="radio-inline" for="us">
-                                            <input class="radio-control" type="radio" name="country" value="" id="us"
-                                                checked="">
-                                            <span class="radio-custom"></span>
-                                            <span class="radio-label">Cancel this Plate</span>
-                                        </label>
-
-                                    </div>
-
-                                    <div class="car-block px-0 bg-white ">
-                                        <label class="radio-inline" for="us">
-                                            <input class="radio-control" type="radio" name="country" value="" id="us"
-                                                checked="">
-                                            <span class="radio-custom"></span>
-                                            <span class="radio-label">Keep my plate, will be getting another vehicle
-                                                later</span>
-                                        </label>
-
-                                    </div>
-
-                                </div>
-
-
-                                <button type="submit" class="btn btn-primary mx-auto mt-4" data-bs-toggle="modal"
-                                    data-bs-target="#exampleModalToggle2"><span>
-                                        Continue</span></button> 
-                            </form> -->
-
-                            <p class="text-black fs-16 mb-2 fw-500 mt-4">Select any from below and continue</p>
-                                <div class="f-group max-width-100"> <div
-                                        class="f-dropdown selectDropdown filled"><select
-                                            class="f-control f-dropdown"
-                                            placeholder="Add a Vehicle now & Use this Plate"
-                                            id="multiple" multiple> <option
-                                                value>Add a Vehicle now & Use this Plate</option>
-                                            <option value="1">Relation to
-                                                Applicant </option> <option
-                                                value="2">Married </option>
-                                        </select> </div> </div>
-                        </div>
+                        <p class="sub-title mt-3 text-center d-none d-md-block">would you like to keep changing and exclude them from your policy?</p>
+                        <p class="sub-title mt-3 text-center d-md-none">would you like to  and exclude them from your policy?
+                        </p>
+                     
                         <div style="gap:10px;"
                             class="d-flex flex-column flex-sm-row align-items-center justify-content-center mt-4">
-                            <button type="submit" class="btn btn-primary mx-auto mt-4" data-bs-toggle="modal"
-                                data-bs-target="#exampleModalToggle2"><span>
-                                    Continue</span></button>
-                          
+                            <button type="submit" class="btn btn-primary acntt-btn" ><span>
+                                Yes, Exclude</span></button>
+                            <button type="submit" class="btn btn-outline acntt-btn"><span>No</span></button>
 
 
                         </div>
 
-                       
+                     
+                   
+
                     </div>
                 </div>
             </div>
-            <div class="modal fade" id="exampleModalToggle2" aria-hidden="true"
-                aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
-                <div class="modal-dialog modal-dialog-centered modal-lg">
-                    <div class="modal-content">
-                        <div class="modal-header border-0 d-block">
-
-                            <h4 class="title fs-20 mb-0 mx-auto text-center mt-3 fw-bold ">Are you sure you want to Cancel this Plate ?
-                            </h4>
-                            <p class="sub-title mt-2  text-center"> 05 Honda Civic (GJZ 0123)</p>
-                        </div>
-                        <div class="modal-body">
-                            <div style="gap:10px;"
-                                class="d-flex flex-column flex-sm-row align-items-center justify-content-center mt-2">
-                                <button type="submit" class="btn btn-primary " data-bs-dismiss="modal"><span>
-                                    Yes</span></button>
-
-                                <button type="submit" class="btn btn-outline "
-                                    data-bs-dismiss="modal"><span>No</span></button>
-                            </div>
-
-
-
-                        </div>
-                    </div>
-
-                </div>
-            </div>
+         
         </div>
     </main>
-    <script src="js/jquery.min.js"></script>
+    <script src="../js/jquery.min.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
         integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous">
@@ -253,7 +168,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
         integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous">
     </script>
-    <script src="js/app.js"></script>
+    <script src="../js/app.js"></script>
     <script>
         var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
         var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {

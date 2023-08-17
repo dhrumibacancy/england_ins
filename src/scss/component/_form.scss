@@ -390,6 +390,7 @@ label {
 
 .radio-check-switch {
     margin-bottom: 10px;
+   
 
     .ins-title {
         font-family: 'Roboto';
@@ -433,8 +434,9 @@ label {
         overflow: hidden;
         vertical-align: middle;
         text-align: center;
-        background: var(--color-white);
-        // box-shadow: 0px 20px 30px #DDEEFB;
+        // background: var(--color-white);
+        background-color: #E6F1F9;
+        box-shadow: 0px 20px 30px #DDEEFB;
         // box-shadow: 0px 20px 30px #DDEEFB;
         border-radius: 12px;
         padding: 10px;

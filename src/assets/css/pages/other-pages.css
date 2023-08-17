@@ -173,12 +173,35 @@
 }
 
 .acnt-btn {
-  min-width: 225px !important;
+  min-width: 210px !important;
+}
+
+.acntt-btn {
+  min-width: 137px !important;
+}
+
+.acnt-btnn {
+  min-width: 210px !important;
 }
 
 .menuitemshow {
   opacity: 0.4;
   cursor: not-allowed;
   pointer-events: none;
+}
+
+.new-checkmark .radio-box-custom {
+  font-size: 16px;
+  color: var(--color-black);
+  font-weight: 400;
+  letter-spacing: normal;
+  font-family: "Roboto";
+  cursor: pointer;
+}
+
+.new-checkmark .radio-box-control:checked ~ .radio-box-custom {
+  color: var(--color-blue);
+  letter-spacing: normal;
+  font-weight: 600;
 }
 /*# sourceMappingURL=other-pages.css.map */

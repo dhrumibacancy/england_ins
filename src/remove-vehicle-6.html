@@ -20,7 +20,6 @@
     <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon//favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="96x96" href="./images/favicon//favicon-96x96.png">
     <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon//favicon-16x16.png">
-
     <link rel="manifest" href="/manifest.json">
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
@@ -37,9 +36,6 @@
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
     <link rel="icon" href="images/favicon.png" type="image/gif" sizes="16x16">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
-        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="assets/css/main.css">
 </head>
 
@@ -83,9 +79,15 @@
 
                             <select class="f-control f-dropdown" placeholder="Please choose 2">
                                 <option value=""> </option>
-                                <option value="1" data-image="./images/us_flag.svg">English
+                                <option value="1" selected="selected" data-image="./images/us_flag.svg">English
                                 </option>
-                                <option value="2" selected="selected" data-image="./images/us_flag.svg">English1
+                                <option value="2"
+                                    data-image="https://newenglandfamily.com/wp-content/plugins/polylang/flags/pt.png">
+                                    Português
+                                </option>
+                                <option value="3"
+                                    data-image="https://newenglandfamily.com/wp-content/plugins/polylang/flags/es.png">
+                                    Español
                                 </option>
 
                             </select>
@@ -125,122 +127,116 @@
             </nav>
             <div class="content-main">
                 <div class="content">
-
-                    <a class="text-blue ms-3 back-arrow" href="#"><i class="fa fa-arrow-left-long me-2"></i>BACK</a>
-                    <div class="container mt-4">
-                        <div class="text-center mb-4 user-info">
-                            <img src="./images/user-person.svg" alt="" class="user-person mx-auto">
-                            <p class="user-welcome mt-2">Hey! My Name is Anne</p>
-                        </div>
-                        <h3 class="title  text-center">It looks like the plate for (veh Removing) is still active,
-                           <br/> No worries we can help you.
-                        </h3>
-
-
-                        <div class="contain-wrapper-sm">
-
-                            <!-- <form class="mt-4">
-                                <div class="blue-light-box bg-white pb-3">
-
-
-                                    <div class="d-flex justify-content-between mb-3 pb-1">
-                                        <h4 class="title fs-16 "> Select any from below and continue</h4>
-                                    </div>
-
-                                    <div class="bg-white car-block px-0">
-
-                                        <label class="radio-inline" for="Register">
-                                            <input class="radio-control" type="radio" name="country" value=""
-                                                id="Register" checked="">
-                                            <span class="radio-custom"></span>
-                                            <span class="radio-label">Use this plate on (veh adding)
-                                            </span>
-                                        </label>
-
-
-
-                                    </div>
-
-                                    <div class=" bg-white car-block px-0">
-                                        <label class="radio-inline" for="us">
-                                            <input class="radio-control" type="radio" name="country" value="" id="us"
-                                                checked="">
-                                            <span class="radio-custom"></span>
-                                            <span class="radio-label">Cancel this Plate</span>
-                                        </label>
-
-                                    </div>
-
-                                    <div class="car-block px-0 bg-white ">
-                                        <label class="radio-inline" for="us">
-                                            <input class="radio-control" type="radio" name="country" value="" id="us"
-                                                checked="">
-                                            <span class="radio-custom"></span>
-                                            <span class="radio-label">Keep my plate, will be getting another vehicle
-                                                later</span>
-                                        </label>
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-4">
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0"
+                                        aria-valuemax="100" style="width:20%">
 
                                     </div>
 
                                 </div>
+                                <div class="progress-text mt-1">Drivers</div>
+                            </div>
+                            <div class="col-4">
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0"
+                                        aria-valuemax="100" style="width:0%">
 
+                                    </div>
 
-                                <button type="submit" class="btn btn-primary mx-auto mt-4" data-bs-toggle="modal"
-                                    data-bs-target="#exampleModalToggle2"><span>
-                                        Continue</span></button> 
-                            </form> -->
+                                </div>
+                                <div class="progress-text mt-1">Vehicles
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0"
+                                        aria-valuemax="100" style="width:0%">
 
-                            <p class="text-black fs-16 mb-2 fw-500 mt-4">Select any from below and continue</p>
-                                <div class="f-group max-width-100"> <div
-                                        class="f-dropdown selectDropdown filled"><select
-                                            class="f-control f-dropdown"
-                                            placeholder="Add a Vehicle now & Use this Plate"
-                                            id="multiple" multiple> <option
-                                                value>Add a Vehicle now & Use this Plate</option>
-                                            <option value="1">Relation to
-                                                Applicant </option> <option
-                                                value="2">Married </option>
-                                        </select> </div> </div>
+                                    </div>
+
+                                </div>
+                                <div class="progress-text mt-1">Discounts</div>
+                            </div>
                         </div>
-                        <div style="gap:10px;"
-                            class="d-flex flex-column flex-sm-row align-items-center justify-content-center mt-4">
-                            <button type="submit" class="btn btn-primary mx-auto mt-4" data-bs-toggle="modal"
-                                data-bs-target="#exampleModalToggle2"><span>
-                                    Continue</span></button>
-                          
-
-
-                        </div>
-
-                       
                     </div>
-                </div>
-            </div>
-            <div class="modal fade" id="exampleModalToggle2" aria-hidden="true"
-                aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
-                <div class="modal-dialog modal-dialog-centered modal-lg">
-                    <div class="modal-content">
-                        <div class="modal-header border-0 d-block">
-
-                            <h4 class="title fs-20 mb-0 mx-auto text-center mt-3 fw-bold ">Are you sure you want to Cancel this Plate ?
-                            </h4>
-                            <p class="sub-title mt-2  text-center"> 05 Honda Civic (GJZ 0123)</p>
+                    <div class="container mt-5 pt-5">
+                        <div class="text-center mb-4 user-info">
+                            <img src="./images/user-person.svg" alt="" class="user-person mx-auto">
+                            <p class="user-welcome mt-2">Hey! My Name is Anne</p>
                         </div>
-                        <div class="modal-body">
-                            <div style="gap:10px;"
-                                class="d-flex flex-column flex-sm-row align-items-center justify-content-center mt-2">
-                                <button type="submit" class="btn btn-primary " data-bs-dismiss="modal"><span>
-                                    Yes</span></button>
+                        <h3 class="title  text-center">Sorry to see you leave  😢</h3>
+                       
+                        <form class="text-center mt-4 ">
+                            <div class="mb-3">
 
-                                <button type="submit" class="btn btn-outline "
-                                    data-bs-dismiss="modal"><span>No</span></button>
+                                <!-- <input type="email" class="form-control mx-auto input-box" id="exampleInputEmail1"
+                                    aria-describedby="emailHelp" placeholder="Enter email or phone number"> -->
+
+
+                                <div class="mx-auto input-box">
+
+                                    <select class="f-control f-dropdown" placeholder="Reason for Leaving" id="multiple"
+                                        class="js-states form-control" multiple>
+                                        <!-- <option value=""> Current Vehicle Mileage</option> -->
+                                        <option value="1">50
+                                        </option>
+                                        <option value="2">60
+                                        </option>
+
+                                    </select>
+                                </div>
+
+                                
+
                             </div>
 
 
 
-                        </div>
-                    </div>
 
+
+                            <div class="upload-box mt-3 p-0 bg-white">
+                                <div class="radio-check-switch ">
+
+                                    <div class="form-item">
+                                        <label for="radio-switch-2-2">
+                                            <input type="file" name="radios-3" id="radio-switch-2-2">
+                                            <div style="flex-direction: row;"
+                                                class="  my-4 h-auto p-3 upload-boxx radio-switch-state d-flex align-items-center justify-content-start flex-nowrap ">
+                                                <img src="./images/upload.svg" width="50" />
+                                                <p class="ins-title position-unset ms-3 fs-15 ins-titlee">Attach Copy of 2A </p>
+                                                <span class="icon-on"></span>
+                                            </div>
+                                        </label>
+                                    </div>
+
+
+
+                                </div>
+                            </div>
+                            <div class="mt-2 mb-5">
+                            <div class="d-flex align-items-center justify-content-center ">
+
+
+                                <span style="cursor: pointer;"
+                                    class="text-blue fs-14 text-underline text-uppercase fw-bold btn-why">Why?</span>
+    
+    
+                            </div>
+    
+                            <div style="display:none;" class="msg-box why-info mb-4 mt-2">
+                                In MA the only way to remove a vehicles/plate from a policy is to cancel the
+                                plate or switch to another insurance company & provide a 2A form, its not
+                                us believe me we don’t like it either it’s a pain) 
+                            </div>
+                        </div>
+
+                            <button type="submit" class="btn btn-primary mx-auto"><span>Continue & Cancel</span></button>
+                        </form>
+
+                    </div>
                 </div>
             </div>
         </div>
