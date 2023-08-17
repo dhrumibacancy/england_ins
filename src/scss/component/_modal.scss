@@ -7,3 +7,11 @@
         max-width: 530px;
     }
 }
+
+
+@media (min-width: 1024px){
+.modal-dialog.modal-lg-lg {
+    max-width: 659px;
+    margin: 1.75rem auto;
+}
+}

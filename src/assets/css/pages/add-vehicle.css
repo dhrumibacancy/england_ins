@@ -113,6 +113,11 @@
   font-size: 14px;
 }
 
+@media screen and (max-width: 1199px) {
+  .content-main .content .remove-vehicle-block {
+    width: 100% !important;
+  }
+}
 @media screen and (max-width: 575px) {
   .price-box .radio-check-switch {
     -ms-flex-wrap: nowrap;
@@ -141,6 +146,12 @@
   }
   .price-box .radio-check-switch .amnt-monthly {
     font-size: 24px;
+  }
+  .remove-vehicle-block {
+    width: 100% !important;
+  }
+  .radio-check-switch .ins-title {
+    font-size: 13px !important;
   }
 }
 @media screen and (max-width: 360px) {
