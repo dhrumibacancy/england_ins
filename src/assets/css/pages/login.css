@@ -109,81 +109,30 @@
   }
 }
 
-.summary-data .checkbox-label {
-  min-width: 311px;
-}
-.summary-data .f-dropdown ul {
-  top: 20px;
-}
-.summary-data .f-dropdown > span {
-  height: 30px;
-  background: #F5F5F5;
-  border: 1px solid #CCCCCC;
-  border-radius: 5px;
-  color: var(--color-dark) !important;
-  font-size: 12px;
-}
-.summary-data .f-dropdown > span span {
-  color: var(--color-black);
-  font-weight: 500;
+.field-icon {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translate(0%, -50%);
+      -ms-transform: translate(0%, -50%);
+          transform: translate(0%, -50%);
+  right: 20px;
 }
 
-ul {
-  list-style-type: disc;
-}
-ul li {
-  color: var(--color-black) !important;
-  margin-bottom: 7px;
+.login-box {
+  border: 1px solid #E6E6E6;
+  width: 100%;
+  text-align: center;
+  margin: 0 auto;
 }
 
-@media screen and (max-width: 1024px) {
-  .remarket-tab div#v-pills-tab {
-    width: auto;
+@media only screen and (max-width: 575px) {
+  .fs-16 {
+    font-size: 14px;
   }
 }
-@media screen and (max-width: 766px) {
-  .flex-column {
-    -webkit-box-orient: horizontal !important;
-    -webkit-box-direction: normal !important;
-        -ms-flex-direction: row !important;
-            flex-direction: row !important;
+@media only screen and (min-width: 600px) {
+  .login-box {
+    width: 432px;
   }
 }
-@media screen and (max-width: 767px) {
-  .flex-column {
-    -webkit-box-orient: horizontal !important;
-    -webkit-box-direction: normal !important;
-        -ms-flex-direction: row !important;
-            flex-direction: row !important;
-  }
-  .remarket-tab div#v-pills-tab {
-    -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
-    overflow-x: auto;
-    width: 89vw;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    padding-bottom: 10px;
-  }
-  .summary-data .checkbox-label {
-    min-width: 32%;
-  }
-  .upload-box {
-    width: auto;
-  }
-  .remarket-tab {
-    -ms-flex-wrap: wrap !important;
-        flex-wrap: wrap !important;
-  }
-  .summary-data {
-    -webkit-box-flex: 1;
-        -ms-flex: auto;
-            flex: auto;
-  }
-}
-/*# sourceMappingURL=remarket copy.css.map */
+/*# sourceMappingURL=login.css.map */

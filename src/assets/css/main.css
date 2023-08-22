@@ -2605,6 +2605,32 @@ label.checkbox-inline.squar-boxes .checkbox-label {
   margin: 0;
 }
 
+.field-icon {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translate(0%, -50%);
+      -ms-transform: translate(0%, -50%);
+          transform: translate(0%, -50%);
+  right: 20px;
+}
+
+.login-box {
+  border: 1px solid #E6E6E6;
+  width: 100%;
+  text-align: center;
+  margin: 0 auto;
+}
+
+@media only screen and (max-width: 575px) {
+  .fs-16 {
+    font-size: 14px;
+  }
+}
+@media only screen and (min-width: 600px) {
+  .login-box {
+    width: 432px;
+  }
+}
 .navbar-toggler {
   background-image: url(/images/menu.svg);
   background-repeat: no-repeat;
