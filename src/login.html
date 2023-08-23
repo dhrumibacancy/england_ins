@@ -143,9 +143,14 @@
                             <form class="mt-4">
                                 <div class="login-box px-3">
                                     <p class="text-black text-left fs-16 mb-3 mt-2 mt-3 fw-500">Log in to admin</p>
+                                    <div class="  mb-3">
                                     <input
-                                    class="form-control addPrefer w-100  mb-3" type="text"
+                                    class="form-control addPrefer w-100" type="text"
                                     placeholder="Enter Email" />
+                                    <p class="text-danger text-left fs-14 mt-2">
+                                        {errors.email.message}
+                                    </p>
+                                </div>  
                                     <!-- <input
                                                 class="form-control addPrefer w-auto dropdown-width" type="text"
                                                 placeholder="Password" /> -->
@@ -153,6 +158,9 @@
 
                                                 <input id="password-field" type="password" class="form-control" name="password" value="secret"   placeholder="Password">
                                                 <span toggle="#password-field" class="fa fa-fw fa-eye field-icon toggle-password"></span>
+                                                <p class="text-danger text-left fs-14 mt-2">
+                                                    {errors.email.message}
+                                                </p>
                                             </div>
 
 

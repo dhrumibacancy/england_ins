@@ -1,7 +1,7 @@
 @use "../utils/"as *;
 .field-icon {
     position: absolute;
-    top: 50%;
+    bottom: 50%;
     transform: translate(0%, -50%);
     right:20px;
   }
