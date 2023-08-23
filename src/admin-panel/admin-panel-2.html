@@ -133,7 +133,7 @@
                 <div class="content">
                     <div class="container mt-5 pt-5">
                         <div class="serach-box d-flex align-items-center justify-content-between">
-                            <p class="text-black fs-16 mb-2 fw-600 ">Client’s Profile</p>
+                            <p class="text-black fs-18 mb-2 fw-600 ">Client’s Profile</p>
                             <!-- <h3 class="fw-600"></h3> -->
                           
                                 <img class="" src="../images/search.svg">
@@ -221,10 +221,10 @@
                               
                                 <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
 
-                                    <button class="nav-link active" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home" aria-selected="true" fdprocessedid="s2j8vv"><img src="../images/icon-1.svg" class="me-2">Policies List</button>
-                                    <button class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false" fdprocessedid="rrdly"><img src="../images/icon-2.svg" class="me-2">Notes</button>
-                                    <button class="nav-link" id="v-pills-messages-tab" data-bs-toggle="pill" data-bs-target="#v-pills-messages" type="button" role="tab" aria-controls="v-pills-messages" aria-selected="false" fdprocessedid="7j0msd"><img src="../images/icon-3.svg" class="me-2">Pending Transactions</button>
-                                    <button class="nav-link" id="v-pills-receipt-tab" data-bs-toggle="receipt" data-bs-target="#v-receipt-messages" type="button" role="tab" aria-controls="v-receipt-messages" aria-selected="false" fdprocessedid="7j0msd"><img src="../images/icon-4.svg" class="me-2">Receipt</button>
+                                    <button class="nav-link active" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home" aria-selected="true" fdprocessedid="s2j8vv"><img src="../images/certificate_blue.svg" class="me-2 blue-icon"><img src="../images/certificate_white.svg" class="me-2 white-icon">Policies List</button>
+                                    <button class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false" fdprocessedid="rrdly"><img src="../images/bill_blue.svg" class="me-2 blue-icon"><img src="../images/bill_white.svg" class="me-2 white-icon">Notes</button>
+                                    <button class="nav-link" id="v-pills-messages-tab" data-bs-toggle="pill" data-bs-target="#v-pills-messages" type="button" role="tab" aria-controls="v-pills-messages" aria-selected="false" fdprocessedid="7j0msd"><img src="../images/pending_blue.svg" class="me-2 blue-icon"><img src="../images/pending_white.svg" class="me-2 white-icon">Pending Transactions</button>
+                                    <button class="nav-link" id="v-pills-receipt-tab" data-bs-toggle="receipt" data-bs-target="#v-receipt-messages" type="button" role="tab" aria-controls="v-receipt-messages" aria-selected="false" fdprocessedid="7j0msd"><img src="../images/document_blue.svg" class="me-2 blue-icon"><img src="../images/document_white.svg" class="me-2 white-icon">Receipt</button>
 
                                 </div>
                             </div>
@@ -247,17 +247,18 @@
                                                     aria-controls="collapseOne">
                                                     <img src="../images/car.svg" alt="">
                                                     <h4 class="title fs-18">Auto Insurance</h4>
-                                                    <div class="serach-box">
+                                                    <!-- <div class="serach-box">
                                                         <div class="input-group search bg-white">
                                                             <img class="" src="../images/search.svg">
                                                             <input class="form-control" type="search" placeholder="Search Policy Name, Car, Address" />
                                                         </div>
-                                                    </div>
+                                                    </div> -->
                                                 </button>
                                             </h2>
                                             <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
                                                 data-bs-parent="#accordionPolicy">
                                                 <div class="accordion-body pt-0">
+                                                    <div class="table-responsive">
                                                     <table class="table policy-table">
                                                         <thead>
                                                             <colgroup>
@@ -269,12 +270,14 @@
                                                                 <th class="link-label">
                                                                     Policy name/Address
                                                                 </th>
-                                                                <th class="link-label">
+                                                                <th style="width:18%"></th>
+                                                                <th style="width:18%" class="link-label">
                                                                     Producer
                                                                 </th>
-                                                                <th class="link-label">
+                                                                <th style="width:25%" class="link-label">
                                                                     CRS
                                                                 </th>
+                                                                <th style="width:7%"></th>
                                                             </tr>
                                                         </thead>
                                                         <tbody>
@@ -282,37 +285,50 @@
                                                                 <td>
                                                                     <a href="">Cohen Policy</a>
                                                                 </td>
+                                                                <td class="text-danger no-wrap fw-500">
+                                                                    Cancelled (08/31/2023)
+                                                                </td>
                                                                 <td>
                                                                     Jerry Helfer
                                                                 </td>
                                                                 <td>
                                                                     Kimberly Mastrangelo
                                                                 </td>
+                                                                <td> <a href=""> <img src="../images/search-eye.svg" class="search-eye" alt=""></a></td>
                                                             </tr>
                                                             <tr class="policy-table-card">
                                                                 <td>
                                                                     <a href="">Mustang 1969</a>
                                                                 </td>
+                                                                <td class="text-danger no-wrap fw-500">
+                                                                    Cancelled (08/31/2023)
+                                                                </td>
                                                                 <td>
                                                                     Jerry Helfer
                                                                 </td>
                                                                 <td>
                                                                     Kimberly Mastrangelo
                                                                 </td>
+                                                                <td> <a href=""> <img src="../images/search-eye.svg" class="search-eye" alt=""></a></td>
                                                             </tr>
                                                             <tr class="policy-table-card">
                                                                 <td>
                                                                     <a href="">Oval street, MA</a>
                                                                 </td>
+                                                                <td class="text-danger no-wrap fw-500">
+                                                                    Cancelled (08/31/2023)
+                                                                </td>
                                                                 <td>
                                                                     Jerry Helfer
                                                                 </td>
                                                                 <td>
                                                                     Kimberly Mastrangelo
                                                                 </td>
+                                                                <td> <a href=""> <img src="../images/search-eye.svg" alt="" class="search-eye"></a></td>
                                                             </tr>
                                                         </tbody>
                                                     </table>
+                                                </div>
                                                 </div>
                                             </div>
                                         </div><!-- /accordion-item -->
@@ -329,6 +345,7 @@
                                             <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
                                                 data-bs-parent="#accordionPolicy">
                                                 <div class="accordion-body pt-0">
+                                                    <div class="table-responsive">
                                                     <table class="table policy-table">
                                                         <thead>
                                                             <colgroup>
@@ -340,12 +357,14 @@
                                                                 <th class="link-label">
                                                                     Policy name/Address
                                                                 </th>
-                                                                <th class="link-label">
+                                                                <th style="width:18%"></th>
+                                                                <th style="width:18%" class="link-label">
                                                                     Producer
                                                                 </th>
-                                                                <th class="link-label">
+                                                                <th style="width:25%" class="link-label">
                                                                     CRS
                                                                 </th>
+                                                                <th style="width:7%"></th>
                                                             </tr>
                                                         </thead>
                                                         <tbody>
@@ -353,15 +372,20 @@
                                                                 <td>
                                                                     <a href="">8888 Oval street, MA</a>
                                                                 </td>
+                                                                <td class="text-danger no-wrap fw-500">
+                                                                    Cancelled (08/31/2023)
+                                                                </td>
                                                                 <td>
                                                                     Jerry Helfer
                                                                 </td>
                                                                 <td>
                                                                     Kimberly Mastrangelo
                                                                 </td>
+                                                                <td> <a href=""> <img src="../images/search-eye.svg" alt="" class="search-eye"></a></td>
                                                             </tr>
                                                         </tbody>
                                                     </table>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div><!-- /accordion-item -->
@@ -378,6 +402,7 @@
                                             <div id="collapseThree" class="accordion-collapse collapse"
                                                 aria-labelledby="headingThree" data-bs-parent="#accordionPolicy">
                                                 <div class="accordion-body pt-0">
+                                                    <div class="table-responsive">
                                                     <table class="table policy-table">
                                                         <thead>
                                                             <colgroup>
@@ -389,12 +414,14 @@
                                                                 <th class="link-label">
                                                                     Policy name/Address
                                                                 </th>
-                                                                <th class="link-label">
+                                                                <th style="width:18%"></th>
+                                                                <th style="width:18%" class="link-label">
                                                                     Producer
                                                                 </th>
-                                                                <th class="link-label">
+                                                                <th style="width:25%" class="link-label">
                                                                     CRS
                                                                 </th>
+                                                                <th style="width:7%"></th>
                                                             </tr>
                                                         </thead>
                                                         <tbody>
@@ -402,15 +429,20 @@
                                                                 <td>
                                                                     <a href="">My Life</a>
                                                                 </td>
+                                                                <td class="text-danger no-wrap fw-500">
+                                                                    Cancelled (08/31/2023)
+                                                                </td>
                                                                 <td>
                                                                     Jerry Helfer
                                                                 </td>
                                                                 <td>
                                                                     Kimberly Mastrangelo
                                                                 </td>
+                                                                <td> <a href=""> <img src="../images/search-eye.svg" alt=""  class="search-eye"></a></td>
                                                             </tr>
                                                         </tbody>
                                                     </table>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div><!-- /accordion-item -->
@@ -525,6 +557,7 @@
                         <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
                             data-bs-parent="#accordionPolicy">
                             <div class="accordion-body pt-0">
+                                <div class="table-responsive">
                                 <table class="table policy-table">
                                     <thead>
                                         <colgroup>
@@ -566,6 +599,8 @@
                                         
                                     </tbody>
                                 </table>
+                                </div>
+
                             </div>
                         </div>
                     </div><!-- /accordion-item -->
@@ -582,6 +617,7 @@
                         <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
                             data-bs-parent="#accordionPolicy">
                             <div class="accordion-body pt-0">
+                                <div class="table-responsive">
                                 <table class="table policy-table">
                                     <thead>
                                         <colgroup>
@@ -615,6 +651,7 @@
                                         </tr>
                                     </tbody>
                                 </table>
+                                </div>
                             </div>
                         </div>
                     </div><!-- /accordion-item -->
@@ -631,6 +668,7 @@
                         <div id="collapseThree" class="accordion-collapse collapse"
                             aria-labelledby="headingThree" data-bs-parent="#accordionPolicy">
                             <div class="accordion-body pt-0">
+                                <div class="table-responsive">
                                 <table class="table policy-table">
                                     <thead>
                                         <colgroup>
@@ -664,6 +702,7 @@
                                         </tr>
                                     </tbody>
                                 </table>
+                            </div>
                             </div>
                         </div>
                     </div><!-- /accordion-item -->
