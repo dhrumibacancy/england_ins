@@ -40,23 +40,7 @@
 
     <link rel="icon" href="images/favicon.png" type="image/gif" sizes="16x16">
     <link rel="stylesheet" href="assets/css/main.css">
-    <style>
-        .field-icon {
-  position: absolute;
-  top: 50%;
- 
-  transform: translate(0%, -50%);
-  right:20px;
-}
-
-.login-box{
-    border: 1px solid #E6E6E6;
-    width: 432px;
-    text-align: center;
-    margin: 0 auto;
-}
-
-    </style>
+   
 </head>
 
 <body>
@@ -153,41 +137,34 @@
                         <h3 class="title  text-center">Welcome! </h3>
 
 
-                        <!-- <p class="sub-title mt-2  text-center">Please select the vehicles you want to include & coverage
-                            for each</p> -->
+                        <p class="sub-title mt-2  text-center">You are invited by admin, Please Create your password to log in for your email <a href="" class="text-blue">username@email.com</a></p>
                         <div class="contain-wrapper-sm">
                             <form class="mt-4">
                                 <div class="login-box px-3">
-                                    <p class="text-black text-left fs-16 mb-3 mt-2 mt-3 fw-500">Log in to admin</p>
-                                    <input
-                                    class="form-control addPrefer w-100  mb-3" type="text"
-                                    placeholder="Enter Email" />
+                                    <p class="text-black text-left fs-16 mb-3 mt-2 mt-3 fw-500">Please Create your Password </p>
+                                    <div class="position-relative mb-3">
+
+                                        <input id="password-field" type="password" class="form-control" name="password"   placeholder="New Password">
+                                        <span toggle="#password-field" class="fa fa-fw fa-eye field-icon toggle-password"></span>
+                                    </div>
                                     <!-- <input
                                                 class="form-control addPrefer w-auto dropdown-width" type="text"
                                                 placeholder="Password" /> -->
 <div class="position-relative mb-3">
 
-                                                <input id="password-field" type="password" class="form-control" name="password" value="secret"   placeholder="Password">
-                                                <span toggle="#password-field" class="fa fa-fw fa-eye field-icon toggle-password"></span>
+                                                <input id="password-field" type="password" class="form-control" name="password"    placeholder="Confirm Password  ">
+                                                <span toggle="#password-field1" class="fa fa-fw fa-eye field-icon toggle-password1"></span>
                                             </div>
 
 
                                  
-                                      <div class="d-flex align-items-center justify-content-between mt-4">
-                                        <label class="checkbox-inline mb-0 w-auto " for="checkbox_three"
-                                            name="question1">
-                                            <input class="checkbox-control trigger" type="checkbox" value=""
-                                                id="checkbox_three" data-trigger="hidden_fields_three">
-                                            <span class="checkbox-custom"></span>
-                                            <span class="checkbox-label fs-18">Remember me</span>
-                                        </label>
+                                    
 
-                                        <button type="submit" class="btn btn-primary "><span>Continue</span>
+                                        <button type="submit" class="mb-4 btn btn-primary mx-auto "><span>Save Changes</span>
                                         </button>
-                                    </div>
+                                    
 
-                                    <div class="text-center mb-4 mt-4">
-                                    <a href="" class="text-blue fs-12 text-uppercase fw-500 mx-auto">Forgot Password?</a>
+                                   
                                      
                                 </div>
 
@@ -246,6 +223,18 @@ if (input.attr("type") == "password") {
   input.attr("type", "password");
 }
 });
+
+$(".toggle-password1").click(function() {
+
+$(this).toggleClass("fa-eye fa-eye-slash");
+var input = $($(this).attr("toggle"));
+if (input.attr("type") == "password") {
+  input.attr("type", "text");
+} else {
+  input.attr("type", "password");
+}
+});
+
 
         $(function () {
 
