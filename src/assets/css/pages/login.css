@@ -141,9 +141,53 @@
   max-width: unset !important;
 }
 
+.admin-employee-table .link-label {
+  padding: 0.75rem 0.9rem;
+  vertical-align: middle;
+  font-size: 0.995rem;
+  color: #999999;
+}
+
+.admin-employee-table .policy-table-card a, .admin-employee-table .policy-table-card td {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #000000;
+}
+
+.admin-employee-table .policy-table-card td:nth-child(2), .admin-employee-table .policy-table-card td:nth-child(3) {
+  display: table-cell;
+}
+
+.table > :not(caption) > * > * {
+  padding: 0.75rem 0.9rem;
+  vertical-align: middle;
+}
+
+.admin-employee-table tr td:last-child a {
+  margin-right: 12px;
+}
+
+.btn-red {
+  color: #BF0101;
+}
+
+.btn-orange {
+  color: #F68A1F;
+}
+
 @media only screen and (max-width: 575px) {
   .fs-16 {
     font-size: 14px;
+  }
+  .admin-employee-table .policy-table-card td:nth-child(2), .admin-employee-table .policy-table-card td:nth-child(3) {
+    display: block;
+  }
+  .admin-employee-table tr:first-child td:last-child {
+    border-top-right-radius: 10px;
+    -webkit-box-flex: 1;
+        -ms-flex: 1 0 30%;
+            flex: 1 0 30%;
+    width: 30%;
   }
 }
 @media only screen and (min-width: 600px) {
