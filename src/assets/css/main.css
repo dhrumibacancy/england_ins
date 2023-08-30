@@ -2695,6 +2695,14 @@ label.checkbox-inline.squar-boxes .checkbox-label {
   bottom: -5px;
 }
 
+.filter-menu {
+  width: 375px;
+}
+
+.filter-menu .checkbox-label {
+  font-size: 14px !important;
+}
+
 @media only screen and (max-width: 575px) {
   .fs-16 {
     font-size: 14px;

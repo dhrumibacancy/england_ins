@@ -55,6 +55,11 @@
             integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
             crossorigin="anonymous">
 
+            
+        <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css">
+
+
         <link rel="icon" href="../images/favicon.png" type="image/gif"
             sizes="16x16">
         <link rel="stylesheet" href="../assets/css/main.css">
@@ -328,10 +333,70 @@
                                         id="v-pills-home" role="tabpanel"
                                         aria-labelledby="v-pills-home-tab">
                                         <div class="serach-box">
-                                            <h3 class="d-block d-md-none">Which
+
+                                            <div class="d-flex align-items-center justify-content-between mb-3">
+                                            <h3 class="d-block d-md-none mb-0">Which
                                                 policy can we help you with</h3>
-                                            <h3 class="d-none d-md-block">Which
+                                            <h3 class="d-none d-md-block mb-0">Which
                                                 policy may I help you with</h3>
+
+                                                <div class="btn-group">
+                                                    <div class=" dropdown-toggle" type="button" id="dropdownMenuClickableInside" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
+                                                        <img class="" src="../images/filter.svg">
+                                                    </div>
+                                                    <div style="width: 235px;" class="dropdown-menu  py-3 px-3" aria-labelledby="dropdownMenuClickableInside">
+                                                        <div class="d-flex justify-content-between align-items-center mb-3">
+                                                            <a href="" class="fs-20 text-black fw-bold">
+                                                               
+                                                                All Notes
+                                                            </a>
+            
+                                                            <h4 class="text-uppercase fs-14 text-blue">
+                                                                RESET
+                                                            </h4>
+            
+                                                            </div>
+            
+                                                           
+            
+                                                       
+                                                            <div class="form-group">
+                                                                <label class="checkbox-inline mb-sm-1 w-auto" for="flexCheckDefault">
+                                                                    <input class="checkbox-control" type="checkbox" value="" id="flexCheckDefault">
+                                                                    <span class="checkbox-custom"></span>
+                                                                    <span class="checkbox-label fs-14"> All
+                                                                    </span>
+                                                                </label>
+            
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <label class="checkbox-inline mb-sm-1 w-auto" for="flexCheckDefault2">
+                                                                    <input class="checkbox-control" type="checkbox" value="" id="flexCheckDefault2">
+                                                                    <span class="checkbox-custom"></span>
+                                                                    <span class="checkbox-label fs-14">Expired
+                                                                    </span>
+                                                                </label>
+                                                            </div>
+                                                            <div class="form-group mb-0">
+                                                                <label class="checkbox-inline mb-0 w-auto" for="flexCheckDefault3">
+                                                                    <input class="checkbox-control" type="checkbox" value="" id="flexCheckDefault3">
+                                                                    <span class="checkbox-custom"></span>
+                                                                    <span class="checkbox-label fs-14">Canceled
+                                                                    </span>
+                                                                </label>
+                                                            </div>
+                                                            <div class="form-group mb-0">
+                                                                <label class="checkbox-inline mb-0 w-auto" for="flexCheckDefault3">
+                                                                    <input class="checkbox-control" type="checkbox" value="" id="flexCheckDefault3">
+                                                                    <span class="checkbox-custom"></span>
+                                                                    <span class="checkbox-label fs-14">Rewritten
+                                                                    </span>
+                                                                </label>
+                                                            </div>
+                                                     
+                                                    </div>
+                                                  </div>
+                                                </div>
                                             <div
                                                 class="input-group search d-none d-md-flex">
                                                 <img class
@@ -968,8 +1033,665 @@
                                     <div class="tab-pane fade"
                                         id="v-pills-profile" role="tabpanel"
                                         aria-labelledby="v-pills-profile-tab">
-                                        <h3
-                                            class="text-black mt-2 fs-30 fw-500  text-left  pb-3">Drivers</h3>
+                                           <div class="serach-box">
+                            <div class="input-group search">
+                                <img class="" src="../images/search.svg">
+                                <input class="form-control" type="search"
+                                    placeholder="Search Notes" />
+                            </div>
+                        </div> <!-- /search-box -->
+
+                        <div class="note-container">
+                            <div class="notes-side-bar">
+                                <div class="d-flex justify-content-between align-items-center mb-3">
+                                    <a href="" class="fs-20 text-black fw-bold">
+                                       
+                                        All Notes
+                                    </a>
+        
+                                    <div class="btn-group">
+                                        <div class=" dropdown-toggle" type="button" id="dropdownMenuClickableInside" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
+                                            <img class="" src="../images/filter.svg">
+                                        </div>
+                                        <div class="dropdown-menu filter-menu py-3 px-2" aria-labelledby="dropdownMenuClickableInside">
+                                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                                <a href="" class="fs-20 text-black fw-bold">
+                                                   
+                                                    All Notes
+                                                </a>
+
+                                                <h4 class="text-uppercase fs-14 text-blue">
+                                                    RESET
+                                                </h4>
+
+                                                </div>
+
+                                            <div class="d-flex align-items-center  mb-3">
+                                                <div class="me-2">
+                                                <label class="radio-inline" for="now">
+                                                    <input class="radio-control" type="radio" name="country" value="" id="now"
+                                                        checked="">
+                                                    <span class="radio-custom"></span>
+                                                    <span class="radio-label fs-14">All</span>
+                                                </label>
+                                            </div>
+
+                                            <div class="me-2">
+                                                <label class="radio-inline" for="custom">
+                                                    <input class="radio-control" type="radio" name="country" value="" id="custom">
+                                                    <span class="radio-custom"></span>
+                                                    <span class="radio-label fs-14">Pending</span>
+                                                </label>
+                                            </div>
+
+                                            <div>
+                                                <label class="radio-inline" for="custom1">
+                                                    <input class="radio-control" type="radio" name="country" value="" id="custom1   ">
+                                                    <span class="radio-custom"></span>
+                                                    <span class="radio-label fs-14">Completed</span>
+                                                </label>
+                                            </div>
+                                                
+                                            </div>
+                                            <div class="row g-3">
+                                                <div class="col-12">
+                                                    <div class="f-group max-width-100">
+                                                        <div class="f-dropdown selectDropdown"><select class="f-control f-dropdown"
+                                                                placeholder="Select the user" id="secondaryHome">
+                                                                <option value="">Select the user</option>
+                                                                <option value="1">Option 1
+                                                                </option>
+                                                                <option value="2">Option 2
+                                                                </option>
+                                                                <option value="3">Other
+                                                                </option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                                  
+                                            <div class="col-6">
+                                                <div class="input-group date form-control px-0" id="datepicker">
+                                                    <input type="text" class="" id="date" placeholder="From Date" />
+                                                    <span class="input-group-append ">
+                                                        <span class="input-group-text border-0 bg-white d-block">
+                                                            <img class="" width="20px" src="../images/calender-icon.svg">
+                                                        </span>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <div class="col-6">
+                                                <div class="input-group date form-control px-0" id="datepicker1">
+                                                    <input type="text" class="" id="date" placeholder="To Date" />
+                                                    <span class="input-group-append ">
+                                                        <span class="input-group-text border-0 bg-white d-block">
+                                                            <img class="" width="20px" src="../images/calender-icon.svg">
+                                                        </span>
+                                                    </span>
+                                                </div>
+                                            </div>
+
+                                      
+                                            </div>
+                                            <div class="row g-2 g-sm-3 mx-auto mt-2 mb-3 remove-vehicle-block">
+                                                <div class="col-12 col-md-6">
+                                                    <div class="policy-cards">
+                                                        
+                                                        <div class="card-body">
+                                                            <div class="form-group">
+                                                                <label class="checkbox-inline mb-sm-1 w-auto" for="flexCheckDefault">
+                                                                    <input class="checkbox-control" type="checkbox" value="" id="flexCheckDefault">
+                                                                    <span class="checkbox-custom"></span>
+                                                                    <span class="checkbox-label fs-14"> Add
+                                                                        Vehicle
+                                                                    </span>
+                                                                </label>
+            
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <label class="checkbox-inline mb-sm-1 w-auto" for="flexCheckDefault2">
+                                                                    <input class="checkbox-control" type="checkbox" value="" id="flexCheckDefault2">
+                                                                    <span class="checkbox-custom"></span>
+                                                                    <span class="checkbox-label fs-14">Remove
+                                                                        Vehicle
+                                                                    </span>
+                                                                </label>
+                                                            </div>
+                                                            <div class="form-group mb-0">
+                                                                <label class="checkbox-inline mb-0 w-auto" for="flexCheckDefault3">
+                                                                    <input class="checkbox-control" type="checkbox" value="" id="flexCheckDefault3">
+                                                                    <span class="checkbox-custom"></span>
+                                                                    <span class="checkbox-label fs-14">Replace
+                                                                        Vehicle
+                                                                    </span>
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+            
+                                                <div class="col-12 col-md-6">
+                                                    <div class="policy-cards">
+                                                       
+                                                        <div class="card-body">
+                                                            <div class="form-group">
+                                                                <label class="checkbox-inline mb-sm-1 w-auto" for="flexCheckDefault">
+                                                                    <input class="checkbox-control" type="checkbox" value="" id="flexCheckDefault">
+                                                                    <span class="checkbox-custom"></span>
+                                                                    <span class="checkbox-label fs-14">
+                                                                        Add Drivers
+                                                                    </span>
+                                                                </label>
+            
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <label class="checkbox-inline mb-sm-1 w-auto" for="flexCheckDefault2">
+                                                                    <input class="checkbox-control" type="checkbox" value="" id="flexCheckDefault2">
+                                                                    <span class="checkbox-custom"></span>
+                                                                    <span class="checkbox-label fs-14">
+                                                                        Remove Drivers
+                                                                    </span>
+                                                                </label>
+                                                            </div>
+                                                            <div class="form-group mb-0">
+                                                                <label class="checkbox-inline mb-0 w-auto" for="flexCheckDefault3">
+                                                                    <input class="checkbox-control" type="checkbox" value="" id="flexCheckDefault3">
+                                                                    <span class="checkbox-custom"></span>
+                                                                    <span class="checkbox-label fs-14">
+                                                                        Replace Drivers
+                                                                    </span>
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+            
+                                                <div class="col-12 col-md-6">
+                                                    <div class="policy-cards">
+                                                        
+                                                        <div class="card-body">
+                                                            <div class="card-scroll">
+                                                                <div class="form-group">
+                                                                    <label class="checkbox-inline mb-sm-1 w-auto" for="flexCheckDefault">
+                                                                        <input class="checkbox-control" type="checkbox" value="" id="flexCheckDefault">
+                                                                        <span class="checkbox-custom"></span>
+                                                                        <span class="checkbox-label fs-14">
+                                                                            Update Coverage
+                                                                        </span>
+                                                                    </label>
+            
+                                                                </div>
+                                                                <div class="form-group">
+                                                                    <label class="checkbox-inline mb-sm-1 w-auto" for="flexCheckDefault2">
+                                                                        <input class="checkbox-control" type="checkbox" value="" id="flexCheckDefault2">
+                                                                        <span class="checkbox-custom"></span>
+                                                                        <span class="checkbox-label fs-14">
+                                                                            License
+                                                                        </span>
+                                                                    </label>
+                                                                </div>
+                                                                <div class="form-group">
+                                                                    <label class="checkbox-inline mb-md-3 w-auto" for="flexCheckDefault3">
+                                                                        <input class="checkbox-control" type="checkbox" value="" id="flexCheckDefault3">
+                                                                        <span class="checkbox-custom"></span>
+                                                                        <span class="checkbox-label fs-14">
+                                                                            Update Address
+                                                                        </span>
+                                                                    </label>
+                                                                </div>
+                                                                <div class="form-group">
+                                                                    <label class="checkbox-inline mb-sm-1 w-auto" for="flexCheckDefault4">
+                                                                        <input class="checkbox-control" type="checkbox" value="" id="flexCheckDefault4">
+                                                                        <span class="checkbox-custom"></span>
+                                                                        <span class="checkbox-label fs-14">
+                                                                            Lien holder
+                                                                        </span>
+                                                                    </label>
+                                                                </div>
+                                                                <div class="form-group">
+                                                                    <label class="checkbox-inline mb-0 w-auto" for="flexCheckDefault5">
+                                                                        <input class="checkbox-control" type="checkbox" value="" id="flexCheckDefault5">
+                                                                        <span class="checkbox-custom"></span>
+                                                                        <span class="checkbox-label fs-14">
+                                                                            Discounts
+                                                                        </span>
+                                                                    </label>
+                                                                </div>
+                                                            </div>
+                                                        </div> <!-- /card-body -->
+                                                    </div><!-- /policy-cards -->
+                                                </div>
+                                                <div class="col-12 col-md-6">
+                                                    <div class="policy-cards">
+                                                       
+                                                        <div class="card-body">
+                                                            <div class="card-scroll">
+                                                                <div class="form-group">
+                                                                    <label class="checkbox-inline mb-sm-1 w-auto" for="flexCheckDefault">
+                                                                        <input class="checkbox-control" type="checkbox" value="" id="flexCheckDefault">
+                                                                        <span class="checkbox-custom"></span>
+                                                                        <span class="checkbox-label fs-14">
+                                                                            Update Coverage
+                                                                        </span>
+                                                                    </label>
+            
+                                                                </div>
+                                                                <div class="form-group">
+                                                                    <label class="checkbox-inline mb-sm-1 w-auto" for="flexCheckDefault2">
+                                                                        <input class="checkbox-control" type="checkbox" value="" id="flexCheckDefault2">
+                                                                        <span class="checkbox-custom"></span>
+                                                                        <span class="checkbox-label fs-14">
+                                                                            License
+                                                                        </span>
+                                                                    </label>
+                                                                </div>
+                                                                <div class="form-group">
+                                                                    <label class="checkbox-inline mb-md-3 w-auto" for="flexCheckDefault3">
+                                                                        <input class="checkbox-control" type="checkbox" value="" id="flexCheckDefault3">
+                                                                        <span class="checkbox-custom"></span>
+                                                                        <span class="checkbox-label fs-14">
+                                                                            Update Address
+                                                                        </span>
+                                                                    </label>
+                                                                </div>
+                                                                <div class="form-group">
+                                                                    <label class="checkbox-inline mb-sm-1 w-auto" for="flexCheckDefault4">
+                                                                        <input class="checkbox-control" type="checkbox" value="" id="flexCheckDefault4">
+                                                                        <span class="checkbox-custom"></span>
+                                                                        <span class="checkbox-label fs-14">
+                                                                            Lien holder
+                                                                        </span>
+                                                                    </label>
+                                                                </div>
+                                                                <div class="form-group">
+                                                                    <label class="checkbox-inline mb-0 w-auto" for="flexCheckDefault5">
+                                                                        <input class="checkbox-control" type="checkbox" value="" id="flexCheckDefault5">
+                                                                        <span class="checkbox-custom"></span>
+                                                                        <span class="checkbox-label fs-14">
+                                                                            Discounts
+                                                                        </span>
+                                                                    </label>
+                                                                </div>
+                                                            </div>
+                                                        </div> <!-- /card-body -->
+                                                    </div><!-- /policy-cards -->
+                                                </div>
+                                            </div>
+                                        </div>
+                                      </div>
+                                </div>
+                                <a href="client-profile-Notes-2-responsive.html" class="notes-card blue-bg">
+                                    <div class="notes-description">
+                                        <div class="update-log">04 Honda Added</div>
+                                        <div class="update-log">Skoda Octavia Vehicle Added</div>
+                                    </div>
+                                    <div class="notes-card-footer">
+                                        <div class="notes-user">
+                                            Bradley Lawlor
+                                        </div>
+                                        <div class="notes-policy-name">
+                                            Policy Name
+                                        </div>
+                                    </div>
+                                </a><!-- notes-card -->
+                                <a href="client-profile-Notes-2-responsive.html" class="notes-card">
+                                    <div class="notes-description">
+                                        <p class="m-0">
+                                            Ut sodales, ex sit amet consectetur accumsan, nibh ex sollicitudin
+                                            consectetur accumsan, nibh ex consectetur accumsan, nibh ex...
+                                        </p>
+                                    </div>
+                                    <div class="notes-card-footer">
+                                        <div class="notes-user">
+                                            Bradley Lawlor
+                                        </div>
+                                        <div class="notes-policy-name">
+                                            Policy Name
+                                        </div>
+                                    </div>
+                                </a><!-- notes-card -->
+                                <a href="client-profile-Notes-2-responsive.html" class="notes-card">
+                                    <div class="notes-description">
+                                        <p class="m-0">
+                                            Ut sodales, ex sit amet consectetur accumsan, nibh ex sollicitudin
+                                            consectetur accumsan, nibh ex consectetur accumsan, nibh ex...
+                                        </p>
+                                    </div>
+                                    <div class="notes-card-footer">
+                                        <div class="notes-user">
+                                            Bradley Lawlor
+                                        </div>
+                                        <div class="notes-policy-name">
+                                            Policy Name
+                                        </div>
+                                    </div>
+                                </a><!-- notes-card -->
+                                <a href="client-profile-Notes-2-responsive.html" class="notes-card">
+                                    <div class="notes-description">
+                                        <p class="m-0">
+                                            Ut sodales, ex sit amet consectetur accumsan, nibh ex sollicitudin
+                                            consectetur accumsan, nibh ex consectetur accumsan, nibh ex...
+                                        </p>
+                                    </div>
+                                    <div class="notes-card-footer">
+                                        <div class="notes-user">
+                                            Bradley Lawlor
+                                        </div>
+                                        <div class="notes-policy-name">
+                                            Policy Name
+                                        </div>
+                                    </div>
+                                </a><!-- notes-card -->
+                            </div>
+                            <div class="notes-data d-none d-md-block">
+
+                                <div class="serach-box">
+                                    <div class="input-group search">
+                                        <img class="" src="../images/search.svg">
+                                        <input class="form-control" type="search" placeholder="Search In this note" />
+                                    </div>
+                                </div> <!-- /search-box -->
+
+                                <div class="accordion custom notes-update-log" id="accordionPolicy">
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="headingOne">
+                                            <button class="accordion-button collapsed flex-wrap flex-sm-nowrap  py-2 py-sm-1" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                                                aria-expanded="false" aria-controls="collapseOne">
+                                                <h4 class="title fs-14 w-100 w-sm-auto">Coverage Updated</h4>
+                                                <span class="updated-history w-100 w-sm-auto">Bradley Lawlor, May 28, 2023 9:59
+                                                    pm</span>
+                                            </button>
+                                        </h2>
+                                        <div id="collapseOne" class="accordion-collapse collapse"
+                                            aria-labelledby="headingOne" data-bs-parent="#accordionPolicy">
+                                            <div class="accordion-body">
+                                                <div class="updated-items">
+                                                    <div class="updated-item">
+                                                        <div class="updated-item-label fs-11 text-light-gray">VIN Number
+                                                        </div>
+                                                        <div class="updated-item-value fs-11">MA23GF4865</div>
+                                                    </div>
+                                                    <div class="updated-item">
+                                                        <div class="updated-item-label fs-11 text-light-gray">Miles
+                                                            Driven Per Year</div>
+                                                        <div class="updated-item-value fs-11">2500 miles</div>
+                                                    </div>
+                                                    <div class="updated-item">
+                                                        <div class="updated-item-label fs-11 text-light-gray">Who’s
+                                                            Drive the most</div>
+                                                        <div class="updated-item-value fs-11">Mary Freund</div>
+                                                    </div>
+                                                    <div class="updated-item">
+                                                        <div class="updated-item-label fs-11 text-light-gray">Road Side
+                                                            Assistance & Towing</div>
+                                                        <div class="updated-item-value fs-11">Yes</div>
+                                                    </div>
+                                                    <div class="updated-item">
+                                                        <div class="updated-item-label fs-11 text-light-gray">Coverage
+                                                            Type</div>
+                                                        <div class="updated-item-value fs-11">Basic</div>
+                                                    </div>
+                                                    <div class="updated-item">
+                                                        <div class="updated-item-label fs-11 text-light-gray">Financed
+                                                            or Leased</div>
+                                                        <div class="updated-item-value fs-11">Yes</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div><!-- /accordion-item -->
+
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="headingTwo">
+                                            <button class="accordion-button collapsed flex-wrap flex-sm-nowrap  py-2 py-sm-1" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+                                                aria-expanded="false" aria-controls="collapseTwo">
+                                                <h4 class="title fs-14 w-100 w-sm-auto">John Victor Driver added</h4>
+                                                <span class="updated-history w-100 w-sm-auto">Bradley Lawlor, May 28, 2023 9:59
+                                                    pm</span>
+                                            </button>
+                                        </h2>
+                                        <div id="collapseTwo" class="accordion-collapse collapse"
+                                            aria-labelledby="headingTwo" data-bs-parent="#accordionPolicy">
+                                            <div class="accordion-body">
+                                                <div class="updated-items">
+                                                    <div class="updated-item">
+                                                        <div class="updated-item-label fs-11 text-light-gray">VIN Number
+                                                        </div>
+                                                        <div class="updated-item-value fs-11">MA23GF4865</div>
+                                                    </div>
+                                                    <div class="updated-item">
+                                                        <div class="updated-item-label fs-11 text-light-gray">Miles
+                                                            Driven Per Year</div>
+                                                        <div class="updated-item-value fs-11">2500 miles</div>
+                                                    </div>
+                                                    <div class="updated-item">
+                                                        <div class="updated-item-label fs-11 text-light-gray">Who’s
+                                                            Drive the most</div>
+                                                        <div class="updated-item-value fs-11">Mary Freund</div>
+                                                    </div>
+                                                    <div class="updated-item">
+                                                        <div class="updated-item-label fs-11 text-light-gray">Road Side
+                                                            Assistance & Towing</div>
+                                                        <div class="updated-item-value fs-11">Yes</div>
+                                                    </div>
+                                                    <div class="updated-item">
+                                                        <div class="updated-item-label fs-11 text-light-gray">Coverage
+                                                            Type</div>
+                                                        <div class="updated-item-value fs-11">Basic</div>
+                                                    </div>
+                                                    <div class="updated-item">
+                                                        <div class="updated-item-label fs-11 text-light-gray">Financed
+                                                            or Leased</div>
+                                                        <div class="updated-item-value fs-11">Yes</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div><!-- /accordion-item -->
+
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="headingThree">
+                                            <button class="accordion-button collapsed flex-wrap flex-sm-nowrap  py-2 py-sm-1" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#collapseThree"
+                                                aria-expanded="false" aria-controls="collapseThree">
+                                                <h4 class="title fs-14  w-100 w-sm-auto">Ford Figo Vehicle Removed</h4>
+                                                <span class="updated-history  w-100 w-sm-auto">Bradley Lawlor, May 28, 2023 9:59
+                                                    pm</span>
+                                            </button>
+                                        </h2>
+                                        <div id="collapseThree" class="accordion-collapse collapse"
+                                            aria-labelledby="headingThree" data-bs-parent="#accordionPolicy">
+                                            <div class="accordion-body">
+                                                <div class="updated-items">
+                                                    <div class="updated-item">
+                                                        <div class="updated-item-label fs-11 text-light-gray">VIN Number
+                                                        </div>
+                                                        <div class="updated-item-value fs-11">MA23GF4865</div>
+                                                    </div>
+                                                    <div class="updated-item">
+                                                        <div class="updated-item-label fs-11 text-light-gray">Miles
+                                                            Driven Per Year</div>
+                                                        <div class="updated-item-value fs-11">2500 miles</div>
+                                                    </div>
+                                                    <div class="updated-item">
+                                                        <div class="updated-item-label fs-11 text-light-gray">Who’s
+                                                            Drive the most</div>
+                                                        <div class="updated-item-value fs-11">Mary Freund</div>
+                                                    </div>
+                                                    <div class="updated-item">
+                                                        <div class="updated-item-label fs-11 text-light-gray">Road Side
+                                                            Assistance & Towing</div>
+                                                        <div class="updated-item-value fs-11">Yes</div>
+                                                    </div>
+                                                    <div class="updated-item">
+                                                        <div class="updated-item-label fs-11 text-light-gray">Coverage
+                                                            Type</div>
+                                                        <div class="updated-item-value fs-11">Basic</div>
+                                                    </div>
+                                                    <div class="updated-item">
+                                                        <div class="updated-item-label fs-11 text-light-gray">Financed
+                                                            or Leased</div>
+                                                        <div class="updated-item-value fs-11">Yes</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div><!-- /accordion-item -->
+                                </div><!-- /accordionPolicy -->
+                                <div class="policy-details">
+
+                                    <div class="documents-attached row">
+                                        <div class="col-md-6">
+                                            <div class="doc-card">
+                                                <img src="../images/document-pair.svg" />
+                                                <span class="doc-title">John_Victor_License.pdf</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="doc-card">
+                                                <img src="../images/document-pair.svg" />
+                                                <span class="doc-title">Octavia_VIN_Document.pdf</span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="pinned-comment">
+                                        <div class="comment">
+                                            <div class="comment-head">
+                                                <div class="user-img">
+                                                    <img src="../images/user-img.png">
+                                                </div>
+                                                <div class="user-name">Bradley Lawlor</div>
+                                                <div class="comment-time">
+                                                    <span>
+                                                        Jun 5, 2023 1:28 am
+                                                    </span>
+                                                    <img src="../images/pin.svg" class="ml-2" alt="">
+                                                </div>
+
+                                                <div class="comment-otions">
+                                                    <img src="../images/more.svg">
+                                                </div>
+                                            </div>
+                                            <div class="comment-details">
+                                                Ut sodales, ex sit amet consectetur accumsan, nibh ex sollicitudin
+                                                consectetur accumsan, nibh ex consectetur accumsan, nibh ex Lorem ipsum
+                                                dolor sit amet,
+                                            </div>
+                                        </div><!-- comment -->
+                                    </div>
+                                    
+                                    <div class="policy-updates flex-wrap flex-sm-nowrap">
+                                        <div class="created-updated w-100 w-sm-auto mt-0">Created on May 28, 2023 9:59 pm</div>
+                                        <div class="last-updated w-100 w-sm-auto mt-0">Last modified on May 28, 2023 9:59 pm</div>
+                                    </div>
+
+                                    <div class="notes-options flex-wrap flex-sm-nowrap">
+                                        <div class="notes-card-footer w-100 w-sm-auto">
+                                            <div class="notes-user">
+                                                Bradley Lawlor
+                                            </div>
+                                            <div class="notes-policy-name">
+                                                Policy Name
+                                            </div>
+                                        </div>
+                                        <div class="notes-option w-100 w-sm-auto mt-2 mt-sm-0 text-center">
+                                            <a href="">
+                                                <img src="../images/conversation.svg" alt="">
+                                            </a>
+                                            <a href="">
+                                                <img src="../images/forward.svg">
+                                            </a>
+                                            <a href="client-profile-Notes-edit.html">
+                                                <img src="../images/edit-2.svg">
+                                            </a>
+                                            <a href="">
+                                                <img src="../images/delete.svg">
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="comment-section">
+                                    <div class="comment-sec-title d-flex justify-content-between align-items-center">
+
+                                        <span>Comment</span>
+                                        <a class="ms-2" href="client-profile-Notes-search-cmt.html">
+                                            <img class="" src="../images/search.svg">
+                                        </a>
+                                        <a href="" class="ms-auto fs-12">Deleted Comments</a>
+                                    </div>
+                                    <div class="add-comment">
+                                        <textarea placeholder="Write your comment..."
+                                            class="form-control h-auto mb-2 py-2" id="" rows="5"></textarea>
+                                        <button type="submit"
+                                            class="btn btn-primary text-white text-uppercase ml-auto"><span>comment</span></button>
+                                    </div>
+                                    <ul class="comment-list">
+                                        <li class="comment">
+                                            <div class="comment-head">
+                                                <div class="user-img">
+                                                    <img src="../images/user-img.png">
+                                                </div>
+                                                <div class="user-name">Bradley Lawlor</div>
+                                                <div class="comment-time">Jun 5, 2023 1:28 am</div>
+
+                                                <div class="comment-otions">
+                                                    <img src="../images/more.svg">
+                                                </div>
+                                            </div>
+                                            <div class="comment-details">
+                                                Ut sodales, ex sit amet consectetur accumsan, nibh ex sollicitudin
+                                                consectetur accumsan, nibh ex consectetur accumsan, nibh ex Lorem ipsum
+                                                dolor sit amet,
+                                            </div>
+                                        </li><!-- comment -->
+                                        <li class="comment">
+                                            <div class="comment-head">
+                                                <div class="user-img">
+                                                    <img src="../images/user-img.png">
+                                                </div>
+                                                <div class="user-name">Bradley Lawlor</div>
+                                                <div class="comment-time">Jun 5, 2023 1:28 am</div>
+
+                                                <div class="comment-otions">
+                                                    <img src="../images/more.svg">
+                                                </div>
+                                            </div>
+                                            <div class="comment-details">
+                                                Ut sodales, ex sit amet consectetur accumsan, nibh ex sollicitudin
+                                                consectetur accumsan, nibh ex consectetur accumsan, nibh ex Lorem ipsum
+                                                dolor sit amet,
+                                            </div>
+                                        </li><!-- comment -->
+                                        <li class="comment">
+                                            <div class="comment-head">
+                                                <div class="user-img">
+                                                    <img src="../images/user-img.png">
+                                                </div>
+                                                <div class="user-name">Bradley Lawlor</div>
+                                                <div class="comment-time">Jun 5, 2023 1:28 am</div>
+
+                                                <div class="comment-otions">
+                                                    <img src="../images/more.svg">
+                                                </div>
+                                            </div>
+                                            <div class="comment-details">
+                                                Ut sodales, ex sit amet consectetur accumsan, nibh ex sollicitudin
+                                                consectetur accumsan, nibh ex consectetur accumsan, nibh ex Lorem ipsum
+                                                dolor sit amet,
+                                            </div>
+                                        </li><!-- comment -->
+                                    </ul>
+                                </div>
+
+                            </div>
+                        </div>
+
+
 
                                     </div>
 
@@ -1326,6 +2048,9 @@
             integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
             crossorigin="anonymous">
         </script>
+         <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js">
+        </script>
+        
         <script src="../js/app.js"></script>
 
         <script>
@@ -1334,6 +2059,18 @@
           $("#mob-producer-crs").toggle();
         });
       });
+      $(function () {
+            $('#datepicker').datepicker({
+                autoclose: true,
+
+            });
+        });
+        $(function () {
+            $('#datepicker1').datepicker({
+                autoclose: true,
+
+            });
+        });
 </script>
     </body>
 
