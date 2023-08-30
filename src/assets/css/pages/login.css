@@ -175,9 +175,29 @@
   color: #F68A1F;
 }
 
+.form-group .form-label {
+  font-family: Roboto;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 18px;
+  margin-bottom: 0.3rem;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #B3B3B3;
+  margin-left: 12px;
+}
+
+.edit-profile-icon {
+  right: 0;
+  bottom: -5px;
+}
+
 @media only screen and (max-width: 575px) {
   .fs-16 {
     font-size: 14px;
+  }
+  .admin-employee-table tr td:last-child a {
+    margin-right: 0px;
   }
   .admin-employee-table .policy-table-card td:nth-child(2), .admin-employee-table .policy-table-card td:nth-child(3) {
     display: block;
