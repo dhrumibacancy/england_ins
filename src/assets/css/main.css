@@ -583,6 +583,7 @@ main .wrapper .content-main.full-size {
 }
 main .wrapper .content-main .content {
   padding-top: 40px;
+  background: #F8FBFE;
 }
 main .wrapper .logo {
   position: relative;
@@ -1078,6 +1079,12 @@ main .main-wrapper p {
   font-weight: 600;
 }
 
+.ïmg-circle {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+}
+
 .progress {
   background: var(--color-light-blue);
   border-radius: 4px;
@@ -1120,6 +1127,12 @@ main .main-wrapper p {
   font-size: 13px;
   line-height: 18px;
   height: 42px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   color: var(--color-black) !important;
   font-weight: 500;
   border-bottom: 1px solid #E6E6E6;
@@ -1498,7 +1511,7 @@ tr:last-child td:last-child {
 }
 .link-label {
   font-family: Roboto;
-  font-size: 0.6875rem;
+  font-size: 0.875rem;
   line-height: 1.0625rem;
   font-weight: 400;
   text-align: left;
@@ -2664,6 +2677,120 @@ label.checkbox-inline.squar-boxes img.offline {
   font-weight: 300;
 }
 
+.field-icon {
+  position: absolute;
+  bottom: 50%;
+  -webkit-transform: translate(0%, -50%);
+      -ms-transform: translate(0%, -50%);
+          transform: translate(0%, -50%);
+  right: 20px;
+}
+
+.login-box {
+  border: 1px solid #E6E6E6;
+  width: 100%;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.nav-link .white-icon {
+  display: none;
+}
+
+.nav-link.active .blue-icon {
+  display: none;
+}
+
+.nav-link.active .white-icon {
+  display: block;
+}
+
+.search-eye {
+  max-width: unset !important;
+}
+
+.admin-employee-table .link-label {
+  padding: 0.75rem 0.9rem;
+  vertical-align: middle;
+  font-size: 0.995rem;
+  color: #999999;
+}
+
+.admin-employee-table .policy-table-card a, .admin-employee-table .policy-table-card td {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #000000;
+}
+
+.admin-employee-table .policy-table-card td:nth-child(2), .admin-employee-table .policy-table-card td:nth-child(3) {
+  display: table-cell;
+}
+
+.table > :not(caption) > * > * {
+  padding: 0.75rem 0.9rem;
+  vertical-align: middle;
+}
+
+.admin-employee-table tr td:last-child a {
+  margin-right: 12px;
+}
+
+.btn-red {
+  color: #BF0101;
+}
+
+.btn-orange {
+  color: #F68A1F;
+}
+
+.form-group .form-label {
+  font-family: Roboto;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 18px;
+  margin-bottom: 0.3rem;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #B3B3B3;
+  margin-left: 12px;
+}
+
+.edit-profile-icon {
+  right: 0;
+  bottom: -5px;
+}
+
+.filter-menu {
+  width: 375px;
+}
+
+.filter-menu .checkbox-label {
+  font-size: 14px !important;
+}
+
+@media only screen and (max-width: 575px) {
+  .fs-16 {
+    font-size: 14px;
+  }
+  .admin-employee-table tr td:last-child a {
+    margin-right: 0px;
+  }
+  .admin-employee-table .policy-table-card td:nth-child(2), .admin-employee-table .policy-table-card td:nth-child(3) {
+    display: block;
+  }
+  .admin-employee-table tr:first-child td:last-child {
+    border-top-right-radius: 10px;
+    -webkit-box-flex: 1;
+        -ms-flex: 1 0 30%;
+            flex: 1 0 30%;
+    width: 30%;
+  }
+}
+@media only screen and (min-width: 600px) {
+  .login-box {
+    width: 432px;
+  }
+}
 .navbar-toggler {
   background-image: url(/images/menu.svg);
   background-repeat: no-repeat;

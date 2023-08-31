@@ -149,18 +149,41 @@ ul li {
             flex-direction: row !important;
   }
 }
-@media screen and (max-width: 575px) {
+@media screen and (max-width: 767px) {
   .flex-column {
     -webkit-box-orient: horizontal !important;
     -webkit-box-direction: normal !important;
         -ms-flex-direction: row !important;
             flex-direction: row !important;
   }
+  .remarket-tab div#v-pills-tab {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    overflow-x: auto;
+    width: 89vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    padding-bottom: 10px;
+  }
   .summary-data .checkbox-label {
     min-width: 32%;
   }
   .upload-box {
     width: auto;
+  }
+  .remarket-tab {
+    -ms-flex-wrap: wrap !important;
+        flex-wrap: wrap !important;
+  }
+  .summary-data {
+    -webkit-box-flex: 1;
+        -ms-flex: auto;
+            flex: auto;
   }
 }
 /*# sourceMappingURL=remarket copy.css.map */

@@ -1,0 +1,108 @@
+@use "../utils/"as *;
+.field-icon {
+    position: absolute;
+    bottom: 50%;
+    transform: translate(0%, -50%);
+    right:20px;
+  }
+  .login-box{
+    border: 1px solid #E6E6E6;
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.nav-link .white-icon{
+  display: none;
+  }
+.nav-link.active .blue-icon{
+display: none;
+}
+.nav-link.active .white-icon{
+  display: block;
+  }
+  .search-eye{
+    max-width: unset !important;
+  }
+  .admin-employee-table .link-label{
+    padding: 0.75rem 0.9rem;
+    vertical-align: middle;
+    
+    font-size: 0.995rem;
+    color: #999999;
+
+  }
+  .admin-employee-table   .policy-table-card a ,  .admin-employee-table   .policy-table-card td{
+    font-size: 1rem;
+    font-weight: 400;
+    color: #000000;
+  }
+
+  .admin-employee-table  .policy-table-card td:nth-child(2), .admin-employee-table .policy-table-card td:nth-child(3) {
+    display: table-cell;
+}
+  .table > :not(caption) > * > * {
+    padding: 0.75rem 0.9rem;
+    vertical-align: middle;
+}
+.admin-employee-table tr td:last-child a {
+  margin-right: 12px;
+}
+.btn-red {
+color:  #BF0101;
+
+}
+
+.btn-orange{
+  color: #F68A1F;
+}
+.form-group .form-label {
+  //styleName: Caption;
+font-family: Roboto;
+font-size: 12px;
+font-weight: 500;
+line-height: 18px;
+margin-bottom: 0.3rem;
+letter-spacing: 0em;
+text-align: left;
+color: #B3B3B3;
+margin-left: 12px;
+
+}
+.edit-profile-icon{
+  right: 0;
+  bottom: -5px;
+}
+.filter-menu{
+  width: 375px;
+}
+.filter-menu .checkbox-label{
+  font-size: 14px !important;
+}
+@media only screen and (max-width: 575px) {
+
+.fs-16 {
+    font-size: 14px;
+}
+.admin-employee-table tr td:last-child a {
+  margin-right: 0px;
+}
+.admin-employee-table  .policy-table-card td:nth-child(2), .admin-employee-table .policy-table-card td:nth-child(3) {
+  display: block;
+}
+.admin-employee-table tr:first-child td:last-child {
+  border-top-right-radius: 10px;
+  flex: 1 0 30%;
+  width: 30%;
+}
+}
+
+  @media only screen and (min-width: 600px) {
+    .login-box{
+       
+        width: 432px;
+       
+    }
+  }
+  
+ 
