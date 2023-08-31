@@ -2703,6 +2703,14 @@ label.checkbox-inline.squar-boxes .checkbox-label {
   font-size: 14px !important;
 }
 
+.note-container .notes-side-bar .update-log.bg-gray {
+  background-color: rgb(236, 236, 236);
+  padding: 4px 8px;
+  border-radius: 2px;
+  margin-bottom: 4px;
+  color: #000;
+}
+
 @media only screen and (max-width: 575px) {
   .fs-16 {
     font-size: 14px;
