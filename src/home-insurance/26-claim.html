@@ -38,6 +38,9 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css">
+
 
 
 
@@ -194,93 +197,22 @@
                     <div class="container mt-5 pt-5">
                         <div class="text-center mb-4 user-info">
                             <img src="../images/user-person.svg" alt="" class="user-person mx-auto">
-                            <p class="user-welcome mt-2">Hey! My Name is Anne
-                            </p>
+                            <p class="user-welcome mt-2">Hey! My Name is Anne</p>
                         </div>
-                        <h3 class="title  text-center">Trampoline Details</h3>
-                        
+                        <h3 class="title  text-center">Any Claim In last 5 years? </h3>
+
                         <div class="contain-wrapper-sm">
-                            <form class="mt-4">
-                                <div class="blue-light-box bg-white">
-                                    <div class="d-flex justify-content-between">
-                                    </div>
-                                    <div class="vehicle-details">
-                                        <div class="row g-3">
-                                            
-                                            <div class="col-12">
-                                                <h5 class="fs-16">Is trampoline is fenced?</h5>
-                                                <div class="d-flex align-items-center justify-content-start">
-                                                    <div class="d-flex align-self-center me-3">
-                                                        <label class="radio-inline radio-btn" for="livingYes">
-                                                            <input class="radio-control" type="radio" name="fenced"
-                                                                value="" id="livingYes" checked="">
-                                                            <span class="radio-custom"></span>
-                                                            <span class="radio-label fs-14">Yes </span>
-                                                        </label>
-                                                    </div>
-                                                    <div class="d-flex align-self-center me-3">
-                                                        <label class="radio-inline radio-btn" for="livingNo">
-                                                            <input class="radio-control" type="radio" name="fenced"
-                                                                value="" id="livingNo" >
-                                                            <span class="radio-custom"></span>
-                                                            <span class="radio-label fs-14">No </span>
-                                                        </label>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            
-                                            <div class="col-12">
-                                                <h5 class="fs-16">Is trampoline is netted?</h5>
-                                                <div class="d-flex align-items-center justify-content-start">
-                                                    <div class="d-flex align-self-center me-3">
-                                                        <label class="radio-inline radio-btn" for="Above">
-                                                            <input class="radio-control" type="radio" name="inground"
-                                                                value="" id="Above" checked="">
-                                                            <span class="radio-custom"></span>
-                                                            <span class="radio-label fs-14">Yes </span>
-                                                        </label>
-                                                    </div>
-                                                    <div class="d-flex align-self-center me-3">
-                                                        <label class="radio-inline radio-btn" for="Inground">
-                                                            <input class="radio-control" type="radio" name="inground"
-                                                                value="" id="Inground" >
-                                                            <span class="radio-custom"></span>
-                                                            <span class="radio-label fs-14">No </span>
-                                                        </label>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            
-                                            <div class="col-12">
-                                                <h5 class="fs-16">Will you get net by 15 days of policy start date</h5>
-                                                <div class="d-flex align-items-center justify-content-start">
-                                                    <div class="d-flex align-self-center me-3">
-                                                        <label class="radio-inline radio-btn" for="divingYes">
-                                                            <input class="radio-control" type="radio" name="willing"
-                                                                value="" id="divingYes" checked="">
-                                                            <span class="radio-custom"></span>
-                                                            <span class="radio-label fs-14">YES </span>
-                                                        </label>
-                                                    </div>
-                                                    <div class="d-flex align-self-center me-3">
-                                                        <label class="radio-inline radio-btn" for="divingNo">
-                                                            <input class="radio-control" type="radio" name="willing"
-                                                                value="" id="divingNo" >
-                                                            <span class="radio-custom"></span>
-                                                            <span class="radio-label fs-14">No </span>
-                                                        </label>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <button type="submit" class="btn btn-primary  mx-auto mt-4"><span>Continue</span>
+                            <form class="mt-4 d-flex justify-content-center">
+                                <button type="submit" class="btn btn-outline text-blue  mx-2 mt-4"><span>No</span>
+                                </button>
+                                <button type="submit" class="btn btn-primary  mx-2 mt-4"><span>Yes</span>
                                 </button>
                             </form>
+                        </div>
                     </div>
                 </div>
             </div>
+        </div>
         </div>
     </main>
 
@@ -292,8 +224,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
         integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous">
         </script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js">
-        </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js">
+    </script>
 
     <script src="../js/app.js"></script>
     <script>
@@ -311,16 +243,12 @@
                     '.customize-options').hide())
             })
         })
-
         $(function () {
-            $('#datepicker').datepicker({
+            $('[id^="datepicker"]').datepicker({
                 autoclose: true,
-
             });
         });
     </script>
-
-    
 
 </body>
 

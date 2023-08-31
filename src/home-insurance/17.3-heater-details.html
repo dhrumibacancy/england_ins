@@ -38,6 +38,9 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css">
+
 
 
 
@@ -194,181 +197,72 @@
                     <div class="container mt-5 pt-5">
                         <div class="text-center mb-4 user-info">
                             <img src="../images/user-person.svg" alt="" class="user-person mx-auto">
-                            <p class="user-welcome mt-2">Hey! My Name is Anne
-                            </p>
+                            <p class="user-welcome mt-2">Hey! My Name is Anne</p>
                         </div>
-                        <h3 class="title  text-center">What’s your primary Address?</h3>
+                        <h3 class="title  text-center">Space Heater</h3>
+
                         <div class="contain-wrapper-sm">
                             <form class="mt-4">
                                 <div class="blue-light-box bg-white">
-                                    <div class="d-flex justify-content-between">
-                                    </div>
                                     <div class="vehicle-details">
-                                        <div class="row g-3">
-                                            <div class="col-md-12 col-12">
-                                                <input class="form-control addMain" type="text"
-                                                    placeholder="Street Address">
-                                            </div>
-                                            <div class="col-4">
-                                                <div class="f-group max-width-100">
-            
-                                                    <div class="f-dropdown selectDropdown"><select class="f-control f-dropdown"
-                                                            placeholder="City" id="selectCity">
-                                                            <option value="">Select City</option>
-                                                            <option value="1">city 1
-                                                            </option>
-                                                            <option value="2">city 2
-                                                            </option>
-            
-                                                        </select>
-            
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-4">
-                                                <div class="f-group max-width-100">
-            
-                                                    <div class="f-dropdown selectDropdown"><select class="f-control f-dropdown"
-                                                            placeholder="state" id="selectState">
-                                                            <option value="">Select State</option>
-                                                            <option value="1">State 1
-                                                            </option>
-                                                            <option value="2">State 2
-                                                            </option>
-            
-                                                        </select>
-            
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-4">
+                                        <div class="row gap-3">
+                                            <div class="col-12">
                                                 <div class="form-group">
-                                                    <input type="text" placeholder="ZIP Code" class="form-control">
-                                                </div>
-                                            </div>
-
-                                            <div class="col-md-12 col-12">
-                                                <h5 class="fs-12">Will you be living here</h5>
-                                                <div class="d-flex align-items-center justify-content-start">
-                                                    <div class="d-flex align-self-center me-3">
-                                                        <label class="radio-inline radio-btn" for="livingYes">
-                                                            <input class="radio-control" type="radio" name="living"
-                                                                value="" id="livingYes" checked="">
-                                                            <span class="radio-custom"></span>
-                                                            <span class="radio-label fs-14">Yes </span>
-                                                        </label>
-                                                    </div>
-                                                    <div class="d-flex align-self-center me-3">
-                                                        <label class="radio-inline radio-btn" for="livingNo">
-                                                            <input class="radio-control" type="radio" name="living"
-                                                                value="" id="livingNo" checked="">
-                                                            <span class="radio-custom"></span>
-                                                            <span class="radio-label fs-14">No </span>
-                                                        </label>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            
-                                            <div class="col-md-6 col-12">
-                                                <h5 class="fs-12">Is this property is new purchase?</h5>
-                                                <div class="d-flex align-items-center justify-content-start">
-                                                    <div class="d-flex align-self-center me-3">
-                                                        <label class="radio-inline radio-btn" for="livingYes">
-                                                            <input class="radio-control" type="radio" name="living"
-                                                                value="" id="livingYes" checked="">
-                                                            <span class="radio-custom"></span>
-                                                            <span class="radio-label fs-14">Yes </span>
-                                                        </label>
-                                                    </div>
-                                                    <div class="d-flex align-self-center me-3">
-                                                        <label class="radio-inline radio-btn" for="livingNo">
-                                                            <input class="radio-control" type="radio" name="living"
-                                                                value="" id="livingNo" checked="">
-                                                            <span class="radio-custom"></span>
-                                                            <span class="radio-label fs-14">No </span>
-                                                        </label>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-
-                                            <div class="col-6">
-                                                <div class="input-group date form-control px-0">
-                                                    <span class="input-group-append ">
-                                                        <span class="input-group-text border-0 bg-white d-block pe-0">
-                                                            $
-                                                        </span>
-                                                    </span>
-                                                    <input type="text" class="" id="Cost" placeholder="Cost" />
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="col-12">
-                                            <div class="properties-container p-4 px-3 mt-3">
-                                                <div class="container-fluid">
-                                                    <h4 class="mb-3 fs-18">Special Property Considerations</h4>
-                                                    <div class="row">
-                                                        <div class="col-lg-12 mb-2">
-                                                            <label class="checkbox-inline mb-0 w-auto" for="flexCheckDefault2">
-                                                                <input class="checkbox-control" type="checkbox" value=""
-                                                                    id="flexCheckDefault2" >
-                                                                <span class="checkbox-custom"></span>
-                                                                <span class="checkbox-label fs-14">Residence is a Farm 
-                                                                </span>
+                                                    <label for="" class="fs-18 font-bold" >Do you have space heaters?</label>
+                                                    <div class="d-flex justify-content-start">
+                                                        <div class="d-flex align-self-center me-3">
+                                                            <label class="radio-inline radio-btn" for="divingYes">
+                                                                <input class="radio-control" type="radio" name="willing" value=""
+                                                                    id="divingYes" checked="">
+                                                                <span class="radio-custom"></span>
+                                                                <span class="radio-label fs-14">Yes </span>
                                                             </label>
                                                         </div>
-                                                        <div class="col-lg-12 mb-2">
-                                                            <label class="checkbox-inline mb-0 w-auto" for="flexCheckDefault3">
-                                                                <input class="checkbox-control" type="checkbox" value=""
-                                                                    id="flexCheckDefault3" >
-                                                                <span class="checkbox-custom"></span>
-                                                                <span class="checkbox-label fs-14">Residence is a mobile home, trailer home or house trailer
-                                                                </span>
+                                                        <div class="d-flex align-self-center me-3">
+                                                            <label class="radio-inline radio-btn" for="divingNo">
+                                                                <input class="radio-control" type="radio" name="willing" value=""
+                                                                    id="divingNo">
+                                                                <span class="radio-custom"></span>
+                                                                <span class="radio-label fs-14">No </span>
                                                             </label>
                                                         </div>
-                                                        <div class="col-lg-12 mb-2">
-                                                            <label class="checkbox-inline mb-0 w-auto" for="flexCheckDefault53">
-                                                                <input class="checkbox-control" type="checkbox" value=""
-                                                                    id="flexCheckDefault53" checked="">
-                                                                <span class="checkbox-custom"></span>
-                                                                <span class="checkbox-label fs-14">Secondary home
-                                                                </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-12">
+                                                <div class="form-group">
+                                                    <label for="" class="fs-18 font-bold" >Was it professionally installed & plumed?</label>
+                                                    <div class="d-flex justify-content-start">
+                                                        <div class="d-flex align-self-center me-3">
+                                                            <label class="radio-inline radio-btn" for="willing2N">
+                                                                <input class="radio-control" type="radio" name="willing2" value=""
+                                                                    id="willing2N" checked="">
+                                                                <span class="radio-custom"></span>
+                                                                <span class="radio-label">Yes </span>
                                                             </label>
                                                         </div>
-                                                        <div class="col-12">
-                                                            <div class="f-group max-width-100">
-                        
-                                                                <div class="f-dropdown selectDropdown"><select class="f-control f-dropdown"
-                                                                        placeholder="Who is your primary home insured with" id="secondaryHome">
-                                                                        <option value="">Who is your primary home insured with</option>
-                                                                        <option value="1">Home 1
-                                                                        </option>
-                                                                        <option value="2">Home 2
-                                                                        </option>
-                        
-                                                                    </select>
-                        
-                                                                </div>
-                                                            </div>
+                                                        <div class="d-flex align-self-center me-3">
+                                                            <label class="radio-inline radio-btn" for="willing2">
+                                                                <input class="radio-control" type="radio" name="willing2" value=""
+                                                                    id="willing2">
+                                                                <span class="radio-custom"></span>
+                                                                <span class="radio-label">No </span>
+                                                            </label>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
-
                                     </div>
-
-
-
-                                </form>
-                            </div>
-                            
-                            <button type="submit" class="btn btn-primary mx-auto mt-4"><span>Continue</span>
-                            </button>
+                                </div>
+                                <button type="submit" class="btn btn-primary  mx-auto mt-4"><span>Continue</span>
+                                </button>
+                            </form>
+                        </div>
                     </div>
                 </div>
             </div>
+        </div>
         </div>
     </main>
 
@@ -380,6 +274,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
         integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous">
         </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js">
+    </script>
 
     <script src="../js/app.js"></script>
     <script>
@@ -397,6 +293,11 @@
                     '.customize-options').hide())
             })
         })
+        $(function () {
+            $('[id^="datepicker"]').datepicker({
+                autoclose: true,
+            });
+        });
     </script>
 
 </body>

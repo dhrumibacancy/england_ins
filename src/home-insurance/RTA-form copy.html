@@ -1,0 +1,1095 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="theme-color" content="#BE2530">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New England Insurance Policy</title>
+    <link rel="apple-touch-icon" sizes="57x57" href="./images/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="./images/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="./images/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="./images/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="./images/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="./images/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="./images/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="./images/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./images/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="./images/favicon//android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon//favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="./images/favicon//favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon//favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto+Serif:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&amp;family=Roboto:wght@100;300;400;500;700&amp;display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css">
+
+
+
+
+
+    <link rel="icon" href="../images/favicon.png" type="image/gif" sizes="16x16">
+    <link rel="stylesheet" href="../assets/css/main.css">
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            background: white;
+            max-width: 1224px;
+            margin: 100px auto;
+        }
+
+
+        .flex {
+            display: flex;
+        }
+
+
+        .section {
+            color: #2c2e35;
+            font-family: "Arial";
+        }
+
+        .section h2 {
+            background-color: rgb(220, 221, 222);
+            border: 2px solid #2c2e35;
+            border-width: 1px 0;
+            padding: 12px;
+            font-size: 20px;
+            color: #2c2e35;
+            font-weight: bold;
+        }
+
+        input {
+            font-weight: 700;
+        }
+
+        label {
+            margin-bottom: 5px;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 13px;
+            margin-top: 0;
+        }
+
+        .nowrap {
+            white-space: nowrap;
+        }
+
+        table {
+
+            font-size: 12px;
+            line-height: 12px;
+        }
+
+        .vin-table {
+            background: white;
+            border: 1px solid #2c2e35;
+        }
+
+        .vin-table td {
+            border: 1px solid #2c2e35;
+            font-size: 12px;
+            white-space: nowrap;
+        }
+
+        .vin-table tr:first-child td {
+            padding: 5px;
+            border-bottom: 0;
+        }
+
+        .vin-table tr:nth-child(2) td {
+            border-bottom: 0;
+            border-top: 0;
+        }
+
+        .vin-table tr:nth-child(2) td div {
+            display: inline-flex;
+        }
+
+        .vin-table td span {
+            font-weight: 400;
+        }
+
+        .vin-table td input {
+            margin: 0;
+            text-align: center;
+            width: 100%;
+        }
+
+        .vin-table td.body-style input {
+            border: none;
+            width: 95%;
+        }
+
+        .section-b {
+            border-bottom: 1px solid #2c2e35;
+            font-size: 12px;
+            line-height: 12px;
+
+        }
+
+        .section-b .sec-left {
+            display: flex;
+            flex-wrap: wrap;
+            border-right: 1px solid #2c2e35;
+            width: 50%;
+            padding-bottom: 5px;
+        }
+
+        .section-b .sec-right {
+            display: flex;
+            /* flex-wrap: wrap; */
+            /* width: calc(100% - 580px); */
+            padding-left: 5px;
+            padding-bottom: 5px;
+        }
+
+        .section-b label {
+            display: inline-flex;
+            align-items: center;
+            width: auto;
+            font-size: 12px;
+            line-height: 13px;
+            margin-right: 5px;
+            margin-top: 5px;
+            margin-bottom: 0;
+        }
+
+        .section-b label input {
+            margin-right: 5px;
+        }
+
+        br {
+            margin-right: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+
+        <div id="form-print" class=" mb-5">
+            <div class="flex" style="align-items: center;">
+                <span>
+                    <img src="../images/RMV-icon.svg" class="" height="74px" width="176px"
+                        style="margin:0 120px 0 40px">
+                </span>
+
+                <h1 style="font-size: 36px;
+                color: #2c2e35;
+                font-weight: bold;
+                font-family: 'Arial';">Registration and Title Application</h1>
+            </div>
+            <section class="section">
+                <h2>A. Service Type</h2>
+                <div class="flex">
+                    <div class="" style="width: 391px;">
+                        <p>Select the transaction to be performed. Provide the plate number below if applicable.</p>
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td style="border: 1px solid #e2e3e4; border-width: 1px 0; padding: 5px 10px;">
+                                        <p>Plate Type</p>
+                                        <input type="text" value="PAN">
+                                    </td>
+                                    <td
+                                        style="border: 1px solid #e2e3e4; border-width: 1px 0 1px 1px; padding: 5px 10px;">
+                                        <p>Plate Number</p>
+                                        <input type="text" value="">
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <p>Transactions/Amendments in <b>bold</b> require an <br> insurance stamp.</p>
+                        <p><em>Italicized</em> transactions may require an <br> insurance stamp.</p>
+                        <p>Transactions with * require plate type and <br> number above.</p>
+                    </div>
+                    <div class="" style="width: 100%;
+                    border: 1px solid #2c2e35;padding: 10px 15px; margin-top: -47px; background-color: white;">
+                        <div class="flex">
+                            <div class="" style="width: 400px;">
+                                <p><b>I want to:</b></p>
+                                <label>
+                                    <input type="checkbox" checked>
+                                    <span class="fw-bold">Register and title a vehicle</span>
+                                </label>
+                                <label>
+                                    <input type="checkbox">
+                                    <span class="fw-bold">Transfer plate to a new vehicle*</span>
+                                </label>
+                                <label>
+                                    <input type="checkbox">
+                                    <span><em>Reinstate a registration*</em></span>
+                                </label>
+                                <label>
+                                    <input type="checkbox">
+                                    <span>Apply for a salvage title</span>
+                                </label>
+                                <label>
+                                    <input type="checkbox">
+                                    <span>Apply for a title only</span>
+                                </label>
+                                <label>
+                                    <input type="checkbox">
+                                    <span class="fw-bold">Apply for a registration only</span>
+                                </label>
+                                <label>
+                                    <input type="checkbox">
+                                    <span class="fw-bold">Transfer a plate between two vehicles*</span>
+                                </label>
+                                <label>
+                                    <input type="checkbox">
+                                    <span class="fw-bold">Register previously titled vehicle</span>
+                                </label>
+                                <label>
+                                    <input type="checkbox">
+                                    <span>Title previously registered vehicle*</span>
+                                </label>
+                                <label>
+                                    <input type="checkbox">
+                                    <span class="fw-bold">Transfer vehicle to surviving spouse*</span>
+                                </label>
+                            </div>
+                            <div class="w-100">
+                                <label>
+                                    <input type="checkbox">
+                                    <span>Change plate on existing vehicle with no amendments*</span>
+                                </label>
+                                <label>
+                                    <input type="checkbox">
+                                    <span><em>Renew a registration*</em></span>
+                                </label>
+                                <label>
+                                    <input type="checkbox">
+                                    <span><em>Amend a registration*</em></span>
+                                </label>
+                                <span>Select the information to be amended.<br> Enter new information in the section
+                                    indicated.</span>
+                                <div class="flex">
+                                    <div>
+                                        <label>
+                                            <input type="checkbox">
+                                            <span>Registration Type (B 3.)</span>
+                                        </label>
+                                        <label>
+                                            <input type="checkbox">
+                                            <span>Registration Type (B 3.)</span>
+                                        </label>
+                                        <label>
+                                            <input type="checkbox">
+                                            <span>Fuel Type (B 8.)</span>
+                                        </label>
+                                        <label class="nowrap me-2">
+                                            <input type="checkbox">
+                                            <span>Total Gross Weight (B 12.)</span>
+                                        </label>
+                                        <label>
+                                            <input type="checkbox">
+                                            <span><b>Name</b> (D or F)</span>
+                                        </label>
+                                    </div>
+                                    <div>
+                                        <label>
+                                            <input type="checkbox">
+                                            <span>Address (D, E or F)</span>
+                                        </label>
+                                        <label>
+                                            <input type="checkbox">
+                                            <span>Lessee (E)</span>
+                                        </label>
+                                        <label>
+                                            <input type="checkbox">
+                                            <span>Garaging Address (G)</span>
+                                        </label>
+                                        <label>
+                                            <input type="checkbox">
+                                            <span><b>Insurance</b> (K)</span>
+                                        </label>
+                                        <label>
+                                            <input type="checkbox">
+                                            <span>Other: <input type="text" style="border-bottom:1px solid #2c2e35;"
+                                                    value="placeholder"></span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <label>
+                                    <input type="checkbox">
+                                    <span><b>VIN</b> (B 1.) <em>For vehicles with no MA Title</em></span>
+                                </label>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </section>
+
+            <section class="section">
+                <h2 class="flex w-100 justify-content-between py-0 align-items-center pe-0">B. Vehicle Information
+                    <table class="vin-table" style="width: 610px;">
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <span><b>B1.</b> Vehicle Identification Number (VIN)</span>
+                                </td>
+                                <td style="width: 200px;">
+                                    <span><b>B2.</b> Body Style</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input type="text" value="4S3BH675047609432">
+                                </td>
+                                <td class="body-style">
+                                    <input type="text" value="STWAG">
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </h2>
+                <div class="flex section-b">
+                    <div class="flex sec-left">
+
+                        <span style="margin-right:5px ;margin-top:5px"><b>B3.</b> Registration Type:</span>
+
+                        <label for="" style="margin-right: 6px;">
+                            <input type="checkbox"> Passenger
+                        </label>
+                        <label for="" style="margin-right: 6px;">
+                            <input type="checkbox"> Commercial
+                        </label>
+                        <label for="">
+                            <input type="checkbox"> Bus
+                        </label>
+                        <label for="">
+                            <input type="checkbox"> Livery
+                        </label>
+                        <label for="">
+                            <input type="checkbox"> Camper
+                        </label>
+                        <br>
+                        <label for="" style="
+    min-width: 58px;
+">
+                            <input type="checkbox"> Trailer
+                        </label>
+                        <label for="" style="
+    min-width: 56px;
+">
+                            <input type="checkbox"> Taxi
+                        </label>
+                        <label for="" style="">
+                            <input type="checkbox"> Motorcycle
+                        </label>
+                        <label for="" style="">
+                            <input type="checkbox"> Semi-Trailer
+                        </label>
+                        <label for="">
+                            <input type="checkbox"> Other:
+                            <input type="text" style="width: 120px;border-bottom:1px solid #2c2e35;margin-left: 5px;"
+                                value="whatever added">
+                        </label>
+                    </div>
+
+                    <div class="flex sec-right">
+
+                        <span class="nowrap" style="margin-right:5px ; margin-top:5px"><b>B4.</b> Color(s):</span>
+                        <div>
+
+                            <label for="" style="margin-right: 10px;">
+                                <input type="checkbox"> Black
+                            </label>
+                            <label for="" style="margin-right: 8px;">
+                                <input type="checkbox"> White
+                            </label>
+                            <label for="" style="margin-right: 11px;">
+                                <input type="checkbox"> Brown
+                            </label>
+                            <label for="">
+                                <input type="checkbox"> Blue
+                            </label>
+                            <label for="">
+                                <input type="checkbox"> Yellow
+                            </label>
+                            <label for="">
+                                <input type="checkbox"> Gray
+                            </label>
+                            <br>
+                            <label for="">
+                                <input type="checkbox"> Purple
+                            </label>
+                            <label for="" style="">
+                                <input type="checkbox"> Green
+                            </label>
+                            <label for="" style="">
+                                <input type="checkbox"> Orange
+                            </label>
+                            <label for="" style="    margin-right: 7px;">
+                                <input type="checkbox"> Red
+                            </label>
+                            <label for="" style="    margin-right: 9px;">
+                                <input type="checkbox"> Silver
+                            </label>
+                            <label for="" style="">
+                                <input type="checkbox"> Gold
+                            </label>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="pt-1 flex">
+                    <span class=""><b>B5.</b> </span>
+                    <table class="w-100 ">
+                        <tbody>
+                            <tr>
+                                <td> Year</td>
+                                <td>Make</td>
+                                <td>Model</td>
+                                <td>Model#</td>
+                                <td>Trim</td>
+                            </tr>
+                            <tr>
+                                <td class="pt-2 fs-14"><b>2004</b></td>
+                                <td class="pt-2 fs-14"><b>SUBARU</b></td>
+                                <td class="pt-2 fs-14"><b>SUBARU</b></td>
+                                <td class="pt-2 fs-14"><b></b></td>
+                                <td class="pt-2 fs-14"><b>STWAG</b></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="flex section-b" style="border-top: 1px solid #2c2e35; margin-top: 10px;">
+                    <div class="flex sec-left" style="width: 210px;">
+                        <span style="margin-right:5px ;margin-top:5px"><b>B6.</b> Transmission Type:</span>
+
+                        <label for="" style="">
+                            <input type="checkbox"> Automatic
+                        </label>
+                        <label for="">
+                            <input type="checkbox"> Other:
+                            <input type="text" style="width: 64px;border-bottom:1px solid #2c2e35;margin-left: 5px;"
+                                value="data">
+                        </label>
+                        <label for="" style="">
+                            <input type="checkbox"> Manual
+                        </label>
+                    </div>
+                    <div class="flex sec-left w-auto px-2">
+                        <div style="padding-top:5px;  margin-right: 5px;"><b>B7.</b></div>
+                        <table>
+                            <tr>
+                                <td class="pe-1">Number of: Cylinders </td>
+                                <td class="pe-1"> / Passengers </td>
+                                <td> / Doors</td>
+                            </tr>
+                            <tr>
+                                <td class="text-center"> <b> 4 </b></td>
+                                <td> /<b class="ps-2"> 5 </b></td>
+                                <td> /<b class="ps-2"> 4 </b></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="flex sec-left px-1" style="width: 300px;">
+                        <span style="margin-right:5px ;margin-top:5px"><b>B8.</b> Fuel Type:</span>
+
+                        <label for="" style="min-width: 53px;">
+                            <input type="checkbox"> Gas
+                        </label>
+                        <label for="" style="">
+                            <input type="checkbox"> Electric
+                        </label>
+                        <label for="" style="">
+                            <input type="checkbox"> Propane
+                        </label>
+                        <label for="" style="min-width: 78px;">
+                            <input type="checkbox"> Diesel
+                        </label>
+                        <label for="" style="">
+                            <input type="checkbox"> Hybrid
+                        </label>
+                        <label for="">
+                            <input type="checkbox"> Other:
+                            <input type="text" style="width: 50px;border-bottom:1px solid #2c2e35;margin-left: 5px;"
+                                value="">
+                        </label>
+                    </div>
+                    <div class="flex sec-right w-auto px-2">
+                        <div style="padding-top:5px; margin-right: 5px;"><b>B9.</b></div>
+                        <table>
+                            <tr>
+                                <td>
+                                    Odometer (Miles)
+                            </tr>
+                            <tr>
+                                <td class="text-center"> <b>120011 </b></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div class="flex section-b" style="border-top: 1px solid #2c2e35; margin-top: 10px;">
+                    <div class="flex sec-left" style="width: 440px;">
+
+                        <span class="nowrap" style="margin-right:5px ; margin-top:5px"><b>B4.</b> Color(s):</span>
+                        <div>
+
+                            <label for="" style="margin-right: 10px;">
+                                <input type="checkbox"> Black
+                            </label>
+                            <label for="" style="margin-right: 8px;">
+                                <input type="checkbox"> White
+                            </label>
+                            <label for="" style="margin-right: 11px;">
+                                <input type="checkbox"> Brown
+                            </label>
+                            <label for="">
+                                <input type="checkbox"> Blue
+                            </label>
+                            <label for="">
+                                <input type="checkbox"> Yellow
+                            </label>
+                            <label for="">
+                                <input type="checkbox"> Gray
+                            </label>
+                            <br>
+                            <label for="">
+                                <input type="checkbox"> Purple
+                            </label>
+                            <label for="" style="">
+                                <input type="checkbox"> Green
+                            </label>
+                            <label for="" style="">
+                                <input type="checkbox"> Orange
+                            </label>
+                            <label for="" style="    margin-right: 7px;">
+                                <input type="checkbox"> Red
+                            </label>
+                            <label for="" style="    margin-right: 9px;">
+                                <input type="checkbox"> Silver
+                            </label>
+                            <label for="" style="">
+                                <input type="checkbox"> Gold
+                            </label>
+                        </div>
+                    </div>
+                    <div class="flex sec-left" style="width: 250px;">
+                        <span style="margin: 5px 5px 0;"><b style="margin-right: 5px;">B11.</b> If carrying passengers
+                            for hire, <br> enter max seating
+                            capacity
+                            <input class="d-inline" type="text" style="border-bottom: 1px solid #2c2e35; width: 80px;">
+                        </span>
+                    </div>
+                    <div class="flex sec-right">
+                        <span style="margin: 5px 5px 0;"><b style="margin-right: 5px;">B12.</b> Total Gross Weight
+                            (Laden) <br> Cannot exceed GVWR
+                            capacity
+                            <input class="d-inline" type="text" style="border-bottom: 1px solid #2c2e35; width: 80px;">
+                        </span>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section">
+                <h2 class="flex w-100 justify-content-between py-0 align-items-center pe-0">C.Title Information
+                    <table class="vin-table" style="width: 610px;">
+                        <tbody>
+                            <tr>
+                                <td rowspan="2">
+                                    <div class="d-flex flex-nowrap">
+                                        <span><b>C1.</b> Vehicle Condition</span>
+                                        <label class="w-auto flex align-items-center ms-auto me-3">
+                                            <input type="checkbox" class="w-auto me-1" checked>
+                                            <span class="fw-bold">New</span>
+                                        </label>
+                                        <label class="w-auto flex align-items-center me-4">
+                                            <input type="checkbox" class="w-auto me-1">
+                                            <span class="fw-bold">Used</span>
+                                        </label>
+                                    </div>
+                                </td>
+                                <td style="width: 200px;">
+                                    <span><b>C2.</b> Previous Title Issue Date (MM/DD/YYYY)</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="body-style">
+                                    <input type="text" class="text-left" value="01/10/2022">
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </h2>
+
+                <div class="flex section-b">
+                    <div class="pt-1 flex w-100 mb-2">
+                        <span class=""><b>C3.</b> </span>
+                        <table class="w-100 ">
+                            <tbody>
+                                <tr>
+                                    <td> Previous Title Number</td>
+                                    <td>Previous Title State</td>
+                                    <td>Previous Title Country</td>
+                                </tr>
+                                <tr>
+                                    <td class="pt-2 fs-14"><b>CE028566</b></td>
+                                    <td class="pt-2 fs-14"><b>MA</b></td>
+                                    <td class="pt-2 fs-14"><b>USA</b></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="flex section-b" style="border-top: 1px solid #2c2e35; margin-top: 10px;">
+                    <div class="flex sec-left px-1" style="width: 700px;">
+                        <span style="margin-right:5px ;margin-top:5px"><b>C4.</b> Title Type:</span>
+
+                        <label for="" style="min-width: 60px; margin-left: 20px;">
+                            <input type="checkbox"> Clear
+                        </label>
+                        <label for="" style="margin-right: 12px;">
+                            <input type="checkbox"> Salvage
+                        </label>
+                        <label for="" style=" margin-left: 10px;">
+                            <input type="checkbox"> Reconstructed
+                        </label>
+                        <label for="" style="min-width: 77px;">
+                            <input type="checkbox"> Theft
+                        </label>
+                        <label for="" style=" margin-left: 20px;">
+                            <input type="checkbox"> Prior Owner Retained
+                        </label>
+                        <label for="" style=" margin-left: 10px;">
+                            <input type="checkbox"> Owner Retained
+                        </label>
+                    </div>
+                    <div class="flex sec-left px-1" style="width: 400px;">
+                        <span style="margin-right:5px ;margin-top:5px"><b>C5.</b> Primary Salvage Title Brand:</span>
+
+                        <label for="" style="min-width: 53px;">
+                            <input type="checkbox"> Repairable
+                        </label>
+                        <label for="" style="">
+                            <input type="checkbox"> Parts Only
+                        </label>
+                    </div>
+                    <div class="flex sec-right flex-wrap px-1">
+                        <span class="nowrap" style="margin-right:5px ;margin-top:5px;"><b>C6.</b> Secondary Salvage
+                            Brand(s):</span>
+
+                        <label for="" style="min-width: 53px;">
+                            <input type="checkbox"> Vandalism
+                        </label>
+                        <label for="" style="">
+                            <input type="checkbox"> Flood
+                        </label>
+                        <label for="" style="">
+                            <input type="checkbox"> Theft
+                        </label>
+                        <label for="" style="min-width: 78px;">
+                            <input type="checkbox"> Fire
+                        </label>
+                        <label for="" style="">
+                            <input type="checkbox"> Salt
+                        </label>
+                        <label for="">
+                            <input type="checkbox"> Collision
+                        </label>
+                        <label for="">
+                            <input type="checkbox"> Other
+                        </label>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section">
+                <h2 class="flex w-100 justify-content-between py-0 align-items-center pe-0">D.Owner 1 Information
+                    <div class="vin-table" style="width: 610px;">
+                        <div class="flex flex-wrap section-b">
+                            <span style="margin-right:5px ;margin-top:5px"><b>D1.</b> Select Owner(s) Identification
+                                Requirement being provided for registration purposes</span>
+
+                            <label for="" style="">
+                                <input type="checkbox"> MA License/ID
+                            </label>
+                            <label for="" style="">
+                                <input type="checkbox"> Out-of-State License
+                            </label>
+                            <label for="" style="">
+                                <input type="checkbox"> Social Security Number
+                            </label>
+                            <label for="" style="">
+                                <input type="checkbox"> Lawful Presence/ Foreign Unexpired Passport/ Consular ID
+                            </label>
+                        </div>
+                    </div>
+                </h2>
+                <div class="flex section-b">
+                    <div class="flex sec-left w-100 px-2">
+                        <div style="padding-top:5px;  margin-right: 5px;"><b>D2.</b></div>
+                        <table style="margin-top:5px;">
+                            <tr>
+                                <td class="pe-1"> 1st Owner’s Name (Last, First, Middle) </td>
+                            </tr>
+                            <tr>
+                                <td class="text-center"> <b> <input type="text" class="fs-14" value="REIS DOS SANTOS, JONAS"> </b></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="flex sec-left w-100 px-2">
+                        <div style="padding-top:5px;  margin-right: 5px;"><b>D3.</b></div>
+                        <table style="margin-top:5px;">
+                            <tr>
+                                <td class="pe-1"> Date of Birth (MM/DD/YYYY) </td>
+                            </tr>
+                            <tr>
+                                <td class="text-center"> <b> <input type="text" class="fs-14" value="01/06/1989"> </b></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="flex sec-right px-2" style="width: 720px;">
+                        <div style="padding-top:5px;  margin-right: 5px;"><b>D4.</b></div>
+                        <table style="margin-top:5px;">
+                            <tr>
+                                <td class="pe-1 nowrap">License/ ID/ SSN/ Passport/ Consular ID # </td>
+                            </tr>
+                            <tr>
+                                <td class="text-center"> <b> <input type="text" class="fs-14" value="05751700106"> </b></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="flex section-b" style="">
+                    <div class="flex sec-left w-100 px-2" style="width: 800px;">
+                        <div class="pt-1 flex w-100 mb-2">
+                            <span class="me-1"><b>D5.</b> </span>
+                            <table class="w-100 ">
+                                <tbody>
+                                    <tr>
+                                        <td style="width: 300px;"> Residential Address</td>
+                                        <td>Apt.#</td>
+                                        <td>City</td>
+                                        <td>State</td>
+                                        <td>Zip Code</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="pt-2 fs-14"><b><input type="text" class="fs-14" value="780 BEDFORD ST #3R"></b></td>
+                                        <td class="pt-2 fs-14"><b><input type="text" class="fs-14" value=""></b></td>
+                                        <td class="pt-2 fs-14"><b><input type="text" class="fs-14" value="FALL RIVER"> </b></td>
+                                        <td class="pt-2 fs-14"><b><input type="text" class="fs-14" value="MA"></b></td>
+                                        <td class="pt-2 fs-14"><b><input type="text" class="fs-14" value="02723"></b></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="flex sec-right  px-2" >
+                        <div style="padding-top:5px;  margin-right: 5px;"><b>D6.</b></div>
+                        <table>
+                            <tr>
+                                <td class="pe-1"> Where was document from D4 issued?</td>
+                            </tr>
+                            <tr>
+                                <td class="text-center"> <b> <input type="text" class="fs-14" value="BRAZIL"> </b></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div class="flex section-b" style="">
+                    <div class="flex sec-left w-100 px-2" style="width: 800px;">
+                        <div class="pt-1 flex w-100 mb-2">
+                            <span class="me-1"><b>D16.</b> </span>
+                            <table class="w-100 ">
+                                <tbody>
+                                    <tr>
+                                        <td style="width: 294px;">
+                                            <div class="flex align-items-center"> Mailing Address
+                                                <label for="" style="margin-top: 0; margin-left: 20px;">
+                                                    <input type="checkbox"> Same as Residential
+                                                </label>
+                                            </div>
+                                        </td>
+                                        <td>Apt.#</td>
+                                        <td>City</td>
+                                        <td>State</td>
+                                        <td>Zip Code</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="pt-2 fs-14"><b><input type="text" class="fs-14" value="780 BEDFORD ST #3R"></b></td>
+                                        <td class="pt-2 fs-14"><b><input type="text" class="fs-14" value=""></b></td>
+                                        <td class="pt-2 fs-14"><b><input type="text" class="fs-14" value="FALL RIVER"> </b></td>
+                                        <td class="pt-2 fs-14"><b><input type="text" class="fs-14" value="MA"></b></td>
+                                        <td class="pt-2 fs-14"><b><input type="text" class="fs-14" value="02723"></b></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="flex sec-right px-2" >
+                        <div style="padding-top:5px;  margin-right: 5px;"><b>D6.</b></div>
+                        <table>
+                            <tr>
+                                <td class="pe-1"> Where was document from D4 issued?</td>
+                            </tr>
+                            <tr>
+                                <td class="text-center"> <b>  <input type="text" class="fs-14" value="BRAZIL"> </b></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div class="flex section-b align-items-center py-2" style="">
+                        <div style="  margin-right: 5px;"><b>D9.</b></div>
+                        <table class="w-100">
+                            <tr>
+                                <td class="pe-1"> Email <b class="ms-2 fs-14"><input type="text" class="fs-14" value="REIS73265@GMAIL.COM"></b></td>
+                                <td>
+                                    <div class="d-flex ">
+                                        <label class="ms-5 me-3">
+                                            <input type="checkbox">
+                                            <span>Cell</span>
+                                        </label>
+                                        <label class=" me-3">
+                                            <input type="checkbox">
+                                            <span>Home</span>
+                                        </label>
+                                        <label>
+                                            <input type="checkbox">
+                                            <span>Work</span>
+                                        </label>
+                                        <div class="ms-3 mt-1">
+                                            Phone<b>#</b>
+    
+                                            <b class="ms-2 fs-14"> <input type="text" class="fs-14" value="508-280-3343"></b>
+                                        </div>
+                                    </div>
+
+                                    
+                                </td>
+                            </tr>
+                        </table>
+                </div>
+            </section>
+
+            <section class="section">
+                <h2 class="flex w-100 justify-content-between py-0 align-items-center pe-0">Owner 2 Information
+                    <div class="vin-table" style="width: 610px;">
+                        <div class="flex flex-wrap section-b">
+                            <span style="margin-right:5px ;margin-top:5px"><b>D1.</b> Select Owner(s) Identification
+                                Requirement being provided for registration purposes</span>
+
+                            <label for="" style="">
+                                <input type="checkbox"> MA License/ID
+                            </label>
+                            <label for="" style="">
+                                <input type="checkbox"> Out-of-State License
+                            </label>
+                            <label for="" style="">
+                                <input type="checkbox"> Social Security Number
+                            </label>
+                            <label for="" style="">
+                                <input type="checkbox"> Lawful Presence/ Foreign Unexpired Passport/ Consular ID
+                            </label>
+                        </div>
+                    </div>
+                </h2>
+                <div class="flex section-b">
+                    <div class="flex sec-left w-100 px-2">
+                        <div style="padding-top:5px;  margin-right: 5px;"><b>D2.</b></div>
+                        <table style="margin-top:5px;">
+                            <tr>
+                                <td class="pe-1"> 1st Owner’s Name (Last, First, Middle) </td>
+                            </tr>
+                            <tr>
+                                <td class="text-center"> <b> <input type="text" class="fs-14" value=""> </b></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="flex sec-left w-100 px-2">
+                        <div style="padding-top:5px;  margin-right: 5px;"><b>D3.</b></div>
+                        <table style="margin-top:5px;">
+                            <tr>
+                                <td class="pe-1"> Date of Birth (MM/DD/YYYY) </td>
+                            </tr>
+                            <tr>
+                                <td class="text-center"> <b> <input type="text" class="fs-14" value=""> </b></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="flex sec-right px-2" style="width: 720px;">
+                        <div style="padding-top:5px;  margin-right: 5px;"><b>D4.</b></div>
+                        <table style="margin-top:5px;">
+                            <tr>
+                                <td class="pe-1 nowrap">License/ ID/ SSN/ Passport/ Consular ID # </td>
+                            </tr>
+                            <tr>
+                                <td class="text-center"> <b> <input type="text" class="fs-14" value=""> </b></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="flex section-b" style="">
+                    <div class="flex sec-left w-100 px-2" style="">
+                        <div class="pt-1 flex w-100 mb-2">
+                            <span class="me-1"><b>D5.</b> </span>
+                            <table class="w-100 ">
+                                <tbody>
+                                    <tr>
+                                        <td style="width: 300px;"> Residential Address</td>
+                                        <td>Apt.#</td>
+                                        <td>City</td>
+                                        <td>State</td>
+                                        <td>Zip Code</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="pt-2 fs-14"><b><input type="text" class="fs-14" value=""> </b></td>
+                                        <td class="pt-2 fs-14"><b><input type="text" class="fs-14" value=""> </b></td>
+                                        <td class="pt-2 fs-14"><b><input type="text" class="fs-14" value="">  </b></td>
+                                        <td class="pt-2 fs-14"><b><input type="text" class="fs-14" value=""> </b></td>
+                                        <td class="pt-2 fs-14"><b><input type="text" class="fs-14" value=""> </b></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="flex sec-right  px-2" style="width: 367px;">
+                        <div style="padding-top:5px;  margin-right: 5px;"><b>D6.</b></div>
+                        <table>
+                            <tr>
+                                <td class="pe-1"> Where was document from D4 issued?</td>
+                            </tr>
+                            <tr>
+                                <td class="text-center"> <b> <input type="text" class="fs-14" value="">  </b></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div class="flex section-b" style="">
+                    <div class="flex sec-left w-100 px-2" style="">
+                        <div class="pt-1 flex w-100 mb-2">
+                            <span class="me-1"><b>D16.</b> </span>
+                            <table class="w-100 ">
+                                <tbody>
+                                    <tr>
+                                        <td style="width: 294px;">
+                                            <div class="flex align-items-center"> Mailing Address
+                                                <label for="" style="margin-top: 0; margin-left: 20px;">
+                                                    <input type="checkbox"> Same as Residential
+                                                </label>
+                                            </div>
+                                        </td>
+                                        <td>Apt.#</td>
+                                        <td>City</td>
+                                        <td>State</td>
+                                        <td>Zip Code</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="pt-2 fs-14"><b><input type="text" class="fs-14" value=""> </b></td>
+                                        <td class="pt-2 fs-14"><b><input type="text" class="fs-14" value=""> </b></td>
+                                        <td class="pt-2 fs-14"><b><input type="text" class="fs-14" value="">  </b></td>
+                                        <td class="pt-2 fs-14"><b><input type="text" class="fs-14" value=""> </b></td>
+                                        <td class="pt-2 fs-14"><b><input type="text" class="fs-14" value=""> </b></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="flex sec-right px-2" style="width: 367px;">
+                        <div style="padding-top:5px;  margin-right: 5px;"><b>D6.</b></div>
+                        <table>
+                            <tr>
+                                <td class="pe-1"> Where was document from D4 issued?</td>
+                            </tr>
+                            <tr>
+                                <td class="text-center"> <b> <input type="text" class="fs-14" value=""> </b></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div class="flex section-b align-items-center py-2" style="">
+                        <div style="  margin-right: 5px;"><b>D9.</b></div>
+                        <table class="w-100">
+                            <tr>
+                                <td class="pe-1"> Email <b class="ms-2 fs-14"><input type="text" class="fs-14" value=""></b></td>
+                                <td>
+                                    <div class="d-flex ">
+                                        <label class="ms-5 me-3">
+                                            <input type="checkbox">
+                                            <span>Cell</span>
+                                        </label>
+                                        <label class=" me-3">
+                                            <input type="checkbox">
+                                            <span>Home</span>
+                                        </label>
+                                        <label>
+                                            <input type="checkbox">
+                                            <span>Work</span>
+                                        </label>
+                                        <div class="ms-3 mt-1">
+                                            Phone<b>#</b>
+    
+                                            <b class="ms-2 fs-14"><input type="text" class="fs-14" value=""></b>
+                                        </div>
+                                    </div>
+
+                                    
+                                </td>
+                            </tr>
+                        </table>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <script src="../js/jquery.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous">
+        </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous">
+        </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js">
+    </script>
+
+    <script src="../js/app.js"></script>
+
+    <!-- Html2Pdf  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.8.1/html2pdf.bundle.min.js">
+    </script>
+
+    <script>
+        // Function to GeneratePdf
+        function GeneratePdf() {
+            var element = document.getElementById('form-print');
+            html2pdf(element);
+        }
+    </script>
+
+
+
+</body>
+
+</html>
