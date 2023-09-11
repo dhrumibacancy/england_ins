@@ -342,6 +342,10 @@ a {
   color: var(--color-sucess) !important;
 }
 
+.text-orange {
+  color: #F68A1F;
+}
+
 .bg-light-blue {
   background-color: #F2F7FC;
 }
@@ -2855,6 +2859,16 @@ label.checkbox-inline.squar-boxes img.offline {
   border-radius: 2px;
   margin-bottom: 4px;
   color: #000;
+}
+
+.policy-cards {
+  background-color: var(--color-blue-light);
+  padding: 0 10px;
+  border: none;
+}
+
+span.checkbox-label.fs-14.me-5.fw-500.main-label {
+  min-width: 170px;
 }
 
 @media only screen and (max-width: 575px) {
