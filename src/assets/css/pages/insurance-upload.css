@@ -243,8 +243,7 @@
   }
   .btn-add,
   .user-info .user-welcome,
-  .radio-box.button-style .radio-box-custom,
-  .fs-12 {
+  .radio-box.button-style .radio-box-custom {
     font-size: 14px !important;
   }
   .progress-text,

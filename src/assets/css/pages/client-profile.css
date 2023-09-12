@@ -314,6 +314,31 @@
   font-size: 0.75rem;
 }
 
+.policy-table.transection-table .link-label {
+  color: var(--color-light-gray3);
+}
+.policy-table.transection-table .policy-table-card {
+  outline: var(--color-border-light) solid 1px;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border-radius: 4px;
+}
+.policy-table.transection-table .policy-table-card h4 {
+  color: var(--color-black);
+  font-size: 18px;
+}
+.policy-table.transection-table .policy-table-card h4 small {
+  color: var(--color-light-gray3);
+  font-weight: 400;
+}
+.policy-table.transection-table .policy-table-card td {
+  font-size: 12px;
+  color: var(--color-light-gray);
+}
+.policy-table.transection-table .policy-table-card .sperator-verticle {
+  color: var(--color-border-light);
+}
+
 .policy-table {
   border-spacing: 0 10px;
   margin-bottom: 0;
@@ -1006,9 +1031,6 @@
      object-fit: center;
   margin-left: 14px;
 }
-.note-container .notes-data .policy-details.edit-mode .documents-attached > * {
-  width: 100%;
-}
 .note-container .notes-data .policy-details.edit-mode .documents-attached .doc-card {
   margin-bottom: 12px;
   background-color: var(--color-white);
@@ -1165,5 +1187,52 @@
   .policy-cards .checkbox-inline {
     margin-bottom: 10px;
   }
+}
+.filter-section {
+  position: relative;
+}
+.filter-section .filter-modal::before {
+  content: "";
+  width: 15px;
+  height: 15px;
+  background: white;
+  border-radius: 3px;
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+  position: absolute;
+  right: -5px;
+  top: 40px;
+  z-index: 2;
+}
+
+.filter-section .filter-modal {
+  position: absolute;
+  left: auto !important;
+  right: 30px !important;
+  top: -40px !important;
+  width: 364px;
+  height: auto;
+  padding-top: 16px !important;
+  overflow: visible;
+}
+.filter-section .filter-modal .method-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 16px;
+}
+.filter-section .filter-modal .modal-content {
+  border: 0;
+}
+
+.modal-backdrop.show {
+  opacity: 0.1;
 }
 /*# sourceMappingURL=client-profile.css.map */

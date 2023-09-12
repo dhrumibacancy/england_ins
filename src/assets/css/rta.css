@@ -1,0 +1,1077 @@
+/* custom main 
+ UnExpected King Tirth Shah */ 
+ 
+ body {
+  width: 790px;
+  padding: 0;
+  margin: 0 auto;
+  background-color: white;
+}
+
+.page {
+  page-break-after: always;
+  position: relative;
+}
+
+.page-details {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10000;
+}
+
+.form-img {
+  width: 100%;
+}
+
+.answer {
+  position: absolute;
+  bottom: 0;
+}
+
+.answer img {
+  width: 100%;
+  position: absolute;
+}
+
+.answer input {
+  width: 100%;
+  font-size: 12px;
+  font-weight: bold;
+  color: #141414;
+  position: absolute;
+  background: transparent;
+}
+
+.answer .check-mark {
+  position: absolute;
+}
+.answer .check-mark::before, .answer .check-mark::after {
+  content: "";
+  height: 2px;
+  width: 15px;
+  background: black;
+  position: absolute;
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+.answer .check-mark::before {
+  -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.a1 {
+  top: 170px;
+  left: 30px;
+  width: 97px;
+}
+
+.a2 {
+  top: 170px;
+  left: 165px;
+  width: 80px;
+}
+
+.a3 {
+  top: 97px;
+  left: 282px;
+}
+.a3.a3-1 .check-mark {
+  top: 22px;
+}
+.a3.a3-2 .check-mark {
+  top: 39px;
+}
+.a3.a3-3 .check-mark {
+  top: 57px;
+}
+.a3.a3-4 .check-mark {
+  top: 74px;
+}
+.a3.a3-5 .check-mark {
+  top: 91px;
+}
+.a3.a3-6 .check-mark {
+  top: 109px;
+}
+.a3.a3-7 .check-mark {
+  top: 126px;
+}
+.a3.a3-8 .check-mark {
+  top: 143px;
+}
+.a3.a3-9 .check-mark {
+  top: 160px;
+}
+.a3.a3-10 .check-mark {
+  top: 177px;
+}
+.a3.a3-11 .check-mark {
+  left: 219px;
+  top: 8px;
+}
+.a3.a3-12 .check-mark {
+  left: 219px;
+  top: 37px;
+}
+.a3.a3-12 .check-mark {
+  left: 219px;
+  top: 52px;
+}
+
+.a4 {
+  left: 501px;
+  top: 192px;
+  position: absolute;
+}
+.a4 input {
+  display: none;
+}
+.a4.other-true input {
+  display: inline-block;
+  left: 50px;
+  top: -10px;
+  width: 70px;
+  font-size: 10px;
+}
+.a4.a4-1 .check-mark {
+  top: 0px;
+}
+.a4.a4-2 .check-mark {
+  top: 16px;
+}
+.a4.a4-3 .check-mark {
+  top: 33px;
+}
+.a4.a4-4 .check-mark {
+  top: 49px;
+}
+.a4.a4-5 .check-mark {
+  top: 63px;
+}
+.a4.a4-6 .check-mark {
+  top: 78px;
+}
+.a4.a4-7 .check-mark {
+  left: 143px;
+  top: 0;
+}
+.a4.a4-8 .check-mark {
+  left: 143px;
+  top: 16px;
+}
+.a4.a4-9 .check-mark {
+  left: 143px;
+  top: 32px;
+}
+.a4.a4-10 .check-mark {
+  left: 143px;
+  top: 48px;
+}
+.a4.a4-10 .check-mark {
+  left: 143px;
+  top: 63px;
+}
+
+/* =============================== */
+.b1 {
+  top: 300px;
+  left: 295px;
+  width: 200px;
+}
+
+.b2 {
+  top: 300px;
+  left: 628px;
+  width: 100px;
+}
+
+.b3 {
+  top: 326px;
+}
+.b3 input {
+  display: none;
+}
+.b3.other-true input {
+  display: inline-block;
+  left: 300px;
+  top: -10px;
+  width: 70px;
+  font-size: 10px;
+}
+.b3.b3-1 .check-mark {
+  left: 134px;
+}
+.b3.b3-2 .check-mark {
+  left: 203px;
+}
+.b3.b3-3 .check-mark {
+  left: 278px;
+}
+.b3.b3-4 .check-mark {
+  left: 314px;
+}
+.b3.b3-5 .check-mark {
+  left: 362px;
+}
+.b3.b3-6 .check-mark {
+  left: 28px;
+  top: 16px;
+}
+.b3.b3-7 .check-mark {
+  left: 28px;
+  top: 16px;
+}
+.b3.b3-8 .check-mark {
+  left: 86px;
+  top: 16px;
+}
+.b3.b3-9 .check-mark {
+  left: 134px;
+  top: 16px;
+}
+.b3.b3-9 .check-mark {
+  left: 203px;
+  top: 16px;
+}
+.b3.b3-9 .check-mark {
+  left: 277px;
+  top: 16px;
+}
+
+.b4 {
+  top: 327px;
+  left: 490px;
+  position: absolute;
+}
+.b4.b4-1 .check-mark {
+  left: 0;
+}
+.b4.b4-2 .check-mark {
+  left: 46px;
+}
+.b4.b4-3 .check-mark {
+  left: 93px;
+}
+.b4.b4-4 .check-mark {
+  left: 146px;
+}
+.b4.b4-5 .check-mark {
+  left: 187px;
+}
+.b4.b4-6 .check-mark {
+  left: 233px;
+}
+.b4.b4-7 .check-mark {
+  left: 0;
+  top: 15px;
+}
+.b4.b4-8 .check-mark {
+  left: 46px;
+  top: 15px;
+}
+.b4.b4-9 .check-mark {
+  left: 93px;
+  top: 15px;
+}
+.b4.b4-10 .check-mark {
+  left: 146px;
+  top: 15px;
+}
+.b4.b4-11 .check-mark {
+  left: 187px;
+  top: 15px;
+}
+.b4.b4-12 .check-mark {
+  left: 233px;
+  top: 15px;
+}
+
+.b5 {
+  top: 365px;
+  left: 50px;
+}
+.b5 #b5-year {
+  width: 70px;
+}
+.b5 #b5-make {
+  width: 115px;
+  left: 87px;
+}
+.b5 #b5-model {
+  width: 115px;
+  left: 87px;
+}
+.b5 #b5-model {
+  width: 150px;
+  left: 260px;
+}
+.b5 #b5-modelHash {
+  width: 130px;
+  left: 450px;
+}
+.b5 #b5-trim {
+  width: 100px;
+  left: 600px;
+}
+
+.b6 {
+  top: 396px;
+}
+.b6 input {
+  display: none;
+}
+.b6.other-true input {
+  display: inline-block;
+  left: 48px;
+  top: -10px;
+  width: 60px;
+  font-size: 10px;
+}
+.b6.b6-1 .check-mark {
+  left: 139px;
+}
+.b6.b6-2 .check-mark {
+  left: 29px;
+  top: 16px;
+}
+.b6.b6-3 .check-mark {
+  left: 139px;
+  top: 18px;
+}
+
+.b7 {
+  top: 405px;
+  left: 295px;
+}
+.b7 #b7-subtype-1 {
+  left: 0px;
+  width: 20px;
+}
+.b7 #b7-subtype-2 {
+  left: 50px;
+  width: 20px;
+}
+.b7 #b7-subtype-3 {
+  left: 110px;
+  width: 20px;
+}
+
+.b8 {
+  top: 397px;
+  left: 435px;
+}
+.b8 input {
+  display: none;
+}
+.b8.other-true input {
+  display: inline-block;
+  left: 48px;
+  top: -10px;
+  width: 60px;
+  font-size: 10px;
+}
+.b8.b8-1 .check-mark {
+  left: 66px;
+}
+.b8.b8-2 .check-mark {
+  left: 114px;
+}
+.b8.b8-3 .check-mark {
+  left: 168px;
+}
+.b8.b8-4 .check-mark {
+  left: -2px;
+  top: 16px;
+}
+.b8.b8-5 .check-mark {
+  left: 67px;
+  top: 16px;
+}
+.b8.b8-6 .check-mark {
+  left: 114px;
+  top: 16px;
+}
+
+.b9 {
+  top: 401px;
+  left: 685px;
+  width: 72px;
+}
+
+.b10 {
+  top: 432px;
+  left: 78px;
+}
+.b10.b10-1 .check-mark {
+  left: 0;
+}
+.b10.b10-2 .check-mark {
+  left: 59px;
+}
+.b10.b10-3 .check-mark {
+  left: 104px;
+}
+.b10.b10-4 .check-mark {
+  left: 179px;
+}
+.b10.b10-5 .check-mark {
+  left: 0;
+  top: 16px;
+}
+.b10.b10-6 .check-mark {
+  left: 104px;
+  top: 16px;
+}
+
+.b11 {
+  top: 435px;
+  left: 475px;
+  width: 70px;
+}
+
+.b12 {
+  top: 435px;
+  left: 662px;
+  width: 100px;
+}
+
+/* ============================ */
+.c1 {
+  top: 473px;
+  left: 395px;
+}
+.c1.c1-1 .check-mark {
+  left: 0;
+  top: 0;
+}
+.c1.c1-2 .check-mark {
+  left: 50px;
+  top: 0;
+}
+
+.c2 {
+  top: 472px;
+  left: 578px;
+  width: 110px;
+}
+
+.c3 {
+  top: 502px;
+  left: 50px;
+}
+.c3 #c3-subtype-1 {
+  left: 0px;
+  width: 150px;
+}
+.c3 #c3-subtype-2 {
+  left: 238px;
+  width: 150px;
+}
+.c3 #c3-subtype-3 {
+  left: 485px;
+  width: 150px;
+}
+
+.c4 {
+  top: 530px;
+  left: 51px;
+}
+.c4.c4-1 .check-mark {
+  left: 66px;
+  top: 0;
+}
+.c4.c4-2 .check-mark {
+  left: 117px;
+  top: 0;
+}
+.c4.c4-3 .check-mark {
+  left: 187px;
+  top: 0;
+}
+.c4.c4-4 .check-mark {
+  left: 187px;
+  top: 0;
+}
+.c4.c4-5 .check-mark {
+  left: 0;
+  top: 15px;
+}
+.c4.c4-6 .check-mark {
+  left: 66px;
+  top: 15px;
+}
+.c4.c4-7 .check-mark {
+  left: 187px;
+  top: 15px;
+}
+
+.c5 {
+  top: 545px;
+  left: 343px;
+}
+.c5.c5-1 .check-mark {
+  left: 0;
+}
+.c5.c5-2 .check-mark {
+  left: 76px;
+}
+
+.c6 {
+  top: 530px;
+  left: 505px;
+}
+.c6.c6-1 .check-mark {
+  left: 154px;
+}
+.c6.c6-2 .check-mark {
+  left: 222px;
+}
+.c6.c6-3 .check-mark {
+  left: 0;
+  top: 16px;
+}
+.c6.c6-4 .check-mark {
+  left: 53px;
+  top: 16px;
+}
+.c6.c6-5 .check-mark {
+  left: 107px;
+  top: 16px;
+}
+.c6.c6-6 .check-mark {
+  left: 153px;
+  top: 16px;
+}
+.c6.c6-7 .check-mark {
+  left: 221px;
+  top: 16px;
+}
+
+/* ================================= */
+.d-block {
+  position: absolute;
+  top: 550px;
+}
+.d-block.owner-2 {
+  top: 710px;
+}
+.d-block .d1 {
+  top: 17px;
+  left: 217px;
+}
+.d-block .d1.d1-1 .check-mark {
+  left: 408px;
+}
+.d-block .d1.d1-2 .check-mark {
+  left: 0;
+  top: 12px;
+}
+.d-block .d1.d1-3 .check-mark {
+  left: 121px;
+  top: 16px;
+}
+.d-block .d1.d1-4 .check-mark {
+  left: 261px;
+  top: 16px;
+}
+.d-block .d2 {
+  top: 50px;
+  width: 180px;
+  left: 50px;
+}
+.d-block .d3 {
+  top: 50px;
+  width: 180px;
+  left: 324px;
+}
+.d-block .d4 {
+  top: 50px;
+  width: 180px;
+  left: 570px;
+}
+.d-block .d5 {
+  top: 85px;
+  position: absolute;
+}
+.d-block .d6 {
+  top: 85px;
+  left: 570px;
+  width: 150px;
+}
+.d-block .d7 {
+  top: 117px;
+  position: absolute;
+}
+.d-block .d7.check-true .check-mark {
+  left: 146px;
+  top: -5px;
+}
+.d-block .d8 {
+  top: 119px;
+  left: 570px;
+  width: 150px;
+}
+.d-block .d9 {
+  top: 145px;
+  position: absolute;
+}
+.d-block .d9.d9-1 .check-mark {
+  left: 381px;
+  top: 8px;
+}
+.d-block .d9.d9-2 .check-mark {
+  left: 422px;
+  top: 8px;
+}
+.d-block .d9.d9-3 .check-mark {
+  left: 472px;
+  top: 8px;
+}
+.d-block #d-resident {
+  width: 200px;
+  left: 50px;
+}
+.d-block #d-apt {
+  width: 60px;
+  left: 266px;
+}
+.d-block #d-city {
+  width: 95px;
+  left: 330px;
+}
+.d-block #d-state {
+  width: 50px;
+  left: 430px;
+}
+.d-block #d-zipcode {
+  width: 50px;
+  left: 488px;
+}
+.d-block #d-email {
+  left: 85px;
+  width: 300px;
+}
+.d-block #d-phone {
+  left: 575px;
+  width: 170px;
+}
+
+.e-block {
+  top: 873px;
+  position: absolute;
+}
+.e-block .e1 {
+  top: 50px;
+  left: 50px;
+  width: 180px;
+}
+.e-block .e2 {
+  top: 50px;
+  left: 326px;
+  width: 200px;
+}
+.e-block .e3 {
+  top: 50px;
+  left: 568px;
+  width: 190px;
+}
+.e-block .e4 {
+  top: 82px;
+  left: 50px;
+  width: 180px;
+}
+.e-block .e5 {
+  top: 82px;
+  left: 326px;
+  width: 200px;
+}
+.e-block .e6 {
+  top: 82px;
+  left: 568px;
+  width: 190px;
+}
+
+.f-block {
+  top: 5px;
+  position: absolute;
+}
+.f-block .f1 {
+  position: absolute;
+  top: 20px;
+}
+.f-block .f1 #f-email {
+  left: 273px;
+  top: 20px;
+  width: 175px;
+}
+.f-block .f1 #f-phone {
+  left: 645px;
+  top: 14px;
+  width: 110px;
+}
+.f-block .f1.f1-1 .check-mark {
+  left: 452px;
+  top: 23px;
+}
+.f-block .f1.f1-2 .check-mark {
+  left: 492px;
+  top: 23px;
+}
+.f-block .f1.f1-3 .check-mark {
+  left: 543px;
+  top: 23px;
+}
+.f-block .f2 {
+  top: 70px;
+  left: 50px;
+  width: 100px;
+}
+.f-block .f3 {
+  top: 70px;
+  left: 190px;
+  width: 360px;
+}
+.f-block .f4 {
+  top: 70px;
+  left: 588px;
+  width: 65px;
+}
+.f-block .f5 {
+  top: 70px;
+  left: 681px;
+  width: 80px;
+}
+.f-block .f6 {
+  top: 105px;
+  left: 50px;
+  width: 500px;
+}
+.f-block .f7 {
+  top: 105px;
+  left: 590px;
+  width: 170px;
+}
+.f-block .f8 {
+  top: 140px;
+}
+.f-block .f9 {
+  top: 174px;
+}
+.f-block .f9.check-true .check-mark {
+  left: 148px;
+  top: -6px;
+}
+.f-block #f-resident {
+  left: 50px;
+  width: 275px;
+}
+.f-block #f-apt {
+  left: 328px;
+  width: 79px;
+}
+.f-block #f-city {
+  left: 415px;
+  width: 110px;
+}
+.f-block #f-state {
+  left: 534px;
+  width: 90px;
+}
+.f-block #f-zipcode {
+  left: 630px;
+  width: 133px;
+}
+
+.g-block {
+  top: 200px;
+  position: absolute;
+}
+.g-block .g1 {
+  top: 38px;
+}
+.g-block #g-resident {
+  left: 50px;
+  width: 275px;
+}
+.g-block #g-apt {
+  left: 328px;
+  width: 79px;
+}
+.g-block #g-city {
+  left: 415px;
+  width: 110px;
+}
+.g-block #g-state {
+  left: 534px;
+  width: 90px;
+}
+.g-block #g-zipcode {
+  left: 630px;
+  width: 133px;
+}
+
+.h-block {
+  top: 258px;
+  position: absolute;
+}
+.h-block .h1 {
+  top: 40px;
+}
+.h-block .h2 {
+  top: 75px;
+}
+.h-block .h3 {
+  top: 105px;
+}
+.h-block #h-lienCode {
+  left: 50px;
+  width: 125px;
+}
+.h-block #h-name {
+  left: 172px;
+  width: 195px;
+}
+.h-block #h-address {
+  left: 376px;
+  width: 385px;
+}
+
+.i-block input {
+  font-size: 10px;
+}
+.i-block #i1-1 {
+  top: 413px;
+  left: 254px;
+  width: 131px;
+}
+.i-block #i1-2 {
+  top: 446px;
+  left: 65px;
+  width: 70px;
+}
+.i-block #i1-3 {
+  top: 446px;
+  left: 221px;
+  width: 158px;
+}
+.i-block #i1-4 {
+  top: px;
+  left: px;
+  width: px;
+}
+.i-block #i1-5 {
+  top: 464px;
+  left: 161px;
+  width: 219px;
+}
+.i-block #i1-6 {
+  top: 480px;
+  left: 105px;
+  width: 94px;
+}
+.i-block #i1-7 {
+  top: 480px;
+  left: 322px;
+  width: 57px;
+}
+.i-block #i1-8 {
+  top: 497px;
+  left: 57px;
+  width: 39px;
+}
+.i-block #i1-9 {
+  top: 497px;
+  left: 127px;
+  width: 73px;
+}
+.i-block #i1-10 {
+  top: 497px;
+  left: 237px;
+  width: 143px;
+}
+.i-block #i1-11 {
+  top: 514px;
+  left: 104px;
+  width: 100px;
+}
+.i-block #i1-12 {
+  top: 514px;
+  left: 325px;
+  width: 61px;
+}
+.i-block #i1-13 {
+  top: 530px;
+  left: 57px;
+  width: 39px;
+}
+.i-block #i1-14 {
+  top: 530px;
+  left: 127px;
+  width: 73px;
+}
+.i-block #i1-15 {
+  top: 530px;
+  left: 237px;
+  width: 143px;
+}
+.i-block #i1-16 {
+  top: 548px;
+  left: 127px;
+  width: 36px;
+}
+.i-block #i1-17 {
+  top: 548px;
+  left: 264px;
+  width: 121px;
+}
+.i-block .i2 {
+  top: 422px;
+  left: 574px;
+  width: 190px;
+}
+.i-block #i3-1 {
+  top: 456px;
+  left: 560px;
+  width: 205px;
+}
+.i-block #i3-2 {
+  top: 472px;
+  left: 484px;
+  width: 278px;
+}
+.i-block #i3-3 {
+  top: 488px;
+  left: 577px;
+  width: 183px;
+}
+.i-block #i3-4 {
+  top: 505px;
+  left: 547px;
+  width: 215px;
+}
+.i-block .i4 {
+  top: 528px;
+  left: 530px;
+  width: 235px;
+}
+
+.j-block .j1 {
+  top: 582px;
+  left: 218px;
+  width: 185px;
+}
+.j-block .j2.j2-1 .check-mark {
+  left: 623px;
+  top: 588px;
+}
+.j-block .j2.j2-2 .check-mark {
+  left: 681px;
+  top: 588px;
+}
+.j-block .j3.j3-1 .check-mark {
+  left: 125px;
+  top: 613px;
+}
+.j-block .j3.j3-2 .check-mark {
+  left: 183px;
+  top: 613px;
+}
+.j-block .j4.j4-1 .check-mark {
+  left: 364px;
+  top: 613px;
+}
+.j-block .j4.j4-2 .check-mark {
+  left: 422px;
+  top: 613px;
+}
+.j-block .j5.j5-1 .check-mark {
+  left: 623px;
+  top: 613px;
+}
+.j-block .j5.j5-2 .check-mark {
+  left: 681px;
+  top: 613px;
+}
+
+.k-block .k1 {
+  width: 367px;
+  top: 666px;
+  left: 50px;
+}
+.k-block .k2 {
+  width: 160px;
+  top: 699px;
+  left: 50px;
+}
+.k-block .k3 {
+  top: 692px;
+  left: 314px;
+  width: 105px;
+}
+.k-block .k4.k4-1 .check-mark {
+  top: 730px;
+  left: 126px;
+}
+.k-block .k4.k4-2 .check-mark {
+  top: 730px;
+  left: 174px;
+}
+.k-block .k5 {
+  top: 719px;
+  left: 314px;
+  width: 105px;
+}
+
+.l-block .l1 {
+  top: 779px;
+  left: 50px;
+  width: 690px;
+}
+.l-block .l2 {
+  top: 811px;
+}
+.l-block #l-resident {
+  left: 50px;
+  width: 275px;
+}
+.l-block #l-apt {
+  left: 328px;
+  width: 79px;
+}
+.l-block #l-city {
+  left: 415px;
+  width: 110px;
+}
+.l-block #l-state {
+  left: 534px;
+  width: 90px;
+}
+.l-block #l-zipcode {
+  left: 630px;
+  width: 133px;
+}
+
+.m-block .m1 {
+  top: 939px;
+  width: 100%;
+}
+.m-block .m2 {
+  top: 960px;
+  width: 100%;
+}
+.m-block #m-signature {
+  left: 166px;
+  width: 421px;
+  height: 20px;
+  position: absolute;
+  border: 0;
+}
+.m-block #m-date {
+  left: 636px;
+  width: 126px;
+}
+/*# sourceMappingURL=rta.css.map */

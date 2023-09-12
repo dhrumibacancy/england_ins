@@ -41,13 +41,15 @@ a {
     color: var(--color-blue);
 }
 
+.has-error {
+    color: var(--color-has-error) !important;
+}
 .text-black{
-    color: var(--color-black);
+    color: var(--color-black) !important;
 }
 
 .text-sucess {
-    color: var(--color-sucess);
-
+    color: var(--color-sucess) !important;
 }
 .text-orange {
     color: #F68A1F;
@@ -78,7 +80,7 @@ li {
 }
 
 .bg-white {
-    background-color: var(--color-white);
+    background-color: var(--color-white) !important;
 }
 
 .bg-transparent {
@@ -94,41 +96,41 @@ li {
 }
 
 .fs-18 {
-    font-size: 18px;
+    font-size: 18px !important;
 }
 
 .fs-26 {
     font-size: 26px !important;
 }
 .fs-22 {
-    font-size: 22px;
+    font-size: 22px !important;
 }
 
 .fs-20 {
-    font-size: 20px;
+    font-size: 20px !important;
 }
 
 .fs-11 {
-    font-size: 11px;
+    font-size: 11px !important;
 }
 .fs-12 {
-    font-size: 12px;
+    font-size: 12px !important;
 }
 
 .text-gray {
-    color: var(--color-light-gray);
+    color: var(--color-light-gray) !important;
 }
 
 .text-black {
-    color: var(--color-black);
+    color: var(--color-black) !important;
 }
 
 .fs-14 {
-    font-size: 14px;
+    font-size: 14px !important;
 }
 
 .fs-16 {
-    font-size: 16px;
+    font-size: 16px !important;
 }
 
 .fw-500 {
@@ -139,6 +141,12 @@ li {
     font-weight: 600;
 }
 
+.bg-light{
+    background-color: var(--color-border-light) !important;
+}
+.border-light{
+    border-color: var(--color-border-light) !important;
+}
 
 .d-flex {
     @include flexbox();
@@ -434,7 +442,7 @@ main {
 
     }
 
-    .fs-20 {
+    .fs-16 {
         font-size: 16px;
     }
 
@@ -448,7 +456,7 @@ main {
         padding: 1rem 1.05rem;
     }
 
-    .fs-18 {
+    .fs-15 {
         font-size: 15px !important;
     }
 
