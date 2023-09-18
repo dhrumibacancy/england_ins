@@ -2846,7 +2846,11 @@ label.checkbox-inline.squar-boxes img.offline {
 }
 
 .filter-menu {
-  width: 375px;
+  width: 390px;
+}
+
+.filter-menu .radio-btn .radio-label {
+  font-size: 13px !important;
 }
 
 .filter-menu .checkbox-label {
