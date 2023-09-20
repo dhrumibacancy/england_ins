@@ -74,8 +74,11 @@ margin-left: 12px;
   bottom: -5px;
 }
 .filter-menu{
-  width: 375px;
+  width: 390px;
 }
+.filter-menu .radio-btn .radio-label {
+ 
+  font-size: 13px !important;}
 .filter-menu .checkbox-label{
   font-size: 14px !important  ;
 }
@@ -95,6 +98,11 @@ color: #000;
 }
 span.checkbox-label.fs-14.me-5.fw-500.main-label {
   min-width: 170px;
+}
+.radio-check-switch .radio-switch-state{
+  border: 1px dashed #67A6D9;
+  border-radius: 5px;
+  
 }
 @media only screen and (max-width: 575px) {
 
