@@ -1,0 +1,255 @@
+/* custom main 
+ UnExpected King Tirth Shah */ 
+ 
+ .page {
+  page-break-after: always;
+  position: relative;
+}
+
+.page-details.eft-metlife {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10000;
+}
+.page-details.eft-metlife input[type=date]::-webkit-inner-spin-button, .page-details.eft-metlife input[type=date]::-webkit-calendar-picker-indicator,
+.page-details.eft-metlife input[type=year]::-webkit-inner-spin-button,
+.page-details.eft-metlife input[type=year]::-webkit-calendar-picker-indicator,
+.page-details.eft-metlife input[type=month]::-webkit-inner-spin-button,
+.page-details.eft-metlife input[type=month]::-webkit-calendar-picker-indicator {
+  display: none;
+  -webkit-appearance: none;
+}
+.page-details.eft-metlife .form-img {
+  width: 100%;
+}
+.page-details.eft-metlife .answer {
+  position: absolute;
+  bottom: 0;
+}
+.page-details.eft-metlife .answer img {
+  width: 100%;
+  position: absolute;
+}
+.page-details.eft-metlife .answer input,
+.page-details.eft-metlife .answer textarea {
+  width: 100%;
+  font-size: 10px;
+  font-weight: bold;
+  color: #141414;
+  position: absolute;
+  background: transparent;
+  overflow: hidden;
+}
+.page-details.eft-metlife .answer textarea {
+  font-size: 10px;
+  padding: 0 5px;
+}
+.page-details.eft-metlife .answer.monospace {
+  font-family: monospace;
+  letter-spacing: 7px;
+}
+.page-details.eft-metlife .answer .check-mark {
+  position: absolute;
+}
+.page-details.eft-metlife .answer .check-mark::before, .page-details.eft-metlife .answer .check-mark::after {
+  content: "";
+  height: 2px;
+  width: 15px;
+  background: black;
+  position: absolute;
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+.page-details.eft-metlife .answer .check-mark::before {
+  -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+.page-details.eft-metlife textarea.form-control {
+  border: 0;
+  resize: none;
+  height: 100%;
+}
+.page-details.eft-metlife .operator-info {
+  position: absolute;
+  top: 170px;
+  left: 20px;
+}
+.page-details.eft-metlife .operator-info input {
+  font-size: 13px;
+}
+.page-details.eft-metlife .operator-info .a1 {
+  left: 86px;
+  width: 178px;
+  top: 6px;
+}
+.page-details.eft-metlife .operator-info .a2 {
+  left: 276px;
+  width: 82px;
+  top: 6px;
+}
+.page-details.eft-metlife .operator-info .a3 {
+  left: 370px;
+  width: 222px;
+  top: 6px;
+}
+.page-details.eft-metlife .operator-info .a4 {
+  left: 606px;
+  width: 102px;
+  top: 6px;
+}
+.page-details.eft-metlife .operator-info .a5 {
+  left: 86px;
+  width: 272px;
+  top: 45px;
+}
+.page-details.eft-metlife .operator-info .a6 {
+  left: 370px;
+  width: 155px;
+  top: 45px;
+}
+.page-details.eft-metlife .operator-info .a7 {
+  left: 534px;
+  width: 59px;
+  top: 45px;
+}
+.page-details.eft-metlife .operator-info .a8 {
+  left: 604px;
+  width: 104px;
+  top: 45px;
+}
+.page-details.eft-metlife .section-2 {
+  position: absolute;
+  top: 295px;
+  left: 12px;
+}
+.page-details.eft-metlife .section-2 .a1 {
+  left: 86px;
+  top: -7px;
+}
+.page-details.eft-metlife .section-2 .a2 {
+  left: 400px;
+  top: -6px;
+}
+.page-details.eft-metlife .section-2 .a3 {
+  left: 86px;
+  top: 12px;
+}
+.page-details.eft-metlife .section-3 {
+  position: absolute;
+  top: 373px;
+  left: 12px;
+}
+.page-details.eft-metlife .section-3 .a1 {
+  left: 176px;
+  width: 222px;
+  top: 0;
+}
+.page-details.eft-metlife .section-3 .a2.a2-1 {
+  left: 383px;
+  top: 44px;
+}
+.page-details.eft-metlife .section-3 .a2.a2-2 {
+  left: 383px;
+  top: 44px;
+}
+.page-details.eft-metlife .section-3 .a3 {
+  left: 99px;
+  top: 41px;
+}
+.page-details.eft-metlife .option-2 {
+  position: absolute;
+  top: 490px;
+  left: 112px;
+  width: 620px;
+}
+.page-details.eft-metlife .option-2 .answer {
+  position: relative;
+}
+.page-details.eft-metlife .option-2 .answer input {
+  position: relative;
+  text-align: center;
+}
+.page-details.eft-metlife .option-2 .policy-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 22px;
+}
+.page-details.eft-metlife .option-2 .policy-list .a1 {
+  width: 268px;
+}
+.page-details.eft-metlife .option-2 .policy-list .a2 {
+  width: 46px;
+}
+.page-details.eft-metlife .option-2 .policy-list .a3 {
+  width: 42px;
+}
+.page-details.eft-metlife .option-2 .policy-list .a4 {
+  width: 51px;
+}
+.page-details.eft-metlife .option-2 .policy-list .a5 {
+  width: 119px;
+}
+.page-details.eft-metlife .option-2 .policy-list .a6 {
+  width: 91px;
+}
+.page-details.eft-metlife .section-4 {
+  position: absolute;
+  top: 642px;
+}
+.page-details.eft-metlife .section-4 input {
+  font-size: 15px;
+}
+.page-details.eft-metlife .section-4 .a1 {
+  left: 104px;
+  width: 302px;
+  top: 0;
+}
+.page-details.eft-metlife .section-4 .a2 {
+  left: 417px;
+  width: 162px;
+  top: 0;
+}
+.page-details.eft-metlife .section-4 .a3 {
+  left: 588px;
+  width: 130px;
+  top: 0;
+}
+.page-details.eft-metlife .section-4 .a4 {
+  top: 51px;
+}
+.page-details.eft-metlife .section-4 .a4.a4-1 {
+  left: 98px;
+}
+.page-details.eft-metlife .section-4 .a4.a4-2 {
+  left: 178px;
+}
+.page-details.eft-metlife .section-4 .a4.a4-3 {
+  left: 249px;
+  top: 53px;
+}
+.page-details.eft-metlife .section-4 .a4.a4-4 {
+  left: 469px;
+  top: 54px;
+}
+.page-details.eft-metlife .section-5 {
+  position: absolute;
+  top: 812px;
+  left: 12px;
+}
+.page-details.eft-metlife .section-5 .a2 {
+  left: 570px;
+  width: 162px;
+  top: 2px;
+}
+.page-details.eft-metlife .section-5 .a2 input {
+  font-size: 15px;
+}
+/*# sourceMappingURL=eft-metlife.css.map */

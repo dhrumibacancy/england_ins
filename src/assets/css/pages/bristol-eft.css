@@ -1,0 +1,192 @@
+/* custom main 
+ UnExpected King Tirth Shah */ 
+ 
+ .page {
+  page-break-after: always;
+  position: relative;
+}
+
+.page-details.bristol-eft {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10000;
+}
+.page-details.bristol-eft input[type=date]::-webkit-inner-spin-button, .page-details.bristol-eft input[type=date]::-webkit-calendar-picker-indicator,
+.page-details.bristol-eft input[type=year]::-webkit-inner-spin-button,
+.page-details.bristol-eft input[type=year]::-webkit-calendar-picker-indicator,
+.page-details.bristol-eft input[type=month]::-webkit-inner-spin-button,
+.page-details.bristol-eft input[type=month]::-webkit-calendar-picker-indicator {
+  display: none;
+  -webkit-appearance: none;
+}
+.page-details.bristol-eft .form-img {
+  width: 100%;
+}
+.page-details.bristol-eft .answer {
+  position: absolute;
+  bottom: 0;
+}
+.page-details.bristol-eft .answer img {
+  width: 100%;
+  position: absolute;
+}
+.page-details.bristol-eft .answer input,
+.page-details.bristol-eft .answer textarea {
+  width: 100%;
+  font-size: 10px;
+  font-weight: bold;
+  color: #141414;
+  position: absolute;
+  background: transparent;
+  overflow: hidden;
+}
+.page-details.bristol-eft .answer textarea {
+  font-size: 10px;
+  padding: 0 5px;
+}
+.page-details.bristol-eft .answer.monospace {
+  font-family: monospace;
+  letter-spacing: 7px;
+}
+.page-details.bristol-eft .answer .check-mark {
+  position: absolute;
+}
+.page-details.bristol-eft .answer .check-mark::before, .page-details.bristol-eft .answer .check-mark::after {
+  content: "";
+  height: 2px;
+  width: 15px;
+  background: black;
+  position: absolute;
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+.page-details.bristol-eft .answer .check-mark::before {
+  -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+.page-details.bristol-eft textarea.form-control {
+  border: 0;
+  resize: none;
+  height: 100%;
+}
+.page-details.bristol-eft .payment-info {
+  position: absolute;
+  top: 612px;
+  left: 50px;
+}
+.page-details.bristol-eft .payment-info .a1 {
+  left: 78px;
+  width: 246px;
+  top: 6px;
+}
+.page-details.bristol-eft .payment-info .a2 {
+  left: 434px;
+  width: 192px;
+  top: 6px;
+}
+.page-details.bristol-eft .payment-info .a3 {
+  left: 80px;
+  width: 242px;
+  top: 36px;
+}
+.page-details.bristol-eft .payment-info .a4 {
+  left: 446px;
+  width: 192px;
+  top: 36px;
+}
+.page-details.bristol-eft .payment-details {
+  position: absolute;
+  top: 742px;
+}
+.page-details.bristol-eft .payment-details .b1.b1-1 {
+  left: 141px;
+  width: 20px;
+  top: 1px;
+}
+.page-details.bristol-eft .payment-details .b1.b1-2 {
+  left: 212px;
+  width: 20px;
+  top: 1px;
+}
+.page-details.bristol-eft .payment-details .b2 {
+  left: 110px;
+  width: 246px;
+  top: 14px;
+}
+.page-details.bristol-eft .payment-details .b3 {
+  left: 136px;
+  width: 214px;
+  top: 40px;
+}
+.page-details.bristol-eft .payment-details .b4 {
+  left: 144px;
+  width: 189px;
+  top: 65px;
+}
+.page-details.bristol-eft .payment-details .b4.monospace input {
+  font-family: monospace;
+  letter-spacing: 7px;
+}
+.page-details.bristol-eft .payment-details .b5 {
+  left: 100px;
+  width: 246px;
+  top: 90px;
+}
+.page-details.bristol-eft .payment-details.payment-details-cards {
+  left: 404px;
+}
+.page-details.bristol-eft .payment-details.payment-details-cards .b1.b1-1 {
+  left: 87px;
+  width: 20px;
+  top: -1px;
+}
+.page-details.bristol-eft .payment-details.payment-details-cards .b1.b1-2 {
+  left: 130px;
+  width: 20px;
+  top: -1px;
+}
+.page-details.bristol-eft .payment-details.payment-details-cards .b1.b1-3 {
+  left: 173px;
+  width: 20px;
+  top: -1px;
+}
+.page-details.bristol-eft .payment-details.payment-details-cards .b1.b1-4 {
+  left: 222px;
+  width: 20px;
+  top: -1px;
+}
+.page-details.bristol-eft .payment-details.payment-details-cards .b2 {
+  left: 72px;
+}
+.page-details.bristol-eft .payment-details.payment-details-cards .b3 {
+  left: 115px;
+  width: 216px;
+  top: 53px;
+}
+.page-details.bristol-eft .payment-details.payment-details-cards .b3.monospace input {
+  font-family: monospace;
+  letter-spacing: 7px;
+}
+.page-details.bristol-eft .payment-details.payment-details-cards .b4 {
+  left: 84px;
+  width: 33px;
+  top: 79px;
+}
+.page-details.bristol-eft .payment-details.payment-details-cards .b4.monospace input {
+  font-family: monospace;
+  letter-spacing: 7px;
+}
+.page-details.bristol-eft .payment-details.payment-details-cards .b5 {
+  left: 114px;
+  width: 79px;
+  top: 79px;
+}
+.page-details.bristol-eft .payment-details.payment-details-cards .b5.monospace input {
+  font-family: monospace;
+  letter-spacing: 7px;
+}
+/*# sourceMappingURL=bristol-eft.css.map */

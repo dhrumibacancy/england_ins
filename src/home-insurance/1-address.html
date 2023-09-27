@@ -211,33 +211,35 @@
                                             </div>
                                             <div class="col-4">
                                                 <div class="f-group max-width-100">
-            
-                                                    <div class="f-dropdown selectDropdown"><select class="f-control f-dropdown"
-                                                            placeholder="City" id="selectCity">
+
+                                                    <div class="f-dropdown selectDropdown"><select
+                                                            class="f-control f-dropdown" placeholder="City"
+                                                            id="selectCity">
                                                             <option value="">Select City</option>
                                                             <option value="1">city 1
                                                             </option>
                                                             <option value="2">city 2
                                                             </option>
-            
+
                                                         </select>
-            
+
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="col-4">
                                                 <div class="f-group max-width-100">
-            
-                                                    <div class="f-dropdown selectDropdown"><select class="f-control f-dropdown"
-                                                            placeholder="state" id="selectState">
+
+                                                    <div class="f-dropdown selectDropdown"><select
+                                                            class="f-control f-dropdown" placeholder="state"
+                                                            id="selectState">
                                                             <option value="">Select State</option>
                                                             <option value="1">State 1
                                                             </option>
                                                             <option value="2">State 2
                                                             </option>
-            
+
                                                         </select>
-            
+
                                                     </div>
                                                 </div>
                                             </div>
@@ -248,42 +250,87 @@
                                             </div>
 
                                             <div class="col-md-12 col-12">
-                                                <h5 class="fs-12">Will you be living here</h5>
+                                                <h5 class="fs-18">Will you be living here</h5>
                                                 <div class="d-flex align-items-center justify-content-start">
                                                     <div class="d-flex align-self-center me-3">
                                                         <label class="radio-inline radio-btn" for="livingYes">
-                                                            <input class="radio-control" type="radio" name="living"
-                                                                value="" id="livingYes" checked="">
+                                                            <input class="radio-control" type="radio" name="living1"
+                                                                value="" id="livingYes">
                                                             <span class="radio-custom"></span>
                                                             <span class="radio-label fs-14">Yes </span>
                                                         </label>
                                                     </div>
                                                     <div class="d-flex align-self-center me-3">
                                                         <label class="radio-inline radio-btn" for="livingNo">
-                                                            <input class="radio-control" type="radio" name="living"
+                                                            <input class="radio-control" type="radio" name="living1"
                                                                 value="" id="livingNo" checked="">
                                                             <span class="radio-custom"></span>
                                                             <span class="radio-label fs-14">No </span>
                                                         </label>
                                                     </div>
+                                                </div>                                                
+                                            </div>
+
+
+                                            <div class="col-md-12 col-12">
+                                                <input class="form-control addMain" type="text"
+                                                    placeholder="Street Address">
+                                            </div>
+                                            <div class="col-4">
+                                                <div class="f-group max-width-100">
+
+                                                    <div class="f-dropdown selectDropdown"><select
+                                                            class="f-control f-dropdown" placeholder="City"
+                                                            id="selectCity">
+                                                            <option value="">Select City</option>
+                                                            <option value="1">city 1
+                                                            </option>
+                                                            <option value="2">city 2
+                                                            </option>
+
+                                                        </select>
+
+                                                    </div>
                                                 </div>
                                             </div>
-                                            
+                                            <div class="col-4">
+                                                <div class="f-group max-width-100">
+
+                                                    <div class="f-dropdown selectDropdown"><select
+                                                            class="f-control f-dropdown" placeholder="state"
+                                                            id="selectState">
+                                                            <option value="">Select State</option>
+                                                            <option value="1">State 1
+                                                            </option>
+                                                            <option value="2">State 2
+                                                            </option>
+
+                                                        </select>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-4">
+                                                <div class="form-group">
+                                                    <input type="text" placeholder="ZIP Code" class="form-control">
+                                                </div>
+                                            </div>
+
                                             <div class="col-md-6 col-12">
-                                                <h5 class="fs-12">Is this property is new purchase?</h5>
+                                                <h5 class="fs-18">Is this property is new purchase?</h5>
                                                 <div class="d-flex align-items-center justify-content-start">
                                                     <div class="d-flex align-self-center me-3">
-                                                        <label class="radio-inline radio-btn" for="livingYes">
-                                                            <input class="radio-control" type="radio" name="living"
-                                                                value="" id="livingYes" checked="">
+                                                        <label class="radio-inline radio-btn" for="living2Yes">
+                                                            <input class="radio-control" type="radio" name="living2"
+                                                                value="" id="living2Yes" checked="">
                                                             <span class="radio-custom"></span>
                                                             <span class="radio-label fs-14">Yes </span>
                                                         </label>
                                                     </div>
                                                     <div class="d-flex align-self-center me-3">
-                                                        <label class="radio-inline radio-btn" for="livingNo">
-                                                            <input class="radio-control" type="radio" name="living"
-                                                                value="" id="livingNo" checked="">
+                                                        <label class="radio-inline radio-btn" for="living2No">
+                                                            <input class="radio-control" type="radio" name="living2"
+                                                                value="" id="living2No" >
                                                             <span class="radio-custom"></span>
                                                             <span class="radio-label fs-14">No </span>
                                                         </label>
@@ -293,7 +340,7 @@
 
 
                                             <div class="col-6">
-                                                <div class="input-group date form-control px-0">
+                                                <div class="input-group date form-control px-0 mt-3">
                                                     <span class="input-group-append ">
                                                         <span class="input-group-text border-0 bg-white d-block pe-0">
                                                             $
@@ -310,25 +357,29 @@
                                                     <h4 class="mb-3 fs-18">Special Property Considerations</h4>
                                                     <div class="row">
                                                         <div class="col-lg-12 mb-2">
-                                                            <label class="checkbox-inline mb-0 w-auto" for="flexCheckDefault2">
+                                                            <label class="checkbox-inline mb-0 w-auto"
+                                                                for="flexCheckDefault2">
                                                                 <input class="checkbox-control" type="checkbox" value=""
-                                                                    id="flexCheckDefault2" >
+                                                                    id="flexCheckDefault2">
                                                                 <span class="checkbox-custom"></span>
-                                                                <span class="checkbox-label fs-14">Residence is a Farm 
+                                                                <span class="checkbox-label fs-14">Residence is a Farm
                                                                 </span>
                                                             </label>
                                                         </div>
                                                         <div class="col-lg-12 mb-2">
-                                                            <label class="checkbox-inline mb-0 w-auto" for="flexCheckDefault3">
+                                                            <label class="checkbox-inline mb-0 w-auto"
+                                                                for="flexCheckDefault3">
                                                                 <input class="checkbox-control" type="checkbox" value=""
-                                                                    id="flexCheckDefault3" >
+                                                                    id="flexCheckDefault3">
                                                                 <span class="checkbox-custom"></span>
-                                                                <span class="checkbox-label fs-14">Residence is a mobile home, trailer home or house trailer
+                                                                <span class="checkbox-label fs-14">Residence is a mobile
+                                                                    home, trailer home or house trailer
                                                                 </span>
                                                             </label>
                                                         </div>
                                                         <div class="col-lg-12 mb-2">
-                                                            <label class="checkbox-inline mb-0 w-auto" for="flexCheckDefault53">
+                                                            <label class="checkbox-inline mb-0 w-auto"
+                                                                for="flexCheckDefault53">
                                                                 <input class="checkbox-control" type="checkbox" value=""
                                                                     id="flexCheckDefault53" checked="">
                                                                 <span class="checkbox-custom"></span>
@@ -338,17 +389,20 @@
                                                         </div>
                                                         <div class="col-12">
                                                             <div class="f-group max-width-100">
-                        
-                                                                <div class="f-dropdown selectDropdown"><select class="f-control f-dropdown"
-                                                                        placeholder="Who is your primary home insured with" id="secondaryHome">
-                                                                        <option value="">Who is your primary home insured with</option>
+
+                                                                <div class="f-dropdown selectDropdown"><select
+                                                                        class="f-control f-dropdown"
+                                                                        placeholder="Who is your primary home insured with"
+                                                                        id="secondaryHome">
+                                                                        <option value="">Who is your primary home
+                                                                            insured with</option>
                                                                         <option value="1">Home 1
                                                                         </option>
                                                                         <option value="2">Home 2
                                                                         </option>
-                        
+
                                                                     </select>
-                        
+
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -361,11 +415,11 @@
 
 
 
-                                </form>
-                            </div>
-                            
-                            <button type="submit" class="btn btn-primary mx-auto mt-4"><span>Continue</span>
-                            </button>
+                            </form>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary mx-auto mt-4"><span>Continue</span>
+                        </button>
                     </div>
                 </div>
             </div>

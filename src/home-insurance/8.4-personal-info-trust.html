@@ -38,7 +38,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
-        <link rel="stylesheet"
+    <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css">
 
 
@@ -197,7 +197,7 @@
                             <p class="user-welcome mt-2">Hey! My Name is Anne</p>
                         </div>
                         <h3 class="title  text-center">Personal Information </h3>
-                        
+
                         <div class="contain-wrapper-sm">
                             <form class="mt-4">
                                 <div class="">
@@ -206,33 +206,12 @@
                                     <div class="vehicle-details">
                                         <div class="row g-3">
 
-                                            <div class="col-6">
-                                                <div class="form-group">
-                                                    <input type="text" placeholder="First name" class="form-control">
-                                                </div>
-                                            </div>
-
-                                            <div class="col-6">
-                                                <div class="form-group">
-                                                    <input type="text" placeholder="Last Name" class="form-control">
-                                                </div>
-                                            </div>
-
-                                            <div class="col-6">
-                                                <div class="input-group date form-control px-0" id="datepicker">
-                                                    <input type="text" class="" id="date" placeholder="Date of birth (MM/DD/YYYY)" />
-                                                    <span class="input-group-append ">
-                                                        <span class="input-group-text border-0 bg-white d-block">
-                                                            <img class="" width="20px" src="../images/calender-icon.svg">
-                                                        </span>
-                                                    </span>
-                                                </div>
-                                            </div>
-
-                                            <div class="col-6">
+                                            <div class="col-12">
                                                 <div class="f-group max-width-100">
-                                                    <div class="f-dropdown selectDropdown"><select class="f-control f-dropdown"
-                                                            placeholder="Select the type of ownership" id="secondaryHome">
+                                                    <div class="f-dropdown selectDropdown"><select
+                                                            class="f-control f-dropdown"
+                                                            placeholder="Select the type of ownership"
+                                                            id="secondaryHome">
                                                             <option value="">Select the type of ownership</option>
                                                             <option value="1">Option 1
                                                             </option>
@@ -244,103 +223,156 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            
+
                                             <div class="col-12">
                                                 <div class="accordion custom" id="accordionPolicy">
                                                     <div class="accordion-item rounded-1">
                                                         <h2 class="accordion-header" id="headingTwo">
                                                             <button class="accordion-button" type="button"
-                                                                data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true"
-                                                                aria-controls="collapseTwo">
+                                                                data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+                                                                aria-expanded="true" aria-controls="collapseTwo">
                                                                 <h4 class="title fs-18">Trust Details</h4>
                                                             </button>
                                                         </h2>
-                                                        <div id="collapseTwo" class="accordion-collapse collapse show" aria-labelledby="headingTwo"
+                                                        <div id="collapseTwo" class="accordion-collapse collapse show"
+                                                            aria-labelledby="headingTwo"
                                                             data-bs-parent="#accordionPolicy">
                                                             <div class="accordion-body pt-0">
                                                                 <div class="row g-3">
                                                                     <div class="col-12">
                                                                         <div class="form-group">
-                                                                            <input type="text" placeholder="Enter trust name" class="form-control">
+                                                                            <input type="text"
+                                                                                placeholder="Enter trust name"
+                                                                                class="form-control">
                                                                         </div>
                                                                     </div>
-                                                                    
+
                                                                     <div class="col-12">
-                                                                        <div class="form-group">
-                                                                            <input type="text" placeholder="Trustee name" class="form-control">
-                                                                        </div>
-                                                                    </div>
-                        
-                                                                    <div class="col-12">
-                                                                        <div class=" d-flex flex-nowrap align-items-center">
-                                                                            <input type="text" placeholder="Trustee name" class="form-control">
+                                                                        <div
+                                                                            class=" d-flex flex-nowrap align-items-center">
+                                                                            <input type="text"
+                                                                                placeholder="Trustee name"
+                                                                                class="form-control">
                                                                             <a href="" class="ms-3">
-                                                                                <img src="../images/close.svg"> 
+                                                                                <img src="../images/close.svg">
                                                                             </a>
                                                                         </div>
                                                                     </div>
                                                                     <div class="col-md-12">
                                                                         <a class="btn-add mt-0" href="#">
-                                                                        <img src="../images/add-pluse-circle.svg" alt="Add" class="icon" />
-                                                                        Add Trustee
-                                                                    </a>
-                                                                </div>
-                                                                <hr>
-                                                                    <div class="col-md--4 col-12 mt-0 d-flex">
-                                                                    <div class="me-3">
-                                                                        <h5 class="fs-12">Beneficiary named?</h5>
-                                                                        <div class="d-flex align-items-center justify-content-start">
+                                                                            <img src="../images/add-pluse-circle.svg"
+                                                                                alt="Add" class="icon" />
+                                                                            Add Trustee
+                                                                        </a>
+                                                                    </div>
+                                                                    <hr>
+                                                                    <div class="col-md-6 col-12 mt-md-0 ">
+                                                                        <h5 class="fs-16">Beneficiary named?</h5>
+                                                                        <div
+                                                                            class="d-flex align-items-center justify-content-start">
                                                                             <div class="d-flex align-self-center me-3">
-                                                                                <label class="radio-inline radio-btn" for="livingYes">
-                                                                                    <input class="radio-control" type="radio" name="livding"
-                                                                                        value="" id="livingYes" checked="">
+                                                                                <label class="radio-inline radio-btn"
+                                                                                    for="livingYes">
+                                                                                    <input class="radio-control"
+                                                                                        type="radio" name="livding"
+                                                                                        value="" id="livingYes"
+                                                                                        checked="">
                                                                                     <span class="radio-custom"></span>
-                                                                                    <span class="radio-label fs-14">Yes </span>
+                                                                                    <span class="radio-label fs-14">Yes
+                                                                                    </span>
                                                                                 </label>
                                                                             </div>
                                                                             <div class="d-flex align-self-center me-3">
-                                                                                <label class="radio-inline radio-btn" for="livingNo">
-                                                                                    <input class="radio-control" type="radio" name="livding"
-                                                                                        value="" id="livingNo" >
+                                                                                <label class="radio-inline radio-btn"
+                                                                                    for="livingNo">
+                                                                                    <input class="radio-control"
+                                                                                        type="radio" name="livding"
+                                                                                        value="" id="livingNo">
                                                                                     <span class="radio-custom"></span>
-                                                                                    <span class="radio-label fs-14">No </span>
+                                                                                    <span class="radio-label fs-14">No
+                                                                                    </span>
                                                                                 </label>
                                                                             </div>
                                                                         </div>
                                                                     </div>
-                                                                    <div class="">
-                                                                        <h5 class="fs-12">Grantor named?</h5>
-                                                                        <div class="d-flex align-items-center justify-content-start">
+                                                                    <div class="col-md-6 mt-md-0">
+                                                                        <h5 class="fs-16">Grantor named?</h5>
+                                                                        <div
+                                                                            class="d-flex align-items-center justify-content-start">
                                                                             <div class="d-flex align-self-center me-3">
-                                                                                <label class="radio-inline radio-btn" for="livingYes">
-                                                                                    <input class="radio-control" type="radio" name="living"
-                                                                                        value="" id="livingYes" checked="">
+                                                                                <label class="radio-inline radio-btn"
+                                                                                    for="livingYes">
+                                                                                    <input class="radio-control"
+                                                                                        type="radio" name="living"
+                                                                                        value="" id="livingYes"
+                                                                                        checked="">
                                                                                     <span class="radio-custom"></span>
-                                                                                    <span class="radio-label fs-14">Yes </span>
+                                                                                    <span class="radio-label fs-14">Yes
+                                                                                    </span>
                                                                                 </label>
                                                                             </div>
                                                                             <div class="d-flex align-self-center me-3">
-                                                                                <label class="radio-inline radio-btn" for="livingNo">
-                                                                                    <input class="radio-control" type="radio" name="living"
-                                                                                        value="" id="livingNo" >
+                                                                                <label class="radio-inline radio-btn"
+                                                                                    for="livingNo">
+                                                                                    <input class="radio-control"
+                                                                                        type="radio" name="living"
+                                                                                        value="" id="livingNo">
                                                                                     <span class="radio-custom"></span>
-                                                                                    <span class="radio-label fs-14">No </span>
+                                                                                    <span class="radio-label fs-14">No
+                                                                                    </span>
                                                                                 </label>
                                                                             </div>
                                                                         </div>
                                                                     </div>
+                                                                    <div class="col-md-6 ">
+                                                                        <h5 class="fs-16">Any other properties owned by this entity?</h5>
+                                                                        <div
+                                                                            class="d-flex align-items-center justify-content-start">
+                                                                            <div class="d-flex align-self-center me-3">
+                                                                                <label class="radio-inline radio-btn"
+                                                                                    for="livingYes">
+                                                                                    <input class="radio-control"
+                                                                                        type="radio" name="living"
+                                                                                        value="" id="livingYes"
+                                                                                        checked="">
+                                                                                    <span class="radio-custom"></span>
+                                                                                    <span class="radio-label fs-14">Yes
+                                                                                    </span>
+                                                                                </label>
+                                                                            </div>
+                                                                            <div class="d-flex align-self-center me-3">
+                                                                                <label class="radio-inline radio-btn"
+                                                                                    for="livingNo">
+                                                                                    <input class="radio-control"
+                                                                                        type="radio" name="living"
+                                                                                        value="" id="livingNo">
+                                                                                    <span class="radio-custom"></span>
+                                                                                    <span class="radio-label fs-14">No
+                                                                                    </span>
+                                                                                </label>
+                                                                            </div>
+                                                                        </div>
                                                                     </div>
-                                                                    
+
+                                                                    <div class="col-12 m-0 p-0"></div>
+                                                                    <div class="col-md-4 col-12">
+                                                                        <div>
+                                                                            <input class="form-control" type="text"
+                                                                                placeholder="# of properties owned ">
+
+                                                                        </div>
+                                                                    </div>
+
                                                                 </div>
 
-                                                                
 
-                                                                
+
+
                                                             </div>
                                                         </div>
                                                     </div><!-- /accordion-item -->
-                                                    
-                                                    
+
+
                                                 </div>
                                             </div>
 
@@ -349,34 +381,42 @@
                                                     <div class="accordion-item rounded-1">
                                                         <h2 class="accordion-header" id="headingTwo">
                                                             <button class="accordion-button" type="button"
-                                                                data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true"
-                                                                aria-controls="collapseTwo">
+                                                                data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+                                                                aria-expanded="true" aria-controls="collapseTwo">
                                                                 <h4 class="title fs-18">Additional Insured 1</h4>
                                                                 <img src="../images/delete.svg">
                                                             </button>
                                                         </h2>
-                                                        <div id="collapseTwo" class="accordion-collapse collapse show" aria-labelledby="headingTwo"
+                                                        <div id="collapseTwo" class="accordion-collapse collapse show"
+                                                            aria-labelledby="headingTwo"
                                                             data-bs-parent="#accordionPolicy">
                                                             <div class="accordion-body pt-0">
                                                                 <div class="row g-3">
                                                                     <div class="col-6">
                                                                         <div class="form-group">
-                                                                            <input type="text" placeholder="First name" class="form-control" value="Alia">
+                                                                            <input type="text" placeholder="First name"
+                                                                                class="form-control" value="Alia">
                                                                         </div>
                                                                     </div>
-                        
+
                                                                     <div class="col-6">
                                                                         <div class="form-group">
-                                                                            <input type="text" placeholder="Last Name" class="form-control" value="Shastri">
+                                                                            <input type="text" placeholder="Last Name"
+                                                                                class="form-control" value="Shastri">
                                                                         </div>
                                                                     </div>
-                        
+
                                                                     <div class="col-6">
-                                                                        <div class="input-group date form-control px-0" id="datepicker1">
-                                                                            <input type="text" class="" id="date" placeholder="Date of birth (MM/DD/YYYY)" value="12/09/1993" />
+                                                                        <div class="input-group date form-control px-0"
+                                                                            id="datepicker1">
+                                                                            <input type="text" class="" id="date"
+                                                                                placeholder="Date of birth (DD/MM/YYYY)"
+                                                                                value="12/09/1993" />
                                                                             <span class="input-group-append ">
-                                                                                <span class="input-group-text border-0 bg-white d-block">
-                                                                                    <img class="" width="20px" src="../images/calender-icon.svg">
+                                                                                <span
+                                                                                    class="input-group-text border-0 bg-white d-block">
+                                                                                    <img class="" width="20px"
+                                                                                        src="../images/calender-icon.svg">
                                                                                 </span>
                                                                             </span>
                                                                         </div>
@@ -384,9 +424,12 @@
 
                                                                     <div class="col-6">
                                                                         <div class="f-group max-width-100">
-                                                                            <div class="f-dropdown selectDropdown"><select class="f-control f-dropdown"
-                                                                                    placeholder="Select relationship" id="secondaryHome">
-                                                                                    <option value="">Select the type of relationship</option>
+                                                                            <div class="f-dropdown selectDropdown">
+                                                                                <select class="f-control f-dropdown"
+                                                                                    placeholder="Select relationship"
+                                                                                    id="secondaryHome">
+                                                                                    <option value="">Select the type of
+                                                                                        relationship</option>
                                                                                     <option value="1">Option 1
                                                                                     </option>
                                                                                     <option value="2">Option 2
@@ -401,24 +444,24 @@
                                                             </div>
                                                         </div>
                                                     </div><!-- /accordion-item -->
-                                                    
+
                                                 </div>
                                                 <a class="btn-add mt-3" href="#">
                                                     <img src="../images/add-pluse-circle.svg" alt="Add" class="icon" />
-                                                    Add someone else
+                                                    Add additional insured
                                                 </a>
                                             </div>
-                                            
+
                                         </div>
                                     </div>
                                 </div>
                                 <button type="submit" class="btn btn-primary  mx-auto mt-4"><span>Continue</span>
                                 </button>
                             </form>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
     </main>
 
     <script src="../js/jquery.min.js"></script>
@@ -429,8 +472,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
         integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous">
         </script>
- <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js">
-</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js">
+    </script>
 
     <script src="../js/app.js"></script>
     <script>

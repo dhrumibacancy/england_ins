@@ -199,53 +199,94 @@
                             <img src="../images/user-person.svg" alt="" class="user-person mx-auto">
                             <p class="user-welcome mt-2">Hey! My Name is Anne</p>
                         </div>
-                        <h3 class="title  text-center">Distance of Stove From Wall</h3>
+                        <h3 class="title  text-center">Heating Source Details</h3>
 
                         <div class="contain-wrapper-sm">
                             <form class="mt-4">
-                                <div class="blue-light-box bg-white">
-                                    <div class="vehicle-details">
+                                <div class="blue-light-box bg-white w-75 mx-auto">
+                                    <div class="vehicle-details ">
+                                        <p class="fs-18 mb-3">Oil Tank Details</p>
                                         <div class="row gap-3">
                                             <div class="col-12">
                                                 <div class="form-group">
-                                                    <label for="" class="fs-18 font-bold" >Is oil tank above or below the ground</label>
-                                                    <div class="d-flex justify-content-start">
-                                                        <div class="d-flex align-self-center me-3">
+                                                    <label for="" class="fs-18 " >Is oil tank above or below the ground</label>
+                                                    <div class="d-flex justify-content-start full-width-radio">
+                                                        <div class="d-flex align-self-center pe-1 w-50">
                                                             <label class="radio-inline radio-btn" for="divingYes">
                                                                 <input class="radio-control" type="radio" name="willing" value=""
                                                                     id="divingYes" checked="">
                                                                 <span class="radio-custom"></span>
-                                                                <span class="radio-label fs-14">Above </span>
+                                                                <span class="radio-label fs-14 w-100 text-center">Above </span>
                                                             </label>
                                                         </div>
-                                                        <div class="d-flex align-self-center me-3">
+                                                        <div class="d-flex align-self-center ps-1 w-50">
                                                             <label class="radio-inline radio-btn" for="divingNo">
                                                                 <input class="radio-control" type="radio" name="willing" value=""
                                                                     id="divingNo">
                                                                 <span class="radio-custom"></span>
-                                                                <span class="radio-label fs-14">Below </span>
+                                                                <span class="radio-label fs-14 w-100 text-center">Below </span>
                                                             </label>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
+
                                             <div class="col-12">
                                                 <div class="form-group">
-                                                    <div class="input-group form-control px-0">
-                                                        <input type="number" class="" id="Distance"
-                                                            placeholder="Distance" />
-                                                        <span class="input-group-append ">
-                                                            <span
-                                                                class="input-group-text border-0 bg-white d-block pe-2">
-                                                                Inches
-                                                            </span>
-                                                        </span>
+                                                    <label for="" class="fs-18 " >Oil tank is in Interior or Exterior</label>
+                                                    <div class="d-flex justify-content-start full-width-radio">
+                                                        <div class="d-flex align-self-center pe-1 w-50">
+                                                            <label class="radio-inline radio-btn" for="divingYes">
+                                                                <input class="radio-control" type="radio" name="willing" value=""
+                                                                    id="divingYes" checked="">
+                                                                <span class="radio-custom"></span>
+                                                                <span class="radio-label fs-14 w-100 text-center">interior </span>
+                                                            </label>
+                                                        </div>
+                                                        <div class="d-flex align-self-center ps-1 w-50">
+                                                            <label class="radio-inline radio-btn" for="divingNo">
+                                                                <input class="radio-control" type="radio" name="willing" value=""
+                                                                    id="divingNo">
+                                                                <span class="radio-custom"></span>
+                                                                <span class="radio-label fs-14 w-100 text-center">exterior </span>
+                                                            </label>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
+
+                                            <div class="col-md-12 ">
+                                                <input type="text" placeholder="Number of Stoves" class="form-control" />
+                                            </div>
+                                            
                                         </div>
                                     </div>
                                 </div>
+
+                                <div class="blue-light-box bg-white w-75 mx-auto mt-3">
+                                    <p class="fs-18 mb-3">Stove  Details</p>
+                                    <div class="row g-3">
+                                        <div class="col-md-12 ">
+                                            <div class="form-group">
+                                                <div class="input-group form-control px-0">
+                                                    <input type="number" class="" id="Distance"
+                                                        placeholder="Distance of Stove From Wall" />
+                                                    <span class="input-group-append ">
+                                                        <span
+                                                            class="input-group-text border-0 bg-white d-block pe-2">
+                                                            Inches
+                                                        </span>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-12 ">
+                                            <input type="text" placeholder="Number of Stoves" class="form-control" />
+                                        </div>
+                                    </div>
+                                </div>
+
                                 <button type="submit" class="btn btn-primary  mx-auto mt-4"><span>Continue</span>
                                 </button>
                             </form>

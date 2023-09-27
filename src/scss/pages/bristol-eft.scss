@@ -1,0 +1,219 @@
+.page {
+  page-break-after: always;
+  position: relative;
+}
+
+.page-details.bristol-eft {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10000;
+
+  input[type="date"],
+  input[type="year"],
+  input[type="month"] {
+    &::-webkit-inner-spin-button,
+    &::-webkit-calendar-picker-indicator {
+      display: none;
+      -webkit-appearance: none;
+    }
+  }
+
+  .form-img {
+    width: 100%;
+  }
+
+  .answer {
+    position: absolute;
+    bottom: 0;
+  }
+
+  .answer img {
+    width: 100%;
+    position: absolute;
+  }
+  .answer input,
+  .answer textarea {
+    width: 100%;
+    font-size: 10px;
+    font-weight: bold;
+    color: #141414;
+    position: absolute;
+    background: transparent;
+    overflow: hidden;
+  }
+
+  .answer textarea {
+    font-size: 10px;
+    padding: 0 5px;
+  }
+
+  .answer.monospace {
+    font-family: monospace;
+    letter-spacing: 7px;
+  }
+  .answer .check-mark {
+    position: absolute;
+
+    &::before,
+    &::after {
+      content: "";
+      height: 2px;
+      width: 15px;
+      background: black;
+      position: absolute;
+      transform: rotate(45deg);
+    }
+    &::before {
+      transform: rotate(-45deg);
+    }
+  }
+  textarea.form-control {
+    border: 0;
+    resize: none;
+    height: 100%;
+  }
+
+  .payment-info {
+    position: absolute;
+    top: 612px;
+    left: 50px;
+
+    .a1 {
+      left: 78px;
+      width: 246px;
+      top: 6px;
+    }
+    .a2 {
+      left: 434px;
+      width: 192px;
+      top: 6px;
+    }
+    .a3 {
+      left: 80px;
+      width: 242px;
+      top: 36px;
+    }
+    .a4 {
+      left: 446px;
+      width: 192px;
+      top: 36px;
+    }
+  }
+
+  .payment-details {
+    position: absolute;
+    top: 742px;
+
+    .b1 {
+      &.b1-1 {
+        left: 141px;
+        width: 20px;
+        top: 1px;
+      }
+      &.b1-2 {
+        left: 212px;
+        width: 20px;
+        top: 1px;
+      }
+    }
+
+    .b2 {
+      left: 110px;
+      width: 246px;
+      top: 14px;
+    }
+    .b3 {
+      left: 136px;
+      width: 214px;
+      top: 40px;
+    }
+    .b4 {
+      left: 144px;
+      width: 189px;
+      top: 65px;
+
+      &.monospace {
+        input {
+          font-family: monospace;
+          letter-spacing: 7px;
+        }
+      }
+    }
+    .b5 {
+      left: 100px;
+      width: 246px;
+      top: 90px;
+    }
+
+    &.payment-details-cards {
+      left: 404px;
+
+      .b1 {
+        &.b1-1 {
+          left: 87px;
+          width: 20px;
+          top: -1px;
+        }
+        &.b1-2 {
+          left: 130px;
+          width: 20px;
+          top: -1px;
+        }
+        &.b1-3 {
+          left: 173px;
+          width: 20px;
+          top: -1px;
+        }
+        &.b1-4 {
+          left: 222px;
+          width: 20px;
+          top: -1px;
+        }
+      }
+
+      .b2 {
+        left: 72px;
+      }
+
+      .b3 {
+        left: 115px;
+        width: 216px;
+        top: 53px;
+
+        &.monospace {
+          input {
+            font-family: monospace;
+            letter-spacing: 7px;
+          }
+        }
+      }
+
+      .b4 {
+        left: 84px;
+        width: 33px;
+        top: 79px;
+
+        &.monospace {
+          input {
+            font-family: monospace;
+            letter-spacing: 7px;
+          }
+        }
+      }
+      .b5 {
+        left: 114px;
+        width: 79px;
+        top: 79px;
+
+        &.monospace {
+          input {
+            font-family: monospace;
+            letter-spacing: 7px;
+          }
+        }
+      }
+    }
+  }
+}

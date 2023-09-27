@@ -199,38 +199,66 @@
                             <img src="../images/user-person.svg" alt="" class="user-person mx-auto">
                             <p class="user-welcome mt-2">Hey! My Name is Anne</p>
                         </div>
-                        <h3 class="title  text-center">Who is your Home Insured with?</h3>
+                        <h3 class="title  text-center">Current Insurance Details</h3>
 
                         <div class="contain-wrapper-sm">
                             <form class="mt-4">
                                 <div class="">
                                     <div class="d-flex justify-content-between">
                                     </div>
-                                    <div class="vehicle-details container w-50">
-                                        <div class="row g-3">
-                                            <div class="col-12 ">
-                                            <div class="f-group max-width-100">
+                                    <div class="vehicle-details">
+                                        <div class="d-flex justify-content-center w-75 mx-auto">
 
-                                                <div class="f-dropdown selectDropdown"><select
-                                                        class="f-control f-dropdown" placeholder="Select Company"
-                                                        id="selectbuss">
-                                                        <option value="">Select Company</option>
+                                            <div class="row g-3">
 
-                                                        <option value="1">5 years or less</option>
-                                                        <option value="2">5-10 Years</option>
-                                                        <option value="Other" selected>Other
-                                                        </option>
+                                                <div class="col-12">
+                                                    <div class="f-group max-width-100 ">
 
-                                                    </select>
+                                                        <div class="f-dropdown selectDropdown"><select
+                                                                class="f-control f-dropdown"
+                                                                placeholder="Who is your Home Insured with?"
+                                                                id="selectbuss">
+                                                                <option value="">Select Company</option>
 
+                                                                <option value="1">5 years or less</option>
+                                                                <option value="2" selected>Other</option>
+                                                                <option value="More than 20 Years">More than 20 Years
+                                                                </option>
+
+                                                            </select>
+
+                                                        </div>
+                                                    </div>
                                                 </div>
-                                            </div>
-                                            </div>
 
-                                            <div class="col-12 ">
-                                                <input type="text" class="form-control" id="Cost"
-                                                    placeholder="Enter name of your current company" />
-                                        </div>
+
+                                                <div class="col-12">
+                                                    <input type="text" placeholder="Enter name of your current company" class="form-control">
+                                                </div>
+                                                <div class="col-12">
+                                                    <input type="text" placeholder="Policy Number (Optional)" class="form-control">
+                                                </div>
+
+
+                                                <div class="col-12">
+                                                    <div class="input-group date form-control px-0"
+                                                        id="datepicker1">
+                                                        <input type="text" class="" id="date"
+                                                            placeholder="Expiration date(Optional) - DD/MM/YYYY"
+                                                            value="" />
+                                                        <span class="input-group-append ">
+                                                            <span
+                                                                class="input-group-text border-0 bg-white d-block">
+                                                                <img class="" width="20px"
+                                                                    src="../images/calender-icon.svg">
+                                                            </span>
+                                                        </span>
+                                                    </div>
+                                                </div>
+
+
+
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
