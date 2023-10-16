@@ -1,0 +1,121 @@
+/* custom main 
+ UnExpected King Tirth Shah */ 
+ 
+ .page {
+  page-break-after: always;
+  position: relative;
+}
+
+.page-details.safec-eft {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10000;
+}
+.page-details.safec-eft input[type=date]::-webkit-inner-spin-button, .page-details.safec-eft input[type=date]::-webkit-calendar-picker-indicator,
+.page-details.safec-eft input[type=year]::-webkit-inner-spin-button,
+.page-details.safec-eft input[type=year]::-webkit-calendar-picker-indicator,
+.page-details.safec-eft input[type=month]::-webkit-inner-spin-button,
+.page-details.safec-eft input[type=month]::-webkit-calendar-picker-indicator {
+  display: none;
+  -webkit-appearance: none;
+}
+.page-details.safec-eft .form-img {
+  width: 100%;
+}
+.page-details.safec-eft .answer {
+  position: absolute;
+  bottom: 0;
+}
+.page-details.safec-eft .answer img {
+  width: 100%;
+  position: absolute;
+}
+.page-details.safec-eft .answer input,
+.page-details.safec-eft .answer textarea {
+  width: 100%;
+  font-size: 10px;
+  font-weight: bold;
+  color: #141414;
+  position: absolute;
+  background: transparent;
+  overflow: hidden;
+}
+.page-details.safec-eft .answer textarea {
+  font-size: 10px;
+  padding: 0 5px;
+}
+.page-details.safec-eft .answer.monospace {
+  font-family: monospace;
+  letter-spacing: 7px;
+}
+.page-details.safec-eft .answer .check-mark {
+  position: absolute;
+}
+.page-details.safec-eft .answer .check-mark::before, .page-details.safec-eft .answer .check-mark::after {
+  content: "";
+  height: 2px;
+  width: 15px;
+  background: black;
+  position: absolute;
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+.page-details.safec-eft .answer .check-mark::before {
+  -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+.page-details.safec-eft textarea.form-control {
+  border: 0;
+  resize: none;
+  height: 100%;
+}
+.page-details.safec-eft .holder-info {
+  position: absolute;
+  top: 922px;
+  left: 50px;
+}
+.page-details.safec-eft .holder-info input {
+  font-size: 16px;
+}
+.page-details.safec-eft .holder-info .a0 {
+  left: 451px;
+  width: 75px;
+  top: -191px;
+}
+.page-details.safec-eft .holder-info .a1 {
+  left: 56px;
+  width: 335px;
+  top: -4px;
+}
+.page-details.safec-eft .holder-info .a2 {
+  left: 496px;
+  width: 202px;
+  top: -4px;
+}
+.page-details.safec-eft .holder-info .a3 {
+  left: 496px;
+  width: 202px;
+  top: 44px;
+}
+.page-details.safec-eft .insured-name-info {
+  position: absolute;
+  top: 764px;
+  left: 50px;
+}
+.page-details.safec-eft .insured-name-info input {
+  font-size: 16px;
+}
+.page-details.safec-eft .insured-name-info .a1 {
+  left: 86px;
+  width: 525px;
+  height: 100px;
+  top: 0;
+}
+.page-details.safec-eft .insured-name-info .a1 textarea {
+  font-size: 14px;
+}
+/*# sourceMappingURL=safec-eft copy.css.map */
