@@ -143,8 +143,13 @@ text-align: left;
   width: 100%;
   height: 170px;
   border-radius: 4px;
+  object-fit: COVER;;
 }
 .kitchen-carousel.radio-check-switch .owl-item.active.center .radio-switch-state img {
+  width: 270px;
+  height: 290px;
+}
+.radio-check-switch.kitchen-carousel input[type=radio]:checked + .radio-switch-state img {
   width: 270px;
   height: 290px;
 }

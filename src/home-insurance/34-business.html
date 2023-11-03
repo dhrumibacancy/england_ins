@@ -38,9 +38,6 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css">
-
 
 
 
@@ -197,37 +194,75 @@
                     <div class="container mt-5 pt-5">
                         <div class="text-center mb-4 user-info">
                             <img src="../images/user-person.svg" alt="" class="user-person mx-auto">
-                            <p class="user-welcome mt-2">Hey! My Name is Anne</p>
+                            <p class="user-welcome mt-2">Hey! My Name is Anne
+                            </p>
                         </div>
-                        <h3 class="title  text-center">Claim Information</h3>
-                        <p class="user-welcome mt-2 text-center">Select info about your claim below, estimate if you don’t know exact info</p>
-
+                        <h3 class="title  text-center">Any Business at this Property ?</h3>
+                        
                         <div class="contain-wrapper-sm">
                             <form class="mt-4">
-                                <div class="w-75 mx-auto">
-                                    <div class="vehicle-details d-flex justify-content-center">
-                                        <div class="row g-3 w-100">
-
-                                          
+                                <div class="d-flex flex-wrap justify-content-center">
+                                    <label class="checkbox-inline squar-boxes mb-0" for="gas">
+                                        <input class="checkbox-control" type="checkbox" value=""
+                                            id="gas" >
+                                        <span class="checkbox-custom"></span>
+                                        <span class="checkbox-label fs-14">
+                                            <img src="../images/gas-heater-active-icon.svg" alt="" class="active"/> 
+                                            <img src="../images/gas-heater-icon.svg" alt="" class="offline"/> 
+                                            Gas 
+                                        </span>
+                                    </label>
+                                    <label class="checkbox-inline squar-boxes mb-0" for="Oil">
+                                        <input class="checkbox-control" type="checkbox" value=""
+                                            id="Oil" >
+                                        <span class="checkbox-custom"></span>
+                                        <span class="checkbox-label fs-14">
+                                            <img src="../images/oil-heater-active-icon.svg" alt="" class="active"/> 
+                                            <img src="../images/oil-heater-icon.svg" alt="" class="offline"/> 
+                                            Oil 
+                                        </span>
+                                    </label>
+                                    <label class="checkbox-inline squar-boxes mb-0" for="Electric">
+                                        <input class="checkbox-control" type="checkbox" value=""
+                                            id="Electric" >
+                                        <span class="checkbox-custom"></span>
+                                        <span class="checkbox-label fs-14">
                                             
-                                            <div class="col-12">
-                                                <label>
-                                                    <input type="number" placeholder="No. of claims" class="form-control"/>
-                                                </label>
-                                            </div>
-                                            
+                                            <img src="../images/electric-heater-active-icon.svg" alt="" class="active"/> 
+                                            <img src="../images/electric-heater-icon.svg" alt="" class="offline"/> 
+                                            Electric 
+                                        </span>
+                                    </label>
+                                  
+                                </div>
 
+                                <div class="col-12 mt-4 mx-auto text-center">
+                                    <h5 class="fs-16">business is more than 50% of property habitational?</h5>
+                                    <div class="d-flex align-items-center justify-content-center">
+                                        <div class="d-flex align-self-center me-3">
+                                            <label class="radio-inline radio-btn" for="livingYes">
+                                                <input class="radio-control" type="radio" name="fenced"
+                                                    value="" id="livingYes" checked="">
+                                                <span class="radio-custom"></span>
+                                                <span class="radio-label fs-14">Yes </span>
+                                            </label>
+                                        </div>
+                                        <div class="d-flex align-self-center me-3">
+                                            <label class="radio-inline radio-btn" for="livingNo">
+                                                <input class="radio-control" type="radio" name="fenced"
+                                                    value="" id="livingNo" >
+                                                <span class="radio-custom"></span>
+                                                <span class="radio-label fs-14">No </span>
+                                            </label>
                                         </div>
                                     </div>
                                 </div>
                                 <button type="submit" class="btn btn-primary  mx-auto mt-4"><span>Continue</span>
                                 </button>
                             </form>
-                        </div>
                     </div>
                 </div>
             </div>
-        </div>
         </div>
     </main>
 
@@ -239,8 +274,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
         integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous">
         </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js">
-    </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js">
+        </script>
 
     <script src="../js/app.js"></script>
     <script>
@@ -258,12 +293,16 @@
                     '.customize-options').hide())
             })
         })
+
         $(function () {
-            $('[id^="datepicker"]').datepicker({
+            $('#datepicker').datepicker({
                 autoclose: true,
+
             });
         });
     </script>
+
+    
 
 </body>
 

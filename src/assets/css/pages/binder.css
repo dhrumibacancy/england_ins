@@ -1,0 +1,469 @@
+/* custom main 
+ UnExpected King Tirth Shah */ 
+ 
+ body {
+  width: 790px;
+  padding: 0;
+  margin: 0 auto;
+  background-color: white;
+}
+
+.page {
+  page-break-after: always;
+  position: relative;
+}
+
+.page-details {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10000;
+}
+
+.form-img {
+  width: 100%;
+}
+
+.answer {
+  position: absolute;
+  bottom: 0;
+}
+
+.answer img {
+  width: 100%;
+  position: absolute;
+}
+
+.answer input,
+.answer textarea {
+  width: 100%;
+  font-size: 10px;
+  font-weight: bold;
+  color: #141414;
+  position: absolute;
+  background: transparent;
+  overflow: hidden;
+}
+
+.answer textarea {
+  font-size: 10px;
+  padding: 0 5px;
+}
+
+.answer .check-mark {
+  position: absolute;
+}
+.answer .check-mark::before, .answer .check-mark::after {
+  content: "";
+  height: 2px;
+  width: 15px;
+  background: black;
+  position: absolute;
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+.answer .check-mark::before {
+  -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+textarea.form-control {
+  border: 0;
+  resize: none;
+  height: 100%;
+}
+
+.date-input {
+  left: 670px;
+  top: 46px;
+  width: 90px;
+}
+
+.insured-section {
+  top: 232px;
+  left: 0;
+  position: absolute;
+}
+.insured-section .insur-1 {
+  top: 15px;
+  left: 25px;
+  height: 56px;
+  width: 330px;
+}
+
+.certificate-holder-section {
+  top: 863px;
+  left: 0;
+  position: absolute;
+}
+.certificate-holder-section .addrss-1 {
+  top: 5px;
+  left: 30px;
+  height: 86px;
+  width: 360px;
+}
+
+.description-operation-section {
+  top: 736px;
+  left: -4px;
+  position: absolute;
+}
+.description-operation-section .operation-1 {
+  top: 5px;
+  left: 30px;
+  height: 90px;
+  width: 730px;
+}
+
+.insurer-options {
+  left: 453px;
+  top: 156px;
+  position: absolute;
+}
+.insurer-options .c1 {
+  top: 0;
+  left: 0;
+  width: 300px;
+}
+.insurer-options .c2 {
+  top: 15px;
+  left: 213px;
+  width: 95px;
+}
+.insurer-options .a1 {
+  top: 63px;
+  left: 0;
+  width: 200px;
+}
+.insurer-options .a2 {
+  top: 78px;
+  left: 0;
+  width: 200px;
+}
+.insurer-options .a3 {
+  top: 93px;
+  left: 0;
+  width: 200px;
+}
+.insurer-options .a4 {
+  top: 108px;
+  left: 0;
+  width: 200px;
+}
+.insurer-options .a5 {
+  top: 123px;
+  left: 0;
+  width: 200px;
+}
+.insurer-options .a6 {
+  top: 138px;
+  left: 0;
+  width: 200px;
+}
+.insurer-options .left-box {
+  left: 250px;
+  top: 0;
+  position: absolute;
+}
+
+.limits-box {
+  left: 678px;
+  top: 386px;
+}
+.limits-box > .answer {
+  left: 0;
+  width: 84px;
+}
+.limits-box > .answer input {
+  text-align: right;
+  font-size: 12px;
+  font-weight: 900;
+}
+.limits-box > .answer.other-true input.other-input {
+  left: -126px;
+  text-align: left;
+  width: 112px;
+  font-weight: 500;
+  font-size: 10px;
+  top: 2px;
+}
+.limits-box .a1 {
+  top: 0px;
+}
+.limits-box .a2 {
+  top: 15.5px;
+}
+.limits-box .a3 {
+  top: 31px;
+}
+.limits-box .a4 {
+  top: 46.5px;
+}
+.limits-box .a5 {
+  top: 62px;
+}
+.limits-box .a6 {
+  top: 77.5px;
+}
+.limits-box .a7 {
+  top: 93px;
+}
+.limits-box .a8 {
+  top: 108.5px;
+}
+.limits-box .a9 {
+  top: 124px;
+}
+.limits-box .a10 {
+  top: 139.5px;
+}
+.limits-box .a11 {
+  top: 155px;
+}
+.limits-box .a12 {
+  top: 170.5px;
+}
+.limits-box .a13 {
+  top: 186px;
+}
+.limits-box .a14 {
+  top: 201.5px;
+}
+.limits-box .a15 {
+  top: 217px;
+}
+.limits-box .a16 {
+  top: 248px;
+}
+.limits-box .a17 {
+  top: 263.5px;
+}
+.limits-box .a18 {
+  top: 279px;
+}
+
+.policy-expiry {
+  left: 491px;
+  position: absolute;
+}
+.policy-expiry > .answer {
+  left: 0;
+  width: 55px;
+}
+.policy-expiry .a1 {
+  top: 446px;
+}
+.policy-expiry .a2 {
+  top: 522px;
+}
+.policy-expiry .a3 {
+  top: 587px;
+}
+.policy-expiry .a4 {
+  top: 636px;
+}
+
+.policy-table {
+  left: 430px;
+  position: absolute;
+}
+.policy-table > .answer {
+  left: 0;
+  width: 55px;
+}
+.policy-table .a1 {
+  top: 430px;
+}
+.policy-table .a2 {
+  top: 522px;
+}
+.policy-table .a3 {
+  top: 587px;
+}
+.policy-table .a4 {
+  top: 643px;
+}
+
+.policy-table.policy-INSR {
+  left: 30px;
+}
+.policy-table.policy-INSR > .answer {
+  width: 18px;
+}
+
+.policy-table.policy-type {
+  left: 49px;
+}
+.policy-table.policy-type > .answer {
+  width: 18px;
+}
+.policy-table.policy-type .a0.a0-1 {
+  top: 394px;
+  left: 0;
+}
+.policy-table.policy-type .a1.a1-1 {
+  top: 410px;
+  left: 19px;
+}
+.policy-table.policy-type .a1.a1-2 {
+  top: 410px;
+  left: 102px;
+}
+.policy-table.policy-type .a1.a1-3 {
+  top: 425px;
+  left: 0px;
+}
+.policy-table.policy-type .a1.a1-3.other-true input {
+  display: inline-block;
+  left: 22px;
+  top: -6px;
+  width: 153px;
+  font-size: 10px;
+}
+.policy-table.policy-type .a1.a1-4 {
+  top: 441px;
+  left: 0px;
+}
+.policy-table.policy-type .a1.a1-4.other-true input {
+  display: inline-block;
+  left: 22px;
+  top: -6px;
+  width: 153px;
+  font-size: 10px;
+}
+.policy-table.policy-type .a1.gl-1 {
+  top: 472px;
+  left: 0px;
+}
+.policy-table.policy-type .a1.gl-2 {
+  top: 472px;
+  left: 55px;
+}
+.policy-table.policy-type .a1.gl-3 {
+  top: 472px;
+  left: 112px;
+}
+.policy-table.policy-type .a1.gl-4 {
+  top: 487px;
+  left: 0;
+}
+.policy-table.policy-type .a1.gl-4.other-true input {
+  display: inline-block;
+  left: 53px;
+  top: -6px;
+  width: 70px;
+  font-size: 10px;
+}
+.policy-table.policy-type .a2.a2-1 {
+  top: 518px;
+  left: 0;
+}
+.policy-table.policy-type .a2.a2-2 {
+  top: 534px;
+  left: 0;
+}
+.policy-table.policy-type .a2.a2-3 {
+  top: 534px;
+  left: 88px;
+}
+.policy-table.policy-type .a2.a2-4 {
+  top: 549px;
+  left: 0;
+}
+.policy-table.policy-type .a2.a2-5 {
+  top: 549px;
+  left: 88px;
+}
+.policy-table.policy-type .a2.a2-6 {
+  top: 565px;
+  left: 0;
+}
+.policy-table.policy-type .a2.a2-6.other-true input {
+  display: inline-block;
+  left: 22px;
+  top: -6px;
+  width: 68px;
+  font-size: 10px;
+}
+.policy-table.policy-type .a2.a2-7 {
+  top: 565px;
+  left: 88px;
+}
+.policy-table.policy-type .a2.a2-7.other-true input {
+  display: inline-block;
+  left: 22px;
+  top: -6px;
+  width: 68px;
+  font-size: 10px;
+}
+.policy-table.policy-type .a3.a3-1 {
+  top: 580px;
+  left: 0;
+}
+.policy-table.policy-type .a3.a3-2 {
+  top: 580px;
+  left: 101px;
+}
+.policy-table.policy-type .a3.a3-3 {
+  top: 596px;
+  left: 0;
+}
+.policy-table.policy-type .a3.a3-4 {
+  top: 596px;
+  left: 101px;
+}
+.policy-table.policy-type .a3.a3-5 {
+  top: 611px;
+  left: 0;
+}
+.policy-table.policy-type .a3.a3-6 {
+  top: 611px;
+  left: 46px;
+}
+.policy-table.policy-type .a3.a3-6.other-true input {
+  display: inline-block;
+  left: 75px;
+  top: -6px;
+  width: 57px;
+  font-size: 10px;
+}
+.policy-table.policy-type .a4.a4-1 {
+  top: 642px;
+  left: 161px;
+}
+.policy-table.policy-type .a4.a4-1 input {
+  font-size: 12px;
+}
+
+.policy-table.policy-ADDL {
+  left: 236px;
+}
+.policy-table.policy-ADDL > .answer {
+  width: 21px;
+}
+
+.policy-table.policy-SUBR {
+  left: 260px;
+}
+.policy-table.policy-SUBR > .answer {
+  width: 18px;
+}
+
+.policy-table.policy-number {
+  left: 280px;
+}
+.policy-table.policy-number > .answer {
+  width: 137px;
+}
+
+.policy-table.policy-effective {
+  left: 430px;
+}
+
+.policy-table.policy-expiry {
+  left: 491px;
+}
+/*# sourceMappingURL=binder.css.map */

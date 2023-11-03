@@ -1,0 +1,440 @@
+/* custom main 
+ UnExpected King Tirth Shah */ 
+ 
+ .page {
+  page-break-after: always;
+  position: relative;
+}
+
+.page-details.certificate-pdf {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10000;
+}
+.page-details.certificate-pdf .form-img {
+  width: 100%;
+}
+.page-details.certificate-pdf .answer {
+  position: absolute;
+  bottom: 0;
+}
+.page-details.certificate-pdf .answer img {
+  width: 100%;
+  position: absolute;
+}
+.page-details.certificate-pdf .answer input,
+.page-details.certificate-pdf .answer textarea {
+  width: 100%;
+  font-size: 10px;
+  font-weight: bold;
+  color: #141414;
+  position: absolute;
+  background: transparent;
+  overflow: hidden;
+}
+.page-details.certificate-pdf .answer textarea {
+  font-size: 10px;
+  padding: 0 5px;
+}
+.page-details.certificate-pdf .answer .check-mark {
+  position: absolute;
+}
+.page-details.certificate-pdf .answer .check-mark::before, .page-details.certificate-pdf .answer .check-mark::after {
+  content: "";
+  height: 2px;
+  width: 15px;
+  background: black;
+  position: absolute;
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+.page-details.certificate-pdf .answer .check-mark::before {
+  -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+.page-details.certificate-pdf textarea.form-control {
+  border: 0;
+  resize: none;
+  height: 100%;
+}
+.page-details.certificate-pdf .date-input {
+  left: 670px;
+  top: 46px;
+  width: 90px;
+}
+.page-details.certificate-pdf .insured-section {
+  top: 232px;
+  left: 0;
+  position: absolute;
+}
+.page-details.certificate-pdf .insured-section .insur-1 {
+  top: 15px;
+  left: 25px;
+  height: 56px;
+  width: 330px;
+}
+.page-details.certificate-pdf .certificate-holder-section {
+  top: 863px;
+  left: 0;
+  position: absolute;
+}
+.page-details.certificate-pdf .certificate-holder-section .addrss-1 {
+  top: 5px;
+  left: 30px;
+  height: 86px;
+  width: 360px;
+}
+.page-details.certificate-pdf .description-operation-section {
+  top: 736px;
+  left: -4px;
+  position: absolute;
+}
+.page-details.certificate-pdf .description-operation-section .operation-1 {
+  top: 5px;
+  left: 30px;
+  height: 90px;
+  width: 730px;
+}
+.page-details.certificate-pdf .insurer-options {
+  left: 453px;
+  top: 156px;
+  position: absolute;
+}
+.page-details.certificate-pdf .insurer-options .c1 {
+  top: 0;
+  left: 0;
+  width: 300px;
+}
+.page-details.certificate-pdf .insurer-options .c2 {
+  top: 15px;
+  left: 213px;
+  width: 95px;
+}
+.page-details.certificate-pdf .insurer-options .a1 {
+  top: 63px;
+  left: 0;
+  width: 200px;
+}
+.page-details.certificate-pdf .insurer-options .a2 {
+  top: 78px;
+  left: 0;
+  width: 200px;
+}
+.page-details.certificate-pdf .insurer-options .a3 {
+  top: 93px;
+  left: 0;
+  width: 200px;
+}
+.page-details.certificate-pdf .insurer-options .a4 {
+  top: 108px;
+  left: 0;
+  width: 200px;
+}
+.page-details.certificate-pdf .insurer-options .a5 {
+  top: 123px;
+  left: 0;
+  width: 200px;
+}
+.page-details.certificate-pdf .insurer-options .a6 {
+  top: 138px;
+  left: 0;
+  width: 200px;
+}
+.page-details.certificate-pdf .insurer-options .left-box {
+  left: 250px;
+  top: 0;
+  position: absolute;
+}
+.page-details.certificate-pdf .limits-box {
+  left: 678px;
+  top: 386px;
+}
+.page-details.certificate-pdf .limits-box > .answer {
+  left: 0;
+  width: 84px;
+}
+.page-details.certificate-pdf .limits-box > .answer input {
+  text-align: right;
+  font-size: 12px;
+  font-weight: 900;
+}
+.page-details.certificate-pdf .limits-box > .answer.other-true input.other-input {
+  left: -126px;
+  text-align: left;
+  width: 112px;
+  font-weight: 500;
+  font-size: 10px;
+  top: 2px;
+}
+.page-details.certificate-pdf .limits-box .a1 {
+  top: 0px;
+}
+.page-details.certificate-pdf .limits-box .a2 {
+  top: 15.5px;
+}
+.page-details.certificate-pdf .limits-box .a3 {
+  top: 31px;
+}
+.page-details.certificate-pdf .limits-box .a4 {
+  top: 46.5px;
+}
+.page-details.certificate-pdf .limits-box .a5 {
+  top: 62px;
+}
+.page-details.certificate-pdf .limits-box .a6 {
+  top: 77.5px;
+}
+.page-details.certificate-pdf .limits-box .a7 {
+  top: 93px;
+}
+.page-details.certificate-pdf .limits-box .a8 {
+  top: 108.5px;
+}
+.page-details.certificate-pdf .limits-box .a9 {
+  top: 124px;
+}
+.page-details.certificate-pdf .limits-box .a10 {
+  top: 139.5px;
+}
+.page-details.certificate-pdf .limits-box .a11 {
+  top: 155px;
+}
+.page-details.certificate-pdf .limits-box .a12 {
+  top: 170.5px;
+}
+.page-details.certificate-pdf .limits-box .a13 {
+  top: 186px;
+}
+.page-details.certificate-pdf .limits-box .a14 {
+  top: 201.5px;
+}
+.page-details.certificate-pdf .limits-box .a15 {
+  top: 217px;
+}
+.page-details.certificate-pdf .limits-box .a16 {
+  top: 248px;
+}
+.page-details.certificate-pdf .limits-box .a17 {
+  top: 263.5px;
+}
+.page-details.certificate-pdf .limits-box .a18 {
+  top: 279px;
+}
+.page-details.certificate-pdf .policy-expiry {
+  left: 491px;
+  position: absolute;
+}
+.page-details.certificate-pdf .policy-expiry > .answer {
+  left: 0;
+  width: 55px;
+}
+.page-details.certificate-pdf .policy-expiry .a1 {
+  top: 446px;
+}
+.page-details.certificate-pdf .policy-expiry .a2 {
+  top: 522px;
+}
+.page-details.certificate-pdf .policy-expiry .a3 {
+  top: 587px;
+}
+.page-details.certificate-pdf .policy-expiry .a4 {
+  top: 636px;
+}
+.page-details.certificate-pdf .policy-table {
+  left: 430px;
+  position: absolute;
+}
+.page-details.certificate-pdf .policy-table > .answer {
+  left: 0;
+  width: 55px;
+}
+.page-details.certificate-pdf .policy-table .a1 {
+  top: 430px;
+}
+.page-details.certificate-pdf .policy-table .a2 {
+  top: 522px;
+}
+.page-details.certificate-pdf .policy-table .a3 {
+  top: 587px;
+}
+.page-details.certificate-pdf .policy-table .a4 {
+  top: 643px;
+}
+.page-details.certificate-pdf .policy-table.policy-INSR {
+  left: 30px;
+}
+.page-details.certificate-pdf .policy-table.policy-INSR > .answer {
+  width: 18px;
+}
+.page-details.certificate-pdf .policy-table.policy-type {
+  left: 49px;
+}
+.page-details.certificate-pdf .policy-table.policy-type > .answer {
+  width: 18px;
+}
+.page-details.certificate-pdf .policy-table.policy-type .a0.a0-1 {
+  top: 394px;
+  left: 0;
+}
+.page-details.certificate-pdf .policy-table.policy-type .a1.a1-1 {
+  top: 410px;
+  left: 19px;
+}
+.page-details.certificate-pdf .policy-table.policy-type .a1.a1-2 {
+  top: 410px;
+  left: 102px;
+}
+.page-details.certificate-pdf .policy-table.policy-type .a1.a1-3 {
+  top: 425px;
+  left: 0px;
+}
+.page-details.certificate-pdf .policy-table.policy-type .a1.a1-3.other-true input {
+  display: inline-block;
+  left: 22px;
+  top: -6px;
+  width: 153px;
+  font-size: 10px;
+}
+.page-details.certificate-pdf .policy-table.policy-type .a1.a1-4 {
+  top: 441px;
+  left: 0px;
+}
+.page-details.certificate-pdf .policy-table.policy-type .a1.a1-4.other-true input {
+  display: inline-block;
+  left: 22px;
+  top: -6px;
+  width: 153px;
+  font-size: 10px;
+}
+.page-details.certificate-pdf .policy-table.policy-type .a1.gl-1 {
+  top: 472px;
+  left: 0px;
+}
+.page-details.certificate-pdf .policy-table.policy-type .a1.gl-2 {
+  top: 472px;
+  left: 55px;
+}
+.page-details.certificate-pdf .policy-table.policy-type .a1.gl-3 {
+  top: 472px;
+  left: 112px;
+}
+.page-details.certificate-pdf .policy-table.policy-type .a1.gl-4 {
+  top: 487px;
+  left: 0;
+}
+.page-details.certificate-pdf .policy-table.policy-type .a1.gl-4.other-true input {
+  display: inline-block;
+  left: 53px;
+  top: -6px;
+  width: 70px;
+  font-size: 10px;
+}
+.page-details.certificate-pdf .policy-table.policy-type .a2.a2-1 {
+  top: 518px;
+  left: 0;
+}
+.page-details.certificate-pdf .policy-table.policy-type .a2.a2-2 {
+  top: 534px;
+  left: 0;
+}
+.page-details.certificate-pdf .policy-table.policy-type .a2.a2-3 {
+  top: 534px;
+  left: 88px;
+}
+.page-details.certificate-pdf .policy-table.policy-type .a2.a2-4 {
+  top: 549px;
+  left: 0;
+}
+.page-details.certificate-pdf .policy-table.policy-type .a2.a2-5 {
+  top: 549px;
+  left: 88px;
+}
+.page-details.certificate-pdf .policy-table.policy-type .a2.a2-6 {
+  top: 565px;
+  left: 0;
+}
+.page-details.certificate-pdf .policy-table.policy-type .a2.a2-6.other-true input {
+  display: inline-block;
+  left: 22px;
+  top: -6px;
+  width: 68px;
+  font-size: 10px;
+}
+.page-details.certificate-pdf .policy-table.policy-type .a2.a2-7 {
+  top: 565px;
+  left: 88px;
+}
+.page-details.certificate-pdf .policy-table.policy-type .a2.a2-7.other-true input {
+  display: inline-block;
+  left: 22px;
+  top: -6px;
+  width: 68px;
+  font-size: 10px;
+}
+.page-details.certificate-pdf .policy-table.policy-type .a3.a3-1 {
+  top: 580px;
+  left: 0;
+}
+.page-details.certificate-pdf .policy-table.policy-type .a3.a3-2 {
+  top: 580px;
+  left: 101px;
+}
+.page-details.certificate-pdf .policy-table.policy-type .a3.a3-3 {
+  top: 596px;
+  left: 0;
+}
+.page-details.certificate-pdf .policy-table.policy-type .a3.a3-4 {
+  top: 596px;
+  left: 101px;
+}
+.page-details.certificate-pdf .policy-table.policy-type .a3.a3-5 {
+  top: 611px;
+  left: 0;
+}
+.page-details.certificate-pdf .policy-table.policy-type .a3.a3-6 {
+  top: 611px;
+  left: 46px;
+}
+.page-details.certificate-pdf .policy-table.policy-type .a3.a3-6.other-true input {
+  display: inline-block;
+  left: 75px;
+  top: -6px;
+  width: 57px;
+  font-size: 10px;
+}
+.page-details.certificate-pdf .policy-table.policy-type .a4.a4-1 {
+  top: 642px;
+  left: 161px;
+}
+.page-details.certificate-pdf .policy-table.policy-type .a4.a4-1 input {
+  font-size: 12px;
+}
+.page-details.certificate-pdf .policy-table.policy-ADDL {
+  left: 236px;
+}
+.page-details.certificate-pdf .policy-table.policy-ADDL > .answer {
+  width: 21px;
+}
+.page-details.certificate-pdf .policy-table.policy-SUBR {
+  left: 260px;
+}
+.page-details.certificate-pdf .policy-table.policy-SUBR > .answer {
+  width: 18px;
+}
+.page-details.certificate-pdf .policy-table.policy-number {
+  left: 280px;
+}
+.page-details.certificate-pdf .policy-table.policy-number > .answer {
+  width: 137px;
+}
+.page-details.certificate-pdf .policy-table.policy-effective {
+  left: 430px;
+}
+.page-details.certificate-pdf .policy-table.policy-expiry {
+  left: 491px;
+}
+/*# sourceMappingURL=certificate.css.map */
