@@ -196,7 +196,7 @@
                             <img src="../images/user-person.svg" alt="" class="user-person mx-auto">
                             <p class="user-welcome mt-2">Hey! My Name is Anne</p>
                         </div>
-                        <h3 class="title  text-center">Personal Information </h3>
+                        <h3 class="title  text-center">Ownership Details</h3>
 
                         <div class="contain-wrapper-sm">
                             <form class="mt-4">
@@ -206,41 +206,15 @@
                                     <div class="vehicle-details">
                                         <div class="row g-3">
 
-                                            <div class="col-6">
-                                                <div class="form-group">
-                                                    <input type="text" placeholder="First name" class="form-control">
-                                                </div>
-                                            </div>
-
-                                            <div class="col-6">
-                                                <div class="form-group">
-                                                    <input type="text" placeholder="Last Name" class="form-control">
-                                                </div>
-                                            </div>
-
-                                            <div class="col-6">
-                                                <div class="input-group date form-control px-0" id="datepicker">
-                                                    <input type="text" class="" id="date"
-                                                        placeholder="Date of birth (MM/DD/YYYY)" />
-                                                    <span class="input-group-append ">
-                                                        <span class="input-group-text border-0 bg-white d-block">
-                                                            <img class="" width="20px"
-                                                                src="../images/calender-icon.svg">
-                                                        </span>
-                                                    </span>
-                                                </div>
-                                            </div>
-
-                                            <div class="col-6">
+                                            <div class="col-12">
                                                 <div class="f-group max-width-100">
-                                                    <div class="f-dropdown selectDropdown"><select
-                                                            class="f-control f-dropdown"
-                                                            placeholder="Select the type of ownership"
-                                                            id="secondaryHome">
+                                                    <div class="f-dropdown selectDropdown">
+                                                        <select class="f-control f-dropdown"
+                                                            placeholder="Select the type of ownership" id="1">
                                                             <option value="">Select the type of ownership</option>
-                                                            <option value="1">Option 1
+                                                            <option value="1">Additional intrest
                                                             </option>
-                                                            <option value="2">Option 2
+                                                            <option value="2">Individual
                                                             </option>
                                                             <option value="3" selected>LLC
                                                             </option>
@@ -256,7 +230,7 @@
                                                             <button class="accordion-button" type="button"
                                                                 data-bs-toggle="collapse" data-bs-target="#collapseTwo"
                                                                 aria-expanded="true" aria-controls="collapseTwo">
-                                                                <h4 class="title fs-18">Members</h4>
+                                                                <h4 class="title fs-18">LLC Details</h4>
                                                             </button>
                                                         </h2>
                                                         <div id="collapseTwo" class="accordion-collapse collapse show"
@@ -274,13 +248,6 @@
                                                                     </div>
 
                                                                     <div class="col-12">
-                                                                        <div class="form-group">
-                                                                            <input type="text" placeholder="Member name"
-                                                                                class="form-control">
-                                                                        </div>
-                                                                    </div>
-
-                                                                    <div class="col-12">
                                                                         <div
                                                                             class=" d-flex flex-nowrap align-items-center">
                                                                             <input type="text" placeholder="Member name"
@@ -292,46 +259,108 @@
                                                                     </div>
                                                                 </div>
 
-                                                                <a class="btn-add mt-3" href="#">
+                                                                <a class="btn-add mt-3 d-block" href="#">
                                                                     <img src="../images/add-pluse-circle.svg" alt="Add"
                                                                         class="icon" />
                                                                     Add Member
                                                                 </a>
+
+                                                                <div class="row g-3 mt-0">
+                                                                    <hr>
+                                                                    <div class="col-md--4 col-12 mt-0">
+                                                                        <div class="me-3">
+                                                                            <h5 class="fs-16">Beneficiary named?</h5>
+                                                                            <div
+                                                                                class="d-flex align-items-center justify-content-start">
+                                                                                <div
+                                                                                    class="d-flex align-self-center me-3">
+                                                                                    <label
+                                                                                        class="radio-inline radio-btn"
+                                                                                        for="livingYes">
+                                                                                        <input class="radio-control"
+                                                                                            type="radio" name="livding"
+                                                                                            value="" id="livingYes"
+                                                                                            checked="">
+                                                                                        <span
+                                                                                            class="radio-custom"></span>
+                                                                                        <span
+                                                                                            class="radio-label fs-14">Yes
+                                                                                        </span>
+                                                                                    </label>
+                                                                                </div>
+                                                                                <div
+                                                                                    class="d-flex align-self-center me-3">
+                                                                                    <label
+                                                                                        class="radio-inline radio-btn"
+                                                                                        for="livingNo">
+                                                                                        <input class="radio-control"
+                                                                                            type="radio" name="livding"
+                                                                                            value="" id="livingNo">
+                                                                                        <span
+                                                                                            class="radio-custom"></span>
+                                                                                        <span
+                                                                                            class="radio-label fs-14">No
+                                                                                        </span>
+                                                                                    </label>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+
+
+                                                                    </div>
+
+
+                                                                    <div class="col-md-4 col-12">
+
+
+                                                                        <div>
+                                                                            <input class="form-control" type="text"
+                                                                                placeholder="# of properties owned ">
+
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
                                                             </div>
-                                                        </div>
-                                                    </div><!-- /accordion-item -->
+                                                        </div><!-- /accordion-item -->
 
 
+                                                    </div>
                                                 </div>
-                                            </div>
 
+
+                                            </div>
                                             <div class="col-12">
                                                 <div class="accordion custom" id="accordionPolicy">
                                                     <div class="accordion-item rounded-1">
                                                         <h2 class="accordion-header" id="headingTwo">
                                                             <button class="accordion-button" type="button"
-                                                                data-bs-toggle="collapse" data-bs-target="#collapseTwo"
-                                                                aria-expanded="true" aria-controls="collapseTwo">
+                                                                data-bs-toggle="collapse"
+                                                                data-bs-target="#collapseTwo" aria-expanded="true"
+                                                                aria-controls="collapseTwo">
                                                                 <h4 class="title fs-18">Additional Insured 1</h4>
                                                                 <img src="../images/delete.svg">
                                                             </button>
                                                         </h2>
-                                                        <div id="collapseTwo" class="accordion-collapse collapse show"
+                                                        <div id="collapseTwo"
+                                                            class="accordion-collapse collapse show"
                                                             aria-labelledby="headingTwo"
                                                             data-bs-parent="#accordionPolicy">
                                                             <div class="accordion-body pt-0">
                                                                 <div class="row g-3">
                                                                     <div class="col-6">
                                                                         <div class="form-group">
-                                                                            <input type="text" placeholder="First name"
+                                                                            <input type="text"
+                                                                                placeholder="First name"
                                                                                 class="form-control" value="Alia">
                                                                         </div>
                                                                     </div>
 
                                                                     <div class="col-6">
                                                                         <div class="form-group">
-                                                                            <input type="text" placeholder="Last Name"
-                                                                                class="form-control" value="Shastri">
+                                                                            <input type="text"
+                                                                                placeholder="Last Name"
+                                                                                class="form-control"
+                                                                                value="Shastri">
                                                                         </div>
                                                                     </div>
 
@@ -339,7 +368,7 @@
                                                                         <div class="input-group date form-control px-0"
                                                                             id="datepicker1">
                                                                             <input type="text" class="" id="date"
-                                                                                placeholder="Date of birth (MM/DD/YYYY)"
+                                                                                placeholder="Date of birth (DD/MM/YYYY)"
                                                                                 value="12/09/1993" />
                                                                             <span class="input-group-append ">
                                                                                 <span
@@ -357,7 +386,8 @@
                                                                                 <select class="f-control f-dropdown"
                                                                                     placeholder="Select relationship"
                                                                                     id="secondaryHome">
-                                                                                    <option value="">Select the type of
+                                                                                    <option value="">Select the type
+                                                                                        of
                                                                                         relationship</option>
                                                                                     <option value="1">Option 1
                                                                                     </option>
@@ -376,16 +406,15 @@
 
                                                 </div>
                                                 <a class="btn-add mt-3" href="#">
-                                                    <img src="../images/add-pluse-circle.svg" alt="Add" class="icon" />
-                                                    Add someone else
+                                                    <img src="../images/add-pluse-circle.svg" alt="Add"
+                                                        class="icon" />
+                                                        Add additional insured
                                                 </a>
                                             </div>
-
                                         </div>
                                     </div>
-                                </div>
-                                <button type="submit" class="btn btn-primary  mx-auto mt-4"><span>Continue</span>
-                                </button>
+                                    <button type="submit" class="btn btn-primary  mx-auto mt-4"><span>Continue</span>
+                                    </button>
                             </form>
                         </div>
                     </div>

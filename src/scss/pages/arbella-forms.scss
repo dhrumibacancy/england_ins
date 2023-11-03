@@ -1,0 +1,523 @@
+.page {
+  page-break-after: always;
+  position: relative;
+}
+
+.page-details.arbella-eft {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10000;
+
+  input[type="date"],
+  input[type="year"],
+  input[type="month"] {
+    &::-webkit-inner-spin-button,
+    &::-webkit-calendar-picker-indicator {
+      display: none;
+      -webkit-appearance: none;
+    }
+  }
+
+  .form-img {
+    width: 100%;
+  }
+
+  .answer {
+    position: absolute;
+    bottom: 0;
+  }
+
+  .answer img {
+    width: 100%;
+    position: absolute;
+  }
+  .answer input,
+  .answer textarea {
+    width: 100%;
+    font-size: 10px;
+    font-weight: bold;
+    color: #141414;
+    position: absolute;
+    background: transparent;
+    overflow: hidden;
+  }
+
+  .answer textarea {
+    font-size: 10px;
+    padding: 0 5px;
+  }
+
+  .answer.monospace {
+    font-family: monospace;
+    letter-spacing: 7px;
+  }
+  .answer .check-mark {
+    position: absolute;
+
+    &::before,
+    &::after {
+      content: "";
+      height: 2px;
+      width: 15px;
+      background: black;
+      position: absolute;
+      transform: rotate(45deg);
+    }
+    &::before {
+      transform: rotate(-45deg);
+    }
+  }
+  textarea.form-control {
+    border: 0;
+    resize: none;
+    height: 100%;
+  }
+
+  .insured-info {
+    position: absolute;
+    top: 110px;
+    left: 50px;
+
+    input {
+      font-size: 14px;
+    }
+
+    .a1 {
+      left: 54px;
+      width: 20px;
+      top: 30px;
+
+      &.a1-2 {
+        left: 292px;
+      }
+      &.a1-3 {
+        left: 514px;
+      }
+    }
+
+    .a2 {
+      left: 163px;
+      width: 520px;
+      top: 41px;
+    }
+
+    .a3 {
+      left: 66px;
+      width: 622px;
+      top: 63px;
+    }
+
+    .a4 {
+      left: 43px;
+      width: 270px;
+      top: 84px;
+    }
+    .a5 {
+      left: 360px;
+      width: 120px;
+      top: 86px;
+    }
+    .a6 {
+      left: 521px;
+      width: 165px;
+      top: 86px;
+    }
+    .a7 {
+      left: 120px;
+      width: 570px;
+      top: 107px;
+    }
+  }
+
+  .account-info {
+    position: absolute;
+    top: 439px;
+    left: 0;
+
+    input {
+      font-size: 15px;
+    }
+
+    .answer.monospace {
+      input {
+        letter-spacing: 16.5px;
+        font-size: 15px;
+      }
+    }
+
+    .a1 {
+      left: 138px;
+      width: 599px;
+      top: 48px;
+    }
+
+    .a2 {
+      left: 204px;
+      width: 529px;
+      top: 69px;
+    }
+    .a3 {
+      left: 269px;
+      width: 20px;
+      top: 105px;
+
+      &.a3-2 {
+        left: 366px;
+      }
+    }
+    .a4 {
+      left: 210px;
+      width: 359px;
+      top: 120px;
+    }
+    .a5 {
+      left: 342px;
+      width: 359px;
+      top: 140px;
+    }
+    .a6 {
+      left: 653px;
+      width: 50px;
+      top: 120px;
+    }
+    .a7 {
+      left: 391px;
+      width: 50px;
+      top: 180px;
+    }
+  }
+
+  .signature-info {
+    position: absolute;
+    top: 790px;
+    left: 0;
+
+    .a1 {
+      left: 661px;
+      width: 99px;
+      top: 40px;
+    }
+    .a2 {
+      left: 661px;
+      width: 99px;
+      top: 67px;
+    }
+  }
+
+  &.arbella-excluison {
+    .operator-info {
+      position: absolute;
+      top: 305px;
+      left: 110px;
+
+      input,
+      textarea {
+        font-size: 14px;
+      }
+
+      .a1 {
+        left: 67px;
+        width: 422px;
+        top: 6px;
+      }
+
+      .a2 {
+        left: 66px;
+        width: 502px;
+        height: 72px;
+        top: 44px;
+
+        textarea {
+          line-height: 15.3px;
+        }
+      }
+    }
+
+    .holder-info {
+      position: absolute;
+      top: 782px;
+      left: 0;
+
+      input {
+        font-size: 16px;
+      }
+
+      .a1 {
+        left: 77px;
+        width: 155px;
+        top: -3px;
+      }
+      .a2 {
+        left: 76px;
+        width: 152px;
+        top: 72px;
+      }
+    }
+  }
+
+  &.arbella-suplemental {
+    .page-about {
+      position: absolute;
+      top: 10px;
+      left: 500px;
+
+      .a1 {
+        left: 55px;
+        width: 170px;
+        top: 15px;
+      }
+
+      .a2 {
+        left: 89px;
+        width: 143px;
+        top: 31px;
+      }
+
+      .a3 {
+        left: 106px;
+        width: 123px;
+        top: 45px;
+      }
+    }
+
+    .insured-info {
+      position: absolute;
+      top: 220px;
+      left: 50px;
+
+      input {
+        font-size: 12px;
+      }
+
+      .a1 {
+        left: 97px;
+        width: 20px;
+        top: 24px;
+
+        &.other-true input {
+          display: inline-block;
+          left: 124px;
+          top: -8px;
+          width: 37px;
+          font-size: 10px;
+          text-align: right;
+        }
+      }
+
+      .a2 {
+        left: 96px;
+        width: 20px;
+        top: 45px;
+
+        &.other-true {
+          input {
+            display: inline-block;
+            font-size: 10px;
+            text-align: right;
+          }
+          input#a2-1-other {
+            left: 29px;
+            top: 8px;
+            width: 40px;
+          }
+          input#a2-2-other {
+            left: 114px;
+            top: 8px;
+            width: 26px;
+          }
+          input#a2-3-other {
+            left: 322px;
+            top: 8px;
+            width: 238px;
+            text-align: left;
+          }
+        }
+      }
+
+      .a3 {
+        left: 97px;
+        width: 20px;
+        top: 81px;
+      }
+
+      .a4 {
+        left: 272px;
+        width: 20px;
+        top: 81px;
+      }
+
+      .a5 {
+        left: 240px;
+        width: 120px;
+        top: 100px;
+      }
+
+      .a6 {
+        left: 100px;
+        width: 225px;
+        top: 156px;
+      }
+
+      .a7 {
+        left: 479px;
+        width: 175px;
+        top: 156px;
+      }
+
+      .a8 {
+        left: 589px;
+        width: 22px;
+        top: 153px;
+
+        &.a8-2 {
+          left: 639px;
+        }
+      }
+      .a9 {
+        left: 428px;
+        width: 155px;
+        top: 186px;
+      }
+      .a10 {
+        left: 589px;
+        width: 22px;
+        top: 198px;
+
+        &.a10-2 {
+          left: 639px;
+        }
+      }
+      .a11 {
+        left: 595px;
+        width: 22px;
+        top: 243px;
+
+        &.a11-2 {
+          left: 647px;
+        }
+      }
+      .a12 {
+        left: 589px;
+        width: 22px;
+        top: 272px;
+
+        &.a12-2 {
+          left: 639px;
+        }
+      }
+    }
+
+    .account-info {
+      position: absolute;
+      top: 547px;
+      left: 0;
+
+      input {
+        font-size: 12px;
+      }
+
+      .a1 {
+        left: 115px;
+        width: 220px;
+        top: 39px;
+      }
+      .a2 {
+        left: 115px;
+        width: 220px;
+        top: 54px;
+      }
+      .a3 {
+        left: 115px;
+        width: 220px;
+        top: 69px;
+      }
+      .a4 {
+        left: 115px;
+        width: 220px;
+        top: 84px;
+      }
+
+      .b1 {
+        left: 377px;
+        width: 21px;
+        top: 50px;
+        transform: scale(0.8);
+
+        &.b1-2 {
+          left: 428px;
+        }
+
+        &.b2 {
+          top: 65px;
+        }
+        &.b3 {
+          top: 80px;
+        }
+        &.b4 {
+          top: 95px;
+        }
+      }
+      .c1 {
+        left: 563px;
+        width: 21px;
+        top: 50px;
+
+        &.c1-2 {
+          left: 614px;
+        }
+
+        &.c2 {
+          top: 65px;
+        }
+        &.c3 {
+          top: 80px;
+        }
+        &.c4 {
+          top: 95px;
+        }
+      }
+      .d1 {
+        left: 624px;
+        width: 21px;
+        top: 124px;
+
+        &.d1-2 {
+          left: 672px;
+        }
+
+        &.d2 {
+          top: 139px;
+        }
+        &.d3 {
+          top: 153px;
+        }
+        &.d4 {
+          top: 168px;
+        }
+        &.d5 {
+          top: 183px;
+        }
+      }
+    }
+
+    .signature-info {
+      position: absolute;
+      top: 790px;
+      left: 0;
+
+      .a1 {
+        left: 295px;
+        width: 99px;
+        top: -31px;
+      }
+
+      .a2 {
+        left: 295px;
+        width: 99px;
+        top: 70px;
+      }
+    }
+  }
+}

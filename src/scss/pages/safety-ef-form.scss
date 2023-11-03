@@ -1,0 +1,239 @@
+.page {
+  page-break-after: always;
+  position: relative;
+}
+
+.page-details.safety-ef-form {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10000;
+
+  input[type="date"],
+  input[type="year"],
+  input[type="month"] {
+    &::-webkit-inner-spin-button,
+    &::-webkit-calendar-picker-indicator {
+      display: none;
+      -webkit-appearance: none;
+    }
+  }
+
+  .form-img {
+    width: 100%;
+  }
+
+  .answer {
+    position: absolute;
+    bottom: 0;
+  }
+
+  .answer img {
+    width: 100%;
+    position: absolute;
+  }
+  .answer input,
+  .answer textarea {
+    width: 100%;
+    font-size: 10px;
+    font-weight: bold;
+    color: #141414;
+    position: absolute;
+    background: transparent;
+    overflow: hidden;
+  }
+
+  .answer textarea {
+    font-size: 10px;
+    padding: 0 5px;
+  }
+
+  .answer.monospace {
+    font-family: monospace;
+    letter-spacing: 7px;
+  }
+  .answer .check-mark {
+    position: absolute;
+
+    &::before,
+    &::after {
+      content: "";
+      height: 2px;
+      width: 15px;
+      background: black;
+      position: absolute;
+      transform: rotate(45deg);
+    }
+    &::before {
+      transform: rotate(-45deg);
+    }
+  }
+  textarea.form-control {
+    border: 0;
+    resize: none;
+    height: 100%;
+  }
+
+  .insured-info {
+    position: absolute;
+    top: 110px;
+    left: 50px;
+
+    input {
+      font-size: 14px;
+    }
+
+    .a0 {
+      left: 173px;
+      width: 355px;
+      top: 25px;
+    }
+
+    .a1 {
+      left: 210px;
+      width: 359px;
+      top: 55px;
+    }
+
+    .a2 {
+      left: 467px;
+      width: 210px;
+      top: 53px;
+    }
+
+    .a3 {
+      left: 296px;
+      width: 205px;
+      top: 80px;
+    }
+
+    .a4 {
+      left: 562px;
+      width: 120px;
+      top: 81px;
+    }
+    .a5 {
+      left: 110px;
+      width: 560px;
+      top: 109px;
+    }
+    .a6 {
+      left: 551px;
+      width: 20px;
+      top: 63px;
+    }
+    .a7 {
+      left: 591px;
+      width: 20px;
+      top: 63px;
+    }
+    .a8 {
+      left: 644px;
+      width: 20px;
+      top: 119px;
+    }
+    .a9 {
+      left: 424px;
+      width: 120px;
+      top: 239px;
+    }
+  }
+
+  .account-info {
+    position: absolute;
+    top: 233px;
+    left: -48px;
+
+    .answer.monospace {
+      input {
+        letter-spacing: 20.8px;
+        font-size: 15px;
+      }
+    }
+
+    .a1 {
+      left: 210px;
+      width: 359px;
+      top: 53px;
+    }
+
+    .a2 {
+      left: 653px;
+      width: 50px;
+      top: 53px;
+    }
+    .a3 {
+      left: 210px;
+      width: 359px;
+      top: 86px;
+    }
+    .a4 {
+      left: 653px;
+      width: 50px;
+      top: 86px;
+    }
+    .a5 {
+      left: 210px;
+      width: 359px;
+      top: 120px;
+    }
+    .a6 {
+      left: 653px;
+      width: 50px;
+      top: 120px;
+    }
+    .a7 {
+      left: 391px;
+      width: 50px;
+      top: 180px;
+    }
+  }
+
+  .signature-info {
+    position: absolute;
+    top: 898px;
+    left: 0;
+
+    .a1 {
+      left: 592px;
+      width: 359px;
+      top: 40px;
+    }
+  }
+
+  .financial-info {
+    position: absolute;
+    top: 443px;
+    left: 0;
+
+    .answer.monospace {
+      input {
+        letter-spacing: 20.8px;
+        font-size: 15px;
+      }
+    }
+
+    .a1 {
+      left: 302px;
+      width: 359px;
+      top: 50px;
+    }
+
+    .a2 {
+      left: 290px;
+      width: 420px;
+      top: 68px;
+    }
+    .a3 {
+      left: 308px;
+      width: 359px;
+      top: 103px;
+    }
+    .a4 {
+      left: 308px;
+      width: 430px;
+      top: 133px;
+    }
+  }
+}

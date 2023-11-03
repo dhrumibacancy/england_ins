@@ -1,0 +1,130 @@
+/* custom main 
+ UnExpected King Tirth Shah */ 
+ 
+ .page {
+  page-break-after: always;
+  position: relative;
+}
+
+.page-details.ma-operator {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10000;
+}
+.page-details.ma-operator input[type=date]::-webkit-inner-spin-button, .page-details.ma-operator input[type=date]::-webkit-calendar-picker-indicator,
+.page-details.ma-operator input[type=year]::-webkit-inner-spin-button,
+.page-details.ma-operator input[type=year]::-webkit-calendar-picker-indicator,
+.page-details.ma-operator input[type=month]::-webkit-inner-spin-button,
+.page-details.ma-operator input[type=month]::-webkit-calendar-picker-indicator {
+  display: none;
+  -webkit-appearance: none;
+}
+.page-details.ma-operator .form-img {
+  width: 100%;
+}
+.page-details.ma-operator .answer {
+  position: absolute;
+  bottom: 0;
+}
+.page-details.ma-operator .answer img {
+  width: 100%;
+  position: absolute;
+}
+.page-details.ma-operator .answer input,
+.page-details.ma-operator .answer textarea {
+  width: 100%;
+  font-size: 10px;
+  font-weight: bold;
+  color: #141414;
+  position: absolute;
+  background: transparent;
+  overflow: hidden;
+}
+.page-details.ma-operator .answer textarea {
+  font-size: 10px;
+  padding: 0 5px;
+}
+.page-details.ma-operator .answer.monospace {
+  font-family: monospace;
+  letter-spacing: 7px;
+}
+.page-details.ma-operator .answer .check-mark {
+  position: absolute;
+}
+.page-details.ma-operator .answer .check-mark::before, .page-details.ma-operator .answer .check-mark::after {
+  content: "";
+  height: 2px;
+  width: 15px;
+  background: black;
+  position: absolute;
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+.page-details.ma-operator .answer .check-mark::before {
+  -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+.page-details.ma-operator textarea.form-control {
+  border: 0;
+  resize: none;
+  height: 100%;
+}
+.page-details.ma-operator .operator-info {
+  position: absolute;
+  top: 272px;
+  left: 140px;
+}
+.page-details.ma-operator .operator-info .a1 {
+  left: 86px;
+  width: 422px;
+  top: 6px;
+}
+.page-details.ma-operator .operator-info .a2 {
+  left: 86px;
+  width: 192px;
+  height: 132px;
+  top: 44px;
+}
+.page-details.ma-operator .operator-info .a2 textarea {
+  line-height: 15.3px;
+}
+.page-details.ma-operator .holder-info {
+  position: absolute;
+  top: 602px;
+  left: 50px;
+}
+.page-details.ma-operator .holder-info input {
+  font-size: 16px;
+}
+.page-details.ma-operator .holder-info .a1 {
+  left: 86px;
+  width: 155px;
+  top: -7px;
+}
+.page-details.ma-operator .holder-info .a2 {
+  left: 86px;
+  width: 152px;
+  top: 57px;
+}
+.page-details.ma-operator .insured-name-info {
+  position: absolute;
+  top: 764px;
+  left: 50px;
+}
+.page-details.ma-operator .insured-name-info input {
+  font-size: 16px;
+}
+.page-details.ma-operator .insured-name-info .a1 {
+  left: 86px;
+  width: 525px;
+  height: 100px;
+  top: 0;
+}
+.page-details.ma-operator .insured-name-info .a1 textarea {
+  font-size: 14px;
+}
+/*# sourceMappingURL=MA-Operator copy.css.map */

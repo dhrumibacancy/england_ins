@@ -1,0 +1,265 @@
+/* custom main 
+ UnExpected King Tirth Shah */ 
+ 
+ .page {
+  page-break-after: always;
+  position: relative;
+}
+.page .form-img {
+  width: 100%;
+}
+
+.page-details.hanover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10000;
+}
+.page-details.hanover input[type=date]::-webkit-inner-spin-button, .page-details.hanover input[type=date]::-webkit-calendar-picker-indicator,
+.page-details.hanover input[type=year]::-webkit-inner-spin-button,
+.page-details.hanover input[type=year]::-webkit-calendar-picker-indicator,
+.page-details.hanover input[type=month]::-webkit-inner-spin-button,
+.page-details.hanover input[type=month]::-webkit-calendar-picker-indicator {
+  display: none;
+  -webkit-appearance: none;
+}
+.page-details.hanover .form-img {
+  width: 100%;
+}
+.page-details.hanover .answer {
+  position: absolute;
+  bottom: 0;
+}
+.page-details.hanover .answer img {
+  width: 100%;
+  position: absolute;
+}
+.page-details.hanover .answer input,
+.page-details.hanover .answer textarea {
+  width: 100%;
+  font-size: 10px;
+  font-weight: bold;
+  color: #141414;
+  position: absolute;
+  background: transparent;
+  overflow: hidden;
+}
+.page-details.hanover .answer textarea {
+  font-size: 10px;
+  padding: 0 5px;
+}
+.page-details.hanover .answer.monospace {
+  font-family: monospace;
+  letter-spacing: 7px;
+}
+.page-details.hanover .answer .check-mark {
+  position: absolute;
+}
+.page-details.hanover .answer .check-mark::before, .page-details.hanover .answer .check-mark::after {
+  content: "";
+  height: 2px;
+  width: 15px;
+  background: black;
+  position: absolute;
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+.page-details.hanover .answer .check-mark::before {
+  -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+.page-details.hanover textarea.form-control {
+  border: 0;
+  resize: none;
+  height: 100%;
+}
+.page-details.hanover .applicant-about {
+  position: absolute;
+  top: 115px;
+  left: 50px;
+}
+.page-details.hanover .applicant-about input {
+  font-size: 14px;
+}
+.page-details.hanover .applicant-about .a1 {
+  left: 115px;
+  width: 576px;
+  top: 6px;
+}
+.page-details.hanover .applicant-about .a2 {
+  left: 58px;
+  width: 632px;
+  top: 30px;
+}
+.page-details.hanover .prior-coverage {
+  position: absolute;
+  top: 198px;
+  left: 50px;
+}
+.page-details.hanover .prior-coverage input {
+  font-size: 12px;
+}
+.page-details.hanover .prior-coverage .a1 {
+  left: 0;
+  width: 170px;
+  top: 10px;
+}
+.page-details.hanover .prior-coverage .a2 {
+  left: 440px;
+  width: 20px;
+  top: 10px;
+}
+.page-details.hanover .prior-coverage .a2.a2-2 {
+  left: 489px;
+}
+.page-details.hanover .prior-coverage .a3 {
+  left: 538px;
+  width: 153px;
+  top: 10px;
+}
+.page-details.hanover .accidental-info {
+  position: absolute;
+  top: 258px;
+  left: 50px;
+}
+.page-details.hanover .accidental-info input {
+  font-size: 12px;
+}
+.page-details.hanover .accidental-info .d1 {
+  top: 10px;
+  left: 374px;
+}
+.page-details.hanover .accidental-info .d1.d1-2 {
+  left: 434px;
+}
+.page-details.hanover .accidental-info .r1 {
+  top: 59px;
+}
+.page-details.hanover .accidental-info .r2 {
+  top: 77px;
+}
+.page-details.hanover .accidental-info .r3 {
+  top: 94px;
+}
+.page-details.hanover .accidental-info .a1 {
+  left: 0;
+  width: 170px;
+}
+.page-details.hanover .accidental-info .a2 {
+  left: 50px;
+  width: 153px;
+}
+.page-details.hanover .accidental-info .a3 {
+  left: 200px;
+  width: 153px;
+}
+.page-details.hanover .accidental-info .a4 {
+  left: 350px;
+  width: 153px;
+}
+.page-details.hanover .accidental-info .a5 {
+  left: 440px;
+  width: 20px;
+}
+.page-details.hanover .accidental-info .a5.a2-2 {
+  left: 489px;
+}
+.page-details.hanover .accidental-info .a6 {
+  left: 538px;
+  width: 153px;
+}
+.page-details.hanover .payment-details {
+  position: absolute;
+  top: 742px;
+}
+.page-details.hanover .payment-details .b1.b1-1 {
+  left: 141px;
+  width: 20px;
+  top: 1px;
+}
+.page-details.hanover .payment-details .b1.b1-2 {
+  left: 212px;
+  width: 20px;
+  top: 1px;
+}
+.page-details.hanover .payment-details .b2 {
+  left: 110px;
+  width: 246px;
+  top: 14px;
+}
+.page-details.hanover .payment-details .b3 {
+  left: 136px;
+  width: 214px;
+  top: 40px;
+}
+.page-details.hanover .payment-details .b4 {
+  left: 144px;
+  width: 189px;
+  top: 65px;
+}
+.page-details.hanover .payment-details .b4.monospace input {
+  font-family: monospace;
+  letter-spacing: 7px;
+}
+.page-details.hanover .payment-details .b5 {
+  left: 100px;
+  width: 246px;
+  top: 90px;
+}
+.page-details.hanover .payment-details.payment-details-cards {
+  left: 404px;
+}
+.page-details.hanover .payment-details.payment-details-cards .b1.b1-1 {
+  left: 87px;
+  width: 20px;
+  top: -1px;
+}
+.page-details.hanover .payment-details.payment-details-cards .b1.b1-2 {
+  left: 130px;
+  width: 20px;
+  top: -1px;
+}
+.page-details.hanover .payment-details.payment-details-cards .b1.b1-3 {
+  left: 173px;
+  width: 20px;
+  top: -1px;
+}
+.page-details.hanover .payment-details.payment-details-cards .b1.b1-4 {
+  left: 222px;
+  width: 20px;
+  top: -1px;
+}
+.page-details.hanover .payment-details.payment-details-cards .b2 {
+  left: 72px;
+}
+.page-details.hanover .payment-details.payment-details-cards .b3 {
+  left: 115px;
+  width: 216px;
+  top: 53px;
+}
+.page-details.hanover .payment-details.payment-details-cards .b3.monospace input {
+  font-family: monospace;
+  letter-spacing: 7px;
+}
+.page-details.hanover .payment-details.payment-details-cards .b4 {
+  left: 84px;
+  width: 33px;
+  top: 79px;
+}
+.page-details.hanover .payment-details.payment-details-cards .b4.monospace input {
+  font-family: monospace;
+  letter-spacing: 7px;
+}
+.page-details.hanover .payment-details.payment-details-cards .b5 {
+  left: 114px;
+  width: 79px;
+  top: 79px;
+}
+.page-details.hanover .payment-details.payment-details-cards .b5.monospace input {
+  font-family: monospace;
+  letter-spacing: 7px;
+}
+/*# sourceMappingURL=maip-hanover.css.map */
