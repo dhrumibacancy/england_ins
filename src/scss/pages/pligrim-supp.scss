@@ -1,0 +1,495 @@
+.page {
+  page-break-after: always;
+  position: relative;
+}
+
+.page-details.pilgrim-supplemental {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10000;
+
+  input[type="date"],
+  input[type="year"],
+  input[type="month"] {
+    &::-webkit-inner-spin-button,
+    &::-webkit-calendar-picker-indicator {
+      display: none;
+      -webkit-appearance: none;
+    }
+  }
+
+  .form-img {
+    width: 100%;
+  }
+
+  .answer {
+    position: absolute;
+    bottom: 0;
+  }
+
+  .answer img {
+    width: 100%;
+    position: absolute;
+  }
+  .answer input,
+  .answer textarea {
+    width: 100%;
+    font-size: 10px;
+    font-weight: bold;
+    color: #141414;
+    position: absolute;
+    background: transparent;
+    overflow: hidden;
+    border: 0;
+  }
+
+  .answer textarea {
+    font-size: 10px;
+    padding: 0 5px;
+  }
+
+  .answer.monospace {
+    font-family: monospace;
+    letter-spacing: 7px;
+  }
+  .answer .check-mark {
+    position: absolute;
+
+    &::before,
+    &::after {
+      content: "";
+      height: 2px;
+      width: 15px;
+      background: black;
+      position: absolute;
+      transform: rotate(45deg);
+    }
+    &::before {
+      transform: rotate(-45deg);
+    }
+  }
+  textarea.form-control {
+    border: 0;
+    resize: none;
+    height: 100%;
+  }
+
+  .applicant-about {
+    position: absolute;
+    top: 288px;
+    left: 210px;
+    input {
+      font-size: 14px;
+    }
+
+    .a1 {
+      left: 0;
+      top: 0;
+      width: 460px;
+    }
+    .a2 {
+      left: 0;
+      top: 20px;
+      width: 460px;
+    }
+  }
+
+  .policy-plans {
+    position: absolute;
+    top: 474px;
+    left: 93px;
+
+    input {
+      font-size: 14px;
+    }
+
+    .r1 {
+      left: 0;
+      top: 0;
+
+      .a1 {
+        left: 0;
+        top: 0;
+        width: 20px;
+      }
+    }
+    .r2 {
+      left: 0;
+      top: 95px;
+      .a1 {
+        left: 0;
+        top: 0;
+        width: 20px;
+      }
+      .a2 {
+        top: 60px;
+        left: 171px;
+        width: 405px;
+      }
+      .a3 {
+        top: 83px;
+        left: 120px;
+        width: 460px;
+      }
+      .a4 {
+        top: 106px;
+        left: 120px;
+        width: 460px;
+      }
+      .a5 {
+        top: 130px;
+        left: 57px;
+        width: 312px;
+      }
+      .a6 {
+        top: 134px;
+        left: 408px;
+        width: 32px;
+        input {
+          font-size: 10px;
+        }
+      }
+      .a7 {
+        top: 134px;
+        left: 499px;
+        width: 80px;
+        input {
+          font-size: 10px;
+        }
+      }
+    }
+    .r3 {
+      left: 0;
+      top: 278px;
+    }
+    .r4 {
+      left: 0;
+      top: 356px;
+    }
+  }
+
+  .rating-info {
+    position: absolute;
+    top: 307px;
+    left: 50px;
+
+    input {
+      font-size: 14px;
+    }
+
+    .r1 {
+      left: 380px;
+      top: 1px;
+
+      .a1 {
+        left: 0;
+        top: 0;
+        width: 25px;
+      }
+      .a2 {
+        top: 0;
+        left: 40px;
+        width: 25px;
+      }
+      .a3 {
+        top: 0;
+        left: 80px;
+        width: 100px;
+      }
+    }
+    .r2 {
+      left: 445px;
+      top: 69px;
+
+      .a1 {
+        left: 0;
+        top: 0;
+        width: 25px;
+      }
+      .a2 {
+        top: 0;
+        left: 40px;
+        width: 25px;
+      }
+      .a3 {
+        top: 0;
+        left: 80px;
+        width: 100px;
+      }
+    }
+
+    .r3 {
+      top: 102px;
+      left: 50px;
+      width: 20px;
+    }
+    .r4 {
+      top: 176px;
+      left: 320px;
+      width: 320px;
+    }
+  }
+
+  .additional-rating {
+    position: absolute;
+    top: 212px;
+    left: 50px;
+
+    input {
+      font-size: 14px;
+    }
+    .r1 {
+      left: 445px;
+      top: 0px;
+      width: 20px;
+
+      &.r1-2 {
+        left: 487px;
+      }
+    }
+
+    .r2 {
+      left: 114px;
+      top: 95px;
+      width: 530px;
+    }
+
+    .r3 {
+      left: 224px;
+      top: 120px;
+      width: 119px;
+    }
+
+    .r4 {
+      left: 514px;
+      top: 120px;
+
+      .a1 {
+        left: 0;
+        top: 0;
+        width: 25px;
+      }
+      .a2 {
+        top: 0;
+        left: 40px;
+        width: 25px;
+      }
+      .a3 {
+        top: 0;
+        left: 80px;
+        width: 100px;
+      }
+    }
+
+    .r5 {
+      left: 194px;
+      top: 267px;
+      width: 450px;
+    }
+    .r6 {
+      left: 307px;
+      top: 289px;
+      width: 338px;
+    }
+    .r7 {
+      left: 259px;
+      top: 402px;
+      width: 386px;
+    }
+    .r8 {
+      left: 370px;
+      top: 425px;
+      width: 276px;
+    }
+    .r9 {
+      left: 236px;
+      top: 523px;
+      width: 413px;
+    }
+  }
+
+  .good-student-info {
+    position: absolute;
+    top: 466px;
+    left: 223px;
+
+    input {
+      font-size: 14px;
+    }
+
+    .a1 {
+      left: 0;
+      top: 0;
+      width: 472px;
+    }
+    .a2 {
+      top: 22px;
+      left: 0;
+      width: 472px;
+    }
+    .a3 {
+      top: 47px;
+      left: 0;
+      width: 472px;
+    }
+    .a4 {
+      top: 69px;
+      left: 0;
+      width: 472px;
+    }
+  }
+
+  .signature-info {
+    position: absolute;
+    top: 196px;
+    left: 72px;
+
+    input {
+      font-size: 14px;
+    }
+
+    .r1 {
+      top: 0;
+      left: 341px;
+
+      .a1 {
+        top: 0;
+        left: -4px;
+        width: 25px;
+      }
+      .a2 {
+        top: 0;
+        left: 42px;
+        width: 25px;
+      }
+      .a3 {
+        top: 0;
+        left: 80px;
+        width: 100px;
+      }
+      .a4 {
+        top: 0;
+        left: 141px;
+        width: 25px;
+      }
+      .a5 {
+        top: 0;
+        left: 179px;
+        width: 25px;
+      }
+      .a6 {
+        top: 10px;
+        left: 210px;
+        width: 25px;
+
+        &.a6-1 {
+          left: 249px;
+        }
+      }
+    }
+
+    .r2 {
+      top: 140px;
+      left: 341px;
+
+      .a1 {
+        top: 0;
+        left: -4px;
+        width: 25px;
+      }
+      .a2 {
+        top: 0;
+        left: 42px;
+        width: 25px;
+      }
+      .a3 {
+        top: 0;
+        left: 80px;
+        width: 100px;
+      }
+      .a4 {
+        top: 0;
+        left: 141px;
+        width: 25px;
+      }
+      .a5 {
+        top: 0;
+        left: 179px;
+        width: 25px;
+      }
+      .a6 {
+        top: 10px;
+        left: 210px;
+        width: 25px;
+
+        &.a6-1 {
+          left: 249px;
+        }
+      }
+    }
+
+    .r3 {
+      top: 286px;
+      left: 28px;
+      width: 592px;
+      height: 469px;
+      textarea{
+        font-size: 14px;
+      }
+    }
+  }
+
+  .away-sutdent-info {
+    position: absolute;
+    top: 725px;
+    left: 72px;
+
+    input {
+      font-size: 14px;
+    }
+
+    .a1 {
+      top: 37px;
+      left: 164px;
+      width: 405px;
+    }
+    .a2 {
+      top: 60px;
+      left: 102px;
+      width: 405px;
+    }
+    .a3 {
+      top: 83px;
+      left: 120px;
+      width: 460px;
+    }
+    .a4 {
+      top: 106px;
+      left: 120px;
+      width: 460px;
+    }
+    .a5 {
+      top: 130px;
+      left: 57px;
+      width: 312px;
+    }
+    .a6 {
+      top: 134px;
+      left: 438px;
+      width: 32px;
+      input {
+        font-size: 10px;
+      }
+    }
+    .a7 {
+      top: 134px;
+      left: 532px;
+      width: 80px;
+      input {
+        font-size: 10px;
+      }
+    }
+  }
+}

@@ -1,0 +1,165 @@
+.page {
+  page-break-after: always;
+  position: relative;
+}
+
+.page-details.trevelor-eft-autopay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10000;
+}
+.page-details.trevelor-eft-autopay input[type=date]::-webkit-inner-spin-button, .page-details.trevelor-eft-autopay input[type=date]::-webkit-calendar-picker-indicator,
+.page-details.trevelor-eft-autopay input[type=year]::-webkit-inner-spin-button,
+.page-details.trevelor-eft-autopay input[type=year]::-webkit-calendar-picker-indicator,
+.page-details.trevelor-eft-autopay input[type=month]::-webkit-inner-spin-button,
+.page-details.trevelor-eft-autopay input[type=month]::-webkit-calendar-picker-indicator {
+  display: none;
+  -webkit-appearance: none;
+}
+.page-details.trevelor-eft-autopay .form-img {
+  width: 100%;
+}
+.page-details.trevelor-eft-autopay .answer {
+  position: absolute;
+  bottom: 0;
+}
+.page-details.trevelor-eft-autopay .answer img {
+  width: 100%;
+  position: absolute;
+}
+.page-details.trevelor-eft-autopay .answer input,
+.page-details.trevelor-eft-autopay .answer textarea {
+  width: 100%;
+  font-size: 10px;
+  font-weight: bold;
+  color: #141414;
+  position: absolute;
+  background: transparent;
+  overflow: hidden;
+}
+.page-details.trevelor-eft-autopay .answer textarea {
+  font-size: 10px;
+  padding: 0 5px;
+}
+.page-details.trevelor-eft-autopay .answer.monospace {
+  font-family: monospace;
+  letter-spacing: 7px;
+}
+.page-details.trevelor-eft-autopay .answer .check-mark {
+  position: absolute;
+}
+.page-details.trevelor-eft-autopay .answer .check-mark::before, .page-details.trevelor-eft-autopay .answer .check-mark::after {
+  content: "";
+  height: 2px;
+  width: 15px;
+  background: black;
+  position: absolute;
+  transform: rotate(45deg);
+}
+.page-details.trevelor-eft-autopay .answer .check-mark::before {
+  transform: rotate(-45deg);
+}
+.page-details.trevelor-eft-autopay textarea.form-control {
+  border: 0;
+  resize: none;
+  height: 100%;
+}
+.page-details.trevelor-eft-autopay .insured-info {
+  position: absolute;
+  top: 122px;
+  left: 50px;
+}
+.page-details.trevelor-eft-autopay .insured-info .a0 {
+  left: 53px;
+  width: 355px;
+  top: 0;
+}
+.page-details.trevelor-eft-autopay .insured-info .a1 {
+  left: 52px;
+  width: 359px;
+  height: 38px;
+  top: 23px;
+}
+.page-details.trevelor-eft-autopay .insured-info .a1 textarea {
+  line-height: 18px;
+}
+.page-details.trevelor-eft-autopay .insured-info .a2 {
+  left: 526px;
+  width: 165px;
+  top: 3px;
+}
+.page-details.trevelor-eft-autopay .insured-info .a3 {
+  left: 526px;
+  width: 165px;
+  top: 23px;
+}
+.page-details.trevelor-eft-autopay .insured-info .a4 {
+  left: 526px;
+  width: 165px;
+  top: 43px;
+}
+.page-details.trevelor-eft-autopay .insured-info .a5 {
+  left: 70px;
+  width: 435px;
+  top: 95px;
+}
+.page-details.trevelor-eft-autopay .insured-info .a6 {
+  left: 551px;
+  width: 20px;
+  top: 63px;
+}
+.page-details.trevelor-eft-autopay .insured-info .a7 {
+  left: 591px;
+  width: 20px;
+  top: 63px;
+}
+.page-details.trevelor-eft-autopay .insured-info .a8 {
+  left: 644px;
+  width: 20px;
+  top: 119px;
+}
+.page-details.trevelor-eft-autopay .insured-info .a9 {
+  left: 424px;
+  width: 120px;
+  top: 239px;
+}
+.page-details.trevelor-eft-autopay.trevelor-eft .insured-info {
+  position: absolute;
+  top: 112px;
+}
+.page-details.trevelor-eft-autopay.trevelor-eft .insured-info .a6 {
+  left: 341px;
+  width: 120px;
+  top: 78px;
+}
+.page-details.trevelor-eft-autopay.trevelor-eft .insured-info .a7 {
+  left: 562px;
+  width: 120px;
+  top: 78px;
+}
+.page-details.trevelor-eft-autopay.trevelor-eft .insured-info .a8 {
+  left: 663px;
+  width: 20px;
+  top: 61px;
+}
+.page-details.trevelor-eft-autopay.trevelor-eft .insured-info .a9 {
+  top: 199px;
+}
+.page-details.trevelor-eft-autopay.trevelor-eft .insured-info .a10 {
+  left: 133px;
+  width: 20px;
+  top: 69px;
+}
+.page-details.trevelor-eft-autopay.trevelor-eft .insured-info .a10.a10-2 {
+  left: 200px;
+}
+.page-details.trevelor-eft-autopay.trevelor-eft .insured-info .a11 {
+  left: -15px;
+  width: 20px;
+  top: 86px;
+}
+.page-details.trevelor-eft-autopay.trevelor-eft .insured-info .a11.a11-2 {
+  left: 69px;
+}/*# sourceMappingURL=trevelor-eft-autopay.css.map */

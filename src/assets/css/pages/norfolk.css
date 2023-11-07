@@ -1,0 +1,170 @@
+/* custom main 
+ UnExpected King Tirth Shah */ 
+ 
+ .page {
+  page-break-after: always;
+  position: relative;
+}
+.page .form-img {
+  width: 100%;
+}
+
+.page-details.norfolk {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10000;
+}
+.page-details.norfolk input[type=date]::-webkit-inner-spin-button, .page-details.norfolk input[type=date]::-webkit-calendar-picker-indicator,
+.page-details.norfolk input[type=year]::-webkit-inner-spin-button,
+.page-details.norfolk input[type=year]::-webkit-calendar-picker-indicator,
+.page-details.norfolk input[type=month]::-webkit-inner-spin-button,
+.page-details.norfolk input[type=month]::-webkit-calendar-picker-indicator {
+  display: none;
+  -webkit-appearance: none;
+}
+.page-details.norfolk .form-img {
+  width: 100%;
+}
+.page-details.norfolk .answer {
+  position: absolute;
+  bottom: 0;
+}
+.page-details.norfolk .answer img {
+  width: 100%;
+  position: absolute;
+}
+.page-details.norfolk .answer input,
+.page-details.norfolk .answer textarea {
+  width: 100%;
+  font-size: 10px;
+  font-weight: bold;
+  color: #141414;
+  position: absolute;
+  background: transparent;
+  overflow: hidden;
+}
+.page-details.norfolk .answer textarea {
+  font-size: 10px;
+  padding: 0 5px;
+}
+.page-details.norfolk .answer.monospace {
+  font-family: monospace;
+  letter-spacing: 7px;
+}
+.page-details.norfolk .answer .check-mark {
+  position: absolute;
+}
+.page-details.norfolk .answer .check-mark::before, .page-details.norfolk .answer .check-mark::after {
+  content: "";
+  height: 2px;
+  width: 15px;
+  background: black;
+  position: absolute;
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+.page-details.norfolk .answer .check-mark::before {
+  -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+.page-details.norfolk textarea.form-control {
+  border: 0;
+  resize: none;
+  height: 100%;
+}
+.page-details.norfolk .applicant-about {
+  position: absolute;
+  top: 115px;
+  left: 50px;
+}
+.page-details.norfolk .applicant-about .a1 {
+  left: 117px;
+  width: 250px;
+  top: 0;
+}
+.page-details.norfolk .applicant-about .a2 {
+  left: 462px;
+  width: 80px;
+  top: 0;
+}
+.page-details.norfolk .applicant-about .a3 {
+  left: 642px;
+  width: 60px;
+  top: 0;
+}
+.page-details.norfolk .applicant-about .a4 {
+  left: 117px;
+  width: 250px;
+  top: 32px;
+}
+.page-details.norfolk .applicant-about .a5 {
+  left: 462px;
+  width: 80px;
+  top: 32px;
+}
+.page-details.norfolk .applicant-about .a6 {
+  left: 117px;
+  width: 250px;
+  top: 63px;
+}
+.page-details.norfolk .applicant-about .a7 {
+  left: 462px;
+  width: 80px;
+  top: 63px;
+}
+.page-details.norfolk .applicant-about .a8 {
+  left: 462px;
+  width: 80px;
+  top: 93px;
+}
+.page-details.norfolk .applicant-about .a9 {
+  left: 117px;
+  width: 427px;
+  top: 124px;
+}
+.page-details.norfolk .applicant-about .a10 {
+  left: 117px;
+  width: 427px;
+  top: 154px;
+}
+.page-details.norfolk .prior-coverage {
+  position: absolute;
+  top: 321px;
+  left: 50px;
+}
+.page-details.norfolk .prior-coverage input {
+  font-size: 12px;
+}
+.page-details.norfolk .prior-coverage .a1 {
+  left: 5px;
+  width: 220px;
+  top: 11px;
+}
+.page-details.norfolk .prior-coverage .a1.monospace input {
+  font-family: monospace;
+  letter-spacing: 18px;
+}
+.page-details.norfolk .prior-coverage .a2 {
+  left: 5px;
+  width: 353px;
+  top: 65px;
+}
+.page-details.norfolk .prior-coverage .a2.monospace input {
+  font-family: monospace;
+  letter-spacing: 18px;
+}
+.page-details.norfolk .signature-info {
+  position: absolute;
+  top: 838px;
+  left: 220px;
+}
+.page-details.norfolk .signature-info .a1 {
+  left: 308px;
+  width: 85px;
+  top: 13px;
+}
+/*# sourceMappingURL=norfolk.css.map */

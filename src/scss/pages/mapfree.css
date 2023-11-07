@@ -1,0 +1,862 @@
+.page {
+  page-break-after: always;
+  position: relative;
+}
+.page .form-img {
+  width: 100%;
+}
+
+.page-2 .page-details.mapfre.mapfre-supplemental .prior-coverage {
+  position: absolute;
+  top: 49px;
+  left: 60px;
+}
+
+.page-details.mapfre {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10000;
+}
+.page-details.mapfre input[type=date]::-webkit-inner-spin-button, .page-details.mapfre input[type=date]::-webkit-calendar-picker-indicator,
+.page-details.mapfre input[type=year]::-webkit-inner-spin-button,
+.page-details.mapfre input[type=year]::-webkit-calendar-picker-indicator,
+.page-details.mapfre input[type=month]::-webkit-inner-spin-button,
+.page-details.mapfre input[type=month]::-webkit-calendar-picker-indicator {
+  display: none;
+  -webkit-appearance: none;
+}
+.page-details.mapfre .form-img {
+  width: 100%;
+}
+.page-details.mapfre .answer {
+  position: absolute;
+  bottom: 0;
+}
+.page-details.mapfre .answer img {
+  width: 100%;
+  position: absolute;
+}
+.page-details.mapfre .answer input,
+.page-details.mapfre .answer textarea {
+  width: 100%;
+  font-size: 10px;
+  font-weight: bold;
+  color: #141414;
+  position: absolute;
+  background: transparent;
+  overflow: hidden;
+}
+.page-details.mapfre .answer textarea {
+  font-size: 10px;
+  padding: 0 5px;
+}
+.page-details.mapfre .answer.monospace {
+  font-family: monospace;
+  letter-spacing: 7px;
+}
+.page-details.mapfre .answer .check-mark {
+  position: absolute;
+}
+.page-details.mapfre .answer .check-mark::before, .page-details.mapfre .answer .check-mark::after {
+  content: "";
+  height: 2px;
+  width: 15px;
+  background: black;
+  position: absolute;
+  transform: rotate(45deg);
+}
+.page-details.mapfre .answer .check-mark::before {
+  transform: rotate(-45deg);
+}
+.page-details.mapfre textarea.form-control {
+  border: 0;
+  resize: none;
+  height: 100%;
+}
+.page-details.mapfre .applicant-about {
+  position: absolute;
+  top: 235px;
+  left: 50px;
+}
+.page-details.mapfre .applicant-about input {
+  font-size: 14px;
+}
+.page-details.mapfre .applicant-about .a1 {
+  left: 165px;
+  width: 266px;
+  top: 0;
+}
+.page-details.mapfre .applicant-about .a2 {
+  left: 577px;
+  width: 96px;
+  top: 0;
+}
+.page-details.mapfre .applicant-about .a3 {
+  left: 188px;
+  width: 236px;
+  top: 35px;
+}
+.page-details.mapfre .applicant-about .a4 {
+  left: 577px;
+  width: 96px;
+  top: 35px;
+}
+.page-details.mapfre .prior-coverage {
+  position: absolute;
+  top: 381px;
+  left: 50px;
+}
+.page-details.mapfre .prior-coverage input {
+  font-size: 12px;
+}
+.page-details.mapfre .prior-coverage .a1 {
+  left: 465px;
+  width: 20px;
+  top: 21px;
+}
+.page-details.mapfre .prior-coverage .a1.a1-2 {
+  left: 545px;
+}
+.page-details.mapfre .prior-coverage .a2 {
+  left: 465px;
+  width: 20px;
+  top: 52px;
+}
+.page-details.mapfre .prior-coverage .a2.a2-2 {
+  left: 545px;
+}
+.page-details.mapfre .prior-coverage .a3 {
+  left: 465px;
+  width: 20px;
+  top: 81px;
+}
+.page-details.mapfre .prior-coverage .a3.a3-2 {
+  left: 545px;
+}
+.page-details.mapfre .accidental-info {
+  position: absolute;
+  top: 558px;
+  left: 50px;
+}
+.page-details.mapfre .accidental-info input {
+  font-size: 12px;
+}
+.page-details.mapfre .accidental-info .r1 {
+  top: 56px;
+}
+.page-details.mapfre .accidental-info .r2 {
+  top: 75px;
+}
+.page-details.mapfre .accidental-info .r3 {
+  top: 93px;
+}
+.page-details.mapfre .accidental-info .r4 {
+  top: 111px;
+}
+.page-details.mapfre .accidental-info .a1 {
+  left: 10px;
+  width: 49px;
+}
+.page-details.mapfre .accidental-info .a2 {
+  left: 68px;
+  width: 225px;
+}
+.page-details.mapfre .accidental-info .a3 {
+  left: 302px;
+  width: 138px;
+}
+.page-details.mapfre .accidental-info .a4 {
+  left: 447px;
+  width: 142px;
+}
+.page-details.mapfre .accidental-info .a5 {
+  left: 600px;
+  width: 80px;
+}
+.page-details.mapfre .signature-info {
+  position: absolute;
+  top: 948px;
+  left: 319px;
+}
+.page-details.mapfre .signature-info .a1 {
+  left: 195px;
+  width: 202px;
+  top: -31px;
+}
+.page-details.mapfre.mapfre-eft .applicant-about {
+  position: absolute;
+  top: 155px;
+  left: 50px;
+}
+.page-details.mapfre.mapfre-eft .applicant-about .a1 {
+  left: 121px;
+  width: 296px;
+  top: 0;
+}
+.page-details.mapfre.mapfre-eft .applicant-about .a2 {
+  left: 487px;
+  width: 176px;
+  top: 0;
+}
+.page-details.mapfre.mapfre-eft .applicant-about .a3 {
+  left: 103px;
+  width: 131px;
+  top: 35px;
+}
+.page-details.mapfre.mapfre-eft .applicant-about .a4 {
+  left: 457px;
+  width: 186px;
+  top: 62px;
+}
+.page-details.mapfre.mapfre-eft .applicant-about .a4 .a4-1 {
+  left: 10px;
+  width: 30px;
+}
+.page-details.mapfre.mapfre-eft .applicant-about .a4 .a4-2 {
+  left: 51px;
+  width: 30px;
+}
+.page-details.mapfre.mapfre-eft .applicant-about .a4 .a4-3 {
+  left: 90px;
+  width: 40px;
+}
+.page-details.mapfre.mapfre-eft .applicant-about .a5 {
+  left: 125px;
+  width: 194px;
+  top: 61px;
+}
+.page-details.mapfre.mapfre-eft .applicant-about .a6 {
+  left: 19px;
+  width: 194px;
+  height: 54px;
+  top: 85px;
+}
+.page-details.mapfre.mapfre-eft .applicant-about .a6 textarea {
+  line-height: 1.8;
+}
+.page-details.mapfre.mapfre-eft .applicant-about .a7 {
+  left: 147px;
+  width: 44px;
+  top: 151px;
+}
+.page-details.mapfre.mapfre-eft .applicant-about .a8 {
+  left: 230px;
+  width: 44px;
+  top: 151px;
+}
+.page-details.mapfre.mapfre-eft .applicant-about .a9 {
+  left: 330px;
+  width: 64px;
+  top: 151px;
+}
+.page-details.mapfre.mapfre-eft .prior-coverage {
+  position: absolute;
+  top: 342px;
+}
+.page-details.mapfre.mapfre-eft .prior-coverage .a1 {
+  left: 278px;
+}
+.page-details.mapfre.mapfre-eft .prior-coverage .a1.a1-2 {
+  left: 453px;
+}
+.page-details.mapfre.mapfre-eft .prior-coverage .a2 {
+  top: 42px;
+  left: 16px;
+}
+.page-details.mapfre.mapfre-eft .prior-coverage .a2.a2-2 {
+  left: 16px;
+}
+.page-details.mapfre.mapfre-eft .prior-coverage .a3 {
+  left: 109px;
+  width: 440px;
+  top: 48px;
+}
+.page-details.mapfre.mapfre-eft .prior-coverage .a4 {
+  left: 29px;
+  width: 370px;
+  top: 97px;
+}
+.page-details.mapfre.mapfre-eft .prior-coverage .a4.monospace input {
+  font-family: monospace;
+  letter-spacing: 37px;
+}
+.page-details.mapfre.mapfre-eft .prior-coverage .a5 {
+  left: 429px;
+  width: 240px;
+  top: 97px;
+}
+.page-details.mapfre.mapfre-eft .prior-coverage .a6 {
+  left: 179px;
+  width: 490px;
+  top: 140px;
+}
+.page-details.mapfre.mapfre-eft .prior-coverage .a7 {
+  left: 186px;
+  width: 20px;
+  top: 212px;
+}
+.page-details.mapfre.mapfre-eft .prior-coverage .a7 .circle {
+  width: 15px;
+  height: 15px;
+  border: 1px solid black;
+  border-radius: 20px;
+}
+.page-details.mapfre.mapfre-eft .prior-coverage .a7 .circle:before, .page-details.mapfre.mapfre-eft .prior-coverage .a7 .circle:after {
+  display: none;
+}
+.page-details.mapfre.mapfre-eft .signature-info {
+  position: absolute;
+  top: 746px;
+}
+.page-details.mapfre.mapfre-eft .signature-info .a2 {
+  left: 195px;
+  width: 202px;
+  top: 1px;
+}
+.page-details.mapfre.mapfre-annual-milage .applicant-about {
+  position: absolute;
+  top: 235px;
+  left: 280px;
+}
+.page-details.mapfre.mapfre-annual-milage .applicant-about .a1 {
+  left: 225px;
+  width: 216px;
+  top: 3px;
+}
+.page-details.mapfre.mapfre-annual-milage .applicant-about .a2 {
+  left: 223px;
+  width: 226px;
+  top: 20px;
+}
+.page-details.mapfre.mapfre-annual-milage .applicant-about .a3 {
+  left: 260px;
+  width: 236px;
+  top: 51px;
+}
+.page-details.mapfre.mapfre-annual-milage .applicant-about .a4 {
+  left: 267px;
+  width: 186px;
+  top: 68px;
+}
+.page-details.mapfre.mapfre-annual-milage .vehicle-details {
+  position: absolute;
+  top: 405px;
+  left: 90px;
+}
+.page-details.mapfre.mapfre-annual-milage .vehicle-details input {
+  text-align: center;
+}
+.page-details.mapfre.mapfre-annual-milage .vehicle-details .v1 {
+  left: 220px;
+  top: 0;
+}
+.page-details.mapfre.mapfre-annual-milage .vehicle-details .v2 {
+  left: 431px;
+  top: 0;
+}
+.page-details.mapfre.mapfre-annual-milage .vehicle-details .v3 {
+  left: 220px;
+  top: 194px;
+}
+.page-details.mapfre.mapfre-annual-milage .vehicle-details .v4 {
+  left: 431px;
+  top: 194px;
+}
+.page-details.mapfre.mapfre-annual-milage .vehicle-details .a1 {
+  left: 0;
+  width: 200px;
+  top: 0;
+}
+.page-details.mapfre.mapfre-annual-milage .vehicle-details .a2 {
+  left: 0;
+  width: 200px;
+  top: 35px;
+}
+.page-details.mapfre.mapfre-annual-milage .vehicle-details .a3 {
+  left: 0;
+  width: 200px;
+  top: 67px;
+}
+.page-details.mapfre.mapfre-annual-milage .vehicle-details .a4 {
+  left: 0;
+  width: 200px;
+  top: 100px;
+}
+.page-details.mapfre.mapfre-annual-milage .signature-info {
+  position: absolute;
+  top: 867px;
+  left: 319px;
+}
+.page-details.mapfre.mapfre-exclusion .applicant-about {
+  position: absolute;
+  top: 525px;
+  left: 70px;
+}
+.page-details.mapfre.mapfre-exclusion .applicant-about .a1 {
+  left: 232px;
+  width: 376px;
+  top: 3px;
+}
+.page-details.mapfre.mapfre-exclusion .applicant-about .a2 {
+  left: 234px;
+  width: 366px;
+  top: 37px;
+}
+.page-details.mapfre.mapfre-exclusion .applicant-about .a3 {
+  left: 232px;
+  width: 366px;
+  top: 71px;
+}
+.page-details.mapfre.mapfre-exclusion .signature-info {
+  position: absolute;
+  top: 660px;
+  left: 0;
+}
+.page-details.mapfre.mapfre-exclusion .signature-info .a1 {
+  left: 115px;
+  width: 130px;
+  top: 0;
+}
+.page-details.mapfre.mapfre-exclusion .signature-info .a2 {
+  left: 115px;
+  width: 130px;
+  top: 90px;
+}
+.page-details.mapfre.mapfre-supplemental .applicant-about {
+  position: absolute;
+  top: 145px;
+  left: 50px;
+}
+.page-details.mapfre.mapfre-supplemental .applicant-about input {
+  font-size: 12px;
+}
+.page-details.mapfre.mapfre-supplemental .applicant-about .a1 {
+  left: 90px;
+  width: 266px;
+  top: 4px;
+}
+.page-details.mapfre.mapfre-supplemental .applicant-about .a2 {
+  left: 90px;
+  width: 266px;
+  top: 32px;
+}
+.page-details.mapfre.mapfre-supplemental .applicant-about .a3 {
+  left: 50px;
+  width: 195px;
+  top: 58px;
+}
+.page-details.mapfre.mapfre-supplemental .applicant-about .a4 {
+  left: 270px;
+  width: 94px;
+  top: 67px;
+}
+.page-details.mapfre.mapfre-supplemental .applicant-about .a5 {
+  left: 90px;
+  width: 266px;
+  top: 82px;
+}
+.page-details.mapfre.mapfre-supplemental .applicant-about .a6 {
+  left: 70px;
+  width: 115px;
+  top: 96px;
+}
+.page-details.mapfre.mapfre-supplemental .applicant-about .a7 {
+  left: 250px;
+  width: 115px;
+  top: 96px;
+}
+.page-details.mapfre.mapfre-supplemental .applicant-about .a8 {
+  left: 400px;
+  width: 300px;
+  height: 60px;
+  top: -10px;
+}
+.page-details.mapfre.mapfre-supplemental .applicant-about .a9 {
+  left: 490px;
+  width: 210px;
+  top: 62px;
+}
+.page-details.mapfre.mapfre-supplemental .applicant-about .a10 {
+  left: 520px;
+  width: 285px;
+  top: 90px;
+}
+.page-details.mapfre.mapfre-supplemental .prior-coverage {
+  position: absolute;
+  top: 251px;
+  left: 50px;
+}
+.page-details.mapfre.mapfre-supplemental .prior-coverage input {
+  text-align: left;
+}
+.page-details.mapfre.mapfre-supplemental .prior-coverage .a1 {
+  left: 618px;
+  width: 20px;
+  top: 21px;
+}
+.page-details.mapfre.mapfre-supplemental .prior-coverage .a1.a1-2 {
+  left: 665px;
+}
+.page-details.mapfre.mapfre-supplemental .prior-coverage .a1-other-1 {
+  left: 285px;
+  width: 320px;
+  top: 72px;
+}
+.page-details.mapfre.mapfre-supplemental .prior-coverage .a1-other-2 {
+  left: 285px;
+  width: 320px;
+  top: 93px;
+}
+.page-details.mapfre.mapfre-supplemental .prior-coverage .a2 {
+  left: 645px;
+  width: 161px;
+  top: 131px;
+}
+.page-details.mapfre.mapfre-supplemental .prior-coverage .a3 {
+  left: 645px;
+  width: 161px;
+  top: 152px;
+}
+.page-details.mapfre.mapfre-supplemental .prior-coverage .a4 {
+  left: 355px;
+  width: 161px;
+  top: 179px;
+}
+.page-details.mapfre.mapfre-supplemental .prior-coverage .a5 {
+  left: 618px;
+  width: 20px;
+  top: 210px;
+}
+.page-details.mapfre.mapfre-supplemental .prior-coverage .a5.a5-2 {
+  left: 665px;
+}
+.page-details.mapfre.mapfre-supplemental .prior-coverage .a6 {
+  left: 535px;
+  width: 161px;
+  top: 222px;
+}
+.page-details.mapfre.mapfre-supplemental .prior-coverage .a7 {
+  left: 675px;
+  width: 31px;
+  top: 242px;
+}
+.page-details.mapfre.mapfre-supplemental .prior-coverage .a8 {
+  left: 618px;
+  width: 20px;
+  top: 270px;
+}
+.page-details.mapfre.mapfre-supplemental .prior-coverage .a8.a8-2 {
+  left: 665px;
+}
+.page-details.mapfre.mapfre-supplemental .prior-coverage .a8-other-1 {
+  left: 365px;
+  width: 211px;
+  top: 290px;
+}
+.page-details.mapfre.mapfre-supplemental .prior-coverage .a8-other-2 {
+  left: 455px;
+  width: 211px;
+  top: 309px;
+}
+.page-details.mapfre.mapfre-supplemental .prior-coverage .a8-other-3 {
+  left: 0;
+  width: 211px;
+  top: 339px;
+}
+.page-details.mapfre.mapfre-supplemental .prior-coverage .a8-other-3 .a1 {
+  left: 76px;
+  width: 41px;
+  top: 11px;
+}
+.page-details.mapfre.mapfre-supplemental .prior-coverage .a8-other-3 .a2 {
+  left: 294px;
+  width: 41px;
+  top: 11px;
+}
+.page-details.mapfre.mapfre-supplemental .prior-coverage .a8-other-3 .a3 {
+  left: 76px;
+  width: 41px;
+  top: 27px;
+}
+.page-details.mapfre.mapfre-supplemental .prior-coverage .a8-other-3 .a4 {
+  left: 294px;
+  width: 41px;
+  top: 27px;
+}
+.page-details.mapfre.mapfre-supplemental .prior-coverage .a8-other-3 .a5 {
+  left: 76px;
+  width: 41px;
+  top: 41px;
+}
+.page-details.mapfre.mapfre-supplemental .prior-coverage .a9 {
+  left: 618px;
+  width: 20px;
+  top: 412px;
+}
+.page-details.mapfre.mapfre-supplemental .prior-coverage .a9.a9-2 {
+  left: 665px;
+}
+.page-details.mapfre.mapfre-supplemental .prior-coverage .a11 {
+  left: 618px;
+  width: 20px;
+  top: 459px;
+}
+.page-details.mapfre.mapfre-supplemental .prior-coverage .a11.a11-2 {
+  left: 665px;
+}
+.page-details.mapfre.mapfre-supplemental .prior-coverage .a12 {
+  left: 618px;
+  width: 20px;
+  top: 496px;
+}
+.page-details.mapfre.mapfre-supplemental .prior-coverage .a12.a12-2 {
+  left: 665px;
+}
+.page-details.mapfre.mapfre-supplemental .prior-coverage .a13 {
+  left: 618px;
+  width: 20px;
+  top: 534px;
+}
+.page-details.mapfre.mapfre-supplemental .prior-coverage .a13.a13-2 {
+  left: 665px;
+}
+.page-details.mapfre.mapfre-supplemental .prior-coverage .a14 {
+  left: 618px;
+  width: 20px;
+  top: 584px;
+}
+.page-details.mapfre.mapfre-supplemental .prior-coverage .a14.a14-2 {
+  left: 665px;
+}
+.page-details.mapfre.mapfre-supplemental .prior-coverage .a15 {
+  left: 618px;
+  width: 20px;
+  top: 611px;
+}
+.page-details.mapfre.mapfre-supplemental .prior-coverage .a15.a15-2 {
+  left: 665px;
+}
+.page-details.mapfre.mapfre-supplemental .prior-coverage .a16 {
+  left: 618px;
+  width: 20px;
+  top: 632px;
+}
+.page-details.mapfre.mapfre-supplemental .prior-coverage .a16.a16-2 {
+  left: 665px;
+}
+.page-details.mapfre.mapfre-supplemental .prior-coverage .a16-other-1 {
+  left: 228px;
+  top: 642px;
+}
+.page-details.mapfre.mapfre-supplemental .prior-coverage .a16-other-1 .a1 {
+  left: 0;
+  width: 48px;
+  top: 0;
+}
+.page-details.mapfre.mapfre-supplemental .prior-coverage .a16-other-1 .a2 {
+  left: 60px;
+  width: 48px;
+  top: 0;
+}
+.page-details.mapfre.mapfre-supplemental .prior-coverage .a16-other-1 .a3 {
+  left: 140px;
+  width: 48px;
+  top: 0;
+}
+.page-details.mapfre.mapfre-supplemental .prior-coverage .a16-other-1 .a4 {
+  left: 200px;
+  width: 48px;
+  top: 0;
+}
+.page-details.mapfre.mapfre-supplemental .prior-coverage .a17 {
+  left: 618px;
+  width: 20px;
+  top: 679px;
+}
+.page-details.mapfre.mapfre-supplemental .prior-coverage .a17.a17-2 {
+  left: 665px;
+}
+.page-details.mapfre.mapfre-supplemental .prior-coverage .a18 {
+  left: 618px;
+  width: 20px;
+  top: 706px;
+}
+.page-details.mapfre.mapfre-supplemental .prior-coverage .a18.a18-2 {
+  left: 665px;
+}
+.page-details.mapfre.mapfre-supplemental .prior-coverage .a18-other-1 {
+  left: 403px;
+  top: 712px;
+}
+.page-details.mapfre.mapfre-supplemental .prior-coverage .a18-other-1 .a1 {
+  left: 0;
+  width: 48px;
+  top: 0;
+}
+.page-details.mapfre.mapfre-supplemental .prior-coverage .a18-other-1 .a2 {
+  left: 51px;
+  width: 48px;
+  top: 0;
+}
+.page-details.mapfre.mapfre-supplemental .prior-coverage .a18-other-1 .a3 {
+  left: 109px;
+  width: 48px;
+  top: 0;
+}
+.page-details.mapfre.mapfre-supplemental .prior-coverage .a18-other-1 .a4 {
+  left: 163px;
+  width: 48px;
+  top: 0;
+}
+.page-details.mapfre.mapfre-supplemental .prior-coverage .a19 {
+  left: 609px;
+  width: 20px;
+  top: -5px;
+}
+.page-details.mapfre.mapfre-supplemental .prior-coverage .a19.a19-2 {
+  left: 652px;
+}
+.page-details.mapfre.mapfre-supplemental .prior-coverage .a20 {
+  left: 609px;
+  width: 20px;
+  top: 40px;
+}
+.page-details.mapfre.mapfre-supplemental .prior-coverage .a20.a20-2 {
+  left: 652px;
+}
+.page-details.mapfre.mapfre-supplemental .prior-coverage .a21 {
+  left: 609px;
+  width: 20px;
+  top: 60px;
+}
+.page-details.mapfre.mapfre-supplemental .prior-coverage .a21.a21-2 {
+  left: 652px;
+}
+.page-details.mapfre.mapfre-supplemental .prior-coverage .a22 {
+  left: 609px;
+  width: 20px;
+  top: 96px;
+}
+.page-details.mapfre.mapfre-supplemental .prior-coverage .a22.a22-2 {
+  left: 652px;
+}
+.page-details.mapfre.mapfre-supplemental .prior-coverage .a22-other-1 {
+  left: 30px;
+  width: 500px;
+  height: 31px;
+  top: 116px;
+}
+.page-details.mapfre.mapfre-supplemental .prior-coverage .a23 {
+  left: 609px;
+  width: 20px;
+  top: 154px;
+}
+.page-details.mapfre.mapfre-supplemental .prior-coverage .a23.a23-2 {
+  left: 652px;
+}
+.page-details.mapfre.mapfre-supplemental .prior-coverage .a23-other-1 {
+  left: 30px;
+  width: 500px;
+  top: 174px;
+}
+.page-details.mapfre.mapfre-supplemental .prior-coverage .a23-other-1 .r1 {
+  top: 24px;
+}
+.page-details.mapfre.mapfre-supplemental .prior-coverage .a23-other-1 .r2 {
+  top: 37px;
+}
+.page-details.mapfre.mapfre-supplemental .prior-coverage .a23-other-1 .r3 {
+  top: 50px;
+}
+.page-details.mapfre.mapfre-supplemental .prior-coverage .a23-other-1 .r4 {
+  top: 64px;
+}
+.page-details.mapfre.mapfre-supplemental .prior-coverage .a23-other-1 .a1 {
+  left: 143px;
+  width: 47px;
+  top: 0;
+}
+.page-details.mapfre.mapfre-supplemental .prior-coverage .a23-other-1 .a2 {
+  left: 249px;
+  width: 204px;
+  top: 0;
+}
+.page-details.mapfre.mapfre-supplemental .prior-coverage .a23-other-1 .a3 {
+  left: 513px;
+  width: 111px;
+  top: 0;
+}
+.page-details.mapfre.mapfre-supplemental .prior-coverage .a24 {
+  left: 609px;
+  width: 20px;
+  top: 285px;
+}
+.page-details.mapfre.mapfre-supplemental .prior-coverage .a24.a24-2 {
+  left: 652px;
+}
+.page-details.mapfre.mapfre-supplemental .prior-coverage .a25-1 {
+  left: 277px;
+  width: 130px;
+  top: 316px;
+}
+.page-details.mapfre.mapfre-supplemental .prior-coverage .a25-2 {
+  left: 536px;
+  width: 140px;
+  top: 316px;
+}
+.page-details.mapfre.mapfre-supplemental .prior-coverage .a27 {
+  left: 606px;
+  width: 140px;
+  top: 402px;
+}
+.page-details.mapfre.mapfre-supplemental .prior-coverage .a27.a27-2 {
+  left: 652px;
+}
+.page-details.mapfre.mapfre-supplemental .prior-coverage .a27-other-1 {
+  left: 326px;
+  width: 200px;
+  top: 410px;
+}
+.page-details.mapfre.mapfre-supplemental .prior-coverage .a28 {
+  left: 606px;
+  width: 140px;
+  top: 440px;
+}
+.page-details.mapfre.mapfre-supplemental .prior-coverage .a28.a28-2 {
+  left: 652px;
+}
+.page-details.mapfre.mapfre-supplemental .prior-coverage .a29 {
+  left: 606px;
+  width: 140px;
+  top: 471px;
+}
+.page-details.mapfre.mapfre-supplemental .prior-coverage .a29.a29-2 {
+  left: 652px;
+}
+.page-details.mapfre.mapfre-supplemental .signature-info {
+  position: absolute;
+  top: 628px;
+  left: 319px;
+}
+.page-details.mapfre.mapfre-supplemental .signature-info .a1 {
+  left: 130px;
+  width: 202px;
+  top: 0;
+}
+.page-details.mapfre.mapfre-supplemental .signature-info .a2 {
+  left: 130px;
+  width: 202px;
+  top: 70px;
+}
+.page-details.mapfre.mapfre-supplemental .signature-info .a3 {
+  left: -180px;
+  width: 202px;
+  top: 152px;
+}
+.page-details.mapfre.mapfre-supplemental .signature-info .a4 {
+  left: 130px;
+  width: 202px;
+  top: 152px;
+}/*# sourceMappingURL=mapfree.css.map */

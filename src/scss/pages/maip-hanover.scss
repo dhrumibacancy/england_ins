@@ -154,152 +154,158 @@
       top: 94px;
     }
 
-
-
-
-
     .a1 {
       left: 0;
-      width: 170px;
+      width: 20px;
+      text-align: center;
     }
     .a2 {
-      left: 50px;
-      width: 153px;
+      left: 30px;
+      width: 125px;
     }
     .a3 {
-      left: 200px;
-      width: 153px;
+      left: 159px;
+      width: 203px;
     }
     .a4 {
-      left: 350px;
-      width: 153px;
+      left: 370px;
+      width: 131px;
     }
     .a5 {
-      left: 440px;
+      left: 510px;
       width: 20px;
+      top: 8px;
 
-      &.a2-2 {
-        left: 489px;
+      &.a5-2 {
+        left: 541px;
       }
     }
     .a6 {
-      left: 538px;
-      width: 153px;
+      left: 573px;
+      width: 116px;
     }
   }
 
-  .payment-details {
+  .policy-info {
     position: absolute;
-    top: 742px;
+    top: 376px;
+    left: 50px;
+    input {
+      font-size: 12px;
+    }
 
-    .b1 {
-      &.b1-1 {
-        left: 141px;
-        width: 20px;
-        top: 1px;
-      }
-      &.b1-2 {
-        left: 212px;
-        width: 20px;
-        top: 1px;
+    .d1 {
+      top: 12px;
+      left: 473px;
+
+      &.d1-2 {
+        left: 523px;
       }
     }
 
-    .b2 {
-      left: 110px;
-      width: 246px;
-      top: 14px;
+    .r1 {
+      top: 59px;
     }
-    .b3 {
-      left: 136px;
-      width: 214px;
+    .r2 {
+      top: 77px;
+    }
+    .r3 {
+      top: 94px;
+    }
+
+    .a1 {
+      left: 0;
+      width: 133px;
+    }
+    .a2 {
+      left: 144px;
+      width: 104px;
+    }
+    .a3 {
+      left: 255px;
+      width: 313px;
+    }
+  }
+
+  .additional-info {
+    position: absolute;
+    top: 537px;
+    left: 50px;
+    input {
+      font-size: 12px;
+    }
+
+    .a1 {
+      left: 3px;
+      width: 20px;
+    }
+    .a2 {
+      left: 3px;
+      width: 20px;
+      top: 20px;
+    }
+    .a3 {
+      left: 3px;
+      width: 20px;
       top: 40px;
     }
-    .b4 {
-      left: 144px;
-      width: 189px;
-      top: 65px;
-
-      &.monospace {
-        input {
-          font-family: monospace;
-          letter-spacing: 7px;
-        }
-      }
+    .a4 {
+      left: 3px;
+      width: 20px;
+      top: 60px;
     }
-    .b5 {
-      left: 100px;
-      width: 246px;
-      top: 90px;
+    .a5 {
+      left: 3px;
+      width: 20px;
+      top: 80px;
+    }
+    .a6 {
+      left: 267px;
+      width: 20px;
+    }
+    .a7 {
+      left: 267px;
+      width: 20px;
+      top: 20px;
+    }
+    .a8 {
+      left: 267px;
+      width: 20px;
+      top: 40px;
+    }
+    .a9 {
+      left: 267px;
+      width: 20px;
+      top: 60px;
+    }
+    .a10 {
+      left: 0;
+      width: 690px;
+      top: 104px;
+      height: 41px;
+    }
+  }
+
+  .signature-info {
+    position: absolute;
+    top: 838px;
+    left: 220px;
+
+    .a1 {
+      left: 195px;
+      width: 310px;
+      top: -31px;
     }
 
-    &.payment-details-cards {
-      left: 404px;
-
-      .b1 {
-        &.b1-1 {
-          left: 87px;
-          width: 20px;
-          top: -1px;
-        }
-        &.b1-2 {
-          left: 130px;
-          width: 20px;
-          top: -1px;
-        }
-        &.b1-3 {
-          left: 173px;
-          width: 20px;
-          top: -1px;
-        }
-        &.b1-4 {
-          left: 222px;
-          width: 20px;
-          top: -1px;
-        }
-      }
-
-      .b2 {
-        left: 72px;
-      }
-
-      .b3 {
-        left: 115px;
-        width: 216px;
-        top: 53px;
-
-        &.monospace {
-          input {
-            font-family: monospace;
-            letter-spacing: 7px;
-          }
-        }
-      }
-
-      .b4 {
-        left: 84px;
-        width: 33px;
-        top: 79px;
-
-        &.monospace {
-          input {
-            font-family: monospace;
-            letter-spacing: 7px;
-          }
-        }
-      }
-      .b5 {
-        left: 114px;
-        width: 79px;
-        top: 79px;
-
-        &.monospace {
-          input {
-            font-family: monospace;
-            letter-spacing: 7px;
-          }
-        }
-      }
+    .a2 {
+      left: 195px;
+      width: 310px;
+      top: 39px;
+    }
+    .a3 {
+      left: 195px;
+      width: 310px;
+      top: 100px;
     }
   }
 }

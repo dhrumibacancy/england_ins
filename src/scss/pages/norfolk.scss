@@ -1,0 +1,183 @@
+.page {
+  page-break-after: always;
+  position: relative;
+  .form-img {
+    width: 100%;
+  }
+}
+
+.page-details.norfolk {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10000;
+
+  input[type="date"],
+  input[type="year"],
+  input[type="month"] {
+    &::-webkit-inner-spin-button,
+    &::-webkit-calendar-picker-indicator {
+      display: none;
+      -webkit-appearance: none;
+    }
+  }
+
+  .form-img {
+    width: 100%;
+  }
+
+  .answer {
+    position: absolute;
+    bottom: 0;
+  }
+
+  .answer img {
+    width: 100%;
+    position: absolute;
+  }
+  .answer input,
+  .answer textarea {
+    width: 100%;
+    font-size: 10px;
+    font-weight: bold;
+    color: #141414;
+    position: absolute;
+    background: transparent;
+    overflow: hidden;
+  }
+
+  .answer textarea {
+    font-size: 10px;
+    padding: 0 5px;
+  }
+
+  .answer.monospace {
+    font-family: monospace;
+    letter-spacing: 7px;
+  }
+  .answer .check-mark {
+    position: absolute;
+
+    &::before,
+    &::after {
+      content: "";
+      height: 2px;
+      width: 15px;
+      background: black;
+      position: absolute;
+      transform: rotate(45deg);
+    }
+    &::before {
+      transform: rotate(-45deg);
+    }
+  }
+  textarea.form-control {
+    border: 0;
+    resize: none;
+    height: 100%;
+  }
+
+  .applicant-about {
+    position: absolute;
+    top: 115px;
+    left: 50px;
+
+    .a1 {
+      left: 117px;
+      width: 250px;
+      top: 0;
+    }
+    .a2 {
+      left: 462px;
+      width: 80px;
+      top: 0;
+    }
+    .a3 {
+      left: 642px;
+      width: 60px;
+      top: 0;
+    }
+    .a4 {
+      left: 117px;
+      width: 250px;
+      top: 32px;
+    }
+    .a5 {
+      left: 462px;
+      width: 80px;
+      top: 32px;
+    }
+    .a6 {
+      left: 117px;
+      width: 250px;
+      top: 63px;
+    }
+    .a7 {
+      left: 462px;
+      width: 80px;
+      top: 63px;
+    }
+    .a8 {
+      left: 462px;
+      width: 80px;
+      top: 93px;
+    }
+    .a9 {
+      left: 117px;
+      width: 427px;
+      top: 124px;
+    }
+    .a10 {
+      left: 117px;
+      width: 427px;
+      top: 154px;
+    }
+  }
+
+  .prior-coverage {
+    position: absolute;
+    top: 321px;
+    left: 50px;
+    input {
+      font-size: 12px;
+    }
+
+    .a1 {
+      left: 5px;
+      width: 220px;
+      top: 11px;
+      &.monospace {
+        input {
+          font-family: monospace;
+          letter-spacing: 18px;
+        }
+      }
+    }
+    .a2 {
+      left: 5px;
+      width: 353px;
+      top: 65px;
+      &.monospace {
+        input {
+          font-family: monospace;
+          letter-spacing: 18px;
+        }
+      }
+    }
+  }
+
+
+
+  .signature-info {
+    position: absolute;
+    top: 838px;
+    left: 220px;
+
+    .a1 {
+      left: 308px;
+    width: 85px;
+    top: 13px;
+    }
+  }
+}

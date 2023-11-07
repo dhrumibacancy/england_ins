@@ -1,0 +1,130 @@
+/* custom main 
+ UnExpected King Tirth Shah */ 
+ 
+ .page {
+  page-break-after: always;
+  position: relative;
+}
+
+.page-details.safety-supp {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10000;
+}
+.page-details.safety-supp input[type=date]::-webkit-inner-spin-button, .page-details.safety-supp input[type=date]::-webkit-calendar-picker-indicator,
+.page-details.safety-supp input[type=year]::-webkit-inner-spin-button,
+.page-details.safety-supp input[type=year]::-webkit-calendar-picker-indicator,
+.page-details.safety-supp input[type=month]::-webkit-inner-spin-button,
+.page-details.safety-supp input[type=month]::-webkit-calendar-picker-indicator {
+  display: none;
+  -webkit-appearance: none;
+}
+.page-details.safety-supp .form-img {
+  width: 100%;
+}
+.page-details.safety-supp .answer {
+  position: absolute;
+  bottom: 0;
+}
+.page-details.safety-supp .answer img {
+  width: 100%;
+  position: absolute;
+}
+.page-details.safety-supp .answer input,
+.page-details.safety-supp .answer textarea {
+  width: 100%;
+  font-size: 10px;
+  font-weight: bold;
+  color: #141414;
+  position: absolute;
+  background: transparent;
+  overflow: hidden;
+}
+.page-details.safety-supp .answer textarea {
+  font-size: 10px;
+  padding: 0 5px;
+}
+.page-details.safety-supp .answer.monospace {
+  font-family: monospace;
+  letter-spacing: 7px;
+}
+.page-details.safety-supp .answer .check-mark {
+  position: absolute;
+}
+.page-details.safety-supp .answer .check-mark::before, .page-details.safety-supp .answer .check-mark::after {
+  content: "";
+  height: 2px;
+  width: 15px;
+  background: black;
+  position: absolute;
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+.page-details.safety-supp .answer .check-mark::before {
+  -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+.page-details.safety-supp textarea.form-control {
+  border: 0;
+  resize: none;
+  height: 100%;
+}
+.page-details.safety-supp .operator-info {
+  position: absolute;
+  top: 272px;
+  left: 140px;
+}
+.page-details.safety-supp .operator-info .a1 {
+  left: 86px;
+  width: 422px;
+  top: 6px;
+}
+.page-details.safety-supp .operator-info .a2 {
+  left: 86px;
+  width: 192px;
+  height: 132px;
+  top: 44px;
+}
+.page-details.safety-supp .operator-info .a2 textarea {
+  line-height: 15.3px;
+}
+.page-details.safety-supp .holder-info {
+  position: absolute;
+  top: 602px;
+  left: 50px;
+}
+.page-details.safety-supp .holder-info input {
+  font-size: 16px;
+}
+.page-details.safety-supp .holder-info .a1 {
+  left: 86px;
+  width: 155px;
+  top: -7px;
+}
+.page-details.safety-supp .holder-info .a2 {
+  left: 86px;
+  width: 152px;
+  top: 57px;
+}
+.page-details.safety-supp .insured-name-info {
+  position: absolute;
+  top: 764px;
+  left: 50px;
+}
+.page-details.safety-supp .insured-name-info input {
+  font-size: 16px;
+}
+.page-details.safety-supp .insured-name-info .a1 {
+  left: 86px;
+  width: 525px;
+  height: 100px;
+  top: 0;
+}
+.page-details.safety-supp .insured-name-info .a1 textarea {
+  font-size: 14px;
+}
+/*# sourceMappingURL=safety-supplemental.css.map */
