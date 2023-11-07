@@ -227,6 +227,154 @@ span.checkbox-label.fs-14.me-5.fw-500.main-label {
   border-radius: 5px;
 }
 
+.kitchen-tab.nav-pills .nav-link {
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+  text-transform: uppercase;
+  color: #8A8A8A;
+}
+
+.kitchen-tab.nav-pills .nav-link.active {
+  background-color: unset;
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 24px;
+  color: #2B2B2B;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.kitchen-carousel.radio-check-switch .radio-switch-state {
+  margin: 0;
+  background: unset;
+  height: auto;
+  border: 1px solid #E6E6E6;
+}
+
+.kitchen-carousel.radio-check-switch .radio-switch-state img {
+  width: 100%;
+  height: 170px;
+  border-radius: 4px;
+  -o-object-fit: COVER;
+     object-fit: COVER;
+}
+
+.kitchen-carousel.radio-check-switch .owl-item.active.center .radio-switch-state img {
+  width: 270px;
+  height: 290px;
+}
+
+.radio-check-switch.kitchen-carousel input[type=radio]:checked + .radio-switch-state img {
+  width: 270px;
+  height: 290px;
+}
+
+.kitchen-carousel.radio-check-switch .ins-title {
+  position: unset;
+  margin-top: 12px;
+}
+
+.radio-check-switch.kitchen-carousel input[type=radio]:checked + .radio-switch-state {
+  border: 2px solid #016BBF;
+  background: #EBF5FD;
+}
+
+html {
+  font-size: 16px;
+  background: #edeff0;
+  font-family: "Open Sans", sans-serif;
+}
+
+h1 {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.wrap {
+  width: 500px;
+  margin: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  border-radius: 4px;
+  background-color: #ffffff;
+  -webkit-box-shadow: 0 1px 2px 0 #c9ced1;
+          box-shadow: 0 1px 2px 0 #c9ced1;
+  padding: 1.25rem;
+  margin-bottom: 1.25rem;
+}
+
+/* ------------------------------ COUNTER BEGIN ------------------------------ */
+.counter__increment, .counter__decrement {
+  -webkit-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.counter {
+  position: relative;
+  width: 7.7rem;
+  height: 1.995rem;
+  border: 1px solid #E6E6E6;
+  border-radius: 3px;
+  text-align: center;
+  overflow: hidden;
+  background: #fff;
+}
+
+.counter__input {
+  border: none;
+  height: 100%;
+  margin: 0 auto;
+  text-align: center;
+  color: #2B2B2B;
+  font-size: 0.975rem;
+  background-color: transparent;
+}
+
+.counter__increment, .counter__decrement {
+  position: absolute;
+  top: 0;
+  font-size: 1rem;
+  line-height: 1.5625rem;
+  height: 1.875rem;
+  width: 2.1875rem;
+  font-weight: normal;
+  color: #616161;
+  text-decoration: none;
+}
+
+.counter__increment:hover, .counter__increment:active, .counter__increment:focus, .counter__decrement:hover, .counter__decrement:active, .counter__decrement:focus {
+  color: #616161;
+  text-decoration: none;
+  background-color: #edeff0;
+}
+
+.counter__increment {
+  right: 0;
+  border-left: 1px solid #E6E6E6;
+}
+
+.counter__decrement {
+  left: 0;
+  top: 0;
+  border-right: 1px solid #E6E6E6;
+  line-height: 1.6875rem;
+}
+
+.input-label {
+  font-weight: 400 !important;
+}
+
+/* ------------------------------ COUNTER END ------------------------------ */
 @media only screen and (max-width: 575px) {
   .fs-16 {
     font-size: 14px;
