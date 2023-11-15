@@ -42,7 +42,7 @@ display: flex;align-items: center;
         position: relative;
         background-color: var(--color-blue-shade) !important;
         background: var(--color-blue-shade) !important;
-        .edit-icon {
+        > .edit-icon {
             position: absolute;
             top: 15px;
             right: 15px;
