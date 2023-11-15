@@ -272,4 +272,10 @@ h1 {
     }
   }
   
- 
+  .no_result_found {
+    text-align: center;
+    p {
+      max-width: 317px;
+      margin: 0 auto;
+    }
+  }
