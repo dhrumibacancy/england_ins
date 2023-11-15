@@ -1,0 +1,983 @@
+.page {
+  page-break-after: always;
+  position: relative;
+  .form-img {
+    width: 100%;
+  }
+}
+
+.page-2 .page-details.mapfre.mapfre-supplemental .prior-coverage {
+  position: absolute;
+  top: 49px;
+  left: 60px;
+}
+
+.page-details.mapfre {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10000;
+
+  input[type="date"],
+  input[type="year"],
+  input[type="month"] {
+    &::-webkit-inner-spin-button,
+    &::-webkit-calendar-picker-indicator {
+      display: none;
+      -webkit-appearance: none;
+    }
+  }
+
+  .form-img {
+    width: 100%;
+  }
+
+  .answer {
+    position: absolute;
+    bottom: 0;
+  }
+
+  .answer img {
+    width: 100%;
+    position: absolute;
+  }
+  .answer input,
+  .answer textarea {
+    width: 100%;
+    font-size: 10px;
+    font-weight: bold;
+    color: #141414;
+    position: absolute;
+    background: transparent;
+    overflow: hidden;
+  }
+
+  .answer textarea {
+    font-size: 10px;
+    padding: 0 5px;
+  }
+
+  .answer.monospace {
+    font-family: monospace;
+    letter-spacing: 7px;
+  }
+  .answer .check-mark {
+    position: absolute;
+
+    &::before,
+    &::after {
+      content: "";
+      height: 2px;
+      width: 15px;
+      background: black;
+      position: absolute;
+      transform: rotate(45deg);
+    }
+    &::before {
+      transform: rotate(-45deg);
+    }
+  }
+  textarea.form-control {
+    border: 0;
+    resize: none;
+    height: 100%;
+  }
+
+  .applicant-about {
+    position: absolute;
+    top: 235px;
+    left: 50px;
+    input {
+      font-size: 14px;
+    }
+
+    .a1 {
+      left: 165px;
+      width: 266px;
+      top: 0;
+    }
+    .a2 {
+      left: 577px;
+      width: 96px;
+      top: 0;
+    }
+    .a3 {
+      left: 188px;
+      width: 236px;
+      top: 35px;
+    }
+    .a4 {
+      left: 577px;
+      width: 96px;
+      top: 35px;
+    }
+  }
+
+  .prior-coverage {
+    position: absolute;
+    top: 381px;
+    left: 50px;
+    input {
+      font-size: 12px;
+    }
+
+    .a1 {
+      left: 465px;
+      width: 20px;
+      top: 21px;
+      &.a1-2 {
+        left: 545px;
+      }
+    }
+    .a2 {
+      left: 465px;
+      width: 20px;
+      top: 52px;
+
+      &.a2-2 {
+        left: 545px;
+      }
+    }
+    .a3 {
+      left: 465px;
+      width: 20px;
+      top: 81px;
+      &.a3-2 {
+        left: 545px;
+      }
+    }
+  }
+
+  .accidental-info {
+    position: absolute;
+    top: 558px;
+    left: 50px;
+    input {
+      font-size: 12px;
+    }
+
+    .r1 {
+      top: 56px;
+    }
+    .r2 {
+      top: 75px;
+    }
+    .r3 {
+      top: 93px;
+    }
+    .r4 {
+      top: 111px;
+    }
+
+    .a1 {
+      left: 10px;
+      width: 49px;
+    }
+    .a2 {
+      left: 68px;
+      width: 225px;
+    }
+    .a3 {
+      left: 302px;
+      width: 138px;
+    }
+    .a4 {
+      left: 447px;
+      width: 142px;
+    }
+    .a5 {
+      left: 600px;
+      width: 80px;
+    }
+  }
+
+  .signature-info {
+    position: absolute;
+    top: 948px;
+    left: 319px;
+
+    .a1 {
+      left: 195px;
+      width: 202px;
+      top: -31px;
+    }
+  }
+
+  &.mapfre-eft {
+    .applicant-about {
+      position: absolute;
+      top: 155px;
+      left: 50px;
+
+      .a1 {
+        left: 121px;
+        width: 296px;
+        top: 0;
+      }
+      .a2 {
+        left: 487px;
+        width: 176px;
+        top: 0;
+      }
+      .a3 {
+        left: 103px;
+        width: 131px;
+        top: 35px;
+      }
+      .a4 {
+        left: 457px;
+        width: 186px;
+        top: 62px;
+        .a4-1 {
+          left: 10px;
+          width: 30px;
+        }
+        .a4-2 {
+          left: 51px;
+          width: 30px;
+        }
+        .a4-3 {
+          left: 90px;
+          width: 40px;
+        }
+      }
+      .a5 {
+        left: 125px;
+        width: 194px;
+        top: 61px;
+      }
+      .a6 {
+        left: 19px;
+        width: 194px;
+        height: 54px;
+        top: 85px;
+        textarea {
+          line-height: 1.8;
+        }
+      }
+      .a7 {
+        left: 147px;
+        width: 44px;
+        top: 151px;
+      }
+      .a8 {
+        left: 230px;
+        width: 44px;
+        top: 151px;
+      }
+      .a9 {
+        left: 330px;
+        width: 64px;
+        top: 151px;
+      }
+    }
+
+    .prior-coverage {
+      position: absolute;
+      top: 342px;
+
+      .a1 {
+        left: 278px;
+        &.a1-2 {
+          left: 453px;
+        }
+      }
+
+      .a2 {
+        top: 42px;
+        left: 16px;
+        &.a2-2 {
+          left: 16px;
+        }
+      }
+      .a3 {
+        left: 109px;
+        width: 440px;
+        top: 48px;
+      }
+      .a4 {
+        left: 29px;
+        width: 370px;
+        top: 97px;
+        &.monospace {
+          input {
+            font-family: monospace;
+            letter-spacing: 37px;
+          }
+        }
+      }
+
+      .a5 {
+        left: 429px;
+        width: 240px;
+        top: 97px;
+      }
+
+      .a6 {
+        left: 179px;
+        width: 490px;
+        top: 140px;
+      }
+
+      .a7 {
+        left: 186px;
+        width: 20px;
+        top: 212px;
+
+        .circle {
+          width: 15px;
+          height: 15px;
+          border: 1px solid black;
+          border-radius: 20px;
+
+          &:before,
+          &:after {
+            display: none;
+          }
+        }
+      }
+    }
+
+    .signature-info {
+      position: absolute;
+      top: 746px;
+      .a2 {
+        left: 195px;
+        width: 202px;
+        top: 1px;
+      }
+    }
+  }
+
+  &.mapfre-annual-milage {
+    .applicant-about {
+      position: absolute;
+      top: 235px;
+      left: 280px;
+
+      .a1 {
+        left: 225px;
+        width: 216px;
+        top: 3px;
+      }
+
+      .a2 {
+        left: 223px;
+        width: 226px;
+        top: 20px;
+      }
+
+      .a3 {
+        left: 260px;
+        width: 236px;
+        top: 51px;
+      }
+
+      .a4 {
+        left: 267px;
+        width: 186px;
+        top: 68px;
+      }
+    }
+
+    .vehicle-details {
+      position: absolute;
+      top: 405px;
+      left: 90px;
+
+      input {
+        text-align: center;
+      }
+
+      .v1 {
+        left: 220px;
+        top: 0;
+      }
+
+      .v2 {
+        left: 431px;
+        top: 0;
+      }
+
+      .v3 {
+        left: 220px;
+        top: 194px;
+      }
+
+      .v4 {
+        left: 431px;
+        top: 194px;
+      }
+
+      .a1 {
+        left: 0;
+        width: 200px;
+        top: 0;
+      }
+
+      .a2 {
+        left: 0;
+        width: 200px;
+        top: 35px;
+      }
+
+      .a3 {
+        left: 0;
+        width: 200px;
+        top: 67px;
+      }
+
+      .a4 {
+        left: 0;
+        width: 200px;
+        top: 100px;
+      }
+    }
+
+    .signature-info {
+      position: absolute;
+      top: 867px;
+      left: 319px;
+    }
+  }
+
+  &.mapfre-exclusion {
+    .applicant-about {
+      position: absolute;
+      top: 525px;
+      left: 70px;
+
+      .a1 {
+        left: 232px;
+        width: 376px;
+        top: 3px;
+      }
+      .a2 {
+        left: 234px;
+        width: 366px;
+        top: 37px;
+      }
+      .a3 {
+        left: 232px;
+        width: 366px;
+        top: 71px;
+      }
+    }
+
+    .signature-info {
+      position: absolute;
+      top: 660px;
+      left: 0;
+
+      .a1 {
+        left: 115px;
+        width: 130px;
+        top: 0;
+      }
+
+      .a2 {
+        left: 115px;
+        width: 130px;
+        top: 90px;
+      }
+    }
+  }
+
+  &.mapfre-supplemental {
+    .applicant-about {
+      position: absolute;
+      top: 145px;
+      left: 50px;
+      input {
+        font-size: 12px;
+      }
+      .a1 {
+        left: 90px;
+        width: 266px;
+        top: 4px;
+      }
+      .a2 {
+        left: 90px;
+        width: 266px;
+        top: 32px;
+      }
+      .a3 {
+        left: 50px;
+        width: 195px;
+        top: 58px;
+      }
+      .a4 {
+        left: 270px;
+        width: 94px;
+        top: 67px;
+      }
+      .a5 {
+        left: 90px;
+        width: 266px;
+        top: 82px;
+      }
+      .a6 {
+        left: 70px;
+        width: 115px;
+        top: 96px;
+      }
+      .a7 {
+        left: 250px;
+        width: 115px;
+        top: 96px;
+      }
+      .a8 {
+        left: 400px;
+        width: 300px;
+        height: 60px;
+        top: -10px;
+      }
+      .a9 {
+        left: 490px;
+        width: 210px;
+        top: 62px;
+      }
+      .a10 {
+        left: 520px;
+        width: 285px;
+        top: 90px;
+      }
+    }
+
+    .prior-coverage {
+      position: absolute;
+      top: 251px;
+      left: 50px;
+
+      input {
+        text-align: left;
+      }
+      .a1 {
+        left: 618px;
+        width: 20px;
+        top: 21px;
+
+        &.a1-2 {
+          left: 665px;
+        }
+      }
+
+      .a1-other-1 {
+        left: 285px;
+        width: 320px;
+        top: 72px;
+      }
+
+      .a1-other-2 {
+        left: 285px;
+        width: 320px;
+        top: 93px;
+      }
+
+      .a2 {
+        left: 645px;
+        width: 161px;
+        top: 131px;
+      }
+      .a3 {
+        left: 645px;
+        width: 161px;
+        top: 152px;
+      }
+      .a4 {
+        left: 355px;
+        width: 161px;
+        top: 179px;
+      }
+      .a5 {
+        left: 618px;
+        width: 20px;
+        top: 210px;
+
+        &.a5-2 {
+          left: 665px;
+        }
+      }
+      .a6 {
+        left: 535px;
+        width: 161px;
+        top: 222px;
+      }
+      .a7 {
+        left: 675px;
+        width: 31px;
+        top: 242px;
+      }
+      .a8 {
+        left: 618px;
+        width: 20px;
+        top: 270px;
+
+        &.a8-2 {
+          left: 665px;
+        }
+      }
+
+      .a8-other-1 {
+        left: 365px;
+        width: 211px;
+        top: 290px;
+      }
+
+      .a8-other-2 {
+        left: 455px;
+        width: 211px;
+        top: 309px;
+      }
+
+      .a8-other-3 {
+        left: 0;
+        width: 211px;
+        top: 339px;
+
+        .a1 {
+          left: 76px;
+          width: 41px;
+          top: 11px;
+        }
+        .a2 {
+          left: 294px;
+          width: 41px;
+          top: 11px;
+        }
+        .a3 {
+          left: 76px;
+          width: 41px;
+          top: 27px;
+        }
+        .a4 {
+          left: 294px;
+          width: 41px;
+          top: 27px;
+        }
+        .a5 {
+          left: 76px;
+          width: 41px;
+          top: 41px;
+        }
+      }
+
+      .a9 {
+        left: 618px;
+        width: 20px;
+        top: 412px;
+
+        &.a9-2 {
+          left: 665px;
+        }
+      }
+
+      .a11 {
+        left: 618px;
+        width: 20px;
+        top: 459px;
+
+        &.a11-2 {
+          left: 665px;
+        }
+      }
+
+      .a12 {
+        left: 618px;
+        width: 20px;
+        top: 496px;
+
+        &.a12-2 {
+          left: 665px;
+        }
+      }
+
+      .a13 {
+        left: 618px;
+        width: 20px;
+        top: 534px;
+
+        &.a13-2 {
+          left: 665px;
+        }
+      }
+
+      .a14 {
+        left: 618px;
+        width: 20px;
+        top: 584px;
+
+        &.a14-2 {
+          left: 665px;
+        }
+      }
+
+      .a15 {
+        left: 618px;
+        width: 20px;
+        top: 611px;
+
+        &.a15-2 {
+          left: 665px;
+        }
+      }
+
+      .a16 {
+        left: 618px;
+        width: 20px;
+        top: 632px;
+
+        &.a16-2 {
+          left: 665px;
+        }
+      }
+
+      .a16-other-1 {
+        left: 228px;
+        top: 642px;
+
+        .a1 {
+          left: 0;
+          width: 48px;
+          top: 0;
+        }
+        .a2 {
+          left: 60px;
+          width: 48px;
+          top: 0;
+        }
+        .a3 {
+          left: 140px;
+          width: 48px;
+          top: 0;
+        }
+        .a4 {
+          left: 200px;
+          width: 48px;
+          top: 0;
+        }
+      }
+
+      .a17 {
+        left: 618px;
+        width: 20px;
+        top: 679px;
+
+        &.a17-2 {
+          left: 665px;
+        }
+      }
+
+      .a18 {
+        left: 618px;
+        width: 20px;
+        top: 706px;
+
+        &.a18-2 {
+          left: 665px;
+        }
+      }
+
+      .a18-other-1 {
+        left: 403px;
+        top: 712px;
+
+        .a1 {
+          left: 0;
+          width: 48px;
+          top: 0;
+        }
+        .a2 {
+          left: 51px;
+          width: 48px;
+          top: 0;
+        }
+        .a3 {
+          left: 109px;
+          width: 48px;
+          top: 0;
+        }
+        .a4 {
+          left: 163px;
+          width: 48px;
+          top: 0;
+        }
+      }
+
+      .a19 {
+        left: 609px;
+        width: 20px;
+        top: -5px;
+
+        &.a19-2 {
+          left: 652px;
+        }
+      }
+
+      .a20 {
+        left: 609px;
+        width: 20px;
+        top: 40px;
+
+        &.a20-2 {
+          left: 652px;
+        }
+      }
+
+      .a21 {
+        left: 609px;
+        width: 20px;
+        top: 60px;
+
+        &.a21-2 {
+          left: 652px;
+        }
+      }
+
+      .a22 {
+        left: 609px;
+        width: 20px;
+        top: 96px;
+
+        &.a22-2 {
+          left: 652px;
+        }
+      }
+      .a22-other-1 {
+        left: 30px;
+        width: 500px;
+        height: 31px;
+        top: 116px;
+      }
+
+      .a23 {
+        left: 609px;
+        width: 20px;
+        top: 154px;
+
+        &.a23-2 {
+          left: 652px;
+        }
+      }
+
+      .a23-other-1 {
+        left: 30px;
+        width: 500px;
+        top: 174px;
+
+        .r1 {
+          top: 24px;
+        }
+        .r2 {
+          top: 37px;
+        }
+        .r3 {
+          top: 50px;
+        }
+        .r4 {
+          top: 64px;
+        }
+
+        .a1 {
+          left: 143px;
+          width: 47px;
+          top: 0;
+        }
+
+        .a2 {
+          left: 249px;
+          width: 204px;
+          top: 0;
+        }
+
+        .a3 {
+          left: 513px;
+          width: 111px;
+          top: 0;
+        }
+      }
+
+      .a24 {
+        left: 609px;
+        width: 20px;
+        top: 285px;
+
+        &.a24-2 {
+          left: 652px;
+        }
+      }
+
+      .a25-1 {
+        left: 277px;
+        width: 130px;
+        top: 316px;
+      }
+
+      .a25-2 {
+        left: 536px;
+        width: 140px;
+        top: 316px;
+      }
+
+      .a27 {
+        left: 606px;
+        width: 140px;
+        top: 402px;
+        &.a27-2 {
+          left: 652px;
+        }
+      }
+
+      .a27-other-1 {
+        left: 326px;
+        width: 200px;
+        top: 410px;
+      }
+
+      .a28 {
+        left: 606px;
+        width: 140px;
+        top: 440px;
+        &.a28-2 {
+          left: 652px;
+        }
+      }
+
+      .a29 {
+        left: 606px;
+        width: 140px;
+        top: 471px;
+        &.a29-2 {
+          left: 652px;
+        }
+      }
+    }
+
+    .signature-info {
+      position: absolute;
+      top: 628px;
+      left: 319px;
+      .a1 {
+        left: 130px;
+        width: 202px;
+        top: 0;
+      }
+      .a2 {
+        left: 130px;
+        width: 202px;
+        top: 70px;
+      }
+      .a3 {
+        left: -180px;
+        width: 202px;
+        top: 152px;
+      }
+      .a4 {
+        left: 130px;
+        width: 202px;
+        top: 152px;
+      }
+    }
+  }
+}

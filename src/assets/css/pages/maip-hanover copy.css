@@ -1,0 +1,289 @@
+/* custom main 
+ UnExpected King Tirth Shah */ 
+ 
+ .page {
+  page-break-after: always;
+  position: relative;
+}
+.page .form-img {
+  width: 100%;
+}
+
+.page-details.hanover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10000;
+}
+.page-details.hanover input[type=date]::-webkit-inner-spin-button, .page-details.hanover input[type=date]::-webkit-calendar-picker-indicator,
+.page-details.hanover input[type=year]::-webkit-inner-spin-button,
+.page-details.hanover input[type=year]::-webkit-calendar-picker-indicator,
+.page-details.hanover input[type=month]::-webkit-inner-spin-button,
+.page-details.hanover input[type=month]::-webkit-calendar-picker-indicator {
+  display: none;
+  -webkit-appearance: none;
+}
+.page-details.hanover .form-img {
+  width: 100%;
+}
+.page-details.hanover .answer {
+  position: absolute;
+  bottom: 0;
+}
+.page-details.hanover .answer img {
+  width: 100%;
+  position: absolute;
+}
+.page-details.hanover .answer input,
+.page-details.hanover .answer textarea {
+  width: 100%;
+  font-size: 10px;
+  font-weight: bold;
+  color: #141414;
+  position: absolute;
+  background: transparent;
+  overflow: hidden;
+}
+.page-details.hanover .answer textarea {
+  font-size: 10px;
+  padding: 0 5px;
+}
+.page-details.hanover .answer.monospace {
+  font-family: monospace;
+  letter-spacing: 7px;
+}
+.page-details.hanover .answer .check-mark {
+  position: absolute;
+}
+.page-details.hanover .answer .check-mark::before, .page-details.hanover .answer .check-mark::after {
+  content: "";
+  height: 2px;
+  width: 15px;
+  background: black;
+  position: absolute;
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+.page-details.hanover .answer .check-mark::before {
+  -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+.page-details.hanover textarea.form-control {
+  border: 0;
+  resize: none;
+  height: 100%;
+}
+.page-details.hanover .applicant-about {
+  position: absolute;
+  top: 115px;
+  left: 50px;
+}
+.page-details.hanover .applicant-about input {
+  font-size: 14px;
+}
+.page-details.hanover .applicant-about .a1 {
+  left: 115px;
+  width: 576px;
+  top: 6px;
+}
+.page-details.hanover .applicant-about .a2 {
+  left: 58px;
+  width: 632px;
+  top: 30px;
+}
+.page-details.hanover .prior-coverage {
+  position: absolute;
+  top: 198px;
+  left: 50px;
+}
+.page-details.hanover .prior-coverage input {
+  font-size: 12px;
+}
+.page-details.hanover .prior-coverage .a1 {
+  left: 0;
+  width: 170px;
+  top: 10px;
+}
+.page-details.hanover .prior-coverage .a2 {
+  left: 440px;
+  width: 20px;
+  top: 10px;
+}
+.page-details.hanover .prior-coverage .a2.a2-2 {
+  left: 489px;
+}
+.page-details.hanover .prior-coverage .a3 {
+  left: 538px;
+  width: 153px;
+  top: 10px;
+}
+.page-details.hanover .accidental-info {
+  position: absolute;
+  top: 258px;
+  left: 50px;
+}
+.page-details.hanover .accidental-info input {
+  font-size: 12px;
+}
+.page-details.hanover .accidental-info .d1 {
+  top: 10px;
+  left: 374px;
+}
+.page-details.hanover .accidental-info .d1.d1-2 {
+  left: 434px;
+}
+.page-details.hanover .accidental-info .r1 {
+  top: 59px;
+}
+.page-details.hanover .accidental-info .r2 {
+  top: 77px;
+}
+.page-details.hanover .accidental-info .r3 {
+  top: 94px;
+}
+.page-details.hanover .accidental-info .a1 {
+  left: 0;
+  width: 20px;
+  text-align: center;
+}
+.page-details.hanover .accidental-info .a2 {
+  left: 30px;
+  width: 125px;
+}
+.page-details.hanover .accidental-info .a3 {
+  left: 159px;
+  width: 203px;
+}
+.page-details.hanover .accidental-info .a4 {
+  left: 370px;
+  width: 131px;
+}
+.page-details.hanover .accidental-info .a5 {
+  left: 510px;
+  width: 20px;
+  top: 8px;
+}
+.page-details.hanover .accidental-info .a5.a5-2 {
+  left: 541px;
+}
+.page-details.hanover .accidental-info .a6 {
+  left: 573px;
+  width: 116px;
+}
+.page-details.hanover .policy-info {
+  position: absolute;
+  top: 376px;
+  left: 50px;
+}
+.page-details.hanover .policy-info input {
+  font-size: 12px;
+}
+.page-details.hanover .policy-info .d1 {
+  top: 12px;
+  left: 473px;
+}
+.page-details.hanover .policy-info .d1.d1-2 {
+  left: 523px;
+}
+.page-details.hanover .policy-info .r1 {
+  top: 59px;
+}
+.page-details.hanover .policy-info .r2 {
+  top: 77px;
+}
+.page-details.hanover .policy-info .r3 {
+  top: 94px;
+}
+.page-details.hanover .policy-info .a1 {
+  left: 0;
+  width: 133px;
+}
+.page-details.hanover .policy-info .a2 {
+  left: 144px;
+  width: 104px;
+}
+.page-details.hanover .policy-info .a3 {
+  left: 255px;
+  width: 313px;
+}
+.page-details.hanover .additional-info {
+  position: absolute;
+  top: 537px;
+  left: 50px;
+}
+.page-details.hanover .additional-info input {
+  font-size: 12px;
+}
+.page-details.hanover .additional-info .a1 {
+  left: 3px;
+  width: 20px;
+}
+.page-details.hanover .additional-info .a2 {
+  left: 3px;
+  width: 20px;
+  top: 20px;
+}
+.page-details.hanover .additional-info .a3 {
+  left: 3px;
+  width: 20px;
+  top: 40px;
+}
+.page-details.hanover .additional-info .a4 {
+  left: 3px;
+  width: 20px;
+  top: 60px;
+}
+.page-details.hanover .additional-info .a5 {
+  left: 3px;
+  width: 20px;
+  top: 80px;
+}
+.page-details.hanover .additional-info .a6 {
+  left: 267px;
+  width: 20px;
+}
+.page-details.hanover .additional-info .a7 {
+  left: 267px;
+  width: 20px;
+  top: 20px;
+}
+.page-details.hanover .additional-info .a8 {
+  left: 267px;
+  width: 20px;
+  top: 40px;
+}
+.page-details.hanover .additional-info .a9 {
+  left: 267px;
+  width: 20px;
+  top: 60px;
+}
+.page-details.hanover .additional-info .a10 {
+  left: 0;
+  width: 690px;
+  top: 104px;
+  height: 41px;
+}
+.page-details.hanover .signature-info {
+  position: absolute;
+  top: 838px;
+  left: 220px;
+}
+.page-details.hanover .signature-info .a1 {
+  left: 195px;
+  width: 310px;
+  top: -31px;
+}
+.page-details.hanover .signature-info .a2 {
+  left: 195px;
+  width: 310px;
+  top: 39px;
+}
+.page-details.hanover .signature-info .a3 {
+  left: 195px;
+  width: 310px;
+  top: 100px;
+}
+/*# sourceMappingURL=maip-hanover copy.css.map */

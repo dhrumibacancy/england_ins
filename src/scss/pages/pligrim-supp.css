@@ -1,0 +1,451 @@
+.page {
+  page-break-after: always;
+  position: relative;
+}
+
+.page-details.pilgrim-supplemental {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10000;
+}
+.page-details.pilgrim-supplemental input[type=date]::-webkit-inner-spin-button, .page-details.pilgrim-supplemental input[type=date]::-webkit-calendar-picker-indicator,
+.page-details.pilgrim-supplemental input[type=year]::-webkit-inner-spin-button,
+.page-details.pilgrim-supplemental input[type=year]::-webkit-calendar-picker-indicator,
+.page-details.pilgrim-supplemental input[type=month]::-webkit-inner-spin-button,
+.page-details.pilgrim-supplemental input[type=month]::-webkit-calendar-picker-indicator {
+  display: none;
+  -webkit-appearance: none;
+}
+.page-details.pilgrim-supplemental .form-img {
+  width: 100%;
+}
+.page-details.pilgrim-supplemental .answer {
+  position: absolute;
+  bottom: 0;
+}
+.page-details.pilgrim-supplemental .answer img {
+  width: 100%;
+  position: absolute;
+}
+.page-details.pilgrim-supplemental .answer input,
+.page-details.pilgrim-supplemental .answer textarea {
+  width: 100%;
+  font-size: 10px;
+  font-weight: bold;
+  color: #141414;
+  position: absolute;
+  background: transparent;
+  overflow: hidden;
+  border: 0;
+}
+.page-details.pilgrim-supplemental .answer textarea {
+  font-size: 10px;
+  padding: 0 5px;
+}
+.page-details.pilgrim-supplemental .answer.monospace {
+  font-family: monospace;
+  letter-spacing: 7px;
+}
+.page-details.pilgrim-supplemental .answer .check-mark {
+  position: absolute;
+}
+.page-details.pilgrim-supplemental .answer .check-mark::before, .page-details.pilgrim-supplemental .answer .check-mark::after {
+  content: "";
+  height: 2px;
+  width: 15px;
+  background: black;
+  position: absolute;
+  transform: rotate(45deg);
+}
+.page-details.pilgrim-supplemental .answer .check-mark::before {
+  transform: rotate(-45deg);
+}
+.page-details.pilgrim-supplemental textarea.form-control {
+  border: 0;
+  resize: none;
+  height: 100%;
+}
+.page-details.pilgrim-supplemental .applicant-about {
+  position: absolute;
+  top: 288px;
+  left: 210px;
+}
+.page-details.pilgrim-supplemental .applicant-about input {
+  font-size: 14px;
+}
+.page-details.pilgrim-supplemental .applicant-about .a1 {
+  left: 0;
+  top: 0;
+  width: 460px;
+}
+.page-details.pilgrim-supplemental .applicant-about .a2 {
+  left: 0;
+  top: 20px;
+  width: 460px;
+}
+.page-details.pilgrim-supplemental .policy-plans {
+  position: absolute;
+  top: 474px;
+  left: 93px;
+}
+.page-details.pilgrim-supplemental .policy-plans input {
+  font-size: 14px;
+}
+.page-details.pilgrim-supplemental .policy-plans .r1 {
+  left: 0;
+  top: 0;
+}
+.page-details.pilgrim-supplemental .policy-plans .r1 .a1 {
+  left: 0;
+  top: 0;
+  width: 20px;
+}
+.page-details.pilgrim-supplemental .policy-plans .r2 {
+  left: 0;
+  top: 95px;
+}
+.page-details.pilgrim-supplemental .policy-plans .r2 .a1 {
+  left: 0;
+  top: 0;
+  width: 20px;
+}
+.page-details.pilgrim-supplemental .policy-plans .r2 .a2 {
+  top: 60px;
+  left: 171px;
+  width: 405px;
+}
+.page-details.pilgrim-supplemental .policy-plans .r2 .a3 {
+  top: 83px;
+  left: 120px;
+  width: 460px;
+}
+.page-details.pilgrim-supplemental .policy-plans .r2 .a4 {
+  top: 106px;
+  left: 120px;
+  width: 460px;
+}
+.page-details.pilgrim-supplemental .policy-plans .r2 .a5 {
+  top: 130px;
+  left: 57px;
+  width: 312px;
+}
+.page-details.pilgrim-supplemental .policy-plans .r2 .a6 {
+  top: 134px;
+  left: 408px;
+  width: 32px;
+}
+.page-details.pilgrim-supplemental .policy-plans .r2 .a6 input {
+  font-size: 10px;
+}
+.page-details.pilgrim-supplemental .policy-plans .r2 .a7 {
+  top: 134px;
+  left: 499px;
+  width: 80px;
+}
+.page-details.pilgrim-supplemental .policy-plans .r2 .a7 input {
+  font-size: 10px;
+}
+.page-details.pilgrim-supplemental .policy-plans .r3 {
+  left: 0;
+  top: 278px;
+}
+.page-details.pilgrim-supplemental .policy-plans .r4 {
+  left: 0;
+  top: 356px;
+}
+.page-details.pilgrim-supplemental .rating-info {
+  position: absolute;
+  top: 307px;
+  left: 50px;
+}
+.page-details.pilgrim-supplemental .rating-info input {
+  font-size: 14px;
+}
+.page-details.pilgrim-supplemental .rating-info .r1 {
+  left: 380px;
+  top: 1px;
+}
+.page-details.pilgrim-supplemental .rating-info .r1 .a1 {
+  left: 0;
+  top: 0;
+  width: 25px;
+}
+.page-details.pilgrim-supplemental .rating-info .r1 .a2 {
+  top: 0;
+  left: 40px;
+  width: 25px;
+}
+.page-details.pilgrim-supplemental .rating-info .r1 .a3 {
+  top: 0;
+  left: 80px;
+  width: 100px;
+}
+.page-details.pilgrim-supplemental .rating-info .r2 {
+  left: 445px;
+  top: 69px;
+}
+.page-details.pilgrim-supplemental .rating-info .r2 .a1 {
+  left: 0;
+  top: 0;
+  width: 25px;
+}
+.page-details.pilgrim-supplemental .rating-info .r2 .a2 {
+  top: 0;
+  left: 40px;
+  width: 25px;
+}
+.page-details.pilgrim-supplemental .rating-info .r2 .a3 {
+  top: 0;
+  left: 80px;
+  width: 100px;
+}
+.page-details.pilgrim-supplemental .rating-info .r3 {
+  top: 102px;
+  left: 50px;
+  width: 20px;
+}
+.page-details.pilgrim-supplemental .rating-info .r4 {
+  top: 176px;
+  left: 320px;
+  width: 320px;
+}
+.page-details.pilgrim-supplemental .additional-rating {
+  position: absolute;
+  top: 212px;
+  left: 50px;
+}
+.page-details.pilgrim-supplemental .additional-rating input {
+  font-size: 14px;
+}
+.page-details.pilgrim-supplemental .additional-rating .r1 {
+  left: 445px;
+  top: 0px;
+  width: 20px;
+}
+.page-details.pilgrim-supplemental .additional-rating .r1.r1-2 {
+  left: 487px;
+}
+.page-details.pilgrim-supplemental .additional-rating .r2 {
+  left: 114px;
+  top: 95px;
+  width: 530px;
+}
+.page-details.pilgrim-supplemental .additional-rating .r3 {
+  left: 224px;
+  top: 120px;
+  width: 119px;
+}
+.page-details.pilgrim-supplemental .additional-rating .r4 {
+  left: 514px;
+  top: 120px;
+}
+.page-details.pilgrim-supplemental .additional-rating .r4 .a1 {
+  left: 0;
+  top: 0;
+  width: 25px;
+}
+.page-details.pilgrim-supplemental .additional-rating .r4 .a2 {
+  top: 0;
+  left: 40px;
+  width: 25px;
+}
+.page-details.pilgrim-supplemental .additional-rating .r4 .a3 {
+  top: 0;
+  left: 80px;
+  width: 100px;
+}
+.page-details.pilgrim-supplemental .additional-rating .r5 {
+  left: 194px;
+  top: 267px;
+  width: 450px;
+}
+.page-details.pilgrim-supplemental .additional-rating .r6 {
+  left: 307px;
+  top: 289px;
+  width: 338px;
+}
+.page-details.pilgrim-supplemental .additional-rating .r7 {
+  left: 259px;
+  top: 402px;
+  width: 386px;
+}
+.page-details.pilgrim-supplemental .additional-rating .r8 {
+  left: 370px;
+  top: 425px;
+  width: 276px;
+}
+.page-details.pilgrim-supplemental .additional-rating .r9 {
+  left: 236px;
+  top: 523px;
+  width: 413px;
+}
+.page-details.pilgrim-supplemental .good-student-info {
+  position: absolute;
+  top: 466px;
+  left: 223px;
+}
+.page-details.pilgrim-supplemental .good-student-info input {
+  font-size: 14px;
+}
+.page-details.pilgrim-supplemental .good-student-info .a1 {
+  left: 0;
+  top: 0;
+  width: 472px;
+}
+.page-details.pilgrim-supplemental .good-student-info .a2 {
+  top: 22px;
+  left: 0;
+  width: 472px;
+}
+.page-details.pilgrim-supplemental .good-student-info .a3 {
+  top: 47px;
+  left: 0;
+  width: 472px;
+}
+.page-details.pilgrim-supplemental .good-student-info .a4 {
+  top: 69px;
+  left: 0;
+  width: 472px;
+}
+.page-details.pilgrim-supplemental .signature-info {
+  position: absolute;
+  top: 196px;
+  left: 72px;
+}
+.page-details.pilgrim-supplemental .signature-info input {
+  font-size: 14px;
+}
+.page-details.pilgrim-supplemental .signature-info .r1 {
+  top: 0;
+  left: 341px;
+}
+.page-details.pilgrim-supplemental .signature-info .r1 .a1 {
+  top: 0;
+  left: -4px;
+  width: 25px;
+}
+.page-details.pilgrim-supplemental .signature-info .r1 .a2 {
+  top: 0;
+  left: 42px;
+  width: 25px;
+}
+.page-details.pilgrim-supplemental .signature-info .r1 .a3 {
+  top: 0;
+  left: 80px;
+  width: 100px;
+}
+.page-details.pilgrim-supplemental .signature-info .r1 .a4 {
+  top: 0;
+  left: 141px;
+  width: 25px;
+}
+.page-details.pilgrim-supplemental .signature-info .r1 .a5 {
+  top: 0;
+  left: 179px;
+  width: 25px;
+}
+.page-details.pilgrim-supplemental .signature-info .r1 .a6 {
+  top: 10px;
+  left: 210px;
+  width: 25px;
+}
+.page-details.pilgrim-supplemental .signature-info .r1 .a6.a6-1 {
+  left: 249px;
+}
+.page-details.pilgrim-supplemental .signature-info .r2 {
+  top: 140px;
+  left: 341px;
+}
+.page-details.pilgrim-supplemental .signature-info .r2 .a1 {
+  top: 0;
+  left: -4px;
+  width: 25px;
+}
+.page-details.pilgrim-supplemental .signature-info .r2 .a2 {
+  top: 0;
+  left: 42px;
+  width: 25px;
+}
+.page-details.pilgrim-supplemental .signature-info .r2 .a3 {
+  top: 0;
+  left: 80px;
+  width: 100px;
+}
+.page-details.pilgrim-supplemental .signature-info .r2 .a4 {
+  top: 0;
+  left: 141px;
+  width: 25px;
+}
+.page-details.pilgrim-supplemental .signature-info .r2 .a5 {
+  top: 0;
+  left: 179px;
+  width: 25px;
+}
+.page-details.pilgrim-supplemental .signature-info .r2 .a6 {
+  top: 10px;
+  left: 210px;
+  width: 25px;
+}
+.page-details.pilgrim-supplemental .signature-info .r2 .a6.a6-1 {
+  left: 249px;
+}
+.page-details.pilgrim-supplemental .signature-info .r3 {
+  top: 286px;
+  left: 28px;
+  width: 592px;
+  height: 469px;
+}
+.page-details.pilgrim-supplemental .signature-info .r3 textarea {
+  font-size: 14px;
+}
+.page-details.pilgrim-supplemental .away-sutdent-info {
+  position: absolute;
+  top: 725px;
+  left: 72px;
+}
+.page-details.pilgrim-supplemental .away-sutdent-info input {
+  font-size: 14px;
+}
+.page-details.pilgrim-supplemental .away-sutdent-info .a1 {
+  top: 37px;
+  left: 164px;
+  width: 405px;
+}
+.page-details.pilgrim-supplemental .away-sutdent-info .a2 {
+  top: 60px;
+  left: 102px;
+  width: 405px;
+}
+.page-details.pilgrim-supplemental .away-sutdent-info .a3 {
+  top: 83px;
+  left: 120px;
+  width: 460px;
+}
+.page-details.pilgrim-supplemental .away-sutdent-info .a4 {
+  top: 106px;
+  left: 120px;
+  width: 460px;
+}
+.page-details.pilgrim-supplemental .away-sutdent-info .a5 {
+  top: 130px;
+  left: 57px;
+  width: 312px;
+}
+.page-details.pilgrim-supplemental .away-sutdent-info .a6 {
+  top: 134px;
+  left: 438px;
+  width: 32px;
+}
+.page-details.pilgrim-supplemental .away-sutdent-info .a6 input {
+  font-size: 10px;
+}
+.page-details.pilgrim-supplemental .away-sutdent-info .a7 {
+  top: 134px;
+  left: 532px;
+  width: 80px;
+}
+.page-details.pilgrim-supplemental .away-sutdent-info .a7 input {
+  font-size: 10px;
+}/*# sourceMappingURL=pligrim-supp.css.map */

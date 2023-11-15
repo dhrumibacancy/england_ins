@@ -45,8 +45,8 @@
 
 
     <link rel="icon" href="../images/favicon.png" type="image/gif" sizes="16x16">
-    <link rel="stylesheet" href="../assets/css/main.css">
-    <link rel="stylesheet" href="../assets/css/binder-pdf.scss">
+    <!-- <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="stylesheet" href="../assets/css/binder-pdf.scss"> -->
     <style>
         body {
             width: 790px;
@@ -54,13 +54,605 @@
             margin: 0 auto;
             background-color: white;
         }
+
+        .page {
+            page-break-after: always;
+            position: relative;
+        }
+
+        .page-details.binders-pdf {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 10000;
+        }
+
+        .form-img {
+            width: 100%;
+        }
+
+        .page-details.binders-pdf .answer {
+            position: absolute;
+            bottom: 0;
+        }
+
+        .page-details.binders-pdf .answer img {
+            width: 100%;
+            position: absolute;
+        }
+
+        .page-details.binders-pdf .answer input,
+        .page-details.binders-pdf .answer textarea {
+            width: 100%;
+            font-size: 10px;
+            font-weight: bold;
+            color: #141414;
+            position: absolute;
+            background: transparent;
+            overflow: hidden;
+            border: 0;
+        }
+
+        .page-details.binders-pdf .answer textarea {
+            font-size: 10px;
+            padding: 0 5px;
+        }
+
+        .check-mark:after,
+        .check-mark:before {
+            display: none;
+        }
+
+        .page-details.binders-pdf .answer .check-mark {
+            position: absolute;
+            background-image: url(../images/RTA-form/checkmark-icon.png);
+            background-size: contain;
+            background-color: transparent;
+            background-position: center;
+            background-repeat: no-repeat;
+            width: 14px;
+            height: 14px;
+            transform: translateY(-6px);
+        }
+        .page-details.binders-pdf .answer .check-mark:not(.other-true) input{
+            display: none;
+        }
+        .page-details.binders-pdf .answer .check-mark input {
+            margin-top: 6px;
+        }
+
+        .page-details.binders-pdf textarea.form-control {
+            border: 0;
+            resize: none;
+            height: 100%;
+        }
+
+        .page-details.binders-pdf .date-input {
+            left: 670px;
+            top: 46px;
+            width: 90px;
+        }
+
+        .page-details.binders-pdf .insured-section {
+            top: 200px;
+            left: 0;
+            position: absolute;
+        }
+
+        .page-details.binders-pdf .insured-section .insur-1 {
+            top: 15px;
+            left: 25px;
+            height: 56px;
+            width: 330px;
+        }
+
+        .page-details.binders-pdf .certificate-holder-section {
+            top: 863px;
+            left: 0;
+            position: absolute;
+        }
+
+        .page-details.binders-pdf .certificate-holder-section .addrss-1 {
+            top: 5px;
+            left: 30px;
+            height: 86px;
+            width: 360px;
+        }
+
+        .page-details.binders-pdf .coverage-section {
+            top: 307px;
+            left: 193px;
+            position: absolute;
+        }
+
+        .page-details.binders-pdf .coverage-section input {
+            font-size: 12px;
+        }
+
+        .page-details.binders-pdf .coverage-section .c1 {
+            left: 20px;
+            width: 317px;
+        }
+
+        .page-details.binders-pdf .coverage-section .c2 {
+            left: 344px;
+            width: 58px;
+        }
+
+        .page-details.binders-pdf .coverage-section .c2 input {
+            text-align: right;
+        }
+
+        .page-details.binders-pdf .coverage-section .c3 {
+            left: 408px;
+            width: 51px;
+        }
+
+        .page-details.binders-pdf .coverage-section .c3 input {
+            text-align: right;
+        }
+
+        .page-details.binders-pdf .coverage-section .c4 {
+            left: 464px;
+            width: 94px;
+        }
+
+        .page-details.binders-pdf .coverage-section .c4 input {
+            text-align: right;
+        }
+
+        .page-details.binders-pdf .coverage-section .a1 {
+            top: 4px;
+            left: 11px;
+        }
+
+        .page-details.binders-pdf .coverage-section .a2 {
+            top: 17px;
+            left: 11px;
+        }
+
+        .page-details.binders-pdf .coverage-section .a3 {
+            top: 32px;
+            left: 11px;
+        }
+
+        .page-details.binders-pdf .coverage-section .a4 {
+            top: 47px;
+            left: 11px;
+        }
+
+        .page-details.binders-pdf .description-operation-section {
+            top: 200px;
+            left: 396px;
+            position: absolute;
+        }
+
+        .page-details.binders-pdf .description-operation-section .operation-1 {
+            top: 0;
+            left: 0;
+            height: 80px;
+            width: 360px;
+        }
+
+        .page-details.binders-pdf .insurer-options {
+            left: 401px;
+            top: 90px;
+            position: absolute;
+        }
+
+        .page-details.binders-pdf .insurer-options .c1 {
+            top: 0;
+            left: 0;
+            width: 220px;
+        }
+
+        .page-details.binders-pdf .insurer-options .c2 {
+            top: 0;
+            left: 233px;
+            width: 125px;
+        }
+
+        .page-details.binders-pdf .insurer-options .a1 {
+            top: 45px;
+            left: -3px;
+            width: 88px;
+        }
+
+        .page-details.binders-pdf .insurer-options .a2 {
+            top: 44px;
+            left: 90px;
+            width: 64px;
+        }
+
+        .page-details.binders-pdf .insurer-options .a3 {
+            top: 41px;
+            left: 160px;
+            width: 200px;
+        }
+
+        .page-details.binders-pdf .insurer-options .a3.a3-2 {
+            top: 57px;
+        }
+
+        .page-details.binders-pdf .insurer-options .a4 {
+            top: 80px;
+            left: -3px;
+            width: 200px;
+        }
+
+        .page-details.binders-pdf .insurer-options .a5 {
+            top: 80px;
+            left: 117px;
+            width: 240px;
+        }
+
+        .page-details.binders-pdf .insurer-options .left-box {
+            left: 216px;
+            top: 0;
+            position: absolute;
+        }
+
+        .page-details.binders-pdf .insurer-options .left-box .a2 {
+            top: 41px;
+            left: 92px;
+        }
+
+        .page-details.binders-pdf .insurer-options .left-box .a2.a2-2 {
+            top: 57px;
+        }
+
+        .page-details.binders-pdf .limits-box {
+            left: 678px;
+            top: 373px;
+        }
+
+        .page-details.binders-pdf .limits-box>.answer {
+            left: 0;
+            width: 84px;
+            position: unset;
+        }
+
+        .page-details.binders-pdf .limits-box>.answer.other-true {
+            display: flex;
+            position: relative;
+        }
+
+        .page-details.binders-pdf .limits-box>.answer input {
+            text-align: right;
+            font-size: 12px;
+            font-weight: 900;
+            height: 15px;
+            margin-bottom: 0.5px;
+            position: relative;
+        }
+
+        .page-details.binders-pdf .limits-box>.answer.other-true input.other-input {
+            left: -111px;
+            text-align: left;
+            width: 178px;
+            font-weight: 500;
+            font-size: 10px;
+            top: 0;
+            position: absolute;
+        }
+
+        .page-details.binders-pdf .policy-expiry {
+            left: 491px;
+            position: absolute;
+        }
+
+        .page-details.binders-pdf .policy-expiry>.answer {
+            left: 0;
+            width: 55px;
+        }
+
+        .page-details.binders-pdf .policy-expiry .a1 {
+            top: 446px;
+        }
+
+        .page-details.binders-pdf .policy-expiry .a2 {
+            top: 522px;
+        }
+
+        .page-details.binders-pdf .policy-expiry .a3 {
+            top: 587px;
+        }
+
+        .page-details.binders-pdf .policy-expiry .a4 {
+            top: 636px;
+        }
+
+        .page-details.binders-pdf .policy-table {
+            left: 430px;
+            position: absolute;
+        }
+
+        .page-details.binders-pdf .policy-table>.answer {
+            left: 0;
+            width: 55px;
+        }
+
+        .page-details.binders-pdf .policy-table .a1 {
+            top: 430px;
+        }
+
+        .page-details.binders-pdf .policy-table .a2 {
+            top: 522px;
+        }
+
+        .page-details.binders-pdf .policy-table .a3 {
+            top: 587px;
+        }
+
+        .page-details.binders-pdf .policy-table .a4 {
+            top: 643px;
+        }
+
+        .page-details.binders-pdf .policy-table.policy-INSR {
+            left: 30px;
+        }
+
+        .page-details.binders-pdf .policy-table.policy-INSR>.answer {
+            width: 18px;
+        }
+
+        .page-details.binders-pdf .policy-table.policy-type {
+            left: 25px;
+        }
+
+        .page-details.binders-pdf .policy-table.policy-type>.answer {
+            width: 18px;
+        }
+
+        .page-details.binders-pdf .policy-table.policy-type .a1.a1-1 {
+            top: 410px;
+            left: 19px;
+        }
+
+        .page-details.binders-pdf .policy-table.policy-type .a1.a1-2 {
+            top: 410px;
+            left: 117px;
+        }
+
+        .page-details.binders-pdf .policy-table.policy-type .a1.a1-3 {
+            top: 425px;
+            left: 0px;
+        }
+
+        .page-details.binders-pdf .policy-table.policy-type .a1.a1-3.other-true input {
+            display: inline-block;
+            left: 22px;
+            top: -6px;
+            width: 153px;
+            font-size: 10px;
+        }
+
+        .page-details.binders-pdf .policy-table.policy-type .a1.a1-4 {
+            top: 441px;
+            left: 0px;
+        }
+
+        .page-details.binders-pdf .policy-table.policy-type .a1.a1-4.other-true input {
+            display: inline-block;
+            left: 22px;
+            top: -6px;
+            width: 153px;
+            font-size: 10px;
+        }
+
+        .page-details.binders-pdf .policy-table.policy-type .a1.a1-5 {
+            top: 456px;
+            left: 0px;
+        }
+
+        .page-details.binders-pdf .policy-table.policy-type .a1.a1-5.other-true input {
+            display: inline-block;
+            left: 22px;
+            top: -6px;
+            width: 153px;
+            font-size: 10px;
+        }
+
+        .page-details.binders-pdf .policy-table.policy-type .a1.gl-1 {
+            top: 332px;
+            left: 0px;
+        }
+
+        .page-details.binders-pdf .policy-table.policy-type .a1.gl-2 {
+            top: 332px;
+            left: 61px;
+        }
+
+        .page-details.binders-pdf .policy-table.policy-type .a1.gl-3 {
+            top: 332px;
+            left: 117px;
+        }
+
+        .page-details.binders-pdf .policy-table.policy-type .a1.gl-4 {
+            top: 348px;
+            left: 0;
+        }
+
+        .page-details.binders-pdf .policy-table.policy-type .a1.gl-4.other-true input {
+            display: inline-block;
+            left: 22px;
+            top: -6px;
+            width: 141px;
+            font-size: 10px;
+        }
+
+        .page-details.binders-pdf .policy-table.policy-type .a1.gl-5 {
+            top: 363px;
+            left: 0;
+        }
+
+        .page-details.binders-pdf .policy-table.policy-type .a1.gl-5.other-true input {
+            display: inline-block;
+            left: 22px;
+            top: -6px;
+            width: 141px;
+            font-size: 10px;
+        }
+
+        .page-details.binders-pdf .policy-table.policy-type .a2.a2-1 {
+            top: 487px;
+            left: 0;
+        }
+
+        .page-details.binders-pdf .policy-table.policy-type .a2.a2-2 {
+            top: 503px;
+            left: 0;
+        }
+
+        .page-details.binders-pdf .policy-table.policy-type .a2.a2-3 {
+            top: 518px;
+            left: 0;
+        }
+
+        .page-details.binders-pdf .policy-table.policy-type .a2.a2-4 {
+            top: 534px;
+            left: 0;
+        }
+
+        .page-details.binders-pdf .policy-table.policy-type .a2.a2-5 {
+            top: 549px;
+            left: 0;
+        }
+
+        .page-details.binders-pdf .policy-table.policy-type .a2.a2-6 {
+            top: 565px;
+            left: 0;
+        }
+
+        .page-details.binders-pdf .policy-table.policy-type .a2.a2-6.other-true input {
+            display: inline-block;
+            left: 22px;
+            top: -6px;
+            width: 146px;
+            font-size: 10px;
+        }
+
+        .page-details.binders-pdf .policy-table.policy-type .a2.a2-7 {
+            top: 580px;
+            left: 0;
+        }
+
+        .page-details.binders-pdf .policy-table.policy-type .a2.a2-7.other-true input {
+            display: inline-block;
+            left: 22px;
+            top: -6px;
+            width: 146px;
+            font-size: 10px;
+        }
+
+        .page-details.binders-pdf .policy-table.policy-type .a3.a3-1 {
+            top: 611px;
+            left: 0px;
+        }
+
+        .page-details.binders-pdf .policy-table.policy-type .a3.a3-1.other-true input {
+            display: inline-block;
+            left: 101px;
+            top: -6px;
+            width: 57px;
+            font-size: 10px;
+        }
+
+        .page-details.binders-pdf .policy-table.policy-type .a3.a3-2 {
+            top: 627px;
+            left: 0;
+        }
+
+        .page-details.binders-pdf .policy-table.policy-type .a3.a3-2.other-true input {
+            display: inline-block;
+            left: 101px;
+            top: -6px;
+            width: 57px;
+            font-size: 10px;
+        }
+
+        .page-details.binders-pdf .policy-table.policy-type .a4.a4-1 {
+            top: 659px;
+            left: 0;
+        }
+
+        .page-details.binders-pdf .policy-table.policy-type .a4.a4-2 {
+            top: 673px;
+            left: 0;
+        }
+
+        .page-details.binders-pdf .policy-table.policy-type .a4.a4-2.other-true input {
+            display: inline-block;
+            left: 22px;
+            top: -6px;
+            width: 146px;
+            font-size: 10px;
+        }
+
+        .page-details.binders-pdf .policy-table.policy-type .a4.a4-3 {
+            top: 689px;
+            left: 0;
+        }
+
+        .page-details.binders-pdf .policy-table.policy-type .a4.a4-3.other-true input {
+            display: inline-block;
+            left: 22px;
+            top: -6px;
+            width: 146px;
+            font-size: 10px;
+        }
+
+        .page-details.binders-pdf .policy-table.policy-type .a5.a5-1 {
+            top: 720px;
+            left: 0;
+        }
+
+        .page-details.binders-pdf .policy-table.policy-type .a5.a5-2 {
+            top: 735px;
+            left: 0;
+        }
+
+        .page-details.binders-pdf .policy-table.policy-ADDL {
+            left: 236px;
+        }
+
+        .page-details.binders-pdf .policy-table.policy-ADDL>.answer {
+            width: 21px;
+        }
+
+        .page-details.binders-pdf .policy-table.policy-SUBR {
+            left: 260px;
+        }
+
+        .page-details.binders-pdf .policy-table.policy-SUBR>.answer {
+            width: 18px;
+        }
+
+        .page-details.binders-pdf .policy-table.policy-number {
+            left: 280px;
+        }
+
+        .page-details.binders-pdf .policy-table.policy-number>.answer {
+            width: 137px;
+        }
+
+        .page-details.binders-pdf .policy-table.policy-effective {
+            left: 430px;
+        }
+
+        .page-details.binders-pdf .policy-table.policy-expiry {
+            left: 491px;
+        }
+
+        /*# sourceMappingURL=binder-pdf.css.map */
     </style>
 </head>
 
 <body>
 
     <div class="page page-1">
-        <img src="../images/RTA-form/Binder-Blank-pdf.svg" class="form-img" />
+        <img src="../images/RTA-form/Binder-Blank-pdf.png" class="form-img" />
         <div class="page-details binders-pdf">
             <div class="date-block">
                 <div class="answer date-input"><input type="text" value="4/12/2023" /></div>
@@ -101,7 +693,7 @@ Fall River, MA 02721
 
 
             <div class="policy-table policy-type">
-              
+
                 <div class="answer a1 a1-5 other-true"><span class="check-mark"><input type="text" value="Anthing"
                             id="a4-other"></span></div>
                 <div class="answer a1 gl-5 genral-limits other-true"><span class="check-mark"><input type="text"
@@ -233,7 +825,7 @@ FALL RIVER MA 0277
     </div>
 
     <div class="page page-2">
-        <img src="../images/RTA-form/Binder Blank-pdf-2.svg" class="form-img " />
+        <img src="../images/RTA-form/Binder-Blank-pdf-2.png" class="form-img " />
 
     </div>
 

@@ -146,120 +146,144 @@
 }
 .page-details.hanover .accidental-info .a1 {
   left: 0;
-  width: 170px;
+  width: 20px;
+  text-align: center;
 }
 .page-details.hanover .accidental-info .a2 {
-  left: 50px;
-  width: 153px;
+  left: 30px;
+  width: 125px;
 }
 .page-details.hanover .accidental-info .a3 {
-  left: 200px;
-  width: 153px;
+  left: 159px;
+  width: 203px;
 }
 .page-details.hanover .accidental-info .a4 {
-  left: 350px;
-  width: 153px;
+  left: 370px;
+  width: 131px;
 }
 .page-details.hanover .accidental-info .a5 {
-  left: 440px;
+  left: 510px;
   width: 20px;
+  top: 8px;
 }
-.page-details.hanover .accidental-info .a5.a2-2 {
-  left: 489px;
+.page-details.hanover .accidental-info .a5.a5-2 {
+  left: 541px;
 }
 .page-details.hanover .accidental-info .a6 {
-  left: 538px;
-  width: 153px;
+  left: 573px;
+  width: 116px;
 }
-.page-details.hanover .payment-details {
+.page-details.hanover .policy-info {
   position: absolute;
-  top: 742px;
+  top: 376px;
+  left: 50px;
 }
-.page-details.hanover .payment-details .b1.b1-1 {
-  left: 141px;
+.page-details.hanover .policy-info input {
+  font-size: 12px;
+}
+.page-details.hanover .policy-info .d1 {
+  top: 12px;
+  left: 473px;
+}
+.page-details.hanover .policy-info .d1.d1-2 {
+  left: 523px;
+}
+.page-details.hanover .policy-info .r1 {
+  top: 59px;
+}
+.page-details.hanover .policy-info .r2 {
+  top: 77px;
+}
+.page-details.hanover .policy-info .r3 {
+  top: 94px;
+}
+.page-details.hanover .policy-info .a1 {
+  left: 0;
+  width: 133px;
+}
+.page-details.hanover .policy-info .a2 {
+  left: 144px;
+  width: 104px;
+}
+.page-details.hanover .policy-info .a3 {
+  left: 255px;
+  width: 313px;
+}
+.page-details.hanover .additional-info {
+  position: absolute;
+  top: 537px;
+  left: 50px;
+}
+.page-details.hanover .additional-info input {
+  font-size: 12px;
+}
+.page-details.hanover .additional-info .a1 {
+  left: 3px;
   width: 20px;
-  top: 1px;
 }
-.page-details.hanover .payment-details .b1.b1-2 {
-  left: 212px;
+.page-details.hanover .additional-info .a2 {
+  left: 3px;
   width: 20px;
-  top: 1px;
+  top: 20px;
 }
-.page-details.hanover .payment-details .b2 {
-  left: 110px;
-  width: 246px;
-  top: 14px;
-}
-.page-details.hanover .payment-details .b3 {
-  left: 136px;
-  width: 214px;
+.page-details.hanover .additional-info .a3 {
+  left: 3px;
+  width: 20px;
   top: 40px;
 }
-.page-details.hanover .payment-details .b4 {
-  left: 144px;
-  width: 189px;
-  top: 65px;
-}
-.page-details.hanover .payment-details .b4.monospace input {
-  font-family: monospace;
-  letter-spacing: 7px;
-}
-.page-details.hanover .payment-details .b5 {
-  left: 100px;
-  width: 246px;
-  top: 90px;
-}
-.page-details.hanover .payment-details.payment-details-cards {
-  left: 404px;
-}
-.page-details.hanover .payment-details.payment-details-cards .b1.b1-1 {
-  left: 87px;
+.page-details.hanover .additional-info .a4 {
+  left: 3px;
   width: 20px;
-  top: -1px;
+  top: 60px;
 }
-.page-details.hanover .payment-details.payment-details-cards .b1.b1-2 {
-  left: 130px;
+.page-details.hanover .additional-info .a5 {
+  left: 3px;
   width: 20px;
-  top: -1px;
+  top: 80px;
 }
-.page-details.hanover .payment-details.payment-details-cards .b1.b1-3 {
-  left: 173px;
+.page-details.hanover .additional-info .a6 {
+  left: 267px;
   width: 20px;
-  top: -1px;
 }
-.page-details.hanover .payment-details.payment-details-cards .b1.b1-4 {
-  left: 222px;
+.page-details.hanover .additional-info .a7 {
+  left: 267px;
   width: 20px;
-  top: -1px;
+  top: 20px;
 }
-.page-details.hanover .payment-details.payment-details-cards .b2 {
-  left: 72px;
+.page-details.hanover .additional-info .a8 {
+  left: 267px;
+  width: 20px;
+  top: 40px;
 }
-.page-details.hanover .payment-details.payment-details-cards .b3 {
-  left: 115px;
-  width: 216px;
-  top: 53px;
+.page-details.hanover .additional-info .a9 {
+  left: 267px;
+  width: 20px;
+  top: 60px;
 }
-.page-details.hanover .payment-details.payment-details-cards .b3.monospace input {
-  font-family: monospace;
-  letter-spacing: 7px;
+.page-details.hanover .additional-info .a10 {
+  left: 0;
+  width: 690px;
+  top: 104px;
+  height: 41px;
 }
-.page-details.hanover .payment-details.payment-details-cards .b4 {
-  left: 84px;
-  width: 33px;
-  top: 79px;
+.page-details.hanover .signature-info {
+  position: absolute;
+  top: 838px;
+  left: 220px;
 }
-.page-details.hanover .payment-details.payment-details-cards .b4.monospace input {
-  font-family: monospace;
-  letter-spacing: 7px;
+.page-details.hanover .signature-info .a1 {
+  left: 195px;
+  width: 310px;
+  top: -31px;
 }
-.page-details.hanover .payment-details.payment-details-cards .b5 {
-  left: 114px;
-  width: 79px;
-  top: 79px;
+.page-details.hanover .signature-info .a2 {
+  left: 195px;
+  width: 310px;
+  top: 39px;
 }
-.page-details.hanover .payment-details.payment-details-cards .b5.monospace input {
-  font-family: monospace;
-  letter-spacing: 7px;
+.page-details.hanover .signature-info .a3 {
+  left: 195px;
+  width: 310px;
+  top: 100px;
 }
 /*# sourceMappingURL=maip-hanover.css.map */

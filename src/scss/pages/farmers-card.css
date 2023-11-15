@@ -1,0 +1,196 @@
+.page {
+  page-break-after: always;
+  position: relative;
+}
+
+.page-details.farmers-card {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10000;
+}
+.page-details.farmers-card input[type=date]::-webkit-inner-spin-button, .page-details.farmers-card input[type=date]::-webkit-calendar-picker-indicator,
+.page-details.farmers-card input[type=year]::-webkit-inner-spin-button,
+.page-details.farmers-card input[type=year]::-webkit-calendar-picker-indicator,
+.page-details.farmers-card input[type=month]::-webkit-inner-spin-button,
+.page-details.farmers-card input[type=month]::-webkit-calendar-picker-indicator {
+  display: none;
+  -webkit-appearance: none;
+}
+.page-details.farmers-card .form-img {
+  width: 100%;
+}
+.page-details.farmers-card .answer {
+  position: absolute;
+  bottom: 0;
+}
+.page-details.farmers-card .answer img {
+  width: 100%;
+  position: absolute;
+}
+.page-details.farmers-card .answer input,
+.page-details.farmers-card .answer textarea {
+  width: 100%;
+  font-size: 10px;
+  font-weight: bold;
+  color: #141414;
+  position: absolute;
+  background: transparent;
+  overflow: hidden;
+}
+.page-details.farmers-card .answer textarea {
+  font-size: 10px;
+  padding: 0 5px;
+}
+.page-details.farmers-card .answer.monospace {
+  font-family: monospace;
+  letter-spacing: 7px;
+}
+.page-details.farmers-card .answer .check-mark {
+  position: absolute;
+}
+.page-details.farmers-card .answer .check-mark::before, .page-details.farmers-card .answer .check-mark::after {
+  content: "";
+  height: 2px;
+  width: 15px;
+  background: black;
+  position: absolute;
+  transform: rotate(45deg);
+}
+.page-details.farmers-card .answer .check-mark::before {
+  transform: rotate(-45deg);
+}
+.page-details.farmers-card textarea.form-control {
+  border: 0;
+  resize: none;
+  height: 100%;
+}
+.page-details.farmers-card .policy-info {
+  position: absolute;
+  top: 152px;
+  left: 0px;
+}
+.page-details.farmers-card .policy-info .a1 {
+  left: 498px;
+  width: 246px;
+  top: 6px;
+}
+.page-details.farmers-card .policy-info .a2 {
+  left: 327px;
+  width: 182px;
+  top: 31px;
+}
+.page-details.farmers-card .policy-info .a3 {
+  left: 570px;
+  width: 174px;
+  top: 32px;
+}
+.page-details.farmers-card .policy-info .a4 {
+  left: 300px;
+  width: 203px;
+  top: 48px;
+}
+.page-details.farmers-card .policy-info .a5 {
+  left: 570px;
+  width: 174px;
+  top: 48px;
+}
+.page-details.farmers-card .policy-info .a6 {
+  left: 350px;
+  width: 393px;
+  top: 63px;
+}
+.page-details.farmers-card .policy-info .a7 {
+  left: 157px;
+  width: 585px;
+  top: 120px;
+}
+.page-details.farmers-card .payment-details {
+  position: absolute;
+  top: 342px;
+  left: 56px;
+}
+.page-details.farmers-card .payment-details .b1.b1-1 {
+  left: 80px;
+  width: 20px;
+  top: -1px;
+}
+.page-details.farmers-card .payment-details .b1.b1-2 {
+  left: 130px;
+  width: 20px;
+  top: -1px;
+}
+.page-details.farmers-card .payment-details .b1.b1-3 {
+  left: 223px;
+  width: 20px;
+  top: -1px;
+}
+.page-details.farmers-card .payment-details .b1.b1-4 {
+  left: 301px;
+  width: 20px;
+  top: -1px;
+}
+.page-details.farmers-card .payment-details .b2 {
+  left: 237px;
+  top: 6px;
+  width: 446px;
+}
+.page-details.farmers-card .payment-details .b3 {
+  left: 186px;
+  width: 498px;
+  top: 20px;
+}
+.page-details.farmers-card .payment-details .b4 {
+  left: 224px;
+  width: 66px;
+  top: 35px;
+}
+.page-details.farmers-card .payment-details .b5 {
+  left: 407px;
+  width: 96px;
+  top: 35px;
+}
+.page-details.farmers-card .payment-details .b6.b6-1 {
+  left: 201px;
+  width: 20px;
+  top: 60px;
+}
+.page-details.farmers-card .payment-details .b6.b6-2 {
+  left: 242px;
+  width: 20px;
+  top: 59px;
+}
+.page-details.farmers-card .payment-details .b6.b6-3 {
+  left: 430px;
+  width: 20px;
+  top: 59px;
+}
+.page-details.farmers-card .payment-details .b6.b6-4 {
+  left: 482px;
+  width: 20px;
+  top: 59px;
+}
+.page-details.farmers-card .primary-secondary-details {
+  position: absolute;
+  top: 565px;
+}
+.page-details.farmers-card .primary-secondary-details .b1 {
+  left: 265px;
+  top: 6px;
+  width: 481px;
+}
+.page-details.farmers-card .payer-secondary-details {
+  position: absolute;
+  top: 643px;
+}
+.page-details.farmers-card .payer-secondary-details .b1 {
+  left: 80px;
+  top: 6px;
+  width: 161px;
+}
+.page-details.farmers-card .payer-secondary-details .b2 {
+  left: 310px;
+  top: 83px;
+  width: 440px;
+}/*# sourceMappingURL=farmers-card.css.map */
