@@ -303,62 +303,64 @@
   }
 }
 
-.policy-cards {
-  box-shadow: 0px 0px 6px 0px var(--color-drop-shadow);
-  border-radius: 12px;
-  border: 1px solid var(--color-border-light2);
-  padding: 10px 10px 0;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-
-  .btn {
-    min-width: initial;
-  }
-
-  .card-image {
-    background-color: var(--color-blue-shade);
-    border-radius: 3px;
-    padding: 8px 10px;
+.client-profile-cards {
+  .policy-cards {
+    box-shadow: 0px 0px 6px 0px var(--color-drop-shadow);
+    background: #fff;
+    border-radius: 12px;
+    border: 1px solid var(--color-border-light2);
+    padding: 10px 10px 0;
+    height: 100%;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
 
-    img {
-      margin-bottom: 5px;
+    .btn {
+      min-width: initial;
     }
 
-    h4 {
-      font-size: 16px;
-      line-height: 24px;
-      font-weight: 400;
-      color: var(--color-black);
-    }
-  }
-
-  .card-body {
-    padding: 15px 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
-
-  .card-scroll {
-    overflow: auto;
-    max-height: 110px;
-    @include scrollbars(5px, var(--color-primary), #ececec);
-
-    @media screen and (max-width: 778px) {
-      max-height: 120px;
-      overflow: visible;
+    .card-image {
+      background-color: var(--color-blue-shade);
+      border-radius: 3px;
+      padding: 8px 10px;
       display: flex;
       flex-direction: column;
-      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+
+      img {
+        margin-bottom: 5px;
+      }
+
+      h4 {
+        font-size: 16px;
+        line-height: 24px;
+        font-weight: 400;
+        color: var(--color-black);
+      }
+    }
+
+    .card-body {
+      padding: 15px 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .card-scroll {
+      overflow: auto;
+      max-height: 110px;
+      @include scrollbars(5px, var(--color-primary), #ececec);
+
+      @media screen and (max-width: 778px) {
+        max-height: 120px;
+        overflow: visible;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+      }
     }
   }
 }
-
 .billing-section {
   .payment-dropdown {
     border: 1px solid var(--color-border-light2);
@@ -621,6 +623,101 @@
           color: var(--color-has-error);
         }
       }
+    }
+  }
+
+  label.checkbox-inline {
+    &.radio-active {
+      height: auto;
+    }
+
+    &.squar-boxes {
+      width: 200px;
+
+      &.glass-squares {
+        img {
+          width: 45px;
+        }
+        &.no-square img {
+          width: 40px;
+        }
+      }
+      img {
+        margin-bottom: 10px;
+      }
+    }
+  }
+}
+
+.claim-additional-info {
+  padding: 20px 15px;
+  border-radius: 8px;
+}
+
+.vehicle-damage {
+  position: relative;
+  padding: 100px 70px;
+  .vehicle-img {
+    margin: auto;
+    display: block;
+    width: 100%;
+  }
+
+  .damage-sides {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+  }
+
+  .car-sides-input {
+    position: absolute;
+
+    &.none {
+      left: 50%;
+      top: 0;
+    }
+
+    &.front {
+      top: 50%;
+      left: 0;
+    }
+
+    &.rear {
+      top: 50%;
+      left: auto;
+      right: 0;
+    }
+
+    &.left {
+      left: 50%;
+      bottom: 60px;
+    }
+
+    &.right {
+      left: 50%;
+      top: 60px;
+    }
+
+    &.front-left {
+      left: 20%;
+      bottom: 60px;
+    }
+
+    &.rear-left {
+      right: 20%;
+      bottom: 60px;
+    }
+
+    &.front-right {
+      left: 20%;
+      top: 60px;
+    }
+
+    &.rear-right {
+      right: 20%;
+      top: 60px;
     }
   }
 }
@@ -1083,9 +1180,9 @@
     right: -5px;
     top: 40px;
     z-index: 2;
+  }
 }
-}
-.filter-section  .filter-modal{
+.filter-section .filter-modal {
   position: absolute;
   left: auto !important;
   right: 30px !important;
@@ -1102,7 +1199,7 @@
     margin-bottom: 16px;
   }
 
-  .modal-content{
+  .modal-content {
     border: 0;
   }
 }

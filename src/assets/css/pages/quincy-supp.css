@@ -1,0 +1,219 @@
+/* custom main 
+ UnExpected King Tirth Shah */ 
+ 
+ .page {
+  page-break-after: always;
+  position: relative;
+}
+.page .form-img {
+  width: 100%;
+}
+
+.page-details.quincy {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10000;
+}
+.page-details.quincy input[type=date]::-webkit-inner-spin-button, .page-details.quincy input[type=date]::-webkit-calendar-picker-indicator,
+.page-details.quincy input[type=year]::-webkit-inner-spin-button,
+.page-details.quincy input[type=year]::-webkit-calendar-picker-indicator,
+.page-details.quincy input[type=month]::-webkit-inner-spin-button,
+.page-details.quincy input[type=month]::-webkit-calendar-picker-indicator {
+  display: none;
+  -webkit-appearance: none;
+}
+.page-details.quincy .form-img {
+  width: 100%;
+}
+.page-details.quincy .answer {
+  position: absolute;
+  bottom: 0;
+}
+.page-details.quincy .answer img {
+  width: 100%;
+  position: absolute;
+}
+.page-details.quincy .answer input,
+.page-details.quincy .answer textarea {
+  width: 100%;
+  font-size: 10px;
+  font-weight: bold;
+  color: #141414;
+  position: absolute;
+  background: transparent;
+  overflow: hidden;
+}
+.page-details.quincy .answer textarea {
+  font-size: 10px;
+  padding: 0 5px;
+}
+.page-details.quincy .answer.monospace {
+  font-family: monospace;
+  letter-spacing: 7px;
+}
+.page-details.quincy .answer .check-mark {
+  position: absolute;
+}
+.page-details.quincy .answer .check-mark::before, .page-details.quincy .answer .check-mark::after {
+  content: "";
+  height: 2px;
+  width: 15px;
+  background: black;
+  position: absolute;
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+.page-details.quincy .answer .check-mark::before {
+  -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+.page-details.quincy textarea.form-control {
+  border: 0;
+  resize: none;
+  height: 100%;
+}
+.page-details.quincy .policy-about {
+  position: absolute;
+  top: 362px;
+  left: 50px;
+}
+.page-details.quincy .policy-about input {
+  font-size: 14px;
+}
+.page-details.quincy .policy-about .a1 {
+  left: 539px;
+  width: 310px;
+  top: 0;
+}
+.page-details.quincy .policy-about .a1.a1-2 {
+  left: 585px;
+}
+.page-details.quincy .policy-about .a2 {
+  left: 247px;
+  width: 120px;
+  top: 53px;
+}
+.page-details.quincy .policy-about .a3 {
+  left: 475px;
+  width: 120px;
+  top: 53px;
+}
+.page-details.quincy .applicant-about {
+  position: absolute;
+  top: 605px;
+  left: 50px;
+}
+.page-details.quincy .applicant-about input {
+  font-size: 14px;
+}
+.page-details.quincy .applicant-about .a1 {
+  left: 247px;
+  width: 310px;
+  top: 0;
+}
+.page-details.quincy .applicant-about .a2 {
+  left: 247px;
+  width: 310px;
+  top: 28px;
+}
+.page-details.quincy .applicant-about .a3 {
+  left: 247px;
+  width: 310px;
+  top: 54px;
+}
+.page-details.quincy .applicant-about .a4 {
+  left: 247px;
+  width: 310px;
+  top: 77px;
+}
+.page-details.quincy .applicant-about .a5 {
+  left: 247px;
+  width: 310px;
+  top: 103px;
+}
+.page-details.quincy .applicant-about .a6 {
+  left: 247px;
+  width: 310px;
+  top: 130px;
+}
+.page-details.quincy .prior-coverage {
+  position: absolute;
+  top: 128px;
+  left: 50px;
+}
+.page-details.quincy .prior-coverage input {
+  font-size: 12px;
+}
+.page-details.quincy .prior-coverage .a1 {
+  left: 353px;
+  width: 20px;
+  top: 0;
+}
+.page-details.quincy .prior-coverage .a1.a1-2 {
+  left: 393px;
+}
+.page-details.quincy .prior-coverage .a2 {
+  left: 537px;
+  width: 20px;
+  top: 187px;
+}
+.page-details.quincy .prior-coverage .a2.a2-2 {
+  left: 573px;
+}
+.page-details.quincy .prior-coverage .a3 {
+  left: 577px;
+  width: 20px;
+  top: 294px;
+}
+.page-details.quincy .prior-coverage .a3.a3-2 {
+  left: 603px;
+}
+.page-details.quincy .prior-coverage .a4 {
+  left: 160px;
+  width: 20px;
+  top: 427px;
+}
+.page-details.quincy .prior-coverage .a4.a4-2 {
+  left: 212px;
+}
+.page-details.quincy .prior-coverage .a5 {
+  left: 352px;
+  width: 20px;
+  top: 668px;
+}
+.page-details.quincy .prior-coverage .a5.a5-2 {
+  left: 398px;
+}
+.page-details.quincy .prior-coverage .a5-other {
+  left: 92px;
+  width: 369px;
+  top: 708px;
+}
+.page-details.quincy .prior-coverage .a6 {
+  left: 167px;
+  width: 20px;
+  top: 27px;
+}
+.page-details.quincy .prior-coverage .a6.a6-2 {
+  left: 212px;
+}
+.page-details.quincy .signature-info {
+  position: absolute;
+  top: 498px;
+  left: 220px;
+}
+.page-details.quincy .signature-info .a1 {
+  left: 178px;
+  width: 85px;
+  top: 13px;
+}
+.page-details.quincy .signature-info .a2 {
+  left: 178px;
+  width: 85px;
+  top: 98px;
+}
+/*# sourceMappingURL=quincy-supp.css.map */

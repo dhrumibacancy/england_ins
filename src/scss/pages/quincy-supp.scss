@@ -1,0 +1,232 @@
+.page {
+  page-break-after: always;
+  position: relative;
+  .form-img {
+    width: 100%;
+  }
+}
+
+.page-details.quincy {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10000;
+
+  input[type="date"],
+  input[type="year"],
+  input[type="month"] {
+    &::-webkit-inner-spin-button,
+    &::-webkit-calendar-picker-indicator {
+      display: none;
+      -webkit-appearance: none;
+    }
+  }
+
+  .form-img {
+    width: 100%;
+  }
+
+  .answer {
+    position: absolute;
+    bottom: 0;
+  }
+
+  .answer img {
+    width: 100%;
+    position: absolute;
+  }
+  .answer input,
+  .answer textarea {
+    width: 100%;
+    font-size: 10px;
+    font-weight: bold;
+    color: #141414;
+    position: absolute;
+    background: transparent;
+    overflow: hidden;
+  }
+
+  .answer textarea {
+    font-size: 10px;
+    padding: 0 5px;
+  }
+
+  .answer.monospace {
+    font-family: monospace;
+    letter-spacing: 7px;
+  }
+  .answer .check-mark {
+    position: absolute;
+
+    &::before,
+    &::after {
+      content: "";
+      height: 2px;
+      width: 15px;
+      background: black;
+      position: absolute;
+      transform: rotate(45deg);
+    }
+    &::before {
+      transform: rotate(-45deg);
+    }
+  }
+  textarea.form-control {
+    border: 0;
+    resize: none;
+    height: 100%;
+  }
+
+  .policy-about {
+    position: absolute;
+    top: 362px;
+    left: 50px;
+
+    input {
+      font-size: 14px;
+    }
+
+    .a1 {
+      left: 539px;
+      width: 310px;
+      top: 0;
+
+      &.a1-2 {
+        left: 585px;
+      }
+    }
+    .a2 {
+      left: 247px;
+      width: 120px;
+      top: 53px;
+    }
+    .a3 {
+      left: 475px;
+      width: 120px;
+      top: 53px;
+    }
+  }
+  .applicant-about {
+    position: absolute;
+    top: 605px;
+    left: 50px;
+
+    input {
+      font-size: 14px;
+    }
+
+    .a1 {
+      left: 247px;
+      width: 310px;
+      top: 0;
+    }
+    .a2 {
+      left: 247px;
+      width: 310px;
+      top: 28px;
+    }
+    .a3 {
+      left: 247px;
+      width: 310px;
+      top: 54px;
+    }
+    .a4 {
+      left: 247px;
+      width: 310px;
+      top: 77px;
+    }
+    .a5 {
+      left: 247px;
+      width: 310px;
+      top: 103px;
+    }
+    .a6 {
+      left: 247px;
+      width: 310px;
+      top: 130px;
+    }
+  }
+
+  .prior-coverage {
+    position: absolute;
+    top: 128px;
+    left: 50px;
+    input {
+      font-size: 12px;
+    }
+
+    .a1 {
+      left: 353px;
+      width: 20px;
+      top: 0;
+      &.a1-2 {
+        left: 393px;
+      }
+    }
+    .a2 {
+      left: 537px;
+      width: 20px;
+      top: 187px;
+      &.a2-2 {
+        left: 573px;
+      }
+    }
+    .a3 {
+      left: 577px;
+      width: 20px;
+      top: 294px;
+
+      &.a3-2 {
+        left: 603px;
+      }
+    }
+    .a4 {
+      left: 160px;
+      width: 20px;
+      top: 427px;
+      &.a4-2 {
+        left: 212px;
+      }
+    }
+    .a5 {
+      left: 352px;
+      width: 20px;
+      top: 668px;
+      &.a5-2 {
+        left: 398px;
+      }
+    }
+    .a5-other {
+      left: 92px;
+      width: 369px;
+      top: 708px;
+    }
+    .a6 {
+      left: 167px;
+      width: 20px;
+      top: 27px;
+
+      &.a6-2 {
+        left: 212px;
+      }
+    }
+  }
+
+  .signature-info {
+    position: absolute;
+    top: 498px;
+    left: 220px;
+
+    .a1 {
+      left: 178px;
+      width: 85px;
+      top: 13px;
+    }
+    .a2 {
+      left: 178px;
+      width: 85px;
+      top: 98px;
+    }
+  }
+}
