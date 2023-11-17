@@ -126,6 +126,7 @@
   line-height: 1.5rem;
   font-weight: 400;
   margin-bottom: 12px;
+  color: var(--color-black);
 }
 
 .user-card {
@@ -362,13 +363,13 @@
 }
 .policy-table .link-label {
   padding: 0 14px;
-  color: var(--color-light-gray4);
+  color: var(--color-light-gray3);
 }
 .policy-table .policy-table-card {
-  background: var(--color-white);
-  -webkit-box-shadow: 0px 0px 4px 0px var(--color-drop-shadow);
-          box-shadow: 0px 0px 4px 0px var(--color-drop-shadow);
-  border: 1px solid var(--color-border-light);
+  outline: var(--color-border-light) solid 1px;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border-radius: 4px;
   margin-bottom: 10px;
 }
 .policy-table .policy-table-card a {
@@ -478,7 +479,7 @@
   color: var(--color-black);
 }
 .client-profile-cards .policy-cards .card-body {
-  padding: 15px 0;
+  padding: 15px 0 5px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -522,6 +523,11 @@
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
+}
+.client-profile-cards .accordion-item.accordion-white > .accordion-header .accordion-button {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 
 .billing-section .payment-dropdown {
@@ -681,8 +687,9 @@
           align-items: center;
 }
 .claim-section .claim-links img {
-  width: 28px;
-  margin-right: 12px;
+  width: 23px;
+  margin-right: 10px;
+  margin-bottom: 3px;
 }
 .claim-section .claim-progress {
   display: -webkit-box;
@@ -749,11 +756,12 @@
   font-size: 11px;
   line-height: 17px;
   white-space: nowrap;
+  color: var(--color-title);
 }
 .claim-section .claim-progress .progress-step.mark-inprogress .step-symbol::after {
-  background: -webkit-gradient(linear, left top, right top, color-stop(50%, var(--color-blue)), color-stop(50%, var(--color-light-gray4)));
-  background: -o-linear-gradient(left, var(--color-blue) 50%, var(--color-light-gray4) 50%);
-  background: linear-gradient(to right, var(--color-blue) 50%, var(--color-light-gray4) 50%);
+  background: -webkit-gradient(linear, left top, right top, color-stop(50%, var(--color-blue)), color-stop(50%, var(--color-blue)));
+  background: -o-linear-gradient(left, var(--color-blue) 50%, var(--color-blue) 50%);
+  background: linear-gradient(to right, var(--color-blue) 50%, var(--color-blue) 50%);
 }
 .claim-section .claim-progress .progress-step.mark-inprogress .step-symbol img.inprogress {
   display: inline-block;

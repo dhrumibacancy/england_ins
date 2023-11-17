@@ -17,6 +17,7 @@
     @include toRem(line-height, 24);
     font-weight: 400;
     margin-bottom: 12px;
+    color: var(--color-black);
   }
 }
 
@@ -220,13 +221,13 @@
 
   .link-label {
     padding: 0 14px;
-    color: var(--color-light-gray4);
+    color: var(--color-light-gray3);
   }
 
   .policy-table-card {
-    background: var(--color-white);
-    box-shadow: 0px 0px 4px 0px var(--color-drop-shadow);
-    border: 1px solid var(--color-border-light);
+    outline: var(--color-border-light) solid 1px;
+    box-shadow: none;
+    border-radius: 4px;
     margin-bottom: 10px;
 
     a {
@@ -340,7 +341,7 @@
     }
 
     .card-body {
-      padding: 15px 0;
+      padding: 15px 0 5px;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
@@ -359,6 +360,9 @@
         flex-wrap: wrap;
       }
     }
+  }
+  .accordion-item.accordion-white > .accordion-header .accordion-button {
+    align-items: flex-start;
   }
 }
 .billing-section {
@@ -513,8 +517,9 @@
     align-items: center;
 
     img {
-      width: 28px;
-      margin-right: 12px;
+      width: 23px;
+      margin-right: 10px;
+      margin-bottom: 3px;
     }
   }
 
@@ -570,6 +575,7 @@
         font-size: 11px;
         line-height: 17px;
         white-space: nowrap;
+        color: var(--color-title);
       }
 
       &.mark-inprogress {
@@ -578,7 +584,7 @@
             background: linear-gradient(
               to right,
               var(--color-blue) 50%,
-              var(--color-light-gray4) 50%
+              var(--color-blue) 50%
             );
           }
 
@@ -655,7 +661,12 @@
 
   .doc-card.add-document {
     justify-content: flex-start;
-    background: linear-gradient(0deg, var(--color-blue-light), var(--color-blue-light)), linear-gradient(0deg, var(--color-blue-light3), var(--color-blue-light3));
+    background: linear-gradient(
+        0deg,
+        var(--color-blue-light),
+        var(--color-blue-light)
+      ),
+      linear-gradient(0deg, var(--color-blue-light3), var(--color-blue-light3));
     padding: 8px;
     border-radius: 7px;
     position: relative;
@@ -673,8 +684,8 @@
       font-weight: 500;
       font-size: 12px;
     }
-    
-    input{
+
+    input {
       position: absolute;
       width: 0;
       height: 0;

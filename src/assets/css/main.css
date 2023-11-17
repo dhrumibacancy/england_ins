@@ -1559,6 +1559,7 @@ tr:last-child td:last-child {
   line-height: 1.5rem;
   font-weight: 400;
   margin-bottom: 12px;
+  color: var(--color-black);
 }
 
 .user-card {
@@ -1795,13 +1796,13 @@ tr:last-child td:last-child {
 }
 .policy-table .link-label {
   padding: 0 14px;
-  color: var(--color-light-gray4);
+  color: var(--color-light-gray3);
 }
 .policy-table .policy-table-card {
-  background: var(--color-white);
-  -webkit-box-shadow: 0px 0px 4px 0px var(--color-drop-shadow);
-          box-shadow: 0px 0px 4px 0px var(--color-drop-shadow);
-  border: 1px solid var(--color-border-light);
+  outline: var(--color-border-light) solid 1px;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border-radius: 4px;
   margin-bottom: 10px;
 }
 .policy-table .policy-table-card a {
@@ -1911,7 +1912,7 @@ tr:last-child td:last-child {
   color: var(--color-black);
 }
 .client-profile-cards .policy-cards .card-body {
-  padding: 15px 0;
+  padding: 15px 0 5px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1955,6 +1956,11 @@ tr:last-child td:last-child {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
+}
+.client-profile-cards .accordion-item.accordion-white > .accordion-header .accordion-button {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 
 .billing-section .payment-dropdown {
@@ -2114,8 +2120,9 @@ tr:last-child td:last-child {
           align-items: center;
 }
 .claim-section .claim-links img {
-  width: 28px;
-  margin-right: 12px;
+  width: 23px;
+  margin-right: 10px;
+  margin-bottom: 3px;
 }
 .claim-section .claim-progress {
   display: -webkit-box;
@@ -2182,11 +2189,12 @@ tr:last-child td:last-child {
   font-size: 11px;
   line-height: 17px;
   white-space: nowrap;
+  color: var(--color-title);
 }
 .claim-section .claim-progress .progress-step.mark-inprogress .step-symbol::after {
-  background: -webkit-gradient(linear, left top, right top, color-stop(50%, var(--color-blue)), color-stop(50%, var(--color-light-gray4)));
-  background: -o-linear-gradient(left, var(--color-blue) 50%, var(--color-light-gray4) 50%);
-  background: linear-gradient(to right, var(--color-blue) 50%, var(--color-light-gray4) 50%);
+  background: -webkit-gradient(linear, left top, right top, color-stop(50%, var(--color-blue)), color-stop(50%, var(--color-blue)));
+  background: -o-linear-gradient(left, var(--color-blue) 50%, var(--color-blue) 50%);
+  background: linear-gradient(to right, var(--color-blue) 50%, var(--color-blue) 50%);
 }
 .claim-section .claim-progress .progress-step.mark-inprogress .step-symbol img.inprogress {
   display: inline-block;
@@ -3186,7 +3194,40 @@ h1 {
   margin: 0 auto;
 }
 
-.policy-summary .summary-head {
+main .wrapper .admin-section-container {
+  background: #fff;
+}
+main .wrapper .admin-section-container .content {
+  padding-top: 40px;
+  background: #fff;
+}
+
+.admin-section-container .dropdown-menu.filter-dropdown {
+  border: 0;
+  -webkit-box-shadow: 0 0 4px 2px rgba(148, 148, 148, 0.2);
+          box-shadow: 0 0 4px 2px rgba(148, 148, 148, 0.2);
+  border-radius: 15px;
+}
+.admin-section-container .accordion-header {
+  margin-bottom: 0;
+  position: relative;
+}
+.admin-section-container .search-over-accordion {
+  position: absolute;
+  right: 20px;
+  top: 5px;
+  z-index: 100;
+}
+.admin-section-container .remarket-tab div#v-pills-tab .nav-link {
+  text-align: left;
+  font-size: 12px;
+  height: 44px;
+  border-radius: 0;
+}
+.admin-section-container .remarket-tab div#v-pills-tab .nav-link.active {
+  border-radius: 4px;
+}
+.admin-section-container .policy-summary .summary-head {
   margin-bottom: 24px;
   font-family: Roboto Serif;
   font-size: 32px;
@@ -3195,28 +3236,27 @@ h1 {
   letter-spacing: 0em;
   text-align: left;
 }
-.policy-summary .summary-content {
+.admin-section-container .policy-summary .summary-content {
   background: #f2f7fc;
   padding: 16px;
   border-radius: 8px;
   margin-bottom: 24px;
 }
-.policy-summary .summary-content table {
+.admin-section-container .policy-summary .summary-content table {
   width: 100%;
 }
-.policy-summary .summary-content table td {
+.admin-section-container .policy-summary .summary-content table td {
   width: 25%;
   padding-bottom: 12px;
   font-size: 16px;
 }
-.policy-summary .summary-content table td .title {
+.admin-section-container .policy-summary .summary-content table td .title {
   font-size: 18px;
 }
-.policy-summary .summary-content table tbody tr:last-child td {
+.admin-section-container .policy-summary .summary-content table tbody tr:last-child td {
   padding-bottom: 0;
 }
-
-.admin-summary-data .tab-title {
+.admin-section-container .admin-summary-data .tab-title {
   font-size: 30px;
   font-weight: 500;
   line-height: 45px;
@@ -3224,42 +3264,42 @@ h1 {
   text-align: left;
   margin-bottom: 16px;
 }
-.admin-summary-data .summary-detail-section {
+.admin-section-container .admin-summary-data .summary-detail-section {
   background: #f2f7fc;
   border-radius: 8px;
   margin-bottom: 16px;
 }
-.admin-summary-data .summary-detail-section.editable .summary-card .card-body label span {
+.admin-section-container .admin-summary-data .summary-detail-section.editable .summary-card .card-body label span {
   display: none;
 }
-.admin-summary-data .summary-detail-section.editable .summary-card .card-body label input {
+.admin-section-container .admin-summary-data .summary-detail-section.editable .summary-card .card-body label input {
   display: block;
 }
-.admin-summary-data .summary-detail-section.editable .summary-card .card-body label .input-sub-title {
+.admin-section-container .admin-summary-data .summary-detail-section.editable .summary-card .card-body label .input-sub-title {
   display: inline-block;
 }
-.admin-summary-data .summary-detail-section.editable .summary-card .card-body label + .select-group {
+.admin-section-container .admin-summary-data .summary-detail-section.editable .summary-card .card-body label + .select-group {
   display: block;
 }
-.admin-summary-data .summary-detail-section.editable .summary-card .card-body > .row > * {
+.admin-section-container .admin-summary-data .summary-detail-section.editable .summary-card .card-body > .row > * {
   width: 33.33%;
 }
-.admin-summary-data .summary-detail-section.editable .summary-card.mortgagee-card .card-body > .row > * {
+.admin-section-container .admin-summary-data .summary-detail-section.editable .summary-card.mortgagee-card .card-body > .row > * {
   width: 50%;
 }
-.admin-summary-data .summary-detail-section .summary-card {
+.admin-section-container .admin-summary-data .summary-detail-section .summary-card {
   padding: 16px;
   border-bottom: 1px solid #b3d3ec;
 }
-.admin-summary-data .summary-detail-section .summary-card:last-child {
+.admin-section-container .admin-summary-data .summary-detail-section .summary-card:last-child {
   border-bottom: 0;
 }
-.admin-summary-data .summary-detail-section .card-header,
-.admin-summary-data .summary-detail-section .card-title,
-.admin-summary-data .summary-detail-section .card-body {
+.admin-section-container .admin-summary-data .summary-detail-section .card-header,
+.admin-section-container .admin-summary-data .summary-detail-section .card-title,
+.admin-section-container .admin-summary-data .summary-detail-section .card-body {
   all: revert;
 }
-.admin-summary-data .summary-detail-section .card-header {
+.admin-section-container .admin-summary-data .summary-detail-section .card-header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3268,7 +3308,7 @@ h1 {
           justify-content: space-between;
   margin-bottom: 16px;
 }
-.admin-summary-data .summary-detail-section .card-header .card-title {
+.admin-section-container .admin-summary-data .summary-detail-section .card-header .card-title {
   all: revert;
   font-size: 18px;
   font-weight: 500;
@@ -3276,27 +3316,27 @@ h1 {
   letter-spacing: 0em;
   text-align: left;
 }
-.admin-summary-data .summary-detail-section .card-body table th,
-.admin-summary-data .summary-detail-section .card-body table td {
+.admin-section-container .admin-summary-data .summary-detail-section .card-body table th,
+.admin-section-container .admin-summary-data .summary-detail-section .card-body table td {
   padding: 0;
 }
-.admin-summary-data .summary-detail-section .card-body label {
+.admin-section-container .admin-summary-data .summary-detail-section .card-body label {
   margin-bottom: 0;
 }
-.admin-summary-data .summary-detail-section .card-body label span {
+.admin-section-container .admin-summary-data .summary-detail-section .card-body label span {
   display: block;
 }
-.admin-summary-data .summary-detail-section .card-body label .input-value {
+.admin-section-container .admin-summary-data .summary-detail-section .card-body label .input-value {
   font-weight: 400;
 }
-.admin-summary-data .summary-detail-section .card-body label input {
+.admin-section-container .admin-summary-data .summary-detail-section .card-body label input {
   display: none;
 }
-.admin-summary-data .summary-detail-section .card-body label + .select-group,
-.admin-summary-data .summary-detail-section .card-body label .input-sub-title {
+.admin-section-container .admin-summary-data .summary-detail-section .card-body label + .select-group,
+.admin-section-container .admin-summary-data .summary-detail-section .card-body label .input-sub-title {
   display: none;
 }
-.admin-summary-data .summary-detail-section .card-body label .input-sub-title {
+.admin-section-container .admin-summary-data .summary-detail-section .card-body label .input-sub-title {
   padding: 4px 12px 0;
   font-size: 14px;
   font-weight: 400;
@@ -3304,26 +3344,26 @@ h1 {
   text-align: left;
   color: #616161;
 }
-.admin-summary-data .summary-detail-section .location-card .card-body table th,
-.admin-summary-data .summary-detail-section .location-card .card-body table td {
+.admin-section-container .admin-summary-data .summary-detail-section .location-card .card-body table th,
+.admin-section-container .admin-summary-data .summary-detail-section .location-card .card-body table td {
   padding-right: 15px;
   padding-bottom: 12px;
 }
-.admin-summary-data .summary-detail-section .location-card .card-body table th.address-field,
-.admin-summary-data .summary-detail-section .location-card .card-body table td.address-field {
+.admin-section-container .admin-summary-data .summary-detail-section .location-card .card-body table th.address-field,
+.admin-section-container .admin-summary-data .summary-detail-section .location-card .card-body table td.address-field {
   width: 40%;
 }
-.admin-summary-data .summary-detail-section .location-card .card-body table th:nth-child(1),
-.admin-summary-data .summary-detail-section .location-card .card-body table th:nth-child(2),
-.admin-summary-data .summary-detail-section .location-card .card-body table td:nth-child(1),
-.admin-summary-data .summary-detail-section .location-card .card-body table td:nth-child(2) {
+.admin-section-container .admin-summary-data .summary-detail-section .location-card .card-body table th:nth-child(1),
+.admin-section-container .admin-summary-data .summary-detail-section .location-card .card-body table th:nth-child(2),
+.admin-section-container .admin-summary-data .summary-detail-section .location-card .card-body table td:nth-child(1),
+.admin-section-container .admin-summary-data .summary-detail-section .location-card .card-body table td:nth-child(2) {
   width: 60px;
   padding-right: 10px;
 }
-.admin-summary-data .summary-detail-section .location-card .card-body table th:nth-child(1) input,
-.admin-summary-data .summary-detail-section .location-card .card-body table th:nth-child(2) input,
-.admin-summary-data .summary-detail-section .location-card .card-body table td:nth-child(1) input,
-.admin-summary-data .summary-detail-section .location-card .card-body table td:nth-child(2) input {
+.admin-section-container .admin-summary-data .summary-detail-section .location-card .card-body table th:nth-child(1) input,
+.admin-section-container .admin-summary-data .summary-detail-section .location-card .card-body table th:nth-child(2) input,
+.admin-section-container .admin-summary-data .summary-detail-section .location-card .card-body table td:nth-child(1) input,
+.admin-section-container .admin-summary-data .summary-detail-section .location-card .card-body table td:nth-child(2) input {
   padding: 0 5px;
   text-align: center;
 }
