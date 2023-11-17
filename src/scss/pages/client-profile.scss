@@ -650,8 +650,38 @@
 }
 
 .claim-additional-info {
-  padding: 20px 15px;
+  padding: 16px;
   border-radius: 8px;
+
+  .doc-card.add-document {
+    justify-content: flex-start;
+    background: linear-gradient(0deg, var(--color-blue-light), var(--color-blue-light)), linear-gradient(0deg, var(--color-blue-light3), var(--color-blue-light3));
+    padding: 8px;
+    border-radius: 7px;
+    position: relative;
+
+    & > img {
+      width: 32px;
+      height: 32px;
+      -o-object-fit: contain;
+      object-fit: contain;
+      -o-object-position: center;
+      object-position: center;
+      margin-right: 8px;
+    }
+    .doc-title {
+      font-weight: 500;
+      font-size: 12px;
+    }
+    
+    input{
+      position: absolute;
+      width: 0;
+      height: 0;
+      top: 0;
+      left: 0;
+    }
+  }
 }
 
 .vehicle-damage {

@@ -796,8 +796,39 @@
 }
 
 .claim-additional-info {
-  padding: 20px 15px;
+  padding: 16px;
   border-radius: 8px;
+}
+.claim-additional-info .doc-card.add-document {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  background: -webkit-gradient(linear, left bottom, left top, from(var(--color-blue-light)), to(var(--color-blue-light))), -webkit-gradient(linear, left bottom, left top, from(var(--color-blue-light3)), to(var(--color-blue-light3)));
+  background: -o-linear-gradient(bottom, var(--color-blue-light), var(--color-blue-light)), -o-linear-gradient(bottom, var(--color-blue-light3), var(--color-blue-light3));
+  background: linear-gradient(0deg, var(--color-blue-light), var(--color-blue-light)), linear-gradient(0deg, var(--color-blue-light3), var(--color-blue-light3));
+  padding: 8px;
+  border-radius: 7px;
+  position: relative;
+}
+.claim-additional-info .doc-card.add-document > img {
+  width: 32px;
+  height: 32px;
+  -o-object-fit: contain;
+  object-fit: contain;
+  -o-object-position: center;
+  object-position: center;
+  margin-right: 8px;
+}
+.claim-additional-info .doc-card.add-document .doc-title {
+  font-weight: 500;
+  font-size: 12px;
+}
+.claim-additional-info .doc-card.add-document input {
+  position: absolute;
+  width: 0;
+  height: 0;
+  top: 0;
+  left: 0;
 }
 
 .vehicle-damage {

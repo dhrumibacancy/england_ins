@@ -144,78 +144,56 @@
                             <p class="user-welcome mt-2">Hey! My Name is Anne
                             </p>
                         </div>
-                        <h3 class="title  text-center">Which piece of glass is damaged ?</h3>
+                        <h3 class="title  text-center">Who was driving your vehicle</h3>
+                        <label class="text-center fw-normal mt-3">Share the detail of driver who drive your vehicle</label>
 
                         <form class="mt-4">
-                            <div class="container-wrapper-md">
-                              
-                                <div class="vehicle-damage">
-                                    <img src="../images/vehicle-empty.svg" class="vehicle-img" /> 
-                                    <div class="damage-sides">
-                                        <div class="car-sides-input none">
-                                            <label class="checkbox-inline mb-0 w-auto" for="none">
-                                                <input  class="checkbox-control main" type="checkbox" name="none" id="none" />
-                                                <span class="checkbox-custom"></span>
-                                                <span class="checkbox-label fs-16 fw-700">none</span>
-                                            </label>
-                                        </div>
-
-                                        <div class="car-sides-input front">
-                                            <label class="checkbox-inline mb-0 w-auto" for="front">
-                                                <input  class="checkbox-control main" type="checkbox" name="front" id="front"/>
-                                                <span class="checkbox-custom"></span>
-                                            </label>
-                                        </div>
-                                        <div class="car-sides-input front-right">
-                                            <label class="checkbox-inline mb-0 w-auto" for="front-right">
-                                                <input  class="checkbox-control main" type="checkbox" name="front-right" id="front-right" />
-                                                <span class="checkbox-custom"></span>
-                                            </label>
-                                        </div>
-                                        <div class="car-sides-input right">
-                                            <label class="checkbox-inline mb-0 w-auto" for="right">
-                                                <input  class="checkbox-control main" type="checkbox" name="right" id="right" />
-                                                <span class="checkbox-custom"></span>
-                                            </label>
-                                        </div>
-                                        <div class="car-sides-input rear-right">
-                                            <label class="checkbox-inline mb-0 w-auto" for="rear-right">
-                                                <input  class="checkbox-control main" type="checkbox" name="rear-right" id="rear-right" />
-                                                <span class="checkbox-custom"></span>
-                                            </label>
-                                        </div>
-                                        <div class="car-sides-input front-left">
-                                            <label class="checkbox-inline mb-0 w-auto" for="front-left">
-                                                <input  class="checkbox-control main" type="checkbox" name="front-left" id="front-left" />
-                                                <span class="checkbox-custom"></span>
-                                            </label>
-                                        </div>
-                                        <div class="car-sides-input left">
-                                            <label class="checkbox-inline mb-0 w-auto" for="left"> 
-                                                <input  class="checkbox-control main" type="checkbox" name="left" id="left" />
-                                                <span class="checkbox-custom"></span>
-                                            </label>
-                                        </div>
-                                        <div class="car-sides-input rear-left">
-                                            <label class="checkbox-inline mb-0 w-auto" for="rear-left">
-                                                <input  class="checkbox-control main" type="checkbox" name="rear-left" id="rear-left" />
-                                                <span class="checkbox-custom"></span>
-                                            </label>
-                                        </div>
-                                        <div class="car-sides-input rear">
-                                            <label class="checkbox-inline mb-0 w-auto" for="rear">
-                                                <input  class="checkbox-control main" type="checkbox" name="rear" id="rear" />
-                                                <span class="checkbox-custom"></span>
-                                            </label>
-                                        </div>
+                            <div class="contain-wrapper-sm">
+                                
+                                <div class="form-group">
+                                    <div class="f-dropdown selectDropdown">
+                                        <select class="f-control f-dropdown"
+                                            placeholder="Select Driver" id="1">
+                                            <option value="" hidden>Select Driver</option>
+                                            <option value="1">No One
+                                            </option>
+                                            <option value="2">List of Drivers Names
+                                            </option>
+                                            <option value="3">Someone else
+                                            </option>
+                                        </select>
                                     </div>
                                 </div>
-                               
-                                
-                                
-                            </div>
+                                <div
+                                    class="container-fluid claim-additional-info mt-4 bg-white border border-1">
+                                    <div class="row g-3">
+                                        <div class="col-12 ">
+                                            <label class="label d-flex align-items-center">
+                                                <span class="fs-18">Share the Detail of that Driver</span>
+                                            </label>
+                                        </div>
+                                        <div class="col-md-4 mt-md-0">
+                                            <div class="form-group">
+                                                <input type="text" placeholder="First Name" class="form-control">
+                                            </div>
+                                        </div>
 
-                            <div class="contain-wrapper-sm">
+                                        <div class="col-md-4 mt-md-0">
+                                            <div class="form-group">
+                                                <input type="text" placeholder="Last Name" class="form-control">
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-4 mt-md-0">
+                                            <div class="form-group">
+                                                <input type="text" placeholder="Driver License Number" class="form-control">
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+
                                 <button type="submit" class="btn btn-primary  mx-auto mt-4"><span>Continue</span>
                                 </button>
                             </div>
