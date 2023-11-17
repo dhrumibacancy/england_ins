@@ -147,8 +147,14 @@
   border-bottom: none;
 }
 .remarket-tab .blue-light-box {
+  position: relative;
   background-color: var(--color-blue-shade) !important;
   background: var(--color-blue-shade) !important;
+}
+.remarket-tab .blue-light-box > .edit-icon {
+  position: absolute;
+  top: 15px;
+  right: 15px;
 }
 
 @media only screen and (max-width: 575px) {
