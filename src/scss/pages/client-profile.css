@@ -123,6 +123,7 @@
   line-height: 1.5rem;
   font-weight: 400;
   margin-bottom: 12px;
+  color: var(--color-black);
 }
 
 .user-card {
@@ -298,12 +299,12 @@
 }
 .policy-table .link-label {
   padding: 0 14px;
-  color: var(--color-light-gray4);
+  color: var(--color-light-gray3);
 }
 .policy-table .policy-table-card {
-  background: var(--color-white);
-  box-shadow: 0px 0px 4px 0px var(--color-drop-shadow);
-  border: 1px solid var(--color-border-light);
+  outline: var(--color-border-light) solid 1px;
+  box-shadow: none;
+  border-radius: 4px;
   margin-bottom: 10px;
 }
 .policy-table .policy-table-card a {
@@ -366,8 +367,9 @@
      object-position: center;
 }
 
-.policy-cards {
+.client-profile-cards .policy-cards {
   box-shadow: 0px 0px 6px 0px var(--color-drop-shadow);
+  background: #fff;
   border-radius: 12px;
   border: 1px solid var(--color-border-light2);
   padding: 10px 10px 0;
@@ -375,10 +377,10 @@
   display: flex;
   flex-direction: column;
 }
-.policy-cards .btn {
+.client-profile-cards .policy-cards .btn {
   min-width: initial;
 }
-.policy-cards .card-image {
+.client-profile-cards .policy-cards .card-image {
   background-color: var(--color-blue-shade);
   border-radius: 3px;
   padding: 8px 10px;
@@ -387,47 +389,50 @@
   align-items: center;
   justify-content: center;
 }
-.policy-cards .card-image img {
+.client-profile-cards .policy-cards .card-image img {
   margin-bottom: 5px;
 }
-.policy-cards .card-image h4 {
+.client-profile-cards .policy-cards .card-image h4 {
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
   color: var(--color-black);
 }
-.policy-cards .card-body {
-  padding: 15px 0;
+.client-profile-cards .policy-cards .card-body {
+  padding: 15px 0 5px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
-.policy-cards .card-scroll {
+.client-profile-cards .policy-cards .card-scroll {
   overflow: auto;
   max-height: 110px;
 }
-.policy-cards .card-scroll::-webkit-scrollbar {
+.client-profile-cards .policy-cards .card-scroll::-webkit-scrollbar {
   width: 5px;
   height: 5px;
 }
-.policy-cards .card-scroll::-webkit-scrollbar-thumb {
+.client-profile-cards .policy-cards .card-scroll::-webkit-scrollbar-thumb {
   background: var(--color-primary);
 }
-.policy-cards .card-scroll::-webkit-scrollbar-track {
+.client-profile-cards .policy-cards .card-scroll::-webkit-scrollbar-track {
   background: #ececec;
 }
-.policy-cards .card-scroll {
+.client-profile-cards .policy-cards .card-scroll {
   scrollbar-face-color: var(--color-primary);
   scrollbar-track-color: #ececec;
 }
 @media screen and (max-width: 778px) {
-  .policy-cards .card-scroll {
+  .client-profile-cards .policy-cards .card-scroll {
     max-height: 120px;
     overflow: visible;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
   }
+}
+.client-profile-cards .accordion-item.accordion-white > .accordion-header .accordion-button {
+  align-items: flex-start;
 }
 
 .billing-section .payment-dropdown {
@@ -559,8 +564,9 @@
   align-items: center;
 }
 .claim-section .claim-links img {
-  width: 28px;
-  margin-right: 12px;
+  width: 23px;
+  margin-right: 10px;
+  margin-bottom: 3px;
 }
 .claim-section .claim-progress {
   display: flex;
@@ -610,9 +616,10 @@
   font-size: 11px;
   line-height: 17px;
   white-space: nowrap;
+  color: var(--color-title);
 }
 .claim-section .claim-progress .progress-step.mark-inprogress .step-symbol::after {
-  background: linear-gradient(to right, var(--color-blue) 50%, var(--color-light-gray4) 50%);
+  background: linear-gradient(to right, var(--color-blue) 50%, var(--color-blue) 50%);
 }
 .claim-section .claim-progress .progress-step.mark-inprogress .step-symbol img.inprogress {
   display: inline-block;
@@ -637,6 +644,110 @@
 }
 .claim-section .claim-progress .progress-step.mark-failed .step-title {
   color: var(--color-has-error);
+}
+.claim-section label.checkbox-inline.radio-active {
+  height: auto;
+}
+.claim-section label.checkbox-inline.squar-boxes {
+  width: 200px;
+}
+.claim-section label.checkbox-inline.squar-boxes.glass-squares img {
+  width: 45px;
+}
+.claim-section label.checkbox-inline.squar-boxes.glass-squares.no-square img {
+  width: 40px;
+}
+.claim-section label.checkbox-inline.squar-boxes img {
+  margin-bottom: 10px;
+}
+
+.claim-additional-info {
+  padding: 16px;
+  border-radius: 8px;
+}
+.claim-additional-info .doc-card.add-document {
+  justify-content: flex-start;
+  background: linear-gradient(0deg, var(--color-blue-light), var(--color-blue-light)), linear-gradient(0deg, var(--color-blue-light3), var(--color-blue-light3));
+  padding: 8px;
+  border-radius: 7px;
+  position: relative;
+}
+.claim-additional-info .doc-card.add-document > img {
+  width: 32px;
+  height: 32px;
+  -o-object-fit: contain;
+  object-fit: contain;
+  -o-object-position: center;
+  object-position: center;
+  margin-right: 8px;
+}
+.claim-additional-info .doc-card.add-document .doc-title {
+  font-weight: 500;
+  font-size: 12px;
+}
+.claim-additional-info .doc-card.add-document input {
+  position: absolute;
+  width: 0;
+  height: 0;
+  top: 0;
+  left: 0;
+}
+
+.vehicle-damage {
+  position: relative;
+  padding: 100px 70px;
+}
+.vehicle-damage .vehicle-img {
+  margin: auto;
+  display: block;
+  width: 100%;
+}
+.vehicle-damage .damage-sides {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+.vehicle-damage .car-sides-input {
+  position: absolute;
+}
+.vehicle-damage .car-sides-input.none {
+  left: 50%;
+  top: 0;
+}
+.vehicle-damage .car-sides-input.front {
+  top: 50%;
+  left: 0;
+}
+.vehicle-damage .car-sides-input.rear {
+  top: 50%;
+  left: auto;
+  right: 0;
+}
+.vehicle-damage .car-sides-input.left {
+  left: 50%;
+  bottom: 60px;
+}
+.vehicle-damage .car-sides-input.right {
+  left: 50%;
+  top: 60px;
+}
+.vehicle-damage .car-sides-input.front-left {
+  left: 20%;
+  bottom: 60px;
+}
+.vehicle-damage .car-sides-input.rear-left {
+  right: 20%;
+  bottom: 60px;
+}
+.vehicle-damage .car-sides-input.front-right {
+  left: 20%;
+  top: 60px;
+}
+.vehicle-damage .car-sides-input.rear-right {
+  right: 20%;
+  top: 60px;
 }
 
 .document-section .sec-title {

@@ -385,4 +385,11 @@ h1 {
   .login-box {
     width: 432px;
   }
+}
+.no_result_found {
+  text-align: center;
+}
+.no_result_found p {
+  max-width: 317px;
+  margin: 0 auto;
 }/*# sourceMappingURL=login.css.map */

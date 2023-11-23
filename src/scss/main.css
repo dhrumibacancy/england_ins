@@ -1100,8 +1100,14 @@ main .main-wrapper p {
   border-bottom: none;
 }
 .remarket-tab .blue-light-box {
+  position: relative;
   background-color: var(--color-blue-shade) !important;
   background: var(--color-blue-shade) !important;
+}
+.remarket-tab .blue-light-box > .edit-icon {
+  position: absolute;
+  top: 15px;
+  right: 15px;
 }
 
 @media only screen and (max-width: 575px) {
@@ -1442,6 +1448,7 @@ tr:last-child td:last-child {
   line-height: 1.5rem;
   font-weight: 400;
   margin-bottom: 12px;
+  color: var(--color-black);
 }
 
 .user-card {
@@ -1617,12 +1624,12 @@ tr:last-child td:last-child {
 }
 .policy-table .link-label {
   padding: 0 14px;
-  color: var(--color-light-gray4);
+  color: var(--color-light-gray3);
 }
 .policy-table .policy-table-card {
-  background: var(--color-white);
-  box-shadow: 0px 0px 4px 0px var(--color-drop-shadow);
-  border: 1px solid var(--color-border-light);
+  outline: var(--color-border-light) solid 1px;
+  box-shadow: none;
+  border-radius: 4px;
   margin-bottom: 10px;
 }
 .policy-table .policy-table-card a {
@@ -1685,8 +1692,9 @@ tr:last-child td:last-child {
      object-position: center;
 }
 
-.policy-cards {
+.client-profile-cards .policy-cards {
   box-shadow: 0px 0px 6px 0px var(--color-drop-shadow);
+  background: #fff;
   border-radius: 12px;
   border: 1px solid var(--color-border-light2);
   padding: 10px 10px 0;
@@ -1694,10 +1702,10 @@ tr:last-child td:last-child {
   display: flex;
   flex-direction: column;
 }
-.policy-cards .btn {
+.client-profile-cards .policy-cards .btn {
   min-width: initial;
 }
-.policy-cards .card-image {
+.client-profile-cards .policy-cards .card-image {
   background-color: var(--color-blue-shade);
   border-radius: 3px;
   padding: 8px 10px;
@@ -1706,47 +1714,50 @@ tr:last-child td:last-child {
   align-items: center;
   justify-content: center;
 }
-.policy-cards .card-image img {
+.client-profile-cards .policy-cards .card-image img {
   margin-bottom: 5px;
 }
-.policy-cards .card-image h4 {
+.client-profile-cards .policy-cards .card-image h4 {
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
   color: var(--color-black);
 }
-.policy-cards .card-body {
-  padding: 15px 0;
+.client-profile-cards .policy-cards .card-body {
+  padding: 15px 0 5px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
-.policy-cards .card-scroll {
+.client-profile-cards .policy-cards .card-scroll {
   overflow: auto;
   max-height: 110px;
 }
-.policy-cards .card-scroll::-webkit-scrollbar {
+.client-profile-cards .policy-cards .card-scroll::-webkit-scrollbar {
   width: 5px;
   height: 5px;
 }
-.policy-cards .card-scroll::-webkit-scrollbar-thumb {
+.client-profile-cards .policy-cards .card-scroll::-webkit-scrollbar-thumb {
   background: var(--color-primary);
 }
-.policy-cards .card-scroll::-webkit-scrollbar-track {
+.client-profile-cards .policy-cards .card-scroll::-webkit-scrollbar-track {
   background: #ececec;
 }
-.policy-cards .card-scroll {
+.client-profile-cards .policy-cards .card-scroll {
   scrollbar-face-color: var(--color-primary);
   scrollbar-track-color: #ececec;
 }
 @media screen and (max-width: 778px) {
-  .policy-cards .card-scroll {
+  .client-profile-cards .policy-cards .card-scroll {
     max-height: 120px;
     overflow: visible;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
   }
+}
+.client-profile-cards .accordion-item.accordion-white > .accordion-header .accordion-button {
+  align-items: flex-start;
 }
 
 .billing-section .payment-dropdown {
@@ -1878,8 +1889,9 @@ tr:last-child td:last-child {
   align-items: center;
 }
 .claim-section .claim-links img {
-  width: 28px;
-  margin-right: 12px;
+  width: 23px;
+  margin-right: 10px;
+  margin-bottom: 3px;
 }
 .claim-section .claim-progress {
   display: flex;
@@ -1929,9 +1941,10 @@ tr:last-child td:last-child {
   font-size: 11px;
   line-height: 17px;
   white-space: nowrap;
+  color: var(--color-title);
 }
 .claim-section .claim-progress .progress-step.mark-inprogress .step-symbol::after {
-  background: linear-gradient(to right, var(--color-blue) 50%, var(--color-light-gray4) 50%);
+  background: linear-gradient(to right, var(--color-blue) 50%, var(--color-blue) 50%);
 }
 .claim-section .claim-progress .progress-step.mark-inprogress .step-symbol img.inprogress {
   display: inline-block;
@@ -1956,6 +1969,110 @@ tr:last-child td:last-child {
 }
 .claim-section .claim-progress .progress-step.mark-failed .step-title {
   color: var(--color-has-error);
+}
+.claim-section label.checkbox-inline.radio-active {
+  height: auto;
+}
+.claim-section label.checkbox-inline.squar-boxes {
+  width: 200px;
+}
+.claim-section label.checkbox-inline.squar-boxes.glass-squares img {
+  width: 45px;
+}
+.claim-section label.checkbox-inline.squar-boxes.glass-squares.no-square img {
+  width: 40px;
+}
+.claim-section label.checkbox-inline.squar-boxes img {
+  margin-bottom: 10px;
+}
+
+.claim-additional-info {
+  padding: 16px;
+  border-radius: 8px;
+}
+.claim-additional-info .doc-card.add-document {
+  justify-content: flex-start;
+  background: linear-gradient(0deg, var(--color-blue-light), var(--color-blue-light)), linear-gradient(0deg, var(--color-blue-light3), var(--color-blue-light3));
+  padding: 8px;
+  border-radius: 7px;
+  position: relative;
+}
+.claim-additional-info .doc-card.add-document > img {
+  width: 32px;
+  height: 32px;
+  -o-object-fit: contain;
+  object-fit: contain;
+  -o-object-position: center;
+  object-position: center;
+  margin-right: 8px;
+}
+.claim-additional-info .doc-card.add-document .doc-title {
+  font-weight: 500;
+  font-size: 12px;
+}
+.claim-additional-info .doc-card.add-document input {
+  position: absolute;
+  width: 0;
+  height: 0;
+  top: 0;
+  left: 0;
+}
+
+.vehicle-damage {
+  position: relative;
+  padding: 100px 70px;
+}
+.vehicle-damage .vehicle-img {
+  margin: auto;
+  display: block;
+  width: 100%;
+}
+.vehicle-damage .damage-sides {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+.vehicle-damage .car-sides-input {
+  position: absolute;
+}
+.vehicle-damage .car-sides-input.none {
+  left: 50%;
+  top: 0;
+}
+.vehicle-damage .car-sides-input.front {
+  top: 50%;
+  left: 0;
+}
+.vehicle-damage .car-sides-input.rear {
+  top: 50%;
+  left: auto;
+  right: 0;
+}
+.vehicle-damage .car-sides-input.left {
+  left: 50%;
+  bottom: 60px;
+}
+.vehicle-damage .car-sides-input.right {
+  left: 50%;
+  top: 60px;
+}
+.vehicle-damage .car-sides-input.front-left {
+  left: 20%;
+  bottom: 60px;
+}
+.vehicle-damage .car-sides-input.rear-left {
+  right: 20%;
+  bottom: 60px;
+}
+.vehicle-damage .car-sides-input.front-right {
+  left: 20%;
+  top: 60px;
+}
+.vehicle-damage .car-sides-input.rear-right {
+  right: 20%;
+  top: 60px;
 }
 
 .document-section .sec-title {
@@ -2718,7 +2835,47 @@ h1 {
     width: 432px;
   }
 }
-.policy-summary .summary-head {
+.no_result_found {
+  text-align: center;
+}
+.no_result_found p {
+  max-width: 317px;
+  margin: 0 auto;
+}
+
+main .wrapper .admin-section-container {
+  background: #fff;
+}
+main .wrapper .admin-section-container .content {
+  padding-top: 40px;
+  background: #fff;
+}
+
+.admin-section-container .dropdown-menu.filter-dropdown {
+  border: 0;
+  box-shadow: 0 0 4px 2px rgba(148, 148, 148, 0.2);
+  border-radius: 15px;
+}
+.admin-section-container .accordion-header {
+  margin-bottom: 0;
+  position: relative;
+}
+.admin-section-container .search-over-accordion {
+  position: absolute;
+  right: 20px;
+  top: 5px;
+  z-index: 100;
+}
+.admin-section-container .remarket-tab div#v-pills-tab .nav-link {
+  text-align: left;
+  font-size: 12px;
+  height: 44px;
+  border-radius: 0;
+}
+.admin-section-container .remarket-tab div#v-pills-tab .nav-link.active {
+  border-radius: 4px;
+}
+.admin-section-container .policy-summary .summary-head {
   margin-bottom: 24px;
   font-family: Roboto Serif;
   font-size: 32px;
@@ -2727,28 +2884,27 @@ h1 {
   letter-spacing: 0em;
   text-align: left;
 }
-.policy-summary .summary-content {
+.admin-section-container .policy-summary .summary-content {
   background: #f2f7fc;
   padding: 16px;
   border-radius: 8px;
   margin-bottom: 24px;
 }
-.policy-summary .summary-content table {
+.admin-section-container .policy-summary .summary-content table {
   width: 100%;
 }
-.policy-summary .summary-content table td {
+.admin-section-container .policy-summary .summary-content table td {
   width: 25%;
   padding-bottom: 12px;
   font-size: 16px;
 }
-.policy-summary .summary-content table td .title {
+.admin-section-container .policy-summary .summary-content table td .title {
   font-size: 18px;
 }
-.policy-summary .summary-content table tbody tr:last-child td {
+.admin-section-container .policy-summary .summary-content table tbody tr:last-child td {
   padding-bottom: 0;
 }
-
-.admin-summary-data .tab-title {
+.admin-section-container .admin-summary-data .tab-title {
   font-size: 30px;
   font-weight: 500;
   line-height: 45px;
@@ -2756,47 +2912,47 @@ h1 {
   text-align: left;
   margin-bottom: 16px;
 }
-.admin-summary-data .summary-detail-section {
+.admin-section-container .admin-summary-data .summary-detail-section {
   background: #f2f7fc;
   border-radius: 8px;
   margin-bottom: 16px;
 }
-.admin-summary-data .summary-detail-section.editable .summary-card .card-body label span {
+.admin-section-container .admin-summary-data .summary-detail-section.editable .summary-card .card-body label span {
   display: none;
 }
-.admin-summary-data .summary-detail-section.editable .summary-card .card-body label input {
+.admin-section-container .admin-summary-data .summary-detail-section.editable .summary-card .card-body label input {
   display: block;
 }
-.admin-summary-data .summary-detail-section.editable .summary-card .card-body label .input-sub-title {
+.admin-section-container .admin-summary-data .summary-detail-section.editable .summary-card .card-body label .input-sub-title {
   display: inline-block;
 }
-.admin-summary-data .summary-detail-section.editable .summary-card .card-body label + .select-group {
+.admin-section-container .admin-summary-data .summary-detail-section.editable .summary-card .card-body label + .select-group {
   display: block;
 }
-.admin-summary-data .summary-detail-section.editable .summary-card .card-body > .row > * {
+.admin-section-container .admin-summary-data .summary-detail-section.editable .summary-card .card-body > .row > * {
   width: 33.33%;
 }
-.admin-summary-data .summary-detail-section.editable .summary-card.mortgagee-card .card-body > .row > * {
+.admin-section-container .admin-summary-data .summary-detail-section.editable .summary-card.mortgagee-card .card-body > .row > * {
   width: 50%;
 }
-.admin-summary-data .summary-detail-section .summary-card {
+.admin-section-container .admin-summary-data .summary-detail-section .summary-card {
   padding: 16px;
   border-bottom: 1px solid #b3d3ec;
 }
-.admin-summary-data .summary-detail-section .summary-card:last-child {
+.admin-section-container .admin-summary-data .summary-detail-section .summary-card:last-child {
   border-bottom: 0;
 }
-.admin-summary-data .summary-detail-section .card-header,
-.admin-summary-data .summary-detail-section .card-title,
-.admin-summary-data .summary-detail-section .card-body {
+.admin-section-container .admin-summary-data .summary-detail-section .card-header,
+.admin-section-container .admin-summary-data .summary-detail-section .card-title,
+.admin-section-container .admin-summary-data .summary-detail-section .card-body {
   all: revert;
 }
-.admin-summary-data .summary-detail-section .card-header {
+.admin-section-container .admin-summary-data .summary-detail-section .card-header {
   display: flex;
   justify-content: space-between;
   margin-bottom: 16px;
 }
-.admin-summary-data .summary-detail-section .card-header .card-title {
+.admin-section-container .admin-summary-data .summary-detail-section .card-header .card-title {
   all: revert;
   font-size: 18px;
   font-weight: 500;
@@ -2804,27 +2960,27 @@ h1 {
   letter-spacing: 0em;
   text-align: left;
 }
-.admin-summary-data .summary-detail-section .card-body table th,
-.admin-summary-data .summary-detail-section .card-body table td {
+.admin-section-container .admin-summary-data .summary-detail-section .card-body table th,
+.admin-section-container .admin-summary-data .summary-detail-section .card-body table td {
   padding: 0;
 }
-.admin-summary-data .summary-detail-section .card-body label {
+.admin-section-container .admin-summary-data .summary-detail-section .card-body label {
   margin-bottom: 0;
 }
-.admin-summary-data .summary-detail-section .card-body label span {
+.admin-section-container .admin-summary-data .summary-detail-section .card-body label span {
   display: block;
 }
-.admin-summary-data .summary-detail-section .card-body label .input-value {
+.admin-section-container .admin-summary-data .summary-detail-section .card-body label .input-value {
   font-weight: 400;
 }
-.admin-summary-data .summary-detail-section .card-body label input {
+.admin-section-container .admin-summary-data .summary-detail-section .card-body label input {
   display: none;
 }
-.admin-summary-data .summary-detail-section .card-body label + .select-group,
-.admin-summary-data .summary-detail-section .card-body label .input-sub-title {
+.admin-section-container .admin-summary-data .summary-detail-section .card-body label + .select-group,
+.admin-section-container .admin-summary-data .summary-detail-section .card-body label .input-sub-title {
   display: none;
 }
-.admin-summary-data .summary-detail-section .card-body label .input-sub-title {
+.admin-section-container .admin-summary-data .summary-detail-section .card-body label .input-sub-title {
   padding: 4px 12px 0;
   font-size: 14px;
   font-weight: 400;
@@ -2832,26 +2988,26 @@ h1 {
   text-align: left;
   color: #616161;
 }
-.admin-summary-data .summary-detail-section .location-card .card-body table th,
-.admin-summary-data .summary-detail-section .location-card .card-body table td {
+.admin-section-container .admin-summary-data .summary-detail-section .location-card .card-body table th,
+.admin-section-container .admin-summary-data .summary-detail-section .location-card .card-body table td {
   padding-right: 15px;
   padding-bottom: 12px;
 }
-.admin-summary-data .summary-detail-section .location-card .card-body table th.address-field,
-.admin-summary-data .summary-detail-section .location-card .card-body table td.address-field {
+.admin-section-container .admin-summary-data .summary-detail-section .location-card .card-body table th.address-field,
+.admin-section-container .admin-summary-data .summary-detail-section .location-card .card-body table td.address-field {
   width: 40%;
 }
-.admin-summary-data .summary-detail-section .location-card .card-body table th:nth-child(1),
-.admin-summary-data .summary-detail-section .location-card .card-body table th:nth-child(2),
-.admin-summary-data .summary-detail-section .location-card .card-body table td:nth-child(1),
-.admin-summary-data .summary-detail-section .location-card .card-body table td:nth-child(2) {
+.admin-section-container .admin-summary-data .summary-detail-section .location-card .card-body table th:nth-child(1),
+.admin-section-container .admin-summary-data .summary-detail-section .location-card .card-body table th:nth-child(2),
+.admin-section-container .admin-summary-data .summary-detail-section .location-card .card-body table td:nth-child(1),
+.admin-section-container .admin-summary-data .summary-detail-section .location-card .card-body table td:nth-child(2) {
   width: 60px;
   padding-right: 10px;
 }
-.admin-summary-data .summary-detail-section .location-card .card-body table th:nth-child(1) input,
-.admin-summary-data .summary-detail-section .location-card .card-body table th:nth-child(2) input,
-.admin-summary-data .summary-detail-section .location-card .card-body table td:nth-child(1) input,
-.admin-summary-data .summary-detail-section .location-card .card-body table td:nth-child(2) input {
+.admin-section-container .admin-summary-data .summary-detail-section .location-card .card-body table th:nth-child(1) input,
+.admin-section-container .admin-summary-data .summary-detail-section .location-card .card-body table th:nth-child(2) input,
+.admin-section-container .admin-summary-data .summary-detail-section .location-card .card-body table td:nth-child(1) input,
+.admin-section-container .admin-summary-data .summary-detail-section .location-card .card-body table td:nth-child(2) input {
   padding: 0 5px;
   text-align: center;
 }
@@ -7937,7 +8093,7 @@ h1 {
 }
 .page-details.amica-eft .account-info {
   position: absolute;
-  top: 439px;
+  top: 244px;
   left: 0;
 }
 .page-details.amica-eft .account-info input {
@@ -7948,14 +8104,14 @@ h1 {
   font-size: 15px;
 }
 .page-details.amica-eft .account-info .a1 {
-  left: 138px;
-  width: 599px;
+  left: 190px;
+  width: 220px;
   top: 48px;
 }
 .page-details.amica-eft .account-info .a2 {
-  left: 204px;
-  width: 529px;
-  top: 69px;
+  left: 194px;
+  width: 220px;
+  top: 79px;
 }
 .page-details.amica-eft .account-info .a3 {
   left: 269px;
@@ -8340,7 +8496,7 @@ h1 {
 .f-dropdown {
   --max-scroll: 3;
   position: relative;
-  z-index: 10;
+  z-index: 1;
 }
 .f-dropdown select {
   display: none;
