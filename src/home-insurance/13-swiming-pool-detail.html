@@ -139,7 +139,7 @@
                             <div class="col">
                                 <div class="progress">
                                     <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0"
-                                        aria-valuemax="100" style="width:20%">
+                                        aria-valuemax="100" style="width:100%">
 
                                     </div>
 
@@ -149,7 +149,7 @@
                             <div class="col">
                                 <div class="progress">
                                     <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0"
-                                        aria-valuemax="100" style="width:0%">
+                                        aria-valuemax="100" style="width:20%">
 
                                     </div>
 
@@ -199,86 +199,60 @@
                         </div>
                         <h3 class="title  text-center">Swimming Pool Details</h3>
                         
-                        <div class="contain-wrapper-sm">
-                            <form class="mt-4">
-                                <div class="blue-light-box bg-white">
-                                    <div class="d-flex justify-content-between">
-                                    </div>
-                                    <div class="vehicle-details">
-                                        <div class="row g-3">
-                                            
-                                            <div class="col-12">
-                                                <h5 class="fs-16">Is swimming pool is fenced?</h5>
-                                                <div class="d-flex align-items-center justify-content-start">
-                                                    <div class="d-flex align-self-center me-3">
-                                                        <label class="radio-inline radio-btn" for="livingYes">
-                                                            <input class="radio-control" type="radio" name="fenced"
-                                                                value="" id="livingYes" checked="">
-                                                            <span class="radio-custom"></span>
-                                                            <span class="radio-label fs-14">Yes </span>
-                                                        </label>
-                                                    </div>
-                                                    <div class="d-flex align-self-center me-3">
-                                                        <label class="radio-inline radio-btn" for="livingNo">
-                                                            <input class="radio-control" type="radio" name="fenced"
-                                                                value="" id="livingNo" >
-                                                            <span class="radio-custom"></span>
-                                                            <span class="radio-label fs-14">No </span>
-                                                        </label>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            
-                                            <div class="col-12">
-                                                <h5 class="fs-16">Is it Above or inground?</h5>
-                                                <div class="d-flex align-items-center justify-content-start">
-                                                    <div class="d-flex align-self-center me-3">
-                                                        <label class="radio-inline radio-btn" for="Above">
-                                                            <input class="radio-control" type="radio" name="inground"
-                                                                value="" id="Above" checked="">
-                                                            <span class="radio-custom"></span>
-                                                            <span class="radio-label fs-14">Above </span>
-                                                        </label>
-                                                    </div>
-                                                    <div class="d-flex align-self-center me-3">
-                                                        <label class="radio-inline radio-btn" for="Inground">
-                                                            <input class="radio-control" type="radio" name="inground"
-                                                                value="" id="Inground" >
-                                                            <span class="radio-custom"></span>
-                                                            <span class="radio-label fs-14">Inground </span>
-                                                        </label>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            
-                                            <div class="col-12">
-                                                <h5 class="fs-16">Does it have diving board?</h5>
-                                                <div class="d-flex align-items-center justify-content-start">
-                                                    <div class="d-flex align-self-center me-3">
-                                                        <label class="radio-inline radio-btn" for="divingYes">
-                                                            <input class="radio-control" type="radio" name="diving"
-                                                                value="" id="divingYes" checked="">
-                                                            <span class="radio-custom"></span>
-                                                            <span class="radio-label fs-14">Yes </span>
-                                                        </label>
-                                                    </div>
-                                                    <div class="d-flex align-self-center me-3">
-                                                        <label class="radio-inline radio-btn" for="divingNo">
-                                                            <input class="radio-control" type="radio" name="diving"
-                                                                value="" id="divingNo" >
-                                                            <span class="radio-custom"></span>
-                                                            <span class="radio-label fs-14">No </span>
-                                                        </label>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
+                        <form class="mt-4">
+                            <div class="container-wrapper-md">
+                                <div class="d-flex flex-wrap justify-content-center claim-section ">
+                                    <label class="checkbox-inline squar-boxes" for="Yes">
+                                        <input class="checkbox-control" type="checkbox" name="glass-damage" value="" id="Yes">
+                                        <span class="checkbox-custom"></span>
+                                        <span class="checkbox-label fs-14">
+                                            <img src="../images/claim-icons/none_active.svg" alt="" class="active" />
+                                            <img src="../images/claim-icons/none_inactive.svg" alt="" class="offline" />
+                                            None
+                                        </span>
+                                    </label>
+                                    <label class="checkbox-inline squar-boxes" for="No">
+                                        <input class="checkbox-control" type="checkbox" name="glass-damage" value="" id="No" checked>
+                                        <span class="checkbox-custom"></span>
+                                        <span class="checkbox-label fs-14">
+                                            <img src="../images/claim-icons/fence_around_active.svg" alt=""
+                                                class="active" />
+                                            <img src="../images/claim-icons/fence_around_inactive.svg" alt="" class="offline" />
+                                            Fence Around Pool
+                                        </span>
+                                    </label>
+                                    <label class="checkbox-inline squar-boxes" for="repaired">
+                                        <input class="checkbox-control" type="checkbox" name="glass-damage" value="" id="repaired" checked>
+                                        <span class="checkbox-custom"></span>
+                                        <span class="checkbox-label fs-14">
+
+                                            <img src="../images/claim-icons/locking_gate_active.svg" alt=""
+                                                class="active" />
+                                            <img src="../images/claim-icons/locking_gate_inactive.svg" alt=""
+                                                class="offline" />
+                                                Locking Gate
+                                        </span>
+                                    </label>
+                                    <label class="checkbox-inline squar-boxes" for="diving">
+                                        <input class="checkbox-control" type="checkbox" name="glass-damage" value="" id="diving" checked>
+                                        <span class="checkbox-custom"></span>
+                                        <span class="checkbox-label fs-14">
+
+                                            <img src="../images/claim-icons/diving_board_active.svg" alt=""
+                                                class="active" />
+                                            <img src="../images/claim-icons/diving_board_inactive.svg" alt=""
+                                                class="offline" />
+                                                Diving Board
+                                        </span>
+                                    </label>
                                 </div>
+                            </div>
+
+                            <div class="contain-wrapper-sm">
                                 <button type="submit" class="btn btn-primary  mx-auto mt-4"><span>Continue</span>
                                 </button>
-                            </form>
-                    </div>
+                            </div>
+                        </form>
                 </div>
             </div>
         </div>

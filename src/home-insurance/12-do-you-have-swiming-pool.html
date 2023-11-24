@@ -139,7 +139,7 @@
                             <div class="col">
                                 <div class="progress">
                                     <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0"
-                                        aria-valuemax="100" style="width:20%">
+                                        aria-valuemax="100" style="width:100%">
 
                                     </div>
 
@@ -149,7 +149,7 @@
                             <div class="col">
                                 <div class="progress">
                                     <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0"
-                                        aria-valuemax="100" style="width:0%">
+                                        aria-valuemax="100" style="width:20%">
 
                                     </div>
 
@@ -197,15 +197,50 @@
                             <p class="user-welcome mt-2">Hey! My Name is Anne
                             </p>
                         </div>
-                        <h3 class="title  text-center">Do you have swimming pool?</h3>
-                        <div class="contain-wrapper-sm d-flex justify-content-center">
-                           
-                            
-                            <button class="btn btn-outline mt-4 mx-x"><span>No</span>
-                            </button>
-                            <button type="submit" class="btn btn-primary  mx-3 mt-4"><span>Yes</span>
-                            </button>
-                    </div>
+                        <h3 class="title  text-center">Select appropriate option for the Swimming Pool</h3>
+
+                        <form class="mt-4">
+                            <div class="container-wrapper-md">
+                                <div class="d-flex flex-wrap justify-content-center claim-section ">
+                                    <label class="checkbox-inline squar-boxes" for="Yes">
+                                        <input class="checkbox-control" type="checkbox" name="glass-damage" value="" id="Yes">
+                                        <span class="checkbox-custom"></span>
+                                        <span class="checkbox-label fs-14">
+                                            <img src="../images/claim-icons/none_active.svg" alt="" class="active" />
+                                            <img src="../images/claim-icons/none_inactive.svg" alt="" class="offline" />
+                                            None
+                                        </span>
+                                    </label>
+                                    <label class="checkbox-inline squar-boxes" for="No">
+                                        <input class="checkbox-control" type="checkbox" name="glass-damage" value="" id="No" checked>
+                                        <span class="checkbox-custom"></span>
+                                        <span class="checkbox-label fs-14">
+                                            <img src="../images/claim-icons/above_ground_active.svg" alt=""
+                                                class="active" />
+                                            <img src="../images/claim-icons/above_ground_inactive.svg" alt="" class="offline" />
+                                            Above Ground
+                                        </span>
+                                    </label>
+                                    <label class="checkbox-inline squar-boxes" for="repaired">
+                                        <input class="checkbox-control" type="checkbox" name="glass-damage" value="" id="repaired" checked>
+                                        <span class="checkbox-custom"></span>
+                                        <span class="checkbox-label fs-14">
+
+                                            <img src="../images/claim-icons/inground_active.svg" alt=""
+                                                class="active" />
+                                            <img src="../images/claim-icons/inground_inactive.svg" alt=""
+                                                class="offline" />
+                                                Inground
+                                        </span>
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="contain-wrapper-sm">
+                                <button type="submit" class="btn btn-primary  mx-auto mt-4"><span>Continue</span>
+                                </button>
+                            </div>
+                        </form>
                 </div>
             </div>
         </div>
