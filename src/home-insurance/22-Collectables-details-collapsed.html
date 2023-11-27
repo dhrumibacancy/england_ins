@@ -140,7 +140,7 @@
                             <div class="col">
                                 <div class="progress">
                                     <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0"
-                                        aria-valuemax="100" style="width:20%">
+                                        aria-valuemax="100" style="width:100%">
                                     </div>
 
                                 </div>
@@ -149,7 +149,7 @@
                             <div class="col">
                                 <div class="progress">
                                     <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0"
-                                        aria-valuemax="100" style="width:0%">
+                                        aria-valuemax="100" style="width:50%">
 
                                     </div>
 
@@ -220,7 +220,8 @@
                                                                         for="flexCheckDefault2">
                                                                         <input class="checkbox-control" type="checkbox"
                                                                             value="" id="flexCheckDefault2" checked>
-                                                                        <span class="checkbox-custom"></span>
+                                                                        <!-- <span class="checkbox-custom"></span> -->
+                                                                        <img src="../images/claim-icons/jewelry-active.svg" style="height: 24px;" alt="" class="active"/> 
                                                                         <span
                                                                             class="checkbox-label fs-16 fw-bolder">Jewelry
                                                                         </span>
@@ -289,7 +290,7 @@
                                                 <div class="accordion custom" id="FursItem">
                                                     <div class="accordion-item accordion-white bordered rounded-1">
                                                         <h2 class="accordion-header" id="Furs">
-                                                            <button class="accordion-button" type="button"
+                                                            <button class="accordion-button collapsed" type="button"
                                                                 data-bs-toggle="collapse" data-bs-target="#FursAccord"
                                                                 aria-expanded="false" aria-controls="FursAccord">
                                                                 <h4 class="title fs-18">
@@ -297,7 +298,7 @@
                                                                         for="furs">
                                                                         <input class="checkbox-control" type="checkbox"
                                                                             value="" id="furs">
-                                                                        <span class="checkbox-custom"></span>
+                                                                            <img src="../images/claim-icons/furs-active.svg" style="height: 24px;" alt="" class="active"/> 
                                                                         <span
                                                                             class="checkbox-label fs-16 fw-bolder">Furs
                                                                         </span>
@@ -332,25 +333,7 @@
                                                                                 placeholder="Enter amount" />
                                                                         </div>
                                                                     </div>
-                                                                    <div class="col-md-6 col-12 ">
-                                                                        <button
-                                                                            class="btn bg-blue-light-2  form-control w-100 justify-content-start text-capitalize border-0"
-                                                                            onclick="importDatalicence()"><img
-                                                                                src="../images/document-pair.svg" alt=""
-                                                                                class="me-2">Attach appraisal</button>
-                                                                    </div>
-                                                                    <div class="col-md-6 col-12 ">
-                                                                        <input type="text" class="form-control"
-                                                                            id="Cost"
-                                                                            placeholder="Enter serial number" />
-                                                                    </div>
-                                                                    <div class="col-12">
-                                                                        <label for="">
-                                                                            <textarea name="" id="" cols="30" rows="3"
-                                                                                class="form-control pt-2 h-auto"
-                                                                                placeholder="Describe item in few words"></textarea>
-                                                                        </label>
-                                                                    </div>
+                                                                    
 
                                                                 </div>
                                                             </div>
@@ -365,7 +348,7 @@
                                                 <div class="accordion custom" id="FirearmsItem">
                                                     <div class="accordion-item accordion-white bordered rounded-1">
                                                         <h2 class="accordion-header" id="Firearms">
-                                                            <button class="accordion-button" type="button"
+                                                            <button class="accordion-button collapsed" type="button"
                                                                 data-bs-toggle="collapse"
                                                                 data-bs-target="#FirearmsAccord" aria-expanded="true"
                                                                 aria-controls="FirearmsAccord">
@@ -374,7 +357,7 @@
                                                                         for="Firearms">
                                                                         <input class="checkbox-control" type="checkbox"
                                                                             value="" id="Firearms">
-                                                                        <span class="checkbox-custom"></span>
+                                                                            <img src="../images/claim-icons/firearms-active.svg" style="height: 24px;" alt="" class="active"/> 
                                                                         <span
                                                                             class="checkbox-label fs-16 fw-bolder">Firearms
                                                                         </span>
@@ -410,23 +393,14 @@
                                                                                 placeholder="Enter amount" />
                                                                         </div>
                                                                     </div>
-                                                                    <div class="col-md-6 col-12 ">
-                                                                        <button
-                                                                            class="btn bg-blue-light-2  form-control w-100 justify-content-start text-capitalize border-0"
-                                                                            onclick="importDatalicence()"><img
-                                                                                src="../images/document-pair.svg" alt=""
-                                                                                class="me-2">Attach appraisal</button>
-                                                                    </div>
-                                                                    <div class="col-md-6 col-12 ">
-                                                                        <input type="text" class="form-control"
-                                                                            id="Cost"
-                                                                            placeholder="Enter serial number" />
-                                                                    </div>
                                                                     <div class="col-12">
-                                                                        <label for="">
-                                                                            <textarea name="" id="" cols="30" rows="3"
-                                                                                class="form-control pt-2 h-auto"
-                                                                                placeholder="Describe item in few words"></textarea>
+                                                                        <label class="checkbox-inline mb-0 w-full"
+                                                                            for="Fired">
+                                                                            <input class="checkbox-control" checked type="checkbox"
+                                                                                value="" id="Fired">
+                                                                            <span class="checkbox-custom"></span>
+                                                                            <span class="checkbox-label fs-16">Fired
+                                                                            </span>
                                                                         </label>
                                                                     </div>
 
@@ -435,6 +409,53 @@
                                                         </div><!-- /accordion-item -->
 
 
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-12">
+                                                <div class="accordion custom" id="SolarItem">
+                                                    <div class="accordion-item accordion-white bordered rounded-1">
+                                                        <h2 class="accordion-header" id="Solar">
+                                                            <button class="accordion-button collapsed" type="button"
+                                                                data-bs-toggle="collapse"
+                                                                data-bs-target="#SolarAccord" aria-expanded="true"
+                                                                aria-controls="SolarAccord">
+                                                                <h4 class="title fs-18">
+                                                                    <label class="checkbox-inline mb-0 w-full"
+                                                                        for="solarpanel">
+                                                                        <input class="checkbox-control" type="checkbox"
+                                                                            value="" id="solarpanel">
+                                                                            <img src="../images/claim-icons/solar-active.svg" style="height: 24px;" alt="" class="active"/> 
+                                                                        <span
+                                                                            class="checkbox-label fs-16 fw-bolder">Solar
+                                                                        </span>
+                                                                    </label>
+                                                                </h4>
+                                                            </button>
+                                                        </h2>
+                                                        <div id="SolarAccord" class="accordion-collapse collapse"
+                                                            aria-labelledby="SolarAccord"
+                                                            data-bs-parent="#SolarAccord">
+                                                            <div class="accordion-body">
+                                                                <div class="row g-3">
+
+                                                                    <div class="col-12 ">
+                                                                        <div class="input-group form-control px-0">
+                                                                            <span class="input-group-append ">
+                                                                                <span
+                                                                                    class="input-group-text border-0 bg-white d-block pe-0">
+                                                                                    $
+                                                                                </span>
+                                                                            </span>
+                                                                            <input type="text" class="" id="Cost"
+                                                                                placeholder="Enter amount" />
+                                                                        </div>
+                                                                    </div>
+
+                                                                </div>
+                                                            </div>
+                                                        </div><!-- /accordion-item -->
                                                     </div>
                                                 </div>
                                             </div>
@@ -452,7 +473,7 @@
                                                                         for="Collectables">
                                                                         <input class="checkbox-control" type="checkbox"
                                                                             value="" id="Collectables" checked>
-                                                                        <span class="checkbox-custom"></span>
+                                                                            <img src="../images/claim-icons/collectables-active.svg" style="height: 24px;" alt="" class="active"/> 
                                                                         <span
                                                                             class="checkbox-label fs-16 fw-bolder">Collectables
                                                                         </span>

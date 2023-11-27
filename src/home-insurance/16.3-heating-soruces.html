@@ -38,9 +38,6 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css">
-
 
 
 
@@ -197,85 +194,107 @@
                     <div class="container mt-5 pt-5">
                         <div class="text-center mb-4 user-info">
                             <img src="../images/user-person.svg" alt="" class="user-person mx-auto">
-                            <p class="user-welcome mt-2">Hey! My Name is Anne</p>
+                            <p class="user-welcome mt-2">Hey! My Name is Anne
+                            </p>
                         </div>
-                        <h3 class="title  text-center">Oil Tank Details</h3>
-
+                        <h3 class="title  text-center">Select All Heating Sources</h3>
+                        
                         <div class="contain-wrapper-sm">
-                            <form class="mt-4 ">
-                                <div class="d-flex justify-content-center">
-                                    <div class="blue-light-box bg-white w-75">
-
-                                        <div class="row g-3">
-                                            <div class="col-md-12 ">
-                                                <h5 class="fs-16">Is Oil Tank Above or Below the Ground</h5>
-                                                <div class="row">
-                                                    <div class="col-6">
-                                                        <label class="radio-inline radio-btn text-center" for="livingAbove">
-                                                            <input class="radio-control" type="radio" name="aboveBelow"
-                                                                value="" id="livingAbove" checked="">
-                                                            <span class="radio-custom"></span>
-                                                            <span class="radio-label fs-14 w-100">Above
-                                                            </span>
-                                                        </label>
-                                                    </div>
-                                                    <div class="col-6">
-                                                        <label class="radio-inline radio-btn  text-center" for="livingBelow">
-                                                            <input class="radio-control" type="radio" name="aboveBelow"
-                                                                value="" id="livingBelow">
-                                                            <span class="radio-custom"></span>
-                                                            <span class="radio-label fs-14 w-100">Below
-                                                            </span>
-                                                        </label>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                            <div class="col-md-12 ">
-                                                <h5 class="fs-16">Oil tank is in Interior or Exterior</h5>
-                                                <div class="row">
-                                                    <div class="col-6">
-                                                        <label class="radio-inline radio-btn text-center" for="livingYes">
-                                                            <input class="radio-control" type="radio" name="living"
-                                                                value="" id="livingYes" checked="">
-                                                            <span class="radio-custom"></span>
-                                                            <span class="radio-label fs-14 w-100">interior
-                                                            </span>
-                                                        </label>
-                                                    </div>
-                                                    <div class="col-6">
-                                                        <label class="radio-inline radio-btn text-center" for="livingNo">
-                                                            <input class="radio-control" type="radio" name="living"
-                                                                value="" id="livingNo">
-                                                            <span class="radio-custom"></span>
-                                                            <span class="radio-label fs-14 w-100">exterior
-                                                            </span>
-                                                        </label>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                            <div class="col-lg-12 mb-0">
-                                                <label class="checkbox-inline mb-0 w-auto"
-                                                    for="flexCheckDefault2">
-                                                    <input class="checkbox-control" type="checkbox" checked value=""
-                                                        id="flexCheckDefault2">
-                                                    <span class="checkbox-custom"></span>
-                                                    <span class="checkbox-label fs-14">On a cement floor
-                                                    </span>
-                                                </label>
-                                            </div>
-                                        </div>
-                                    </div>
+                            <form class="mt-4">
+                                <div class="d-flex flex-wrap justify-content-center">
+                                    <label class="checkbox-inline squar-boxes mb-0" for="gas">
+                                        <input class="checkbox-control" type="checkbox" checked value=""
+                                            id="gas" >
+                                        <span class="checkbox-custom"></span>
+                                        <span class="checkbox-label fs-14">
+                                            <img src="../images/gas-heater-active-icon.svg" alt="" class="active"/> 
+                                            <img src="../images/gas-heater-icon.svg" alt="" class="offline"/> 
+                                            Gas 
+                                        </span>
+                                    </label>
+                                    <label class="checkbox-inline squar-boxes mb-0" for="Oil">
+                                        <input class="checkbox-control" type="checkbox" value=""
+                                            id="Oil" >
+                                        <span class="checkbox-custom"></span>
+                                        <span class="checkbox-label fs-14">
+                                            <img src="../images/oil-heater-active-icon.svg" alt="" class="active"/> 
+                                            <img src="../images/oil-heater-icon.svg" alt="" class="offline"/> 
+                                            Oil 
+                                        </span>
+                                    </label>
+                                    <label class="checkbox-inline squar-boxes mb-0" for="Electric">
+                                        <input class="checkbox-control" type="checkbox" checked value=""
+                                            id="Electric" >
+                                        <span class="checkbox-custom"></span>
+                                        <span class="checkbox-label fs-14">
+                                            
+                                            <img src="../images/electric-heater-active-icon.svg" alt="" class="active"/> 
+                                            <img src="../images/electric-heater-icon.svg" alt="" class="offline"/> 
+                                            Electric 
+                                        </span>
+                                    </label>
+                                    <label class="checkbox-inline squar-boxes mb-0" for="propane">
+                                        <input class="checkbox-control" type="checkbox" checked value=""
+                                            id="propane" >
+                                        <span class="checkbox-custom"></span>
+                                        <span class="checkbox-label fs-14">
+                                            
+                                            <img src="../images/propane-heater-active-icon.svg" alt="" class="active"/> 
+                                            <img src="../images/propane-heater-icon.svg" alt="" class="offline"/> 
+                                            propane 
+                                        </span>
+                                    </label>
+                                    <label class="checkbox-inline squar-boxes mb-0" for="stove">
+                                        <input class="checkbox-control" type="checkbox" value=""
+                                            id="stove" >
+                                        <span class="checkbox-custom"></span>
+                                        <span class="checkbox-label fs-14">
+                                            
+                                            <img src="../images/claim-icons/stove_active.svg" alt="" class="active"/> 
+                                            <img src="../images/claim-icons/stove_inactive.svg" alt="" class="offline"/> 
+                                            Stove 
+                                        </span>
+                                    </label>
+                                    <label class="checkbox-inline squar-boxes mb-0" for="hot_water">
+                                        <input class="checkbox-control" type="checkbox" checked value=""
+                                            id="hot_water" >
+                                        <span class="checkbox-custom"></span>
+                                        <span class="checkbox-label fs-14">
+                                            
+                                            <img src="../images/claim-icons/hot_water_active.svg" alt="" class="active"/> 
+                                            <img src="../images/claim-icons/hot_water_inactive.svg" alt="" class="offline"/> 
+                                            Hot Water
+                                        </span>
+                                    </label>
+                                    <label class="checkbox-inline squar-boxes mb-0" for="baseboard">
+                                        <input class="checkbox-control" type="checkbox" checked value=""
+                                            id="baseboard" >
+                                        <span class="checkbox-custom"></span>
+                                        <span class="checkbox-label fs-14">
+                                            
+                                            <img src="../images/claim-icons/baseboard_active.svg" alt="" class="active"/> 
+                                            <img src="../images/claim-icons/baseboard_inactive.svg" alt="" class="offline"/> 
+                                            Baseboard 
+                                        </span>
+                                    </label>
+                                    <label class="checkbox-inline squar-boxes mb-0" for="radiant">
+                                        <input class="checkbox-control" type="checkbox" checked value=""
+                                            id="radiant" >
+                                        <span class="checkbox-custom"></span>
+                                        <span class="checkbox-label fs-14">
+                                            
+                                            <img src="../images/claim-icons/radiant_active.svg" alt="" class="active"/> 
+                                            <img src="../images/claim-icons/radiant_inactive.svg" alt="" class="offline"/> 
+                                            Radiant 
+                                        </span>
+                                    </label>
                                 </div>
                                 <button type="submit" class="btn btn-primary  mx-auto mt-4"><span>Continue</span>
                                 </button>
                             </form>
-                        </div>
                     </div>
                 </div>
             </div>
-        </div>
         </div>
     </main>
 
@@ -287,8 +306,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
         integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous">
         </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js">
-    </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js">
+        </script>
 
     <script src="../js/app.js"></script>
     <script>
@@ -306,12 +325,16 @@
                     '.customize-options').hide())
             })
         })
+
         $(function () {
-            $('[id^="datepicker"]').datepicker({
+            $('#datepicker').datepicker({
                 autoclose: true,
+
             });
         });
     </script>
+
+    
 
 </body>
 
