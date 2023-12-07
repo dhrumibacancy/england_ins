@@ -180,7 +180,7 @@
                                     <div class="vehicle-details">
                                         <div class="row g-3">
 
-                                            <div class="col-12">
+                                            <div class="col-12 mt-0">
                                                 <div class="accordion custom" id="Jewelry">
                                                     <div class="accordion-item accordion-white bordered rounded-1">
                                                         <h2 class="accordion-header" id="Jewelry">
@@ -217,49 +217,74 @@
                                                                     </label>
                                                                 </div>
                                                                 <div class="row g-3">
-
                                                                     <div class="col-12 ">
-                                                                        <div class="input-group form-control px-0">
-                                                                            <span class="input-group-append ">
-                                                                                <span
-                                                                                    class="input-group-text border-0 bg-white d-block pe-0">
-                                                                                    $
-                                                                                </span>
-                                                                            </span>
-                                                                            <input type="text" class="" id="Cost"
-                                                                                placeholder="Enter amount" />
+                                                                        <div class="accordion custom" id="jewelleryItem">
+                                                                            <div class="accordion-item rounded-1 mb-3">
+                                                                                <h2 class="accordion-header" id="jewel1">
+                                                                                    <button class="accordion-button border-bottom-0"
+                                                                                        type="button"
+                                                                                        data-bs-toggle="collapse"
+                                                                                        data-bs-target="#jewelcollapse1"
+                                                                                        aria-expanded="true"
+                                                                                        aria-controls="jewelcollapse1">
+                                                                                        <h4 class="title fs-18">Jewelry Item 1</h4>
+                                                                                    </button>
+                                                                                </h2>
+                                                                                <div id="jewelcollapse1" class="accordion-collapse collapse show"
+                                                                                    aria-labelledby="jewel1" data-bs-parent="#jewelleryItem">
+                                                                                    <div class="accordion-body pt-0">
+                                                                                        <div class="row g-3">
+                                                                                            <div class="col-12 ">
+                                                                                                <div class="input-group form-control px-0">
+                                                                                                    <span
+                                                                                                        class="input-group-append ">
+                                                                                                        <span
+                                                                                                            class="input-group-text border-0 bg-white d-block pe-0">
+                                                                                                            $
+                                                                                                        </span>
+                                                                                                    </span>
+                                                                                                    <input
+                                                                                                        type="text"
+                                                                                                        class=""
+                                                                                                        id="Cost"
+                                                                                                        placeholder="Enter amount" value="5000" />
+                                                                                                </div>
+                                                                                            </div>
+                                                                                            <div class="col-md-6 col-12 ">
+                                                                                                <button class="btn bg-blue-light-2  form-control w-100 justify-content-start text-capitalize border-0"
+                                                                                                    onclick="importDatalicence()">
+                                                                                                    <img src="../images/document-pair.svg" alt="" class="me-2">
+                                                                                                    Attach appraisal
+                                                                                                </button>
+                                                                                            </div>
+                                                                                            <div class="col-md-6 col-12 ">
+                                                                                                <input type="text" class="form-control" id="Cost" placeholder="Enter serial number" />
+                                                                                            </div>
+                                                                                            <div class="col-12">
+                                                                                                <label class="m-0" for="">
+                                                                                                    <textarea name="" id="" cols="30" rows="3" class="form-control pt-2 h-auto"
+                                                                                                        placeholder="Describe item in few words"></textarea>
+                                                                                                </label>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <a class="btn-add" href="#">
+                                                                                <img src="../images/add-pluse-circle.svg" alt="Add" class="icon">
+                                                                                Add Another Item
+                                                                            </a>
+                                                                            <!-- /accordion-item -->
                                                                         </div>
                                                                     </div>
-                                                                    <div class="col-md-6 col-12 ">
-                                                                        <button
-                                                                            class="btn bg-blue-light-2  form-control w-100 justify-content-start text-capitalize border-0"
-                                                                            onclick="importDatalicence()"><img
-                                                                                src="../images/document-pair.svg" alt=""
-                                                                                class="me-2">Attach appraisal</button>
-                                                                    </div>
-                                                                    <div class="col-md-6 col-12 ">
-                                                                        <input type="text" class="form-control"
-                                                                            id="Cost"
-                                                                            placeholder="Enter serial number" />
-                                                                    </div>
-                                                                    <div class="col-12">
-                                                                        <label for="">
-                                                                            <textarea name="" id="" cols="30" rows="3"
-                                                                                class="form-control pt-2 h-auto"
-                                                                                placeholder="Describe item in few words"></textarea>
-                                                                        </label>
-                                                                    </div>
-
                                                                 </div>
                                                             </div>
                                                         </div><!-- /accordion-item -->
-
-
                                                     </div>
                                                 </div>
                                             </div>
 
-                                            <div class="col-12">
+                                            <div class="col-12 mt-0">
                                                 <div class="accordion custom" id="FursItem">
                                                     <div class="accordion-item accordion-white bordered rounded-1">
                                                         <h2 class="accordion-header" id="Furs">
@@ -279,7 +304,7 @@
                                                                 </h4>
                                                             </button>
                                                         </h2>
-                                                        <div id="FursAccord" class="accordion-collapse collapse"
+                                                        <div id="FursAccord" class="accordion-collapse collapse show"
                                                             aria-labelledby="FursAccord" data-bs-parent="#FursAccord">
                                                             <div class="accordion-body">
                                                                 <div class="keep-in-vault">
@@ -293,21 +318,50 @@
                                                                     </label>
                                                                 </div>
                                                                 <div class="row g-3">
-
                                                                     <div class="col-12 ">
-                                                                        <div class="input-group form-control px-0">
-                                                                            <span class="input-group-append ">
-                                                                                <span
-                                                                                    class="input-group-text border-0 bg-white d-block pe-0">
-                                                                                    $
-                                                                                </span>
-                                                                            </span>
-                                                                            <input type="text" class="" id="Cost"
-                                                                                placeholder="Enter amount" />
+                                                                        <div class="accordion custom" id="furItem">
+                                                                            <div class="accordion-item rounded-1 mb-3">
+                                                                                <h2 class="accordion-header" id="fur1">
+                                                                                    <button class="accordion-button border-bottom-0"
+                                                                                        type="button"
+                                                                                        data-bs-toggle="collapse"
+                                                                                        data-bs-target="#furcollapse1"
+                                                                                        aria-expanded="true"
+                                                                                        aria-controls="furcollapse1">
+                                                                                        <h4 class="title fs-18">Furs Item 1</h4>
+                                                                                    </button>
+                                                                                </h2>
+                                                                                <div id="furcollapse1" class="accordion-collapse collapse show"
+                                                                                    aria-labelledby="fur1" data-bs-parent="#furItem">
+                                                                                    <div class="accordion-body pt-0">
+                                                                                        <div class="row g-3">
+                                                                                            <div class="col-12 ">
+                                                                                                <div class="input-group form-control px-0">
+                                                                                                    <span
+                                                                                                        class="input-group-append ">
+                                                                                                        <span
+                                                                                                            class="input-group-text border-0 bg-white d-block pe-0">
+                                                                                                            $
+                                                                                                        </span>
+                                                                                                    </span>
+                                                                                                    <input
+                                                                                                        type="text"
+                                                                                                        class=""
+                                                                                                        id="Cost"
+                                                                                                        placeholder="Enter amount" value="5000" />
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <a class="btn-add" href="#">
+                                                                                <img src="../images/add-pluse-circle.svg" alt="Add" class="icon">
+                                                                                Add Another Item
+                                                                            </a>
+                                                                            <!-- /accordion-item -->
                                                                         </div>
                                                                     </div>
-                                                                    
-
                                                                 </div>
                                                             </div>
                                                         </div><!-- /accordion-item -->
@@ -317,7 +371,7 @@
                                                 </div>
                                             </div>
 
-                                            <div class="col-12">
+                                            <div class="col-12 mt-0">
                                                 <div class="accordion custom" id="FirearmsItem">
                                                     <div class="accordion-item accordion-white bordered rounded-1">
                                                         <h2 class="accordion-header" id="Firearms">
@@ -338,7 +392,7 @@
                                                                 </h4>
                                                             </button>
                                                         </h2>
-                                                        <div id="FirearmsAccord" class="accordion-collapse collapse"
+                                                        <div id="FirearmsAccord" class="accordion-collapse collapse show"
                                                             aria-labelledby="FirearmsAccord"
                                                             data-bs-parent="#FirearmsAccord">
                                                             <div class="accordion-body">
@@ -353,30 +407,60 @@
                                                                     </label>
                                                                 </div>
                                                                 <div class="row g-3">
-
                                                                     <div class="col-12 ">
-                                                                        <div class="input-group form-control px-0">
-                                                                            <span class="input-group-append ">
-                                                                                <span
-                                                                                    class="input-group-text border-0 bg-white d-block pe-0">
-                                                                                    $
-                                                                                </span>
-                                                                            </span>
-                                                                            <input type="text" class="" id="Cost"
-                                                                                placeholder="Enter amount" />
+                                                                        <div class="accordion custom" id="fireItem">
+                                                                            <div class="accordion-item rounded-1 mb-3">
+                                                                                <h2 class="accordion-header" id="fire1">
+                                                                                    <button class="accordion-button border-bottom-0"
+                                                                                        type="button"
+                                                                                        data-bs-toggle="collapse"
+                                                                                        data-bs-target="#firecollapse1"
+                                                                                        aria-expanded="true"
+                                                                                        aria-controls="firecollapse1">
+                                                                                        <h4 class="title fs-18">Firearms Item 1</h4>
+                                                                                    </button>
+                                                                                </h2>
+                                                                                <div id="firecollapse1" class="accordion-collapse collapse show"
+                                                                                    aria-labelledby="fire1" data-bs-parent="#fireItem">
+                                                                                    <div class="accordion-body pt-0">
+                                                                                        <div class="row g-3">
+                                                                                            <div class="col-12 ">
+                                                                                                <div class="input-group form-control px-0">
+                                                                                                    <span
+                                                                                                        class="input-group-append ">
+                                                                                                        <span
+                                                                                                            class="input-group-text border-0 bg-white d-block pe-0">
+                                                                                                            $
+                                                                                                        </span>
+                                                                                                    </span>
+                                                                                                    <input
+                                                                                                        type="text"
+                                                                                                        class=""
+                                                                                                        id="Cost"
+                                                                                                        placeholder="Enter amount" value="5000" />
+                                                                                                </div>
+                                                                                            </div>
+                                                                                            <div class="col-12">
+                                                                                                <label class="checkbox-inline mb-0 w-full"
+                                                                                                    for="Fired">
+                                                                                                    <input class="checkbox-control" checked type="checkbox"
+                                                                                                        value="" id="Fired">
+                                                                                                    <span class="checkbox-custom"></span>
+                                                                                                    <span class="checkbox-label fs-16">Fired
+                                                                                                    </span>
+                                                                                                </label>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <a class="btn-add" href="#">
+                                                                                <img src="../images/add-pluse-circle.svg" alt="Add" class="icon">
+                                                                                Add Another Item
+                                                                            </a>
+                                                                            <!-- /accordion-item -->
                                                                         </div>
                                                                     </div>
-                                                                    <div class="col-12">
-                                                                        <label class="checkbox-inline mb-0 w-full"
-                                                                            for="Fired">
-                                                                            <input class="checkbox-control" checked type="checkbox"
-                                                                                value="" id="Fired">
-                                                                            <span class="checkbox-custom"></span>
-                                                                            <span class="checkbox-label fs-16">Fired
-                                                                            </span>
-                                                                        </label>
-                                                                    </div>
-
                                                                 </div>
                                                             </div>
                                                         </div><!-- /accordion-item -->
@@ -386,7 +470,7 @@
                                                 </div>
                                             </div>
 
-                                            <div class="col-12">
+                                            <div class="col-12 mt-0">
                                                 <div class="accordion custom" id="SolarItem">
                                                     <div class="accordion-item accordion-white bordered rounded-1">
                                                         <h2 class="accordion-header" id="Solar">
@@ -407,25 +491,31 @@
                                                                 </h4>
                                                             </button>
                                                         </h2>
-                                                        <div id="SolarAccord" class="accordion-collapse collapse"
+                                                        <div id="SolarAccord" class="accordion-collapse collapse show"
                                                             aria-labelledby="SolarAccord"
                                                             data-bs-parent="#SolarAccord">
                                                             <div class="accordion-body">
                                                                 <div class="row g-3">
-
+                                                                    <div class="col-md-6 ">
+                                                                        <input type="text" class="form-control" id="Cost"
+                                                                                placeholder="No. of KW" />
+                                                                    </div>
+                                                                    <div class="col-md-6 ">
+                                                                        <input type="text" class="form-control" id="Cost"
+                                                                                placeholder="No. of Panels" />
+                                                                    </div>
                                                                     <div class="col-12 ">
                                                                         <div class="input-group form-control px-0">
+                                                                            <input type="text" class="" id="Cost"
+                                                                                placeholder="% of Roof covered by panels" />
                                                                             <span class="input-group-append ">
                                                                                 <span
-                                                                                    class="input-group-text border-0 bg-white d-block pe-0">
-                                                                                    $
+                                                                                    class="input-group-text border-0 bg-white d-block ps-0">
+                                                                                    %
                                                                                 </span>
                                                                             </span>
-                                                                            <input type="text" class="" id="Cost"
-                                                                                placeholder="Enter amount" />
                                                                         </div>
                                                                     </div>
-
                                                                 </div>
                                                             </div>
                                                         </div><!-- /accordion-item -->
@@ -433,7 +523,7 @@
                                                 </div>
                                             </div>
 
-                                            <div class="col-12">
+                                            <div class="col-12 mt-0">
                                                 <div class="accordion custom collectables" id="collectables">
                                                     <div class="accordion-item accordion-white bordered rounded-1">
                                                         <h2 class="accordion-header" id="collectables">
@@ -459,17 +549,6 @@
                                                             aria-labelledby="collectablesAccord"
                                                             data-bs-parent="#collectables">
                                                             <div class="accordion-body px-0">
-                                                                <div class="keep-in-vault">
-                                                                    <label class="checkbox-inline mb-0 w-full"
-                                                                        for="collectablesAccordkeepValult">
-                                                                        <input class="checkbox-control" type="checkbox"
-                                                                            value="" id="collectablesAccordkeepValult">
-                                                                        <span class="checkbox-custom"></span>
-                                                                        <span class="checkbox-label fs-16">Kept in vault
-                                                                        </span>
-                                                                    </label>
-                                                                </div>
-
                                                                 <div class="container-fluid">
                                                                     <div class="row g-3">
 
@@ -479,7 +558,7 @@
                                                                                 <div class="accordion-item rounded-1">
                                                                                     <h2 class="accordion-header"
                                                                                         id="headingTwo3">
-                                                                                        <button class="accordion-button"
+                                                                                        <button class="accordion-button border-bottom-0"
                                                                                             type="button"
                                                                                             data-bs-toggle="collapse"
                                                                                             data-bs-target="#collapseTwo3"
@@ -510,7 +589,7 @@
                                                                                         aria-labelledby="headingTwo3"
                                                                                         data-bs-parent="#accordionPolicy2">
                                                                                         <div
-                                                                                            class="accordion-body pt-0">
+                                                                                            class="accordion-body">
                                                                                             <div class="keep-in-vault">
                                                                                                 <label
                                                                                                     class="checkbox-inline mb-0 w-full"
@@ -529,51 +608,48 @@
                                                                                                 </label>
                                                                                             </div>
                                                                                             <div class="row g-3">
-                                                                                                <div class="col-12 ">
-                                                                                                    <div
-                                                                                                        class="input-group form-control px-0">
-                                                                                                        <span
-                                                                                                            class="input-group-append ">
-                                                                                                            <span
-                                                                                                                class="input-group-text border-0 bg-white d-block pe-0">
-                                                                                                                $
-                                                                                                            </span>
-                                                                                                        </span>
-                                                                                                        <input
-                                                                                                            type="text"
-                                                                                                            class=""
-                                                                                                            id="Cost"
-                                                                                                            placeholder="Enter amount" />
+                                                                                                <div class="col-12 mt-0">
+                                                                                                    <div class="accordion custom" id="stampItem">
+                                                                                                        <div class="accordion-item rounded-1 mb-3">
+                                                                                                            <h2 class="accordion-header" id="stamp1">
+                                                                                                                <button class="accordion-button border-bottom-0"
+                                                                                                                    type="button"
+                                                                                                                    data-bs-toggle="collapse"
+                                                                                                                    data-bs-target="#stampcollapse1"
+                                                                                                                    aria-expanded="true"
+                                                                                                                    aria-controls="stampcollapse1">
+                                                                                                                    <h4 class="title fs-14">Stamp Item 1</h4>
+                                                                                                                </button>
+                                                                                                            </h2>
+                                                                                                            <div id="stampcollapse1" class="accordion-collapse collapse show"
+                                                                                                                aria-labelledby="stamp1" data-bs-parent="#stampItem">
+                                                                                                                <div class="accordion-body pt-0">
+                                                                                                                    <div class="row g-3">
+                                                                                                                        <div class="col-12 ">
+                                                                                                                            <div class="input-group form-control px-0">
+                                                                                                                                <span class="input-group-append ">
+                                                                                                                                    <span
+                                                                                                                                        class="input-group-text border-0 bg-white d-block pe-0">
+                                                                                                                                        $
+                                                                                                                                    </span>
+                                                                                                                                </span>
+                                                                                                                                <input
+                                                                                                                                    type="text"
+                                                                                                                                    class=""
+                                                                                                                                    id="Cost"
+                                                                                                                                    placeholder="Enter amount" value="" />
+                                                                                                                            </div>
+                                                                                                                        </div>
+                                                                                                                    </div>
+                                                                                                                </div>
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                        <a class="btn-add" href="#">
+                                                                                                            <img src="../images/add-pluse-circle.svg" alt="Add" class="icon">
+                                                                                                            Add Another Item
+                                                                                                        </a>
+                                                                                                        <!-- /accordion-item -->
                                                                                                     </div>
-                                                                                                </div>
-
-                                                                                                <div
-                                                                                                    class="col-md-6 col-12 ">
-                                                                                                    <button
-                                                                                                        class="btn bg-blue-light-2  form-control w-100 justify-content-start text-capitalize border-0"
-                                                                                                        onclick="importDatalicence()"><img
-                                                                                                            src="../images/document-pair.svg"
-                                                                                                            alt=""
-                                                                                                            class="me-2">Attach
-                                                                                                        appraisal</button>
-                                                                                                </div>
-                                                                                                <div
-                                                                                                    class="col-md-6 col-12 ">
-                                                                                                    <input type="text"
-                                                                                                        class="form-control"
-                                                                                                        id="Cost"
-                                                                                                        placeholder="Enter serial number" />
-                                                                                                </div>
-                                                                                                <div class="col-12">
-                                                                                                    <label for="">
-                                                                                                        <textarea
-                                                                                                            name=""
-                                                                                                            id=""
-                                                                                                            cols="30"
-                                                                                                            rows="3"
-                                                                                                            class="form-control pt-2 h-auto"
-                                                                                                            placeholder="Describe item in few words"></textarea>
-                                                                                                    </label>
                                                                                                 </div>
                                                                                             </div>
                                                                                         </div>
@@ -598,7 +674,7 @@
                                                                                 <div class="accordion-item rounded-1">
                                                                                     <h2 class="accordion-header"
                                                                                         id="headingTwo4">
-                                                                                        <button class="accordion-button"
+                                                                                        <button class="accordion-button border-bottom-0"
                                                                                             type="button"
                                                                                             data-bs-toggle="collapse"
                                                                                             data-bs-target="#collapseTwo4"
@@ -618,8 +694,7 @@
                                                                                                     <span
                                                                                                         class="checkbox-custom"></span>
                                                                                                     <span
-                                                                                                        class="checkbox-label fs-16 fw-bolder">Golf
-                                                                                                        equipment
+                                                                                                        class="checkbox-label fs-16 fw-bolder">Golf equipment
                                                                                                     </span>
                                                                                                 </label>
                                                                                             </h4>
@@ -630,7 +705,7 @@
                                                                                         aria-labelledby="headingTwo4"
                                                                                         data-bs-parent="#accordionPolicy3">
                                                                                         <div
-                                                                                            class="accordion-body pt-0">
+                                                                                            class="accordion-body">
                                                                                             <div class="keep-in-vault">
                                                                                                 <label
                                                                                                     class="checkbox-inline mb-0 w-full"
@@ -649,51 +724,48 @@
                                                                                                 </label>
                                                                                             </div>
                                                                                             <div class="row g-3">
-                                                                                                <div class="col-12 ">
-                                                                                                    <div
-                                                                                                        class="input-group form-control px-0">
-                                                                                                        <span
-                                                                                                            class="input-group-append ">
-                                                                                                            <span
-                                                                                                                class="input-group-text border-0 bg-white d-block pe-0">
-                                                                                                                $
-                                                                                                            </span>
-                                                                                                        </span>
-                                                                                                        <input
-                                                                                                            type="text"
-                                                                                                            class=""
-                                                                                                            id="Cost"
-                                                                                                            placeholder="Enter amount" />
+                                                                                                <div class="col-12 mt-0">
+                                                                                                    <div class="accordion custom" id="goldItem">
+                                                                                                        <div class="accordion-item rounded-1 mb-3">
+                                                                                                            <h2 class="accordion-header" id="gold1">
+                                                                                                                <button class="accordion-button border-bottom-0"
+                                                                                                                    type="button"
+                                                                                                                    data-bs-toggle="collapse"
+                                                                                                                    data-bs-target="#goldcollapse1"
+                                                                                                                    aria-expanded="true"
+                                                                                                                    aria-controls="goldcollapse1">
+                                                                                                                    <h4 class="title fs-14">Gold Equipment 1</h4>
+                                                                                                                </button>
+                                                                                                            </h2>
+                                                                                                            <div id="goldcollapse1" class="accordion-collapse collapse show"
+                                                                                                                aria-labelledby="gold1" data-bs-parent="#goldItem">
+                                                                                                                <div class="accordion-body pt-0">
+                                                                                                                    <div class="row g-3">
+                                                                                                                        <div class="col-12 ">
+                                                                                                                            <div class="input-group form-control px-0">
+                                                                                                                                <span class="input-group-append ">
+                                                                                                                                    <span
+                                                                                                                                        class="input-group-text border-0 bg-white d-block pe-0">
+                                                                                                                                        $
+                                                                                                                                    </span>
+                                                                                                                                </span>
+                                                                                                                                <input
+                                                                                                                                    type="text"
+                                                                                                                                    class=""
+                                                                                                                                    id="Cost"
+                                                                                                                                    placeholder="Enter amount" value="" />
+                                                                                                                            </div>
+                                                                                                                        </div>
+                                                                                                                    </div>
+                                                                                                                </div>
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                        <a class="btn-add" href="#">
+                                                                                                            <img src="../images/add-pluse-circle.svg" alt="Add" class="icon">
+                                                                                                            Add Another Equipment
+                                                                                                        </a>
+                                                                                                        <!-- /accordion-item -->
                                                                                                     </div>
-                                                                                                </div>
-
-                                                                                                <div
-                                                                                                    class="col-md-6 col-12 ">
-                                                                                                    <button
-                                                                                                        class="btn bg-blue-light-2  form-control w-100 justify-content-start text-capitalize border-0"
-                                                                                                        onclick="importDatalicence()"><img
-                                                                                                            src="../images/document-pair.svg"
-                                                                                                            alt=""
-                                                                                                            class="me-2">Attach
-                                                                                                        appraisal</button>
-                                                                                                </div>
-                                                                                                <div
-                                                                                                    class="col-md-6 col-12 ">
-                                                                                                    <input type="text"
-                                                                                                        class="form-control"
-                                                                                                        id="Cost"
-                                                                                                        placeholder="Enter serial number" />
-                                                                                                </div>
-                                                                                                <div class="col-12">
-                                                                                                    <label for="">
-                                                                                                        <textarea
-                                                                                                            name=""
-                                                                                                            id=""
-                                                                                                            cols="30"
-                                                                                                            rows="3"
-                                                                                                            class="form-control pt-2 h-auto"
-                                                                                                            placeholder="Describe item in few words"></textarea>
-                                                                                                    </label>
                                                                                                 </div>
                                                                                             </div>
                                                                                         </div>
@@ -718,7 +790,7 @@
                                                                                 <div class="accordion-item rounded-1">
                                                                                     <h2 class="accordion-header"
                                                                                         id="headingTwo">
-                                                                                        <button class="accordion-button"
+                                                                                        <button class="accordion-button border-bottom-0"
                                                                                             type="button"
                                                                                             data-bs-toggle="collapse"
                                                                                             data-bs-target="#collapseTwo"
@@ -750,7 +822,7 @@
                                                                                         aria-labelledby="headingTwo"
                                                                                         data-bs-parent="#accordionPolicy">
                                                                                         <div
-                                                                                            class="accordion-body pt-0">
+                                                                                            class="accordion-body">
                                                                                             <div class="keep-in-vault">
                                                                                                 <label
                                                                                                     class="checkbox-inline mb-0 w-full"
@@ -769,51 +841,48 @@
                                                                                                 </label>
                                                                                             </div>
                                                                                             <div class="row g-3">
-                                                                                                <div class="col-12 ">
-                                                                                                    <div
-                                                                                                        class="input-group form-control px-0">
-                                                                                                        <span
-                                                                                                            class="input-group-append ">
-                                                                                                            <span
-                                                                                                                class="input-group-text border-0 bg-white d-block pe-0">
-                                                                                                                $
-                                                                                                            </span>
-                                                                                                        </span>
-                                                                                                        <input
-                                                                                                            type="text"
-                                                                                                            class=""
-                                                                                                            id="Cost"
-                                                                                                            placeholder="Enter amount" />
+                                                                                                <div class="col-12 mt-0">
+                                                                                                    <div class="accordion custom" id="musicItem">
+                                                                                                        <div class="accordion-item rounded-1 mb-3">
+                                                                                                            <h2 class="accordion-header" id="music1">
+                                                                                                                <button class="accordion-button border-bottom-0"
+                                                                                                                    type="button"
+                                                                                                                    data-bs-toggle="collapse"
+                                                                                                                    data-bs-target="#musiccollapse1"
+                                                                                                                    aria-expanded="true"
+                                                                                                                    aria-controls="musiccollapse1">
+                                                                                                                    <h4 class="title fs-14">Music Equipment 1</h4>
+                                                                                                                </button>
+                                                                                                            </h2>
+                                                                                                            <div id="musiccollapse1" class="accordion-collapse collapse show"
+                                                                                                                aria-labelledby="music1" data-bs-parent="#musicItem">
+                                                                                                                <div class="accordion-body pt-0">
+                                                                                                                    <div class="row g-3">
+                                                                                                                        <div class="col-12 ">
+                                                                                                                            <div class="input-group form-control px-0">
+                                                                                                                                <span class="input-group-append ">
+                                                                                                                                    <span
+                                                                                                                                        class="input-group-text border-0 bg-white d-block pe-0">
+                                                                                                                                        $
+                                                                                                                                    </span>
+                                                                                                                                </span>
+                                                                                                                                <input
+                                                                                                                                    type="text"
+                                                                                                                                    class=""
+                                                                                                                                    id="Cost"
+                                                                                                                                    placeholder="Enter amount" value="" />
+                                                                                                                            </div>
+                                                                                                                        </div>
+                                                                                                                    </div>
+                                                                                                                </div>
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                        <a class="btn-add" href="#">
+                                                                                                            <img src="../images/add-pluse-circle.svg" alt="Add" class="icon">
+                                                                                                            Add Another Equipment
+                                                                                                        </a>
+                                                                                                        <!-- /accordion-item -->
                                                                                                     </div>
-                                                                                                </div>
-
-                                                                                                <div
-                                                                                                    class="col-md-6 col-12 ">
-                                                                                                    <button
-                                                                                                        class="btn bg-blue-light-2  form-control w-100 justify-content-start text-capitalize border-0"
-                                                                                                        onclick="importDatalicence()"><img
-                                                                                                            src="../images/document-pair.svg"
-                                                                                                            alt=""
-                                                                                                            class="me-2">Attach
-                                                                                                        appraisal</button>
-                                                                                                </div>
-                                                                                                <div
-                                                                                                    class="col-md-6 col-12 ">
-                                                                                                    <input type="text"
-                                                                                                        class="form-control"
-                                                                                                        id="Cost"
-                                                                                                        placeholder="Enter serial number" />
-                                                                                                </div>
-                                                                                                <div class="col-12">
-                                                                                                    <label for="">
-                                                                                                        <textarea
-                                                                                                            name=""
-                                                                                                            id=""
-                                                                                                            cols="30"
-                                                                                                            rows="3"
-                                                                                                            class="form-control pt-2 h-auto"
-                                                                                                            placeholder="Describe item in few words"></textarea>
-                                                                                                    </label>
                                                                                                 </div>
                                                                                             </div>
                                                                                         </div>
@@ -838,7 +907,7 @@
                                                                                 <div class="accordion-item rounded-1">
                                                                                     <h2 class="accordion-header"
                                                                                         id="headingSilver">
-                                                                                        <button class="accordion-button"
+                                                                                        <button class="accordion-button border-bottom-0"
                                                                                             type="button"
                                                                                             data-bs-toggle="collapse"
                                                                                             data-bs-target="#Silver"
@@ -869,7 +938,7 @@
                                                                                         aria-labelledby="headingSilver"
                                                                                         data-bs-parent="#accordionSilver">
                                                                                         <div
-                                                                                            class="accordion-body pt-0">
+                                                                                            class="accordion-body">
                                                                                             <div class="keep-in-vault">
                                                                                                 <label
                                                                                                     class="checkbox-inline mb-0 w-full"
@@ -888,51 +957,48 @@
                                                                                                 </label>
                                                                                             </div>
                                                                                             <div class="row g-3">
-                                                                                                <div class="col-12 ">
-                                                                                                    <div
-                                                                                                        class="input-group form-control px-0">
-                                                                                                        <span
-                                                                                                            class="input-group-append ">
-                                                                                                            <span
-                                                                                                                class="input-group-text border-0 bg-white d-block pe-0">
-                                                                                                                $
-                                                                                                            </span>
-                                                                                                        </span>
-                                                                                                        <input
-                                                                                                            type="text"
-                                                                                                            class=""
-                                                                                                            id="Cost"
-                                                                                                            placeholder="Enter amount" />
+                                                                                                <div class="col-12 mt-0">
+                                                                                                    <div class="accordion custom" id="silverItem">
+                                                                                                        <div class="accordion-item rounded-1 mb-3">
+                                                                                                            <h2 class="accordion-header" id="sil1">
+                                                                                                                <button class="accordion-button border-bottom-0"
+                                                                                                                    type="button"
+                                                                                                                    data-bs-toggle="collapse"
+                                                                                                                    data-bs-target="#silcollapse1"
+                                                                                                                    aria-expanded="true"
+                                                                                                                    aria-controls="silcollapse1">
+                                                                                                                    <h4 class="title fs-14">Silver Item 1</h4>
+                                                                                                                </button>
+                                                                                                            </h2>
+                                                                                                            <div id="silcollapse1" class="accordion-collapse collapse show"
+                                                                                                                aria-labelledby="sil1" data-bs-parent="#silverItem">
+                                                                                                                <div class="accordion-body pt-0">
+                                                                                                                    <div class="row g-3">
+                                                                                                                        <div class="col-12 ">
+                                                                                                                            <div class="input-group form-control px-0">
+                                                                                                                                <span class="input-group-append ">
+                                                                                                                                    <span
+                                                                                                                                        class="input-group-text border-0 bg-white d-block pe-0">
+                                                                                                                                        $
+                                                                                                                                    </span>
+                                                                                                                                </span>
+                                                                                                                                <input
+                                                                                                                                    type="text"
+                                                                                                                                    class=""
+                                                                                                                                    id="Cost"
+                                                                                                                                    placeholder="Enter amount" value="" />
+                                                                                                                            </div>
+                                                                                                                        </div>
+                                                                                                                    </div>
+                                                                                                                </div>
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                        <a class="btn-add" href="#">
+                                                                                                            <img src="../images/add-pluse-circle.svg" alt="Add" class="icon">
+                                                                                                            Add Another Item
+                                                                                                        </a>
+                                                                                                        <!-- /accordion-item -->
                                                                                                     </div>
-                                                                                                </div>
-
-                                                                                                <div
-                                                                                                    class="col-md-6 col-12 ">
-                                                                                                    <button
-                                                                                                        class="btn bg-blue-light-2  form-control w-100 justify-content-start text-capitalize border-0"
-                                                                                                        onclick="importDatalicence()"><img
-                                                                                                            src="../images/document-pair.svg"
-                                                                                                            alt=""
-                                                                                                            class="me-2">Attach
-                                                                                                        appraisal</button>
-                                                                                                </div>
-                                                                                                <div
-                                                                                                    class="col-md-6 col-12 ">
-                                                                                                    <input type="text"
-                                                                                                        class="form-control"
-                                                                                                        id="Cost"
-                                                                                                        placeholder="Enter serial number" />
-                                                                                                </div>
-                                                                                                <div class="col-12">
-                                                                                                    <label for="">
-                                                                                                        <textarea
-                                                                                                            name=""
-                                                                                                            id=""
-                                                                                                            cols="30"
-                                                                                                            rows="3"
-                                                                                                            class="form-control pt-2 h-auto"
-                                                                                                            placeholder="Describe item in few words"></textarea>
-                                                                                                    </label>
                                                                                                 </div>
                                                                                             </div>
                                                                                         </div>
@@ -957,7 +1023,7 @@
                                                                                 <div class="accordion-item rounded-1">
                                                                                     <h2 class="accordion-header"
                                                                                         id="headingCameras">
-                                                                                        <button class="accordion-button"
+                                                                                        <button class="accordion-button border-bottom-0"
                                                                                             type="button"
                                                                                             data-bs-toggle="collapse"
                                                                                             data-bs-target="#collapseCameras"
@@ -973,6 +1039,7 @@
                                                                                                         type="checkbox"
                                                                                                         value=""
                                                                                                         id="Cameras"
+                                                                                                        checked=""
                                                                                                         >
                                                                                                     <span
                                                                                                         class="checkbox-custom"></span>
@@ -984,11 +1051,11 @@
                                                                                         </button>
                                                                                     </h2>
                                                                                     <div id="collapseCameras"
-                                                                                        class="accordion-collapse collapse"
+                                                                                        class="accordion-collapse collapse show"
                                                                                         aria-labelledby="headingCameras"
                                                                                         data-bs-parent="#accordionCameras">
                                                                                         <div
-                                                                                            class="accordion-body pt-0">
+                                                                                            class="accordion-body">
                                                                                             <div class="keep-in-vault">
                                                                                                 <label
                                                                                                     class="checkbox-inline mb-0 w-full"
@@ -1007,51 +1074,48 @@
                                                                                                 </label>
                                                                                             </div>
                                                                                             <div class="row g-3">
-                                                                                                <div class="col-12 ">
-                                                                                                    <div
-                                                                                                        class="input-group form-control px-0">
-                                                                                                        <span
-                                                                                                            class="input-group-append ">
-                                                                                                            <span
-                                                                                                                class="input-group-text border-0 bg-white d-block pe-0">
-                                                                                                                $
-                                                                                                            </span>
-                                                                                                        </span>
-                                                                                                        <input
-                                                                                                            type="text"
-                                                                                                            class=""
-                                                                                                            id="Cost"
-                                                                                                            placeholder="Enter amount" />
+                                                                                                <div class="col-12 mt-0">
+                                                                                                    <div class="accordion custom" id="cameraItem">
+                                                                                                        <div class="accordion-item rounded-1 mb-3">
+                                                                                                            <h2 class="accordion-header" id="camera1">
+                                                                                                                <button class="accordion-button border-bottom-0"
+                                                                                                                    type="button"
+                                                                                                                    data-bs-toggle="collapse"
+                                                                                                                    data-bs-target="#cameracollapse1"
+                                                                                                                    aria-expanded="true"
+                                                                                                                    aria-controls="cameracollapse1">
+                                                                                                                    <h4 class="title fs-14">Camera 1</h4>
+                                                                                                                </button>
+                                                                                                            </h2>
+                                                                                                            <div id="cameracollapse1" class="accordion-collapse collapse show"
+                                                                                                                aria-labelledby="camera1" data-bs-parent="#cameraItem">
+                                                                                                                <div class="accordion-body pt-0">
+                                                                                                                    <div class="row g-3">
+                                                                                                                        <div class="col-12 ">
+                                                                                                                            <div class="input-group form-control px-0">
+                                                                                                                                <span class="input-group-append ">
+                                                                                                                                    <span
+                                                                                                                                        class="input-group-text border-0 bg-white d-block pe-0">
+                                                                                                                                        $
+                                                                                                                                    </span>
+                                                                                                                                </span>
+                                                                                                                                <input
+                                                                                                                                    type="text"
+                                                                                                                                    class=""
+                                                                                                                                    id="Cost"
+                                                                                                                                    placeholder="Enter amount" value="" />
+                                                                                                                            </div>
+                                                                                                                        </div>
+                                                                                                                    </div>
+                                                                                                                </div>
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                        <a class="btn-add" href="#">
+                                                                                                            <img src="../images/add-pluse-circle.svg" alt="Add" class="icon">
+                                                                                                            Add Another Camera
+                                                                                                        </a>
+                                                                                                        <!-- /accordion-item -->
                                                                                                     </div>
-                                                                                                </div>
-
-                                                                                                <div
-                                                                                                    class="col-md-6 col-12 ">
-                                                                                                    <button
-                                                                                                        class="btn bg-blue-light-2  form-control w-100 justify-content-start text-capitalize border-0"
-                                                                                                        onclick="importDatalicence()"><img
-                                                                                                            src="../images/document-pair.svg"
-                                                                                                            alt=""
-                                                                                                            class="me-2">Attach
-                                                                                                        appraisal</button>
-                                                                                                </div>
-                                                                                                <div
-                                                                                                    class="col-md-6 col-12 ">
-                                                                                                    <input type="text"
-                                                                                                        class="form-control"
-                                                                                                        id="Cost"
-                                                                                                        placeholder="Enter serial number" />
-                                                                                                </div>
-                                                                                                <div class="col-12">
-                                                                                                    <label for="">
-                                                                                                        <textarea
-                                                                                                            name=""
-                                                                                                            id=""
-                                                                                                            cols="30"
-                                                                                                            rows="3"
-                                                                                                            class="form-control pt-2 h-auto"
-                                                                                                            placeholder="Describe item in few words"></textarea>
-                                                                                                    </label>
                                                                                                 </div>
                                                                                             </div>
                                                                                         </div>
@@ -1065,7 +1129,122 @@
                                                                     </div>
                                                                 </div>
 
+                                                                <hr>
 
+                                                                <div class="container-fluid">
+                                                                    <div class="row g-3">
+
+                                                                        <div class="col-12 ">
+                                                                            <div class="accordion custom"
+                                                                                id="accordionArt">
+                                                                                <div class="accordion-item rounded-1">
+                                                                                    <h2 class="accordion-header"
+                                                                                        id="headingArt">
+                                                                                        <button class="accordion-button border-bottom-0"
+                                                                                            type="button"
+                                                                                            data-bs-toggle="collapse"
+                                                                                            data-bs-target="#collapseArt"
+                                                                                            aria-expanded="false"
+                                                                                            aria-controls="collapseArt">
+                                                                                            <h4 class="title fs-18">
+
+                                                                                                <label
+                                                                                                    class="checkbox-inline mb-0 w-full"
+                                                                                                    for="Art">
+                                                                                                    <input
+                                                                                                        class="checkbox-control"
+                                                                                                        type="checkbox"
+                                                                                                        value=""
+                                                                                                        id="Art"
+                                                                                                        checked=""
+                                                                                                        >
+                                                                                                    <span
+                                                                                                        class="checkbox-custom"></span>
+                                                                                                    <span
+                                                                                                        class="checkbox-label fs-16 fw-bolder">Art
+                                                                                                    </span>
+                                                                                                </label>
+                                                                                            </h4>
+                                                                                        </button>
+                                                                                    </h2>
+                                                                                    <div id="collapseArt"
+                                                                                        class="accordion-collapse collapse show"
+                                                                                        aria-labelledby="headingArt"
+                                                                                        data-bs-parent="#accordionArt">
+                                                                                        <div
+                                                                                            class="accordion-body">
+                                                                                            <div class="keep-in-vault">
+                                                                                                <label
+                                                                                                    class="checkbox-inline mb-0 w-full"
+                                                                                                    for="ArtkeepValult">
+                                                                                                    <input
+                                                                                                        class="checkbox-control"
+                                                                                                        type="checkbox"
+                                                                                                        value=""
+                                                                                                        id="ArtkeepValult">
+                                                                                                    <span
+                                                                                                        class="checkbox-custom"></span>
+                                                                                                    <span
+                                                                                                        class="checkbox-label fs-16">Kept
+                                                                                                        in vault
+                                                                                                    </span>
+                                                                                                </label>
+                                                                                            </div>
+                                                                                            <div class="row g-3">
+                                                                                                <div class="col-12 mt-0">
+                                                                                                    <div class="accordion custom" id="artItem">
+                                                                                                        <div class="accordion-item rounded-1 mb-3">
+                                                                                                            <h2 class="accordion-header" id="art1">
+                                                                                                                <button class="accordion-button border-bottom-0"
+                                                                                                                    type="button"
+                                                                                                                    data-bs-toggle="collapse"
+                                                                                                                    data-bs-target="#artcollapse1"
+                                                                                                                    aria-expanded="true"
+                                                                                                                    aria-controls="artcollapse1">
+                                                                                                                    <h4 class="title fs-14">Art Item 1</h4>
+                                                                                                                </button>
+                                                                                                            </h2>
+                                                                                                            <div id="artcollapse1" class="accordion-collapse collapse show"
+                                                                                                                aria-labelledby="art1" data-bs-parent="#artItem">
+                                                                                                                <div class="accordion-body pt-0">
+                                                                                                                    <div class="row g-3">
+                                                                                                                        <div class="col-12 ">
+                                                                                                                            <div class="input-group form-control px-0">
+                                                                                                                                <span class="input-group-append ">
+                                                                                                                                    <span
+                                                                                                                                        class="input-group-text border-0 bg-white d-block pe-0">
+                                                                                                                                        $
+                                                                                                                                    </span>
+                                                                                                                                </span>
+                                                                                                                                <input
+                                                                                                                                    type="text"
+                                                                                                                                    class=""
+                                                                                                                                    id="Cost"
+                                                                                                                                    placeholder="Enter amount" value="" />
+                                                                                                                            </div>
+                                                                                                                        </div>
+                                                                                                                    </div>
+                                                                                                                </div>
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                        <a class="btn-add" href="#">
+                                                                                                            <img src="../images/add-pluse-circle.svg" alt="Add" class="icon">
+                                                                                                            Add Another Item
+                                                                                                        </a>
+                                                                                                        <!-- /accordion-item -->
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div><!-- /accordion-item -->
+
+
+                                                                            </div>
+                                                                        </div>
+
+                                                                    </div>
+                                                                </div>
                                                             </div>
                                                         </div><!-- /accordion-item -->
 
@@ -1073,9 +1252,6 @@
                                                     </div>
                                                 </div>
                                             </div>
-
-
-
                                         </div>
 
 
