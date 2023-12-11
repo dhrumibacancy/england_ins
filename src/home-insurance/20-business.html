@@ -38,6 +38,9 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css">
+
 
 
 
@@ -139,54 +142,26 @@
                             <div class="col">
                                 <div class="progress">
                                     <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0"
-                                        aria-valuemax="100" style="width:20%">
-
+                                        aria-valuemax="100" style="width:100%">
                                     </div>
-
                                 </div>
-                                <div class="progress-text mt-1">Personal Information</div>
+                                <div class="progress-text mt-1">Property Information</div>
+                            </div>
+                            <div class="col">
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0"
+                                        aria-valuemax="100" style="width:50%">
+                                    </div>
+                                </div>
+                                <div class="progress-text mt-1">Home details</div>
                             </div>
                             <div class="col">
                                 <div class="progress">
                                     <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0"
                                         aria-valuemax="100" style="width:0%">
-
                                     </div>
-
                                 </div>
-                                <div class="progress-text mt-1">Property Information
-                                </div>
-                            </div>
-                            <div class="col">
-                                <div class="progress">
-                                    <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0"
-                                        aria-valuemax="100" style="width:0%">
-
-                                    </div>
-
-                                </div>
-                                <div class="progress-text mt-1">Insurance Considerations</div>
-                            </div>
-                            <div class="col">
-                                <div class="progress">
-                                    <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0"
-                                        aria-valuemax="100" style="width:0%">
-
-                                    </div>
-
-                                </div>
-                                <div class="progress-text mt-1">Property facts
-                                </div>
-                            </div>
-                            <div class="col">
-                                <div class="progress">
-                                    <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0"
-                                        aria-valuemax="100" style="width:0%">
-
-                                    </div>
-
-                                </div>
-                                <div class="progress-text mt-1">Additional Coverages</div>
+                                <div class="progress-text mt-1">Coverages</div>
                             </div>
                         </div>
                         <a class="text-blue ms-3 back-arrow" href="#"><i class="fa fa-arrow-left-long me-2"></i>BACK</a>
@@ -194,93 +169,195 @@
                     <div class="container mt-5 pt-5">
                         <div class="text-center mb-4 user-info">
                             <img src="../images/user-person.svg" alt="" class="user-person mx-auto">
-                            <p class="user-welcome mt-2">Hey! My Name is Anne
-                            </p>
+                            <p class="user-welcome mt-2">Hey! My Name is Anne</p>
                         </div>
-                        <h3 class="title  text-center">Trampoline Details</h3>
-                        
+                        <h3 class="title  text-center">Business Details</h3>
+
                         <div class="contain-wrapper-sm">
                             <form class="mt-4">
                                 <div class="blue-light-box bg-white">
-                                    <div class="d-flex justify-content-between">
-                                    </div>
                                     <div class="vehicle-details">
                                         <div class="row g-3">
-                                            
+
                                             <div class="col-12">
-                                                <h5 class="fs-16">Is trampoline is fenced?</h5>
-                                                <div class="d-flex align-items-center justify-content-start">
-                                                    <div class="d-flex align-self-center me-3">
-                                                        <label class="radio-inline radio-btn" for="livingYes">
-                                                            <input class="radio-control" type="radio" name="fenced"
-                                                                value="" id="livingYes" checked="">
-                                                            <span class="radio-custom"></span>
-                                                            <span class="radio-label fs-14">Yes </span>
-                                                        </label>
-                                                    </div>
-                                                    <div class="d-flex align-self-center me-3">
-                                                        <label class="radio-inline radio-btn" for="livingNo">
-                                                            <input class="radio-control" type="radio" name="fenced"
-                                                                value="" id="livingNo" >
-                                                            <span class="radio-custom"></span>
-                                                            <span class="radio-label fs-14">No </span>
-                                                        </label>
+                                                <div class="f-group max-width-100">
+
+                                                    <div class="f-dropdown selectDropdown"><select
+                                                            class="f-control f-dropdown" placeholder="Type of business"
+                                                            id="selectCity">
+                                                            <option value="1">Type of business</option>
+                                                            <option value="2">Construction</option>
+                                                            <option value="3">Carpentry</option>
+                                                            <option value="4">Siding</option>
+                                                            <option value="5">Framing</option>
+                                                            <option value="6">Flooring</option>
+                                                            <option value="7">Janitorial (cleaning commercial or home) </option>
+                                                            <option value="8">Landscaper</option>
+                                                            <option value="9">Painting</option>
+                                                            <option value="10">Drywall & Plaster</option>
+                                                            <option value="11">Insulation</option>
+                                                            <option value="12">Auto Repair</option>
+                                                            <option value="13">Collision Center </option>
+                                                            <option value="14">Auto Dealers</option>
+                                                            <option value="15">Restaurant </option>
+                                                            <option value="16">Fast Food </option>
+                                                            <option value="17">Store  (grocery)</option>
+                                                            <option value="18">Professional Office    (realtor, Lawer, ect.)</option>
+                                                            <option value="19">Doctor </option>
+                                                            <option value="20">Med Spa</option>
+                                                            <option value="21">Veterinarian</option>
+                                                            <option value="22">Trucking</option>
+                                                            <option value="23">Dog Day Care</option>
+                                                            <option value="24">Grooming (pets)</option>
+                                                            <option value="25">Child Day Care </option>
+                                                            <option value="26">Hair Salon / Barber </option>
+                                                            <option value="27">Nail Salon</option>
+                                                            <option value="28">Coffee Shop </option>
+                                                            <option value="29">Bakery</option>
+                                                            <option value="30">Nutrition</option>
+                                                        </select>
                                                     </div>
                                                 </div>
                                             </div>
-                                            
+
                                             <div class="col-12">
-                                                <h5 class="fs-16">Is trampoline is netted?</h5>
-                                                <div class="d-flex align-items-center justify-content-start">
-                                                    <div class="d-flex align-self-center me-3">
-                                                        <label class="radio-inline radio-btn" for="Above">
-                                                            <input class="radio-control" type="radio" name="inground"
-                                                                value="" id="Above" checked="">
-                                                            <span class="radio-custom"></span>
-                                                            <span class="radio-label fs-14">Yes </span>
-                                                        </label>
+                                                <div class="row g-3">
+                                                    <div class="col-md-6 col-12 ">
+                                                        <div class="input-group form-control px-0">
+                                                            <span class="input-group-append ">
+                                                                <span
+                                                                    class="input-group-text border-0 bg-white d-block pe-0">
+                                                                    $
+                                                                </span>
+                                                            </span>
+                                                            <input type="text" class="" id="Cost"
+                                                                placeholder="Annual income from business" />
+                                                        </div>
                                                     </div>
-                                                    <div class="d-flex align-self-center me-3">
-                                                        <label class="radio-inline radio-btn" for="Inground">
-                                                            <input class="radio-control" type="radio" name="inground"
-                                                                value="" id="Inground" >
-                                                            <span class="radio-custom"></span>
-                                                            <span class="radio-label fs-14">No </span>
-                                                        </label>
+                                                    <div class="col-md-6 col-12">
+                                                        <input type="number" class="form-control"
+                                                            placeholder="No of employees">
                                                     </div>
                                                 </div>
                                             </div>
-                                            
                                             <div class="col-12">
-                                                <h5 class="fs-16">Will you get net by 15 days of policy start date</h5>
-                                                <div class="d-flex align-items-center justify-content-start">
-                                                    <div class="d-flex align-self-center me-3">
-                                                        <label class="radio-inline radio-btn" for="divingYes">
-                                                            <input class="radio-control" type="radio" name="willing"
-                                                                value="" id="divingYes" checked="">
-                                                            <span class="radio-custom"></span>
-                                                            <span class="radio-label fs-14">YES </span>
-                                                        </label>
-                                                    </div>
-                                                    <div class="d-flex align-self-center me-3">
-                                                        <label class="radio-inline radio-btn" for="divingNo">
-                                                            <input class="radio-control" type="radio" name="willing"
-                                                                value="" id="divingNo" >
-                                                            <span class="radio-custom"></span>
-                                                            <span class="radio-label fs-14">No </span>
-                                                        </label>
+                                                <div class="form-group">
+                                                    <label for="" class="fs-18 font-bold">Are there Walk in clients?</label>
+                                                    <div class="d-flex justify-content-start">
+                                                        <div class="d-flex align-self-center me-3">
+                                                            <label class="radio-inline radio-btn" for="walkYes">
+                                                                <input class="radio-control" type="radio" name="walk"
+                                                                    value="" id="walkYes">
+                                                                <span class="radio-custom"></span>
+                                                                <span class="radio-label fs-14">Yes </span>
+                                                            </label>
+                                                        </div>
+                                                        <div class="d-flex align-self-center me-3">
+                                                            <label class="radio-inline radio-btn" for="walkNo">
+                                                                <input class="radio-control" checked type="radio" name="walk"
+                                                                    value="" id="walkNo">
+                                                                <span class="radio-custom"></span>
+                                                                <span class="radio-label fs-14">No </span>
+                                                            </label>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
+                                            <div class="col-12">
+                                                <div class="form-group">
+                                                    <label for="" class="fs-18 font-bold">Do you need coverage for your business under this policy?</label>
+                                                    <div class="d-flex justify-content-start">
+                                                        <div class="d-flex align-self-center me-3">
+                                                            <label class="radio-inline radio-btn" for="coverage1">
+                                                                <input class="radio-control" type="radio"
+                                                                    name="coverage" value="" id="coverage1" checked="">
+                                                                <span class="radio-custom"></span>
+                                                                <span class="radio-label">Yes </span>
+                                                            </label>
+                                                        </div>
+                                                        <div class="d-flex align-self-center me-3">
+                                                            <label class="radio-inline radio-btn" for="coverage2">
+                                                                <input class="radio-control" type="radio"
+                                                                    name="coverage" value="" id="coverage2">
+                                                                <span class="radio-custom"></span>
+                                                                <span class="radio-label">No </span>
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-12">
+                                                <input type="number" class="form-control"
+                                                    placeholder="No. of clients visit a year">
+                                            </div>
+                                            <div class="col-12">
+                                                <div class="form-group">
+                                                    <label for="" class="fs-18 font-bold">
+                                                        Is there a separate liability policy covering this business?
+                                                    </label>
+                                                    <div class="d-flex justify-content-start">
+                                                        <div class="d-flex align-self-center me-3">
+                                                            <label class="radio-inline radio-btn" for="divingYes">
+                                                                <input class="radio-control" type="radio" name="willing"
+                                                                    value="" id="divingYes" checked="">
+                                                                <span class="radio-custom"></span>
+                                                                <span class="radio-label fs-14">Yes </span>
+                                                            </label>
+                                                        </div>
+                                                        <div class="d-flex align-self-center me-3">
+                                                            <label class="radio-inline radio-btn" for="divingNo">
+                                                                <input class="radio-control" type="radio" name="willing"
+                                                                    value="" id="divingNo">
+                                                                <span class="radio-custom"></span>
+                                                                <span class="radio-label fs-14">No </span>
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-12">
+                                                <div class="form-group">
+                                                    <label for="" class="fs-18 font-bold">
+                                                        Any alteration to this property for this business?
+                                                    </label>
+                                                    <div class="d-flex justify-content-start">
+                                                        <div class="d-flex align-self-center me-3">
+                                                            <label class="radio-inline radio-btn" for="willing2N">
+                                                                <input class="radio-control" type="radio"
+                                                                    name="willing2" value="" id="willing2N" checked="">
+                                                                <span class="radio-custom"></span>
+                                                                <span class="radio-label">Yes </span>
+                                                            </label>
+                                                        </div>
+                                                        <div class="d-flex align-self-center me-3">
+                                                            <label class="radio-inline radio-btn" for="willing2">
+                                                                <input class="radio-control" type="radio"
+                                                                    name="willing2" value="" id="willing2">
+                                                                <span class="radio-custom"></span>
+                                                                <span class="radio-label">No </span>
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-12">
+                                                <label for="">
+                                                    <textarea name="" id="" cols="30" rows="3" class="form-control pt-2 h-auto" placeholder="Please describe alteration"></textarea>
+                                                </label>
+                                            </div>
+
                                         </div>
                                     </div>
                                 </div>
                                 <button type="submit" class="btn btn-primary  mx-auto mt-4"><span>Continue</span>
                                 </button>
                             </form>
+                        </div>
                     </div>
                 </div>
             </div>
+        </div>
         </div>
     </main>
 
@@ -292,8 +369,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
         integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous">
         </script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js">
-        </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js">
+    </script>
 
     <script src="../js/app.js"></script>
     <script>
@@ -311,16 +388,12 @@
                     '.customize-options').hide())
             })
         })
-
         $(function () {
-            $('#datepicker').datepicker({
+            $('[id^="datepicker"]').datepicker({
                 autoclose: true,
-
             });
         });
     </script>
-
-    
 
 </body>
 

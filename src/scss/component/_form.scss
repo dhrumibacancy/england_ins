@@ -288,7 +288,7 @@ label {
 
             &:checked~.radio-box-custom {
                 background: var(--color-blue-light);
-                border: 1px solid var(--color-blue-light);
+                border: 1px solid #B3D3EC;
 
                 &:after {
                     content: "";

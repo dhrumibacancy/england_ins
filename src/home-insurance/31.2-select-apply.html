@@ -46,7 +46,74 @@
 
 
     <link rel="icon" href="../images/favicon.png" type="image/gif" sizes="16x16">
+    <link rel="stylesheet" href="https://rawcdn.githack.com/SochavaAG/example-mycode/master/pens/calculator/plugins/rangeslider/rangeslider.css">
     <link rel="stylesheet" href="../assets/css/main.css">
+    <style>
+     
+.ag-calculator_input-wrap .rangeslider--horizontal {
+  display: inline-block;
+  height: 8px;
+  margin-top: 20px;
+  background-color: #CEE6F9;
+
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+.ag-calculator_input-wrap .col-4 {
+    width: 110px;
+}
+.ag-calculator_input-wrap .col-8 {
+    width: calc(100% - 110px);
+}
+.ag-calculator_input-wrap .rangeslider__fill {
+  background-color: #016BBF;
+
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+}
+.ag-calculator_input-wrap .rangeslider__handle {
+  height: 24px;
+  width: 24px;
+  border: 5px solid #fff;
+  background-image: none;
+
+  z-index: 5;
+  top: -7px;
+
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  -o-box-shadow: none;
+  box-shadow: none;
+  background: #016BBF;
+}
+.range-percentage {
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-wrap: none;
+    flex-wrap: nowrap;
+    width: 100%;
+}
+.range-percentage .append, .range-percentage .preppend {
+    width: 30px;
+    text-align: left;
+    padding-top: 11px;
+}
+.range-percentage .preppend {
+    text-align: right;
+    width: 44px;
+}
+.range-percentage .middle {
+    width: calc(100% - 74px);
+}
+
+    </style>
 </head>
 
 <body>
@@ -142,54 +209,26 @@
                             <div class="col">
                                 <div class="progress">
                                     <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0"
-                                        aria-valuemax="100" style="width:20%">
-
+                                        aria-valuemax="100" style="width:100%">
                                     </div>
-
                                 </div>
-                                <div class="progress-text mt-1">Personal Information</div>
+                                <div class="progress-text mt-1">Property Information</div>
+                            </div>
+                            <div class="col">
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0"
+                                        aria-valuemax="100" style="width:70%">
+                                    </div>
+                                </div>
+                                <div class="progress-text mt-1">Home details</div>
                             </div>
                             <div class="col">
                                 <div class="progress">
                                     <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0"
                                         aria-valuemax="100" style="width:0%">
-
                                     </div>
-
                                 </div>
-                                <div class="progress-text mt-1">Property Information
-                                </div>
-                            </div>
-                            <div class="col">
-                                <div class="progress">
-                                    <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0"
-                                        aria-valuemax="100" style="width:0%">
-
-                                    </div>
-
-                                </div>
-                                <div class="progress-text mt-1">Insurance Considerations</div>
-                            </div>
-                            <div class="col">
-                                <div class="progress">
-                                    <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0"
-                                        aria-valuemax="100" style="width:0%">
-
-                                    </div>
-
-                                </div>
-                                <div class="progress-text mt-1">Property facts
-                                </div>
-                            </div>
-                            <div class="col">
-                                <div class="progress">
-                                    <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0"
-                                        aria-valuemax="100" style="width:0%">
-
-                                    </div>
-
-                                </div>
-                                <div class="progress-text mt-1">Additional Coverages</div>
+                                <div class="progress-text mt-1">Coverages</div>
                             </div>
                         </div>
                         <a class="text-blue ms-3 back-arrow" href="#"><i class="fa fa-arrow-left-long me-2"></i>BACK</a>
@@ -200,76 +239,170 @@
                             <p class="user-welcome mt-2">Hey! My Name is Anne</p>
                         </div>
                         <h3 class="title  text-center">Select all that apply</h3>
-                        <!-- <p class="user-welcome mt-2 text-center">Have these been updated </p> -->
 
                         <div class="contain-wrapper-sm">
                             <form class="mt-4">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <label class="checkbox-inline squar-boxes glass-squaresmb-0 mt-0 mx-0 w-100" for="selectApply1">
+                                            <input class="checkbox-control" type="checkbox" name="select-apply" value="" id="selectApply1">
+                                            <span class="checkbox-custom"></span>
+                                            <span class="checkbox-label fs-14">
+    
+                                                <img src="../images/claim-icons/none_active.svg" alt=""
+                                                    class="active" />
+                                                <img src="../images/claim-icons/none_inactive.svg" alt=""
+                                                    class="offline" />
+                                                    None
+                                            </span>
+                                        </label>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <label class="checkbox-inline squar-boxes glass-squaresmb-0 mt-0 mx-0 w-100" for="selectApply2">
+                                            <input class="checkbox-control" type="checkbox" name="select-apply" value="" id="selectApply2">
+                                            <span class="checkbox-custom"></span>
+                                            <span class="checkbox-label fs-14">
+    
+                                                <img src="../images/claim-icons/living-space-active.svg" alt=""
+                                                    class="active" />
+                                                <img src="../images/claim-icons/living-space-inactive.svg" alt=""
+                                                    class="offline" />
+                                                    Living space above garage
+                                            </span>
+                                        </label>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <label class="checkbox-inline squar-boxes glass-squaresmb-0 mt-0 mx-0 w-100" for="selectApply3">
+                                            <input class="checkbox-control" type="checkbox" name="select-apply" value="" id="selectApply3">
+                                            <span class="checkbox-custom"></span>
+                                            <span class="checkbox-label fs-14">
+    
+                                                <img src="../images/claim-icons/tree-hanging-active.svg" alt=""
+                                                    class="active" />
+                                                <img src="../images/claim-icons/tree-hanging-inactive.svg" alt=""
+                                                    class="offline" />
+                                                    Tree hanging over house
+                                            </span>
+                                        </label>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label class="checkbox-inline squar-boxes glass-squaresmb-0 mt-0 mx-0 w-100" for="selectApply4">
+                                            <input class="checkbox-control" type="checkbox" name="select-apply" value="" id="selectApply4">
+                                            <span class="checkbox-custom"></span>
+                                            <span class="checkbox-label fs-14">
+    
+                                                <img src="../images/claim-icons/damage-house-active.svg" alt=""
+                                                    class="active" />
+                                                <img src="../images/claim-icons/damage-house-inactive.svg" alt=""
+                                                    class="offline" />
+                                                    Any existing damage in house
+                                            </span>
+                                        </label>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label class="checkbox-inline squar-boxes glass-squaresmb-0 mt-0 mx-0 w-100" for="selectApply5">
+                                            <input class="checkbox-control" type="checkbox" checked name="select-apply" value="" id="selectApply5">
+                                            <span class="checkbox-custom"></span>
+                                            <span class="checkbox-label fs-14">
+    
+                                                <img src="../images/claim-icons/basement-active.svg" alt=""
+                                                    class="active" />
+                                                <img src="../images/claim-icons/basement-inactive.svg" alt=""
+                                                    class="offline" />
+                                                    Finished Basement 
+                                            </span>
+                                        </label>
+                                    </div>
+                                </div>
                                 <div class="blue-light-box bg-white p-0">
                                     <div class="vehicle-details">
                                         <div class="row g-3">
-
+                                           
                                             <div class="col-12">
-
-                                                <h3 class="fs-20 p-3 border-bottom mb-3">Home Extras</h3>
                                                 <div class="px-3">
-                                                    <div class="mb-2 px-2">
-                                                        <label class="checkbox-inline w-auto me-3 mb-0" for="Corina">
-                                                            <input class="checkbox-control" type="checkbox" value="" id="Corina">
-                                                            <span class="checkbox-custom"></span>
-                                                            <span class="checkbox-label">Living space above garage</span>
+                                           
+                                               
+                                                    
+                                            
+                                                    <div class="form-group mt-3">
+                                                        <label for="" class="fs-18 font-bold">
+                                                            Is the basement included in (sq feet from RCT)?
                                                         </label>
+                                                        <div class="d-flex justify-content-start">
+                                                            <div class="d-flex align-self-center me-3">
+                                                                <label class="radio-inline radio-btn" for="divingYes">
+                                                                    <input class="radio-control" type="radio" name="willing"
+                                                                        value="" id="divingYes" checked="">
+                                                                    <span class="radio-custom"></span>
+                                                                    <span class="radio-label fs-14">Yes </span>
+                                                                </label>
+                                                            </div>
+                                                            <div class="d-flex align-self-center me-3">
+                                                                <label class="radio-inline radio-btn" for="divingNo">
+                                                                    <input class="radio-control" type="radio" name="willing"
+                                                                        value="" id="divingNo">
+                                                                    <span class="radio-custom"></span>
+                                                                    <span class="radio-label fs-14">No </span>
+                                                                </label>
+                                                            </div>
+                                                        </div>
                                                     </div>
-                                                    <div class="mb-2 px-2">
-                                                        <label class="checkbox-inline w-auto me-3 mb-0" for="Patricia">
-                                                            <input class="checkbox-control" type="checkbox" value="" id="Patricia">
+                                            
+                                            
+                                                    <div class="form-group mt-3">
+                                                        <label for="" class="fs-18 font-bold">
+                                                            What percentage of basement is finished?
+                                                        </label>
+                                                        <div class="ag-calculators-block mb-3">
+                                                            <div class="ag-format-container">
+                                                                <div id="affiliate" class="ag-calculator-block">
+                                                            
+                                                                
+                                                                
+                                                                    <div class="js-calculator_input-wrap js-calculator_second-level-wrap ag-calculator_input-wrap ag-calculator_second-level-wrap d-flex align-items-center justify-content-between">
+                                                                        <div class="col-4 pe-3">
+                                                                            <div class="input-group form-control p-0">
+                                                                                <input id="level2-clients" class="js-calculator_text-input ag-calculator_text-input m-0" type="number " name="level2-clients" min="0" max="100" value="0">
+                                                                                <span class="input-group-append ">
+                                                                                    <span class="input-group-text border-0 bg-white d-block">
+                                                                                        %
+                                                                                    </span>
+                                                                                </span>
+                                                                            </div>
+                                                                        </div>
+                                                                        <!-- <input class="form-control " type="text" placeholder="License Number" /> -->
+                                                                        <div class="col-8">
+                                                                            <div class="form-control">
+                                                                                <div class="range-percentage">
+                                                                                    <div class="append">0%</div>
+                                                                                    <div class="middle">
+                                                                                        <input class="js-calculator_range w-auto" step="1" type="range" name="level2-clients" min="0" max="100" value="0">
+                                                                                    </div>
+                                                                                    <div class="preppend">100%</div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                
+                                                                
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="mb-3">
+                                                        <label class="checkbox-inline w-auto me-3 mb-0" for="Patricia1">
+                                                            <input class="checkbox-control" type="checkbox" value="" id="Patricia1">
                                                             <span class="checkbox-custom"></span>
-                                                            <span class="checkbox-label">Finished Basement </span>
+                                                            <span class="checkbox-label">Part or all of basement above ground level with door to outside </span>
                                                         </label>
                                                     </div>
                                                 </div>
-                                                   
-                                               
                                             </div>
-                                            
-                                        
+                                        </div>
                                     </div>
                                 </div>
-                               
                             </form>
-
-                          
                         </div>
-                        <form class="mt-4">
-                            <div class="blue-light-box bg-white p-0">
-                                <div class="vehicle-details">
-                                    <div class="row g-3">
-
-                                        <div class="col-12">
-                                            <h3 class="fs-20 p-3 border-bottom mb-3">Risk Potentials</h3>
-                                            <div class="px-3">
-                                                <div class="mb-2">
-                                                    <label class="checkbox-inline w-auto me-3 mb-0" for="Corina">
-                                                        <input class="checkbox-control" type="checkbox" value="" id="Corina">
-                                                        <span class="checkbox-custom"></span>
-                                                        <span class="checkbox-label">Tree hanging over house</span>
-                                                    </label>
-                                                </div>
-                                                <div class="mb-2">
-                                                    <label class="checkbox-inline w-auto me-3 mb-0" for="Patricia">
-                                                        <input class="checkbox-control" type="checkbox" value="" id="Patricia">
-                                                        <span class="checkbox-custom"></span>
-                                                        <span class="checkbox-label">Any existing damage in house</span>
-                                                    </label>
-                                                </div>
-                                            </div>
-                                             
-                                        </div>
-                                      
-                                </div>
-                            </div>
-                           
-                        </form>
-                       
                     </div>
                     <button type="submit" class="btn btn-primary  mx-auto mt-4"><span>Continue</span>
                     </button>
@@ -289,7 +422,7 @@
         </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js">
     </script>
-
+<script src="https://rawcdn.githack.com/SochavaAG/example-mycode/master/pens/calculator/plugins/rangeslider/rangeslider.min.js"></script>
     <script src="../js/app.js"></script>
     <script>
         $(document).ready(function () {
@@ -311,6 +444,86 @@
                 autoclose: true,
             });
         });
+
+
+
+
+
+
+        (function ($) {
+  $(function () {
+    
+    
+      $("input[type=range]").rangeslider({polyfill: false});
+
+      var t = $("#level1-clients"),
+        a = $("#level2-clients"),
+        n = $("#level3-clients"),
+        e = $("#daily-orders"),
+        i = $("#commission"),
+        l = $("#affiliate-result"),
+        s = $("#clients-attracted"),
+        r = $("#daily-orders-per-client"),
+        p = $("#agent-result"),
+        o = $("#agent-commission"),
+        c = $("#stp-clients-attracted"),
+        d = $("#stp-daily-orders-per-client"),
+        v = $("#pro-stp-result"),
+        /*u = $(".tab-pane.active").attr("id"),*/
+        h = $(".js-calculator_second-level-wrap");
+
+      function agFormula() {
+        l.html(parseInt(t.val() * (10 * e.val()) + i.val() * t.val() * e.val() + a.val() * e.val() * 10 * .167 + n.val() * e.val() * 10 * .056)).digits().append("<span class=\"ag-calculator_results-currency\">$</span>");
+
+        v.html(parseInt($(".js-calculator_radio-box").find("input[name=partner-reward]:checked").val() * c.val() * d.val())).digits().append("<span class=\"ag-calculator_results-currency\">$</span>");
+
+        p.html(parseInt(s.val() * (15 * r.val()) + o.val() * s.val() * r.val())).digits().append("<span class=\"ag-calculator_results-currency\">$</span>");
+      }
+
+      $(".js-calculator_input-wrap .js-calculator_text-input").on("change input", function () {
+        $(this).parents('.ag-calculator-block').find(".js-calculator_range").val($(this).val()).change();
+
+        agFormula();
+      });
+
+      $(".js-calculator_input-wrap .js-calculator_range").on("change input", function () {
+        $(this).parents('.ag-calculator-block').find(".js-calculator_text-input").val($(this).val());
+
+        agFormula();
+      });
+
+      $(".js-calculator_input-wrap > .js-calculator_radio-box > .js-calculator_radio").on("change input", function () {
+        agFormula();
+      });
+
+      $(".js-calculator_more-levels").click(function (t) {
+        if($(this).hasClass("js-ag-opened")) {
+          h.hide();
+          h.find(".js-calculator_text-input").val(0);
+          h.find(".js-calculator_range").val(0).change();
+          $(this).removeClass("js-ag-opened");
+        }else{
+          h.css("display", "inline-block");
+          h.find(".js-calculator_text-input").val(15);
+          h.find(".js-calculator_range").val(15).change();
+          $(this).addClass("js-ag-opened");
+        }
+        
+        agFormula();
+
+        t.preventDefault();
+      });
+
+      $.fn.digits = function () {
+        return this.each(function () {
+          $(this).text($(this).text().replace(/(\d)(?=(\d\d\d)+(?!\d))/g, "$1'"));
+        });
+      };
+
+      agFormula();
+
+  });
+})(jQuery);
     </script>
 
 </body>

@@ -142,54 +142,26 @@
                             <div class="col">
                                 <div class="progress">
                                     <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0"
-                                        aria-valuemax="100" style="width:20%">
-
+                                        aria-valuemax="100" style="width:100%">
                                     </div>
-
                                 </div>
-                                <div class="progress-text mt-1">Personal Information</div>
+                                <div class="progress-text mt-1">Property Information</div>
+                            </div>
+                            <div class="col">
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0"
+                                        aria-valuemax="100" style="width:50%">
+                                    </div>
+                                </div>
+                                <div class="progress-text mt-1">Home details</div>
                             </div>
                             <div class="col">
                                 <div class="progress">
                                     <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0"
                                         aria-valuemax="100" style="width:0%">
-
                                     </div>
-
                                 </div>
-                                <div class="progress-text mt-1">Property Information
-                                </div>
-                            </div>
-                            <div class="col">
-                                <div class="progress">
-                                    <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0"
-                                        aria-valuemax="100" style="width:0%">
-
-                                    </div>
-
-                                </div>
-                                <div class="progress-text mt-1">Insurance Considerations</div>
-                            </div>
-                            <div class="col">
-                                <div class="progress">
-                                    <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0"
-                                        aria-valuemax="100" style="width:0%">
-
-                                    </div>
-
-                                </div>
-                                <div class="progress-text mt-1">Property facts
-                                </div>
-                            </div>
-                            <div class="col">
-                                <div class="progress">
-                                    <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0"
-                                        aria-valuemax="100" style="width:0%">
-
-                                    </div>
-
-                                </div>
-                                <div class="progress-text mt-1">Additional Coverages</div>
+                                <div class="progress-text mt-1">Coverages</div>
                             </div>
                         </div>
                         <a class="text-blue ms-3 back-arrow" href="#"><i class="fa fa-arrow-left-long me-2"></i>BACK</a>
@@ -222,7 +194,7 @@
                                                 <div class="accordion custom" id="accordionPolicy3">
                                                     <div class="accordion-item rounded-1">
                                                         <h2 class="accordion-header" id="headingTwo4">
-                                                            <button class="accordion-button" type="button"
+                                                            <button class="accordion-button border-bottom-0" type="button"
                                                                 data-bs-toggle="collapse" data-bs-target="#collapseTwo4"
                                                                 aria-expanded="true" aria-controls="collapseTwo">
                                                                 <h4 class="title fs-18">
@@ -244,12 +216,31 @@
                                                                                     class="f-control f-dropdown" placeholder="Select type of loss"
                                                                                     id="selectbuss">
                                                                                     <option value="">Select type of loss</option>
-                        
-                                                                                    <option value="1">5 years or less</option>
-                                                                                    <option value="2">5-10 Years</option>
-                                                                                    <option value="More than 20 Years">More than 20
-                                                                                        Years</option>
-                        
+                                                                                    <option>Fire</option>
+                                                                                    <option>Flood</option>
+                                                                                    <option>Freezing</option>
+                                                                                    <option>Hail</option>
+                                                                                    <option>Animal Bite</option>
+                                                                                    <option>Swimming Pool Incident</option>
+                                                                                    <option>Trampoline incident </option>
+                                                                                    <option>Water Leak/Overflow</option>    
+                                                                                    <option>Lightning</option>
+                                                                                    <option>Medical Payments</option>
+                                                                                    <option>Other Property Loss (Non-Weather Related)</option>
+                                                                                    <option>Other Property Loss (Weather Related)</option>
+                                                                                    <option>Personal Injury</option>
+                                                                                    <option>Sinkhole Collapse</option>
+                                                                                    <option>Smoke Damage</option>
+                                                                                    <option>Theft (off premises)</option>
+                                                                                    <option>Theft (on premises)</option>
+                                                                                    <option>Vandalism and Malicious Mischief</option>
+                                                                                    <option>Watercraft</option>
+                                                                                    <option>Water Damage - Major System Appliance</option>
+                                                                                    <option>Water Damage - Non-Weather</option>
+                                                                                    <option>Water Damage - Sewer Backup</option>
+                                                                                    <option>Water Damage - Weather</option>
+                                                                                    <option>Windstorm </option>
+                                                                                    <option>Business Claim at this property</option>
                                                                                 </select>
                         
                                                                             </div>
@@ -291,6 +282,15 @@
                                                                                 placeholder="What has been done from preventing this in the future form happening again"></textarea>
                                                                         </label>
                                                                     </div>
+                                                                    <div class="col-12">
+                                                                        <label class="checkbox-inline mb-0 w-auto"
+                                                                            for="claimClose1">
+                                                                            <input class="checkbox-control" type="checkbox" checked value=""
+                                                                                id="claimClose1">
+                                                                            <span class="checkbox-custom"></span>
+                                                                            <span class="checkbox-label fs-14">Claim Closed</span>
+                                                                        </label>
+                                                                    </div>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -304,7 +304,7 @@
                                                 <div class="accordion custom" id="accordionPolicy2">
                                                     <div class="accordion-item rounded-1">
                                                         <h2 class="accordion-header" id="headingTwo3">
-                                                            <button class="accordion-button" type="button"
+                                                            <button class="accordion-button border-bottom-0" type="button"
                                                                 data-bs-toggle="collapse" data-bs-target="#collapseTwo3"
                                                                 aria-expanded="true" aria-controls="collapseTwo">
                                                                 <h4 class="title fs-18">
@@ -326,12 +326,31 @@
                                                                                     class="f-control f-dropdown" placeholder="Select type of loss"
                                                                                     id="selectbuss">
                                                                                     <option value="">Select type of loss</option>
-                        
-                                                                                    <option value="1">5 years or less</option>
-                                                                                    <option value="2">5-10 Years</option>
-                                                                                    <option value="More than 20 Years">More than 20
-                                                                                        Years</option>
-                        
+                                                                                    <option>Fire</option>
+                                                                                    <option>Flood</option>
+                                                                                    <option>Freezing</option>
+                                                                                    <option>Hail</option>
+                                                                                    <option>Animal Bite</option>
+                                                                                    <option>Swimming Pool Incident</option>
+                                                                                    <option>Trampoline incident </option>
+                                                                                    <option>Water Leak/Overflow</option>    
+                                                                                    <option>Lightning</option>
+                                                                                    <option>Medical Payments</option>
+                                                                                    <option>Other Property Loss (Non-Weather Related)</option>
+                                                                                    <option>Other Property Loss (Weather Related)</option>
+                                                                                    <option>Personal Injury</option>
+                                                                                    <option>Sinkhole Collapse</option>
+                                                                                    <option>Smoke Damage</option>
+                                                                                    <option>Theft (off premises)</option>
+                                                                                    <option>Theft (on premises)</option>
+                                                                                    <option>Vandalism and Malicious Mischief</option>
+                                                                                    <option>Watercraft</option>
+                                                                                    <option>Water Damage - Major System Appliance</option>
+                                                                                    <option>Water Damage - Non-Weather</option>
+                                                                                    <option>Water Damage - Sewer Backup</option>
+                                                                                    <option>Water Damage - Weather</option>
+                                                                                    <option>Windstorm </option>
+                                                                                    <option>Business Claim at this property</option>
                                                                                 </select>
                         
                                                                             </div>
@@ -371,6 +390,15 @@
                                                                             <textarea name="" id="" cols="30" rows="4"
                                                                                 class="form-control pt-2 h-auto"
                                                                                 placeholder="What has been done from preventing this in the future form happening again"></textarea>
+                                                                        </label>
+                                                                    </div>
+                                                                    <div class="col-12">
+                                                                        <label class="checkbox-inline mb-0 w-auto"
+                                                                            for="claimClose2">
+                                                                            <input class="checkbox-control" type="checkbox" checked value=""
+                                                                                id="claimClose2">
+                                                                            <span class="checkbox-custom"></span>
+                                                                            <span class="checkbox-label fs-14">Claim Closed</span>
                                                                         </label>
                                                                     </div>
                                                                 </div>

@@ -142,54 +142,26 @@
                             <div class="col">
                                 <div class="progress">
                                     <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0"
-                                        aria-valuemax="100" style="width:20%">
-
+                                        aria-valuemax="100" style="width:100%">
                                     </div>
-
                                 </div>
-                                <div class="progress-text mt-1">Personal Information</div>
+                                <div class="progress-text mt-1">Property Information</div>
+                            </div>
+                            <div class="col">
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0"
+                                        aria-valuemax="100" style="width:50%">
+                                    </div>
+                                </div>
+                                <div class="progress-text mt-1">Home details</div>
                             </div>
                             <div class="col">
                                 <div class="progress">
                                     <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0"
                                         aria-valuemax="100" style="width:0%">
-
                                     </div>
-
                                 </div>
-                                <div class="progress-text mt-1">Property Information
-                                </div>
-                            </div>
-                            <div class="col">
-                                <div class="progress">
-                                    <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0"
-                                        aria-valuemax="100" style="width:0%">
-
-                                    </div>
-
-                                </div>
-                                <div class="progress-text mt-1">Insurance Considerations</div>
-                            </div>
-                            <div class="col">
-                                <div class="progress">
-                                    <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0"
-                                        aria-valuemax="100" style="width:0%">
-
-                                    </div>
-
-                                </div>
-                                <div class="progress-text mt-1">Property facts
-                                </div>
-                            </div>
-                            <div class="col">
-                                <div class="progress">
-                                    <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0"
-                                        aria-valuemax="100" style="width:0%">
-
-                                    </div>
-
-                                </div>
-                                <div class="progress-text mt-1">Additional Coverages</div>
+                                <div class="progress-text mt-1">Coverages</div>
                             </div>
                         </div>
                         <a class="text-blue ms-3 back-arrow" href="#"><i class="fa fa-arrow-left-long me-2"></i>BACK</a>
@@ -199,13 +171,65 @@
                             <img src="../images/user-person.svg" alt="" class="user-person mx-auto">
                             <p class="user-welcome mt-2">Hey! My Name is Anne</p>
                         </div>
-                        <h3 class="title  text-center">Any business out of house? </h3>
+                        <h3 class="title  text-center">Any Business at this Property ? </h3>
 
                         <div class="contain-wrapper-sm">
-                            <form class="mt-4 d-flex justify-content-center">
-                                <button type="submit" class="btn btn-outline text-blue  mx-2 mt-4"><span>No</span>
-                                </button>
-                                <button type="submit" class="btn btn-primary  mx-2 mt-4"><span>Yes</span>
+                            <form class="mt-4">
+                                <div class="d-flex flex-wrap justify-content-center">
+                                    <div class="col-4 px-3">
+                                        <label class="checkbox-inline squar-boxes w-100 me-0 mb-0" for="gas">
+                                            <input class="checkbox-control" type="checkbox" value=""
+                                                id="gas" >
+                                            <span class="checkbox-custom"></span>
+                                            <span class="checkbox-label fs-14">
+                                                <img src="../images/claim-icons/none_active.svg" alt="" class="active"/> 
+                                                <img src="../images/claim-icons/none_inactive.svg" alt="" class="offline"/> 
+                                                None
+                                            </span>
+                                        </label>
+                                    </div>
+                                    <div class="col-4 px-3">
+                                        <label class="checkbox-inline squar-boxes w-100 me-0 mb-0" for="Oil">
+                                            <input class="checkbox-control" type="checkbox" checked value=""
+                                                id="Oil" >
+                                            <span class="checkbox-custom"></span>
+                                            <span class="checkbox-label fs-14">
+                                                <img src="../images/claim-icons/own_active.svg" alt="" class="active"/> 
+                                                <img src="../images/claim-icons/own_inactive.svg" alt="" class="offline"/> 
+                                                I Own Business Here
+                                            </span>
+                                        </label>
+                                    </div>
+                                    <div class="col-4 px-3">
+                                        <label class="checkbox-inline squar-boxes w-100 me-0 mb-0" for="Electric">
+                                            <input class="checkbox-control" type="checkbox" value=""
+                                                id="Electric" >
+                                            <span class="checkbox-custom"></span>
+                                            <span class="checkbox-label fs-14">
+                                                
+                                                <img src="../images/claim-icons/tenant_active.svg" alt="" class="active"/> 
+                                                <img src="../images/claim-icons/tenant_inactive.svg" alt="" class="offline"/> 
+                                                Tenant Ran Business here
+                                            </span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-12 px-3 mt-3">
+                                    <p class="text-black fs-18 fw-500  text-left">business is more than 50% of property habitational?</p>
+                                    <div class="d-flex align-items-center justify-content-start mt-3">
+                                        <label class="radio-box w-auto me-4" for="full1">
+                                            <input class="radio-box-control" checked type="radio" name="country1"
+                                                value="" id="full1">
+                                            <span class="radio-box-custom">YES</span>
+                                        </label>
+                                        <label class="radio-box w-auto" for="basic1">
+                                            <input class="radio-box-control" type="radio" name="country1"
+                                                value="" id="basic1">
+                                            <span class="radio-box-custom">NO </span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <button type="submit" class="btn btn-primary  mx-auto mt-4"><span>Continue</span>
                                 </button>
                             </form>
                         </div>

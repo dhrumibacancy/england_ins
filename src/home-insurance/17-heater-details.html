@@ -142,54 +142,26 @@
                             <div class="col">
                                 <div class="progress">
                                     <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0"
+                                        aria-valuemax="100" style="width:100%">
+                                    </div>
+                                </div>
+                                <div class="progress-text mt-1">Property Information</div>
+                            </div>
+                            <div class="col">
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0"
                                         aria-valuemax="100" style="width:20%">
-
                                     </div>
-
                                 </div>
-                                <div class="progress-text mt-1">Personal Information</div>
+                                <div class="progress-text mt-1">Home details</div>
                             </div>
                             <div class="col">
                                 <div class="progress">
                                     <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0"
                                         aria-valuemax="100" style="width:0%">
-
                                     </div>
-
                                 </div>
-                                <div class="progress-text mt-1">Property Information
-                                </div>
-                            </div>
-                            <div class="col">
-                                <div class="progress">
-                                    <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0"
-                                        aria-valuemax="100" style="width:0%">
-
-                                    </div>
-
-                                </div>
-                                <div class="progress-text mt-1">Insurance Considerations</div>
-                            </div>
-                            <div class="col">
-                                <div class="progress">
-                                    <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0"
-                                        aria-valuemax="100" style="width:0%">
-
-                                    </div>
-
-                                </div>
-                                <div class="progress-text mt-1">Property facts
-                                </div>
-                            </div>
-                            <div class="col">
-                                <div class="progress">
-                                    <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0"
-                                        aria-valuemax="100" style="width:0%">
-
-                                    </div>
-
-                                </div>
-                                <div class="progress-text mt-1">Additional Coverages</div>
+                                <div class="progress-text mt-1">Coverages</div>
                             </div>
                         </div>
                         <a class="text-blue ms-3 back-arrow" href="#"><i class="fa fa-arrow-left-long me-2"></i>BACK</a>
@@ -209,22 +181,22 @@
                                         <div class="row g-3">
                                             <div class="col-md-12 ">
                                                 <h5 class="fs-16">Is Oil Tank Above or Below the Ground</h5>
-                                                <div class="d-flex align-items-center justify-content-start">
-                                                    <div class="d-flex align-self-center me-3">
-                                                        <label class="radio-inline radio-btn" for="livingYes">
-                                                            <input class="radio-control" type="radio" name="living"
-                                                                value="" id="livingYes" checked="">
+                                                <div class="row">
+                                                    <div class="col-6">
+                                                        <label class="radio-inline radio-btn text-center" for="livingAbove">
+                                                            <input class="radio-control" type="radio" name="aboveBelow"
+                                                                value="" id="livingAbove" checked="">
                                                             <span class="radio-custom"></span>
-                                                            <span class="radio-label fs-14">Above
+                                                            <span class="radio-label fs-14 w-100">Above
                                                             </span>
                                                         </label>
                                                     </div>
-                                                    <div class="d-flex align-self-center me-3">
-                                                        <label class="radio-inline radio-btn" for="livingNo">
-                                                            <input class="radio-control" type="radio" name="living"
-                                                                value="" id="livingNo">
+                                                    <div class="col-6">
+                                                        <label class="radio-inline radio-btn  text-center" for="livingBelow">
+                                                            <input class="radio-control" type="radio" name="aboveBelow"
+                                                                value="" id="livingBelow">
                                                             <span class="radio-custom"></span>
-                                                            <span class="radio-label fs-14">Below
+                                                            <span class="radio-label fs-14 w-100">Below
                                                             </span>
                                                         </label>
                                                     </div>
@@ -233,22 +205,22 @@
 
                                             <div class="col-md-12 ">
                                                 <h5 class="fs-16">Oil tank is in Interior or Exterior</h5>
-                                                <div class="d-flex align-items-center justify-content-start">
-                                                    <div class="d-flex align-self-center me-3">
-                                                        <label class="radio-inline radio-btn" for="livingYes">
+                                                <div class="row">
+                                                    <div class="col-6">
+                                                        <label class="radio-inline radio-btn text-center" for="livingYes">
                                                             <input class="radio-control" type="radio" name="living"
                                                                 value="" id="livingYes" checked="">
                                                             <span class="radio-custom"></span>
-                                                            <span class="radio-label fs-14">interior
+                                                            <span class="radio-label fs-14 w-100">interior
                                                             </span>
                                                         </label>
                                                     </div>
-                                                    <div class="d-flex align-self-center me-3">
-                                                        <label class="radio-inline radio-btn" for="livingNo">
+                                                    <div class="col-6">
+                                                        <label class="radio-inline radio-btn text-center" for="livingNo">
                                                             <input class="radio-control" type="radio" name="living"
                                                                 value="" id="livingNo">
                                                             <span class="radio-custom"></span>
-                                                            <span class="radio-label fs-14">exterior
+                                                            <span class="radio-label fs-14 w-100">exterior
                                                             </span>
                                                         </label>
                                                     </div>
@@ -258,7 +230,7 @@
                                             <div class="col-lg-12 mb-0">
                                                 <label class="checkbox-inline mb-0 w-auto"
                                                     for="flexCheckDefault2">
-                                                    <input class="checkbox-control" type="checkbox" value=""
+                                                    <input class="checkbox-control" type="checkbox" checked value=""
                                                         id="flexCheckDefault2">
                                                     <span class="checkbox-custom"></span>
                                                     <span class="checkbox-label fs-14">On a cement floor
