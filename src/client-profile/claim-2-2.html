@@ -144,46 +144,58 @@
                             <p class="user-welcome mt-2">Hey! My Name is Anne
                             </p>
                         </div>
-                        <h3 class="title  text-center">Is there a specific glass repair company you want to use?</h3>
+                        <h3 class="title  text-center">Select all that apply to you</h3>
 
                         <form class="mt-4">
                             <div class="container-wrapper-md">
                                 <div class="d-flex flex-wrap justify-content-center claim-section ">
-                                    <label class="checkbox-inline squar-boxes mb-0" for="Yes">
-                                        <input class="checkbox-control" type="radio" name="glass-damage" value="" id="Yes" checked>
+                                    <label class="checkbox-inline squar-boxes mb-0" for="None">
+                                        <input class="checkbox-control" type="checkbox" name="None" value="" id="None" checked>
                                         <span class="checkbox-custom"></span>
-                                        <span class="checkbox-label">
-                                            <img src="../images/claim-icons/Yes_Active.svg" alt="" class="active" />
-                                            <img src="../images/claim-icons/Yes_Inactive.svg" alt="" class="offline" />
-                                            Yes
+                                        <span class="checkbox-label fs-16">
+                                            <img src="../images/claim-icons/none-active.svg" alt="" class="active" />
+                                            <img src="../images/claim-icons/none-inactive.svg" alt="" class="offline" />
+                                            None
                                         </span>
                                     </label>
-                                    <label class="checkbox-inline squar-boxes mb-0" for="No">
-                                        <input class="checkbox-control" type="radio" name="glass-damage" value="" id="No">
+                                    <label class="checkbox-inline squar-boxes  mb-0" for="hitnrun">
+                                        <input class="checkbox-control" type="checkbox" name="hitnrun" value="" id="hitnrun">
                                         <span class="checkbox-custom"></span>
-                                        <span class="checkbox-label">
-                                            <img src="../images/claim-icons/No_Active.svg" alt=""
+                                        <span class="checkbox-label fs-16">
+                                            <img src="../images/claim-icons/hit-run-active.svg" alt=""
                                                 class="active" />
-                                            <img src="../images/claim-icons/No_Inactive.svg" alt="" class="offline" />
-                                            No
+                                            <img src="../images/claim-icons/hit-run-inactive.svg" alt="" class="offline" />
+                                            Hit & Run
                                         </span>
                                     </label>
-                                    <label class="checkbox-inline squar-boxes mb-0" for="repaired">
-                                        <input class="checkbox-control" type="radio" name="glass-damage" value="" id="repaired">
+                                    <label class="checkbox-inline squar-boxes mb-0" for="airbag">
+                                        <input class="checkbox-control" type="checkbox" name="airbag" value="" id="airbag">
                                         <span class="checkbox-custom"></span>
-                                        <span class="checkbox-label">
+                                        <span class="checkbox-label fs-16">
 
-                                            <img src="../images/claim-icons/Glass-already-repaired_Active.svg" alt=""
+                                            <img src="../images/claim-icons/airbag-active.svg" alt=""
                                                 class="active" />
-                                            <img src="../images/claim-icons/Glass-already-repaired_Inactive.svg" alt=""
+                                            <img src="../images/claim-icons/airbag-inactive.svg" alt=""
                                                 class="offline" />
-                                                Glass already repaired
+                                                Airbags deployed
+                                        </span>
+                                    </label>
+                                    <label class="checkbox-inline squar-boxes mb-0" for="parked">
+                                        <input class="checkbox-control" type="checkbox" name="parked" value="" id="parked">
+                                        <span class="checkbox-custom"></span>
+                                        <span class="checkbox-label fs-16">
+
+                                            <img src="../images/claim-icons/parking-active.svg" alt=""
+                                                class="active" />
+                                            <img src="../images/claim-icons/parking-inactive.svg" alt=""
+                                                class="offline" />
+                                                My Vehicle Was Parked
                                         </span>
                                     </label>
                                 </div>
                             </div>
 
-                            <div class="contain-wrapper-sm position-relative z-index-2">
+                            <div class="contain-wrapper-sm">
                                 <button type="submit" class="btn btn-primary  mx-auto mt-4"><span>Continue</span>
                                 </button>
                             </div>

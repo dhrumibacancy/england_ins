@@ -145,24 +145,24 @@
                             </p>
                         </div>
                         <h3 class="title  text-center">Which of these best describes what happened</h3>
-                        <label class="text-center fw-normal mt-3">Touch & Select Below</label>
+                        <label class="text-center title fw-normal mt-3">Touch & Select Below</label>
 
                         <form class="mt-4">
                             <div class="container-wrapper-md">
                                 <div class="d-flex flex-wrap justify-content-center claim-section">
                                     <label class="checkbox-inline squar-boxes mb-0" for="glass">
-                                        <input class="checkbox-control" type="checkbox" value="" id="glass">
+                                        <input class="checkbox-control" type="radio" name="accident-type" value="" id="glass">
                                         <span class="checkbox-custom"></span>
-                                        <span class="checkbox-label fs-14">
+                                        <span class="checkbox-label">
                                             <img src="../images/claim-icons/glass-active.svg" alt="" class="active" />
                                             <img src="../images/claim-icons/glass.svg" alt="" class="offline" />
                                             Glass Damage Only
                                         </span>
                                     </label>
                                     <label class="checkbox-inline squar-boxes mb-0" for="collision">
-                                        <input class="checkbox-control" type="checkbox" value="" id="collision">
+                                        <input class="checkbox-control" type="radio" name="accident-type" value="" id="collision">
                                         <span class="checkbox-custom"></span>
-                                        <span class="checkbox-label fs-14">
+                                        <span class="checkbox-label">
                                             <img src="../images/claim-icons/collision-active.svg" alt=""
                                                 class="active" />
                                             <img src="../images/claim-icons/collision.svg" alt="" class="offline" />
@@ -170,9 +170,9 @@
                                         </span>
                                     </label>
                                     <label class="checkbox-inline squar-boxes mb-0" for="no-other-vehicle">
-                                        <input class="checkbox-control" type="checkbox" value="" id="no-other-vehicle">
+                                        <input class="checkbox-control" type="radio" name="accident-type" value="" id="no-other-vehicle">
                                         <span class="checkbox-custom"></span>
-                                        <span class="checkbox-label fs-14">
+                                        <span class="checkbox-label">
 
                                             <img src="../images/claim-icons/no-other-vehicle-active.svg" alt=""
                                                 class="active" />
@@ -182,9 +182,9 @@
                                         </span>
                                     </label>
                                     <label class="checkbox-inline squar-boxes mb-0" for="animal">
-                                        <input class="checkbox-control" type="checkbox" value="" id="animal">
+                                        <input class="checkbox-control" type="radio" name="accident-type" value="" id="animal">
                                         <span class="checkbox-custom"></span>
-                                        <span class="checkbox-label fs-14">
+                                        <span class="checkbox-label">
 
                                             <img src="../images/claim-icons/animal-active.svg" alt="" class="active" />
                                             <img src="../images/claim-icons/animal.svg" alt="" class="offline" />
@@ -193,9 +193,9 @@
                                     </label>
                                     <div class="w-100 d-none d-xl-block"></div>
                                     <label class="checkbox-inline squar-boxes mb-0" for="theft">
-                                        <input class="checkbox-control" type="checkbox" value="" id="theft">
+                                        <input class="checkbox-control" type="radio" name="accident-type" value="" id="theft">
                                         <span class="checkbox-custom"></span>
-                                        <span class="checkbox-label fs-14">
+                                        <span class="checkbox-label">
 
                                             <img src="../images/claim-icons/theft-vandalism-active.svg" alt=""
                                                 class="active" />
@@ -205,9 +205,9 @@
                                         </span>
                                     </label>
                                     <label class="checkbox-inline squar-boxes mb-0" for="weather">
-                                        <input class="checkbox-control" type="checkbox" value="" id="weather" checked>
+                                        <input class="checkbox-control" type="radio" name="accident-type" value="" id="weather" checked>
                                         <span class="checkbox-custom"></span>
-                                        <span class="checkbox-label fs-14">
+                                        <span class="checkbox-label">
 
                                             <img src="../images/claim-icons/Weather-active.svg" alt="" class="active" />
                                             <img src="../images/claim-icons/Weather.svg" alt="" class="offline" />
@@ -215,9 +215,9 @@
                                         </span>
                                     </label>
                                     <label class="checkbox-inline squar-boxes mb-0" for="fire">
-                                        <input class="checkbox-control" type="checkbox" value="" id="fire">
+                                        <input class="checkbox-control" type="radio" name="accident-type" value="" id="fire">
                                         <span class="checkbox-custom"></span>
-                                        <span class="checkbox-label fs-14">
+                                        <span class="checkbox-label">
 
                                             <img src="../images/claim-icons/fire-active.svg" alt="" class="active" />
                                             <img src="../images/claim-icons/fire.svg" alt="" class="offline" />
@@ -225,9 +225,9 @@
                                         </span>
                                     </label>
                                     <label class="checkbox-inline squar-boxes mb-0" for="tow-only">
-                                        <input class="checkbox-control" type="checkbox" value="" id="tow-only">
+                                        <input class="checkbox-control" type="radio" name="accident-type" value="" id="tow-only">
                                         <span class="checkbox-custom"></span>
-                                        <span class="checkbox-label fs-14">
+                                        <span class="checkbox-label">
 
                                             <img src="../images/claim-icons/tow-only-active.svg" alt=""
                                                 class="active" />
@@ -238,7 +238,7 @@
                                 </div>
                             </div>
 
-                            <div class="contain-wrapper-sm">
+                            <div class="contain-wrapper-sm position-relative z-index-2">
                                 <div class="container-fluid claim-additional-info  ">
                                     <div class="row g-3">
 
@@ -259,7 +259,7 @@
                                         </div>
                                         <div class="col-md-12 col-12">
 
-                                            <label>Where did this happen</label>
+                                            <label class="dark-labels">Where did this happen (not sure? Enter City & state only)</label>
                                             <input class="form-control addMain" type="text"
                                                 placeholder="Street Address">
                                         </div>
@@ -303,7 +303,7 @@
                                         </div>
 
                                         <div class="col-md-12 col-12">
-                                            <label>When did this happen</label>
+                                            <label class="dark-labels">When did this happen</label>
                                         </div>
                                         
                                         <div class="col-6 mt-0">

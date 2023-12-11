@@ -744,6 +744,15 @@ main .main-wrapper p {
   padding: 15px;
 }
 
+.yes-box {
+  margin: 0 auto;
+}
+@media only screen and (min-width: 600px) {
+  .yes-box {
+    width: 276px;
+  }
+}
+
 .white-box {
   background: var(--color-white);
   border: 1px solid var(--color-border-light);
@@ -2080,6 +2089,10 @@ tr:last-child td:last-child {
   line-height: 24px;
 }
 
+.title {
+  color: var(--color-title);
+}
+
 .claim-section .sec-title {
   font-size: 18px;
   font-weight: 500;
@@ -2225,6 +2238,19 @@ tr:last-child td:last-child {
 }
 .claim-section label.checkbox-inline.squar-boxes {
   width: 200px;
+  background: none;
+  border-radius: 0;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  padding: 0;
+}
+.claim-section label.checkbox-inline.squar-boxes .checkbox-control:checked ~ .checkbox-label {
+  -webkit-box-shadow: 0px 20px 30px 0px #ddeefb;
+          box-shadow: 0px 20px 30px 0px #ddeefb;
+}
+.claim-section label.checkbox-inline.squar-boxes .radio-custom {
+  height: 30px;
+  background-repeat: no-repeat;
 }
 .claim-section label.checkbox-inline.squar-boxes.glass-squares img {
   width: 45px;
@@ -2235,10 +2261,49 @@ tr:last-child td:last-child {
 .claim-section label.checkbox-inline.squar-boxes img {
   margin-bottom: 10px;
 }
+.claim-section label.checkbox-inline.squar-boxes .checkbox-label {
+  font-size: 16px !important;
+  color: #2b2b2b;
+  width: 100%;
+  height: 100%;
+  -webkit-box-shadow: 0px 20px 30px 0px rgba(0, 0, 0, 0.0784313725);
+          box-shadow: 0px 20px 30px 0px rgba(0, 0, 0, 0.0784313725);
+  background: #fff;
+  border-radius: 12px;
+  padding: 16px;
+}
 
 .claim-additional-info {
   padding: 16px;
   border-radius: 8px;
+}
+.claim-additional-info .f-dropdown > span {
+  font-size: 16px;
+  height: 52px;
+  color: var(--color-light-gray);
+}
+.claim-additional-info .form-control {
+  font-size: 16px;
+  height: 52px;
+}
+.claim-additional-info .form-control::-webkit-input-placeholder {
+  color: var(--color-light-gray);
+}
+.claim-additional-info .form-control::-moz-placeholder {
+  color: var(--color-light-gray);
+}
+.claim-additional-info .form-control:-ms-input-placeholder {
+  color: var(--color-light-gray);
+}
+.claim-additional-info .form-control::-ms-input-placeholder {
+  color: var(--color-light-gray);
+}
+.claim-additional-info .form-control::placeholder {
+  color: var(--color-light-gray);
+}
+.claim-additional-info hr {
+  background: #e6e6e6;
+  opacity: 1;
 }
 .claim-additional-info .doc-card.add-document {
   -webkit-box-pack: start;
@@ -2247,13 +2312,13 @@ tr:last-child td:last-child {
   background: -webkit-gradient(linear, left bottom, left top, from(var(--color-blue-light)), to(var(--color-blue-light))), -webkit-gradient(linear, left bottom, left top, from(var(--color-blue-light3)), to(var(--color-blue-light3)));
   background: -o-linear-gradient(bottom, var(--color-blue-light), var(--color-blue-light)), -o-linear-gradient(bottom, var(--color-blue-light3), var(--color-blue-light3));
   background: linear-gradient(0deg, var(--color-blue-light), var(--color-blue-light)), linear-gradient(0deg, var(--color-blue-light3), var(--color-blue-light3));
-  padding: 8px;
+  padding: 4px 14px;
   border-radius: 7px;
   position: relative;
 }
 .claim-additional-info .doc-card.add-document > img {
-  width: 32px;
-  height: 32px;
+  width: 44px;
+  height: 44px;
   -o-object-fit: contain;
   object-fit: contain;
   -o-object-position: center;
@@ -2263,6 +2328,7 @@ tr:last-child td:last-child {
 .claim-additional-info .doc-card.add-document .doc-title {
   font-weight: 500;
   font-size: 12px;
+  color: black;
 }
 .claim-additional-info .doc-card.add-document input {
   position: absolute;
@@ -2270,6 +2336,10 @@ tr:last-child td:last-child {
   height: 0;
   top: 0;
   left: 0;
+}
+.claim-additional-info label.dark-labels {
+  font-size: 18px;
+  color: var(--color-black);
 }
 
 .vehicle-damage {
@@ -3366,6 +3436,16 @@ main .wrapper .admin-section-container .content {
 .admin-section-container .admin-summary-data .summary-detail-section .location-card .card-body table td:nth-child(2) input {
   padding: 0 5px;
   text-align: center;
+}
+.admin-section-container .tab-content.summary-data {
+  width: calc(100% - 230px);
+}
+.admin-section-container .tab-content.summary-data table.fixed {
+  table-layout: fixed;
+}
+.admin-section-container .tab-content.summary-data table.fixed td {
+  overflow: hidden;
+  padding: 0.75rem 8px;
 }
 
 .page {
@@ -8286,6 +8366,93 @@ main .wrapper .admin-section-container .content {
   left: 475px;
   width: 120px;
   top: 53px;
+}
+.page-details.quincy.quincy-norfolk .norfolk-insutrument {
+  position: absolute;
+  top: 362px;
+  left: 50px;
+}
+.page-details.quincy.quincy-norfolk .norfolk-insutrument input, .page-details.quincy.quincy-norfolk .norfolk-insutrument textarea {
+  font-size: 14px;
+}
+.page-details.quincy.quincy-norfolk .norfolk-insutrument .a1 {
+  left: 139px;
+  width: 310px;
+  top: 0;
+}
+.page-details.quincy.quincy-norfolk .norfolk-insutrument .a2 {
+  left: 271px;
+  width: 120px;
+  top: 0;
+}
+.page-details.quincy.quincy-norfolk .norfolk-insutrument .a3 {
+  left: 405px;
+  width: 120px;
+  top: 0;
+}
+.page-details.quincy.quincy-norfolk .norfolk-insutrument .a4 {
+  left: 542px;
+  width: 120px;
+  top: 0;
+}
+.page-details.quincy.quincy-norfolk .norfolk-insutrument .r0 {
+  top: -175px;
+}
+.page-details.quincy.quincy-norfolk .norfolk-insutrument .r0 .a1 {
+  left: 30px;
+  width: 240px;
+  top: 0;
+}
+.page-details.quincy.quincy-norfolk .norfolk-insutrument .r0 .a2 {
+  left: 285px;
+  width: 180px;
+  top: 0;
+}
+.page-details.quincy.quincy-norfolk .norfolk-insutrument .r0 .a3 {
+  left: 470px;
+  width: 199px;
+  top: 0;
+}
+.page-details.quincy.quincy-norfolk .norfolk-insutrument .r0 .a4 {
+  left: 25px;
+  width: 315px;
+  top: 40px;
+  height: 75px;
+  font-weight: 600;
+}
+.page-details.quincy.quincy-norfolk .norfolk-insutrument .r1 {
+  top: 20px;
+}
+.page-details.quincy.quincy-norfolk .norfolk-insutrument .r2 {
+  top: 50px;
+}
+.page-details.quincy.quincy-norfolk .norfolk-insutrument .r3 {
+  top: 110px;
+}
+.page-details.quincy.quincy-norfolk .norfolk-insutrument .r4 {
+  top: 140px;
+}
+.page-details.quincy.quincy-norfolk .norfolk-insutrument .r5 {
+  top: 225px;
+}
+.page-details.quincy.quincy-norfolk .norfolk-insutrument .r6 {
+  top: 258px;
+}
+.page-details.quincy.quincy-norfolk .norfolk-insutrument .r7 {
+  top: 300px;
+}
+.page-details.quincy.quincy-norfolk .norfolk-insutrument .r8 {
+  top: 350px;
+}
+.page-details.quincy.quincy-norfolk .signature-info {
+  position: absolute;
+  top: 773px;
+  left: 440px;
+}
+.page-details.quincy.quincy-norfolk .signature-info .a1 {
+  left: 178px;
+  width: 85px;
+  top: 0;
 }
 .page-details.quincy .applicant-about {
   position: absolute;

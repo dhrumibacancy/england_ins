@@ -152,7 +152,7 @@
                                     <label class="checkbox-inline squar-boxes mb-0" for="Yes">
                                         <input class="checkbox-control" type="radio" name="glass-damage" value="" id="Yes" checked>
                                         <span class="checkbox-custom"></span>
-                                        <span class="checkbox-label">
+                                        <span class="checkbox-label fs-16">
                                             <img src="../images/claim-icons/Yes_Active.svg" alt="" class="active" />
                                             <img src="../images/claim-icons/Yes_Inactive.svg" alt="" class="offline" />
                                             Yes
@@ -161,7 +161,7 @@
                                     <label class="checkbox-inline squar-boxes mb-0" for="No">
                                         <input class="checkbox-control" type="radio" name="glass-damage" value="" id="No">
                                         <span class="checkbox-custom"></span>
-                                        <span class="checkbox-label">
+                                        <span class="checkbox-label fs-16">
                                             <img src="../images/claim-icons/No_Active.svg" alt=""
                                                 class="active" />
                                             <img src="../images/claim-icons/No_Inactive.svg" alt="" class="offline" />
@@ -171,7 +171,7 @@
                                     <label class="checkbox-inline squar-boxes mb-0" for="repaired">
                                         <input class="checkbox-control" type="radio" name="glass-damage" value="" id="repaired">
                                         <span class="checkbox-custom"></span>
-                                        <span class="checkbox-label">
+                                        <span class="checkbox-label fs-16">
 
                                             <img src="../images/claim-icons/Glass-already-repaired_Active.svg" alt=""
                                                 class="active" />
@@ -184,6 +184,66 @@
                             </div>
 
                             <div class="contain-wrapper-sm position-relative z-index-2">
+                                <div class="container-fluid claim-additional-info  ">
+                                    <div class="row g-3">
+                                        <div class="col-md-12 col-12">
+
+                                            <label class="fs-18">Glass Company Detail</label>
+                                        </div>
+                                        <div class="col-md-6 mt-md-0">                                            
+                                            <input class="form-control addMain" type="text"
+                                                placeholder="Company Name">
+                                        </div>
+                                        <div class="col-md-6 mt-md-0">                                            
+                                            <input class="form-control addMain" type="text"
+                                                placeholder="Phone Number">
+                                        </div>
+                                        <div class="col-md-12">                                            
+                                            <input class="form-control addMain" type="text"
+                                                placeholder="Street Address">
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="f-group max-width-100">
+
+                                                <div class="f-dropdown selectDropdown"><select
+                                                        class="f-control f-dropdown" placeholder="City" id="selectCity">
+                                                        <option value="">Select City</option>
+                                                        <option value="1">city 1
+                                                        </option>
+                                                        <option value="2">city 2
+                                                        </option>
+
+                                                    </select>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="f-group max-width-100">
+
+                                                <div class="f-dropdown selectDropdown"><select
+                                                        class="f-control f-dropdown" placeholder="state"
+                                                        id="selectState">
+                                                        <option value="">Select State</option>
+                                                        <option value="1">State 1
+                                                        </option>
+                                                        <option value="2">State 2
+                                                        </option>
+
+                                                    </select>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="form-group">
+                                                <input type="text" placeholder="ZIP Code" class="form-control">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
                                 <button type="submit" class="btn btn-primary  mx-auto mt-4"><span>Continue</span>
                                 </button>
                             </div>

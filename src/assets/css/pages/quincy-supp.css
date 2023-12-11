@@ -102,6 +102,93 @@
   width: 120px;
   top: 53px;
 }
+.page-details.quincy.quincy-norfolk .norfolk-insutrument {
+  position: absolute;
+  top: 362px;
+  left: 50px;
+}
+.page-details.quincy.quincy-norfolk .norfolk-insutrument input, .page-details.quincy.quincy-norfolk .norfolk-insutrument textarea {
+  font-size: 14px;
+}
+.page-details.quincy.quincy-norfolk .norfolk-insutrument .a1 {
+  left: 139px;
+  width: 310px;
+  top: 0;
+}
+.page-details.quincy.quincy-norfolk .norfolk-insutrument .a2 {
+  left: 271px;
+  width: 120px;
+  top: 0;
+}
+.page-details.quincy.quincy-norfolk .norfolk-insutrument .a3 {
+  left: 405px;
+  width: 120px;
+  top: 0;
+}
+.page-details.quincy.quincy-norfolk .norfolk-insutrument .a4 {
+  left: 542px;
+  width: 120px;
+  top: 0;
+}
+.page-details.quincy.quincy-norfolk .norfolk-insutrument .r0 {
+  top: -175px;
+}
+.page-details.quincy.quincy-norfolk .norfolk-insutrument .r0 .a1 {
+  left: 30px;
+  width: 240px;
+  top: 0;
+}
+.page-details.quincy.quincy-norfolk .norfolk-insutrument .r0 .a2 {
+  left: 285px;
+  width: 180px;
+  top: 0;
+}
+.page-details.quincy.quincy-norfolk .norfolk-insutrument .r0 .a3 {
+  left: 470px;
+  width: 199px;
+  top: 0;
+}
+.page-details.quincy.quincy-norfolk .norfolk-insutrument .r0 .a4 {
+  left: 25px;
+  width: 315px;
+  top: 40px;
+  height: 75px;
+  font-weight: 600;
+}
+.page-details.quincy.quincy-norfolk .norfolk-insutrument .r1 {
+  top: 20px;
+}
+.page-details.quincy.quincy-norfolk .norfolk-insutrument .r2 {
+  top: 50px;
+}
+.page-details.quincy.quincy-norfolk .norfolk-insutrument .r3 {
+  top: 110px;
+}
+.page-details.quincy.quincy-norfolk .norfolk-insutrument .r4 {
+  top: 140px;
+}
+.page-details.quincy.quincy-norfolk .norfolk-insutrument .r5 {
+  top: 225px;
+}
+.page-details.quincy.quincy-norfolk .norfolk-insutrument .r6 {
+  top: 258px;
+}
+.page-details.quincy.quincy-norfolk .norfolk-insutrument .r7 {
+  top: 300px;
+}
+.page-details.quincy.quincy-norfolk .norfolk-insutrument .r8 {
+  top: 350px;
+}
+.page-details.quincy.quincy-norfolk .signature-info {
+  position: absolute;
+  top: 773px;
+  left: 440px;
+}
+.page-details.quincy.quincy-norfolk .signature-info .a1 {
+  left: 178px;
+  width: 85px;
+  top: 0;
+}
 .page-details.quincy .applicant-about {
   position: absolute;
   top: 605px;
