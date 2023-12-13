@@ -1,0 +1,13 @@
+.business-insurance-flow {
+    .form-control,
+    .f-dropdown > span{
+        height: 52px;
+        font-size: 16px;
+    }
+
+    .btn{
+        font-size: 16px !important;
+    }
+
+    @import "main-flow";
+}

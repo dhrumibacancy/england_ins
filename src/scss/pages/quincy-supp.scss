@@ -6,7 +6,7 @@
   }
 }
 
-.page-details.quincy {
+.page-details.safety {
   position: absolute;
   top: 0;
   left: 0;
@@ -105,6 +105,102 @@
       left: 475px;
       width: 120px;
       top: 53px;
+    }
+  }
+
+  &.quincy-norfolk {
+    .norfolk-insutrument {
+      position: absolute;
+      top: 362px;
+      left: 50px;
+
+      input, textarea {
+        font-size: 14px;
+      }
+
+      .a1 {
+        left: 139px;
+        width: 310px;
+        top: 0;
+      }
+      .a2 {
+        left: 271px;
+        width: 120px;
+        top: 0;
+      }
+      .a3 {
+        left: 405px;
+        width: 120px;
+        top: 0;
+      }
+      .a4 {
+        left: 542px;
+        width: 120px;
+        top: 0;
+      }
+
+      .r0 {
+        top: -175px;
+
+        .a1 {
+          left: 30px;
+          width: 240px;
+          top: 0;
+        }
+        .a2 {
+          left: 285px;
+          width: 180px;
+          top: 0;
+        }
+        .a3 {
+          left: 470px;
+          width: 199px;
+          top: 0;
+        }
+        .a4 {
+          left: 25px;
+          width: 315px;
+          top: 40px;
+          height: 75px;
+          font-weight: 600;
+        }
+      }
+      .r1 {
+        top: 20px;
+      }
+      .r2 {
+        top: 50px;
+      }
+      .r3 {
+        top: 110px;
+      }
+      .r4 {
+        top: 140px;
+      }
+      .r5 {
+        top: 225px;
+      }
+      .r6 {
+        top: 258px;
+      }
+      .r7 {
+        top: 300px;
+      }
+      .r8 {
+        top: 350px;
+      }
+    }
+
+    .signature-info {
+      position: absolute;
+      top: 773px;
+      left: 440px;
+
+      .a1 {
+        left: 178px;
+        width: 85px;
+        top: 0;
+      }
     }
   }
   .applicant-about {

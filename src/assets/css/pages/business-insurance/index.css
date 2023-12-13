@@ -1,0 +1,18 @@
+/* custom main 
+ UnExpected King Tirth Shah */ 
+ 
+ .business-insurance-flow .form-control,
+.business-insurance-flow .f-dropdown > span {
+  height: 52px;
+  font-size: 16px;
+}
+.business-insurance-flow .btn {
+  font-size: 16px !important;
+}
+.business-insurance-flow .data-center {
+  width: 0;
+}
+.business-insurance-flow .properties-count-field {
+  width: 208px;
+}
+/*# sourceMappingURL=index.css.map */

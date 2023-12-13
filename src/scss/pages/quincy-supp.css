@@ -6,34 +6,34 @@
   width: 100%;
 }
 
-.page-details.quincy {
+.page-details.safety {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   z-index: 10000;
 }
-.page-details.quincy input[type=date]::-webkit-inner-spin-button, .page-details.quincy input[type=date]::-webkit-calendar-picker-indicator,
-.page-details.quincy input[type=year]::-webkit-inner-spin-button,
-.page-details.quincy input[type=year]::-webkit-calendar-picker-indicator,
-.page-details.quincy input[type=month]::-webkit-inner-spin-button,
-.page-details.quincy input[type=month]::-webkit-calendar-picker-indicator {
+.page-details.safety input[type=date]::-webkit-inner-spin-button, .page-details.safety input[type=date]::-webkit-calendar-picker-indicator,
+.page-details.safety input[type=year]::-webkit-inner-spin-button,
+.page-details.safety input[type=year]::-webkit-calendar-picker-indicator,
+.page-details.safety input[type=month]::-webkit-inner-spin-button,
+.page-details.safety input[type=month]::-webkit-calendar-picker-indicator {
   display: none;
   -webkit-appearance: none;
 }
-.page-details.quincy .form-img {
+.page-details.safety .form-img {
   width: 100%;
 }
-.page-details.quincy .answer {
+.page-details.safety .answer {
   position: absolute;
   bottom: 0;
 }
-.page-details.quincy .answer img {
+.page-details.safety .answer img {
   width: 100%;
   position: absolute;
 }
-.page-details.quincy .answer input,
-.page-details.quincy .answer textarea {
+.page-details.safety .answer input,
+.page-details.safety .answer textarea {
   width: 100%;
   font-size: 10px;
   font-weight: bold;
@@ -42,18 +42,18 @@
   background: transparent;
   overflow: hidden;
 }
-.page-details.quincy .answer textarea {
+.page-details.safety .answer textarea {
   font-size: 10px;
   padding: 0 5px;
 }
-.page-details.quincy .answer.monospace {
+.page-details.safety .answer.monospace {
   font-family: monospace;
   letter-spacing: 7px;
 }
-.page-details.quincy .answer .check-mark {
+.page-details.safety .answer .check-mark {
   position: absolute;
 }
-.page-details.quincy .answer .check-mark::before, .page-details.quincy .answer .check-mark::after {
+.page-details.safety .answer .check-mark::before, .page-details.safety .answer .check-mark::after {
   content: "";
   height: 2px;
   width: 15px;
@@ -61,150 +61,237 @@
   position: absolute;
   transform: rotate(45deg);
 }
-.page-details.quincy .answer .check-mark::before {
+.page-details.safety .answer .check-mark::before {
   transform: rotate(-45deg);
 }
-.page-details.quincy textarea.form-control {
+.page-details.safety textarea.form-control {
   border: 0;
   resize: none;
   height: 100%;
 }
-.page-details.quincy .policy-about {
+.page-details.safety .policy-about {
   position: absolute;
   top: 362px;
   left: 50px;
 }
-.page-details.quincy .policy-about input {
+.page-details.safety .policy-about input {
   font-size: 14px;
 }
-.page-details.quincy .policy-about .a1 {
+.page-details.safety .policy-about .a1 {
   left: 539px;
   width: 310px;
   top: 0;
 }
-.page-details.quincy .policy-about .a1.a1-2 {
+.page-details.safety .policy-about .a1.a1-2 {
   left: 585px;
 }
-.page-details.quincy .policy-about .a2 {
+.page-details.safety .policy-about .a2 {
   left: 247px;
   width: 120px;
   top: 53px;
 }
-.page-details.quincy .policy-about .a3 {
+.page-details.safety .policy-about .a3 {
   left: 475px;
   width: 120px;
   top: 53px;
 }
-.page-details.quincy .applicant-about {
+.page-details.safety.quincy-norfolk .norfolk-insutrument {
+  position: absolute;
+  top: 362px;
+  left: 50px;
+}
+.page-details.safety.quincy-norfolk .norfolk-insutrument input, .page-details.safety.quincy-norfolk .norfolk-insutrument textarea {
+  font-size: 14px;
+}
+.page-details.safety.quincy-norfolk .norfolk-insutrument .a1 {
+  left: 139px;
+  width: 310px;
+  top: 0;
+}
+.page-details.safety.quincy-norfolk .norfolk-insutrument .a2 {
+  left: 271px;
+  width: 120px;
+  top: 0;
+}
+.page-details.safety.quincy-norfolk .norfolk-insutrument .a3 {
+  left: 405px;
+  width: 120px;
+  top: 0;
+}
+.page-details.safety.quincy-norfolk .norfolk-insutrument .a4 {
+  left: 542px;
+  width: 120px;
+  top: 0;
+}
+.page-details.safety.quincy-norfolk .norfolk-insutrument .r0 {
+  top: -175px;
+}
+.page-details.safety.quincy-norfolk .norfolk-insutrument .r0 .a1 {
+  left: 30px;
+  width: 240px;
+  top: 0;
+}
+.page-details.safety.quincy-norfolk .norfolk-insutrument .r0 .a2 {
+  left: 285px;
+  width: 180px;
+  top: 0;
+}
+.page-details.safety.quincy-norfolk .norfolk-insutrument .r0 .a3 {
+  left: 470px;
+  width: 199px;
+  top: 0;
+}
+.page-details.safety.quincy-norfolk .norfolk-insutrument .r0 .a4 {
+  left: 25px;
+  width: 315px;
+  top: 40px;
+  height: 75px;
+  font-weight: 600;
+}
+.page-details.safety.quincy-norfolk .norfolk-insutrument .r1 {
+  top: 20px;
+}
+.page-details.safety.quincy-norfolk .norfolk-insutrument .r2 {
+  top: 50px;
+}
+.page-details.safety.quincy-norfolk .norfolk-insutrument .r3 {
+  top: 110px;
+}
+.page-details.safety.quincy-norfolk .norfolk-insutrument .r4 {
+  top: 140px;
+}
+.page-details.safety.quincy-norfolk .norfolk-insutrument .r5 {
+  top: 225px;
+}
+.page-details.safety.quincy-norfolk .norfolk-insutrument .r6 {
+  top: 258px;
+}
+.page-details.safety.quincy-norfolk .norfolk-insutrument .r7 {
+  top: 300px;
+}
+.page-details.safety.quincy-norfolk .norfolk-insutrument .r8 {
+  top: 350px;
+}
+.page-details.safety.quincy-norfolk .signature-info {
+  position: absolute;
+  top: 773px;
+  left: 440px;
+}
+.page-details.safety.quincy-norfolk .signature-info .a1 {
+  left: 178px;
+  width: 85px;
+  top: 0;
+}
+.page-details.safety .applicant-about {
   position: absolute;
   top: 605px;
   left: 50px;
 }
-.page-details.quincy .applicant-about input {
+.page-details.safety .applicant-about input {
   font-size: 14px;
 }
-.page-details.quincy .applicant-about .a1 {
+.page-details.safety .applicant-about .a1 {
   left: 247px;
   width: 310px;
   top: 0;
 }
-.page-details.quincy .applicant-about .a2 {
+.page-details.safety .applicant-about .a2 {
   left: 247px;
   width: 310px;
   top: 28px;
 }
-.page-details.quincy .applicant-about .a3 {
+.page-details.safety .applicant-about .a3 {
   left: 247px;
   width: 310px;
   top: 54px;
 }
-.page-details.quincy .applicant-about .a4 {
+.page-details.safety .applicant-about .a4 {
   left: 247px;
   width: 310px;
   top: 77px;
 }
-.page-details.quincy .applicant-about .a5 {
+.page-details.safety .applicant-about .a5 {
   left: 247px;
   width: 310px;
   top: 103px;
 }
-.page-details.quincy .applicant-about .a6 {
+.page-details.safety .applicant-about .a6 {
   left: 247px;
   width: 310px;
   top: 130px;
 }
-.page-details.quincy .prior-coverage {
+.page-details.safety .prior-coverage {
   position: absolute;
   top: 128px;
   left: 50px;
 }
-.page-details.quincy .prior-coverage input {
+.page-details.safety .prior-coverage input {
   font-size: 12px;
 }
-.page-details.quincy .prior-coverage .a1 {
+.page-details.safety .prior-coverage .a1 {
   left: 353px;
   width: 20px;
   top: 0;
 }
-.page-details.quincy .prior-coverage .a1.a1-2 {
+.page-details.safety .prior-coverage .a1.a1-2 {
   left: 393px;
 }
-.page-details.quincy .prior-coverage .a2 {
+.page-details.safety .prior-coverage .a2 {
   left: 537px;
   width: 20px;
   top: 187px;
 }
-.page-details.quincy .prior-coverage .a2.a2-2 {
+.page-details.safety .prior-coverage .a2.a2-2 {
   left: 573px;
 }
-.page-details.quincy .prior-coverage .a3 {
+.page-details.safety .prior-coverage .a3 {
   left: 577px;
   width: 20px;
   top: 294px;
 }
-.page-details.quincy .prior-coverage .a3.a3-2 {
+.page-details.safety .prior-coverage .a3.a3-2 {
   left: 603px;
 }
-.page-details.quincy .prior-coverage .a4 {
+.page-details.safety .prior-coverage .a4 {
   left: 160px;
   width: 20px;
   top: 427px;
 }
-.page-details.quincy .prior-coverage .a4.a4-2 {
+.page-details.safety .prior-coverage .a4.a4-2 {
   left: 212px;
 }
-.page-details.quincy .prior-coverage .a5 {
+.page-details.safety .prior-coverage .a5 {
   left: 352px;
   width: 20px;
   top: 668px;
 }
-.page-details.quincy .prior-coverage .a5.a5-2 {
+.page-details.safety .prior-coverage .a5.a5-2 {
   left: 398px;
 }
-.page-details.quincy .prior-coverage .a5-other {
+.page-details.safety .prior-coverage .a5-other {
   left: 92px;
   width: 369px;
   top: 708px;
 }
-.page-details.quincy .prior-coverage .a6 {
+.page-details.safety .prior-coverage .a6 {
   left: 167px;
   width: 20px;
   top: 27px;
 }
-.page-details.quincy .prior-coverage .a6.a6-2 {
+.page-details.safety .prior-coverage .a6.a6-2 {
   left: 212px;
 }
-.page-details.quincy .signature-info {
+.page-details.safety .signature-info {
   position: absolute;
   top: 498px;
   left: 220px;
 }
-.page-details.quincy .signature-info .a1 {
+.page-details.safety .signature-info .a1 {
   left: 178px;
   width: 85px;
   top: 13px;
 }
-.page-details.quincy .signature-info .a2 {
+.page-details.safety .signature-info .a2 {
   left: 178px;
   width: 85px;
   top: 98px;

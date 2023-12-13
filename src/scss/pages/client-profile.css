@@ -535,6 +535,10 @@
   line-height: 24px;
 }
 
+.title {
+  color: var(--color-title);
+}
+
 .claim-section .sec-title {
   font-size: 18px;
   font-weight: 500;
@@ -650,6 +654,17 @@
 }
 .claim-section label.checkbox-inline.squar-boxes {
   width: 200px;
+  background: none;
+  border-radius: 0;
+  box-shadow: none;
+  padding: 0;
+}
+.claim-section label.checkbox-inline.squar-boxes .checkbox-control:checked ~ .checkbox-label {
+  box-shadow: 0px 20px 30px 0px #ddeefb;
+}
+.claim-section label.checkbox-inline.squar-boxes .radio-custom {
+  height: 30px;
+  background-repeat: no-repeat;
 }
 .claim-section label.checkbox-inline.squar-boxes.glass-squares img {
   width: 45px;
@@ -660,21 +675,50 @@
 .claim-section label.checkbox-inline.squar-boxes img {
   margin-bottom: 10px;
 }
+.claim-section label.checkbox-inline.squar-boxes .checkbox-label {
+  font-size: 16px !important;
+  color: #2b2b2b;
+  width: 100%;
+  height: 100%;
+  box-shadow: 0px 20px 30px 0px rgba(0, 0, 0, 0.0784313725);
+  background: #fff;
+  border-radius: 12px;
+  padding: 16px;
+}
 
 .claim-additional-info {
   padding: 16px;
   border-radius: 8px;
 }
+.claim-additional-info .f-dropdown > span {
+  font-size: 16px;
+  height: 52px;
+  color: var(--color-light-gray);
+}
+.claim-additional-info .form-control {
+  font-size: 16px;
+  height: 52px;
+}
+.claim-additional-info .form-control::-moz-placeholder {
+  color: var(--color-light-gray);
+}
+.claim-additional-info .form-control::placeholder {
+  color: var(--color-light-gray);
+}
+.claim-additional-info hr {
+  background: #e6e6e6;
+  opacity: 1;
+}
 .claim-additional-info .doc-card.add-document {
   justify-content: flex-start;
   background: linear-gradient(0deg, var(--color-blue-light), var(--color-blue-light)), linear-gradient(0deg, var(--color-blue-light3), var(--color-blue-light3));
-  padding: 8px;
+  padding: 4px 14px;
   border-radius: 7px;
   position: relative;
 }
 .claim-additional-info .doc-card.add-document > img {
-  width: 32px;
-  height: 32px;
+  width: 44px;
+  height: 44px;
   -o-object-fit: contain;
   object-fit: contain;
   -o-object-position: center;
@@ -684,6 +728,7 @@
 .claim-additional-info .doc-card.add-document .doc-title {
   font-weight: 500;
   font-size: 12px;
+  color: black;
 }
 .claim-additional-info .doc-card.add-document input {
   position: absolute;
@@ -691,6 +736,10 @@
   height: 0;
   top: 0;
   left: 0;
+}
+.claim-additional-info label.dark-labels {
+  font-size: 18px;
+  color: var(--color-black);
 }
 
 .vehicle-damage {

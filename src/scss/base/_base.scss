@@ -56,6 +56,10 @@ a {
     color: var(--color-black) !important;
 }
 
+.text-light-gray-3{
+    color: var(--color-light-gray3) !important;
+}
+
 .text-sucess {
     color: var(--color-sucess) !important;
 }
@@ -360,7 +364,9 @@ main {
     color: var(--color-light-gray);
 }
 
-
+label {
+    font-size: 16px;
+}
 
 .content {
     .input-box {

@@ -31,7 +31,7 @@ main .wrapper .admin-section-container {
     height: 44px;
     border-radius: 0;
 
-    &.active{
+    &.active {
       border-radius: 4px;
     }
   }
@@ -209,6 +209,19 @@ main .wrapper .admin-section-container {
           }
         }
       }
+    }
+  }
+
+  .tab-content.summary-data {
+    width: calc(100% - 230px);
+
+    table.fixed {
+      table-layout: fixed;
+    }
+
+    table.fixed td {
+      overflow: hidden;
+      padding: 0.75rem 8px;
     }
   }
 }

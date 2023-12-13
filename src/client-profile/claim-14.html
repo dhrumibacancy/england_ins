@@ -145,7 +145,7 @@
                             </p>
                         </div>
                         <h3 class="title  text-center">Any information you have for the other driver</h3>
-                        <label class="text-center fw-normal mt-3">Enter other driver’s info below this can help save you
+                        <label class="text-center title fw-normal mt-3">Enter other driver’s info below this can help save you
                             money & time</label>
 
                         <form class="mt-4">
@@ -181,6 +181,34 @@
                                         </div>
 
                                         <div class="col-md-6">
+                                            <div class="input-group date form-control px-0" id="datepicker1">
+                                                <input type="date" class="" id="date" placeholder="Date of birth (DD/MM/YYYY)" />
+                                                <span class="input-group-append ">
+                                                    <span class="input-group-text border-0 bg-white d-block">
+                                                        <img class="" width="20px" src="../images/calender-icon.svg">
+                                                    </span>
+                                                </span>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <div class="f-dropdown selectDropdown">
+                                                    <select class="f-control f-dropdown" placeholder="Select State"
+                                                        id="1">
+                                                        <option value="" hidden>Select State</option>
+                                                        <option value="1">First
+                                                        </option>
+                                                        <option value="2">Second
+                                                        </option>
+                                                        <option value="3">Rented
+                                                        </option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-6">
                                             <div class="form-group">
                                                 <div class="f-dropdown selectDropdown">
                                                     <select class="f-control f-dropdown" placeholder="Select Driver"
@@ -201,6 +229,35 @@
                                             <div class="form-group">
                                                 <input type="text" placeholder="Policy Number" class="form-control">
                                             </div>
+                                        </div>
+
+                                        <div class="col-12 d-flex justify-content-between">
+                                           
+                                            <label class="checkbox-inline mb-0 w-auto" for="hitnrun">
+                                                <input  class="checkbox-control main" type="checkbox" name="hitnrun" id="hitnrun" />
+                                                <span class="checkbox-custom"></span>
+                                                <span class="checkbox-label fs-16 fw-700">Hit and Run</span>
+                                            </label>
+
+                                            
+                                            <div class="d-flex align-items-center justify-content-start">
+                                                <div class="d-flex align-self-center me-3">
+                                                    <label class="radio-inline radio-btn" for="livingYes">
+                                                        <input class="radio-control" type="radio" name="living1"
+                                                            value="" id="livingYes">
+                                                        <span class="radio-custom"></span>
+                                                        <span class="radio-label fs-14">Parked </span>
+                                                    </label>
+                                                </div>
+                                                <div class="d-flex align-self-center me-0">
+                                                    <label class="radio-inline radio-btn" for="livingNo">
+                                                        <input class="radio-control" type="radio" name="living1"
+                                                            value="" id="livingNo" checked="">
+                                                        <span class="radio-custom"></span>
+                                                        <span class="radio-label fs-14">Stopped </span>
+                                                    </label>
+                                                </div>
+                                            </div> 
                                         </div>
 
                                         <div class="col-12">
