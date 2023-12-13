@@ -165,4 +165,14 @@ main .wrapper .admin-section-container .content {
 .admin-section-container .admin-summary-data .summary-detail-section .location-card .card-body table td:nth-child(2) input {
   padding: 0 5px;
   text-align: center;
+}
+.admin-section-container .tab-content.summary-data {
+  width: calc(100% - 230px);
+}
+.admin-section-container .tab-content.summary-data table.fixed {
+  table-layout: fixed;
+}
+.admin-section-container .tab-content.summary-data table.fixed td {
+  overflow: hidden;
+  padding: 0.75rem 8px;
 }/*# sourceMappingURL=admin-page.css.map */
