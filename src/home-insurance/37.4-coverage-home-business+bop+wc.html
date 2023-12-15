@@ -1,0 +1,1301 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="theme-color" content="#BE2530">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New England Insurance Policy</title>
+    <link rel="apple-touch-icon" sizes="57x57" href="./images/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="./images/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="./images/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="./images/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="./images/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="./images/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="./images/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="./images/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./images/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="./images/favicon//android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon//favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="./images/favicon//favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon//favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto+Serif:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@100;300;400;500;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css">
+
+
+
+
+
+    <link rel="icon" href="../images/favicon.png" type="image/gif" sizes="16x16">
+    <link rel="stylesheet" href="https://rawcdn.githack.com/SochavaAG/example-mycode/master/pens/calculator/plugins/rangeslider/rangeslider.css">
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <style>
+     
+.ag-calculator_input-wrap .rangeslider--horizontal {
+  display: inline-block;
+  height: 8px;
+  margin-top: 20px;
+  background-color: #CEE6F9;
+
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+}
+.ag-calculator_input-wrap .rangeslider__fill {
+  background-color: #016BBF;
+
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+}
+.ag-calculator_input-wrap .rangeslider__handle {
+  height: 24px;
+  width: 24px;
+  border: 1px solid #016BBF;
+  background-image: none;
+
+  z-index: 5;
+  top: -7px;
+
+  -webkit-box-shadow: 0 0 7px rgba(0, 0, 0, .3);
+  -moz-box-shadow: 0 0 7px rgba(0, 0, 0, .3);
+  -o-box-shadow: 0 0 7px rgba(0, 0, 0, .3);
+  box-shadow: 0 0 7px rgba(0, 0, 0, .3);
+  background: #016BBF;
+}
+
+
+
+
+
+/* toggle button */
+.toggleRow {
+  display: none;
+}
+.dmEditorBody .toggleRow {
+  display: block !important;
+}
+
+.toggle-readmore {
+  text-align: center;
+  color:rgb(25, 49, 137) !important;
+  font-size: 16px;
+  font-weight: 600;
+  max-width: 116px;
+  margin: 0 auto;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: row nowrap;
+  flex-flow: row nowrap;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.toggle-readmore .title-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  text-align: left;
+}
+
+.toggle-readmore .arrow {
+  width: 20px;
+  height: 20px;
+  -webkit-transition: -webkit-transform 0.3s ease-in-out;
+  transition: -webkit-transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  position: relative;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+}
+
+.toggle-readmore .arrow.closetoggle {
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+.toggle-readmore .arrow .close {
+  fill: rgb(25, 49, 137);
+  width: 100%;
+  height: 100%;
+}
+
+
+
+    </style>
+</head>
+
+<body>
+    <main>
+        <div class="wrapper">
+            <nav class="navbar bg-dark fixed-top">
+                <div class="container-fluid text-center">
+
+                    <div class="d-flex align-items-center justify-content-center">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                            data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <a class="navbar-brand d-none d-md-block" href="#"><img src="../images/logo.svg" alt=""></a>
+
+                    </div>
+                    <a class="navbar-brand d-md-none m-0" href="#"><img src="../images/logo.svg" alt=""></a>
+                    <div class="d-flex align-items-center justify-content-center">
+                        <!-- <select class="vodiapicker">
+                            <option value="en" class="test" data-thumbnail="./images/us_flag.svg">
+                                English</option>
+                            <option value="au"
+                                data-thumbnail="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/NYCS-bull-trans-B.svg/480px-NYCS-bull-trans-B.svg.png">
+                                Engllish </option>
+
+
+                        </select> -->
+
+                        <!-- <div class="lang-select me-3 pe-2">
+                            <button class="btn-select" value=""></button>
+                            <div class="b">
+                                <ul id="a"></ul>
+                            </div>
+                        </div> -->
+
+
+                        <!-- https://codepen.io/aaroniker/pen/XxBjKN?editors=0100-->
+
+                        <div class="f-group me-3 pe-2">
+
+                            <select class="f-control f-dropdown" placeholder="Please choose 2">
+                                <option value=""> </option>
+                                <option value="1" selected="selected" data-image="../images/us_flag.svg">English
+                                </option>
+                                <option value="2"
+                                    data-image="https://newenglandfamily.com/wp-content/plugins/polylang/flags/pt.png">
+                                    Português
+                                </option>
+                                <option value="3"
+                                    data-image="https://newenglandfamily.com/wp-content/plugins/polylang/flags/es.png">
+                                    Español
+                                </option>
+
+                            </select>
+                        </div>
+
+                        <img src="../images/message-question.svg" alt="" class="me-3 pe-2 nav-icon d-none d-md-block">
+                        <img src="../images/user.svg" alt="" class="nav-icon d-none d-md-block">
+                    </div>
+                    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
+                        aria-labelledby="offcanvasNavbarLabel">
+                        <div class="offcanvas-header">
+                            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                                <li class="nav-item ">
+                                    <a class="nav-link active text-left" aria-current="page" href="#"> <img
+                                            src="../images/message-question-blue.svg" alt=""
+                                            class="d-inline-block me-3 pe-2 nav-icon nav-icon-mob">
+                                        Help
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link  text-left" href="#">
+                                        <img src="../images/user-blue.svg" alt=""
+                                            class="nav-icon d-inline-block  nav-icon-mob">
+                                        User</a>
+                                </li>
+
+                            </ul>
+
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <div class="content-main">
+                <div class="content">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col">
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0"
+                                        aria-valuemax="100" style="width:100%">
+                                    </div>
+                                </div>
+                                <div class="progress-text mt-1">Property Information</div>
+                            </div>
+                            <div class="col">
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0"
+                                        aria-valuemax="100" style="width:100%">
+                                    </div>
+                                </div>
+                                <div class="progress-text mt-1">Home details</div>
+                            </div>
+                            <div class="col">
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0"
+                                        aria-valuemax="100" style="width:100%">
+                                    </div>
+                                </div>
+                                <div class="progress-text mt-1">Business Insurance</div>
+                            </div>
+                            <div class="col">
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0"
+                                        aria-valuemax="100" style="width:100%">
+                                    </div>
+                                </div>
+                                <div class="progress-text mt-1">Coverages</div>
+                            </div>
+                        </div>
+                        <a class="text-blue ms-3 back-arrow" href="#"><i class="fa fa-arrow-left-long me-2"></i>BACK</a>
+                    </div>
+                    <div class="container mt-5 pt-5">
+                        <div class="text-center mb-4 user-info">
+                            <img src="../images/user-person.svg" alt="" class="user-person mx-auto">
+                            <p class="user-welcome mt-2">Hey! My Name is Anne</p>
+                        </div>
+                        <h3 class="title  text-center">Reveiw Coverages, Adjust if you want & continue when done</h3>
+                        <!-- <p class="user-welcome mt-2 text-center">Have these been updated </p> -->
+
+                        <div class="contain-wrapper-sm">
+                            <form class="mt-4">
+                                <div class="blue-light-box bg-white p-0">
+                                    <div class="vehicle-details">
+                                        <div class="row g-3">
+                                            <div class="col-12">
+                                                <div class="p-3">
+                                                    <div class="form-group">
+                                                        <div class="d-flex align-items-center justify-content-between mb-1">
+                                                            <label class="fs-16 font-bold w-auto mb-0">
+                                                                Building coverage <i tabindex="0" class="ms-1 data-toggle fa-solid fa-info text-gray" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="This coverage may provide liability for certain watercrafts, it does not provide any coverage to repair or replace your watercraft"></i>
+                                                            </label>
+                                                        </div>
+                                                        <div class="ag-calculators-block mb-3">
+                                                            <div class="ag-format-container">
+                                                                <div id="affiliate" class="ag-calculator-block">
+                                                                    <div class="js-calculator_input-wrap js-calculator_second-level-wrap ag-calculator_input-wrap ag-calculator_second-level-wrap d-flex align-items-center justify-content-between">
+                                                                        <div class="col-4 pe-3">
+                                                                            <div class="input-group form-control p-0">
+                                                                                <input class="js-calculator_text-input ag-calculator_text-input m-0" type="number " name="level2-clients" min="5000" max="30000" value="10000">
+                                                                                <span class="input-group-append ">
+                                                                                    <span class="input-group-text border-0 bg-white d-block">
+                                                                                        $
+                                                                                    </span>
+                                                                                </span>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-8">
+                                                                            <div class="form-control">
+                                                                                <div class="range-percentage">
+                                                                                    <div class="row justify-content-center align-items-center">
+                                                                                        <div class="col-auto p-0" style="margin-top: 13px;">
+                                                                                            $5000
+                                                                                            <!-- <div class="append"></div> -->
+                                                                                        </div>
+                                                                                        <div class="col px-1">
+                                                                                            <div class="middle">
+                                                                                                <input class="js-calculator_range w-auto" step="1" type="range" name="level2-clients" min="5000" max="30000" value="10000">
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <div class="col-auto p-0" style="margin-top: 13px;">
+                                                                                            $30000
+                                                                                            <!-- <div class="preppend"></div> -->
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <p class="text-danger mb-3">Lowering coverage will reduce amount paid in a claim</p>
+                                                    </div>
+                                           
+                                               
+                                                    <!-- <div class="mb-2">
+                                                        <label class="checkbox-inline w-auto me-3 mb-0" for="Corina">
+                                                            <input class="checkbox-control" type="checkbox" value="" id="Corina">
+                                                            <span class="checkbox-custom"></span>
+                                                            <span class="checkbox-label">Living space above garage</span>
+                                                        </label>
+                                                    </div>
+                                                    <div class="mb-2">
+                                                        <label class="checkbox-inline w-auto me-3 mb-0" for="Patricia">
+                                                            <input class="checkbox-control" type="checkbox" value="" id="Patricia">
+                                                            <span class="checkbox-custom"></span>
+                                                            <span class="checkbox-label">Finished Basement </span>
+                                                        </label>
+                                                    </div>
+                                                    -->
+                                                    <div class="row">
+                                                        <div class="col-md-6">
+                                                            <label class="fs-16 font-bold w-auto">
+                                                                Liability
+                                                            </label>
+                                                    
+                                                            <div class="f-group max-width-100">
+
+                                                                <div class="f-dropdown selectDropdown"><select
+                                                                        class="f-control f-dropdown" placeholder="$500,000"
+                                                                        id="selectbuss">
+                                                                        <option value="1">$100,000</option>
+                                                                        <option value="2">$300,000</option>
+                                                                        <option value="3" selected>$500,000</option>
+                                                                    </select>
+
+                                                                </div>
+                                                            
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <label class="fs-16 font-bold w-auto">
+                                                                Employers Liability <i tabindex="0" class="ms-1 data-toggle fa-solid fa-info text-gray" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="This coverage may provide liability for certain watercrafts, it does not provide any coverage to repair or replace your watercraft"></i>
+                                                            </label>
+                                                    
+                                                            <div class="f-group max-width-100">
+
+                                                                <div class="f-dropdown selectDropdown"><select
+                                                                        class="f-control f-dropdown" placeholder="$500,000"
+                                                                        id="selectbuss">
+                                                                        <option value="1">$1000</option>
+                                                                        <option value="2" selected>$2500</option>
+                                                                        <option value="3">$5000</option>
+                                                                    </select>
+
+                                                                </div>
+                                                            
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                            
+                                            
+                                                    <!-- <div class="form-group mt-3">
+                                                        <label for="" class="fs-18 font-bold">
+                                                            Is the basement included in (sq feet from RCT)?
+                                                        </label>
+                                                        <div class="d-flex justify-content-start">
+                                                            <div class="d-flex align-self-center me-3">
+                                                                <label class="radio-inline radio-btn" for="divingYes">
+                                                                    <input class="radio-control" type="radio" name="willing"
+                                                                        value="" id="divingYes" checked="">
+                                                                    <span class="radio-custom"></span>
+                                                                    <span class="radio-label fs-14">Yes </span>
+                                                                </label>
+                                                            </div>
+                                                            <div class="d-flex align-self-center me-3">
+                                                                <label class="radio-inline radio-btn" for="divingNo">
+                                                                    <input class="radio-control" type="radio" name="willing"
+                                                                        value="" id="divingNo">
+                                                                    <span class="radio-custom"></span>
+                                                                    <span class="radio-label fs-14">No </span>
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    -->
+                                          
+                                                    <div class="form-group mt-3">
+                                                        <div class="d-flex align-items-center justify-content-between mb-1">
+                                                            <label class="fs-16 font-bold w-auto mb-0">
+                                                                Business Personal Property
+                                                            </label>
+
+                                                            <div class="">
+                                                                <label class="checkbox-inline w-auto me-3 mb-0" for="Patricia1">
+                                                                    <input class="checkbox-control" type="checkbox" value="" id="Patricia1">
+                                                                    <span class="checkbox-custom"></span>
+                                                                    <span class="checkbox-label">Replacement cost </span>
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="ag-calculators-block mb-3">
+                                                            <div class="ag-format-container">
+                                                                <div id="affiliate" class="ag-calculator-block">
+                                                                    <div class="js-calculator_input-wrap js-calculator_second-level-wrap ag-calculator_input-wrap ag-calculator_second-level-wrap d-flex align-items-center justify-content-between">
+                                                                        <div class="col-4 pe-3">
+                                                                            <div class="input-group form-control p-0">
+                                                                                <input class="js-calculator_text-input ag-calculator_text-input m-0" type="number " name="level2-clients" min="5000" max="30000" value="10000">
+                                                                                <span class="input-group-append ">
+                                                                                    <span class="input-group-text border-0 bg-white d-block">
+                                                                                        $
+                                                                                    </span>
+                                                                                </span>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-8">
+                                                                            <div class="form-control">
+                                                                                <div class="range-percentage">
+                                                                                    <div class="row justify-content-center align-items-center">
+                                                                                        <div class="col-auto p-0" style="margin-top: 13px;">
+                                                                                            $5000
+                                                                                            <!-- <div class="append"></div> -->
+                                                                                        </div>
+                                                                                        <div class="col px-1">
+                                                                                            <div class="middle">
+                                                                                                <input class="js-calculator_range w-auto" step="1" type="range" name="level2-clients" min="5000" max="30000" value="10000">
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <div class="col-auto p-0" style="margin-top: 13px;">
+                                                                                            $30000
+                                                                                            <!-- <div class="preppend"></div> -->
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="row mt-3">
+
+                                                        <div class="col-md-6">
+                                                            <label class="fs-16 font-bold w-auto mb-0">
+                                                                Deductible
+                                                            </label>
+                                                        
+                                                            <div class="f-group max-width-100">
+
+                                                                <div class="f-dropdown selectDropdown"><select
+                                                                        class="f-control f-dropdown" placeholder="$2,500"
+                                                                        id="selectbuss">
+                                                                        <option value="1">$1000</option>
+                                                                        <option value="2" selected>$2500</option>
+                                                                        <option value="3">$5000</option>
+                                                                    </select>
+                                                                </div>
+                                                            
+                                                            </div>
+                                                        </div>
+
+                                                                
+                                                        <div class="col-md-6">
+                                                            <label class="fs-16 font-bold w-auto mb-0">
+                                                                Wind /Hail Deductible
+                                                            </label>
+                                                        
+                                                            <div class="f-group max-width-100">
+            
+                                                                <div class="f-dropdown selectDropdown">
+                                                                    <select
+                                                                        class="f-control f-dropdown" placeholder="$2,500"
+                                                                        id="selectbuss">
+                                                                        <option value="1">$1000</option>
+                                                                        <option value="2" selected>$2500</option>
+                                                                        <option value="3">$5000</option>
+            
+                                                                    </select>
+            
+                                                                </div>
+                                                            
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                  
+                                                    <label class="fs-16 font-bold w-auto mb-0 mt-3">
+                                                        Other Structures
+                                                    </label>
+
+
+                                                    <div class="ag-calculators-block mb-3">
+                                                        <div class="ag-format-container">
+                                                            <div id="affiliate" class="ag-calculator-block">
+                                                                <div class="js-calculator_input-wrap js-calculator_second-level-wrap ag-calculator_input-wrap ag-calculator_second-level-wrap d-flex align-items-center justify-content-between">
+                                                                    <div class="col-4 pe-3">
+                                                                        <div class="input-group form-control p-0">
+                                                                            <input class="js-calculator_text-input ag-calculator_text-input m-0" type="number " name="level2-clients" min="5000" max="30000" value="10000">
+                                                                            <span class="input-group-append ">
+                                                                                <span class="input-group-text border-0 bg-white d-block">
+                                                                                    $
+                                                                                </span>
+                                                                            </span>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-8">
+                                                                        <div class="form-control">
+                                                                            <div class="range-percentage">
+                                                                                <div class="row justify-content-center align-items-center">
+                                                                                    <div class="col-auto p-0" style="margin-top: 13px;">
+                                                                                        $5000
+                                                                                        <!-- <div class="append"></div> -->
+                                                                                    </div>
+                                                                                    <div class="col px-1">
+                                                                                        <div class="middle">
+                                                                                            <input class="js-calculator_range w-auto" step="1" type="range" name="level2-clients" min="5000" max="30000" value="10000">
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <div class="col-auto p-0" style="margin-top: 13px;">
+                                                                                        $30000
+                                                                                        <!-- <div class="preppend"></div> -->
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="blue-light-box bg-white p-0 mt-3">
+                                    <div class="vehicle-details">
+                                        <div class="row g-3">
+                                            <div class="col-12">
+                                                <div class="p-3">
+                                                    <h4 class="mb-0 fs-16">Select Add Ons</h4>   
+                                                    <div class="claim-section ">
+                                                        <div class="row">
+                                                            <div class="col-md-6">
+                                                                <label class="checkbox-inline squar-boxes mb-0 mx-0 w-100" for="flexCheckDefault2">
+                                                                    <input class="checkbox-control" type="checkbox" checked name="speical-prop" value="" id="flexCheckDefault2">
+                                                                    <span class="checkbox-custom"></span>
+                                                                    <span class="checkbox-label fs-14">
+                            
+                                                                        <img src="../images/claim-icons/hire-active.svg" alt=""
+                                                                            class="active" />
+                                                                        <img src="../images/claim-icons/hire-inactive.svg" alt=""
+                                                                            class="offline" />
+                                                                            <span>
+                                                                                Hire non-owned auto
+                                                                                <i tabindex="0" class="ms-1 data-toggle fa-solid fa-info text-gray" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="This coverage may provide liability for certain watercrafts, it does not provide any coverage to repair or replace your watercraft"></i>
+                                                                            </span>
+                                                                    </span>
+                                                                </label>
+                                                            </div>
+                                                            <div class="col-md-6">
+                                                                <label class="checkbox-inline squar-boxes mb-0 mx-0 w-100" for="flexCheckDefault4">
+                                                                    <input class="checkbox-control" type="checkbox" name="speical-prop" value="" id="flexCheckDefault4">
+                                                                    <span class="checkbox-custom"></span>
+                                                                    <span class="checkbox-label fs-14">
+                            
+                                                                        <img src="../images/claim-icons/waiver-active.svg" alt=""
+                                                                            class="active" />
+                                                                        <img src="../images/claim-icons/waiver-inactive.svg" alt=""
+                                                                            class="offline" />
+                                                                            <span>
+                                                                                Waiver of Subrogation
+                                                                                <i tabindex="0" class="ms-1 data-toggle fa-solid fa-info text-gray" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="This coverage may provide liability for certain watercrafts, it does not provide any coverage to repair or replace your watercraft"></i>
+                                                                            </span>
+                                                                    </span>
+                                                                </label>
+                                                            </div>
+                                                            <div class="col-md-6">
+                                                                <label class="checkbox-inline squar-boxes mb-0 mx-0 w-100" for="flexCheckDefault5">
+                                                                    <input class="checkbox-control" type="checkbox" name="speical-prop" value="" id="flexCheckDefault5">
+                                                                    <span class="checkbox-custom"></span>
+                                                                    <span class="checkbox-label fs-14">
+                            
+                                                                        <img src="../images/claim-icons/mc90-active.svg" alt=""
+                                                                            class="active" />
+                                                                        <img src="../images/claim-icons/mc90-inactive.svg" alt=""
+                                                                            class="offline" />
+                                                                            <span>
+                                                                                Mc90 or State/federal Filings
+                                                                            </span>
+                                                                    </span>
+                                                                </label>
+                                                            </div>
+                                                            <div class="col-md-6">
+                                                                <label class="checkbox-inline squar-boxes mb-0 mx-0 w-100" for="flexCheckDefault6">
+                                                                    <input class="checkbox-control" type="checkbox" name="speical-prop" value="" id="flexCheckDefault6">
+                                                                    <span class="checkbox-custom"></span>
+                                                                    <span class="checkbox-label fs-14">
+                            
+                                                                        <img src="../images/claim-icons/bobtail-active.svg" alt=""
+                                                                            class="active" />
+                                                                        <img src="../images/claim-icons/bobtail-inactive.svg" alt=""
+                                                                            class="offline" />
+                                                                            <span>
+                                                                                Bobtail Coverage 
+                                                                            </span>
+                                                                    </span>
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                    </div>                                    
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+
+                           
+                        </div>
+                      
+                    </div>
+
+
+                    <div class="accordion-title toggle-readmore mt-3">
+                        <div class="title-text">
+                          <div class="title-text-change fs-14  text-blue">
+                            VIEW MORE
+                          </div>
+                        </div>
+                        <div class="arrow-wrapper">
+                          <div class="arrow closetoggle">
+                            <svg class="close" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 1152 1792" style="background-color:inherit !important" fill="currentColor">
+                               <path fill="inherit" d="M1075 736q0 13-10 23l-466 466q-10 10-23 10t-23-10l-466-466q-10-10-10-23t10-23l50-50q10-10 23-10t23 10l393 393 393-393q10-10 23-10t23 10l50 50q10 10 10 23z">
+                               </path>
+                              </svg>
+                          </div>
+                        </div>
+                      </div>
+                      
+                      <div class="toggleRow" style="display: block;">
+                        <div class="contain-wrapper-sm">
+                            <form>
+                                <div class="accordion custom" id="accordionExamplee">
+                                    <div class="accordion-body px-0 pb-0">
+                                        <div class="accordion-item mb-3 bg-white">
+                                            <h2 class="accordion-header overflow-hidden" id="heading1">
+                                                <button class="accordion-button flex-wrap overflow-hidden" type="button"
+                                                    data-bs-toggle="collapse" data-bs-target="#collapse1"
+                                                    aria-expanded="false" aria-controls="collapse1">
+                                                    <h4 class="title fs-18 d-block w-100">Your Business</h4>
+                                                </button>
+                                            </h2>
+                                            <div id="collapse1" class="accordion-collapse collapse show" aria-labelledby="heading1">
+                                                <div class="accordion-body">
+                                                    <div class="row">
+                                                        <div class="col-12">
+                                                            <label class="fs-16 font-bold w-auto">
+                                                                Employee practice liability
+                                                            </label>
+                                                            <div class="f-group max-width-100">
+                                                                <div class="f-dropdown selectDropdown"><select
+                                                                        class="f-control f-dropdown" placeholder="$25,000"
+                                                                        id="selectbuss">
+                                                                        <option value="1" selected>$25,000</option>
+                                                                        <option value="2">$50,000</option>
+                                                                        <option value="3">$75,000</option>
+                                                                    </select>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-6 mt-3">
+                                                            <label class="fs-16 font-bold w-auto">
+                                                                Sign Coverage <i tabindex="0" class="ms-1 data-toggle fa-solid fa-info text-gray" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="This coverage may provide liability for certain watercrafts, it does not provide any coverage to repair or replace your watercraft"></i>
+                                                            </label>
+                                                            <div class="input-group form-control p-0">
+                                                                <span class="input-group-preppend ">
+                                                                    <span class="input-group-text border-0 text-gray fs-14 bg-white d-block">
+                                                                        $
+                                                                    </span>
+                                                                </span>
+                                                                <input class="m-0" type="text"  value="10000">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-6 mt-3">
+                                                            <label class="fs-16 font-bold w-auto">
+                                                                Money & Securities
+                                                            </label>
+                                                            <div class="input-group form-control p-0">
+                                                                <span class="input-group-preppend ">
+                                                                    <span class="input-group-text border-0 text-gray fs-14 bg-white d-block">
+                                                                        $
+                                                                    </span>
+                                                                </span>
+                                                                <input class="m-0" type="text"  value="10000">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-12 mt-3">
+                                                            <div class="form-group">
+                                                                <label for="" class="fs-16 font-bold">Employee Dishonesty</label>
+                                                                <div class="d-flex justify-content-start">
+                                                                    <div class="d-flex align-self-center me-3">
+                                                                        <label class="radio-inline radio-btn" for="employeeYes">
+                                                                            <input class="radio-control" type="radio" name="employeeDis"
+                                                                                value="" id="employeeYes">
+                                                                            <span class="radio-custom"></span>
+                                                                            <span class="radio-label fs-14">Yes </span>
+                                                                        </label>
+                                                                    </div>
+                                                                    <div class="d-flex align-self-center me-3">
+                                                                        <label class="radio-inline radio-btn" for="employeeNo">
+                                                                            <input class="radio-control" checked type="radio" name="employeeDis"
+                                                                                value="" id="employeeNo">
+                                                                            <span class="radio-custom"></span>
+                                                                            <span class="radio-label fs-14">No </span>
+                                                                        </label>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="accordion-item mb-3 bg-white">
+                                            <h2 class="accordion-header overflow-hidden" id="heading2">
+                                                <button class="accordion-button flex-wrap" type="button"
+                                                    data-bs-toggle="collapse" data-bs-target="#collapse2"
+                                                    aria-expanded="false" aria-controls="collapse2">
+                                                    <h4 class="title fs-18 d-block w-100">Your Property</h4>
+                                                </button>
+                                            </h2>
+                                            <div id="collapse2" class="accordion-collapse collapse show" aria-labelledby="heading2">
+                                                <div class="accordion-body">
+                                                    <div class="row">
+
+                                                        <div class="col-md-6">
+                                                            <label class="fs-16 font-bold w-auto mb-0">
+                                                                Ordinance & Law:
+                                                            </label>
+                                                    
+                                                            <div class="f-group max-width-100">
+            
+                                                                <div class="f-dropdown selectDropdown"><select
+                                                                        class="f-control f-dropdown" placeholder="10%"
+                                                                        id="selectbuss">
+                                                                        <option value="1" selected>10%</option>
+                                                                        <option value="2">25%</option>
+                                                                        <option value="3">50%</option>
+            
+                                                                    </select>
+            
+                                                                </div>
+                                                                
+                                                            </div>
+                                                        </div>
+
+                                                        
+                                                        <div class="col-md-6">
+                                                            <label class="fs-16 font-bold w-auto mb-0">
+                                                                Additional Replacement cost
+                                                            </label>
+                                                    
+                                                            <div class="f-group max-width-100">
+                
+                                                                <div class="f-dropdown selectDropdown"><select
+                                                                        class="f-control f-dropdown" placeholder="25%"
+                                                                        id="selectbuss">
+                                                                        <option value="1" selected>25%</option>
+                                                                        <option value="2">50%</option>
+                                                                        <option value="3">Replacement</option>
+                                                                        <option value="4">None</option>
+                                                                    </select>
+            
+                                                                </div>
+                                                                
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="col-md-6 mt-3">
+                                                            <label class="fs-16 font-bold w-auto mb-0">
+                                                                Water back up & sump overflow
+                                                            </label>
+                                                    
+                                                            <div class="f-group max-width-100">
+        
+                                                                <div class="f-dropdown selectDropdown"><select
+                                                                        class="f-control f-dropdown" placeholder="None"
+                                                                        id="selectbuss">
+                                                                        <option value="0" selected>None</option>
+                                                                        <option value="1">$5,000</option>
+                                                                        <option value="2">$10,000</option>
+                                                                        <option value="3">$15,000</option>
+            
+                                                                    </select>
+            
+                                                                </div>
+                                                                
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="col-md-6 mt-3">
+                                                            <label class="fs-16 font-bold w-auto mb-0">
+                                                                Medical Payments:
+                                                            </label>
+                                                    
+                                                            <div class="f-group max-width-100">
+            
+                                                                <div class="f-dropdown selectDropdown"><select
+                                                                        class="f-control f-dropdown" placeholder="$1000"
+                                                                        id="selectbuss">
+                                                                        <option value="1" selected>$1,000</option>
+                                                                        <option value="2">$3,000</option>
+                                                                        <option value="3">$5,000</option>
+            
+                                                                    </select>
+            
+                                                                </div>
+                                                                
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="col-md-6 mt-3">
+                                                            <label class="fs-16 font-bold w-auto mb-0">
+                                                                Limited fungi
+                                                            </label>
+                                                    
+                                                            <div class="f-group max-width-100">
+            
+                                                                <div class="f-dropdown selectDropdown">
+                                                                    <select
+                                                                        class="f-control f-dropdown" placeholder="10,000"
+                                                                        id="selectbuss">
+                                                                        <option value="1" selected>$10,000</option>
+                                                                        <option value="2">$25,000</option>
+                                                                        <option value="3">$50,000</option>
+            
+                                                                    </select>
+            
+                                                                </div>
+                                                            
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="col-md-6 mt-3">
+                                                            <label class="fs-16 font-bold w-auto mb-0">
+                                                                Tropical Storm
+                                                            </label>
+                                                    
+                                                            <div class="f-group max-width-100">
+            
+                                                                    <div class="f-dropdown selectDropdown">
+                                                                        <select
+                                                                            class="f-control f-dropdown" placeholder="$2,500"
+                                                                            id="selectbuss">
+                                                                            <option value="1" selected>1%</option>
+                                                                            <option value="2">$2500</option>
+                                                                            <option value="3">$5000</option>
+                
+                                                                        </select>
+                
+                                                                    </div>
+                                                                
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+
+
+                                                    <div class="accordion custom mt-3" id="accordionExample">
+                                                    
+                                                    
+                                                        <div class="accordion-item">
+                                                            <h2 class="accordion-header" id="headingThree">
+                                                                <button class="accordion-button" type="button"
+                                                                    data-bs-toggle="collapse" data-bs-target="#collapseThree"
+                                                                    aria-expanded="false" aria-controls="collapseThree">
+                                                                    <h4 class="title fs-18 me-3">
+                                                                        <label
+                                                                            class="checkbox-inline mb-0 w-full"
+                                                                            for="Stamps">
+                                                                            <input
+                                                                                class="checkbox-control"
+                                                                                type="checkbox"
+                                                                                value=""
+                                                                                id="Stamps"
+                                                                                checked>
+                                                                            <span
+                                                                                class="checkbox-custom"></span>
+                                                                            <span class="checkbox-label fw-bolder">Water Craft </span>
+                                                                            <i tabindex="0" class="ms-1 data-toggle fa-solid fa-info text-gray" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="This coverage may provide liability for certain watercrafts, it does not provide any coverage to repair or replace your watercraft"></i>
+                                                                        </label>
+                                                                    </h4>
+                                                                </button>
+                                                            </h2>
+                                                            <div id="collapseThree" class="accordion-collapse collapse show"
+                                                                aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                                                <div class="accordion-body">
+                                                                    <div class="row g-3">
+                                                                        <div class="col-md-12">
+                                                                            <div class="f-group max-width-100">
+                                                                                <select class="f-control f-dropdown"
+                                                                                    placeholder="Select Country" id="multiple"
+                                                                                    class="js-states form-control" multiple>
+                                                                                    <option value="1" selected>Inboard
+                                                                                    </option>
+                                                                                    <option value="2">Outboard
+                                                                                    </option>
+                                                                                    <option value="3">Sailboat
+                                                                                    </option>
+                                                                                    <option value="4">Paddle / Pedal Boat
+                                                                                    </option>
+                                                                                </select>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-md-4">
+                                                                            <div class="input-group form-control px-0">
+                                                                                <input type="text" class="" placeholder="Enter length of boat" />
+                                                                                <span class="input-group-append ">
+                                                                                    <span
+                                                                                        class="input-group-text border-0 bg-white d-block ps-0">
+                                                                                        Ft
+                                                                                    </span>
+                                                                                </span>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-md-4">
+                                                                            <div class="input-group form-control px-0">
+                                                                                <input type="text" class="" placeholder="Speed" />
+                                                                                <span class="input-group-append ">
+                                                                                    <span
+                                                                                        class="input-group-text border-0 bg-white d-block ps-0">
+                                                                                        MPH
+                                                                                    </span>
+                                                                                </span>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-md-4">
+                                                                            <div class="f-group max-width-100">
+                                                                                <select class="f-control f-dropdown"
+                                                                                    placeholder="Select Horse Power"
+                                                                                    id="multiple" class="js-states form-control" multiple>
+                                                                                    <option value="">Select Horse Power</option>
+                                                                                    <option value="1">0</option>
+                                                                                    <option value="2">50</option>
+                                                                                    <option value="3">100</option>
+                                                                                    <option value="4">150</option>
+                                                                                    <option value="5">200</option>
+                                                                                    <option value="6">500</option>
+                                                                                </select>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-md-12 mt-3">
+                                                            <div class="form-group">
+                                                                <label for="" class="fs-16 font-bold">Earthquake Coverage</label>
+                                                                <div class="d-flex justify-content-start">
+                                                                    <div class="d-flex align-self-center me-3">
+                                                                        <label class="radio-inline radio-btn" for="earthquakeYes">
+                                                                            <input class="radio-control" checked type="radio" name="earthquake"
+                                                                                value="" id="earthquakeYes">
+                                                                            <span class="radio-custom"></span>
+                                                                            <span class="radio-label fs-14">Yes </span>
+                                                                        </label>
+                                                                    </div>
+                                                                    <div class="d-flex align-self-center me-3">
+                                                                        <label class="radio-inline radio-btn" for="earthquakeNo">
+                                                                            <input class="radio-control" type="radio" name="earthquake"
+                                                                                value="" id="earthquakeNo">
+                                                                            <span class="radio-custom"></span>
+                                                                            <span class="radio-label fs-14">No </span>
+                                                                        </label>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-12 mt-3">
+                                                            <div class="form-group">
+                                                                <label for="" class="fs-16 font-bold">Equipment breakdown </label>
+                                                                <div class="d-flex justify-content-start">
+                                                                    <div class="d-flex align-self-center me-3">
+                                                                        <label class="radio-inline radio-btn" for="equipmentYes">
+                                                                            <input class="radio-control" type="radio" name="equipment"
+                                                                                value="" id="equipmentYes">
+                                                                            <span class="radio-custom"></span>
+                                                                            <span class="radio-label fs-14">Accept </span>
+                                                                        </label>
+                                                                    </div>
+                                                                    <div class="d-flex align-self-center me-3">
+                                                                        <label class="radio-inline radio-btn" for="equipmentNo">
+                                                                            <input class="radio-control" checked type="radio" name="equipment"
+                                                                                value="" id="equipmentNo">
+                                                                            <span class="radio-custom"></span>
+                                                                            <span class="radio-label fs-14">Decline </span>
+                                                                        </label>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-12 mt-3">
+                                                            <div class="form-group">
+                                                                <label for="" class="fs-16 font-bold">Personal injury </label>
+                                                                <div class="d-flex justify-content-start">
+                                                                    <div class="d-flex align-self-center me-3">
+                                                                        <label class="radio-inline radio-btn" for="personalYes">
+                                                                            <input class="radio-control" checked type="radio" name="personal"
+                                                                                value="" id="personalYes">
+                                                                            <span class="radio-custom"></span>
+                                                                            <span class="radio-label fs-14">Accept </span>
+                                                                        </label>
+                                                                    </div>
+                                                                    <div class="d-flex align-self-center me-3">
+                                                                        <label class="radio-inline radio-btn" for="personalNo">
+                                                                            <input class="radio-control" type="radio" name="personal"
+                                                                                value="" id="personalNo">
+                                                                            <span class="radio-custom"></span>
+                                                                            <span class="radio-label fs-14">Decline </span>
+                                                                        </label>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-12 mt-3">
+                                                            <div class="form-group">
+                                                                <label for="" class="fs-16 font-bold">Identity theft </label>
+                                                                <div class="d-flex justify-content-start">
+                                                                    <div class="d-flex align-self-center me-3">
+                                                                        <label class="radio-inline radio-btn" for="identityYes">
+                                                                            <input class="radio-control" checked type="radio" name="identity"
+                                                                                value="" id="identityYes">
+                                                                            <span class="radio-custom"></span>
+                                                                            <span class="radio-label fs-14">Accept </span>
+                                                                        </label>
+                                                                    </div>
+                                                                    <div class="d-flex align-self-center me-3">
+                                                                        <label class="radio-inline radio-btn" for="identityNo">
+                                                                            <input class="radio-control" type="radio" name="identity"
+                                                                                value="" id="identityNo">
+                                                                            <span class="radio-custom"></span>
+                                                                            <span class="radio-label fs-14">Decline </span>
+                                                                        </label>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-12 mt-3">
+                                                            <div class="form-group">
+                                                                <label for="" class="fs-16 font-bold">Sink Hole Coverage </label>
+                                                                <div class="d-flex justify-content-start">
+                                                                    <div class="d-flex align-self-center me-3">
+                                                                        <label class="radio-inline radio-btn" for="sinkYes">
+                                                                            <input class="radio-control" checked type="radio" name="sink"
+                                                                                value="" id="sinkYes">
+                                                                            <span class="radio-custom"></span>
+                                                                            <span class="radio-label fs-14">Accept </span>
+                                                                        </label>
+                                                                    </div>
+                                                                    <div class="d-flex align-self-center me-3">
+                                                                        <label class="radio-inline radio-btn" for="sinkNo">
+                                                                            <input class="radio-control" type="radio" name="sink"
+                                                                                value="" id="sinkNo">
+                                                                            <span class="radio-custom"></span>
+                                                                            <span class="radio-label fs-14">Decline </span>
+                                                                        </label>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-12 mt-3">
+                                                            <div class="form-group">
+                                                                <label for="" class="fs-16 font-bold">Tenant relocation</label>
+                                                                <div class="d-flex justify-content-start">
+                                                                    <div class="d-flex align-self-center me-3">
+                                                                        <label class="radio-inline radio-btn" for="tenantYes">
+                                                                            <input class="radio-control" checked type="radio" name="tenant"
+                                                                                value="" id="tenantYes">
+                                                                            <span class="radio-custom"></span>
+                                                                            <span class="radio-label fs-14">Accept </span>
+                                                                        </label>
+                                                                    </div>
+                                                                    <div class="d-flex align-self-center me-3">
+                                                                        <label class="radio-inline radio-btn" for="tenantNo">
+                                                                            <input class="radio-control" type="radio" name="tenant"
+                                                                                value="" id="tenantNo">
+                                                                            <span class="radio-custom"></span>
+                                                                            <span class="radio-label fs-14">Decline </span>
+                                                                        </label>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                      </div>
+
+
+                    <button type="submit" class="btn btn-primary  mx-auto mt-4"><span>Continue</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        </div>
+    </main>
+
+    <script src="../js/jquery.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous">
+        </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous">
+        </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js">
+    </script>
+<script src="https://rawcdn.githack.com/SochavaAG/example-mycode/master/pens/calculator/plugins/rangeslider/rangeslider.min.js"></script>
+    <script src="../js/app.js"></script>
+    <script>
+        $(document).ready(function () {
+            const accordion = $('#accordionExample');
+            $('.btn-delete').on('click', function (e) {
+                e.stopImmediatePropagation()
+                let item = $(this).attr('data-item');
+                $(`#accordionExample .accordion-item:nth-child(${item})`).remove()
+                console.log('item:', item)
+            })
+            $('.customize-options').hide()
+            $('#Coverage').on('change', function () {
+                $('#Coverage').is(':checked') ? ($('.customize-options').show()) : ($(
+                    '.customize-options').hide())
+            })
+        })
+        $(function () {
+            $('[id^="datepicker"]').datepicker({
+                autoclose: true,
+            });
+        });
+
+
+
+
+
+
+        (function ($) {
+            $(function () {
+                
+                
+                $("input[type=range]").rangeslider({polyfill: false});
+
+                var t = $("#level1-clients"),
+                    a = $("#level2-clients"),
+                    n = $("#level3-clients"),
+                    e = $("#daily-orders"),
+                    i = $("#commission"),
+                    l = $("#affiliate-result"),
+                    s = $("#clients-attracted"),
+                    r = $("#daily-orders-per-client"),
+                    p = $("#agent-result"),
+                    o = $("#agent-commission"),
+                    c = $("#stp-clients-attracted"),
+                    d = $("#stp-daily-orders-per-client"),
+                    v = $("#pro-stp-result"),
+                    /*u = $(".tab-pane.active").attr("id"),*/
+                    h = $(".js-calculator_second-level-wrap");
+
+                function agFormula() {
+                    l.html(parseInt(t.val() * (10 * e.val()) + i.val() * t.val() * e.val() + a.val() * e.val() * 10 * .167 + n.val() * e.val() * 10 * .056)).digits().append("<span class=\"ag-calculator_results-currency\">$</span>");
+
+                    v.html(parseInt($(".js-calculator_radio-box").find("input[name=partner-reward]:checked").val() * c.val() * d.val())).digits().append("<span class=\"ag-calculator_results-currency\">$</span>");
+
+                    p.html(parseInt(s.val() * (15 * r.val()) + o.val() * s.val() * r.val())).digits().append("<span class=\"ag-calculator_results-currency\">$</span>");
+                }
+
+                $(".js-calculator_input-wrap .js-calculator_text-input").on("change input", function () {
+                    $(this).parents('.ag-calculator-block').find(".js-calculator_range").val($(this).val()).change();
+
+                    agFormula();
+                });
+
+                $(".js-calculator_input-wrap .js-calculator_range").on("change input", function () {
+                    $(this).parents('.ag-calculator-block').find(".js-calculator_text-input").val($(this).val());
+
+                    agFormula();
+                });
+
+                $(".js-calculator_input-wrap > .js-calculator_radio-box > .js-calculator_radio").on("change input", function () {
+                    agFormula();
+                });
+
+                $(".js-calculator_more-levels").click(function (t) {
+                    if($(this).hasClass("js-ag-opened")) {
+                    h.hide();
+                    h.find(".js-calculator_text-input").val(0);
+                    h.find(".js-calculator_range").val(0).change();
+                    $(this).removeClass("js-ag-opened");
+                    }else{
+                    h.css("display", "inline-block");
+                    h.find(".js-calculator_text-input").val(15);
+                    h.find(".js-calculator_range").val(15).change();
+                    $(this).addClass("js-ag-opened");
+                    }
+                    
+                    agFormula();
+
+                    t.preventDefault();
+                });
+
+                $.fn.digits = function () {
+                    return this.each(function () {
+                    $(this).text($(this).text().replace(/(\d)(?=(\d\d\d)+(?!\d))/g, "$1'"));
+                    });
+                };
+
+                agFormula();
+
+            });
+})(jQuery);
+
+
+$(".toggle-readmore").click(function() {
+  $(".toggle-readmore .arrow").toggleClass("closetoggle");
+
+  $(".toggleRow").slideToggle("slow");
+
+  $(".title-text-change").text(
+    $(".title-text-change").text() == "VIEW LESS" ? "VIEW LESS" : "VIEW MORE"
+  );
+});
+
+var popover = new bootstrap.Popover(document.querySelector('.data-toggle'), {
+            container: 'body'
+        })
+    </script>
+
+</body>
+
+</html>
