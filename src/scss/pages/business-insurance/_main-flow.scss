@@ -1,6 +1,130 @@
-.data-center{
-    width: 0;
+.data-center {
+  width: 0;
 }
-.properties-count-field{
-    width: 208px;
+.properties-count-field {
+  width: 208px;
+}
+
+.notice-box {
+  border: 1px solid var(--color-border-light);
+  background-color: #f1f8fe;
+  padding: 12px;
+  border-radius: 4px;
+
+  .notice-header {
+    padding-bottom: 4px;
+    display: flex;
+    align-items: center;
+    img {
+      margin-bottom: 1px;
+    }
+    span {
+      margin-left: 4px;
+      font-size: 14px;
+      line-height: 22px;
+      color: #2b2b2b;
+    }
+  }
+
+  .notice-body {
+    font-size: 12px;
+    line-height: 16px;
+    color: var(--color-light-gray);
+    margin-bottom: 10px;
+  }
+
+  .notice-footer {
+    img {
+      margin-bottom: 1px;
+    }
+    span {
+      margin-left: 4px;
+      font-size: 12px;
+      line-height: 16px;
+      color: #2b2b2b;
+    }
+  }
+}
+
+.business-cards {
+  &.job-type-cards .business-card {
+    .checkbox-label {
+      font-size: 14px !important;
+    }
+  }
+  .business-card {
+    width: auto;
+    position: relative;
+    margin-right: 16px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    .checkbox-custom {
+      display: none;
+    }
+
+    .checkbox-label {
+      padding: 12px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      border: 1px solid #e6e6e6;
+      border-radius: 8px;
+      margin-left: 0;
+
+      img {
+        border-radius: 4px;
+        margin-bottom: 10px;
+      }
+    }
+
+    input:checked ~ .checkbox-custom {
+      display: block;
+      position: absolute;
+      top: 14px;
+      left: 14px;
+    }
+    input:checked ~ .checkbox-label {
+      border: 2px solid #016bbf;
+      background: #ebf5fd;
+    }
+  }
+}
+
+.radio-label.fs-14 {
+  font-size: 14px !important;
+}
+.accordion.custom .accordion-button {
+  &.hide-arrow:after {
+    opacity: 0;
+  }
+  &:not(.collapsed):after {
+    opacity: 1;
+  }
+}
+.wide-box.claim-section label.checkbox-inline.squar-boxes {
+  width: 220px;
+  height: 156px;
+  margin-right: 16px;
+  margin-top: 0;
+  &:last-child {
+    margin-right: 0;
+  }
+  .checkbox-label {
+    padding: 16px;
+  }
+}
+.business-card.claim-section label.checkbox-inline.squar-boxes {
+  width: 135px;
+  margin-right: 16px;
+  margin-top: 0;
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.box-500 {
+  max-width: 500px;
 }

@@ -470,4 +470,26 @@ h1 {
   max-width: 317px;
   margin: 0 auto;
 }
+
+.data-toggle {
+  font-size: 9px !important;
+  line-height: 12px;
+  height: 16px;
+  width: 16px;
+  text-align: center;
+  border: 2px solid var(--color-light-gray);
+  display: inline-block;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.popover-body {
+  padding: 6px 10px;
+  color: #616161;
+  background-color: #F1F8FE;
+}
+
+.bs-popover-end > .popover-arrow::after {
+  border-right-color: #F1F8FE;
+}
 /*# sourceMappingURL=login.css.map */
