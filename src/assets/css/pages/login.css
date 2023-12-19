@@ -492,4 +492,8 @@ h1 {
 .bs-popover-end > .popover-arrow::after {
   border-right-color: #F1F8FE;
 }
+
+.priceConfirm .modal-dialog.modal-lg {
+  max-width: 710px;
+}
 /*# sourceMappingURL=login.css.map */

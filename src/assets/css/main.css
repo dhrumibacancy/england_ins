@@ -1408,6 +1408,8 @@ tr:last-child td:last-child {
 .price-box .radio-check-switch .form-item .radio-switch-state {
   margin: 32px 0;
   padding: 2.3rem 1.5rem;
+  background-color: #fff;
+  border: 0;
 }
 .price-box .radio-check-switch .form-item .radio-switch-state .price-ul {
   margin-top: 32px;
@@ -1421,6 +1423,11 @@ tr:last-child td:last-child {
   margin-bottom: 0;
   color: var(--color-dark-blue) !important;
 }
+.price-box .radio-check-switch .form-item .radio-switch-state .price-build-info {
+  border-top: 1px solid #E6E6E6;
+  margin-top: 12px;
+  color: #474747;
+}
 .price-box .radio-check-switch .form-item .radio-switch-state .btn-primary {
   margin-top: 52px;
 }
@@ -1433,6 +1440,10 @@ tr:last-child td:last-child {
   position: relative;
   width: 50px;
   height: 47px;
+}
+
+.select-pay-type .radio-check-switch input[type=radio]:checked + .radio-switch-state {
+  background: #fff;
 }
 
 .box-shdow {
@@ -3361,6 +3372,10 @@ h1 {
 
 .bs-popover-end > .popover-arrow::after {
   border-right-color: #F1F8FE;
+}
+
+.priceConfirm .modal-dialog.modal-lg {
+  max-width: 710px;
 }
 
 main .wrapper .admin-section-container {
