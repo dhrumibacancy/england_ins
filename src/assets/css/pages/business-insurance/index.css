@@ -54,6 +54,15 @@
   line-height: 16px;
   color: #2b2b2b;
 }
+.business-insurance-flow .white-box-container {
+  padding: 12px;
+  border-radius: 8px;
+  background-color: var(--color-white);
+  border: 1px solid var(--color-border-light);
+}
+.business-insurance-flow .white-box-container .input-group input.ms-2 {
+  margin-left: 8px !important;
+}
 .business-insurance-flow .business-cards.job-type-cards .business-card .checkbox-label {
   font-size: 14px !important;
 }
@@ -129,5 +138,14 @@
 }
 .business-insurance-flow .box-500 {
   max-width: 500px;
+}
+.business-insurance-flow .currency-range .append {
+  width: 65px;
+}
+.business-insurance-flow .currency-range .preppend {
+  width: 70px;
+}
+.business-insurance-flow .js-calculator_text-input.ms-0 {
+  margin-left: 0 !important;
 }
 /*# sourceMappingURL=index.css.map */

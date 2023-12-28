@@ -46,6 +46,17 @@
   }
 }
 
+.white-box-container {
+  padding: 12px;
+  border-radius: 8px;
+  background-color: var(--color-white);
+  border: 1px solid var(--color-border-light);
+
+  .input-group input.ms-2{
+    margin-left: 8px !important;
+  }
+}
+
 .business-cards {
   &.job-type-cards .business-card {
     .checkbox-label {
@@ -127,4 +138,17 @@
 
 .box-500 {
   max-width: 500px;
+}
+
+.currency-range{
+  .append{
+    width: 65px;
+  }
+  .preppend{
+    width: 70px;
+  }
+}
+
+.js-calculator_text-input.ms-0{
+  margin-left: 0 !important;
 }

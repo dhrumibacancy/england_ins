@@ -43,6 +43,8 @@
 
 
     <link rel="icon" href="../../../../images/favicon.png" type="image/gif" sizes="16x16">
+    <link rel="stylesheet"
+        href="https://rawcdn.githack.com/SochavaAG/example-mycode/master/pens/calculator/plugins/rangeslider/rangeslider.css">
     <link rel="stylesheet" href="../../assets/css/main.css">
 </head>
 
@@ -144,15 +146,15 @@
                             <img src="../../images/user-person.svg" alt="" class="user-person mx-auto">
                             <p class="user-welcome mt-2">Hey! My Name is Anne</p>
                         </div>
-                        <h3 class="title text-center">Job Details</h3>
+                        <h3 class="title text-center">Out of State work</h3>
 
                         <div class="contain-wrapper-sm">
                             <form class="mt-4">
-                                <div class="white-box-container p-3 mt-4">
+                                <div class="container-fluid claim-additional-info mt-4 bg-white border border-1">
                                     <div class="row g-3">
                                         <div class="col-12">
                                             <label class="fw-500 mb-0" for="">
-                                                Any jobs more than 15% Roofing, Framing, Drywall, Plaster or Demolition?
+                                                Is more than 10% of work out of state?
                                             </label>
                                         </div>
                                         <div class="d-flex mt-2 align-items-center justify-content-start">
@@ -179,100 +181,79 @@
 
                                         <div class="col-12">
                                             <label class="fw-500 mb-0" for="">
-                                                Select all which are over 15%
+                                                What Percentage of you work is out of state?
                                             </label>
                                         </div>
 
+                                        <div class="col-md-12 mt-2">
+
+                                            <div class="ag-calculators-block">
+                                                <div class="ag-format-container">
+                                                    <div id="affiliate" class="ag-calculator-block">
+                                                        <div
+                                                            class="js-calculator_input-wrap js-calculator_second-level-wrap ag-calculator_input-wrap ag-calculator_second-level-wrap d-flex align-items-center justify-content-between">
+                                                            <div class="col-4 pe-3">
+                                                                <div class="input-group form-control p-0">
+                                                                    <input id="level2-clients"
+                                                                        class="js-calculator_text-input ag-calculator_text-input m-0"
+                                                                        type="number " name="level2-clients" min="0"
+                                                                        max="100" value="0">
+                                                                    <span class="input-group-append ">
+                                                                        <span
+                                                                            class="input-group-text border-0 bg-white d-block">
+                                                                            %
+                                                                        </span>
+                                                                    </span>
+                                                                </div>
+                                                            </div>
+                                                            <!-- <input class="form-control " type="text" placeholder="License Number" /> -->
+                                                            <div class="col-8">
+                                                                <div class="form-control">
+                                                                    <div class="range-percentage">
+                                                                        <div class="append">0%</div>
+                                                                        <div class="middle">
+                                                                            <input class="js-calculator_range w-auto"
+                                                                                step="1" type="range"
+                                                                                name="level2-clients" min="0" max="100"
+                                                                                value="0">
+                                                                        </div>
+                                                                        <div class="preppend">100%</div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
                                         <div class="col-12">
-                                            <div class="d-flex justify-content-between business-cards job-type-cards">
-                                                <label class="checkbox-inline business-card mb-0" for="glass">
-                                                    <input class="checkbox-control" type="checkbox" name="accident-type"
-                                                        checked value="" id="glass">
-                                                    <span class="checkbox-custom"></span>
-                                                    <span class="checkbox-label">
-                                                        <img src="../../images/business-icon/job-placeholder-1.png"
-                                                            alt="" class="offline" />
-                                                        Roofing
-                                                    </span>
-                                                </label>
-                                                <label class="checkbox-inline business-card mb-0" for="collision">
-                                                    <input class="checkbox-control" type="checkbox" name="accident-type"
-                                                        value="" id="collision">
-                                                    <span class="checkbox-custom"></span>
-                                                    <span class="checkbox-label">
-                                                        <img src="../../images/business-icon/job-placeholder-2.png"
-                                                            alt="" class="offline" />
-                                                        Framing
-                                                    </span>
-                                                </label>
-                                                <label class="checkbox-inline business-card mb-0 me-0"
-                                                    for="Drywall-vehicle">
-                                                    <input class="checkbox-control" type="checkbox" name="accident-type"
-                                                        value="" id="Drywall-vehicle">
-                                                    <span class="checkbox-custom"></span>
-                                                    <span class="checkbox-label">
-                                                        <img src="../../images/business-icon/job-placeholder-3.png"
-                                                            alt="" class="offline" />
-                                                        Drywall
-                                                    </span>
-                                                </label>
-                                                <label class="checkbox-inline business-card mb-0 me-0"
-                                                    for="Plaster-vehicle">
-                                                    <input class="checkbox-control" type="checkbox" name="accident-type"
-                                                        value="" id="Plaster-vehicle">
-                                                    <span class="checkbox-custom"></span>
-                                                    <span class="checkbox-label">
-                                                        <img src="../../images/business-icon/job-placeholder-4.png"
-                                                            alt="" class="offline" />
-                                                        Plaster
-                                                    </span>
-                                                </label>
-                                                <label class="checkbox-inline business-card mb-0 me-0"
-                                                    for="demolition-vehicle">
-                                                    <input class="checkbox-control" type="checkbox" name="demolition-type"
-                                                        value="" id="demolition-vehicle">
-                                                    <span class="checkbox-custom"></span>
-                                                    <span class="checkbox-label">
-                                                        <img src="../../images/business-icon/job-placeholder-5.png"
-                                                            alt="" class="offline" />
-                                                        Demolition
-                                                    </span>
-                                                </label>
+                                            <div class="f-group max-width-100">
+                                                <div class="f-dropdown selectDropdown">
+                                                    <select class="f-control f-dropdown" placeholder="Select all states you do work in"
+                                                        id="1">
+                                                        <option value="">Select all states you do work in</option>
+                                                        <option value="1">tool
+                                                        </option>
+                                                        <option value="2">
+                                                            Bobcat
+                                                        </option>
+                                                        <option value="3">
+                                                            Large Mobile Equipment
+                                                        </option>
+                                                    </select>
+                                                </div>
                                             </div>
                                         </div>
 
-
-                                        <div class="col-12">
-                                            <label class="fw-500 mb-0" for="">
-                                                Demolition of entire buildings?
-                                            </label>
-                                        </div>
-                                        <div class="d-flex mt-2 align-items-center justify-content-start">
-                                            <div class="d-flex align-self-center me-3">
-                                                <label class="radio-inline radio-btn" for="Demolition-yes">
-                                                    <input class="radio-control" type="radio" name="Demolition" value=""
-                                                        id="Demolition-yes" checked="">
-                                                    <span class="radio-custom"></span>
-                                                    <span class="radio-label fs-14 bg-white">Yes
-                                                    </span>
-                                                </label>
-                                            </div>
-                                            <div class="d-flex align-self-center me-3">
-                                                <label class="radio-inline radio-btn" for="Demolition-no">
-                                                    <input class="radio-control" type="radio" name="Demolition" value=""
-                                                        id="Demolition-no">
-                                                    <span class="radio-custom"></span>
-                                                    <span class="radio-label fs-14 bg-white">No
-                                                    </span>
-                                                </label>
-                                            </div>
-                                        </div>
 
 
                                     </div>
                                 </div>
                                 <button type="submit" class="btn btn-primary  mx-auto mt-4"><span>Continue</span>
-                                </button>
+                                </button>wE1``
                             </form>
                         </div>
                     </div>
@@ -291,6 +272,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js">
     </script>
 
+    <script
+        src="https://rawcdn.githack.com/SochavaAG/example-mycode/master/pens/calculator/plugins/rangeslider/rangeslider.min.js"></script>
     <script src="../../js/app.js"></script>
     <script>
         $(document).ready(function () {
@@ -314,6 +297,81 @@
 
             });
         });
+
+        (function ($) {
+            $(function () {
+
+
+                $("input[type=range]").rangeslider({ polyfill: false });
+
+                var t = $("#level1-clients"),
+                    a = $("#level2-clients"),
+                    n = $("#level3-clients"),
+                    e = $("#daily-orders"),
+                    i = $("#commission"),
+                    l = $("#affiliate-result"),
+                    s = $("#clients-attracted"),
+                    r = $("#daily-orders-per-client"),
+                    p = $("#agent-result"),
+                    o = $("#agent-commission"),
+                    c = $("#stp-clients-attracted"),
+                    d = $("#stp-daily-orders-per-client"),
+                    v = $("#pro-stp-result"),
+                    /*u = $(".tab-pane.active").attr("id"),*/
+                    h = $(".js-calculator_second-level-wrap");
+
+                function agFormula() {
+                    l.html(parseInt(t.val() * (10 * e.val()) + i.val() * t.val() * e.val() + a.val() * e.val() * 10 * .167 + n.val() * e.val() * 10 * .056)).digits().append("<span class=\"ag-calculator_results-currency\">$</span>");
+
+                    v.html(parseInt($(".js-calculator_radio-box").find("input[name=partner-reward]:checked").val() * c.val() * d.val())).digits().append("<span class=\"ag-calculator_results-currency\">$</span>");
+
+                    p.html(parseInt(s.val() * (15 * r.val()) + o.val() * s.val() * r.val())).digits().append("<span class=\"ag-calculator_results-currency\">$</span>");
+                }
+
+                $(".js-calculator_input-wrap .js-calculator_text-input").on("change input", function () {
+                    $(this).parents('.ag-calculator-block').find(".js-calculator_range").val($(this).val()).change();
+
+                    agFormula();
+                });
+
+                $(".js-calculator_input-wrap .js-calculator_range").on("change input", function () {
+                    $(this).parents('.ag-calculator-block').find(".js-calculator_text-input").val($(this).val());
+
+                    agFormula();
+                });
+
+                $(".js-calculator_input-wrap > .js-calculator_radio-box > .js-calculator_radio").on("change input", function () {
+                    agFormula();
+                });
+
+                $(".js-calculator_more-levels").click(function (t) {
+                    if ($(this).hasClass("js-ag-opened")) {
+                        h.hide();
+                        h.find(".js-calculator_text-input").val(0);
+                        h.find(".js-calculator_range").val(0).change();
+                        $(this).removeClass("js-ag-opened");
+                    } else {
+                        h.css("display", "inline-block");
+                        h.find(".js-calculator_text-input").val(15);
+                        h.find(".js-calculator_range").val(15).change();
+                        $(this).addClass("js-ag-opened");
+                    }
+
+                    agFormula();
+
+                    t.preventDefault();
+                });
+
+                $.fn.digits = function () {
+                    return this.each(function () {
+                        $(this).text($(this).text().replace(/(\d)(?=(\d\d\d)+(?!\d))/g, "$1'"));
+                    });
+                };
+
+                agFormula();
+
+            });
+        })(jQuery);
     </script>
 
 
