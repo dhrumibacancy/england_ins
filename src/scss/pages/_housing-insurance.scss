@@ -2,9 +2,9 @@
 
 .properties-container {
   background: linear-gradient(0deg, #f2f7fc, #f2f7fc),
-    linear-gradient(0deg, #e6e6e6, #e6e6e6);
+    linear-gradient(0deg, var(--color-border-light), var(--color-border-light));
   border-radius: 4px;
-  border: 1px solid #e6e6e6;
+  border: 1px solid var(--color-border-light);
 }
 
 label.checkbox-inline.squar-boxes {
@@ -72,11 +72,11 @@ label.checkbox-inline.squar-boxes {
 
 .accordion.custom{
   > .accordion-item.accordion-white.bordered{
-    border: 1px solid #E6E6E6;
+    border: 1px solid var(--color-border-light);
     box-shadow: none;
     
    > .accordion-collapse.show{
-      border-top: 1px solid #E6E6E6;
+      border-top: 1px solid var(--color-border-light);
       
     }
   }

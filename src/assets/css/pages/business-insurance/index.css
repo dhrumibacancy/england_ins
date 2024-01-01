@@ -15,4 +15,137 @@
 .business-insurance-flow .properties-count-field {
   width: 208px;
 }
+.business-insurance-flow .notice-box {
+  border: 1px solid var(--color-border-light);
+  background-color: #f1f8fe;
+  padding: 12px;
+  border-radius: 4px;
+}
+.business-insurance-flow .notice-box .notice-header {
+  padding-bottom: 4px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.business-insurance-flow .notice-box .notice-header img {
+  margin-bottom: 1px;
+}
+.business-insurance-flow .notice-box .notice-header span {
+  margin-left: 4px;
+  font-size: 14px;
+  line-height: 22px;
+  color: #2b2b2b;
+}
+.business-insurance-flow .notice-box .notice-body {
+  font-size: 12px;
+  line-height: 16px;
+  color: var(--color-light-gray);
+  margin-bottom: 10px;
+}
+.business-insurance-flow .notice-box .notice-footer img {
+  margin-bottom: 1px;
+}
+.business-insurance-flow .notice-box .notice-footer span {
+  margin-left: 4px;
+  font-size: 12px;
+  line-height: 16px;
+  color: #2b2b2b;
+}
+.business-insurance-flow .white-box-container {
+  padding: 12px;
+  border-radius: 8px;
+  background-color: var(--color-white);
+  border: 1px solid var(--color-border-light);
+}
+.business-insurance-flow .white-box-container .input-group input.ms-2 {
+  margin-left: 8px !important;
+}
+.business-insurance-flow .business-cards.job-type-cards .business-card .checkbox-label {
+  font-size: 14px !important;
+}
+.business-insurance-flow .business-cards .business-card {
+  width: auto;
+  position: relative;
+  margin-right: 16px;
+}
+.business-insurance-flow .business-cards .business-card:last-child {
+  margin-right: 0;
+}
+.business-insurance-flow .business-cards .business-card .checkbox-custom {
+  display: none;
+}
+.business-insurance-flow .business-cards .business-card .checkbox-label {
+  padding: 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px solid #e6e6e6;
+  border-radius: 8px;
+  margin-left: 0;
+}
+.business-insurance-flow .business-cards .business-card .checkbox-label img {
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+.business-insurance-flow .business-cards .business-card input:checked ~ .checkbox-custom {
+  display: block;
+  position: absolute;
+  top: 14px;
+  left: 14px;
+}
+.business-insurance-flow .business-cards .business-card input:checked ~ .checkbox-label {
+  border: 2px solid #016bbf;
+  background: #ebf5fd;
+}
+.business-insurance-flow .radio-label.fs-14 {
+  font-size: 14px !important;
+}
+.business-insurance-flow .accordion.custom .accordion-button.hide-arrow:after {
+  opacity: 0;
+}
+.business-insurance-flow .accordion.custom .accordion-button:not(.collapsed):after {
+  opacity: 1;
+}
+.business-insurance-flow .wide-box.claim-section label.checkbox-inline.squar-boxes {
+  width: 220px;
+  height: 156px;
+  margin-right: 16px;
+  margin-top: 0;
+}
+.business-insurance-flow .wide-box.claim-section label.checkbox-inline.squar-boxes:last-child {
+  margin-right: 0;
+}
+.business-insurance-flow .wide-box.claim-section label.checkbox-inline.squar-boxes .checkbox-label {
+  padding: 16px;
+}
+.business-insurance-flow .business-card.claim-section label.checkbox-inline.squar-boxes {
+  width: 135px;
+  margin-right: 16px;
+  margin-top: 0;
+}
+.business-insurance-flow .business-card.claim-section label.checkbox-inline.squar-boxes:last-child {
+  margin-right: 0;
+}
+.business-insurance-flow .box-500 {
+  max-width: 500px;
+}
+.business-insurance-flow .currency-range .append {
+  width: 65px;
+}
+.business-insurance-flow .currency-range .preppend {
+  width: 70px;
+}
+.business-insurance-flow .js-calculator_text-input.ms-0 {
+  margin-left: 0 !important;
+}
 /*# sourceMappingURL=index.css.map */
