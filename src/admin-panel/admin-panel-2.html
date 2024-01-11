@@ -181,7 +181,7 @@
                             <div class="user-options">
                                 <ul class="option-lists">
                                     <li class="option-item">
-                                        <a href>
+                                        <a href="" data-bs-toggle="modal" data-bs-target="#modalContinue">
                                             <img src="../images/edit-2.svg" />
                                             <span>Edit</span>
                                         </a>
@@ -2172,6 +2172,56 @@
 
                     </div>
 
+                </div>
+            </div>
+            <div class="modal fade" id="modalContinue" tabindex="-1" aria-labelledby="mainModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg-lg modal-dialog-centered">
+                    <div class="modal-content border-0">
+                        <div class="modal-header border-0">
+                            <h3 class="modal-title fs-22" id="exampleModalToggleLabel">Do you want to continue any of these ?</h3>
+                        </div>
+                        <div class="modal-body pt-0">
+                            <table class="table policy-table">
+                                <tbody>
+                                    <tr class="policy-table-card">
+                                        <td>
+                                            <span class="fs-14 text-black">Add Vehicle: 07 Highlander  &#9679; </span> <span class="fs-14 "> Eddie Lake</span> <span class="fs-12 fw-light">(Life)</span>
+                                            <div><a href="#" class="fs-12 lh-base fw-normal text-gray">Add Vehicle</a> | <a href="#" class="fs-12 lh-base fw-normal text-gray">Remove Vehicle</a> | <a href="#" class="fs-12 lh-base fw-normal text-gray">Change Coverage</a></div>
+                                        </td>
+                                        <td class="fs-12 text-end">
+                                            <div class="text-uppercase"><a href="#" class="fs-14 lh-base fw-normal text-sucess">Continue</a> &nbsp;|&nbsp; <a href="#" class="fs-14 lh-base fw-normal text-danger">Delete</a> &nbsp;|&nbsp; <a href="#" class="fs-14 lh-base fw-normal text-orange">Snooze</a></div>
+                                        </td>
+                                    </tr>
+                                    <tr class="policy-table-card">
+                                        <td>
+                                            <span class="fs-14 text-black">Remove Vehicle: 07 Highlander  &#9679; </span> <span class="fs-14 "> Eddie Lake</span> <span class="fs-12 fw-light">(Life)</span>
+                                            <div><a href="#" class="fs-12 lh-base fw-normal text-gray">Remove Vehicle</a> | <a href="#" class="fs-12 lh-base fw-normal text-gray">Change Coverage</a> | <a href="#" class="fs-12 lh-base fw-normal text-gray">Change Address</a></div>
+                                        </td>
+                                        <td class="fs-12 text-end">
+                                            <div class="text-uppercase"><a href="#" class="fs-14 lh-base fw-normal text-sucess">Continue</a> &nbsp;|&nbsp; <a href="#" class="fs-14 lh-base fw-normal text-danger">Delete</a> &nbsp;|&nbsp; <a href="#" class="fs-14 lh-base fw-normal text-orange">Snooze</a></div>
+                                        </td>
+                                    </tr>
+                                    <tr class="policy-table-card mb-0">
+                                        <td>
+                                            <span class="fs-14 text-black">Add Driver: John Doe  &#9679; </span> <span class="fs-14 "> Eddie Lake</span> <span class="fs-12 fw-light">(Life)</span>
+                                            <div><a href="#" class="fs-12 lh-base fw-normal text-gray">Add Vehicle</a> | <a href="#" class="fs-12 lh-base fw-normal text-gray">Add Driver</a></div>
+                                        </td>
+                                        <td class="fs-12 text-end">
+                                            <div class="text-uppercase"><a href="#" class="fs-14 lh-base fw-normal text-sucess">Continue</a> &nbsp;|&nbsp; <a href="#" class="fs-14 lh-base fw-normal text-danger">Delete</a> &nbsp;|&nbsp; <a href="#" class="fs-14 lh-base fw-normal text-orange">Snooze</a></div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>                           
+                        </div>
+                        <div class="modal-footer justify-content-center  border-0">
+                            <div style="gap:10px;"
+                                class="d-flex flex-column flex-sm-row align-items-center justify-content-center mb-2">
+                                <button type="submit" class="btn btn-outline text-blue" data-bs-dismiss="modal" aria-label="Close"><span>Close
+                                    </span></button>
+                            </div>
+                        </div>
+                    </div>
+    
                 </div>
             </div>
     </main>
