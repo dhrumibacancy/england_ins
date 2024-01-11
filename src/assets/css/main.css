@@ -359,11 +359,11 @@ a {
 }
 
 .text-orange {
-  color: #F68A1F;
+  color: #f68a1f;
 }
 
 .bg-light-blue {
-  background-color: #F2F7FC;
+  background-color: #f2f7fc;
 }
 
 .text-left {
@@ -373,7 +373,7 @@ a {
 body {
   font-family: "Roboto";
   font-size: 14px;
-  background: #F8FBFE;
+  background: #f8fbfe;
 }
 
 ul,
@@ -393,7 +393,7 @@ li {
 }
 
 .bg-blue-light-2 {
-  background: #E2F0FB !important;
+  background: #e2f0fb !important;
 }
 
 .pt-4 {
@@ -488,6 +488,20 @@ li {
   width: 100% !important;
 }
 
+@media screen and (min-width: 576px) {
+  .w-sm-100 {
+    width: 100%;
+  }
+  .w-sm-75 {
+    width: 75%;
+  }
+  .w-sm-50 {
+    width: 50%;
+  }
+  .w-sm-25 {
+    width: 25%;
+  }
+}
 .h-100 {
   height: 100% !important;
 }
@@ -623,7 +637,7 @@ main .wrapper .content-main.full-size {
 }
 main .wrapper .content-main .content {
   padding-top: 40px;
-  background: #F8FBFE;
+  background: #f8fbfe;
 }
 main .wrapper .logo {
   position: relative;
@@ -9235,6 +9249,7 @@ main .wrapper .admin-section-container .content {
   border: 1px solid #e6e6e6;
   border-radius: 8px;
   margin-left: 0;
+  font-size: 14px;
 }
 .business-insurance-flow .business-cards .business-card .checkbox-label img {
   border-radius: 4px;
@@ -9271,6 +9286,9 @@ main .wrapper .admin-section-container .content {
 .business-insurance-flow .wide-box.claim-section label.checkbox-inline.squar-boxes .checkbox-label {
   padding: 16px;
 }
+.business-insurance-flow .wide-box.claim-section label.checkbox-inline.squar-boxes.rectangle-box {
+  width: 280px;
+}
 .business-insurance-flow .business-card.claim-section label.checkbox-inline.squar-boxes {
   width: 135px;
   margin-right: 16px;
@@ -9290,6 +9308,17 @@ main .wrapper .admin-section-container .content {
 }
 .business-insurance-flow .js-calculator_text-input.ms-0 {
   margin-left: 0 !important;
+}
+.business-insurance-flow .claim-section label.checkbox-inline.box-300 {
+  width: 319px;
+}
+.business-insurance-flow .claim-section label.checkbox-inline.box-140 {
+  width: 150px;
+  height: 156px;
+}
+.business-insurance-flow .claim-section label.checkbox-inline.box-250 {
+  width: 244px;
+  height: 156px;
 }
 
 .navbar-toggler {
@@ -9682,6 +9711,10 @@ main .wrapper .admin-section-container .content {
 }
 .btn.btn-primary:hover .show-hover {
   display: inline;
+}
+.btn.btn-outline-primary {
+  color: var(--color-primary);
+  border-color: var(--color-primary);
 }
 .btn.btn-outline {
   border: 1px solid #CCCCCC;

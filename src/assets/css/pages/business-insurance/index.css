@@ -92,6 +92,7 @@
   border: 1px solid #e6e6e6;
   border-radius: 8px;
   margin-left: 0;
+  font-size: 14px;
 }
 .business-insurance-flow .business-cards .business-card .checkbox-label img {
   border-radius: 4px;
@@ -128,6 +129,9 @@
 .business-insurance-flow .wide-box.claim-section label.checkbox-inline.squar-boxes .checkbox-label {
   padding: 16px;
 }
+.business-insurance-flow .wide-box.claim-section label.checkbox-inline.squar-boxes.rectangle-box {
+  width: 280px;
+}
 .business-insurance-flow .business-card.claim-section label.checkbox-inline.squar-boxes {
   width: 135px;
   margin-right: 16px;
@@ -147,5 +151,16 @@
 }
 .business-insurance-flow .js-calculator_text-input.ms-0 {
   margin-left: 0 !important;
+}
+.business-insurance-flow .claim-section label.checkbox-inline.box-300 {
+  width: 319px;
+}
+.business-insurance-flow .claim-section label.checkbox-inline.box-140 {
+  width: 150px;
+  height: 156px;
+}
+.business-insurance-flow .claim-section label.checkbox-inline.box-250 {
+  width: 244px;
+  height: 156px;
 }
 /*# sourceMappingURL=index.css.map */
