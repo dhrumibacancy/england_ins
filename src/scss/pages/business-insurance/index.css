@@ -103,6 +103,52 @@
 .business-insurance-flow .accordion.custom .accordion-button:not(.collapsed):after {
   opacity: 1;
 }
+.business-insurance-flow .claim-section.auto-ratio {
+  max-width: 860px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.business-insurance-flow .claim-section.auto-ratio label.checkbox-inline.squar-boxes {
+  flex-grow: 1;
+}
+.business-insurance-flow .claim-section label.checkbox-inline.squar-boxes .tooltip-card {
+  position: relative;
+}
+.business-insurance-flow .claim-section label.checkbox-inline.squar-boxes .tooltip-card img {
+  margin: 0;
+}
+.business-insurance-flow .claim-section label.checkbox-inline.squar-boxes .tooltip-card .tooltip-content {
+  display: none;
+  background-color: var(--color-blue-bg-light);
+  color: var(--color-title);
+  border: 1px solid var(--color-border-light);
+  padding: 6px 10px;
+  border-radius: 4px;
+  position: absolute;
+  top: 0;
+  left: calc(100% + 10px);
+  z-index: 100000;
+  min-width: 190px;
+  text-align: left;
+  font-size: 12px;
+}
+.business-insurance-flow .claim-section label.checkbox-inline.squar-boxes .tooltip-card .tooltip-content:after {
+  content: "";
+  position: absolute;
+  right: calc(100% - 5px);
+  top: 5px;
+  width: 10px;
+  height: 10px;
+  transform: rotate(45deg);
+  background: #f1f8fe;
+  display: block;
+  border: solid #ddd;
+  border-width: 0 0 1px 1px;
+  border-bottom-left-radius: 4px;
+}
+.business-insurance-flow .claim-section label.checkbox-inline.squar-boxes .tooltip-card:hover .tooltip-content {
+  display: block;
+}
 .business-insurance-flow .wide-box.claim-section label.checkbox-inline.squar-boxes {
   width: 220px;
   height: 156px;
@@ -126,6 +172,9 @@
 .business-insurance-flow .business-card.claim-section label.checkbox-inline.squar-boxes:last-child {
   margin-right: 0;
 }
+.business-insurance-flow .business-card.claim-section label.checkbox-inline.squar-boxes.rectangle-box {
+  width: 280px;
+}
 .business-insurance-flow .box-500 {
   max-width: 500px;
 }
@@ -137,4 +186,15 @@
 }
 .business-insurance-flow .js-calculator_text-input.ms-0 {
   margin-left: 0 !important;
+}
+.business-insurance-flow .claim-section label.checkbox-inline.box-300 {
+  width: 319px;
+}
+.business-insurance-flow .claim-section label.checkbox-inline.box-140 {
+  width: 150px;
+  height: 156px;
+}
+.business-insurance-flow .claim-section label.checkbox-inline.box-250 {
+  width: 244px;
+  height: 156px;
 }/*# sourceMappingURL=index.css.map */

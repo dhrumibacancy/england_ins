@@ -52,7 +52,7 @@
   background-color: var(--color-white);
   border: 1px solid var(--color-border-light);
 
-  .input-group input.ms-2{
+  .input-group input.ms-2 {
     margin-left: 8px !important;
   }
 }
@@ -116,6 +116,62 @@
     opacity: 1;
   }
 }
+.claim-section {
+  &.auto-ratio{
+    max-width: 860px;
+    margin-left: auto;
+    margin-right: auto;
+    label.checkbox-inline.squar-boxes {
+      flex-grow: 1;
+    }
+  }
+  label.checkbox-inline.squar-boxes {
+    .tooltip-card {
+      position: relative;
+
+      img {
+        margin: 0;
+      }
+      .tooltip-content {
+        display: none;
+        background-color: var(--color-blue-bg-light);
+        color: var(--color-title);
+        border: 1px solid var(--color-border-light);
+        padding: 6px 10px;
+        border-radius: 4px;
+        position: absolute;
+        top: 0;
+        left: calc(100% + 10px);
+        z-index: 100000;
+        min-width: 190px;
+        text-align: left;
+        font-size: 12px;
+
+        &:after {
+          content: "";
+          position: absolute;
+          right: calc(100% - 5px);
+          top: 5px;
+          width: 10px;
+          height: 10px;
+          transform: rotate(45deg);
+          background: #f1f8fe;
+          display: block;
+          border: solid #ddd;
+          border-width: 00 0 1px 1px;
+          border-bottom-left-radius: 4px;
+        }
+      }
+
+      &:hover {
+        .tooltip-content {
+          display: block;
+        }
+      }
+    }
+  }
+}
+
 .wide-box.claim-section label.checkbox-inline.squar-boxes {
   width: 220px;
   height: 156px;
@@ -126,8 +182,8 @@
   }
   .checkbox-label {
     padding: 16px;
-  } 
-  &.rectangle-box{
+  }
+  &.rectangle-box {
     width: 280px;
   }
 }
@@ -140,22 +196,24 @@
     margin-right: 0;
   }
 
- 
+  &.rectangle-box {
+    width: 280px;
+  }
 }
 
 .box-500 {
   max-width: 500px;
 }
 
-.currency-range{
-  .append{
+.currency-range {
+  .append {
     width: 65px;
   }
-  .preppend{
+  .preppend {
     width: 70px;
   }
 }
 
-.js-calculator_text-input.ms-0{
+.js-calculator_text-input.ms-0 {
   margin-left: 0 !important;
 }
