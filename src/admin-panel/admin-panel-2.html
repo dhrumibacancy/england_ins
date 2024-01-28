@@ -187,7 +187,7 @@
                                         </a>
                                     </li>
                                     <li class="option-item">
-                                        <a href>
+                                        <a href="" data-bs-toggle="modal" data-bs-target="#modalIsInfo">
                                             <img src="../images/doc-blue.svg" />
                                             <span>Notes</span>
                                         </a>
@@ -2222,6 +2222,57 @@
                         </div>
                     </div>
     
+                </div>
+            </div>
+            <div class="modal fade" id="modalIsInfo" tabindex="-1" aria-labelledby="mainModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg-lg modal-dialog-centered">
+                    <div class="modal-content border-0">
+                        <div class="modal-header border-0">
+                            <h3 class="modal-title fs-22">
+                                <i class="fa fa-arrow-left me-1 fs-18"></i>
+                                Is all info the same?
+                            </h3>
+                        </div>
+                        <div class="modal-body pt-0">
+                            <p class="fs-14 lh-base fw-light text-gray mb-3">1456 Veltri Drive, Anchorage, AK 99502</p>
+                            <h6 class="fs-16 text-black">Drivers</h6>
+                            <ul class="d-flex mb-2">
+                                <li class="me-1">
+                                    <div class="bg-grey rounded p-1 px-2 fs-12">Kurt Bates <span class="text-blue ms-1">Applicant</span></div>
+                                </li>
+                                <li class="me-1">
+                                    <div class="bg-grey rounded p-1 px-2 fs-12">Daniel Hamilton <span class="text-blue ms-1">Driver</span></div>
+                                </li>
+                                <li class="me-1">
+                                    <div class="bg-grey rounded p-1 px-2 fs-12">Kurt Bates <span class="text-danger ms-1">Excluded</span></div>
+                                </li>
+                                <li class="me-1">
+                                    <div class="bg-grey rounded p-1 px-2 fs-12">Katie Sims <span class="text-danger ms-1">Excluded</span></div>
+                                </li>
+                                <li class="me-1">
+                                    <div class="bg-grey rounded p-1 px-2 fs-12">Paula Mora <span class="text-sucess ms-1">Deffered</span></div>
+                                </li>
+                            </ul>
+                            <h6 class="fs-16 text-black">Vehicles</h6>
+                            <ul class="mb-3">
+                                <li class="me-1">
+                                    <div class="d-inline-block bg-grey rounded p-1 px-2 fs-12">2022 Corvette <span class="me-1">|</span>Full Coverage <span class="me-1">|</span>Use: Pleasure no Rideshare</div>
+                                </li>
+                                <li class="me-1">
+                                    <div class="d-inline-block bg-grey rounded p-1 px-2 fs-12">2020 Volvo XC90 <span class="me-1">|</span>Basic Coverage <span class="me-1">|</span>Use: Delivery</div>
+                                </li>
+                            </ul>       
+                            <p class="fs-14 text-black m-0">We’ll check prices using your same limits</p>
+                        </div>
+                        <div class="modal-footer justify-content-center  border-0">
+                            <div style="gap:10px;" class="d-flex flex-column flex-sm-row align-items-center justify-content-center mb-2">
+                                <button type="submit" class="btn btn-primary mx-auto"><span>Yes, It is</span></button>
+                                <button type="submit" class="btn btn-outline text-blue" data-bs-dismiss="modal" aria-label="Close">
+                                    <span>No, It’s Not</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
     </main>
