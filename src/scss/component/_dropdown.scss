@@ -226,7 +226,14 @@
     }
 }
 
-
+.input-group {
+    .f-dropdown {
+        > span {
+            border-left: 0;
+            border-right: 0;
+        }
+    }
+}
 
 @media only screen and (min-width: 1400px) {
     .f-dropdown {

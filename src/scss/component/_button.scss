@@ -95,6 +95,10 @@
     &.btn-outline-primary {
         color: var(--color-primary);
         border-color: var(--color-primary);
+        &:hover {
+            background-color: var(--color-primary) !important;
+            color: var(--color-white);
+        }
     }
 
     &.btn-outline {

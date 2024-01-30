@@ -71,7 +71,9 @@ a {
 .bg-light-blue {
   background-color: #f2f7fc;
 }
-
+.bg-grey {
+  background-color: #EDEDED !important;
+}
 .text-left {
   text-align: left;
 }
@@ -205,6 +207,9 @@ li {
 
 .h-auto {
   height: auto !important;
+}
+.h-fix-100 {
+  height: 100px !important;
 }
 
 .mb-3 {
