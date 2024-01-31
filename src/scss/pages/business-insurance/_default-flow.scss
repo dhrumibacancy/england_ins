@@ -1,0 +1,32 @@
+.card-box {
+  border: 1px solid #e6e6e6;
+  background: white;
+  border-radius: 4px;
+
+  .box-header {
+    border-bottom: 1px solid #e6e6e6;
+    padding: 16px;
+    h2 {
+      font-size: 18px;
+      font-weight: 400;
+      margin: 0;
+    }
+  }
+  .box-body {
+    padding: 16px;
+
+    label.label{
+        font-size: 16px;
+        font-weight: 500;
+        small{
+            font-weight: 400;
+            color: var(--color-title);
+        }
+    }
+  }
+}
+
+.white-box.multichoice-box{
+    max-width: 445px;
+    margin: 0 auto;
+}

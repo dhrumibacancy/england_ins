@@ -6,6 +6,12 @@
 .business-insurance-flow .btn {
   font-size: 16px !important;
 }
+.business-insurance-flow .content h3.title {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 90%;
+}
 .business-insurance-flow .data-center {
   width: 0;
 }
@@ -97,27 +103,13 @@
 .business-insurance-flow .radio-label.fs-14 {
   font-size: 14px !important;
 }
-.business-insurance-flow .accordion.custom .accordion-button.hide-arrow:after {
-  opacity: 0;
-}
-.business-insurance-flow .accordion.custom .accordion-button:not(.collapsed):after {
-  opacity: 1;
-}
-.business-insurance-flow .claim-section.auto-ratio {
-  max-width: 860px;
-  margin-left: auto;
-  margin-right: auto;
-}
-.business-insurance-flow .claim-section.auto-ratio label.checkbox-inline.squar-boxes {
-  flex-grow: 1;
-}
-.business-insurance-flow .claim-section label.checkbox-inline.squar-boxes .tooltip-card {
+.business-insurance-flow .tooltip-card {
   position: relative;
 }
-.business-insurance-flow .claim-section label.checkbox-inline.squar-boxes .tooltip-card img {
-  margin: 0;
+.business-insurance-flow .tooltip-card img {
+  margin: 0 !important;
 }
-.business-insurance-flow .claim-section label.checkbox-inline.squar-boxes .tooltip-card .tooltip-content {
+.business-insurance-flow .tooltip-card .tooltip-content {
   display: none;
   background-color: var(--color-blue-bg-light);
   color: var(--color-title);
@@ -128,11 +120,12 @@
   top: 0;
   left: calc(100% + 10px);
   z-index: 100000;
-  min-width: 190px;
+  min-width: 196px;
   text-align: left;
   font-size: 12px;
+  font-weight: 400;
 }
-.business-insurance-flow .claim-section label.checkbox-inline.squar-boxes .tooltip-card .tooltip-content:after {
+.business-insurance-flow .tooltip-card .tooltip-content:after {
   content: "";
   position: absolute;
   right: calc(100% - 5px);
@@ -146,8 +139,22 @@
   border-width: 0 0 1px 1px;
   border-bottom-left-radius: 4px;
 }
-.business-insurance-flow .claim-section label.checkbox-inline.squar-boxes .tooltip-card:hover .tooltip-content {
+.business-insurance-flow .tooltip-card:hover .tooltip-content {
   display: block;
+}
+.business-insurance-flow .accordion.custom .accordion-button.hide-arrow:after {
+  opacity: 0;
+}
+.business-insurance-flow .accordion.custom .accordion-button:not(.collapsed):after {
+  opacity: 1;
+}
+.business-insurance-flow .claim-section.auto-ratio {
+  max-width: 860px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.business-insurance-flow .claim-section.auto-ratio label.checkbox-inline.squar-boxes {
+  flex-grow: 1;
 }
 .business-insurance-flow .wide-box.claim-section label.checkbox-inline.squar-boxes {
   width: 220px;
@@ -197,4 +204,33 @@
 .business-insurance-flow .claim-section label.checkbox-inline.box-250 {
   width: 244px;
   height: 156px;
+}
+.business-insurance-flow .card-box {
+  border: 1px solid #e6e6e6;
+  background: white;
+  border-radius: 4px;
+}
+.business-insurance-flow .card-box .box-header {
+  border-bottom: 1px solid #e6e6e6;
+  padding: 16px;
+}
+.business-insurance-flow .card-box .box-header h2 {
+  font-size: 18px;
+  font-weight: 400;
+  margin: 0;
+}
+.business-insurance-flow .card-box .box-body {
+  padding: 16px;
+}
+.business-insurance-flow .card-box .box-body label.label {
+  font-size: 16px;
+  font-weight: 500;
+}
+.business-insurance-flow .card-box .box-body label.label small {
+  font-weight: 400;
+  color: var(--color-title);
+}
+.business-insurance-flow .white-box.multichoice-box {
+  max-width: 445px;
+  margin: 0 auto;
 }/*# sourceMappingURL=index.css.map */
