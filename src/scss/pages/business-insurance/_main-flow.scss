@@ -108,6 +108,53 @@
 .radio-label.fs-14 {
   font-size: 14px !important;
 }
+
+.tooltip-card {
+  position: relative;
+
+  img {
+    margin: 0 !important;
+  }
+  .tooltip-content {
+    display: none;
+    background-color: var(--color-blue-bg-light);
+    color: var(--color-title);
+    border: 1px solid var(--color-border-light);
+    padding: 6px 10px;
+    border-radius: 4px;
+    position: absolute;
+    top: 0;
+    left: calc(100% + 10px);
+    z-index: 100000;
+    min-width: 196px;
+    text-align: left;
+    font-size: 12px;
+    font-weight: 400;
+
+    &:after {
+      content: "";
+      position: absolute;
+      right: calc(100% - 5px);
+      top: 5px;
+      width: 10px;
+      height: 10px;
+      transform: rotate(45deg);
+      background: #f1f8fe;
+      display: block;
+      border: solid #ddd;
+      border-width: 00 0 1px 1px;
+      border-bottom-left-radius: 4px;
+    }
+  }
+
+  &:hover {
+    .tooltip-content {
+      display: block;
+    }
+  }
+}
+
+
 .accordion.custom .accordion-button {
   &.hide-arrow:after {
     opacity: 0;
@@ -126,51 +173,11 @@
     }
   }
   label.checkbox-inline.squar-boxes {
-    .tooltip-card {
-      position: relative;
-
-      img {
-        margin: 0;
-      }
-      .tooltip-content {
-        display: none;
-        background-color: var(--color-blue-bg-light);
-        color: var(--color-title);
-        border: 1px solid var(--color-border-light);
-        padding: 6px 10px;
-        border-radius: 4px;
-        position: absolute;
-        top: 0;
-        left: calc(100% + 10px);
-        z-index: 100000;
-        min-width: 190px;
-        text-align: left;
-        font-size: 12px;
-
-        &:after {
-          content: "";
-          position: absolute;
-          right: calc(100% - 5px);
-          top: 5px;
-          width: 10px;
-          height: 10px;
-          transform: rotate(45deg);
-          background: #f1f8fe;
-          display: block;
-          border: solid #ddd;
-          border-width: 00 0 1px 1px;
-          border-bottom-left-radius: 4px;
-        }
-      }
-
-      &:hover {
-        .tooltip-content {
-          display: block;
-        }
-      }
-    }
+    
   }
 }
+
+
 
 .wide-box.claim-section label.checkbox-inline.squar-boxes {
   width: 220px;

@@ -1,14 +1,22 @@
 .business-insurance-flow {
-    .form-control,
-    .f-dropdown > span{
-        height: 52px;
-        font-size: 16px;
-    }
+  .form-control,
+  .f-dropdown > span {
+    height: 52px;
+    font-size: 16px;
+  }
 
-    .btn{
-        font-size: 16px !important;
-    }
+  .btn {
+    font-size: 16px !important;
+  }
 
-    @import "main-flow";
-    @import "rastaurant-flow";
+  .content h3.title {
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 90%;
+  }
+
+  @import "main-flow";
+  @import "rastaurant-flow";
+  @import "default-flow";
 }
