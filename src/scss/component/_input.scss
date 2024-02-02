@@ -183,13 +183,14 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 .radio-pill {
   .radio-label {
     padding: 6px 12px;
-    border: 1px solid #b3d3ec;
+    border: 1px solid #E9F3FC;
     border-radius: 4px;
     color: #016bbf;
     font-weight: 500;
     font-size: 14px;
     line-height: 18px;
     margin-left: 0;
+    background: #E9F3FC;
   }
   input.radio-control:checked ~ .radio-label {
     background: #016bbf;

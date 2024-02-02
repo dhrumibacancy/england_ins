@@ -127,6 +127,53 @@
                                     <div class="vehicle-details">
                                         <div class="row g-3">
                                             <div class="col-12">
+                                                <div class="blue-light-box bg-white mt-3">
+                                                    <label class="fs-16 font-bold w-auto mb-2">
+                                                        Coverage Level <i tabindex="0" class="ms-1 data-toggle fa-solid fa-info text-gray" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="This coverage may provide liability for certain watercrafts, it does not provide any coverage to repair or replace your watercraft"></i>
+                                                    </label>
+                                                    <div class="row g-3">
+                                                        <div class="col-md-4">
+                                                            <label class="radio-inline radio-btn text-center mb-2" for="coverLevel1">
+                                                                <input class="radio-control" type="radio" name="coverLevel" value="" id="coverLevel1">
+                                                                <span class="radio-custom"></span>
+                                                                <span class="radio-label fs-14 bg-white w-100">Low</span>
+                                                            </label>
+                                                        </div>
+                                                        <div class="col-md-4">
+                                                            <label class="radio-inline radio-btn text-center mb-2" for="coverLevel2">
+                                                                <input class="radio-control" type="radio" name="coverLevel" value="" id="coverLevel2">
+                                                                <span class="radio-custom"></span>
+                                                                <span class="radio-label fs-14 bg-white w-100">Medium</span>
+                                                            </label>
+                                                        </div>
+                                                        <div class="col-md-4">
+                                                            <label class="radio-inline radio-btn text-center mb-2" for="coverLevel3">
+                                                                <input class="radio-control" type="radio" name="coverLevel" value="" id="coverLevel3">
+                                                                <span class="radio-custom"></span>
+                                                                <span class="radio-label fs-14 bg-white w-100">High</span>
+                                                            </label>
+                                                        </div>
+                                                        <div class="col-12">
+                                                            <div class="properties-container">
+                                                                <button class="text-blue m-0 px-2 py-2 text-center w-100">
+                                                                    <img src="../images/candle.svg" alt="Candle" class="icon" />
+                                                                    Customize Coverage
+                                                                </button>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-12">
+                                                            <div class="d-flex justify-content-end">
+                                                                <label class="checkbox-inline mb-0 w-auto" for="vehciles1">
+                                                                    <input class="checkbox-control" type="checkbox" value="" id="vehciles1">
+                                                                    <span class="checkbox-custom"></span>
+                                                                    <span class="checkbox-label fs-14">Apply to all Vehicles</span>
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-12">
                                                 <div class="accordion custom" id="vehicleSummary">
                                                     <div class="accordion-item shadow-none border bg-white rounded-2">
                                                         <h2 class="accordion-header" id="vehicleHead1">
@@ -164,17 +211,6 @@
                                                                                     <span class="input-group-text border-0 bg-white d-block pe-2">$</span>
                                                                                 </span>
                                                                                 <input type="text" placeholder="Amount Vehicle is Worth" />
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="col-md-6">
-                                                                        <div class="form-group">
-                                                                            <label class="mb-1 fs-14 text-black fw-normal">Vehicle Weight</label>
-                                                                            <div class="input-group form-control px-0">
-                                                                                <input type="text" placeholder="Vehicle Weight" />
-                                                                                <span class="input-group-append ">
-                                                                                    <span class="input-group-text border-0 bg-white d-block pe-2">lbs</span>
-                                                                                </span>
                                                                             </div>
                                                                         </div>
                                                                     </div>
@@ -233,61 +269,6 @@
                                                                             </div>
                                                                         </div>
                                                                     </div>
-                                                                    <div class="col-12">
-                                                                        <label class="mb-1 fs-14 text-black fw-normal">Trailer Type</label>
-                                                                        <div class="row g-2">
-                                                                            <div class="col">
-                                                                                <label class="checkbox-inline squar-boxes blue-select blue-shadow h-fix-100 m-0 w-100" for="trailer-type1">
-                                                                                    <input class="checkbox-control" type="radio" name="trailer-type1" value="" id="trailer-type1">
-                                                                                    <span class="checkbox-label border justify-content-around shadow-none fs-14">
-                                                                                        <img src="../images/utility-trailer.png" alt="" class="h-auto active" />
-                                                                                        <img src="../images/utility-trailer.png" alt="" class="h-auto offline" />
-                                                                                        Utility Trailer
-                                                                                    </span>
-                                                                                </label>
-                                                                            </div>
-                                                                            <div class="col">
-                                                                                <label class="checkbox-inline squar-boxes blue-select blue-shadow h-fix-100 m-0 w-100" for="trailer-type2">
-                                                                                    <input class="checkbox-control" type="radio" name="trailer-type1" value="" id="trailer-type2">
-                                                                                    <span class="checkbox-label border justify-content-around shadow-none fs-14">
-                                                                                        <img src="../images/dump-trailer.png" alt="" class="h-auto active" />
-                                                                                        <img src="../images/dump-trailer.png" alt="" class="h-auto offline" />
-                                                                                        Dump Trailer
-                                                                                    </span>
-                                                                                </label>
-                                                                            </div>
-                                                                            <div class="col">
-                                                                                <label class="checkbox-inline squar-boxes blue-select blue-shadow h-fix-100 m-0 w-100" for="trailer-type3">
-                                                                                    <input class="checkbox-control" type="radio" name="trailer-type1" value="" id="trailer-type3">
-                                                                                    <span class="checkbox-label border justify-content-around shadow-none fs-14">
-                                                                                        <img src="../images/flatbed-trailer.png" alt="" class="h-auto active" />
-                                                                                        <img src="../images/flatbed-trailer.png" alt="" class="h-auto offline" />
-                                                                                        Flatbed Trailer
-                                                                                    </span>
-                                                                                </label>
-                                                                            </div>
-                                                                            <div class="col">
-                                                                                <label class="checkbox-inline squar-boxes blue-select blue-shadow h-fix-100 m-0 w-100" for="trailer-type4">
-                                                                                    <input class="checkbox-control" type="radio" name="trailer-type1" value="" id="trailer-type4">
-                                                                                    <span class="checkbox-label border justify-content-around shadow-none fs-14">
-                                                                                        <img src="../images/auto-hauler.png" alt="" class="h-auto active" />
-                                                                                        <img src="../images/auto-hauler.png" alt="" class="h-auto offline" />
-                                                                                        Auto Hauler
-                                                                                    </span>
-                                                                                </label>
-                                                                            </div>
-                                                                            <div class="col">
-                                                                                <label class="checkbox-inline squar-boxes blue-select blue-shadow h-fix-100 m-0 w-100" data-bs-toggle="modal" data-bs-target="#trailersModal" for="trailer-type5">
-                                                                                    <!-- <input class="checkbox-control" type="radio" name="vehicle-type" value="" id="vehicle-type15"> -->
-                                                                                    <span class="checkbox-label border justify-content-around shadow-none fs-14">
-                                                                                        <img src="../images/more-vehicles.png" alt="" class="w-auto active" />
-                                                                                        <img src="../images/more-vehicles.png" alt="" class="w-auto offline" />
-                                                                                        More Trailers
-                                                                                    </span>
-                                                                                </label>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
                                                                     <div class="col-md-5">
                                                                         <div class="form-group">
                                                                             <label class="mb-1 fs-14 text-black fw-normal">Which Coverage would you like</label>
@@ -335,6 +316,132 @@
                                                                         </label>
                                                                     </div>
                                                                     <div class="col-12">
+                                                                        <div class="row g-3">
+                                                                            <div class="col-md-6">
+                                                                                <div class="form-group">
+                                                                                    <label class="mb-1 fs-14 text-gray fw-normal">Limited Collison</label>
+                                                                                    <div class="f-group max-width-100">
+                                                                                        <div class="f-dropdown selectDropdown">
+                                                                                            <select class="f-control f-dropdown" placeholder="Limited Collison" id="1">
+                                                                                                <option value="">0</option>
+                                                                                                <option value="1" selected>500</option>
+                                                                                            </select>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-md-6">
+                                                                                <div class="form-group">
+                                                                                    <label class="mb-1 fs-14 text-gray fw-normal">Rental Car</label>
+                                                                                    <div class="f-group max-width-100">
+                                                                                        <div class="f-dropdown selectDropdown">
+                                                                                            <select class="f-control f-dropdown" placeholder="Rental Car" id="1">
+                                                                                                <option value="">0</option>
+                                                                                                <option value="1" selected>None</option>
+                                                                                            </select>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-md-6">
+                                                                                <div class="form-group">
+                                                                                    <label class="mb-1 fs-14 text-gray fw-normal">Comprehensive</label>
+                                                                                    <div class="f-group max-width-100">
+                                                                                        <div class="f-dropdown selectDropdown">
+                                                                                            <select class="f-control f-dropdown" placeholder="Comprehensive" id="1">
+                                                                                                <option value="">0</option>
+                                                                                                <option value="1">Omit (none/no coverage)</option>
+                                                                                                <option value="2" selected>User input</option>
+                                                                                            </select>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-md-6">
+                                                                                <div class="form-group">
+                                                                                    <label class="mb-1 fs-14 text-gray fw-normal">Towing & Labor</label>
+                                                                                    <div class="input-group form-control px-0">
+                                                                                        <span class="input-group-append ">
+                                                                                            <span class="input-group-text border-0 bg-white d-block pe-2">$</span>
+                                                                                        </span>
+                                                                                        <div class="f-group max-width-100 w-100">
+                                                                                            <div class="f-dropdown selectDropdown">
+                                                                                                <select class="f-control f-dropdown" placeholder="Towing & Labor" id="1">
+                                                                                                    <option value="">0</option>
+                                                                                                    <option value="1" selected>100</option>
+                                                                                                </select>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-12">
+                                                                        <div class="d-flex justify-content-between mb-3">
+                                                                            <div>
+                                                                                <div class="d-flex align-items-center justify-content-start">
+                                                                                    <h5 class="mb-1 fs-18 text-black me-2">Limits</h5>
+                                                                                </div>
+                                                                                <p class="fs-14 ">20/40 Bodily Injury & Personal Injury already included</p>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="row g-3">
+                                                                            <div class="col-md-6">
+                                                                                <div class="form-group">
+                                                                                    <label class="mb-1 fs-14 text-black fw-normal">Optional Bodily Injury</label>
+                                                                                    <div class="f-group max-width-100">
+                                                                                        <div class="f-dropdown selectDropdown">
+                                                                                            <select class="f-control f-dropdown" placeholder="Optional Bodily Injury" id="1">
+                                                                                                <option value="">0</option>
+                                                                                                <option value="1">Optional Bodily Injury</option>
+                                                                                            </select>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-md-6">
+                                                                                <div class="form-group">
+                                                                                    <label class="mb-1 fs-14 text-black fw-normal">Medical Payments</label>
+                                                                                    <div class="f-group max-width-100">
+                                                                                        <div class="f-dropdown selectDropdown">
+                                                                                            <select class="f-control f-dropdown" placeholder="Medical Payments" id="1">
+                                                                                                <option value="">0</option>
+                                                                                                <option value="1">Medical Payments</option>
+                                                                                            </select>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-md-6">
+                                                                                <div class="form-group">
+                                                                                    <label class="mb-1 fs-14 text-black fw-normal">Property Damage</label>
+                                                                                    <div class="f-group max-width-100">
+                                                                                        <div class="f-dropdown selectDropdown">
+                                                                                            <select class="f-control f-dropdown" placeholder="Property Damage" id="1">
+                                                                                                <option value="">0</option>
+                                                                                                <option value="1">Property Damage</option>
+                                                                                            </select>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-md-6">
+                                                                                <div class="form-group">
+                                                                                    <label class="mb-1 fs-14 text-black fw-normal">Un/Under Insured</label>
+                                                                                    <div class="f-group max-width-100">
+                                                                                        <div class="f-dropdown selectDropdown">
+                                                                                            <select class="f-control f-dropdown" placeholder="Un/Under Insured" id="1">
+                                                                                                <option value="">0</option>
+                                                                                                <option value="1">Un/Under Insured</option>
+                                                                                            </select>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-12">
                                                                         <div class="form-group">
                                                                             <label class="mb-1 fs-14 text-black fw-normal">Are you buying from a dealer?</label>
                                                                             <div class="d-flex align-items-center justify-content-start">
@@ -355,19 +462,6 @@
                                                                             </div>
                                                                         </div>
                                                                     </div>
-                                                                    <div class="col-12">
-                                                                        <div class="form-group">
-                                                                            <label class="mb-1 fs-14 text-gray fw-normal">Hitch Type</label>
-                                                                            <div class="f-group max-width-100">
-                                                                                <div class="f-dropdown selectDropdown">
-                                                                                    <select class="f-control f-dropdown" placeholder="Select Hitch Type" id="1">
-                                                                                        <option value="">Select Hitch Type</option>
-                                                                                        <option value="1">Cousin</option>
-                                                                                    </select>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
                                                                     <div class="col-md-6">
                                                                         <div class="form-group">
                                                                             <label class="mb-1 fs-14 text-gray fw-normal">Is this be Financed or Leased?</label>
@@ -375,20 +469,8 @@
                                                                                 <div class="f-dropdown selectDropdown">
                                                                                     <select class="f-control f-dropdown" placeholder="Is this be Financed or Leased?" id="1">
                                                                                         <option value="">0</option>
-                                                                                        <option value="1" selected>Financed</option>
-                                                                                    </select>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="col-md-6">
-                                                                        <div class="form-group">
-                                                                            <label class="mb-1 fs-14 fw-normal text-black">Lender</label>
-                                                                            <div class="f-group max-width-100">
-                                                                                <div class="f-dropdown selectDropdown">
-                                                                                    <select class="f-control f-dropdown" placeholder="Select Lender" id="1">
-                                                                                        <option value="">Select Lender</option>
                                                                                         <option value="1">Financed</option>
+                                                                                        <option value="2" selected>Not Financed or Leased</option>
                                                                                     </select>
                                                                                 </div>
                                                                             </div>
@@ -942,44 +1024,6 @@
                                                         <img src="../images/add-pluse-circle.svg" alt="Add" class="icon" />
                                                         Add Vehicle
                                                     </a>
-                                                </div>
-                                            </div>
-                                            <div class="col-12">
-                                                <div class="blue-light-box bg-white mt-3">
-                                                    <label class="fs-16 font-bold w-auto mb-2">
-                                                        Coverage Level <i tabindex="0" class="ms-1 data-toggle fa-solid fa-info text-gray" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="This coverage may provide liability for certain watercrafts, it does not provide any coverage to repair or replace your watercraft"></i>
-                                                    </label>
-                                                    <div class="row g-3">
-                                                        <div class="col-md-4">
-                                                            <label class="radio-inline radio-btn text-center mb-2" for="coverLevel1">
-                                                                <input class="radio-control" type="radio" name="coverLevel" checked value="" id="coverLevel1">
-                                                                <span class="radio-custom"></span>
-                                                                <span class="radio-label fs-14 bg-white w-100">Low</span>
-                                                            </label>
-                                                        </div>
-                                                        <div class="col-md-4">
-                                                            <label class="radio-inline radio-btn text-center mb-2" for="coverLevel2">
-                                                                <input class="radio-control" type="radio" name="coverLevel" value="" id="coverLevel2">
-                                                                <span class="radio-custom"></span>
-                                                                <span class="radio-label fs-14 bg-white w-100">Medium</span>
-                                                            </label>
-                                                        </div>
-                                                        <div class="col-md-4">
-                                                            <label class="radio-inline radio-btn text-center mb-2" for="coverLevel3">
-                                                                <input class="radio-control" type="radio" name="coverLevel" value="" id="coverLevel3">
-                                                                <span class="radio-custom"></span>
-                                                                <span class="radio-label fs-14 bg-white w-100">High</span>
-                                                            </label>
-                                                        </div>
-                                                        <div class="col-12">
-                                                            <div class="properties-container">
-                                                                <button class="text-blue m-0 px-2 py-2 text-center w-100">
-                                                                    <img src="../images/candle.svg" alt="Candle" class="icon" />
-                                                                    Customize Coverage
-                                                                </button>
-                                                            </div>
-                                                        </div>
-                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
