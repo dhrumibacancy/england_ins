@@ -192,6 +192,11 @@ li {
   width: 100% !important;
 }
 
+.container-md{
+  max-width: 970px;
+  margin: 0 auto;
+}
+
 @media screen and (min-width: 576px) {
   .w-sm-100 {
     width: 100%;

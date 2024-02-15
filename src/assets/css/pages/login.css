@@ -483,6 +483,10 @@ h1 {
   cursor: pointer;
 }
 
+.data-toggle.text-blue {
+  border-color: var(--color-primary);
+}
+
 .popover-body {
   padding: 6px 10px;
   color: #616161;
@@ -495,5 +499,83 @@ h1 {
 
 .priceConfirm .modal-dialog.modal-lg {
   max-width: 710px;
+}
+
+.upload_take_img {
+  padding: 24px;
+  width: 432px;
+  background-color: #F2F7FC;
+  border-radius: 10px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.uploadBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
+  width: 180px;
+  height: 160px;
+  cursor: pointer;
+}
+.uploadBox input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+  position: absolute;
+}
+.uploadBox span {
+  padding: 24px 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+  width: 100%;
+  border-radius: 12px;
+  background-color: #E6F1F9;
+}
+.uploadBox span img {
+  width: 80px;
+}
+.uploadBox .doc-upload {
+  background-color: #fff;
+  border-radius: 6px;
+  border: 1px solid #99C4E5;
+  position: relative;
+}
+.uploadBox .doc-upload > img {
+  padding: 3px;
+}
+.uploadBox .delete-doc {
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  right: 4px;
+  top: 4px;
+  font-size: 0;
 }
 /*# sourceMappingURL=login.css.map */
