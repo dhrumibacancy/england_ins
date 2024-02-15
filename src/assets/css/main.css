@@ -367,6 +367,10 @@ a {
   background-color: #f2f7fc;
 }
 
+.bg-grey {
+  background-color: #EDEDED !important;
+}
+
 .text-left {
   text-align: left;
 }
@@ -521,6 +525,10 @@ li {
 
 .h-auto {
   height: auto !important;
+}
+
+.h-fix-100 {
+  height: 100px !important;
 }
 
 .mb-3 {
@@ -2991,6 +2999,37 @@ label.checkbox-inline.squar-boxes img.offline {
   display: block;
 }
 
+label.checkbox-inline.squar-boxes.blue-shadow {
+  background: none;
+  border-radius: 0;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  padding: 0;
+}
+label.checkbox-inline.squar-boxes.blue-shadow .checkbox-label {
+  width: 100%;
+  height: 100%;
+  -webkit-box-shadow: 0px 20px 30px 0px rgba(0, 0, 0, 0.0784313725);
+  box-shadow: 0px 20px 30px 0px rgba(0, 0, 0, 0.0784313725);
+  background: #fff;
+  border-radius: 12px;
+  padding: 10px;
+}
+label.checkbox-inline.squar-boxes.blue-shadow .checkbox-control:checked ~ .checkbox-label {
+  -webkit-box-shadow: 0px 20px 30px 0px #ddeefb;
+  box-shadow: 0px 20px 30px 0px #ddeefb;
+}
+label.checkbox-inline.squar-boxes.blue-shadow .checkbox-control:disabled ~ .checkbox-label {
+  pointer-events: none;
+  opacity: 0.5;
+  cursor: no-drop;
+}
+label.checkbox-inline.squar-boxes.blue-shadow.blue-select .checkbox-control:checked ~ .checkbox-label {
+  background-color: #E6F1F9;
+  border-color: #B3D3EC !important;
+  color: #016BBF;
+}
+
 .accordion.custom > .accordion-item.accordion-white.bordered {
   border: 1px solid var(--color-border-light);
   -webkit-box-shadow: none;
@@ -3395,6 +3434,10 @@ h1 {
   cursor: pointer;
 }
 
+.data-toggle.text-blue {
+  border-color: var(--color-primary);
+}
+
 .popover-body {
   padding: 6px 10px;
   color: #616161;
@@ -3407,6 +3450,84 @@ h1 {
 
 .priceConfirm .modal-dialog.modal-lg {
   max-width: 710px;
+}
+
+.upload_take_img {
+  padding: 24px;
+  width: 432px;
+  background-color: #F2F7FC;
+  border-radius: 10px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.uploadBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
+  width: 180px;
+  height: 160px;
+  cursor: pointer;
+}
+.uploadBox input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+  position: absolute;
+}
+.uploadBox span {
+  padding: 24px 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+  width: 100%;
+  border-radius: 12px;
+  background-color: #E6F1F9;
+}
+.uploadBox span img {
+  width: 80px;
+}
+.uploadBox .doc-upload {
+  background-color: #fff;
+  border-radius: 6px;
+  border: 1px solid #99C4E5;
+  position: relative;
+}
+.uploadBox .doc-upload > img {
+  padding: 3px;
+}
+.uploadBox .delete-doc {
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  right: 4px;
+  top: 4px;
+  font-size: 0;
 }
 
 main .wrapper .admin-section-container {
@@ -9719,6 +9840,11 @@ main .wrapper .admin-section-container .content {
     width: 6px;
   }
 }
+.input-group .f-dropdown > span {
+  border-left: 0;
+  border-right: 0;
+}
+
 @media only screen and (min-width: 1400px) {
   .f-dropdown > span {
     height: 50px;
@@ -9816,6 +9942,10 @@ main .wrapper .admin-section-container .content {
 .btn.btn-outline-primary {
   color: var(--color-primary);
   border-color: var(--color-primary);
+}
+.btn.btn-outline-primary:hover {
+  background-color: var(--color-primary) !important;
+  color: var(--color-white);
 }
 .btn.btn-outline {
   border: 1px solid #CCCCCC;
@@ -9978,6 +10108,12 @@ input:-webkit-autofill:active {
           box-shadow: none;
 }
 
+textarea.form-control {
+  height: 100px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
 .input-group {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -10102,6 +10238,22 @@ input[type=date]::-webkit-calendar-picker-indicator {
   bottom: 2px;
   position: relative;
   margin-left: 5px;
+}
+
+.radio-pill .radio-label {
+  padding: 6px 12px;
+  border: 1px solid #b3d3ec;
+  border-radius: 4px;
+  color: #016bbf;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  margin-left: 0;
+}
+.radio-pill input.radio-control:checked ~ .radio-label {
+  background: #016bbf;
+  border: 1px solid #016bbf;
+  color: #fff;
 }
 
 .accordion.custom .accordion-item {
