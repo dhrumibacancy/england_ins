@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="theme-color" content="#BE2530">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>New England Insurance Policy</title>
+        <link rel="apple-touch-icon" sizes="57x57" href="../images/favicon/apple-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="../images/favicon/apple-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="../images/favicon/apple-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="../images/favicon/apple-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="../images/favicon/apple-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="../images/favicon/apple-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="../images/favicon/apple-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="../images/favicon/apple-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="../images/favicon/apple-icon-180x180.png">
+        <link rel="icon" type="image/png" sizes="192x192" href="../images/favicon//android-icon-192x192.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon//favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="../images/favicon//favicon-96x96.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="../images/favicon//favicon-16x16.png">
+        <link rel="manifest" href="/manifest.json">
+        <meta name="msapplication-TileColor" content="#ffffff">
+        <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+        <meta name="theme-color" content="#ffffff">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css">
+        <link rel="icon" href="../images/favicon.png" type="image/gif" sizes="16x16">
+        <link rel="stylesheet" href="../assets/css/main.css">
+    </head>
+    <body>
+        <main>
+            <div class="wrapper">
+                <nav class="navbar bg-dark fixed-top">
+                    <div class="container-fluid text-center">
+                        <div class="d-flex align-items-center justify-content-center">
+                            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <a class="navbar-brand d-none d-md-block" href="#">
+                                <img src="../images/logo.svg" alt="">
+                            </a>
+                        </div>
+                        <a class="navbar-brand d-md-none m-0" href="#">
+                            <img src="../images/logo.svg" alt="">
+                        </a>
+                        <div class="d-flex align-items-center justify-content-center">
+                            <div class="f-group me-3 pe-2">
+                                <select class="f-control f-dropdown" placeholder="Please choose 2">
+                                    <option value=""> </option>
+                                    <option value="1" selected="selected" data-image="../images/us_flag.svg">English</option>
+                                    <option value="2" data-image="https://newenglandfamily.com/wp-content/plugins/polylang/flags/pt.png">Português</option>
+                                    <option value="3" data-image="https://newenglandfamily.com/wp-content/plugins/polylang/flags/es.png">Español</option>
+                                </select>
+                            </div>
+                            <img src="../images/message-question.svg" alt="" class="me-3 pe-2 nav-icon d-none d-md-block">
+                            <img src="../images/user.svg" alt="" class="nav-icon d-none d-md-block">
+                        </div>
+                        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                            <div class="offcanvas-header">
+                                <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                            </div>
+                            <div class="offcanvas-body">
+                                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                                    <li class="nav-item ">
+                                        <a class="nav-link active text-left" aria-current="page" href="#"> 
+                                            <img src="../images/message-question-blue.svg" alt="" class="d-inline-block me-3 pe-2 nav-icon nav-icon-mob">
+                                            Help
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link  text-left" href="#">
+                                            <img src="../images/user-blue.svg" alt="" class="nav-icon d-inline-block nav-icon-mob">
+                                            User
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+                <div class="content-main">
+                    <div class="content">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col">
+                                    <div class="progress">
+                                        <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0"
+                                            aria-valuemax="100" style="width:20%">
+                                        </div>
+                                    </div>
+                                    <div class="progress-text mt-1">Business</div>
+                                </div>
+                                <div class="col">
+                                    <div class="progress">
+                                        <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0"
+                                            aria-valuemax="100" style="width:0%">
+                                        </div>
+                                    </div>
+                                    <div class="progress-text mt-1">Business</div>
+                                </div>
+                                <div class="col">
+                                    <div class="progress">
+                                        <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0"
+                                            aria-valuemax="100" style="width:0%">
+                                        </div>
+                                    </div>
+                                    <div class="progress-text mt-1">Business</div>
+                                </div>
+                            </div>
+                            <a class="text-blue ms-3 back-arrow" href="#"><i class="fa fa-arrow-left-long me-2"></i>BACK</a>
+                        </div>
+                        <div class="container mt-5 pt-5">
+                            <div class="text-center mb-4 user-info">
+                                <img src="../images/user-person.svg" alt="" class="user-person mx-auto">
+                                <p class="user-welcome mt-2">Hey! My Name is Anne</p>
+                            </div>
+                            <h3 class="title  text-center">Policy Details</h3>
+                            <div class="contain-wrapper-sm">
+                                <form class="mt-4">
+                                    <div class="blue-light-box bg-white mb-3">
+                                        <div class="vehicle-details">
+                                            <p class="fs-16 fw-bold pb-2 mb-3 border-bottom">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M5 4.75C4.69332 4.75 4.41754 4.93671 4.30364 5.22146L2.30364 10.2215C2.26821 10.31 2.25 10.4046 2.25 10.5V16.5C2.25 16.9142 2.58579 17.25 3 17.25H4.35424C4.48112 17.6975 4.72067 18.1098 5.05546 18.4445C5.57118 18.9603 6.27065 19.25 7 19.25C7.72935 19.25 8.42882 18.9603 8.94454 18.4445C9.27933 18.1098 9.51887 17.6975 9.64576 17.25H14.3542C14.4811 17.6975 14.7207 18.1098 15.0555 18.4445C15.5712 18.9603 16.2707 19.25 17 19.25C17.7293 19.25 18.4288 18.9603 18.9445 18.4445C19.2793 18.1098 19.5189 17.6975 19.6458 17.25H21C21.4142 17.25 21.75 16.9142 21.75 16.5V12.5C21.75 11.7707 21.4603 11.0712 20.9445 10.5555C20.4288 10.0397 19.7293 9.75 19 9.75H18.3605L14.5857 5.03148C14.4433 4.85357 14.2278 4.75 14 4.75H5ZM19.6458 15.75H20.25V12.5C20.25 12.1685 20.1183 11.8505 19.8839 11.6161C19.6495 11.3817 19.3315 11.25 19 11.25H3.75V15.75H4.35424C4.48112 15.3025 4.72067 14.8902 5.05546 14.5555C5.57118 14.0397 6.27065 13.75 7 13.75C7.72935 13.75 8.42882 14.0397 8.94454 14.5555C9.27933 14.8902 9.51887 15.3025 9.64576 15.75H14.3542C14.4811 15.3025 14.7207 14.8902 15.0555 14.5555C15.5712 14.0397 16.2707 13.75 17 13.75C17.7293 13.75 18.4288 14.0397 18.9445 14.5555C19.2793 14.8902 19.5189 15.3025 19.6458 15.75ZM15.75 16.5C15.75 16.8315 15.8817 17.1495 16.1161 17.3839C16.3505 17.6183 16.6685 17.75 17 17.75C17.3315 17.75 17.6495 17.6183 17.8839 17.3839C18.1183 17.1495 18.25 16.8315 18.25 16.5C18.25 16.1685 18.1183 15.8505 17.8839 15.6161C17.6495 15.3817 17.3315 15.25 17 15.25C16.6685 15.25 16.3505 15.3817 16.1161 15.6161C15.8817 15.8505 15.75 16.1685 15.75 16.5ZM8.25 16.5C8.25 16.1685 8.1183 15.8505 7.88388 15.6161C7.64946 15.3817 7.33152 15.25 7 15.25C6.66848 15.25 6.35054 15.3817 6.11612 15.6161C5.8817 15.8505 5.75 16.1685 5.75 16.5C5.75 16.8315 5.8817 17.1495 6.11612 17.3839C6.35054 17.6183 6.66848 17.75 7 17.75C7.33152 17.75 7.64946 17.6183 7.88388 17.3839C8.1183 17.1495 8.25 16.8315 8.25 16.5ZM11.25 9.75H4.10777L5.50777 6.25H11.25V9.75ZM12.75 9.75V6.25H13.6395L16.4395 9.75H12.75Z" fill="#8A8A8A"/>
+                                                </svg>
+                                                Commercial Auto
+                                            </p>
+                                            <div class="row g-3">
+                                                <div class="col-sm-6">
+                                                    <div class="form-group">
+                                                        <label class="mb-1 fs-14">Current Company</label>
+                                                        <div class="f-group max-width-100">
+                                                            <div class="f-dropdown selectDropdown">
+                                                                <select class="f-control f-dropdown" placeholder="Select Current Company" id="selectCity">
+                                                                    <option value="">Select Current Company</option>
+                                                                    <option value="1">city 1</option>
+                                                                    <option value="2">city 2</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-6">
+                                                    <div class="form-group">
+                                                        <label class="mb-1 fs-14">Policy Number</label>
+                                                        <input type="text" placeholder="Policy Number" class="form-control">
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-6">
+                                                    <div class="form-group">
+                                                        <label class="mb-1 fs-14">Number of Years</label>
+                                                        <input type="text" placeholder="# of Years" class="form-control">
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-6">
+                                                    <div class="form-group">
+                                                        <label class="mb-1 fs-14">Number of Months</label>
+                                                        <input type="text" placeholder="# of months" class="form-control">
+                                                    </div>
+                                                </div>
+                                                <div class="col-12">
+                                                    <div class="form-group">
+                                                        <label class="mb-1 fs-14">Current Limits</label>
+                                                        <div class="row g-3">
+                                                            <div class="col-sm-6">
+                                                                <div class="f-group max-width-100">
+                                                                    <div class="f-dropdown selectDropdown">
+                                                                        <select class="f-control f-dropdown" placeholder="Current Limit" id="selectCity">
+                                                                            <option value="">Current Limit</option>
+                                                                            <option value="1">$300,000 SL</option>
+                                                                            <option value="2">$500,000 SL</option>
+                                                                        </select>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-sm-6">
+                                                                <div class="f-group max-width-100">
+                                                                    <div class="f-dropdown selectDropdown">
+                                                                        <select class="f-control f-dropdown" placeholder="Common Single Limit" id="selectState">
+                                                                            <option value="">Common Single Limit</option>
+                                                                            <option value="1">$300,000 CSL</option>
+                                                                            <option value="2">$500,000 CSL</option>
+                                                                            <option value="3">$1 Million CSL</option>
+                                                                        </select>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="blue-light-box bg-white mb-3">
+                                        <div class="vehicle-details">
+                                            <p class="fs-16 fw-bold pb-2 mb-3 border-bottom">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M10.6309 1.65698C9.37108 1.65698 8.1629 2.15743 7.2721 3.04823C6.3813 3.93902 5.88086 5.1472 5.88086 6.40698C5.88086 7.66676 6.3813 8.87494 7.2721 9.76574C8.1629 10.6565 9.37108 11.157 10.6309 11.157C11.8906 11.157 13.0988 10.6565 13.9896 9.76574C14.8804 8.87494 15.3809 7.66676 15.3809 6.40698C15.3809 5.1472 14.8804 3.93902 13.9896 3.04823C13.0988 2.15743 11.8906 1.65698 10.6309 1.65698ZM8.33276 4.10889C8.94226 3.49939 9.76891 3.15698 10.6309 3.15698C11.4928 3.15698 12.3195 3.49939 12.929 4.10889C13.5385 4.71838 13.8809 5.54503 13.8809 6.40698C13.8809 7.26894 13.5385 8.09559 12.929 8.70508C12.3195 9.31457 11.4928 9.65698 10.6309 9.65698C9.76891 9.65698 8.94226 9.31457 8.33276 8.70508C7.72327 8.09559 7.38086 7.26894 7.38086 6.40698C7.38086 5.54503 7.72327 4.71838 8.33276 4.10889Z" fill="#8A8A8A"/>
+                                                    <path d="M6.33276 15.1089C6.94226 14.4994 7.76891 14.157 8.63086 14.157H10.6309C11.0451 14.157 11.3809 13.8212 11.3809 13.407C11.3809 12.9928 11.0451 12.657 10.6309 12.657H8.63086C7.37108 12.657 6.1629 13.1574 5.2721 14.0482C4.3813 14.939 3.88086 16.1472 3.88086 17.407V19.407C3.88086 19.8212 4.21665 20.157 4.63086 20.157C5.04507 20.157 5.38086 19.8212 5.38086 19.407V17.407C5.38086 16.545 5.72327 15.7184 6.33276 15.1089Z" fill="#8A8A8A"/>
+                                                    <path d="M17.2521 16.0668C17.545 16.3597 17.545 16.8346 17.2521 17.1275L15.6357 18.7439C15.495 18.8846 15.3043 18.9636 15.1053 18.9636C14.9064 18.9636 14.7157 18.8846 14.575 18.7439L13.7668 17.9357C13.4739 17.6428 13.4739 17.168 13.7668 16.8751C14.0597 16.5822 14.5346 16.5822 14.8274 16.8751L15.1053 17.153L16.1915 16.0668C16.4844 15.7739 16.9592 15.7739 17.2521 16.0668Z" fill="#8A8A8A"/>
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M18.0426 13.723L17.6695 13.6586L17.4272 13.3677C16.4277 12.1678 14.585 12.1678 13.5855 13.3677L13.3432 13.6586L12.9701 13.723C11.4312 13.9886 10.5098 15.5845 11.0492 17.0501L11.18 17.4053L11.0492 17.7606C10.5098 19.2262 11.4312 20.822 12.9701 21.0877L13.3432 21.1521L13.5855 21.443C14.585 22.6429 16.4277 22.6429 17.4272 21.443L17.6695 21.1521L18.0426 21.0877C19.5815 20.822 20.5029 19.2262 19.9635 17.7606L19.8327 17.4053L19.9635 17.0501C20.5029 15.5845 19.5815 13.9886 18.0426 13.723ZM14.738 14.3277C15.1378 13.8478 15.8749 13.8478 16.2747 14.3277L16.6348 14.76C16.7868 14.9426 16.9989 15.065 17.233 15.1054L17.7874 15.2011C18.403 15.3074 18.7715 15.9457 18.5558 16.532L18.3615 17.0599C18.2794 17.2829 18.2794 17.5278 18.3615 17.7507L18.5558 18.2787C18.7716 18.8649 18.403 19.5033 17.7874 19.6095L17.233 19.7052C16.9989 19.7457 16.7868 19.8681 16.6348 20.0506L16.2747 20.4829C15.8749 20.9629 15.1378 20.9629 14.738 20.4829L14.3779 20.0506C14.2258 19.8681 14.0138 19.7457 13.7797 19.7052L13.2252 19.6095C12.6097 19.5033 12.2411 18.8649 12.4569 18.2787L12.6512 17.7507C12.7333 17.5278 12.7333 17.2829 12.6512 17.0599L12.4569 16.532C12.2411 15.9457 12.6097 15.3074 13.2252 15.2011L13.7797 15.1054C14.0138 15.065 14.2258 14.9426 14.3779 14.76L14.738 14.3277Z" fill="#8A8A8A"/>
+                                                </svg>
+                                                General liability
+                                            </p>
+                                            <div class="row g-3">
+                                                <div class="col-sm-6">
+                                                    <div class="form-group">
+                                                        <label class="mb-1 fs-14">Current Company</label>
+                                                        <div class="f-group max-width-100">
+                                                            <div class="f-dropdown selectDropdown">
+                                                                <select class="f-control f-dropdown" placeholder="Select Current Company" id="selectCity">
+                                                                    <option value="">Select Current Company</option>
+                                                                    <option value="1">city 1</option>
+                                                                    <option value="2">city 2</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-6">
+                                                    <div class="form-group">
+                                                        <label class="mb-1 fs-14">Policy Number</label>
+                                                        <input type="text" placeholder="Policy Number" class="form-control">
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-6">
+                                                    <div class="form-group">
+                                                        <label class="mb-1 fs-14">Number of Years</label>
+                                                        <input type="text" placeholder="# of Years" class="form-control">
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-6">
+                                                    <div class="form-group">
+                                                        <label class="mb-1 fs-14">Number of Months</label>
+                                                        <input type="text" placeholder="# of months" class="form-control">
+                                                    </div>
+                                                </div>
+                                                <div class="col-12">
+                                                    <div class="form-group">
+                                                        <label class="mb-1 fs-14">Current Limits</label>
+                                                        <div class="row g-3">
+                                                            <div class="col-sm-6">
+                                                                <div class="f-group max-width-100">
+                                                                    <div class="f-dropdown selectDropdown">
+                                                                        <select class="f-control f-dropdown" placeholder="Current Limit" id="selectCity">
+                                                                            <option value="">Current Limit</option>
+                                                                            <option value="1">$300,000 SL</option>
+                                                                            <option value="2">$500,000 SL</option>
+                                                                        </select>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-sm-6">
+                                                                <div class="f-group max-width-100">
+                                                                    <div class="f-dropdown selectDropdown">
+                                                                        <select class="f-control f-dropdown" placeholder="Common Single Limit" id="selectState">
+                                                                            <option value="">Common Single Limit</option>
+                                                                            <option value="1">$300,000 CSL</option>
+                                                                            <option value="2">$500,000 CSL</option>
+                                                                            <option value="3">$1 Million CSL</option>
+                                                                        </select>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="blue-light-box bg-white mb-3">
+                                        <div class="vehicle-details">
+                                            <p class="fs-16 fw-bold pb-2 mb-3 border-bottom">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12 1.94824C8.82436 1.94824 6.25 4.5226 6.25 7.69824V8.44824H7.25039C7.25013 8.45635 7.25 8.46449 7.25 8.47266C7.25 9.73243 7.75044 10.9406 8.64124 11.8314C9.53204 12.7222 10.7402 13.2227 12 13.2227C13.2598 13.2227 14.468 12.7222 15.3588 11.8314C16.2496 10.9406 16.75 9.73243 16.75 8.47266C16.75 8.46449 16.7499 8.45635 16.7496 8.44824H17.75V7.69824C17.75 4.5226 15.1756 1.94824 12 1.94824ZM14.25 4.09202C15.249 4.71662 15.9698 5.7448 16.184 6.94824H7.81597C8.03024 5.7448 8.75102 4.71662 9.75 4.09202V5.33203C9.75 5.74624 10.0858 6.08203 10.5 6.08203C10.9142 6.08203 11.25 5.74624 11.25 5.33203V3.51421C11.4935 3.47086 11.7441 3.44824 12 3.44824C12.2559 3.44824 12.5065 3.47086 12.75 3.51421V5.33203C12.75 5.74624 13.0858 6.08203 13.5 6.08203C13.9142 6.08203 14.25 5.74624 14.25 5.33203V4.09202ZM8.74961 8.44824C8.74987 8.45635 8.75 8.46449 8.75 8.47266C8.75 9.33461 9.09241 10.1613 9.7019 10.7708C10.3114 11.3802 11.138 11.7227 12 11.7227C12.862 11.7227 13.6886 11.3802 14.2981 10.7708C14.9076 10.1613 15.25 9.33461 15.25 8.47266L15.25 8.46466L15.2504 8.44824H8.74961Z" fill="#8A8A8A"/>
+                                                    <path d="M7.7019 17.0037C8.3114 16.3942 9.13805 16.0518 10 16.0518H14C14.862 16.0518 15.6886 16.3942 16.2981 17.0037C16.9076 17.6132 17.25 18.4398 17.25 19.3018V21.3018C17.25 21.716 17.5858 22.0518 18 22.0518C18.4142 22.0518 18.75 21.716 18.75 21.3018V19.3018C18.75 18.042 18.2496 16.8338 17.3588 15.943C16.468 15.0522 15.2598 14.5518 14 14.5518H10C8.74022 14.5518 7.53204 15.0522 6.64124 15.943C5.75044 16.8338 5.25 18.042 5.25 19.3018V21.3018C5.25 21.716 5.58579 22.0518 6 22.0518C6.41421 22.0518 6.75 21.716 6.75 21.3018V19.3018C6.75 18.4398 7.09241 17.6132 7.7019 17.0037Z" fill="#8A8A8A"/>
+                                                </svg>
+                                                Workers comp
+                                            </p>
+                                            <div class="row g-3">
+                                                <div class="col-sm-6">
+                                                    <div class="form-group">
+                                                        <label class="mb-1 fs-14">Current Company</label>
+                                                        <div class="f-group max-width-100">
+                                                            <div class="f-dropdown selectDropdown">
+                                                                <select class="f-control f-dropdown" placeholder="Select Current Company" id="selectCity">
+                                                                    <option value="">Select Current Company</option>
+                                                                    <option value="1">city 1</option>
+                                                                    <option value="2">city 2</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-6">
+                                                    <div class="form-group">
+                                                        <label class="mb-1 fs-14">Policy Number</label>
+                                                        <input type="text" placeholder="Policy Number" class="form-control">
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-6">
+                                                    <div class="form-group">
+                                                        <label class="mb-1 fs-14">Number of Years</label>
+                                                        <input type="text" placeholder="# of Years" class="form-control">
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-6">
+                                                    <div class="form-group">
+                                                        <label class="mb-1 fs-14">Number of Months</label>
+                                                        <input type="text" placeholder="# of months" class="form-control">
+                                                    </div>
+                                                </div>
+                                                <div class="col-12">
+                                                    <div class="form-group">
+                                                        <label class="mb-1 fs-14">Current Limits</label>
+                                                        <div class="row g-3">
+                                                            <div class="col-sm-6">
+                                                                <div class="f-group max-width-100">
+                                                                    <div class="f-dropdown selectDropdown">
+                                                                        <select class="f-control f-dropdown" placeholder="Current Limit" id="selectCity">
+                                                                            <option value="">Current Limit</option>
+                                                                            <option value="1">$300,000 SL</option>
+                                                                            <option value="2">$500,000 SL</option>
+                                                                        </select>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-sm-6">
+                                                                <div class="f-group max-width-100">
+                                                                    <div class="f-dropdown selectDropdown">
+                                                                        <select class="f-control f-dropdown" placeholder="Common Single Limit" id="selectState">
+                                                                            <option value="">Common Single Limit</option>
+                                                                            <option value="1">$300,000 CSL</option>
+                                                                            <option value="2">$500,000 CSL</option>
+                                                                            <option value="3">$1 Million CSL</option>
+                                                                        </select>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="blue-light-box bg-white mb-3">
+                                        <div class="vehicle-details">
+                                            <p class="fs-16 fw-bold pb-2 mb-3 border-bottom">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M4.34835 3.84835C5.05161 3.14509 6.00544 2.75 7 2.75H11C11.9946 2.75 12.9484 3.14509 13.6517 3.84835C14.3549 4.55161 14.75 5.50544 14.75 6.5V19.75H18.25V17.1458C17.8025 17.0189 17.3902 16.7793 17.0555 16.4445C16.5397 15.9288 16.25 15.2293 16.25 14.5V12.5C16.25 11.7707 16.5397 11.0712 17.0555 10.5555C17.5712 10.0397 18.2707 9.75 19 9.75C19.7293 9.75 20.4288 10.0397 20.9445 10.5555C21.4603 11.0712 21.75 11.7707 21.75 12.5V14.5C21.75 15.2293 21.4603 15.9288 20.9445 16.4445C20.6098 16.7793 20.1975 17.0189 19.75 17.1458V19.75H21C21.4142 19.75 21.75 20.0858 21.75 20.5C21.75 20.9142 21.4142 21.25 21 21.25H19H14H9H4H3C2.58579 21.25 2.25 20.9142 2.25 20.5C2.25 20.0858 2.58579 19.75 3 19.75H3.25V6.5C3.25 5.50544 3.64509 4.55161 4.34835 3.84835ZM9.75 19.75V16.5C9.75 16.0858 9.41421 15.75 9 15.75C8.58579 15.75 8.25 16.0858 8.25 16.5V19.75H4.75V6.5C4.75 5.90326 4.98705 5.33097 5.40901 4.90901C5.83097 4.48705 6.40326 4.25 7 4.25H11C11.5967 4.25 12.169 4.48705 12.591 4.90901C13.0129 5.33097 13.25 5.90326 13.25 6.5V19.75H9.75ZM19 15.75C19.3315 15.75 19.6495 15.6183 19.8839 15.3839C20.1183 15.1495 20.25 14.8315 20.25 14.5V12.5C20.25 12.1685 20.1183 11.8505 19.8839 11.6161C19.6495 11.3817 19.3315 11.25 19 11.25C18.6685 11.25 18.3505 11.3817 18.1161 11.6161C17.8817 11.8505 17.75 12.1685 17.75 12.5V14.5C17.75 14.8315 17.8817 15.1495 18.1161 15.3839C18.3505 15.6183 18.6685 15.75 19 15.75ZM7.25 12.5C7.25 12.0858 7.58579 11.75 8 11.75H10C10.4142 11.75 10.75 12.0858 10.75 12.5C10.75 12.9142 10.4142 13.25 10 13.25H8C7.58579 13.25 7.25 12.9142 7.25 12.5ZM8 7.75C7.58579 7.75 7.25 8.08579 7.25 8.5C7.25 8.91421 7.58579 9.25 8 9.25H10C10.4142 9.25 10.75 8.91421 10.75 8.5C10.75 8.08579 10.4142 7.75 10 7.75H8Z" fill="#8A8A8A"/>
+                                                </svg>
+                                                Building Coverage (BOP)
+                                            </p>
+                                            <div class="row g-3">
+                                                <div class="col-sm-6">
+                                                    <div class="form-group">
+                                                        <label class="mb-1 fs-14">Current Company</label>
+                                                        <div class="f-group max-width-100">
+                                                            <div class="f-dropdown selectDropdown">
+                                                                <select class="f-control f-dropdown" placeholder="Select Current Company" id="selectCity">
+                                                                    <option value="">Select Current Company</option>
+                                                                    <option value="1">city 1</option>
+                                                                    <option value="2">city 2</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-6">
+                                                    <div class="form-group">
+                                                        <label class="mb-1 fs-14">Policy Number</label>
+                                                        <input type="text" placeholder="Policy Number" class="form-control">
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-6">
+                                                    <div class="form-group">
+                                                        <label class="mb-1 fs-14">Number of Years</label>
+                                                        <input type="text" placeholder="# of Years" class="form-control">
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-6">
+                                                    <div class="form-group">
+                                                        <label class="mb-1 fs-14">Number of Months</label>
+                                                        <input type="text" placeholder="# of months" class="form-control">
+                                                    </div>
+                                                </div>
+                                                <div class="col-12">
+                                                    <div class="form-group">
+                                                        <label class="mb-1 fs-14">Current Limits</label>
+                                                        <div class="row g-3">
+                                                            <div class="col-sm-6">
+                                                                <div class="f-group max-width-100">
+                                                                    <div class="f-dropdown selectDropdown">
+                                                                        <select class="f-control f-dropdown" placeholder="Current Limit" id="selectCity">
+                                                                            <option value="">Current Limit</option>
+                                                                            <option value="1">$300,000 SL</option>
+                                                                            <option value="2">$500,000 SL</option>
+                                                                        </select>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-sm-6">
+                                                                <div class="f-group max-width-100">
+                                                                    <div class="f-dropdown selectDropdown">
+                                                                        <select class="f-control f-dropdown" placeholder="Common Single Limit" id="selectState">
+                                                                            <option value="">Common Single Limit</option>
+                                                                            <option value="1">$300,000 CSL</option>
+                                                                            <option value="2">$500,000 CSL</option>
+                                                                            <option value="3">$1 Million CSL</option>
+                                                                        </select>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button type="submit" class="btn btn-primary  mx-auto mt-4"><span>Continue</span></button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <script src="../js/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+        <script src="../js/app.js"></script>
+        <script>
+            var popover = new bootstrap.Popover(document.querySelector('.data-toggle'), {
+                container: 'body'
+            })
+        </script>
+    </body>
+</html>
