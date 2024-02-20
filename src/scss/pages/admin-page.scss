@@ -1,16 +1,40 @@
 main .wrapper .admin-section-container {
-  background: #fff;
+  background: var(--color-white);
   .content {
     padding-top: 40px;
-    background: #fff;
+    background: var(--color-white);
+    
+    &.login-pannel{
+      background: #f8fbfe;
+    }
   }
+
+
 }
 
 .admin-section-container {
+  
   .dropdown-menu.filter-dropdown {
     border: 0;
     box-shadow: 0 0 4px 2px #94949433;
     border-radius: 15px;
+  }
+
+  .login-container {
+    width: 440px;
+    margin: 0 auto;
+    padding: 16px 16px 24px 16px;
+    border-radius: 8px;
+    border: 1px solid var(--color-border-light);
+    background: white;
+  }
+
+  a.floating-icon {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
   }
 
   .accordion-header {
@@ -48,7 +72,7 @@ main .wrapper .admin-section-container {
     }
 
     .summary-content {
-      background: #f2f7fc;
+      background: var(--color-light-gray2);
       padding: 16px;
       border-radius: 8px;
       margin-bottom: 24px;
@@ -86,7 +110,7 @@ main .wrapper .admin-section-container {
     }
 
     .summary-detail-section {
-      background: #f2f7fc;
+      background: var(--color-light-gray2);
       border-radius: 8px;
       margin-bottom: 16px;
 
@@ -177,7 +201,7 @@ main .wrapper .admin-section-container {
             font-weight: 400;
             line-height: 22px;
             text-align: left;
-            color: #616161;
+            color: var(--color-title);
           }
         }
       }

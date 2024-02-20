@@ -2,11 +2,14 @@
  UnExpected King Tirth Shah */ 
  
  main .wrapper .admin-section-container {
-  background: #fff;
+  background: var(--color-white);
 }
 main .wrapper .admin-section-container .content {
   padding-top: 40px;
-  background: #fff;
+  background: var(--color-white);
+}
+main .wrapper .admin-section-container .content.login-pannel {
+  background: #f8fbfe;
 }
 
 .admin-section-container .dropdown-menu.filter-dropdown {
@@ -14,6 +17,23 @@ main .wrapper .admin-section-container .content {
   -webkit-box-shadow: 0 0 4px 2px rgba(148, 148, 148, 0.2);
           box-shadow: 0 0 4px 2px rgba(148, 148, 148, 0.2);
   border-radius: 15px;
+}
+.admin-section-container .login-container {
+  width: 440px;
+  margin: 0 auto;
+  padding: 16px 16px 24px 16px;
+  border-radius: 8px;
+  border: 1px solid var(--color-border-light);
+  background: white;
+}
+.admin-section-container a.floating-icon {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  cursor: pointer;
 }
 .admin-section-container .accordion-header {
   margin-bottom: 0;
@@ -44,7 +64,7 @@ main .wrapper .admin-section-container .content {
   text-align: left;
 }
 .admin-section-container .policy-summary .summary-content {
-  background: #f2f7fc;
+  background: var(--color-light-gray2);
   padding: 16px;
   border-radius: 8px;
   margin-bottom: 24px;
@@ -72,7 +92,7 @@ main .wrapper .admin-section-container .content {
   margin-bottom: 16px;
 }
 .admin-section-container .admin-summary-data .summary-detail-section {
-  background: #f2f7fc;
+  background: var(--color-light-gray2);
   border-radius: 8px;
   margin-bottom: 16px;
 }
@@ -149,7 +169,7 @@ main .wrapper .admin-section-container .content {
   font-weight: 400;
   line-height: 22px;
   text-align: left;
-  color: #616161;
+  color: var(--color-title);
 }
 .admin-section-container .admin-summary-data .summary-detail-section .location-card .card-body table th,
 .admin-section-container .admin-summary-data .summary-detail-section .location-card .card-body table td {
