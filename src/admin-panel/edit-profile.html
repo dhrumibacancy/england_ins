@@ -370,7 +370,7 @@
                                                             class="f-control f-dropdown" id="multiple"
                                                             multiple="">
                                                             <option value="">Boston</option>
-                                                            <option value="1">Boston
+                                                            <option value="1" selected>Boston
                                                             </option>
                                                             <option value="2">Married
                                                             </option>
@@ -391,7 +391,7 @@
                                                           id="multiple"
                                                             multiple="">
                                                             <option value="">MA</option>
-                                                            <option value="1">MA
+                                                            <option value="1" selected>MA
                                                             </option>
                                                             <option value="2">Married
                                                             </option>
@@ -419,14 +419,56 @@
                             </div> <!-- /user-card -->
 
                             <div style="gap:10px;" class="d-flex flex-column flex-sm-row align-items-center justify-content-center my-2">
-                                <button type="submit" class="btn btn-primary"><span>Save Change</span></button>
+                                <button type="submit" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalContinue"><span>Save Change</span></button>
                                 <button type="submit" class="btn btn-outline"><span>Cancel </span></button>
                             </div>
 
                         </div>
                     </div>
                 </div>
-
+                <div class="modal fade" id="modalContinue" tabindex="-1" aria-labelledby="mainModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-lg-lg modal-dialog-centered">
+                        <div class="modal-content border-0">
+                            <div class="modal-header border-0">
+                                <h3 class="modal-title fs-22" id="exampleModalToggleLabel">Do you want to continue any of these ?</h3>
+                            </div>
+                            <div class="modal-body pt-0">
+                                <table class="table policy-table">
+                                    <tbody>
+                                        <tr class="policy-table-card">
+                                            <td>
+                                                <span class="fs-14 text-black">
+                                                    <img src="../../images/Insurance_car.png" style="height: 20px;" alt="">
+                                                    04 Honda | 05 Chevry
+                                                </span>
+                                            </td>
+                                            <td class="fs-12 text-end">
+                                                <div class="text-uppercase"><a href="#" class="fs-14 lh-base fw-normal text-sucess">Continue</a> &nbsp;|&nbsp; <a href="#" class="fs-14 lh-base fw-normal text-danger">Delete</a> &nbsp;|&nbsp; <a href="#" class="fs-14 lh-base fw-normal text-orange">Snooze</a></div>
+                                            </td>
+                                        </tr>
+                                        <tr class="policy-table-card">
+                                            <td>
+                                                <span class="fs-14 text-black"><img src="../../images/Insurance_home.png" style="height: 20px;" alt="">2825 Winding Way, Providence, RI 02908</span>
+                                            </td>
+                                            <td class="fs-12 text-end">
+                                                <div class="text-uppercase"><a href="#" class="fs-14 lh-base fw-normal text-sucess">Continue</a> &nbsp;|&nbsp; <a href="#" class="fs-14 lh-base fw-normal text-danger">Delete</a> &nbsp;|&nbsp; <a href="#" class="fs-14 lh-base fw-normal text-orange">Snooze</a></div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>                           
+                            </div>
+                            <div class="modal-footer justify-content-center  border-0">
+                                <div style="gap:10px;"
+                                    class="d-flex flex-column flex-sm-row align-items-center justify-content-center mb-2">
+                                    <button type="submit" class="btn btn-primary"><span>No, start new Quote</span></button>
+                                    <button type="submit" class="btn btn-outline text-blue" data-bs-dismiss="modal" aria-label="Close"><span>Close
+                                        </span></button>
+                                </div>
+                            </div>
+                        </div>
+        
+                    </div>
+                </div>
 
             </main>
 

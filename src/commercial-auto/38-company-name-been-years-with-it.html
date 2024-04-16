@@ -121,73 +121,52 @@
                                 <img src="../images/user-person.svg" alt="" class="user-person mx-auto">
                                 <p class="user-welcome mt-2">Hey! My Name is Anne</p>
                             </div>
-                            <h3 class="title  text-center">Claim Details</h3>
+                            <h3 class="title  text-center">Select Your Current Auto Insurance Company</h3>
                             <div class="contain-wrapper-sm">
                                 <form class="mt-4">
-                                    <div class="blue-light-box bg-white">
-                                        <div class="vehicle-details">
-                                            <div class="d-flex justify-content-between mb-3">
-                                                <h6 class="fs-18 m-0">Claim 1</h6>
-                                                <img src="../images/delete.svg">
+                                    <div class="vehicle-details">
+                                        <div class="row g-3">
+                                            <div class="col-12">
+                                                <div class="form-group">
+                                                    <div class="f-group max-width-100">
+                                                        <div class="f-dropdown selectDropdown">
+                                                            <select class="f-control f-dropdown" placeholder="Select Insurance Company" id="1">
+                                                                <option value="">Select Insurance Company</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </div>
                                             </div>
-                                            <div class="row claim-section g-3">
+                                        </div>
+                                        <div class="w-75 mx-auto">
+                                            <div class="row g-3">
                                                 <div class="col-12">
-                                                    <label class="mb-0 fs-14">Select type of claim</label>
+                                                    <h4 class="fs-18 text-center mt-4">How long have you been with this company</h4>
+                                                    <p class="fs-14 pt-2 text-center">Enter 0 or leave blank if doesn't apply </p>
                                                 </div>
-                                                <div class="col-md-3">
-                                                    <label class="checkbox-inline squar-boxes mt-0 mb-1 mx-0 w-100" for="typeClaim1">
-                                                        <input class="checkbox-control" type="radio" checked name="typeClaim" value="" id="typeClaim1">
-                                                        <span class="checkbox-custom"></span>
-                                                        <span class="checkbox-label fs-14">
-                                                            <img src="../images/claim-icons/damage-active.svg" alt="" class="active" />
-                                                            <img src="../images/claim-icons/damage-inactive.svg" alt="" class="offline" />
-                                                            Building damage
-                                                        </span>
-                                                    </label>
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                        <div class="input-group form-control px-0">
+                                                            <input type="text" placeholder="# of Years" />
+                                                            <span class="input-group-append ">
+                                                                <span class="input-group-text border-0 bg-white d-block pe-2">Years</span>
+                                                            </span>
+                                                        </div>
+                                                    </div>
                                                 </div>
-                                                <div class="col-md-3">
-                                                    <label class="checkbox-inline squar-boxes mt-0 mb-1 mx-0 w-100" for="typeClaim2">
-                                                        <input class="checkbox-control" type="radio" name="typeClaim" value="" id="typeClaim2">
-                                                        <span class="checkbox-custom"></span>
-                                                        <span class="checkbox-label fs-14">
-                                                            <img src="../images/claim-icons/commercial-auto-active.svg" alt="" class="active" />
-                                                            <img src="../images/claim-icons/commercial-auto-inactive.svg" alt="" class="offline" />
-                                                            Commercial Auto
-                                                        </span>
-                                                    </label>
-                                                </div>
-                                                <div class="col-md-3">
-                                                    <label class="checkbox-inline squar-boxes mt-0 mb-1 mx-0 w-100" for="typeClaim3">
-                                                        <input class="checkbox-control" type="radio" name="typeClaim" value="" id="typeClaim3">
-                                                        <span class="checkbox-custom"></span>
-                                                        <span class="checkbox-label fs-14">
-                                                            <img src="../images/claim-icons/gen-liability-active.svg" alt="" class="active" />
-                                                            <img src="../images/claim-icons/gen-liability-inactive.svg" alt="" class="offline" />
-                                                            General liability
-                                                        </span>
-                                                    </label>
-                                                </div>
-                                                <div class="col-md-3">
-                                                    <label class="checkbox-inline squar-boxes mt-0 mb-1 mx-0 w-100" for="typeClaim4">
-                                                        <input class="checkbox-control" type="radio" name="typeClaim" value="" id="typeClaim4">
-                                                        <span class="checkbox-custom"></span>
-                                                        <span class="checkbox-label fs-14">
-                                                            <img src="../images/claim-icons/workers-comp-active.svg" alt="" class="active" />
-                                                            <img src="../images/claim-icons/workers-comp-inactive.svg" alt="" class="offline" />
-                                                            Workers comp
-                                                        </span>
-                                                    </label>
-                                                </div>
-                                                <div class="col-12">
-                                                    <textarea placeholder="Please describe what happened & what has been done to avoid this from happening again" class="form-control"></textarea>
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                        <div class="input-group form-control px-0">
+                                                            <input type="text" placeholder="# of Months" />
+                                                            <span class="input-group-append ">
+                                                                <span class="input-group-text border-0 bg-white d-block pe-2">Months</span>
+                                                            </span>
+                                                        </div>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                    <a class="btn-add mt-3" href="#">
-                                        <img src="../images/add-pluse-circle.svg" alt="Add" class="icon" />
-                                        Add a Claim
-                                    </a>
                                     <button type="submit" class="btn btn-primary  mx-auto mt-4"><span>Continue</span></button>
                                 </form>
                             </div>

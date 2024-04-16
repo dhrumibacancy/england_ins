@@ -31,7 +31,6 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css">
         <link rel="icon" href="../images/favicon.png" type="image/gif" sizes="16x16">
-        <link rel="stylesheet" href="https://rawcdn.githack.com/SochavaAG/example-mycode/master/pens/calculator/plugins/rangeslider/rangeslider.css">
         <link rel="stylesheet" href="../assets/css/main.css">
     </head>
     <body>
@@ -122,40 +121,73 @@
                                 <img src="../images/user-person.svg" alt="" class="user-person mx-auto">
                                 <p class="user-welcome mt-2">Hey! My Name is Anne</p>
                             </div>
-                            <h3 class="title  text-center">What Percent of total work is Towing /Repossession</h3>
+                            <h3 class="title  text-center">Claim Details</h3>
                             <div class="contain-wrapper-sm">
                                 <form class="mt-4">
-                                    <div class="vehicle-details">
-                                        <div class="form-group mt-3">
-                                            <div class="ag-calculators-block mb-3">
-                                                <div class="ag-format-container">
-                                                    <div id="affiliate" class="ag-calculator-block">
-                                                        <div class="js-calculator_input-wrap js-calculator_second-level-wrap ag-calculator_input-wrap ag-calculator_second-level-wrap d-flex align-items-center justify-content-between">
-                                                            <div class="col-4 pe-3">
-                                                                <div class="input-group form-control p-0">
-                                                                    <input id="level2-clients" class="js-calculator_text-input ag-calculator_text-input m-0" type="number " name="level2-clients" min="0" max="100" value="40">
-                                                                    <span class="input-group-append ">
-                                                                        <span class="input-group-text border-0 bg-white d-block">%</span>
-                                                                    </span>
-                                                                </div>
-                                                            </div>
-                                                            <div class="col-8">
-                                                                <div class="form-control">
-                                                                    <div class="range-percentage">
-                                                                        <div class="append">0%</div>
-                                                                        <div class="middle">
-                                                                            <input class="js-calculator_range w-auto" step="1" type="range" name="level2-clients" min="0" max="100" value="40">
-                                                                        </div>
-                                                                        <div class="preppend">100%</div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
+                                    <div class="blue-light-box">
+                                        <div class="vehicle-details">
+                                            <div class="d-flex justify-content-between pb-2 mb-3 border-bottom">
+                                                <h6 class="fs-18 m-0">Claim 1</h6>
+                                                <img src="../images/delete.svg">
+                                            </div>
+                                            <div class="row claim-section g-3">
+                                                <div class="col-12">
+                                                    <label class="mb-0 fs-14">Select type of claim</label>
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <label class="checkbox-inline squar-boxes mt-0 mb-1 mx-0 w-100" for="typeClaim1">
+                                                        <input class="checkbox-control" type="radio" checked name="typeClaim" value="" id="typeClaim1">
+                                                        <span class="checkbox-custom"></span>
+                                                        <span class="checkbox-label fs-14">
+                                                            <img src="../images/claim-icons/damage-active.svg" alt="" class="active" />
+                                                            <img src="../images/claim-icons/damage-inactive.svg" alt="" class="offline" />
+                                                            Building damage
+                                                        </span>
+                                                    </label>
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <label class="checkbox-inline squar-boxes mt-0 mb-1 mx-0 w-100" for="typeClaim2">
+                                                        <input class="checkbox-control" type="radio" name="typeClaim" value="" id="typeClaim2">
+                                                        <span class="checkbox-custom"></span>
+                                                        <span class="checkbox-label fs-14">
+                                                            <img src="../images/claim-icons/commercial-auto-active.svg" alt="" class="active" />
+                                                            <img src="../images/claim-icons/commercial-auto-inactive.svg" alt="" class="offline" />
+                                                            Commercial Auto
+                                                        </span>
+                                                    </label>
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <label class="checkbox-inline squar-boxes mt-0 mb-1 mx-0 w-100" for="typeClaim3">
+                                                        <input class="checkbox-control" type="radio" name="typeClaim" value="" id="typeClaim3">
+                                                        <span class="checkbox-custom"></span>
+                                                        <span class="checkbox-label fs-14">
+                                                            <img src="../images/claim-icons/gen-liability-active.svg" alt="" class="active" />
+                                                            <img src="../images/claim-icons/gen-liability-inactive.svg" alt="" class="offline" />
+                                                            General liability
+                                                        </span>
+                                                    </label>
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <label class="checkbox-inline squar-boxes mt-0 mb-1 mx-0 w-100" for="typeClaim4">
+                                                        <input class="checkbox-control" type="radio" name="typeClaim" value="" id="typeClaim4">
+                                                        <span class="checkbox-custom"></span>
+                                                        <span class="checkbox-label fs-14">
+                                                            <img src="../images/claim-icons/workers-comp-active.svg" alt="" class="active" />
+                                                            <img src="../images/claim-icons/workers-comp-inactive.svg" alt="" class="offline" />
+                                                            Workers comp
+                                                        </span>
+                                                    </label>
+                                                </div>
+                                                <div class="col-12">
+                                                    <textarea placeholder="Please describe what happened & what has been done to avoid this from happening again" class="form-control"></textarea>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
+                                    <a class="btn-add mt-3" href="#">
+                                        <img src="../images/add-pluse-circle.svg" alt="Add" class="icon" />
+                                        Add Additional Claim
+                                    </a>
                                     <button type="submit" class="btn btn-primary  mx-auto mt-4"><span>Continue</span></button>
                                 </form>
                             </div>
@@ -167,78 +199,11 @@
         <script src="../js/jquery.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
-        <script src="https://rawcdn.githack.com/SochavaAG/example-mycode/master/pens/calculator/plugins/rangeslider/rangeslider.min.js"></script>
         <script src="../js/app.js"></script>
         <script>
-            (function ($) {
-                $(function () {
-                    $("input[type=range]").rangeslider({ polyfill: false });
-
-                    var t = $("#level1-clients"),
-                        a = $("#level2-clients"),
-                        n = $("#level3-clients"),
-                        e = $("#daily-orders"),
-                        i = $("#commission"),
-                        l = $("#affiliate-result"),
-                        s = $("#clients-attracted"),
-                        r = $("#daily-orders-per-client"),
-                        p = $("#agent-result"),
-                        o = $("#agent-commission"),
-                        c = $("#stp-clients-attracted"),
-                        d = $("#stp-daily-orders-per-client"),
-                        v = $("#pro-stp-result"),
-                        /*u = $(".tab-pane.active").attr("id"),*/
-                        h = $(".js-calculator_second-level-wrap");
-
-                    function agFormula() {
-                        l.html(parseInt(t.val() * (10 * e.val()) + i.val() * t.val() * e.val() + a.val() * e.val() * 10 * .167 + n.val() * e.val() * 10 * .056)).digits().append("<span class=\"ag-calculator_results-currency\">$</span>");
-
-                        v.html(parseInt($(".js-calculator_radio-box").find("input[name=partner-reward]:checked").val() * c.val() * d.val())).digits().append("<span class=\"ag-calculator_results-currency\">$</span>");
-
-                        p.html(parseInt(s.val() * (15 * r.val()) + o.val() * s.val() * r.val())).digits().append("<span class=\"ag-calculator_results-currency\">$</span>");
-                    }
-
-                    $(".js-calculator_input-wrap .js-calculator_text-input").on("change input", function () {
-                        $(this).parents('.ag-calculator-block').find(".js-calculator_range").val($(this).val()).change();
-
-                        agFormula();
-                    });
-
-                    $(".js-calculator_input-wrap .js-calculator_range").on("change input", function () {
-                        $(this).parents('.ag-calculator-block').find(".js-calculator_text-input").val($(this).val());
-
-                        agFormula();
-                    });
-
-                    $(".js-calculator_input-wrap > .js-calculator_radio-box > .js-calculator_radio").on("change input", function () {
-                        agFormula();
-                    });
-
-                    $(".js-calculator_more-levels").click(function (t) {
-                        if ($(this).hasClass("js-ag-opened")) {
-                            h.hide();
-                            h.find(".js-calculator_text-input").val(0);
-                            h.find(".js-calculator_range").val(0).change();
-                            $(this).removeClass("js-ag-opened");
-                        } else {
-                            h.css("display", "inline-block");
-                            h.find(".js-calculator_text-input").val(15);
-                            h.find(".js-calculator_range").val(15).change();
-                            $(this).addClass("js-ag-opened");
-                        }
-
-                        agFormula();
-                        t.preventDefault();
-                    });
-
-                    $.fn.digits = function () {
-                        return this.each(function () {
-                            $(this).text($(this).text().replace(/(\d)(?=(\d\d\d)+(?!\d))/g, "$1'"));
-                        });
-                    };
-                    agFormula();
-                });
-            })(jQuery);
+            var popover = new bootstrap.Popover(document.querySelector('.data-toggle'), {
+                container: 'body'
+            })
         </script>
     </body>
 </html>

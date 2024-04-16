@@ -177,33 +177,40 @@
                                             <h4 class="fs-18 mb-2">Or enter card information</h4>
                                         </div>
                                         <div class="col-sm-6">
-                                            <input class="form-control addMain" type="text"
-                                                placeholder="Card Holder Name" />
+                                            <div class="form-group">
+                                                <label class="mb-1 fs-14 text-black fw-normal">Card Holder Name</label>
+                                                <input type="text" placeholder="Enter Card Holder Name" class="form-control">
+                                            </div>
                                         </div>
                                         <div class="col-sm-6">
-                                            <input class="form-control addMain" type="text" placeholder="Card Number" />
+                                            <div class="form-group">
+                                                <label class="mb-1 fs-14 text-black fw-normal">Card Number</label>
+                                                <input type="text" placeholder="1234-5678-9876-3210" class="form-control">
+                                            </div>
                                         </div>
                                         <div class="col-6">
+                                            <div class="form-group">
+                                                <label class="mb-1 fs-14 text-black fw-normal">Expiration Date</label>
+                                                <div class="input-group date form-control px-0" id="datepicker">
+                                                    <input type="text" class="" id="date" placeholder="Expiration Date" />
+                                                    <span class="input-group-append ">
+                                                        <span class="input-group-text border-0 bg-white d-block">
+                                                            <i class="fa fa-calendar"></i>
+                                                        </span>
+                                                    </span>
+                                                </div>
+                                            </div>
                                             <!-- <input class="form-control addPrefer" type="text"
                                                 placeholder="Expiration Date" /> -->
 
 
 
-
-
-                                            <div class="input-group date form-control px-0" id="datepicker">
-                                                <input type="text" class="" id="date" placeholder="Expiration Date" />
-                                                <span class="input-group-append ">
-                                                    <span class="input-group-text border-0 bg-white d-block">
-                                                        <i class="fa fa-calendar"></i>
-                                                    </span>
-                                                </span>
-                                            </div>
-
-
                                         </div>
                                         <div class="col-6">
-                                            <input class="form-control addPrefer" type="text" placeholder="CVV Code" />
+                                            <div class="form-group">
+                                                <label class="mb-1 fs-14 text-black fw-normal">CVV</label>
+                                                <input type="text" placeholder="CVV Code" class="form-control">
+                                            </div>
                                         </div>
                                         <div class="col-12 mt-3">
                                             <label class="checkbox-inline mb-2 w-auto" for="flexCheckDefault">
