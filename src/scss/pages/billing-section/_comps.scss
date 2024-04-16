@@ -1,0 +1,57 @@
+.badge {
+
+  &.bg-warning {
+    background-color: #FDE8D2 !important;
+    color: #BA6007 !important;
+  }
+
+  &.bg-error {
+    background-color: #F2CCCC !important;
+    color: #BF0101 !important;
+
+  }
+}
+
+.field-icon {
+  position: absolute;
+  top: 50%;
+  bottom: auto;
+  -webkit-transform: translate(0%, -50%);
+  -ms-transform: translate(0%, -50%);
+  transform: translate(0%, -50%);
+  right: 20px;
+}
+
+.blue-card {
+  border: 1px solid #E6E6E6;
+  background: #F1F8FE;
+  padding: 12px;
+  border-radius: 8px;
+
+  .card-title {
+    //styleName: label/lg;
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 28px;
+    text-align: left;
+  }
+
+  label {
+    margin: 0;
+    //styleName: label/md;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    text-align: left;
+
+  }
+
+  &.blue-badge {
+    height: 36px;
+    padding: 4px 12px;
+  }
+
+
+}
