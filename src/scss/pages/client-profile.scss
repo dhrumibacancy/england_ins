@@ -127,7 +127,7 @@
           @include toRem(font-size, 12);
           text-align: left;
 
-          & > span {
+          &>span {
             margin-left: 8px;
             display: inline-flex;
             @include flex-direction($value: column);
@@ -165,10 +165,42 @@
   }
 }
 
+
+.numeric-card {
+  display: flex;
+  justify-content: center;
+
+  .numeric-input {
+    text-align: center;
+    width: 70px;
+  }
+
+  button.btn.btn-numeric {
+    min-width: auto;
+    padding: 6px;
+    height: 52px;
+    width: 52px;
+    border: 1px solid #ddd;
+    background: transparent;
+    margin: 0 10px;
+    font-weight: 300;
+    font-size: 20px;
+    color: #8a8a8a;
+    text-align: center;
+  }
+
+  small {
+    color: var(--color-light-gray);
+    font-size: 14px;
+  }
+}
+
+
 .policy-table.transection-table {
   .link-label {
     color: var(--color-light-gray3);
   }
+
   .policy-table-card {
     outline: var(--color-border-light) solid 1px;
     box-shadow: none;
@@ -177,6 +209,7 @@
     h4 {
       color: var(--color-black);
       font-size: 18px;
+
       small {
         color: var(--color-light-gray3);
         font-weight: 400;
@@ -193,6 +226,7 @@
     }
   }
 }
+
 .policy-table {
   border-spacing: 0 10px;
   margin-bottom: 0;
@@ -212,6 +246,7 @@
     }
 
     .policy-table-card {
+
       & td:nth-child(2),
       & td:nth-child(3) {
         display: none;
@@ -361,10 +396,12 @@
       }
     }
   }
-  .accordion-item.accordion-white > .accordion-header .accordion-button {
+
+  .accordion-item.accordion-white>.accordion-header .accordion-button {
     align-items: flex-start;
   }
 }
+
 .billing-section {
   .payment-dropdown {
     border: 1px solid var(--color-border-light2);
@@ -387,7 +424,7 @@
       transform: translateX(-50%) rotate(45deg);
     }
 
-    .checkbox-control:checked ~ .checkbox-custom {
+    .checkbox-control:checked~.checkbox-custom {
       background: initial;
       background-image: url(../../images/radio-active.svg);
       border: none;
@@ -487,6 +524,12 @@
   color: var(--color-title);
 }
 
+
+.container-claim {
+  max-width: 880px;
+  margin: 0 auto;
+}
+
 .claim-section {
   .sec-title {
     font-size: 18px;
@@ -494,6 +537,8 @@
     line-height: 28px;
     margin-bottom: 0;
   }
+
+
 
   .claim-footer {
     display: flex;
@@ -585,11 +630,9 @@
       &.mark-inprogress {
         .step-symbol {
           &::after {
-            background: linear-gradient(
-              to right,
-              var(--color-blue) 50%,
-              var(--color-blue) 50%
-            );
+            background: linear-gradient(to right,
+                var(--color-blue) 50%,
+                var(--color-blue) 50%);
           }
 
           img.inprogress {
@@ -642,18 +685,21 @@
     }
 
     &.squar-boxes {
-      width: 200px;
+      width: 100%;
+      height: 156px;
       background: none;
       border-radius: 0;
+      -webkit-box-shadow: none;
       box-shadow: none;
       padding: 0;
+      margin: 0;
 
       .checkbox-control {
-        &:checked ~ .checkbox-label {
+        &:checked~.checkbox-label {
           box-shadow: 0px 20px 30px 0px #ddeefb;
         }
       }
-      
+
       .radio-custom {
         height: 30px;
         background-repeat: no-repeat;
@@ -663,6 +709,7 @@
         img {
           width: 45px;
         }
+
         &.no-square img {
           width: 40px;
         }
@@ -684,17 +731,135 @@
       }
     }
   }
+
+  @media screen and (max-width: 578px) {
+    label.checkbox-inline.squar-boxes {
+      width: 160px;
+      margin: 10px 5px 10px;
+    }
+  }
+}
+
+.checkbox-inline.checkbox-button {
+  position: relative;
+
+
+  .checkbox-control {
+    &:checked~.checkbox-custom {
+      background: transparent;
+    }
+
+    &:checked~.checkbox-label {
+      border: 1px solid #016BBF;
+      background: #E6F1F9;
+      color: #2B2B2B;
+      padding: 11px 44px 11px 8px;
+
+      img.active {
+        display: block;
+      }
+
+      img.offline {
+        display: none;
+      }
+    }
+
+  }
+
+
+  .checkbox-custom {
+    position: absolute;
+    top: 18px;
+    right: 12px;
+    background: transparent;
+    border: 0;
+
+    &::after {
+      // display: none;
+      border: solid #016bbf;
+      border-width: 0px 1px 1px 0;
+      width: 6px;
+      height: 12px;
+    }
+  }
+
+  .checkbox-label {
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-transform: initial;
+    color: #2B2B2B;
+    border: 1px solid #E6E6E6;
+    background-color: white;
+    box-shadow: none;
+    border-radius: 4px;
+    padding: 11px 8px;
+
+  }
+
+  img.offline,
+  img.active {
+    width: 32px;
+    height: 32px;
+    margin-right: 6px;
+  }
+
+  img.active {
+    display: none;
+  }
+
+  img.offline {
+    display: block;
+  }
+}
+
+.blue-card {
+  border: 1px solid #E6E6E6;
+  background: #F1F8FE;
+  padding: 12px;
+  border-radius: 8px;
+
+  .card-title {
+    //styleName: label/lg;
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 28px;
+    text-align: left;
+  }
+
+  label {
+    margin: 0;
+    //styleName: label/md;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    text-align: left;
+
+  }
+
+  &.blue-badge {
+    height: 36px;
+    padding: 4px 12px;
+  }
+
+
 }
 
 .claim-additional-info {
   padding: 16px;
   border-radius: 8px;
 
-  .f-dropdown > span {
+  .f-dropdown>span {
     font-size: 16px;
     height: 52px;
     color: var(--color-light-gray);
   }
+
   .form-control {
     font-size: 16px;
     height: 52px;
@@ -711,17 +876,15 @@
 
   .doc-card.add-document {
     justify-content: flex-start;
-    background: linear-gradient(
-        0deg,
+    background: linear-gradient(0deg,
         var(--color-blue-light),
-        var(--color-blue-light)
-      ),
+        var(--color-blue-light)),
       linear-gradient(0deg, var(--color-blue-light3), var(--color-blue-light3));
     padding: 4px 14px;
     border-radius: 7px;
     position: relative;
 
-    & > img {
+    &>img {
       width: 44px;
       height: 44px;
       -o-object-fit: contain;
@@ -730,6 +893,7 @@
       object-position: center;
       margin-right: 8px;
     }
+
     .doc-title {
       font-weight: 500;
       font-size: 12px;
@@ -754,6 +918,7 @@
 .vehicle-damage {
   position: relative;
   padding: 100px 70px;
+
   .vehicle-img {
     margin: auto;
     display: block;
@@ -1051,7 +1216,7 @@
         align-items: center;
         background-color: var(--color-border-light2);
 
-        & > img {
+        &>img {
           width: 32px;
           height: 32px;
           object-fit: contain;
@@ -1079,7 +1244,7 @@
     .policy-details {
       &.edit-mode {
         .documents-attached {
-          & > * {
+          &>* {
             // width: 100%;
           }
 
@@ -1091,16 +1256,12 @@
 
             &.add-document {
               justify-content: center;
-              background: linear-gradient(
-                  0deg,
+              background: linear-gradient(0deg,
                   var(--color-blue-light),
-                  var(--color-blue-light)
-                ),
-                linear-gradient(
-                  0deg,
+                  var(--color-blue-light)),
+                linear-gradient(0deg,
                   var(--color-blue-light3),
-                  var(--color-blue-light3)
-                );
+                  var(--color-blue-light3));
               border: 1px dashed var(--color-blue-light3);
             }
           }
@@ -1220,10 +1381,12 @@
   }
 
   @media screen and (max-width: 768px) {
+
     .notes-side-bar,
     .notes-data {
       width: 100%;
     }
+
     .notes-side-bar {
       padding: 0;
     }
@@ -1235,6 +1398,7 @@
     width: auto !important;
   }
 }
+
 @media screen and (max-width: 992px) {
   .user-card {
     align-items: center;
@@ -1266,6 +1430,7 @@
 // ============================
 .filter-section {
   position: relative;
+
   .filter-modal::before {
     content: "";
     width: 15px;
@@ -1279,6 +1444,7 @@
     z-index: 2;
   }
 }
+
 .filter-section .filter-modal {
   position: absolute;
   left: auto !important;

@@ -145,30 +145,36 @@
                             </p>
                         </div>
                         <h3 class="title  text-center">Any information you have for the other driver</h3>
-                        <label class="text-center title fw-normal mt-3">Enter other driver’s info below this can help save you
+                        <label class="text-center title fw-normal mt-3">Enter other driver’s info below this can help
+                            save you
                             money & time</label>
 
                         <form class="mt-4">
                             <div class="contain-wrapper-sm">
                                 <div class="d-flex justify-content-center">
 
-                                    <label class="checkbox-inline mb-0 w-auto" for="no-info">
-                                        <input class="checkbox-control main" type="checkbox" value="" id="no-info" checked>
+                                    <label class="checkbox-inline checkbox-button mb-0 w-auto" for="no-info">
+                                        <input class="checkbox-control main" type="checkbox" value="" id="no-info"
+                                            >
                                         <span class="checkbox-custom"></span>
-                                        <span class="checkbox-label fs-16 fw-700">I don’t have any information</span>
+                                        <span class="checkbox-label fs-16 fw-700 ">
+
+                                            <img src="../images/claim-icons/none-active.svg" alt="" class="active" />
+                                            <img src="../images/claim-icons/none-inactive.svg" alt="" class="offline" />
+
+                                            I don’t have any information
+                                        </span>
+
                                     </label>
                                 </div>
                                 <div class="container-fluid claim-additional-info mt-4 bg-white border border-1">
                                     <div class="row g-3">
 
-                                        <div class="col-md-4">
-                                            <div class="form-group">
-                                                <label class="fs-16">Driver License Number</label>
-                                                <input type="text" placeholder="Driver License Number"
-                                                    class="form-control">
-                                            </div>
+                                        <div class="col-12 ">
+                                            <label class="label mb-0 d-flex align-items-center">
+                                                <span class="fs-18">Other Driver Details</span>
+                                            </label>
                                         </div>
-
                                         <div class="col-md-4">
                                             <div class="form-group">
                                                 <label class="fs-16">First Name</label>
@@ -183,9 +189,79 @@
                                             </div>
                                         </div>
 
+                                        <div class="col-md-4">
+                                            <div class="form-group">
+                                                <label class="fs-16">Driver License Number</label>
+                                                <input type="text" placeholder="Driver License Number"
+                                                    class="form-control">
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-4">
+                                            <label class="">
+                                                Date of Birth
+                                            </label>
+                                            <div class="input-group date form-control px-0" id="datepicker1">
+                                                <input type="date" class="" id="date"
+                                                    placeholder="Date of birth (DD/MM/YYYY)" />
+                                                <span class="input-group-append ">
+                                                    <span class="input-group-text border-0 bg-white d-block">
+                                                        <img class="" width="20px" src="../images/calender-icon.svg">
+                                                    </span>
+                                                </span>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-4 d-flex justify-content-between">
+
+                                            <label class="">
+                                                License Country
+                                            </label>
+                                            <div class="d-flex align-items-center justify-content-start">
+                                                <div class="d-flex align-self-center me-1">
+                                                    <label class="radio-inline radio-btn" for="livingYes">
+                                                        <input class="radio-control" type="radio" name="living1"
+                                                            value="" id="livingYes">
+                                                        <span class="radio-custom"></span>
+                                                        <span class="radio-label px-4 fs-14">USA </span>
+                                                    </label>
+                                                </div>
+                                                <div class="d-flex align-self-center me-0">
+                                                    <label class="radio-inline radio-btn" for="livingNo">
+                                                        <input class="radio-control" type="radio" name="living1"
+                                                            value="" id="livingNo">
+                                                        <span class="radio-custom"></span>
+                                                        <span class="radio-label px-3 fs-14">Other </span>
+                                                    </label>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="col-md-4">
+                                            <div class="form-group">
+                                                <label class="">
+                                                    State
+                                                </label>
+                                                <div class="f-dropdown selectDropdown">
+                                                    <select class="f-control f-dropdown" placeholder="Select State"
+                                                        id="1">
+                                                        <option value="" hidden>Select State</option>
+                                                        <option value="1">First
+                                                        </option>
+                                                        <option value="2">Second
+                                                        </option>
+                                                        <option value="3">Rented
+                                                        </option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+
                                         <div class="col-md-6">
                                             <div class="form-group">
-                                                <label class="fs-16">Insurance Carrier Name  <Span class="text-danger">*</Span></label>
+                                                <label class="fs-16">Insurance Carrier Name <Span
+                                                        class="text-danger">*</Span></label>
                                                 <div class="f-dropdown selectDropdown">
                                                     <select class="f-control f-dropdown" placeholder="Select State"
                                                         id="1">
@@ -207,7 +283,7 @@
                                                 <input type="text" placeholder="Policy Number" class="form-control">
                                             </div>
                                         </div>
-                                      
+
 
                                         <div class="col-md-4">
                                             <div class="form-group">
@@ -234,12 +310,10 @@
                                             </div>
                                         </div>
 
-                                        
-
                                         <div class="col-12 d-flex justify-content-between">
-                                           
-                                            <label class="">                                                
-                                                Hit and Run
+
+                                            <label class="">
+                                                Was this a hit and run?
                                             </label>
                                             <div class="d-flex align-items-center justify-content-start">
                                                 <div class="d-flex align-self-center me-3">
@@ -258,11 +332,66 @@
                                                         <span class="radio-label fs-14">No </span>
                                                     </label>
                                                 </div>
-                                            </div>                                            
-                                             
-                                        </div>
-                                        
+                                            </div>
 
+                                        </div>
+
+
+                                        <div class="col-12">
+
+                                            <label class="">
+                                                Vehicle Parked or Stopped
+                                            </label>
+
+                                            <div class="row">
+
+                                                <div class="col-xl-4 col-6 claim-section pe-2">
+                                                    <label class="checkbox-inline squar-boxes mt-1 blue-shadow w-100"
+                                                        for="car">
+                                                        <input class="checkbox-control" type="checkbox"
+                                                            name="insurance-type" value="" id="car">
+                                                        <span class="checkbox-custom"></span>
+                                                        <span class="checkbox-label w-100 fs-14">
+                                                            <img src="../images/claim-icons/park-active.svg" alt=""
+                                                                class="active">
+                                                            <img src="../images/claim-icons/park-inactive.svg" alt=""
+                                                                class="offline">
+                                                            Parked
+                                                        </span>
+                                                    </label>
+                                                </div>
+                                                <div class="col-xl-4 col-6 claim-section ps-2">
+                                                    <label class="checkbox-inline squar-boxes mt-1 blue-shadow w-100"
+                                                        for="car2">
+                                                        <input class="checkbox-control" type="checkbox"
+                                                            name="insurance-type1" value="" id="car2">
+                                                        <span class="checkbox-custom"></span>
+                                                        <span class="checkbox-label w-100 fs-14">
+                                                            <img src="../images/claim-icons/stop-active.svg" alt=""
+                                                                class="active">
+                                                            <img src="../images/claim-icons/stop-inactive.svg" alt=""
+                                                                class="offline">
+                                                            Stopped
+                                                        </span>
+                                                    </label>
+                                                </div>
+                                                <div class="col-xl-4 col-6 claim-section ps-2">
+                                                    <label class="checkbox-inline squar-boxes mt-1 blue-shadow w-100"
+                                                        for="car3">
+                                                        <input class="checkbox-control" type="checkbox"
+                                                            name="insurance-type1" value="" id="car3">
+                                                        <span class="checkbox-custom"></span>
+                                                        <span class="checkbox-label w-100 fs-14">
+                                                            <img src="../images/claim-icons/car-other-active.svg" alt=""
+                                                                class="active">
+                                                            <img src="../images/claim-icons/car-other-inactive.svg"
+                                                                alt="" class="offline">
+                                                            Other
+                                                        </span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
                                         <div class="col-12">
                                             <label class="label d-flex align-items-center">
                                                 <span class="fs-18">Police report</span>

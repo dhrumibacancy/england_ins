@@ -147,86 +147,136 @@
                         <h3 class="title  text-center">Select Glass Needs Below</h3>
 
                         <form class="mt-4">
-                            <div class="contain-wrapper-sm">
-                                <div class="d-flex flex-wrap justify-content-center claim-section ">
-                                    <label class="checkbox-inline squar-boxes  flex-grow-1 mb-0" for="Yes">
-                                        <input class="checkbox-control" type="radio" name="glass-damage" value="" id="Yes" checked>
-                                        <span class="checkbox-custom"></span>
-                                        <span class="checkbox-label fs-16">
-                                            <img src="../images/claim-icons/glass-damage-active.svg" alt="" class="active" />
-                                            <img src="../images/claim-icons/glass-damage-inactive.svg" alt="" class="offline" />
-                                            Needs Repair
-                                        </span>
-                                    </label>
-                                    <label class="checkbox-inline squar-boxes flex-grow-1 mb-0" for="repaired">
-                                        <input class="checkbox-control" type="radio" name="glass-damage" value="" id="repaired">
-                                        <span class="checkbox-custom"></span>
-                                        <span class="checkbox-label fs-16">
+                            <div class="container-wrapper-md container-claim">
 
-                                            <img src="../images/claim-icons/Glass-already-repaired_Active.svg" alt=""
-                                                class="active" />
-                                            <img src="../images/claim-icons/Glass-already-repaired_Inactive.svg" alt=""
-                                                class="offline" />
+                                <div class="row g-3 justify-content-center claim-section">
+                                    <div class="col-md-5 col-6 z-index-2">
+                                        <label class="checkbox-inline squar-boxes  flex-grow-1 mb-0" for="Yes">
+                                            <input class="checkbox-control" type="radio" name="glass-damage" value=""
+                                                id="Yes" checked>
+                                            <span class="checkbox-custom"></span>
+                                            <span class="checkbox-label fs-16">
+                                                <img src="../images/claim-icons/glass-damage-active.svg" alt=""
+                                                    class="active" />
+                                                <img src="../images/claim-icons/glass-damage-inactive.svg" alt=""
+                                                    class="offline" />
+                                                Needs Repair
+                                            </span>
+                                        </label>
+                                    </div>
+                                    <div class="col-md-5  col-6 z-index-2">
+                                        <label class="checkbox-inline squar-boxes flex-grow-1 mb-0" for="repaired">
+                                            <input class="checkbox-control" type="radio" name="glass-damage" value=""
+                                                id="repaired">
+                                            <span class="checkbox-custom"></span>
+                                            <span class="checkbox-label">
+
+                                                <img src="../images/claim-icons/Glass-already-repaired_Active.svg"
+                                                    alt="" class="active" />
+                                                <img src="../images/claim-icons/Glass-already-repaired_Inactive.svg"
+                                                    alt="" class="offline" />
                                                 Glass already repaired
-                                        </span>
-                                    </label>
+                                            </span>
+                                        </label>
+                                    </div>
                                 </div>
                             </div>
 
                             <div class="contain-wrapper-sm position-relative z-index-2">
-                                <div class="container-fluid claim-additional-info  ">
+                                <div class="container-fluid claim-additional-info  white-box mt-3">
                                     <div class="row g-3">
-                                        <div class="col-md-12 col-12">
 
-                                            <label class="fs-18">Glass Company Detail</label>
+                                        <div class="col-12 mb-2">
+                                            <label class="label d-flex align-items-center">
+                                                <span class="fs-18">Glass Company Detail</span>
+                                                <a href="" class="ms-auto"><img src="../images/delete.svg"></a>
+                                            </label>
                                         </div>
-                                        <div class="col-md-6 mt-md-0">                                            
-                                            <input class="form-control addMain" type="text"
-                                                placeholder="Company Name">
-                                        </div>
-                                        <div class="col-md-6 mt-md-0">                                            
-                                            <input class="form-control addMain" type="text"
-                                                placeholder="Phone Number">
-                                        </div>
-                                        <div class="col-md-12">                                            
-                                            <input class="form-control addMain" type="text"
-                                                placeholder="Street Address">
-                                        </div>
-                                        <div class="col-md-4">
-                                            <div class="f-group max-width-100">
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label class="mb-1">
+                                                    <span class="fs-16">Company Name <span
+                                                            class="text-danger">*</span></span>
+                                                </label>
 
-                                                <div class="f-dropdown selectDropdown"><select
-                                                        class="f-control f-dropdown" placeholder="City" id="selectCity">
-                                                        <option value="">Select City</option>
-                                                        <option value="1">city 1
-                                                        </option>
-                                                        <option value="2">city 2
-                                                        </option>
-
-                                                    </select>
-
-                                                </div>
+                                                <input class="form-control addMain" type="text"
+                                                    placeholder="Company Name">
                                             </div>
                                         </div>
+
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label class="mb-1">
+                                                    <span class="fs-16">Phone Number <span
+                                                            class="text-danger">*</span></span>
+                                                </label>
+                                                <input type="text" placeholder="Phone Number" class="form-control">
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-12">
+                                            <div class="form-group">
+                                                <label class="mb-1">
+                                                    <span class="fs-16">Street Address <span
+                                                            class="text-danger">*</span></span>
+                                                </label>
+                                                <input type="text" placeholder="Enter Street Address"
+                                                    class="form-control">
+                                            </div>
+                                        </div>
+
                                         <div class="col-md-4">
-                                            <div class="f-group max-width-100">
+                                            <div class="form-group">
+                                                <label class="mb-1">
+                                                    <span class="fs-16">City <span
+                                                            class="text-danger">*</span></span>
+                                                </label>
+                                                <div class="f-group max-width-100">
 
-                                                <div class="f-dropdown selectDropdown"><select
-                                                        class="f-control f-dropdown" placeholder="state"
-                                                        id="selectState">
-                                                        <option value="">Select State</option>
-                                                        <option value="1">State 1
-                                                        </option>
-                                                        <option value="2">State 2
-                                                        </option>
+                                                    <div class="f-dropdown selectDropdown"><select
+                                                            class="f-control f-dropdown" placeholder="City"
+                                                            id="selectCity">
+                                                            <option value="">Select City</option>
+                                                            <option value="1">city 1
+                                                            </option>
+                                                            <option value="2">city 2
+                                                            </option>
 
-                                                    </select>
+                                                        </select>
 
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="col-md-4">
                                             <div class="form-group">
+                                                <label class="mb-1">
+                                                    <span class="fs-16">State <span
+                                                            class="text-danger">*</span></span>
+                                                </label>
+                                                <div class="f-group max-width-100">
+
+                                                    <div class="f-dropdown selectDropdown"><select
+                                                            class="f-control f-dropdown" placeholder="state"
+                                                            id="selectState">
+                                                            <option value="">Select State</option>
+                                                            <option value="1">State 1
+                                                            </option>
+                                                            <option value="2">State 2
+                                                            </option>
+
+                                                        </select>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="form-group">
+                                                <label class="mb-1">
+                                                    <span class="fs-16">Zip Code <span
+                                                            class="text-danger">*</span></span>
+                                                </label>
                                                 <input type="text" placeholder="ZIP Code" class="form-control">
                                             </div>
                                         </div>

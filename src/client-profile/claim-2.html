@@ -148,105 +148,135 @@
                         <label class="text-center title fw-normal mt-3">Touch & Select Below</label>
 
                         <form class="mt-4">
-                            <div class="container-wrapper-md">
-                                <div class="d-flex flex-wrap justify-content-center claim-section">
-                                    <label class="checkbox-inline squar-boxes mb-0" for="glass">
-                                        <input class="checkbox-control" type="radio" name="accident-type" value="" id="glass">
-                                        <span class="checkbox-custom"></span>
-                                        <span class="checkbox-label">
-                                            <img src="../images/claim-icons/glass-active.svg" alt="" class="active" />
-                                            <img src="../images/claim-icons/glass.svg" alt="" class="offline" />
-                                            Glass Damage Only
-                                        </span>
-                                    </label>
-                                    <label class="checkbox-inline squar-boxes mb-0" for="collision">
-                                        <input class="checkbox-control" type="radio" name="accident-type" value="" id="collision">
-                                        <span class="checkbox-custom"></span>
-                                        <span class="checkbox-label">
-                                            <img src="../images/claim-icons/collision-active.svg" alt=""
-                                                class="active" />
-                                            <img src="../images/claim-icons/collision.svg" alt="" class="offline" />
-                                            Collision with another Vehicle
-                                        </span>
-                                    </label>
-                                    <label class="checkbox-inline squar-boxes mb-0" for="no-other-vehicle">
-                                        <input class="checkbox-control" type="radio" name="accident-type" value="" id="no-other-vehicle">
-                                        <span class="checkbox-custom"></span>
-                                        <span class="checkbox-label">
+                            <div class="container-wrapper-md container-claim">
 
-                                            <img src="../images/claim-icons/no-other-vehicle-active.svg" alt=""
-                                                class="active" />
-                                            <img src="../images/claim-icons/no-other-vehicle.svg" alt=""
-                                                class="offline" />
-                                            No other vehicle Involved Accident
-                                        </span>
-                                    </label>
-                                    <label class="checkbox-inline squar-boxes mb-0" for="animal">
-                                        <input class="checkbox-control" type="radio" name="accident-type" value="" id="animal">
-                                        <span class="checkbox-custom"></span>
-                                        <span class="checkbox-label">
+                                <div class="row g-3 justify-content-center claim-section">
+                                    <div class="col-md-4 col-xl-3 col-6 z-index-2">
+                                        <label class="checkbox-inline squar-boxes mb-0" for="glass">
+                                            <input class="checkbox-control" type="radio" name="accident-type" value=""
+                                                id="glass">
+                                            <span class="checkbox-custom"></span>
+                                            <span class="checkbox-label">
+                                                <img src="../images/claim-icons/glass-active.svg" alt=""
+                                                    class="active" />
+                                                <img src="../images/claim-icons/glass.svg" alt="" class="offline" />
+                                                Glass Damage Only
+                                            </span>
+                                        </label>
+                                    </div>
+                                    <div class="col-md-4 col-xl-3 col-6 z-index-2">
+                                        <label class="checkbox-inline squar-boxes mb-0" for="collision">
+                                            <input class="checkbox-control" type="radio" name="accident-type" value=""
+                                                id="collision">
+                                            <span class="checkbox-custom"></span>
+                                            <span class="checkbox-label">
+                                                <img src="../images/claim-icons/collision-active.svg" alt=""
+                                                    class="active" />
+                                                <img src="../images/claim-icons/collision.svg" alt="" class="offline" />
+                                                Collision with another Vehicle
+                                            </span>
+                                        </label>
+                                    </div>
+                                    <div class="col-md-4 col-xl-3 col-6 z-index-2">
+                                        <label class="checkbox-inline squar-boxes mb-0" for="no-other-vehicle">
+                                            <input class="checkbox-control" type="radio" name="accident-type" value=""
+                                                id="no-other-vehicle">
+                                            <span class="checkbox-custom"></span>
+                                            <span class="checkbox-label">
 
-                                            <img src="../images/claim-icons/animal-active.svg" alt="" class="active" />
-                                            <img src="../images/claim-icons/animal.svg" alt="" class="offline" />
-                                            Animal Collision
-                                        </span>
-                                    </label>
-                                    <div class="w-100 d-none d-xl-block"></div>
-                                    <label class="checkbox-inline squar-boxes mb-0" for="theft">
-                                        <input class="checkbox-control" type="radio" name="accident-type" value="" id="theft">
-                                        <span class="checkbox-custom"></span>
-                                        <span class="checkbox-label">
+                                                <img src="../images/claim-icons/no-other-vehicle-active.svg" alt=""
+                                                    class="active" />
+                                                <img src="../images/claim-icons/no-other-vehicle.svg" alt=""
+                                                    class="offline" />
+                                                No other vehicle Involved Accident
+                                            </span>
+                                        </label>
+                                    </div>
+                                    <div class="col-md-4 col-xl-3 col-6 z-index-2">
+                                        <label class="checkbox-inline squar-boxes mb-0" for="animal">
+                                            <input class="checkbox-control" type="radio" name="accident-type" value=""
+                                                id="animal">
+                                            <span class="checkbox-custom"></span>
+                                            <span class="checkbox-label">
 
-                                            <img src="../images/claim-icons/theft-vandalism-active.svg" alt=""
-                                                class="active" />
-                                            <img src="../images/claim-icons/theft-vandalism.svg" alt=""
-                                                class="offline" />
-                                            Theft / Vandalism
-                                        </span>
-                                    </label>
-                                    <label class="checkbox-inline squar-boxes mb-0" for="weather">
-                                        <input class="checkbox-control" type="radio" name="accident-type" value="" id="weather" checked>
-                                        <span class="checkbox-custom"></span>
-                                        <span class="checkbox-label">
+                                                <img src="../images/claim-icons/animal-active.svg" alt=""
+                                                    class="active" />
+                                                <img src="../images/claim-icons/animal.svg" alt="" class="offline" />
+                                                Animal Collision
+                                            </span>
+                                        </label>
+                                    </div>
+                                    <div class="col-md-4 col-xl-3 col-6 z-index-2">
+                                        <div class="w-100 d-none d-xl-block"></div>
+                                        <label class="checkbox-inline squar-boxes mb-0" for="theft">
+                                            <input class="checkbox-control" type="radio" name="accident-type" value=""
+                                                id="theft">
+                                            <span class="checkbox-custom"></span>
+                                            <span class="checkbox-label">
 
-                                            <img src="../images/claim-icons/Weather-active.svg" alt="" class="active" />
-                                            <img src="../images/claim-icons/Weather.svg" alt="" class="offline" />
-                                            Weather
-                                        </span>
-                                    </label>
-                                    <label class="checkbox-inline squar-boxes mb-0" for="fire">
-                                        <input class="checkbox-control" type="radio" name="accident-type" value="" id="fire">
-                                        <span class="checkbox-custom"></span>
-                                        <span class="checkbox-label">
+                                                <img src="../images/claim-icons/theft-vandalism-active.svg" alt=""
+                                                    class="active" />
+                                                <img src="../images/claim-icons/theft-vandalism.svg" alt=""
+                                                    class="offline" />
+                                                Theft / Vandalism
+                                            </span>
+                                        </label>
+                                    </div>
+                                    <div class="col-md-4 col-xl-3 col-6 z-index-2">
+                                        <label class="checkbox-inline squar-boxes mb-0" for="weather">
+                                            <input class="checkbox-control" type="radio" name="accident-type" value=""
+                                                id="weather" checked>
+                                            <span class="checkbox-custom"></span>
+                                            <span class="checkbox-label">
 
-                                            <img src="../images/claim-icons/fire-active.svg" alt="" class="active" />
-                                            <img src="../images/claim-icons/fire.svg" alt="" class="offline" />
-                                            Fire
-                                        </span>
-                                    </label>
-                                    <label class="checkbox-inline squar-boxes mb-0" for="tow-only">
-                                        <input class="checkbox-control" type="radio" name="accident-type" value="" id="tow-only">
-                                        <span class="checkbox-custom"></span>
-                                        <span class="checkbox-label">
+                                                <img src="../images/claim-icons/Weather-active.svg" alt=""
+                                                    class="active" />
+                                                <img src="../images/claim-icons/Weather.svg" alt="" class="offline" />
+                                                Weather
+                                            </span>
+                                        </label>
+                                    </div>
+                                    <div class="col-md-4 col-xl-3 col-6 z-index-2">
+                                        <label class="checkbox-inline squar-boxes mb-0" for="fire">
+                                            <input class="checkbox-control" type="radio" name="accident-type" value=""
+                                                id="fire">
+                                            <span class="checkbox-custom"></span>
+                                            <span class="checkbox-label">
 
-                                            <img src="../images/claim-icons/tow-only-active.svg" alt=""
-                                                class="active" />
-                                            <img src="../images/claim-icons/tow-only.svg" alt="" class="offline" />
-                                            Tow Only
-                                        </span>
-                                    </label>
+                                                <img src="../images/claim-icons/fire-active.svg" alt=""
+                                                    class="active" />
+                                                <img src="../images/claim-icons/fire.svg" alt="" class="offline" />
+                                                Fire
+                                            </span>
+                                        </label>
+                                    </div>
+                                    <div class="col-md-4 col-xl-3 col-6 z-index-2">
+                                        <label class="checkbox-inline squar-boxes mb-0" for="tow-only">
+                                            <input class="checkbox-control" type="radio" name="accident-type" value=""
+                                                id="tow-only">
+                                            <span class="checkbox-custom"></span>
+                                            <span class="checkbox-label">
+
+                                                <img src="../images/claim-icons/tow-only-active.svg" alt=""
+                                                    class="active" />
+                                                <img src="../images/claim-icons/tow-only.svg" alt="" class="offline" />
+                                                Tow Only
+                                            </span>
+                                        </label>
+                                    </div>
                                 </div>
                             </div>
 
-                            <div class="contain-wrapper-sm position-relative z-index-2">
-                                <div class="container-fluid claim-additional-info  ">
+                            <div class="contain-wrapper-sm position-relative  z-index-2">
+                                <div class="container-fluid claim-additional-info white-box mt-3 ">
                                     <div class="row g-3">
 
                                         <div class="col-md-12 col-12 z-index-2">
                                             <div class="f-group max-width-100">
 
                                                 <div class="f-dropdown selectDropdown"><select
-                                                        class="f-control f-dropdown" placeholder="Select Weather type" id="selectCity">
+                                                        class="f-control f-dropdown" placeholder="Select Weather type"
+                                                        id="selectCity">
                                                         <option value="" hidden>Select Weather type</option>
                                                         <option value="1">Wind</option>
                                                         <option value="2">Hail</option>
@@ -259,7 +289,8 @@
                                         </div>
                                         <div class="col-md-12 col-12">
 
-                                            <label class="dark-labels">Where did this happen (not sure? Enter City & state only)</label>
+                                            <label class="dark-labels">Where did this happen (not sure? Enter City &
+                                                state only)</label>
                                             <input class="form-control addMain" type="text"
                                                 placeholder="Street Address">
                                         </div>
@@ -305,7 +336,7 @@
                                         <div class="col-md-12 col-12">
                                             <label class="dark-labels">When did this happen</label>
                                         </div>
-                                        
+
                                         <div class="col-6 mt-0">
                                             <div class="form-group">
                                                 <input type="date" placeholder="date" class="form-control">

@@ -147,75 +147,110 @@
                         <h3 class="title  text-center">Is your vehicle at home or somewhere else?</h3>
 
                         <form class="mt-4">
-                            <div class="contain-wrapper-sm">
-                                <div class="d-flex flex-wrap justify-content-center claim-section">
-                                    <label class="checkbox-inline squar-boxes mb-0 flex-grow-1 radio-active" for="glass">
-                                        <input class="checkbox-control radio-control" type="radio" value="" name="accident-location" id="glass">
-                                        
-                                        <span class="checkbox-custom"></span>
-                                        <span class="checkbox-label fs-14">
-                                            <img src="../images/claim-icons/Home_active.svg" alt="" class="active" />
-                                            <img src="../images/claim-icons/Home_inactive.svg" alt="" class="offline" />
-                                            Home
-                                        </span>
-                                        <span class="radio-custom"></span>
-                                    </label>
-                                    <label class="checkbox-inline squar-boxes mb-0 me-0 flex-grow-1 radio-active" for="collision">
-                                        <input class="checkbox-control radio-control" type="radio" value=""  name="accident-location" id="collision">
-                                        <span class="checkbox-custom"></span>
-                                        <span class="checkbox-label fs-14">
-                                            <img src="../images/claim-icons/Somewhere-else_active.svg" alt=""
-                                                class="active" />
-                                            <img src="../images/claim-icons/Somewhere-else_inactive.svg" alt="" class="offline" />
-                                            Somewhere else
-                                        </span>
-                                        <span class="radio-custom"></span>
-                                    </label>                                    
+                            <div class="container-wrapper-md container-claim">
+
+                                <div class="row g-3 justify-content-center claim-section">
+                                    <div class="col-md-5 col-xl-5 col-6 z-index-2">
+                                        <label class="checkbox-inline squar-boxes mb-0 flex-grow-1 radio-active"
+                                            for="glass">
+                                            <input class="checkbox-control radio-control" type="radio" value=""
+                                                name="accident-location" id="glass">
+
+                                            <span class="checkbox-custom"></span>
+                                            <span class="checkbox-label fs-14">
+                                                <img src="../images/claim-icons/Home_active.svg" alt=""
+                                                    class="active" />
+                                                <img src="../images/claim-icons/Home_inactive.svg" alt=""
+                                                    class="offline" />
+                                                Home
+                                            </span>
+                                        </label>
+                                    </div>
+                                    <div class="col-md-5 col-xl-5 col-6 z-index-2">
+                                        <label class="checkbox-inline squar-boxes mb-0 me-0 flex-grow-1 radio-active"
+                                            for="collision">
+                                            <input class="checkbox-control radio-control" type="radio" value=""
+                                                name="accident-location" id="collision">
+                                            <span class="checkbox-custom"></span>
+                                            <span class="checkbox-label fs-14">
+                                                <img src="../images/claim-icons/Somewhere-else_active.svg" alt=""
+                                                    class="active" />
+                                                <img src="../images/claim-icons/Somewhere-else_inactive.svg" alt=""
+                                                    class="offline" />
+                                                Somewhere else
+                                            </span>
+                                        </label>
+                                    </div>
                                 </div>
                             </div>
 
                             <div class="contain-wrapper-sm position-relative z-index-2">
                                 <div class="container-fluid claim-additional-info mt-4 bg-white border border-1">
                                     <div class="row g-3">
-                                        <div class="col-md-12 col-12">
-                                            <input class="form-control addMain" type="text"
-                                                placeholder="Street Address">
-                                        </div>
-                                        <div class="col-4">
-                                            <div class="f-group max-width-100">
-
-                                                <div class="f-dropdown selectDropdown"><select
-                                                        class="f-control f-dropdown" placeholder="City" id="selectCity">
-                                                        <option value="">Select City</option>
-                                                        <option value="1">city 1
-                                                        </option>
-                                                        <option value="2">city 2
-                                                        </option>
-
-                                                    </select>
-
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-4">
-                                            <div class="f-group max-width-100">
-
-                                                <div class="f-dropdown selectDropdown"><select
-                                                        class="f-control f-dropdown" placeholder="state"
-                                                        id="selectState">
-                                                        <option value="">Select State</option>
-                                                        <option value="1">State 1
-                                                        </option>
-                                                        <option value="2">State 2
-                                                        </option>
-
-                                                    </select>
-
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-4">
+                                        
+                                        <div class="col-md-12">
                                             <div class="form-group">
+                                                <label class="mb-1">
+                                                    <span class="fs-16">Street Address <span
+                                                            class="text-danger">*</span></span>
+                                                </label>
+                                                <input type="text" placeholder="Enter Street Address"
+                                                    class="form-control">
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-4">
+                                            <div class="form-group">
+                                                <label class="mb-1">
+                                                    <span class="fs-16">City <span
+                                                            class="text-danger">*</span></span>
+                                                </label>
+                                                <div class="f-group max-width-100">
+
+                                                    <div class="f-dropdown selectDropdown"><select
+                                                            class="f-control f-dropdown" placeholder="City"
+                                                            id="selectCity">
+                                                            <option value="">Select City</option>
+                                                            <option value="1">city 1
+                                                            </option>
+                                                            <option value="2">city 2
+                                                            </option>
+
+                                                        </select>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="form-group">
+                                                <label class="mb-1">
+                                                    <span class="fs-16">State <span
+                                                            class="text-danger">*</span></span>
+                                                </label>
+                                                <div class="f-group max-width-100">
+
+                                                    <div class="f-dropdown selectDropdown"><select
+                                                            class="f-control f-dropdown" placeholder="state"
+                                                            id="selectState">
+                                                            <option value="">Select State</option>
+                                                            <option value="1">State 1
+                                                            </option>
+                                                            <option value="2">State 2
+                                                            </option>
+
+                                                        </select>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="form-group">
+                                                <label class="mb-1">
+                                                    <span class="fs-16">Zip Code <span
+                                                            class="text-danger">*</span></span>
+                                                </label>
                                                 <input type="text" placeholder="ZIP Code" class="form-control">
                                             </div>
                                         </div>
