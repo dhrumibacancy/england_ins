@@ -13,6 +13,7 @@
   input[type="date"],
   input[type="year"],
   input[type="month"] {
+
     &::-webkit-inner-spin-button,
     &::-webkit-calendar-picker-indicator {
       display: none;
@@ -33,6 +34,7 @@
     width: 100%;
     position: absolute;
   }
+
   .answer input,
   .answer textarea {
     width: 100%;
@@ -53,6 +55,7 @@
     font-family: monospace;
     letter-spacing: 7px;
   }
+
   .answer .check-mark {
     position: absolute;
 
@@ -65,10 +68,12 @@
       position: absolute;
       transform: rotate(45deg);
     }
+
     &::before {
       transform: rotate(-45deg);
     }
   }
+
   textarea.form-control {
     border: 0;
     resize: none;
@@ -92,6 +97,7 @@
       &.a1-2 {
         left: 292px;
       }
+
       &.a1-3 {
         left: 514px;
       }
@@ -114,16 +120,19 @@
       width: 270px;
       top: 84px;
     }
+
     .a5 {
       left: 360px;
       width: 120px;
       top: 86px;
     }
+
     .a6 {
       left: 521px;
       width: 165px;
       top: 86px;
     }
+
     .a7 {
       left: 120px;
       width: 570px;
@@ -158,6 +167,7 @@
       width: 529px;
       top: 69px;
     }
+
     .a3 {
       left: 269px;
       width: 20px;
@@ -167,21 +177,25 @@
         left: 366px;
       }
     }
+
     .a4 {
       left: 210px;
       width: 359px;
       top: 120px;
     }
+
     .a5 {
       left: 342px;
       width: 359px;
       top: 140px;
     }
+
     .a6 {
       left: 653px;
       width: 50px;
       top: 120px;
     }
+
     .a7 {
       left: 391px;
       width: 50px;
@@ -199,10 +213,18 @@
       width: 99px;
       top: 40px;
     }
+
     .a2 {
       left: 661px;
       width: 99px;
       top: 67px;
+    }
+
+    .a3 {
+      left: 184px;
+      width: 119px;
+      top: 119px;
+      transform: rotate(6deg);
     }
   }
 
@@ -249,6 +271,7 @@
         width: 155px;
         top: -3px;
       }
+
       .a2 {
         left: 76px;
         width: 152px;
@@ -317,16 +340,19 @@
             font-size: 10px;
             text-align: right;
           }
+
           input#a2-1-other {
             left: 29px;
             top: 8px;
             width: 40px;
           }
+
           input#a2-2-other {
             left: 114px;
             top: 8px;
             width: 26px;
           }
+
           input#a2-3-other {
             left: 322px;
             top: 8px;
@@ -375,11 +401,13 @@
           left: 639px;
         }
       }
+
       .a9 {
         left: 428px;
         width: 155px;
         top: 186px;
       }
+
       .a10 {
         left: 589px;
         width: 22px;
@@ -389,6 +417,7 @@
           left: 639px;
         }
       }
+
       .a11 {
         left: 595px;
         width: 22px;
@@ -398,6 +427,7 @@
           left: 647px;
         }
       }
+
       .a12 {
         left: 589px;
         width: 22px;
@@ -423,16 +453,19 @@
         width: 220px;
         top: 39px;
       }
+
       .a2 {
         left: 115px;
         width: 220px;
         top: 54px;
       }
+
       .a3 {
         left: 115px;
         width: 220px;
         top: 69px;
       }
+
       .a4 {
         left: 115px;
         width: 220px;
@@ -452,13 +485,16 @@
         &.b2 {
           top: 65px;
         }
+
         &.b3 {
           top: 80px;
         }
+
         &.b4 {
           top: 95px;
         }
       }
+
       .c1 {
         left: 563px;
         width: 21px;
@@ -471,13 +507,16 @@
         &.c2 {
           top: 65px;
         }
+
         &.c3 {
           top: 80px;
         }
+
         &.c4 {
           top: 95px;
         }
       }
+
       .d1 {
         left: 624px;
         width: 21px;
@@ -490,12 +529,15 @@
         &.d2 {
           top: 139px;
         }
+
         &.d3 {
           top: 153px;
         }
+
         &.d4 {
           top: 168px;
         }
+
         &.d5 {
           top: 183px;
         }

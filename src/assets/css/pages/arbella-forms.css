@@ -187,6 +187,14 @@
   width: 99px;
   top: 67px;
 }
+.page-details.arbella-eft .signature-info .a3 {
+  left: 184px;
+  width: 119px;
+  top: 119px;
+  -webkit-transform: rotate(6deg);
+      -ms-transform: rotate(6deg);
+          transform: rotate(6deg);
+}
 .page-details.arbella-eft.arbella-excluison .operator-info {
   position: absolute;
   top: 305px;

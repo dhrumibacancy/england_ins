@@ -5926,40 +5926,49 @@ main .wrapper .admin-section-container .content.login-pannel {
 .page-details.trevelor-eft-autopay.trevelor-eft .insured-info .a11.a11-2 {
   left: 69px;
 }
+.page-details.trevelor-eft-autopay.trevelor-eft .insured-info .a12 {
+  left: -5px;
+  width: 150px;
+  top: 316px;
+  -webkit-transform: rotate(5deg);
+      -ms-transform: rotate(5deg);
+          transform: rotate(5deg);
+}
 
 .page {
   page-break-after: always;
   position: relative;
+  background-color: white;
 }
 
-.page-details.safety-ef-form {
+.page-details.safety-eft-form {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   z-index: 10000;
 }
-.page-details.safety-ef-form input[type=date]::-webkit-inner-spin-button, .page-details.safety-ef-form input[type=date]::-webkit-calendar-picker-indicator,
-.page-details.safety-ef-form input[type=year]::-webkit-inner-spin-button,
-.page-details.safety-ef-form input[type=year]::-webkit-calendar-picker-indicator,
-.page-details.safety-ef-form input[type=month]::-webkit-inner-spin-button,
-.page-details.safety-ef-form input[type=month]::-webkit-calendar-picker-indicator {
+.page-details.safety-eft-form input[type=date]::-webkit-inner-spin-button, .page-details.safety-eft-form input[type=date]::-webkit-calendar-picker-indicator,
+.page-details.safety-eft-form input[type=year]::-webkit-inner-spin-button,
+.page-details.safety-eft-form input[type=year]::-webkit-calendar-picker-indicator,
+.page-details.safety-eft-form input[type=month]::-webkit-inner-spin-button,
+.page-details.safety-eft-form input[type=month]::-webkit-calendar-picker-indicator {
   display: none;
   -webkit-appearance: none;
 }
-.page-details.safety-ef-form .form-img {
+.page-details.safety-eft-form .form-img {
   width: 100%;
 }
-.page-details.safety-ef-form .answer {
+.page-details.safety-eft-form .answer {
   position: absolute;
   bottom: 0;
 }
-.page-details.safety-ef-form .answer img {
+.page-details.safety-eft-form .answer img {
   width: 100%;
   position: absolute;
 }
-.page-details.safety-ef-form .answer input,
-.page-details.safety-ef-form .answer textarea {
+.page-details.safety-eft-form .answer input,
+.page-details.safety-eft-form .answer textarea {
   width: 100%;
   font-size: 10px;
   font-weight: bold;
@@ -5968,18 +5977,18 @@ main .wrapper .admin-section-container .content.login-pannel {
   background: transparent;
   overflow: hidden;
 }
-.page-details.safety-ef-form .answer textarea {
+.page-details.safety-eft-form .answer textarea {
   font-size: 10px;
   padding: 0 5px;
 }
-.page-details.safety-ef-form .answer.monospace {
+.page-details.safety-eft-form .answer.monospace {
   font-family: monospace;
   letter-spacing: 7px;
 }
-.page-details.safety-ef-form .answer .check-mark {
+.page-details.safety-eft-form .answer .check-mark {
   position: absolute;
 }
-.page-details.safety-ef-form .answer .check-mark::before, .page-details.safety-ef-form .answer .check-mark::after {
+.page-details.safety-eft-form .answer .check-mark::before, .page-details.safety-eft-form .answer .check-mark::after {
   content: "";
   height: 2px;
   width: 15px;
@@ -5989,153 +5998,161 @@ main .wrapper .admin-section-container .content.login-pannel {
       -ms-transform: rotate(45deg);
           transform: rotate(45deg);
 }
-.page-details.safety-ef-form .answer .check-mark::before {
+.page-details.safety-eft-form .answer .check-mark::before {
   -webkit-transform: rotate(-45deg);
       -ms-transform: rotate(-45deg);
           transform: rotate(-45deg);
 }
-.page-details.safety-ef-form textarea.form-control {
+.page-details.safety-eft-form textarea.form-control {
   border: 0;
   resize: none;
   height: 100%;
 }
-.page-details.safety-ef-form .insured-info {
+.page-details.safety-eft-form .insured-info {
   position: absolute;
   top: 110px;
   left: 50px;
 }
-.page-details.safety-ef-form .insured-info input {
+.page-details.safety-eft-form .insured-info input {
   font-size: 14px;
 }
-.page-details.safety-ef-form .insured-info .a0 {
+.page-details.safety-eft-form .insured-info .a0 {
   left: 173px;
   width: 355px;
   top: 25px;
 }
-.page-details.safety-ef-form .insured-info .a1 {
+.page-details.safety-eft-form .insured-info .a1 {
   left: 210px;
   width: 359px;
   top: 55px;
 }
-.page-details.safety-ef-form .insured-info .a2 {
+.page-details.safety-eft-form .insured-info .a2 {
   left: 467px;
   width: 210px;
   top: 53px;
 }
-.page-details.safety-ef-form .insured-info .a3 {
+.page-details.safety-eft-form .insured-info .a3 {
   left: 296px;
   width: 205px;
   top: 80px;
 }
-.page-details.safety-ef-form .insured-info .a4 {
+.page-details.safety-eft-form .insured-info .a4 {
   left: 562px;
   width: 120px;
   top: 81px;
 }
-.page-details.safety-ef-form .insured-info .a5 {
+.page-details.safety-eft-form .insured-info .a5 {
   left: 110px;
   width: 560px;
   top: 109px;
 }
-.page-details.safety-ef-form .insured-info .a6 {
+.page-details.safety-eft-form .insured-info .a6 {
   left: 551px;
   width: 20px;
   top: 63px;
 }
-.page-details.safety-ef-form .insured-info .a7 {
+.page-details.safety-eft-form .insured-info .a7 {
   left: 591px;
   width: 20px;
   top: 63px;
 }
-.page-details.safety-ef-form .insured-info .a8 {
+.page-details.safety-eft-form .insured-info .a8 {
   left: 644px;
   width: 20px;
   top: 119px;
 }
-.page-details.safety-ef-form .insured-info .a9 {
+.page-details.safety-eft-form .insured-info .a9 {
   left: 424px;
   width: 120px;
   top: 239px;
 }
-.page-details.safety-ef-form .account-info {
+.page-details.safety-eft-form .account-info {
   position: absolute;
   top: 233px;
   left: -48px;
 }
-.page-details.safety-ef-form .account-info .answer.monospace input {
+.page-details.safety-eft-form .account-info .answer.monospace input {
   letter-spacing: 20.8px;
   font-size: 15px;
 }
-.page-details.safety-ef-form .account-info .a1 {
+.page-details.safety-eft-form .account-info .a1 {
   left: 210px;
   width: 359px;
   top: 53px;
 }
-.page-details.safety-ef-form .account-info .a2 {
+.page-details.safety-eft-form .account-info .a2 {
   left: 653px;
   width: 50px;
   top: 53px;
 }
-.page-details.safety-ef-form .account-info .a3 {
+.page-details.safety-eft-form .account-info .a3 {
   left: 210px;
   width: 359px;
   top: 86px;
 }
-.page-details.safety-ef-form .account-info .a4 {
+.page-details.safety-eft-form .account-info .a4 {
   left: 653px;
   width: 50px;
   top: 86px;
 }
-.page-details.safety-ef-form .account-info .a5 {
+.page-details.safety-eft-form .account-info .a5 {
   left: 210px;
   width: 359px;
   top: 120px;
 }
-.page-details.safety-ef-form .account-info .a6 {
+.page-details.safety-eft-form .account-info .a6 {
   left: 653px;
   width: 50px;
   top: 120px;
 }
-.page-details.safety-ef-form .account-info .a7 {
+.page-details.safety-eft-form .account-info .a7 {
   left: 391px;
   width: 50px;
   top: 180px;
 }
-.page-details.safety-ef-form .signature-info {
+.page-details.safety-eft-form .signature-info {
   position: absolute;
   top: 898px;
   left: 0;
 }
-.page-details.safety-ef-form .signature-info .a1 {
+.page-details.safety-eft-form .signature-info .a1 {
   left: 592px;
   width: 359px;
   top: 40px;
 }
-.page-details.safety-ef-form .financial-info {
+.page-details.safety-eft-form .signature-info .a2 {
+  left: 170px;
+  width: 169px;
+  top: 20px;
+  -webkit-transform: rotate(2deg);
+      -ms-transform: rotate(2deg);
+          transform: rotate(2deg);
+}
+.page-details.safety-eft-form .financial-info {
   position: absolute;
   top: 443px;
   left: 0;
 }
-.page-details.safety-ef-form .financial-info .answer.monospace input {
+.page-details.safety-eft-form .financial-info .answer.monospace input {
   letter-spacing: 20.8px;
   font-size: 15px;
 }
-.page-details.safety-ef-form .financial-info .a1 {
+.page-details.safety-eft-form .financial-info .a1 {
   left: 302px;
   width: 359px;
   top: 50px;
 }
-.page-details.safety-ef-form .financial-info .a2 {
+.page-details.safety-eft-form .financial-info .a2 {
   left: 290px;
   width: 420px;
   top: 68px;
 }
-.page-details.safety-ef-form .financial-info .a3 {
+.page-details.safety-eft-form .financial-info .a3 {
   left: 308px;
   width: 359px;
   top: 103px;
 }
-.page-details.safety-ef-form .financial-info .a4 {
+.page-details.safety-eft-form .financial-info .a4 {
   left: 308px;
   width: 430px;
   top: 133px;
@@ -6326,6 +6343,14 @@ main .wrapper .admin-section-container .content.login-pannel {
   left: 661px;
   width: 99px;
   top: 67px;
+}
+.page-details.arbella-eft .signature-info .a3 {
+  left: 184px;
+  width: 119px;
+  top: 119px;
+  -webkit-transform: rotate(6deg);
+      -ms-transform: rotate(6deg);
+          transform: rotate(6deg);
 }
 .page-details.arbella-eft.arbella-excluison .operator-info {
   position: absolute;

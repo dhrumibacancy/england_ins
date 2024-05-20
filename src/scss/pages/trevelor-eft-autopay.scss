@@ -13,6 +13,7 @@
   input[type="date"],
   input[type="year"],
   input[type="month"] {
+
     &::-webkit-inner-spin-button,
     &::-webkit-calendar-picker-indicator {
       display: none;
@@ -33,6 +34,7 @@
     width: 100%;
     position: absolute;
   }
+
   .answer input,
   .answer textarea {
     width: 100%;
@@ -53,6 +55,7 @@
     font-family: monospace;
     letter-spacing: 7px;
   }
+
   .answer .check-mark {
     position: absolute;
 
@@ -65,10 +68,12 @@
       position: absolute;
       transform: rotate(45deg);
     }
+
     &::before {
       transform: rotate(-45deg);
     }
   }
+
   textarea.form-control {
     border: 0;
     resize: none;
@@ -91,6 +96,7 @@
       width: 359px;
       height: 38px;
       top: 23px;
+
       textarea {
         line-height: 18px;
       }
@@ -101,36 +107,43 @@
       width: 165px;
       top: 3px;
     }
+
     .a3 {
       left: 526px;
       width: 165px;
       top: 23px;
     }
+
     .a4 {
       left: 526px;
       width: 165px;
       top: 43px;
     }
+
     .a5 {
       left: 70px;
       width: 435px;
       top: 95px;
     }
+
     .a6 {
       left: 551px;
       width: 20px;
       top: 63px;
     }
+
     .a7 {
       left: 591px;
       width: 20px;
       top: 63px;
     }
+
     .a8 {
       left: 644px;
       width: 20px;
       top: 119px;
     }
+
     .a9 {
       left: 424px;
       width: 120px;
@@ -148,34 +161,48 @@
         width: 120px;
         top: 78px;
       }
+
       .a7 {
         left: 562px;
         width: 120px;
         top: 78px;
       }
+
       .a8 {
         left: 663px;
         width: 20px;
         top: 61px;
       }
+
       .a9 {
         top: 199px;
       }
+
       .a10 {
         left: 133px;
         width: 20px;
         top: 69px;
+
         &.a10-2 {
           left: 200px;
         }
       }
+
       .a11 {
         left: -15px;
         width: 20px;
         top: 86px;
+
         &.a11-2 {
           left: 69px;
         }
+      }
+
+      .a12 {
+        left: -5px;
+        width: 150px;
+        top: 316px;
+        transform: rotate(5deg);
       }
     }
   }

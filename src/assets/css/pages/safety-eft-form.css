@@ -4,6 +4,7 @@
  .page {
   page-break-after: always;
   position: relative;
+  background-color: white;
 }
 
 .page-details.safety-eft-form {
@@ -185,6 +186,14 @@
   width: 359px;
   top: 40px;
 }
+.page-details.safety-eft-form .signature-info .a2 {
+  left: 170px;
+  width: 169px;
+  top: 20px;
+  -webkit-transform: rotate(2deg);
+      -ms-transform: rotate(2deg);
+          transform: rotate(2deg);
+}
 .page-details.safety-eft-form .financial-info {
   position: absolute;
   top: 443px;
@@ -214,4 +223,4 @@
   width: 430px;
   top: 133px;
 }
-/*# sourceMappingURL=safety-ef-form.css.map */
+/*# sourceMappingURL=safety-eft-form.css.map */

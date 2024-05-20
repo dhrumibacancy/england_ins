@@ -1,9 +1,10 @@
 .page {
   page-break-after: always;
   position: relative;
+  background-color: white;
 }
 
-.page-details.safety-ef-form {
+.page-details.safety-eft-form {
   position: absolute;
   top: 0;
   left: 0;
@@ -199,6 +200,12 @@
       left: 592px;
       width: 359px;
       top: 40px;
+    }
+    .a2 {
+      left: 170px;
+      width: 169px;
+      top: 20px;
+      transform: rotate(2deg);
     }
   }
 
