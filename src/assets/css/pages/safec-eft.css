@@ -130,6 +130,14 @@
   width: 44px;
   top: 4px;
 }
+.page-details.safec-eft .signature-info .a4 {
+  left: 86px;
+  width: 122px;
+  top: 28px;
+  -webkit-transform: rotate(2deg);
+      -ms-transform: rotate(2deg);
+          transform: rotate(2deg);
+}
 .page-details.safec-eft .exlusion-info {
   position: absolute;
   top: 544px;

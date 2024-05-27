@@ -13,6 +13,7 @@
   input[type="date"],
   input[type="year"],
   input[type="month"] {
+
     &::-webkit-inner-spin-button,
     &::-webkit-calendar-picker-indicator {
       display: none;
@@ -33,6 +34,7 @@
     width: 100%;
     position: absolute;
   }
+
   .answer input,
   .answer textarea {
     width: 100%;
@@ -53,6 +55,7 @@
     font-family: monospace;
     letter-spacing: 7px;
   }
+
   .answer .check-mark {
     position: absolute;
 
@@ -65,10 +68,12 @@
       position: absolute;
       transform: rotate(45deg);
     }
+
     &::before {
       transform: rotate(-45deg);
     }
   }
+
   textarea.form-control {
     border: 0;
     resize: none;
@@ -89,16 +94,19 @@
       width: 75px;
       top: -191px;
     }
+
     .a1 {
       left: 56px;
       width: 335px;
       top: -4px;
     }
+
     .a2 {
       left: 496px;
       width: 202px;
       top: -4px;
     }
+
     .a3 {
       left: 496px;
       width: 202px;
@@ -121,20 +129,30 @@
       width: 35px;
       top: 4px;
     }
+
     .a1 {
       left: 477px;
       width: 35px;
       top: 4px;
     }
+
     .a2 {
       left: 537px;
       width: 35px;
       top: 4px;
     }
+
     .a3 {
       left: 590px;
       width: 44px;
       top: 4px;
+    }
+
+    .a4 {
+      left: 86px;
+      width: 122px;
+      top: 28px;
+      transform: rotate(2deg);
     }
   }
 
@@ -146,17 +164,19 @@
     input {
       font-size: 16px;
     }
+
     .a0 {
       left: 39px;
       width: 402px;
       top: -337px;
     }
-    
+
     .a1 {
       left: 40px;
       width: 525px;
       height: 100px;
       top: 0;
+
       textarea {
         font-size: 14px;
       }
