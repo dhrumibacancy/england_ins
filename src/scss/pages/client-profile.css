@@ -252,6 +252,32 @@
   font-size: 0.75rem;
 }
 
+.numeric-card {
+  display: flex;
+  justify-content: center;
+}
+.numeric-card .numeric-input {
+  text-align: center;
+  width: 70px;
+}
+.numeric-card button.btn.btn-numeric {
+  min-width: auto;
+  padding: 6px;
+  height: 52px;
+  width: 52px;
+  border: 1px solid #ddd;
+  background: transparent;
+  margin: 0 10px;
+  font-weight: 300;
+  font-size: 20px;
+  color: #8a8a8a;
+  text-align: center;
+}
+.numeric-card small {
+  color: var(--color-light-gray);
+  font-size: 14px;
+}
+
 .policy-table.transection-table .link-label {
   color: var(--color-light-gray3);
 }
@@ -539,6 +565,11 @@
   color: var(--color-title);
 }
 
+.container-claim {
+  max-width: 880px;
+  margin: 0 auto;
+}
+
 .claim-section .sec-title {
   font-size: 18px;
   font-weight: 500;
@@ -653,11 +684,13 @@
   height: auto;
 }
 .claim-section label.checkbox-inline.squar-boxes {
-  width: 200px;
+  width: 100%;
+  height: 156px;
   background: none;
   border-radius: 0;
   box-shadow: none;
   padding: 0;
+  margin: 0;
 }
 .claim-section label.checkbox-inline.squar-boxes .checkbox-control:checked ~ .checkbox-label {
   box-shadow: 0px 20px 30px 0px #ddeefb;
@@ -684,6 +717,97 @@
   background: #fff;
   border-radius: 12px;
   padding: 10px;
+}
+@media screen and (max-width: 578px) {
+  .claim-section label.checkbox-inline.squar-boxes {
+    width: 160px;
+    margin: 10px 5px 10px;
+  }
+}
+
+.checkbox-inline.checkbox-button {
+  position: relative;
+}
+.checkbox-inline.checkbox-button .checkbox-control:checked ~ .checkbox-custom {
+  background: transparent;
+}
+.checkbox-inline.checkbox-button .checkbox-control:checked ~ .checkbox-label {
+  border: 1px solid #016BBF;
+  background: #E6F1F9;
+  color: #2B2B2B;
+  padding: 11px 44px 11px 8px;
+}
+.checkbox-inline.checkbox-button .checkbox-control:checked ~ .checkbox-label img.active {
+  display: block;
+}
+.checkbox-inline.checkbox-button .checkbox-control:checked ~ .checkbox-label img.offline {
+  display: none;
+}
+.checkbox-inline.checkbox-button .checkbox-custom {
+  position: absolute;
+  top: 18px;
+  right: 12px;
+  background: transparent;
+  border: 0;
+}
+.checkbox-inline.checkbox-button .checkbox-custom::after {
+  border: solid #016bbf;
+  border-width: 0px 1px 1px 0;
+  width: 6px;
+  height: 12px;
+}
+.checkbox-inline.checkbox-button .checkbox-label {
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  text-transform: initial;
+  color: #2B2B2B;
+  border: 1px solid #E6E6E6;
+  background-color: white;
+  box-shadow: none;
+  border-radius: 4px;
+  padding: 11px 8px;
+}
+.checkbox-inline.checkbox-button img.offline,
+.checkbox-inline.checkbox-button img.active {
+  width: 32px;
+  height: 32px;
+  margin-right: 6px;
+}
+.checkbox-inline.checkbox-button img.active {
+  display: none;
+}
+.checkbox-inline.checkbox-button img.offline {
+  display: block;
+}
+
+.blue-card {
+  border: 1px solid #E6E6E6;
+  background: #F1F8FE;
+  padding: 12px;
+  border-radius: 8px;
+}
+.blue-card .card-title {
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 28px;
+  text-align: left;
+}
+.blue-card label {
+  margin: 0;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  text-align: left;
+}
+.blue-card.blue-badge {
+  height: 36px;
+  padding: 4px 12px;
 }
 
 .claim-additional-info {
@@ -763,7 +887,8 @@
 }
 .vehicle-damage .car-sides-input.none {
   left: 50%;
-  top: 0;
+  top: -10px;
+  transform: translateX(-50%);
 }
 .vehicle-damage .car-sides-input.front {
   top: 50%;

@@ -537,4 +537,29 @@ h1 {
   right: 4px;
   top: 4px;
   font-size: 0;
+}
+
+.trailersList {
+  margin-top: 5px;
+}
+
+.trailersList .col {
+  flex: 0 0 14.28%;
+}
+
+.vehcilesList .col {
+  flex: 0 0 11.09%;
+}
+
+.custom-tabs.nav-pills .nav-link {
+  border-radius: 0;
+  color: #8A8A8A;
+  font-size: 16px;
+  font-weight: 500;
+  border-bottom: 2px solid transparent;
+}
+.custom-tabs.nav-pills .nav-link.active {
+  background-color: transparent;
+  color: #016BBF;
+  border-bottom-color: #016BBF;
 }/*# sourceMappingURL=login.css.map */

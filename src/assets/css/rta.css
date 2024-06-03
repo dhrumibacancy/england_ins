@@ -1,7 +1,4 @@
-/* custom main 
- UnExpected King Tirth Shah */ 
- 
- body {
+body {
   width: 790px;
   padding: 0;
   margin: 0 auto;
@@ -53,14 +50,10 @@
   width: 15px;
   background: black;
   position: absolute;
-  -webkit-transform: rotate(45deg);
-      -ms-transform: rotate(45deg);
-          transform: rotate(45deg);
+  transform: rotate(45deg);
 }
 .answer .check-mark::before {
-  -webkit-transform: rotate(-45deg);
-      -ms-transform: rotate(-45deg);
-          transform: rotate(-45deg);
+  transform: rotate(-45deg);
 }
 
 .a1 {
@@ -1073,5 +1066,4 @@
 .m-block #m-date {
   left: 636px;
   width: 126px;
-}
-/*# sourceMappingURL=rta.css.map */
+}/*# sourceMappingURL=rta.css.map */
