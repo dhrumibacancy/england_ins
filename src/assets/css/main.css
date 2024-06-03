@@ -5293,6 +5293,12 @@ main .wrapper .admin-section-container .content.login-pannel {
   top: 90px;
 }
 
+.page-details.bristol-eft .payment-details .b6 {
+  left: -80px;
+  width: 26px;
+  top: 137px;
+}
+
 .page-details.bristol-eft .payment-details.payment-details-cards {
   left: 404px;
 }
@@ -6040,6 +6046,10 @@ main .wrapper .admin-section-container .content.login-pannel {
   position: relative;
 }
 
+.form-img {
+  width: 100%;
+}
+
 .page-details.safec-eft {
   position: absolute;
   top: 0;
@@ -6080,6 +6090,7 @@ main .wrapper .admin-section-container .content.login-pannel {
   position: absolute;
   background: transparent;
   overflow: hidden;
+  border: 0;
 }
 
 .page-details.safec-eft .answer textarea {
@@ -6146,6 +6157,12 @@ main .wrapper .admin-section-container .content.login-pannel {
 .page-details.safec-eft .holder-info .a3 {
   left: 496px;
   width: 202px;
+  top: 44px;
+}
+
+.page-details.safec-eft .holder-info .a4 {
+  left: 56px;
+  width: 30px;
   top: 44px;
 }
 
@@ -6229,6 +6246,10 @@ main .wrapper .admin-section-container .content.login-pannel {
   position: relative;
 }
 
+.form-img {
+  width: 100%;
+}
+
 .page-details.trevelor-eft-autopay {
   position: absolute;
   top: 0;
@@ -6244,10 +6265,6 @@ main .wrapper .admin-section-container .content.login-pannel {
 .page-details.trevelor-eft-autopay input[type=month]::-webkit-calendar-picker-indicator {
   display: none;
   -webkit-appearance: none;
-}
-
-.page-details.trevelor-eft-autopay .form-img {
-  width: 100%;
 }
 
 .page-details.trevelor-eft-autopay .answer {
@@ -6269,6 +6286,7 @@ main .wrapper .admin-section-container .content.login-pannel {
   position: absolute;
   background: transparent;
   overflow: hidden;
+  border: 0;
 }
 
 .page-details.trevelor-eft-autopay .answer textarea {
@@ -6475,6 +6493,7 @@ main .wrapper .admin-section-container .content.login-pannel {
   position: absolute;
   background: transparent;
   overflow: hidden;
+  border: 0;
 }
 
 .page-details.safety-eft-form .answer textarea {
@@ -6646,9 +6665,16 @@ main .wrapper .admin-section-container .content.login-pannel {
 }
 
 .page-details.safety-eft-form .signature-info .a2 {
-  left: 170px;
-  width: 169px;
-  top: 20px;
+  left: 180px;
+  width: 40px;
+  top: 30px;
+  transform: rotate(2deg);
+}
+
+.page-details.safety-eft-form .signature-info .a2.signature {
+  left: 180px;
+  width: 40px;
+  top: 30px;
   transform: rotate(2deg);
 }
 
@@ -6907,9 +6933,9 @@ main .wrapper .admin-section-container .content.login-pannel {
 }
 
 .page-details.arbella-eft .signature-info .a3 {
-  left: 184px;
-  width: 119px;
-  top: 119px;
+  left: 334px;
+  width: 30px;
+  top: 38px;
   transform: rotate(6deg);
 }
 
@@ -10387,6 +10413,12 @@ main .wrapper .admin-section-container .content.login-pannel {
 .page-details.amica-eft .signature-info .a2 {
   left: 661px;
   width: 99px;
+  top: 67px;
+}
+
+.page-details.amica-eft .signature-info .a2 {
+  left: 661px;
+  width: 30px;
   top: 67px;
 }
 

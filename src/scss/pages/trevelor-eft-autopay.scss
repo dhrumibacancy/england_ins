@@ -3,6 +3,10 @@
   position: relative;
 }
 
+.form-img {
+  width: 100%;
+}
+
 .page-details.trevelor-eft-autopay {
   position: absolute;
   top: 0;
@@ -21,9 +25,6 @@
     }
   }
 
-  .form-img {
-    width: 100%;
-  }
 
   .answer {
     position: absolute;
@@ -44,6 +45,7 @@
     position: absolute;
     background: transparent;
     overflow: hidden;
+    border: 0;
   }
 
   .answer textarea {

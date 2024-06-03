@@ -39,6 +39,7 @@
   position: absolute;
   background: transparent;
   overflow: hidden;
+  border: 0;
 }
 .page-details.safety-eft-form .answer textarea {
   font-size: 10px;
@@ -180,9 +181,15 @@
   top: 40px;
 }
 .page-details.safety-eft-form .signature-info .a2 {
-  left: 170px;
-  width: 169px;
-  top: 20px;
+  left: 180px;
+  width: 40px;
+  top: 30px;
+  transform: rotate(2deg);
+}
+.page-details.safety-eft-form .signature-info .a2.signature {
+  left: 180px;
+  width: 40px;
+  top: 30px;
   transform: rotate(2deg);
 }
 .page-details.safety-eft-form .financial-info {

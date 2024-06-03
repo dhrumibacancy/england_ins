@@ -3,6 +3,10 @@
   position: relative;
 }
 
+.form-img {
+  width: 100%;
+}
+
 .page-details.safec-eft {
   position: absolute;
   top: 0;
@@ -38,6 +42,7 @@
   position: absolute;
   background: transparent;
   overflow: hidden;
+  border: 0;
 }
 .page-details.safec-eft .answer textarea {
   font-size: 10px;
@@ -92,6 +97,11 @@
 .page-details.safec-eft .holder-info .a3 {
   left: 496px;
   width: 202px;
+  top: 44px;
+}
+.page-details.safec-eft .holder-info .a4 {
+  left: 56px;
+  width: 30px;
   top: 44px;
 }
 .page-details.safec-eft .signature-info {
