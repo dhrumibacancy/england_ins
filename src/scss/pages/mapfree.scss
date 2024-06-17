@@ -347,6 +347,30 @@
         width: 202px;
         top: 1px;
       }
+      .a3 {
+        left: -230px;
+        top: -35px;
+        height: 20px;
+        width: 150px;
+        img{
+          width: auto;
+          height: 100%;
+          object-fit: contain;
+          object-position: left;
+        }
+      }
+      .a4 {
+        left: -230px;
+        top: 0px;
+        height: 20px;
+        width: 150px;
+        img{
+          width: auto;
+          height: 100%;
+          object-fit: contain;
+          object-position: left;
+        }
+      }
     }
   }
 

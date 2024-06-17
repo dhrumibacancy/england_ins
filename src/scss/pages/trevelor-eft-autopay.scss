@@ -202,9 +202,16 @@
 
       .a12 {
         left: 5px;
-        width: 25px;
         top: 200px;
         transform: rotate(5deg);
+
+        height: 25px;
+        width: 150px;
+
+        img {
+          width: auto;
+          height: 100%;
+        }
       }
     }
   }

@@ -226,9 +226,15 @@
     }
     .a2.signature {
       left: 180px;
-      width: 40px;
       top: 30px;
       transform: rotate(2deg);
+      
+      height: 25px;
+      width: 150px;
+      img{
+        width: auto;
+        height: 100%;
+      }
     }
   }
 

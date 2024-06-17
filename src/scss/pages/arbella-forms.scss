@@ -222,9 +222,15 @@
 
     .a3 {
       left: 334px;
-      width: 30px;
       top: 38px;
        transform: rotate(6deg);
+       
+      height: 25px;
+      width: 150px;
+      img{
+        width: auto;
+        height: 100%;
+      }
     }
   }
 

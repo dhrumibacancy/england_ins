@@ -188,9 +188,14 @@
 }
 .page-details.safety-eft-form .signature-info .a2.signature {
   left: 180px;
-  width: 40px;
   top: 30px;
   transform: rotate(2deg);
+  height: 25px;
+  width: 150px;
+}
+.page-details.safety-eft-form .signature-info .a2.signature img {
+  width: auto;
+  height: 100%;
 }
 .page-details.safety-eft-form .financial-info {
   position: absolute;

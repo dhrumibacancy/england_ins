@@ -148,8 +148,14 @@
     }
     .b6 {
       left: -80px;
-      width: 26px;
-      top: 137px;  
+      top: 137px; 
+      
+      height: 25px;
+      width: 150px;
+      img{
+        width: auto;
+        height: 100%;
+      }
     }
 
     &.payment-details-cards {

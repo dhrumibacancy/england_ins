@@ -13,6 +13,7 @@
   input[type="date"],
   input[type="year"],
   input[type="month"] {
+
     &::-webkit-inner-spin-button,
     &::-webkit-calendar-picker-indicator {
       display: none;
@@ -33,6 +34,7 @@
     width: 100%;
     position: absolute;
   }
+
   .answer input,
   .answer textarea {
     width: 100%;
@@ -53,6 +55,7 @@
     font-family: monospace;
     letter-spacing: 7px;
   }
+
   .answer .check-mark {
     position: absolute;
 
@@ -65,10 +68,12 @@
       position: absolute;
       transform: rotate(45deg);
     }
+
     &::before {
       transform: rotate(-45deg);
     }
   }
+
   textarea.form-control {
     border: 0;
     resize: none;
@@ -79,6 +84,7 @@
     position: absolute;
     top: 170px;
     left: 20px;
+
     input {
       font-size: 13px;
     }
@@ -112,16 +118,19 @@
       width: 272px;
       top: 45px;
     }
+
     .a6 {
       left: 370px;
       width: 155px;
       top: 45px;
     }
+
     .a7 {
       left: 534px;
       width: 59px;
       top: 45px;
     }
+
     .a8 {
       left: 604px;
       width: 104px;
@@ -138,10 +147,12 @@
       left: 86px;
       top: -7px;
     }
+
     .a2 {
       left: 400px;
       top: -6px;
     }
+
     .a3 {
       left: 86px;
       top: 12px;
@@ -158,16 +169,19 @@
       width: 222px;
       top: 0;
     }
+
     .a2 {
       &.a2-1 {
         left: 383px;
         top: 44px;
       }
+
       &.a2-2 {
         left: 383px;
         top: 44px;
       }
     }
+
     .a3 {
       left: 99px;
       top: 41px;
@@ -193,21 +207,27 @@
       display: flex;
       align-items: center;
       height: 22px;
+
       .a1 {
         width: 268px;
       }
+
       .a2 {
         width: 46px;
       }
+
       .a3 {
         width: 42px;
       }
+
       .a4 {
         width: 51px;
       }
+
       .a5 {
         width: 119px;
       }
+
       .a6 {
         width: 91px;
       }
@@ -217,36 +237,45 @@
   .section-4 {
     position: absolute;
     top: 642px;
+
     input {
       font-size: 15px;
     }
+
     .a1 {
       left: 104px;
       width: 302px;
       top: 0;
     }
+
     .a2 {
       left: 417px;
       width: 162px;
       top: 0;
     }
+
     .a3 {
       left: 588px;
       width: 130px;
       top: 0;
     }
+
     .a4 {
       top: 51px;
+
       &.a4-1 {
         left: 98px;
       }
+
       &.a4-2 {
         left: 178px;
       }
+
       &.a4-3 {
         left: 249px;
         top: 53px;
       }
+
       &.a4-4 {
         left: 469px;
         top: 54px;
@@ -263,9 +292,24 @@
       left: 570px;
       width: 162px;
       top: 2px;
+
       input {
         font-size: 15px;
       }
     }
+
+    .a3 {
+      left: 190px;
+      top: 0;
+      height: 25px;
+      width: 150px;
+      img{
+        width: auto;
+        height: 100%;
+        object-fit: contain;
+        object-position: left;
+      }
+    }
+
   }
 }

@@ -131,8 +131,13 @@
 }
 .page-details.bristol-eft .payment-details .b6 {
   left: -80px;
-  width: 26px;
   top: 137px;
+  height: 25px;
+  width: 150px;
+}
+.page-details.bristol-eft .payment-details .b6 img {
+  width: auto;
+  height: 100%;
 }
 .page-details.bristol-eft .payment-details.payment-details-cards {
   left: 404px;

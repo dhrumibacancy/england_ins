@@ -5295,8 +5295,14 @@ main .wrapper .admin-section-container .content.login-pannel {
 
 .page-details.bristol-eft .payment-details .b6 {
   left: -80px;
-  width: 26px;
   top: 137px;
+  height: 25px;
+  width: 150px;
+}
+
+.page-details.bristol-eft .payment-details .b6 img {
+  width: auto;
+  height: 100%;
 }
 
 .page-details.bristol-eft .payment-details.payment-details-cards {
@@ -6041,6 +6047,22 @@ main .wrapper .admin-section-container .content.login-pannel {
   font-size: 15px;
 }
 
+.page-details.eft-metlife .section-5 .a3 {
+  left: 190px;
+  top: 0;
+  height: 25px;
+  width: 150px;
+}
+
+.page-details.eft-metlife .section-5 .a3 img {
+  width: auto;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -o-object-position: left;
+     object-position: left;
+}
+
 .page {
   page-break-after: always;
   position: relative;
@@ -6203,9 +6225,15 @@ main .wrapper .admin-section-container .content.login-pannel {
 
 .page-details.safec-eft .signature-info .a4 {
   left: 86px;
-  width: 122px;
   top: 28px;
   transform: rotate(2deg);
+  height: 25px;
+  width: 150px;
+}
+
+.page-details.safec-eft .signature-info .a4 img {
+  width: auto;
+  height: 100%;
 }
 
 .page-details.safec-eft .exlusion-info {
@@ -6442,9 +6470,15 @@ main .wrapper .admin-section-container .content.login-pannel {
 
 .page-details.trevelor-eft-autopay.trevelor-eft .insured-info .a12 {
   left: 5px;
-  width: 25px;
   top: 200px;
   transform: rotate(5deg);
+  height: 25px;
+  width: 150px;
+}
+
+.page-details.trevelor-eft-autopay.trevelor-eft .insured-info .a12 img {
+  width: auto;
+  height: 100%;
 }
 
 .page {
@@ -6673,9 +6707,15 @@ main .wrapper .admin-section-container .content.login-pannel {
 
 .page-details.safety-eft-form .signature-info .a2.signature {
   left: 180px;
-  width: 40px;
   top: 30px;
   transform: rotate(2deg);
+  height: 25px;
+  width: 150px;
+}
+
+.page-details.safety-eft-form .signature-info .a2.signature img {
+  width: auto;
+  height: 100%;
 }
 
 .page-details.safety-eft-form .financial-info {
@@ -6934,9 +6974,15 @@ main .wrapper .admin-section-container .content.login-pannel {
 
 .page-details.arbella-eft .signature-info .a3 {
   left: 334px;
-  width: 30px;
   top: 38px;
   transform: rotate(6deg);
+  height: 25px;
+  width: 150px;
+}
+
+.page-details.arbella-eft .signature-info .a3 img {
+  width: auto;
+  height: 100%;
 }
 
 .page-details.arbella-eft.arbella-excluison .operator-info {
@@ -7998,6 +8044,38 @@ main .wrapper .admin-section-container .content.login-pannel {
   top: 1px;
 }
 
+.page-details.mapfre.mapfre-eft .signature-info .a3 {
+  left: -230px;
+  top: -35px;
+  height: 20px;
+  width: 150px;
+}
+
+.page-details.mapfre.mapfre-eft .signature-info .a3 img {
+  width: auto;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -o-object-position: left;
+     object-position: left;
+}
+
+.page-details.mapfre.mapfre-eft .signature-info .a4 {
+  left: -230px;
+  top: 0px;
+  height: 20px;
+  width: 150px;
+}
+
+.page-details.mapfre.mapfre-eft .signature-info .a4 img {
+  width: auto;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -o-object-position: left;
+     object-position: left;
+}
+
 .page-details.mapfre.mapfre-annual-milage .applicant-about {
   position: absolute;
   top: 235px;
@@ -8856,6 +8934,22 @@ main .wrapper .admin-section-container .content.login-pannel {
   left: 308px;
   width: 85px;
   top: 13px;
+}
+
+.page-details.norfolk .signature-info .a2 {
+  top: 0;
+  left: 0;
+  width: 300px;
+  height: 30px;
+}
+
+.page-details.norfolk .signature-info .a2 img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -o-object-position: left;
+     object-position: left;
 }
 
 .page {
@@ -10279,7 +10373,7 @@ main .wrapper .admin-section-container .content.login-pannel {
 
 .page-details.amica-eft .insured-info {
   position: absolute;
-  top: 110px;
+  top: 250px;
   left: 50px;
 }
 
@@ -10288,17 +10382,13 @@ main .wrapper .admin-section-container .content.login-pannel {
 }
 
 .page-details.amica-eft .insured-info .a1 {
-  left: 54px;
+  left: 139px;
   width: 20px;
-  top: 30px;
+  top: 26px;
 }
 
 .page-details.amica-eft .insured-info .a1.a1-2 {
-  left: 292px;
-}
-
-.page-details.amica-eft .insured-info .a1.a1-3 {
-  left: 514px;
+  left: 252px;
 }
 
 .page-details.amica-eft .insured-info .a2 {
@@ -10339,7 +10429,7 @@ main .wrapper .admin-section-container .content.login-pannel {
 
 .page-details.amica-eft .account-info {
   position: absolute;
-  top: 244px;
+  top: 494px;
   left: 0;
 }
 
@@ -10365,19 +10455,15 @@ main .wrapper .admin-section-container .content.login-pannel {
 }
 
 .page-details.amica-eft .account-info .a3 {
-  left: 269px;
-  width: 20px;
-  top: 105px;
-}
-
-.page-details.amica-eft .account-info .a3.a3-2 {
-  left: 366px;
+  left: 146px;
+  width: 222px;
+  top: 73px;
 }
 
 .page-details.amica-eft .account-info .a4 {
-  left: 210px;
-  width: 359px;
-  top: 120px;
+  left: 140px;
+  width: 225px;
+  top: 107px;
 }
 
 .page-details.amica-eft .account-info .a5 {

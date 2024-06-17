@@ -315,6 +315,34 @@
   width: 202px;
   top: 1px;
 }
+.page-details.mapfre.mapfre-eft .signature-info .a3 {
+  left: -230px;
+  top: -35px;
+  height: 20px;
+  width: 150px;
+}
+.page-details.mapfre.mapfre-eft .signature-info .a3 img {
+  width: auto;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -o-object-position: left;
+     object-position: left;
+}
+.page-details.mapfre.mapfre-eft .signature-info .a4 {
+  left: -230px;
+  top: 0px;
+  height: 20px;
+  width: 150px;
+}
+.page-details.mapfre.mapfre-eft .signature-info .a4 img {
+  width: auto;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -o-object-position: left;
+     object-position: left;
+}
 .page-details.mapfre.mapfre-annual-milage .applicant-about {
   position: absolute;
   top: 235px;

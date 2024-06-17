@@ -68,22 +68,19 @@
 }
 .page-details.amica-eft .insured-info {
   position: absolute;
-  top: 110px;
+  top: 250px;
   left: 50px;
 }
 .page-details.amica-eft .insured-info input {
   font-size: 14px;
 }
 .page-details.amica-eft .insured-info .a1 {
-  left: 54px;
+  left: 139px;
   width: 20px;
-  top: 30px;
+  top: 26px;
 }
 .page-details.amica-eft .insured-info .a1.a1-2 {
-  left: 292px;
-}
-.page-details.amica-eft .insured-info .a1.a1-3 {
-  left: 514px;
+  left: 252px;
 }
 .page-details.amica-eft .insured-info .a2 {
   left: 163px;
@@ -117,7 +114,7 @@
 }
 .page-details.amica-eft .account-info {
   position: absolute;
-  top: 244px;
+  top: 494px;
   left: 0;
 }
 .page-details.amica-eft .account-info input {
@@ -138,17 +135,14 @@
   top: 79px;
 }
 .page-details.amica-eft .account-info .a3 {
-  left: 269px;
-  width: 20px;
-  top: 105px;
-}
-.page-details.amica-eft .account-info .a3.a3-2 {
-  left: 366px;
+  left: 146px;
+  width: 222px;
+  top: 73px;
 }
 .page-details.amica-eft .account-info .a4 {
-  left: 210px;
-  width: 359px;
-  top: 120px;
+  left: 140px;
+  width: 225px;
+  top: 107px;
 }
 .page-details.amica-eft .account-info .a5 {
   left: 342px;

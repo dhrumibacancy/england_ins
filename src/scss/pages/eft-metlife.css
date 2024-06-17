@@ -240,4 +240,18 @@
 }
 .page-details.eft-metlife .section-5 .a2 input {
   font-size: 15px;
+}
+.page-details.eft-metlife .section-5 .a3 {
+  left: 190px;
+  top: 0;
+  height: 25px;
+  width: 150px;
+}
+.page-details.eft-metlife .section-5 .a3 img {
+  width: auto;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -o-object-position: left;
+     object-position: left;
 }/*# sourceMappingURL=eft-metlife.css.map */
